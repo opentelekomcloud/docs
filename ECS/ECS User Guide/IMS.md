@@ -21,10 +21,10 @@ Table 1-1 Image types
            <tr>
         <td>Private image</td>
         <td>An image available only to the user who created it. It contains an OS, preinstalled public applications, and the user’s private applications. Using a private image to create ECSs removes the need to configure multiple ECSs repeatedly. A private image can be created using: 
-        <dl>
-        <dt>An ECS</dt>
-        <dt>An external image file</dt>
-        <dd>You can upload external image files and register the images on the public cloud platform to make them function as private images. External image files can be in VMDK, VHD, QCOW2, or ZVHD format.</dd></dl></td>
+        <ul>
+        <li>An ECS</li>
+        <li>An external image file</li>
+        <dd>You can upload external image files and register the images on the public cloud platform to make them function as private images. External image files can be in VMDK, VHD, QCOW2, or ZVHD format.</dd></ul></td>
           </tr>
            <tr>
         <td>Shared image</td>
