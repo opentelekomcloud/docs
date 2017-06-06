@@ -1,4 +1,4 @@
-##IMS
+## IMS
 ### Introduction
 
 Image Management Service (IMS) allows you to create ECSs using images. An image is an ECS template that contains an OS and may also contain proprietary software and application software, such as database software.
@@ -6,7 +6,7 @@ Image Management Service (IMS) allows you to create ECSs using images. An image 
 Images can be public, private, or shared. Public images are provided by the
 system by default, private images are manually created, and shared images are private images that are shared by another user. You can use any type of image to create an ECS. You can also create a private image using an existing ECS or external image. This provides you with a simple way to create ECSs that comply with your service requirements. For example, if you use web services, your image can contain a web server, static configurations, and dynamic page code. When you use this image to create an ECS, your web server and applications will be available for use immediately.
 
-###Image Types
+### Image Types
 Table 1-1 Image types
 
 <table>
