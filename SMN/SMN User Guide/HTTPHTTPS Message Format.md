@@ -2,11 +2,11 @@
 
 ## HTTP/HTTPS Message Format
 
-###Scenarios
+### Scenarios
 
 This section describes the format of messages sent to the HTTP or HTTPS endpoint. You can identify a message based on its message type. An HTTP/HTTPS message contains HTTP/HTTPS header and content. The HTTP/HTTPS content contains JSON character strings.
 
-###HTTP/HTTPS Message Header Information
+### HTTP/HTTPS Message Header Information
 
 The message header of an SMN HTTP/HTTPS contains the following parameters: **X-SMN-TOPIC-URN**, **X-SMN-MESSAGE-ID**, **X-SMN-MESSAGE-TYPE**, and **X-SMN-SUBSCRIPTION-URN**.
 
@@ -21,11 +21,11 @@ The message header of an SMN HTTP/HTTPS contains the following parameters: **X-S
 <td> X-SMN-MESSAGE-TYPE </td>
 <td><p>Indicates the message type, which can be:</p>                    
                                                                                         
-                          <ul><li><p>SubscriptionConfirmation</li></p>                                       
+                          <ul><li>SubscriptionConfirmation</li>                                  
                                                                                         
-                          <li><p>Notification</p></li>                                                   
+                          <li>Notification</li>                                                   
                                                                                         
-                          <li><p>UnsubscribeConfirmation</p> </li></ul> </td>
+                          <li>UnsubscribeConfirmation</li></ul> 
 </tr>
 <tr>
 <td> X-SMN-MESSAGE-ID</td>
@@ -141,7 +141,7 @@ After the HTTP/HTTPS subscriber confirms the subscription, the subscriber can re
 </tr>
 </table> 
 
-###Format of HTTP/HTTPS Unsubscription Confirmation Messages
+### Format of HTTP/HTTPS Unsubscription Confirmation Messages
 
 After an HTTP/HTTPS subscription is canceled, the subscriber receives an unsubscription confirmation message sent by SMN. The content of the unsubscription confirmation message contains JSON character strings, which are described in Table B-4.
 
