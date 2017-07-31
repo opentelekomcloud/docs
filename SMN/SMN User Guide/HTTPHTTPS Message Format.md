@@ -42,9 +42,9 @@ The message header of an SMN HTTP/HTTPS contains the following parameters: **X-S
 
 ### Format of HTTP/HTTPS Subscription Confirmation Messages
 
-After you add an HTTP/HTTPS endpoint, SMN sends a subscription confirmation message to the subscriber. The content of the subscription confirmation message contains JSON character strings. The subscriber needs to obtain the subscription URL (**subscribe\_url**) to confirm the subscription. Table 2 describes the JSON strings in detail.
+After you add an HTTP/HTTPS endpoint, SMN sends a subscription confirmation message to the subscriber. The content of the subscription confirmation message contains JSON character strings. The subscriber needs to obtain the subscription URL (**subscribe\_url**) to confirm the subscription. <a href="#table2">Table 2 </a>describes the JSON strings in detail.
 
-**Table 2** Content of an HTTP/HTTPS subscription confirmation message
+<a name="table2">**Table 2** Content of an HTTP/HTTPS subscription confirmation message</a>
 <table>
 <tr>
 <th>Parameter</th>
