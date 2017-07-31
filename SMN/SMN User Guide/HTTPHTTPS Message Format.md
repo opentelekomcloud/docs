@@ -42,7 +42,7 @@ The message header of an SMN HTTP/HTTPS contains the following parameters: **X-S
 
 ### Format of HTTP/HTTPS Subscription Confirmation Messages
 
-After you add an HTTP/HTTPS endpoint, SMN sends a subscription confirmation message to the subscriber. The content of the subscription confirmation message contains JSON character strings. The subscriber needs to obtain the subscription URL (**subscribe\_url**) to confirm the subscription. <a href="#table2">Table 2 </a>describes the JSON strings in detail.
+After you add an HTTP/HTTPS endpoint, SMN sends a subscription confirmation message to the subscriber. The content of the subscription confirmation message contains JSON character strings. The subscriber needs to obtain the subscription URL (**subscribe_url**) to confirm the subscription. <a href="#table2">Table 2 </a>describes the JSON strings in detail.
 
 <a name="table2">**Table 2** Content of an HTTP/HTTPS subscription confirmation message</a>
 <table>
@@ -73,7 +73,7 @@ After you add an HTTP/HTTPS endpoint, SMN sends a subscription confirmation mess
 <tr>
 <td> signature</td>
 <td> <p>Indicates the signature information.</p> 
-<p>The signature includes the <b>message</b>, <b>message_id</b>, <b>subscribe_url</b>,<b>timestamp</b>, <b>topic_urn</b>, and <b>type</b> fields. For details about signature check, see B.2 Message Signature Verification. </p></td>
+<p>The signature includes the <b>message</b>, <b>message_id</b>, <b>subscribe_url</b>,<b>timestamp</b>, <b>topic_urn</b>, and <b>type</b> fields. For details about signature check, see <a href="Message Signature Verification">Message Signature Verification</a>. </p></td>
 </tr>
 <tr>
 <td> signature_version</td>
@@ -91,9 +91,9 @@ After you add an HTTP/HTTPS endpoint, SMN sends a subscription confirmation mess
 
 ### Format of HTTP/HTTPS Notification Messages
 
-After the HTTP/HTTPS subscriber confirms the subscription, the subscriber can receive notification messages published to the topic. The HTTP/HTTPS content of the notification message contains JSON character strings, which are described in Table 3.
+After the HTTP/HTTPS subscriber confirms the subscription, the subscriber can receive notification messages published to the topic. The HTTP/HTTPS content of the notification message contains JSON character strings, which are described in <a href="#table3">Table 3</a>.
 
-**Table 3** Content of an HTTP/HTTPS notification message
+<a name="table3">**Table 3** Content of an HTTP/HTTPS notification message</a>
 
 <table>
 <tr>
@@ -142,9 +142,9 @@ After the HTTP/HTTPS subscriber confirms the subscription, the subscriber can re
 
 ### Format of HTTP/HTTPS Unsubscription Confirmation Messages
 
-After an HTTP/HTTPS subscription is canceled, the subscriber receives an unsubscription confirmation message sent by SMN. The content of the unsubscription confirmation message contains JSON character strings, which are described in Table 4.
+After an HTTP/HTTPS subscription is canceled, the subscriber receives an unsubscription confirmation message sent by SMN. The content of the unsubscription confirmation message contains JSON character strings, which are described in <a href="#table4">Table 4</a>.
 
-**Table 4** Content of an HTTP/HTTPS unsubscription confirmation message
+<a name="table4">**Table 4** Content of an HTTP/HTTPS unsubscription confirmation message</a>
 
 
 <table>
@@ -175,7 +175,7 @@ After an HTTP/HTTPS subscription is canceled, the subscriber receives an unsubsc
 <tr>
 <td> signature</td>
 <td> <p>Indicates the signature information.</p> 
-<p>The signature includes the <b>message</b>, <b>message_id</b>, <b>subscribe_url</b>,<b>timestamp</b>, <b>topic_urn</b>, and <b>type</b> fields. For details about signature check, see <i>Message Signature Verification</i>. </p></td>
+<p>The signature includes the <b>message</b>, <b>message_id</b>, <b>subscribe_url</b>,<b>timestamp</b>, <b>topic_urn</b>, and <b>type</b> fields. For details about signature check, see <a href="Message Signature Verification">Message Signature Verification</a>. </p></td>
 </tr>
 <tr>
 <td> signature_version</td>
