@@ -19,13 +19,13 @@ The message header of an SMN HTTP/HTTPS contains the following parameters: **X-S
 </tr>
 <tr>
 <td> X-SMN-MESSAGE-TYPE </td>
-<td><p>Indicates the message type, which can be:</p>                    
+<td>Indicates the message type, which can be:                   
                                                                                         
-                          <ul><li>SubscriptionConfirmation</li>                                  
+<ul><li>SubscriptionConfirmation</li>                                  
                                                                                         
-                          <li>Notification</li>                                                   
+<li>Notification</li>                                                   
                                                                                         
-                          <li>UnsubscribeConfirmation</li></ul> 
+<li>UnsubscribeConfirmation</li></ul> </td>
 </tr>
 <tr>
 <td> X-SMN-MESSAGE-ID</td>
