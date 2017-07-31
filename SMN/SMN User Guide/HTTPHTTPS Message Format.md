@@ -73,7 +73,7 @@ After you add an HTTP/HTTPS endpoint, SMN sends a subscription confirmation mess
 <tr>
 <td> signature</td>
 <td> <p>Indicates the signature information.</p> 
-<p>The signature includes the <b>message</b>, <b>message_id</b>, <b>subscribe_url</b>,<b>timestamp</b>, <b>topic_urn</b>, and <b>type</b> fields. For details about signature check, see <a href="Message Signature Verification">Message Signature Verification</a>. </p></td>
+<p>The signature includes the <b>message</b>, <b>message_id</b>, <b>subscribe_url</b>,<b>timestamp</b>, <b>topic_urn</b>, and <b>type</b> fields. For details about signature check, see <a href="Message Signature Verification.md">Message Signature Verification</a>. </p></td>
 </tr>
 <tr>
 <td> signature_version</td>
