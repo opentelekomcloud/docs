@@ -10,7 +10,7 @@ This section describes the format of messages sent to the HTTP or HTTPS endpoint
 
 The message header of an SMN HTTP/HTTPS contains the following parameters: **X-SMN-TOPIC-URN**, **X-SMN-MESSAGE-ID**, **X-SMN-MESSAGE-TYPE**, and **X-SMN-SUBSCRIPTION-URN**.
 
-**Table B-1** HTTP/HTTPS header parameter description
+**Table 1** HTTP/HTTPS header parameter description
 
 <table>
 <tr>
@@ -42,9 +42,9 @@ The message header of an SMN HTTP/HTTPS contains the following parameters: **X-S
 
 ### Format of HTTP/HTTPS Subscription Confirmation Messages
 
-After you add an HTTP/HTTPS endpoint, SMN sends a subscription confirmation message to the subscriber. The content of the subscription confirmation message contains JSON character strings. The subscriber needs to obtain the subscription URL (**subscribe\_url**) to confirm the subscription. Table 1 describes the JSON strings in detail.
+After you add an HTTP/HTTPS endpoint, SMN sends a subscription confirmation message to the subscriber. The content of the subscription confirmation message contains JSON character strings. The subscriber needs to obtain the subscription URL (**subscribe\_url**) to confirm the subscription. Table 2 describes the JSON strings in detail.
 
-<span id="_table52870937144241" class="anchor"></span>**Table 1** Content of an HTTP/HTTPS subscription confirmation message
+**Table 2** Content of an HTTP/HTTPS subscription confirmation message
 <table>
 <tr>
 <th>Parameter</th>
@@ -91,9 +91,9 @@ After you add an HTTP/HTTPS endpoint, SMN sends a subscription confirmation mess
 
 ### Format of HTTP/HTTPS Notification Messages
 
-After the HTTP/HTTPS subscriber confirms the subscription, the subscriber can receive notification messages published to the topic. The HTTP/HTTPS content of the notification message contains JSON character strings, which are described in Table 2.
+After the HTTP/HTTPS subscriber confirms the subscription, the subscriber can receive notification messages published to the topic. The HTTP/HTTPS content of the notification message contains JSON character strings, which are described in Table 3.
 
-<span id="_table37962339144241" class="anchor"></span>**Table 2** Content of an HTTP/HTTPS notification message
+**Table 3** Content of an HTTP/HTTPS notification message
 
 <table>
 <tr>
@@ -142,9 +142,9 @@ After the HTTP/HTTPS subscriber confirms the subscription, the subscriber can re
 
 ### Format of HTTP/HTTPS Unsubscription Confirmation Messages
 
-After an HTTP/HTTPS subscription is canceled, the subscriber receives an unsubscription confirmation message sent by SMN. The content of the unsubscription confirmation message contains JSON character strings, which are described in Table 3.
+After an HTTP/HTTPS subscription is canceled, the subscriber receives an unsubscription confirmation message sent by SMN. The content of the unsubscription confirmation message contains JSON character strings, which are described in Table 4.
 
-<span id="_table64442359144241" class="anchor"></span>**Table 3** Content of an HTTP/HTTPS unsubscription confirmation message
+**Table 4** Content of an HTTP/HTTPS unsubscription confirmation message
 
 
 <table>
