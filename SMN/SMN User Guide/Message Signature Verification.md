@@ -1,10 +1,10 @@
 Message Signature Verification
 
-###Scenarios
+### Scenarios
 
 To ensure message security, SMN provides signature authentication for HTTP/HTTPS subscription confirmation messages, unsubscription confirmation messages, and notification messages. Specifically, SMN checks the HTTPS/HTTPS messages by their signatures.
 
-###Procedure
+### Procedure
 
 After you receive an HTTP/HTTPS message, the system verifies the message in the following procedure:
 
@@ -22,7 +22,7 @@ The certificate downloading URL uses HTTPS and is verified when accessed.
 
 3.  Create signature strings. Obtain the signature parameters from the message and sort them in the alphabet sequence. Each parameter occupies a line, with its value following in the next line.
 
-###Signature Strings for Specified Message Types
+### Signature Strings for Specified Message Types
 
 1.  Notification messages
 
