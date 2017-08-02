@@ -17,7 +17,7 @@ A topic is a specified event for message publishing or notification subscription
 <dd>The <b>Create Topic</b> a1rea is displayed.</dd>
 <dd><b>Figure 1</b> Create Topic</dd></li>
 	 
-	 ![](figure/topic.png)
+<img src="figure/topic.png"/>
 
 <li>Enter a topic name and display name.</li>
 	<dd><b>Table 1</b> Information required for creating a topic</dd>
