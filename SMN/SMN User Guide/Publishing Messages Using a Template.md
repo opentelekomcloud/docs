@@ -10,7 +10,7 @@ When creating messages using a template, you need to select a specific template 
 
 SMN tries to match different types of subscribers with the template protocols. If the template of a specified protocol does not exist, SMN sends messages to subscribers of that protocol using the default template.
 
-This section describes how you can publish messages using a template. For details about the message template, see section <a href="Message Template Management">Message Template Management</a>.
+This section describes how you can publish messages using a template. For details about the message template, see section <a href="Message Template Management.md">Message Template Management</a>.
 
 ### Prerequisites
 
@@ -20,11 +20,11 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 1.  Log in to the management console.
 
-2.  Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
+2.  Click ![](figure/001.png). Under **Application**, click **Simple Message Notification**.
 
 	The **Simple Message Notification** page is displayed.
 
-1.  Create a message template. For details, see section <a href="Message Template Management">Message Template Management</a>.
+1.  Create a message template. For details, see section <a href="Message Template Management.md">Message Template Management</a>.
 
 	The following is an example for parameter configurations in the template creation:
 	- **Template Name**: **tem_001**
@@ -34,7 +34,7 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 1.  Log in to the management console.
 
-2.  Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
+2.  Click ![](figure/001.png). Under **Application**, click **Simple Message Notification**.
 
 	The **Simple Message Notification** page is displayed.
 
@@ -44,11 +44,11 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 1.  Select the topic to which you want to publish a message and click **Publish Message** under **Operation**.
 
-2.  Configure the required parameters according to "Table 1" in section <a href="Publishing a Text Message">Publishing a Text Message</a>. The topic name is provided by default and you cannot change it.
+2.  Configure the required parameters according to "Table 1" in section <a href="Publishing a Text Message.md">Publishing a Text Message</a>. The topic name is provided by default and you cannot change it.
 
 	Select **Template** for **Message Type** and manually type the template content in the **Message** box or click **Generate Message Template** to generate the template content. The template message content cannot exceed 256 KB.
 
-	- If you choose to manually type the template message, see section A.3 Template Message Format for detailed requirements.
+	- If you choose to manually type the template message, see section <a href="Template Message Format for detailed requirements.md">Template Message Format for detailed requirements</a>.
 
 	- If you choose to automatically generate the template message, perform operations in steps [6](#jump03) to [9](#jump04).
 
@@ -60,7 +60,7 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 	**Figure 1** Generate Template Message
 
-	![](./figure/template01.png)
+	![](figure/template01.png)
 
 1.  Switch to the **Preview** tab to check the raw template content. Click **Template Content to Use** to preview the template message.
 
@@ -68,7 +68,7 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 	**Figure 2** Previewing the template message
 
-	![](./figure/template02.png)
+	![](figure/template02.png)
 
 1.  <span id="jump04" class="anchor"></span>Click **OK**.
 
@@ -76,7 +76,7 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 	**Figure 3** Template message example
 
-	![](./figure/template03.png)
+	![](figure/template03.png)
 
 1.  Click **OK**.
 
