@@ -10,7 +10,7 @@ You can cancel subscriptions and delete topics in the environment.
 
 1.  Log in to the management console.
 
-2.  Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
+2.  Click ![](figure/001.png). Under **Application**, click **Simple Message Notification**.
 
 	The **Simple Message Notification** page is displayed.
 
@@ -28,7 +28,7 @@ You can cancel subscriptions and delete topics in the environment.
 
 1.  Log in to the management console.
 
-2.  Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
+2.  Click ![](figure/001.png). Under **Application**, click **Simple Message Notification**.
 
 	The **Simple Message Notification** page is displayed.
 
@@ -38,6 +38,6 @@ You can cancel subscriptions and delete topics in the environment.
 
 1.  Select a topic, click **More** under **Operation**, and select **Delete**.
 
-	![](./figure/note.png)
+	![](figure/note.png)
 
 	Deleting a topic deletes all subscriptions in the topic.
