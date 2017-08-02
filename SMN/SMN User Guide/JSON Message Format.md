@@ -21,7 +21,7 @@ In the following example, you enter shorter message content for the SMS protocol
 	     "default": "Dear Sir or Madam, this is a default message."
     }
 
-###Constraints
+### Constraints
 
 - The content must comply with JSON format requirements.
 
