@@ -50,9 +50,9 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 	- If you choose to manually type the template message, see section <a href="Template Message Format for detailed requirements.md">Template Message Format for detailed requirements</a>.
 
-	- If you choose to automatically generate the template message, perform operations in steps [6](#jump03) to [9](#jump04).
+	- If you choose to automatically generate the template message, perform operations in steps <a href="#6">6</a> to <a href="#9">9</a>.
 
-1.  <span id="jump03" class="anchor"></span>Click **Generate Template Message**.
+1.  <span name="6">Click **Generate Template Message**</span>.
 
 2.  Select the **tem_001** template and specify content for the tags.
 
@@ -70,7 +70,7 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 	![](figure/template02.png)
 
-1.  <span id="jump04" class="anchor"></span>Click **OK**.
+1.  <span name="6"></span>Click **OK**.
 
 	The message that is generated contains the template name and tags.
 
