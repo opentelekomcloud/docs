@@ -7,25 +7,19 @@ A topic is a specified event for message publishing or notification subscription
 
 ### Creating a Topic
 
-1.  Log in to the management console.
+<ol><li>Log in to the management console.</li>
 
-2.  Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
-
-	The **Simple Message Notification** page is displayed.
-
-1. In the navigation tree on the left, choose **Topic**.
-
-	The **Topic** page is displayed.
-
-1.  Click **Create Topic**.
-
-	The **Create Topic** a1rea is displayed.
-
-	 **Figure 1** Create Topic
+<li>Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
+<dd>The **Simple Message Notification** page is displayed.</dd></li>
+<li>In the navigation tree on the left, choose **Topic**.
+<dd>The **Topic** page is displayed.</dd></li>
+<li>Click **Create Topic**.</li>
+<dd>The **Create Topic** a1rea is displayed.</dd>
+<dd>**Figure 1** Create Topic</dd></li>
 	 
 	 ![](./figure/topic.png)
 
-1.  Enter a topic name and display name.
+<li>Enter a topic name and display name.</li>
 
 	**Table 1** Information required for creating a topic
    	<table>
@@ -52,5 +46,5 @@ A topic is a specified event for message publishing or notification subscription
          </td>
      </tr>
    </table>
-1. Click **OK**.
-<dd>The topic you created is displayed in the topic list. The system generates a topic URN, which is the unique resource identifier of the topic and cannot be changed.</dd>
+<li>Click **OK**.
+<dd>The topic you created is displayed in the topic list. The system generates a topic URN, which is the unique resource identifier of the topic and cannot be changed.</dd></li></ol>
