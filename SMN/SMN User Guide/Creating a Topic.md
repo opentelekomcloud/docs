@@ -9,19 +9,19 @@ A topic is a specified event for message publishing or notification subscription
 
 <ol><li>Log in to the management console.</li>
 
-<li>Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
-<dd>The **Simple Message Notification** page is displayed.</dd></li>
-<li>In the navigation tree on the left, choose **Topic**.
-<dd>The **Topic** page is displayed.</dd></li>
-<li>Click **Create Topic**.</li>
-<dd>The **Create Topic** a1rea is displayed.</dd>
-<dd>**Figure 1** Create Topic</dd></li>
+<li>Click ![](./figure/001.png). Under <b>Application</b>, click <b>Simple Message Notification</b>.
+<dd>The <b>Simple Message Notification</b> page is displayed.</dd></li>
+<li>In the navigation tree on the left, choose <b>Topic</b>.
+<dd>The <b>Topic</b> page is displayed.</dd></li>
+<li>Click <b>Create Topic</b>.</li>
+<dd>The <b>Create Topic</b> a1rea is displayed.</dd>
+<dd><b>Figure 1</b> Create Topic</dd></li>
 	 
 	 ![](./figure/topic.png)
 
 <li>Enter a topic name and display name.</li>
 
-	**Table 1** Information required for creating a topic
+	<b>Table 1</b> Information required for creating a topic
    	<table>
     <tr>
        <th>Parameter</th>
