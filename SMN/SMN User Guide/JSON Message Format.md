@@ -1,6 +1,6 @@
 ## JSON Message Format
 
-###Description
+### Description
 
 In a JSON message, you can specify different message content for different subscription protocols, including **Default**, **SMS, HTTP**, **HTTPS**, and **Email**. The message content you specified will be sent to subscription endpoints of applicable protocols.
 
@@ -29,7 +29,7 @@ In the following example, you enter shorter message content for the SMS protocol
 
 - The total JSON message cannot exceed 256 KB.
 
-###<span id="section11977745123756" class="anchor"></span>Calculation on the JSON Message Size
+### Calculation on the JSON Message Size
 
 The total size of the JSON message, including the braces, quotation marks, spaces, line breaks, and message content, cannot exceed 256 KB. The size of the JSON message generated for each protocol may vary. The following tells you how to calculate the size of a JSON message.
 
