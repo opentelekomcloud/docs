@@ -9,7 +9,7 @@ A topic is a specified event for message publishing or notification subscription
 
 <ol><li>Log in to the management console.</li>
 
-<li>Click ![](figure/001.png). Under <b>Application</b>, click <b>Simple Message Notification</b>.
+<li>Click <img src="figure/001.png"/>. Under <b>Application</b>, click <b>Simple Message Notification</b>.
 <dd>The <b>Simple Message Notification</b> page is displayed.</dd></li>
 <li>In the navigation tree on the left, choose <b>Topic</b>.
 <dd>The <b>Topic</b> page is displayed.</dd></li>
