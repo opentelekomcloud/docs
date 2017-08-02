@@ -82,6 +82,6 @@ To send messages published to a topic to a subscription endpoint, you must add t
 
 ![](./figure/notice.png)
 
-1.  To prevent a malicious user from attacking subscription endpoints, SMN limits the number of confirmation messages that can be sent to an endpoint within a specified period of time. For details, see section A.4 Traffic Control on Subscription Confirmation.
+1.  To prevent a malicious user from attacking subscription endpoints, SMN limits the number of confirmation messages that can be sent to an endpoint within a specified period of time. For details, see section <a href="Traffic Control on Subscription Confirmation.md">Traffic Control on Subscription Confirmation</a>.
 2.  SMN does not check whether a subscription endpoint exists when you add a subscription. However, a subscriber can receive notification messages only when they confirm the subscription.
 3.  The token is valid only for 48 hours. Therefore, the subscriber must confirm the subscription within that time.
