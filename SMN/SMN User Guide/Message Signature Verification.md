@@ -22,7 +22,7 @@ The certificate downloading URL uses HTTPS and is verified when accessed.
 
 3.  Create signature strings. Obtain the signature parameters from the message and sort them in the alphabet sequence. Each parameter occupies a line, with its value following in the next line.
 
-###Signature Strings for Specified Message Types
+### Signature Strings for Specified Message Types
 
 1.  Notification messages
 
