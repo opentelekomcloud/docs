@@ -52,7 +52,7 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 	- If you choose to automatically generate the template message, perform operations in steps <a href="#6">6</a> to <a href="#9">9</a>.
 
-1.  <span name="6">Click **Generate Template Message**</span>.
+1.  <a name="6">Click **Generate Template Message**</a>.
 
 2.  Select the **tem_001** template and specify content for the tags.
 
@@ -70,7 +70,7 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 	![](figure/template02.png)
 
-1.  <span name="6"></span>Click **OK**.
+1.  <a name="6"></a>Click **OK**.
 
 	The message that is generated contains the template name and tags.
 
