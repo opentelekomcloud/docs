@@ -70,7 +70,7 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 	![](figure/template02.png)
 
-1.  <a name="6"></a>Click **OK**.
+1.  <a name="9">Click **OK**</a>.
 
 	The message that is generated contains the template name and tags.
 
