@@ -1,10 +1,10 @@
 ## Deleting Resources
 
-###Scenarios
+### Scenarios
 
 You can cancel subscriptions and delete topics in the environment.
 
-###Deleting Resources
+### Deleting Resources
 
 **Canceling a subscription**
 
