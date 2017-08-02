@@ -8,7 +8,7 @@ To send messages published to a topic to a subscription endpoint, you must add t
 
 1. Log in to the management console.
 
-2.  Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
+2.  Click ![](figure/001.png). Under **Application**, click **Simple Message Notification**.
 
 	The **Simple Message Notification** page is displayed.
 
@@ -80,7 +80,7 @@ To send messages published to a topic to a subscription endpoint, you must add t
 
 	The subscription you added is displayed in the subscription list. SMN automatically sends a confirmation message to the subscription endpoint, and the subscriber must confirm the subscription within 48 hours so that they can receive notification messages. Otherwise, you need to send a new confirmation message to the subscriber.
 
-![](./figure/notice.png)
+![](figure/notice.png)
 
 1.  To prevent a malicious user from attacking subscription endpoints, SMN limits the number of confirmation messages that can be sent to an endpoint within a specified period of time. For details, see section <a href="Traffic Control on Subscription Confirmation.md">Traffic Control on Subscription Confirmation</a>.
 2.  SMN does not check whether a subscription endpoint exists when you add a subscription. However, a subscriber can receive notification messages only when they confirm the subscription.
