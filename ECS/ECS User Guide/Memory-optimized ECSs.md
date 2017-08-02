@@ -54,7 +54,7 @@ apply to the following scenarios:
           <td>m1.4xlarge</td>
       </tr>
 </table>
-**Table 1-2** Memory-optimized second-generation m2 ECS specifications
+<b>able 1-2</b> Memory-optimized second-generation m2 ECS specifications
 <table>
       <tr>
           <th>ECS Type</th>
