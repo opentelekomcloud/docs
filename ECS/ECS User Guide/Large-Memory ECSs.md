@@ -38,7 +38,7 @@ rapid data switching, low latency, and process large volumes of data.
          <td>e1.8xlarge</td>
       </tr>
 </table>
-**Table 1-2** Large-memory e2 ECS specifications
+<b>Table 1-2</b> Large-memory e2 ECS specifications
 <table>
       <tr>
          <th>Category</th>
