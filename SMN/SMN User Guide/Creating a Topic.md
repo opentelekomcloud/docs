@@ -46,5 +46,5 @@ A topic is a specified event for message publishing or notification subscription
          </td>
      </tr>
    </table>
-<li>Click **OK**.
+<li>Click <b>OK</b>.
 <dd>The topic you created is displayed in the topic list. The system generates a topic URN, which is the unique resource identifier of the topic and cannot be changed.</dd></li></ol>
