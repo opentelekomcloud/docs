@@ -21,26 +21,25 @@ A topic is a specified event for message publishing or notification subscription
 
 <li>Enter a topic name and display name.</li>
 	<dd><b>Table 1</b> Information required for creating a topic</dd>
-   	<table>
-    <tr>
+  <table>
+   <tr>
        <th>Parameter</th>
        <th>Description</th>
-        
      </tr>
      <tr>
          <td>Topic Name</td>
-         <td>Specifies the topic name, which:                                                                                                                                                                                                                  
+         <td>Specifies the topic name, which:                                                                                                                                                                                              
                <ul>
-				<li>Contains only upper or lower case letters, digits, hyphens (-), and underscores (_) and must start with a letter or digit. </li>
+<li>Contains only upper or lower case letters, digits, hyphens (-), and underscores (_) and must start with a letter or digit. </li>
                 <li>Must be 1-256 characters long.</li>
-				<li>Must be unique and cannot be modified once the topic is created.</li>
+<li>Must be unique and cannot be modified once the topic is created.</li>
 			    </ul>
 		  </td>
      </tr>
      <tr>
          <td>Display Name</td>
          <td>Describes the topic, which must be less than 192 bytes.                                                                                                                                                                                                
-               <dd>NOTICE</dd>                                                                                                                                                                                                                                                  
+               <dd>NOTICE</dd>                                                                                                                                                                                                                              
                <dd>The topic display name is presented as the name of the email sender when you push an email message.</dd>
          </td>
      </tr>
