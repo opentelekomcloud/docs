@@ -20,8 +20,7 @@ A topic is a specified event for message publishing or notification subscription
 	 ![](figure/topic.png)
 
 <li>Enter a topic name and display name.</li>
-
-	<b>Table 1</b> Information required for creating a topic
+	<dd><b>Table 1</b> Information required for creating a topic</dd>
    	<table>
     <tr>
        <th>Parameter</th>
