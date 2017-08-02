@@ -8,14 +8,14 @@ Actually, messages you published in text, JSON, or template format can be delive
 
 - **Text**: common text message
 
-	The text message you published to a topic does not refer to an SMS message in this context. It might be delivered to all types of subscribers, including SMS, email, HTTP, and HTTPS. For details about sending a text message, see section <a href="Publishing a Text Message">Publishing a Text Message</a>.
+	The text message you published to a topic does not refer to an SMS message in this context. It might be delivered to all types of subscribers, including SMS, email, HTTP, and HTTPS. For details about sending a text message, see section <a href="Publishing a Text Message.md">Publishing a Text Message</a>.
 
 - **JSON**: JSON-structured message
 
-	You can specify message protocols and different message content for each protocol. For details about sending a JSON message, see section <a href="Publishing a JSON Message">Publishing a JSON Message</a>.
+	You can specify message protocols and different message content for each protocol. For details about sending a JSON message, see section <a href="Publishing a JSON Message.md">Publishing a JSON Message</a>.
 
 - **Template**: customized message template, in which you can replace the tags (the placeholders) with specified message content
 
-	When publishing messages using a template, you need to select a template by name and specify content for each tag. SMN will replace the tags with the content you have entered. If you do not enter specific content for a tag, the system will treat the tag as empty when it sends the message. For details about sending messages using a template, see section <a href="Publishing Messages Using a Template">Publishing Messages Using a Template</a>.
+	When publishing messages using a template, you need to select a template by name and specify content for each tag. SMN will replace the tags with the content you have entered. If you do not enter specific content for a tag, the system will treat the tag as empty when it sends the message. For details about sending messages using a template, see section <a href="Publishing Messages Using a Template.md">Publishing Messages Using a Template</a>.
 
-To publish messages to a topic authorized to you by other users, see section <a href="Sending Messages to an Authorized Topic">Sending Messages to an Authorized Topic</a>.
+To publish messages to a topic authorized to you by other users, see section <a href="Sending Messages to an Authorized Topic.md">Sending Messages to an Authorized Topic</a>.
