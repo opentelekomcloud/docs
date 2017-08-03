@@ -74,7 +74,7 @@ You can create multiple topics and add multiple subscriptions to a topic. This s
 <ol>
 <li>To prevent a malicious user from attacking subscription endpoints, SMN limits the number of confirmation messages that can be sent to an endpoint within a specified period of time. For details, see section <a href="Traffic Control on Subscription Confirmation.md">Traffic Control on Subscription Confirmation.</a></li>
 <li>SMN does not check whether a subscription endpoint exists when you add a subscription. However, a subscriber can receive notification messages only when they confirm the subscription.</li>
-<li>The token is valid only for 48 hours. Therefore, the subscriber must confirm the subscription within that time.</li></ol>
+<li>The token is valid only for 48 hours. Therefore, the subscriber must confirm the subscription within that time.</li></ol></ol>
 
 ### Requesting Subscription Confirmation
 
