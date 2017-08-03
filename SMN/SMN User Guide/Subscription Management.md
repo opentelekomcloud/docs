@@ -15,17 +15,12 @@ You can create multiple topics and add multiple subscriptions to a topic. This s
 <li>Click <b>Add Subscription</b>.
 <dd>The <b>Add Subscription<b> page is displayed.</dd>
 <dd><b>Figure 1<b> Add Subscription<dd>
-![](figure/sub.png)
-
-1.  Specify the information required for adding a subscription.
-
-	To add a subscription to an authorized topic, enter the topic URN in the **Topic URN** box.
-
-	To add a subscription to a topic you created, click ![](figure/plus.png) beside the **Topic URN** box to select a topic URN.
-
-	After you specify the topic, the topic name is displayed under the **Topic URN** box. Specify the subscription protocol and endpoint.
-
-	**Table 1** Information required for adding a subscription
+<img src="figure/sub.png"/></li>
+<li>Specify the information required for adding a subscription.
+<ul><li>To add a subscription to an authorized topic, enter the topic URN in the <b>Topic URN</b> box.</li>
+<li>To add a subscription to a topic you created, click <img src="figure/plus.png"/> beside the <b>Topic URN</b> box to select a topic URN.</li></ul>
+<dd>After you specify the topic, the topic name is displayed under the <b>Topic URN</b> box. Specify the subscription protocol and endpoint.</dd>
+<dd><b>Table 1</b> Information required for adding a subscription</dd>
 <table>
  <tr>
     <th>Parameter</th>
@@ -72,20 +67,14 @@ You can create multiple topics and add multiple subscriptions to a topic. This s
 			</ul>   
          </td>
      </tr>
-     </table>               
-
-
-1.  Click **OK**.
-
-	The subscription you added is displayed in the subscription list. SMN automatically sends a confirmation message to the subscription endpoint, and the subscriber must confirm the subscription within 48 hours so that they can receive notification messages. Otherwise, you need to send a new confirmation message to the subscriber.
-
-	![](figure/notice.png)
-
-
+     </table> </li>              
+<li>Click **OK**.
+<dd>The subscription you added is displayed in the subscription list. SMN automatically sends a confirmation message to the subscription endpoint, and the subscriber must confirm the subscription within 48 hours so that they can receive notification messages. Otherwise, you need to send a new confirmation message to the subscriber.</dd>
+<img src="figure/notice.png"/>
 <ol>
 <li>To prevent a malicious user from attacking subscription endpoints, SMN limits the number of confirmation messages that can be sent to an endpoint within a specified period of time. For details, see section <a href="Traffic Control on Subscription Confirmation.md">Traffic Control on Subscription Confirmation.</a></li>
 <li>SMN does not check whether a subscription endpoint exists when you add a subscription. However, a subscriber can receive notification messages only when they confirm the subscription.</li>
-<li>The token is valid only for 48 hours. Therefore, the subscriber must confirm the subscription within that time.</li>
+<li>The token is valid only for 48 hours. Therefore, the subscriber must confirm the subscription within that time.</li></ol>
 
 ### Requesting Subscription Confirmation
 
