@@ -33,29 +33,28 @@ You can create multiple topics and add multiple subscriptions to a topic. This s
 	After you specify the topic, the topic name is displayed under the **Topic URN** box. Specify the subscription protocol and endpoint.
 
 	**Table 1** Information required for adding a subscription
-	<table>
-    <tr>
-       <th>Parameter</th>
-       <th>Description</th>
-        
-     </tr>
+<table>
+ <tr>
+    <th>Parameter</th>
+   <th>Description</th>    
+ </tr>
      <tr>
          <td>Topic URN</td>
          <td>Specifies the URN of the topic to be subscribed to. </td>
      </tr>
      <tr>
          <td>Protocol</td>
-         <td><p>Specifies the protocol the subscription endpoint supports.</p>                                                                                                                                                                            	 <p>The available options include <b>SMS</b>, <b>Email</b>, <b>HTTP</b>, and <b>HTTPS</b>.</p> 
+         <td>Specifies the protocol the subscription endpoint supports.                                                           
+	 <dd>The available options include <b>SMS</b>, <b>Email</b>, <b>HTTP</b>, and <b>HTTPS</b>.</dd> 
          </td>
      </tr>
      <tr>
          <td>Endpoint</td>
-         <td>Specifies the subscription endpoint. You can enter up to 10 endpoints, with every two separated with a line break.
-                                                                                                                                  
-              <ul>
-			  <li><b>SMS</b>: Enter one or more valid phone numbers.                                                                                                                                                                                    
-                  <dd>The phone number must be preceded by a plus sign (+) and the country code.</dd>                                                                                                                                                          
-                  <dd>For example:                                                                                                                                                                                                                        
+         <td>Specifies the subscription endpoint. You can enter up to 10 endpoints, with every two separated with a line break.     
+	 <ul>
+	 <li><b>SMS</b>: Enter one or more valid phone numbers.                                                                 
+	 <dd>The phone number must be preceded by a plus sign (+) and the country code.</dd>                                     
+	 <dd>For example:                                                                                               
                   <ul>
                   <li><b>+4900000000</b></li>                                                                                                                                                                                                                     
                   <li><b>+4900000001</b></li>                                                                                                                                                                                                                      
@@ -63,7 +62,7 @@ You can create multiple topics and add multiple subscriptions to a topic. This s
                   <li><b>+4900000003</b></li></dd>
                   </ul>
              </li>                                                                                                                                                                                                                         
-              <li><b>Email</b>: Enter one or more email addresses.                                                                                                                                                                                       
+              <li><b>Email</b>: Enter one or more email addresses.                                                                                           
                   <dd>For example:                                                                                                                                                                                                                        
                   <ul>
                   <li><b>username@example.com</b>></li>                                                                                                                                                                                                            
@@ -143,7 +142,7 @@ To subscribe to the topic, the subscriber needs to confirm the subscription base
 
 - Email: SMN sends a confirmation message to the specified email address, and the subscriber clicks the link in the email to confirm the subscription.
 
-- HTTP/HTTPS: SMN sends a confirmation message to the specified URL. The confirmation link is contained in the message body. For details about the confirmation message header and body, see section <a href="HTTPHTTPS Message.md">HTTP/HTTPS Message</a>.
+- HTTP/HTTPS: SMN sends a confirmation message to the specified URL. The confirmation link is contained in the message body. For details about the confirmation message header and body, see section <a href="HTTPHTTPS Message Format.md">HTTP/HTTPS Message Format</a>.
 
 After successfully subscribing to a topic, the subscriber can choose to cancel the subscription in the following ways based on the subscription protocol:
 
@@ -151,5 +150,5 @@ After successfully subscribing to a topic, the subscriber can choose to cancel t
 
 - Email: SMN encloses an unsubscription link in an email notification message. The subscriber can cancel the subscription by clicking the link. After the subscriber canceled the subscription successfully, SMN re-sends a subscription confirmation email, which is valid within 48 hours, so that the subscriber can re-subscribe to the topic if they have clicked the unsubscription link by mistake.
 
-- HTTP/HTTPS: SMN provides an unsubscription link in the HTTP/HTTPS message body. The subscriber can cancel the subscription by clicking the link. If the subscriber cancels the subscription successfully, the system returns a **200** code over HTTP and re-sends the subscriber a subscription confirmation message, which is valid within 48 hours, in case that the subscriber has clicked the unsubscription link by mistake. For details about the HTTP/HTTPS message header and body, see section <a href="HTTPHTTPS Message.md">HTTP/HTTPS Message</a>.
+- HTTP/HTTPS: SMN provides an unsubscription link in the HTTP/HTTPS message body. The subscriber can cancel the subscription by clicking the link. If the subscriber cancels the subscription successfully, the system returns a **200** code over HTTP and re-sends the subscriber a subscription confirmation message, which is valid within 48 hours, in case that the subscriber has clicked the unsubscription link by mistake. For details about the HTTP/HTTPS message header and body, see section <a href="HTTPHTTPS Message Format.md">HTTP/HTTPS Message Format</a>.
  
