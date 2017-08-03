@@ -16,7 +16,7 @@ The topic creator has the right to modify the topic policy.
 
 1.  Log in to the management console.
 
-2.  Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
+2.  Click ![](figure/001.png). Under **Application**, click **Simple Message Notification**.
 
 	The **Simple Message Notification** page is displayed.
 
@@ -61,7 +61,7 @@ The topic creator has the right to modify the topic policy.
      <tr>
          <td>Advanced</td>
          <td>Users who can perform specified operations on a topic</td>
-		 <td>Policy language <dd>For details, see section <a href="Configuring Conditions in a Topic Policy">Configuring Conditions in a Topic Policy</a>.</td>
+		 <td>Policy language <dd>For details, see section <a href="Configuring Conditions in a Topic Policy.md">Configuring Conditions in a Topic Policy</a>.</td>
        	 <td>The advanced mode provides a more flexible topic policy.</td>
      </tr>
      </table>   
