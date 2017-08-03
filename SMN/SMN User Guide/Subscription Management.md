@@ -7,22 +7,15 @@ To send messages published to a topic to an endpoint, you must add the subscript
 You can create multiple topics and add multiple subscriptions to a topic. This section describes how you can add a subscription to a topic you created or to a topic authorized to you and how to delete a subscription.
 
 ### Adding a Subscription
-
-1.  Log in to the management console.
-
-2.  Click ![](figure/001.png). Under **Application**, click **Simple Message Notification**.
-
-	The **Simple Message Notification** page is displayed.
-
-1.  In the navigation tree on the left, choose **Subscription**.
-
-2.  Click **Add Subscription**.
-
-	The **Add Subscription** page is displayed.
-
-	**Figure 1** Add Subscription
-
-	![](figure/sub.png)
+<ol>
+<li>Log in to the management console.</li>
+<li>Click <image="figure/001.png">. Under <b>Application</b>, click <b>Simple Message Notification</b>.
+<dd>The <b>Simple Message Notification</b> page is displayed.</dd></li>
+<li>In the navigation tree on the left, choose <b>Subscription</b>.</li>
+<li>Click <b>Add Subscription</b>.
+<dd>The <b>Add Subscription<b> page is displayed.</dd>
+<dd><b>Figure 1<b> Add Subscription<dd>
+![](figure/sub.png)
 
 1.  Specify the information required for adding a subscription.
 
