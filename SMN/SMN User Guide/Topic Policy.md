@@ -39,7 +39,7 @@ The system checks the statements in the topic policy in sequence. If the **Effec
 
 ### Topic Policy Elements
 
-<a href="#table1">Table 1 lists the elements of a topic policy.
+<a href="#table1">Table 1</a> lists the elements of a topic policy.
 
 <a name="table1">**Table 1** Topic policy elements</a>
 	<table>
