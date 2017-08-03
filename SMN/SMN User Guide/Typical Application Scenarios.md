@@ -11,7 +11,7 @@ When you create an alarm rule, you can choose whether to enable the notification
 
 CES has predefined the message content and template for invoking SMN. You only need to create an SMN topic and add subscriptions to it, and then subscribers can receive event notifications based on the alarm rule configured in CES. Alternatively, you can create a user group when configuring the alarm rule in CES so that users in the group can receive notifications.
 
-For details about creating an SMN topic and adding subscriptions, see sections <a href="Creating a Topic">Creating a Topic</a> and <a href="Adding a Subscription to the Topic">Adding a Subscription to the Topic</a>. The following procedure describes how to add an alarm rule in CES.
+For details about creating an SMN topic and adding subscriptions, see sections <a href="Creating a Topic.md">Creating a Topic</a> and <a href="Adding a Subscription to the Topic.md">Adding a Subscription to the Topic</a>. The following procedure describes how to add an alarm rule in CES.
 
 ### Configuration Example
 
@@ -31,9 +31,9 @@ The specific operations are as follows:
 
 6.  Select **Yes** for **Send Notification**.
 
-7.  Select an SMN topic already created from the **Topic Name** drop-down list or click **Create Topic** to create a new one on the SMN console. For details about how to create an SMN topic, see section <a href="Creating a Topic">Creating a Topic</a>.
+7.  Select an SMN topic already created from the **Topic Name** drop-down list or click **Create Topic** to create a new one on the SMN console. For details about how to create an SMN topic, see section <a href="Creating a Topic.md">Creating a Topic</a>.
 
-8.  After you create the topic, switch back to the **Add Alarm Rule** page, click ![](./figure/002.png) beside **Create Topic**, and select the topic you created.
+8.  After you create the topic, switch back to the **Add Alarm Rule** page, click ![](figure/002.png) beside **Create Topic**, and select the topic you created.
 
 	Click **OK**. Subscribers in the topic you selected will receive a confirmation message. Only when they confirm the subscription can they receive alarm notifications.
 
