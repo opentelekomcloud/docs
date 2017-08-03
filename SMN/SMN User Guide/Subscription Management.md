@@ -14,7 +14,7 @@ You can create multiple topics and add multiple subscriptions to a topic. This s
 <li>In the navigation tree on the left, choose <b>Subscription</b>.</li>
 <li>Click <b>Add Subscription</b>.
 <dd>The <b>Add Subscription<b> page is displayed.</dd>
-<dd><b>Figure 1<b> Add Subscription<dd>
+<dd><b>Figure 1</b> Add Subscription<dd>
 <img src="figure/sub.png"/></li>
 <li>Specify the information required for adding a subscription.
 <ul><li>To add a subscription to an authorized topic, enter the topic URN in the <b>Topic URN</b> box.</li>
@@ -47,21 +47,21 @@ You can create multiple topics and add multiple subscriptions to a topic. This s
                   <li><b>+4900000000</b></li>                                                                                                                                                                                                                     
                   <li><b>+4900000001</b></li>                                                                                                                                                                                                                      
                   <li><b>+4900000002</b></li>                                                                                                                                                                                                                     
-                  <li><b>+4900000003</b></li></dd>
-                  </ul>
+                  <li><b>+4900000003</b></li>
+                  </ul></dd>
              </li>                                                                                                                                                                                                                         
               <li><b>Email</b>: Enter one or more email addresses.                                                                                           
                   <dd>For example:                                                                                                                                                                                                                        
                   <ul>
-                  <li><b>username@example.com</b>></li>                                                                                                                                                                                                            
-                  <li><b>username2@example.com</b></li></dd>
-                  </ul>
+                  <li><b>username@example.com</b></li>                                                                                                                                                                                                            
+                  <li><b>username2@example.com</b></li>
+                  </ul></dd>
               </li>                                                                                                                                                                                                                
               <li><b>HTTP</b> or <b>HTTPS</b>: Enter one or more public network URLs.                                                                                                                                                                           
 	              <dd>For example:                                                                                                                                                                                                                      
 	              <ul>
-				  <li><a href="http://example.com/notification/action">http://example.com/notification/action</a></li>                                                                                                                                                                                             
-	              <li><a href="http://example2.com/notification/action">http://example2.com/notification/action</a></li></dd>
+		<li><a href="http://example.com/notification/action">http://example.com/notification/action</a></li>                    
+		<li><a href="http://example2.com/notification/action">http://example2.com/notification/action</a></li></dd>
 				 </ul>
              </li>
 			</ul>   
@@ -82,19 +82,15 @@ You can send a subscription confirmation message to one or more subscription end
 
 To send a confirmation message to one subscription endpoint, perform the following steps:
 
-1.  In the subscription list, select a subscription whose status is **Unconfirmed**.
-
-2.  Click **Request Confirmation** under **Operation** to send a confirmation message.
-
-3.  The subscriber confirms the subscription.
+<ol><li>In the subscription list, select a subscription whose status is <b>Unconfirmed</b>.</li>
+<li>Click <b>Request Confirmation</b> under <b>Operation</b> to send a confirmation message.</li>
+<li>The subscriber confirms the subscription.</li></ol>
 
 To send a confirmation message to multiple subscription endpoints, perform the following steps:
 
-1.  In the subscription list, select subscriptions whose statuses are **Unconfirmed**.
-
-2.  Click **Request Confirmation** above the subscription list to send confirmation messages.
-
-3.  The subscribers confirm the subscription.
+<ol><li>In the subscription list, select subscriptions whose statuses are <b>Unconfirmed</b>.</li>
+<li>Click <b>Request Confirmation</b> above the subscription list to send confirmation messages.</li>
+<li>The subscribers confirm the subscription.</li></ol>
 
 If a subscriber does not receive the confirmation message, you can request confirmation again. For details about how many confirmation messages you can send to one subscriber, see section <a href="Traffic Control on Subscription Confirmation.md">Traffic Control on Subscription Confirmation</a>.
 
@@ -104,15 +100,13 @@ If you do not want to push messages to a subscription endpoint any more, you can
 
 To delete a single subscription, perform the following steps:
 
-1.  In the subscription list, select the subscription to be deleted.
-
-2.  Click **Delete** under **Operation** to delete the subscription.
+<ol><li>In the subscription list, select the subscription to be deleted.</li>
+<li>Click <b>Delete</b> under <b>Operation</b> to delete the subscription.</li></ol>
 
 To delete multiple subscriptions, perform the following steps:
 
-1.  In the subscription list, select the subscriptions to be deleted.
-
-2.  Click **Delete** above the subscription list.
+<ol><li>In the subscription list, select the subscriptions to be deleted.</li>
+<li>Click <b>Delete</b> above the subscription list.</li></ol>
 
 ### Confirming and Canceling a Subscription by the Subscriber
 
