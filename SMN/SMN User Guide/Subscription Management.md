@@ -10,7 +10,7 @@ You can create multiple topics and add multiple subscriptions to a topic. This s
 
 1.  Log in to the management console.
 
-2.  Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
+2.  Click ![](figure/001.png). Under **Application**, click **Simple Message Notification**.
 
 	The **Simple Message Notification** page is displayed.
 
@@ -22,13 +22,13 @@ You can create multiple topics and add multiple subscriptions to a topic. This s
 
 	**Figure 1** Add Subscription
 
-	![](./figure/sub.png)
+	![](figure/sub.png)
 
 1.  Specify the information required for adding a subscription.
 
 	To add a subscription to an authorized topic, enter the topic URN in the **Topic URN** box.
 
-	To add a subscription to a topic you created, click ![](./media/plus.png) beside the **Topic URN** box to select a topic URN.
+	To add a subscription to a topic you created, click ![](figure/plus.png) beside the **Topic URN** box to select a topic URN.
 
 	After you specify the topic, the topic name is displayed under the **Topic URN** box. Specify the subscription protocol and endpoint.
 
@@ -73,8 +73,8 @@ You can create multiple topics and add multiple subscriptions to a topic. This s
               <li><b>HTTP</b> or <b>HTTPS</b>: Enter one or more public network URLs.                                                                                                                                                                           
 	              <dd>For example:                                                                                                                                                                                                                      
 	              <ul>
-				  <li><b>http://example.com/notification/action</b></li>                                                                                                                                                                                             
-	              <li><b>http://example2.com/notification/action</b></li></dd>
+				  <li><a href="http://example.com/notification/action">http://example.com/notification/action</a></li>                                                                                                                                                                                             
+	              <li><a href="http://example2.com/notification/action">http://example2.com/notification/action</a></li></dd>
 				 </ul>
              </li>
 			</ul>   
@@ -87,11 +87,11 @@ You can create multiple topics and add multiple subscriptions to a topic. This s
 
 	The subscription you added is displayed in the subscription list. SMN automatically sends a confirmation message to the subscription endpoint, and the subscriber must confirm the subscription within 48 hours so that they can receive notification messages. Otherwise, you need to send a new confirmation message to the subscriber.
 
-	![](./figure/notice.png)
+	![](figure/notice.png)
 
 
 <ol>
-<li>To prevent a malicious user from attacking subscription endpoints, SMN limits the number of confirmation messages that can be sent to an endpoint within a specified period of time. For details, see section <a href="Traffic Control on Subscription Confirmation">Traffic Control on Subscription Confirmation.</a></li>
+<li>To prevent a malicious user from attacking subscription endpoints, SMN limits the number of confirmation messages that can be sent to an endpoint within a specified period of time. For details, see section <a href="Traffic Control on Subscription Confirmation.md">Traffic Control on Subscription Confirmation.</a></li>
 <li>SMN does not check whether a subscription endpoint exists when you add a subscription. However, a subscriber can receive notification messages only when they confirm the subscription.</li>
 <li>The token is valid only for 48 hours. Therefore, the subscriber must confirm the subscription within that time.</li>
 
@@ -115,7 +115,7 @@ To send a confirmation message to multiple subscription endpoints, perform the f
 
 3.  The subscribers confirm the subscription.
 
-If a subscriber does not receive the confirmation message, you can request confirmation again. For details about how many confirmation messages you can send to one subscriber, see section <a href="Traffic Control on Subscription Confirmation">Traffic Control on Subscription Confirmation</a>.
+If a subscriber does not receive the confirmation message, you can request confirmation again. For details about how many confirmation messages you can send to one subscriber, see section <a href="Traffic Control on Subscription Confirmation.md">Traffic Control on Subscription Confirmation</a>.
 
 ### Deleting a Subscription
 
@@ -143,7 +143,7 @@ To subscribe to the topic, the subscriber needs to confirm the subscription base
 
 - Email: SMN sends a confirmation message to the specified email address, and the subscriber clicks the link in the email to confirm the subscription.
 
-- HTTP/HTTPS: SMN sends a confirmation message to the specified URL. The confirmation link is contained in the message body. For details about the confirmation message header and body, see section <a href="HTTP/HTTPS Message">HTTP/HTTPS Message</a>.
+- HTTP/HTTPS: SMN sends a confirmation message to the specified URL. The confirmation link is contained in the message body. For details about the confirmation message header and body, see section <a href="HTTPHTTPS Message.md">HTTP/HTTPS Message</a>.
 
 After successfully subscribing to a topic, the subscriber can choose to cancel the subscription in the following ways based on the subscription protocol:
 
@@ -151,5 +151,5 @@ After successfully subscribing to a topic, the subscriber can choose to cancel t
 
 - Email: SMN encloses an unsubscription link in an email notification message. The subscriber can cancel the subscription by clicking the link. After the subscriber canceled the subscription successfully, SMN re-sends a subscription confirmation email, which is valid within 48 hours, so that the subscriber can re-subscribe to the topic if they have clicked the unsubscription link by mistake.
 
-- HTTP/HTTPS: SMN provides an unsubscription link in the HTTP/HTTPS message body. The subscriber can cancel the subscription by clicking the link. If the subscriber cancels the subscription successfully, the system returns a **200** code over HTTP and re-sends the subscriber a subscription confirmation message, which is valid within 48 hours, in case that the subscriber has clicked the unsubscription link by mistake. For details about the HTTP/HTTPS message header and body, see section <a href="HTTP/HTTPS Message">HTTP/HTTPS Message</a>.
+- HTTP/HTTPS: SMN provides an unsubscription link in the HTTP/HTTPS message body. The subscriber can cancel the subscription by clicking the link. If the subscriber cancels the subscription successfully, the system returns a **200** code over HTTP and re-sends the subscriber a subscription confirmation message, which is valid within 48 hours, in case that the subscriber has clicked the unsubscription link by mistake. For details about the HTTP/HTTPS message header and body, see section <a href="HTTPHTTPS Message.md">HTTP/HTTPS Message</a>.
  
