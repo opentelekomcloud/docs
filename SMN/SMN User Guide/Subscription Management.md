@@ -13,7 +13,7 @@ You can create multiple topics and add multiple subscriptions to a topic. This s
 <dd>The <b>Simple Message Notification</b> page is displayed.</dd></li>
 <li>In the navigation tree on the left, choose <b>Subscription</b>.</li>
 <li>Click <b>Add Subscription</b>.
-<dd>The <b>Add Subscription<b> page is displayed.</dd>
+<dd>The <b>Add Subscription</b> page is displayed.</dd>
 <dd><b>Figure 1</b> Add Subscription<dd>
 <img src="figure/sub.png"/></li>
 <li>Specify the information required for adding a subscription.
