@@ -9,7 +9,7 @@ You can create multiple topics and add multiple subscriptions to a topic. This s
 ### Adding a Subscription
 <ol>
 <li>Log in to the management console.</li>
-<li>Click <image="figure/001.png">. Under <b>Application</b>, click <b>Simple Message Notification</b>.
+<li>Click <img src="figure/001.png"/>. Under <b>Application</b>, click <b>Simple Message Notification</b>.
 <dd>The <b>Simple Message Notification</b> page is displayed.</dd></li>
 <li>In the navigation tree on the left, choose <b>Subscription</b>.</li>
 <li>Click <b>Add Subscription</b>.
