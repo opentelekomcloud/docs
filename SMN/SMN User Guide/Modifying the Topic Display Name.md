@@ -8,7 +8,7 @@ You can modify the display name of the topic you created.
 
 1.  Log in to the management console.
 
-2.  Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
+2.  Click ![](figure/001.png). Under **Application**, click **Simple Message Notification**.
 
 	The **Simple Message Notification** page is displayed.
 
@@ -18,7 +18,7 @@ You can modify the display name of the topic you created.
 
 1.  Select a topic, click **More** under **Operation**, and select **Modify Display Name**.
 
-	![](./figure/note.png)
+	![](figure/note.png)
 
 	The topic display name is presented as the name of the email sender when you push an email message.
 
