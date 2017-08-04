@@ -26,7 +26,7 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 	Select **JSON** for **Message Type** and manually type the JSON message in the **Message** box or click **Generate JSON Message** to generate the message. The total size of a JSON message cannot exceed 256 KB.
 
-	- If you choose to manually type the JSON message, see section <a href="JSON Message Format for detailed requirements.md">JSON Message Format for detailed requirements</a>.
+	- If you choose to manually type the JSON message, see section <a href="JSON Message Format.md">JSON Message Format</a> for detailed requirements.
 
 	- If you choose to automatically generate the JSON message, perform operations in steps <a href="#6">6</a> to <a href="#9">9</a>.
 
