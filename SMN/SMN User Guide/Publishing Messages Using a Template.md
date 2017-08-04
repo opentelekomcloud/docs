@@ -48,7 +48,7 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 	Select **Template** for **Message Type** and manually type the template content in the **Message** box or click **Generate Message Template** to generate the template content. The template message content cannot exceed 256 KB.
 
-	- If you choose to manually type the template message, see section <a href="Template Message Format for detailed requirements.md">Template Message Format for detailed requirements</a>.
+	- If you choose to manually type the template message, see section <a href="Template Message Format.md">Template Message Format</a> for detailed requirements.
 
 	- If you choose to automatically generate the template message, perform operations in steps <a href="#6">6</a> to <a href="#9">9</a>.
 
