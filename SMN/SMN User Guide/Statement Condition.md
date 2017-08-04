@@ -18,7 +18,7 @@ In a topic policy statement, if a condition contains multiple condition operatio
 
 **Figure 1** Condition logic
 
-![](./figure/condition.png)
+![](figure/condition.png)
 
 ### Condition Evaluation Rules
 
@@ -28,7 +28,7 @@ Only when all conditions in a statement are met, the statement operation can tak
 
 <a href="#table1">Table 1</a> lists the elements in a condition.
 
-<a name="table1>"**Table 1** Condition elements</a>
+<a name="table1">**Table 1** Condition elements</a>
 	<table>
     <tr>
        <th>Item</th>
