@@ -12,9 +12,9 @@ After you receive an HTTP/HTTPS message, the system verifies the message in the 
 
 2.  Download the X509 certificate based on the certificate URL (**signing\_cert\_url**) contained in the message.
 
-![](./figure/note.png)
+              ![](figure/note.png)
 
-The certificate downloading URL uses HTTPS and is verified when accessed.
+               The certificate downloading URL uses HTTPS and is verified when accessed.
 
 1.  Extract the public key from the X509 certificate for verifying the message reliability and integrity.
 
