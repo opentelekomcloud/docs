@@ -8,7 +8,7 @@ After you create a topic, the system generates a topic URN, which uniquely ident
 
 1.  Log in to the management console.
 
-2.  Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
+2.  Click ![](figure/001.png). Under **Application**, click **Simple Message Notification**.
 
 	The **Simple Message Notification** page is displayed.
 
@@ -24,13 +24,13 @@ After you create a topic, the system generates a topic URN, which uniquely ident
 
 	**Figure 1** Topic URN
 
-	![](./figure/urn.png)
+	![](figure/urn.png)
 
 ### Obtaining the Subscription List of a Topic
 
 1.  Log in to the management console.
 
-2.  Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
+2.  Click ![](figure/001.png). Under **Application**, click **Simple Message Notification**.
 
 	The **Simple Message Notification** page is displayed.
 
