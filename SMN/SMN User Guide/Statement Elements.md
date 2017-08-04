@@ -39,7 +39,7 @@
          <td>Action</td>
          <td>Statement actions
 				<dd>You can use a wildcard character to configure a type of actions, for example, <b>SMN:Update * </b> and <b>SMN:Delete * </b>. </dd>                                                                                                                                <dd>If you only enter an asterisk (*) in the statement, all supported actions will take effect.</dd></td>
-		 <td>Either <b>Action</b> or <b>NotAction</b>must be configured.
+		 <td>Either <b>Action</b> or <b>NotAction</b>must be configured.</dd>
 				<dd>The following actions are supported: 
 				<ul>
 				<li>SMN:UpdateTopic </li>                                                                                                                                                                                                            <li>SMN:DeleteTopic </li>
@@ -51,8 +51,8 @@
 				<li>SMN:ListSubscriptionsByTopic </li>
 				<li>SMN:Subscribe </li>
 				<li>SMN:Unsubscribe  </li>
-				<li>SMN:Publish </li></dd>
-				</ul>
+				<li>SMN:Publish </li>
+				</ul></dd>
 				For details about mappings between the operations and APIs, see Table 1 in section <a href="Mappings Between SMN Operations and APIs.md">Mappings Between SMN Operations and APIs</a>. 
 		</td>
 		<tr>
