@@ -1,6 +1,6 @@
 ## Sample Code
 
-Verify **signing\_cert\_url**, **signature** (obtained in *HTTP/HTTPS Message Format*), and **message** (contained in the message signature) to check the message validity, as shown in the following:
+Verify **signing\_cert\_url**, **signature** (obtained in <a href="HTTPHTTPS Message Format.md">HTTP/HTTPS Message Format</a>), and **message** (contained in the message signature) to check the message validity, as shown in the following:
 
     private static void isMessageValid(String signing_cert_url, String signature, Map<String, String> message) {
 	     InputStream in = null;
