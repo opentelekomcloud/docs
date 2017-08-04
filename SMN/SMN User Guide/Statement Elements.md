@@ -53,7 +53,7 @@
 				<li>SMN:Unsubscribe  </li>
 				<li>SMN:Publish </li></dd>
 				</ul>
-				For details about mappings between the operations and APIs, see Table 1 in section <a href="Mappings Between SMN Operations and APIs">Mappings Between SMN Operations and APIs</a>. 
+				For details about mappings between the operations and APIs, see Table 1 in section <a href="Mappings Between SMN Operations and APIs.md">Mappings Between SMN Operations and APIs</a>. 
 		</td>
 		<tr>
          <td>NotAction</td>
@@ -73,7 +73,7 @@
 				<li>SMN:Unsubscribe  </li>
 				<li>SMN:Publish </li>
 				</ul></dd>
-				For details about mappings between the operations and APIs, see Table 1 in section <a href="Mappings Between SMN Operations and APIs">Mappings Between SMN Operations and APIs</a>. 
+				For details about mappings between the operations and APIs, see Table 1 in section <a href="Mappings Between SMN Operations and APIs.md">Mappings Between SMN Operations and APIs</a>. 
 		</td>
      </tr>
 		<tr>
