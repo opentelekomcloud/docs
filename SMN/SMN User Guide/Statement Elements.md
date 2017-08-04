@@ -2,7 +2,7 @@
 
 ### Statement elements
 
-Table 1 Statement elements
+**Table 1** Statement elements
 	<table>
     <tr>
        <th>Element</th>
