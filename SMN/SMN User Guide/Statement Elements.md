@@ -23,8 +23,8 @@
          <td>Principal</td>
          <td>Object on which the statement takes effect.
 			<dd>Currently, only <b>CSP</b> and <b>Service</b> are supported.                                                                                                                                                                                   
-                <ul><li><b>CSP</b> indicates cloud users.</li>                                                                                                                                                                                                              
-                <li><b>Service</b> indicates cloud services.</li></ul></dd>    
+			<ul><li><b>CSP</b> indicates cloud users.</li>
+			<li><b>Service</b> indicates cloud services.</li></ul></dd>    
 			</td>
 		 <td>Either<b>Principal</b>or <b>NotPrincipal</b> must be configured.<dd>If you enter <b>CSP</b>, you must specify the user information in <b>urn:csp:iam::domainId:root</b>format. You need to obtain the domain IDs of users you specify.                                                                                                                                         If you enter <b>Service</b>, you must specify the cloud service names in lower case. </dd></td>
      </tr>
