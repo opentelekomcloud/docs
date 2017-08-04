@@ -13,7 +13,7 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 1.  Log in to the management console.
 
-2.  Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
+2.  Click ![](figure/001.png). Under **Application**, click **Simple Message Notification**.
 
 	The **Simple Message Notification** page is displayed.
 
@@ -42,7 +42,7 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
                   <li><b>Text</b>: common text message </li>                                                                                                                                                                                                                     
                   <li><b>JSON</b>: JSON message</li>                                                                                                                                                                                                                      
                   <li><b>Template</b>: template message                                                                                                                                                                                                                  
-                  <dd>For details about the message template, see section <a href="Message Template Management">Message Template Management.</a></dd></li> 
+                  <dd>For details about the message template, see section <a href="Message Template Management.md">Message Template Management.</a></dd></li> 
                   </ul>                                                                                                                                                                   
          </td>
      </tr>
@@ -57,7 +57,7 @@ Subscribers of the topic have confirmed the subscription, or they will not be ab
 
 	**Figure 1** Text message example
  
-    ![](./figure/text.png)
+    ![](figure/text.png)
 
 1.  Click **OK**.
 
