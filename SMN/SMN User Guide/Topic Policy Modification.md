@@ -48,7 +48,7 @@ The topic creator has the right to modify the topic policy.
      </tr>
 	<tr>
 		 <td>Only the following users</td>
-       	 <td>You can specify a user in <b>urn:csp:iam::domainId:root</b> format. When multiple users are entered, separate every two with a comma (,).<dd>SMN does not limit the number of users you can specify, but the total length of the topic policy cannot exceed 30 KB.You only need to enter the domain ID of the user and click <b>OK</b>.</dd> <dd>The system completes all other required information for you.</dd> <dd>For details about obtaining the domain ID, see <a href="Obtaining a User's Domain ID">Obtaining a User's Domain ID</a>.</dd>                                                                                                                                                              <dd>Configurations in the basic mode are also presented in the advanced mode. You can modify them in the advanced mode if necessary. </dd>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <dd>Topic creators always have the highest operation permissions over a topic even if they grant topic permissions to other users. </dd></td>
+       	 <td>You can specify a user in <b>urn:csp:iam::domainId:root</b> format. When multiple users are entered, separate every two with a comma (,).<dd>SMN does not limit the number of users you can specify, but the total length of the topic policy cannot exceed 30 KB.You only need to enter the domain ID of the user and click <b>OK</b>.</dd> <dd>The system completes all other required information for you.</dd> <dd>For details about obtaining the domain ID, see <a href="#domain">Obtaining a User's Domain ID</a>.</dd>                                                                                                                                                              <dd>Configurations in the basic mode are also presented in the advanced mode. You can modify them in the advanced mode if necessary. </dd>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <dd>Topic creators always have the highest operation permissions over a topic even if they grant topic permissions to other users. </dd></td>
      </tr>
      <tr>
          <td>Services that can publish messages</td>
@@ -61,11 +61,11 @@ The topic creator has the right to modify the topic policy.
      <tr>
          <td>Advanced</td>
          <td>Users who can perform specified operations on a topic</td>
-		 <td>Policy language <dd>For details, see section <a href="Configuring Conditions in a Topic Policy.md">Configuring Conditions in a Topic Policy</a>.</td>
+		 <td>Policy language <dd>For details, see section <a href="Topic Policy.md">Topic Policy</a>.</td>
        	 <td>The advanced mode provides a more flexible topic policy.</td>
      </tr>
      </table>   
-### Obtaining a User's Domain ID
+### <a name="domain">Obtaining a User's Domain ID</a>
 
 1.  Log in to the management console.
 
