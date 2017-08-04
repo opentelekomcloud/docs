@@ -13,7 +13,7 @@ This section describes how you can publish messages using a template.
 
 1.  Log in to the management console.
 
-2.  Click ![](./figure/001.png). Under **Application**, click **Simple Message Notification**.
+2.  Click ![](figure/001.png). Under **Application**, click **Simple Message Notification**.
 
 	The **Simple Message Notification** page is displayed.
 
@@ -25,7 +25,7 @@ This section describes how you can publish messages using a template.
 
 	**Figure 1** Create Message Template
 
-	![](./figure/tem.png)
+	![](figure/tem.png)
 
 1.  Specify the template name, protocol, and content.
 
