@@ -8,14 +8,14 @@ To ensure message security, SMN provides signature authentication for HTTP/HTTPS
 
 After you receive an HTTP/HTTPS message, the system verifies the message in the following procedure:
 
-<ul><li>Verify the key field values (vary depending on the message type) contained in the message signature.</li>
+<ol><li>Verify the key field values (vary depending on the message type) contained in the message signature.</li>
 
 <li>Download the X509 certificate based on the certificate URL (<b>signing\_cert\_url</b>) contained in the message.
-<dd><img src="figure/note.png"/>
-The certificate downloading URL uses HTTPS and is verified when accessed.</dd></li>
+<dd><img src="figure/note.png"/></dd>
+<dd>The certificate downloading URL uses HTTPS and is verified when accessed.</dd></li>
 <li>Extract the public key from the X509 certificate for verifying the message reliability and integrity.</li>
 <li>Determine the method to verify the certificate signature based on the message type (<b>type</b> in the message).</li>
-<li>Create signature strings. Obtain the signature parameters from the message and sort them in the alphabet sequence. Each parameter occupies a line, with its value following in the next line.</li>
+<li>Create signature strings. Obtain the signature parameters from the message and sort them in the alphabet sequence. Each parameter occupies a line, with its value following in the next line.</li></ol>
 
 ### Signature Strings for Specified Message Types
 
