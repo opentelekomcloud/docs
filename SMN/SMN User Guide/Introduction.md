@@ -4,11 +4,11 @@
 
 Simple Message Notification (SMN) is a reliable and flexible large-scale message notification service. It greatly reduces system coupling and pushes messages to specified messaging destinations. SMN involves two roles: publisher and subscriber. A publisher creates messages and publishes them to a topic. A topic is a collection of messages and a logical access point, through which the publisher and the subscriber can interact with each other. SMN then delivers these messages to subscribers of the topic. A subscriber can be an email address, phone number, or application. After subscribing to a topic, the subscriber can receive messages over the specified protocol.
 
-Figure 1-1 shows the structure of SMN.
+Figure 1 shows the structure of SMN.
 
-**Figure 1-1** SMN structure
+**Figure 1** SMN structure
 
- ![](./figure/smn.png)
+ ![](figure/smn.png)
 
 ### Topic
 
