@@ -67,8 +67,8 @@ To send messages published to a topic to a subscription endpoint, you must add t
               <li><b>HTTP</b> or <b>HTTPS</b>: Enter one or more public network URLs.                                                                                                                                                                           
 	              <dd>For example:</dd>                                                                                                                                                                                                                           
 	              <ul>
-				  <li><b>http://example.com/notification/action</b></li>                                                                                                                                                                                             
-	              <li><b>http://example2.com/notification/action</b></li>
+				  <li><a href="http://example.com/notification/action"><b>http://example.com/notification/action</b></a></li>                                                                                                                                                                                             
+	              <li><a href="http://example2.com/notification/action"><b>http://example2.com/notification/action</b></a></li>
 				 </ul>
              </li>
 			</ul>   
