@@ -1,0 +1,23 @@
+//example
+//Fragments are unmerged multipart upload segments, please be careful to remove them before you confirm these segments would not be used again, OBS 3.0 will support lifecycle policy to remove these segments
+
+//list unmerged multipart upload segments 
+root@ecs-wei:~# s3cmd multipart s3://austin/
+s3://austin/
+Initiated       Path    Id
+2018-11-30T08:41:54.591Z        s3://austin/output20181122.txt  0000016763C80E9F0522E5706F59C962
+2018-11-30T08:42:06.783Z        s3://austin/output20181122.txt  0000016763C83E3F052067B8AEEB9B08
+2018-11-30T08:42:18.842Z        s3://austin/output20181122.txt  0000016763C86D5A052A3722FEB8603B
+//batch remove unmerged multipart upload segments 
+root@ecs-wei:~# python AbortMultipartUploads.py s3://austin/
+url:[s3://austin/output20181122.txt], uploadId:[0000016763C80E9F0522E5706F59C962]
+s3://austin/output20181122.txt
+url:[s3://austin/output20181122.txt], uploadId:[0000016763C83E3F052067B8AEEB9B08]
+s3://austin/output20181122.txt
+url:[s3://austin/output20181122.txt], uploadId:[0000016763C86D5A052A3722FEB8603B]
+s3://austin/output20181122.txt
+All multiuploads have been aborted.
+root@ecs-wei:~# s3cmd multipart s3://austin/
+s3://austin/
+Initiated       Path    Id
+root@ecs-wei:~#
