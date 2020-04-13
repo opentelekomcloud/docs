@@ -44,7 +44,7 @@ This section describes how to use an open-source Kafka client to access a Kafka 
 
         The following uses a Linux ECS as an example. For more information on how to install JDK and configure the environment variables for a Windows ECS, please search the Internet.
 
-    2.  Install JDK or JRE, and add the following lines to  **.bash\_profile**  in the home directory to configure the environment variables  **JAVA\_HOME **and  **PATH**:
+    2.  Install JDK or JRE, and add the following lines to  **.bash\_profile**  in the home directory to configure the environment variables  **JAVA\_HOME** and  **PATH**:
 
         ```
         export JAVA_HOME=/opt/java/jdk1.8.0_151 

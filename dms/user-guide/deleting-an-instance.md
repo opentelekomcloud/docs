@@ -44,6 +44,6 @@ Delete one or more Kafka premium instances at a time. With a few clicks on the D
 
 5.  Delete Kafka premium instances that failed to be created in either of the following ways:
     -   To delete all Kafka premium instances that failed to be created at once, click  **Clear Failed Instance**.
-    -   To delete a single Kafka premium instance that failed to be created, click  **Delete **in the same row as the chosen Kafka premium instance.
+    -   To delete a single Kafka premium instance that failed to be created, click  **Delete** in the same row as the chosen Kafka premium instance.
 
 

@@ -10,7 +10,7 @@ DMS queues incorporate the following concepts:
 
     Each message can contain up to 512 KB of data, including the message body and attributes.
 
--   Attributes** \(optional\)**
+-   Attributes \(optional\)
 
     Each message can optionally have one or more attributes. Each message attribute consists of a name and a value in the key-value format. Attributes are not part of the message body but are sent and retrieved along with it.
 
