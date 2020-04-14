@@ -1,37 +1,32 @@
 # Policy Language<a name="iam_01_0017"></a>
 
-This section describes the policy language specifications, including the policy structure, policy elements, example policies, and policy evaluation logic.
+## Policy Content<a name="section106463610252"></a>
 
-## Policy Structure<a name="section106463610252"></a>
+A fine-grained authorization policy consists of the policy version \(the  **Version**  field\) and authorization statement \(the  **Statement**  field\).
 
-A fine-grained authorization policy includes the policy version \(the **Version** field\) and statements \(the **Statement** field\).
+-   **Version**: Used to identify role-based access control \(RBAC\) policies and fine-grained policies.
+    -   **1.0**: RBAC policies, which are preset in the system and used to grant permissions of each service as a whole. After such a policy is granted to a user, the user has all permissions of the corresponding service.
+    -   **1.1**: Fine-grained policies, which enable more refined authorization based on service APIs. After such a policy is granted to a user, the user can only perform specific operations on the corresponding service. Fine-grained policies are classified into default and custom policies.
+        -   Default policies: Preset common permission sets to control read and administrator permissions of different services.
+        -   Custom policies: Permission sets created and managed by users as an extension and supplement of default policies. For example: A custom policy can be created to allow users only to modify ECS specifications.
 
--   The value of the **Version** field for custom policies is fixed at **1.1**.
--   The **Statement** field contains the **Effect** and **Action** elements. **Effect** indicates whether the policy allows or denies access. **Action** indicates authorization items.
 
-![](figures/en-us_image_0126272126.jpg)
 
-## Policy Elements<a name="section24920662173152"></a>
+-   **Statement**: Detailed information about a policy, containing the  **Effect**  and  **Action**  elements.
 
-The **Statement** field provides detailed information about a policy and contains the **Effect** and **Action** elements.
+    -   Effect
 
--   Effect
+        Valid values for Effect include Allow and Deny. In a custom policy that contains both Allow and Deny statements, the Deny statements take the precedence.
 
-    The value can be **Allow** and **Deny**. If both **Allow** and **Deny** are found in statements, the policy evaluation starts with Deny.
+    -   Action
 
--   Action
+        The value can be one or more resource authorization items.
 
-    The value can be one or more resource authorization items.
+        The value format is  _Service name_:_Resource type_:_Action_, for example,  **vpc:ports:create**.
 
-    The value format is *Service name*:*Resource type*:*Action*, for example, **vpc:ports:create**.
-
-    > ![](public_sys-resources/icon-note.gif) **NOTE:** 
-
-    > -   *Service name*: indicates the product name, such as **ecs**, **evs**, or **vpc**. Only lowercase letters are allowed.
-    > -   *Resource type* and *Action*: The values are case-insensitive, and the wildcard \(\*\) are allowed. A wildcard \(\*\) can represent all or part of information about resource types and actions for the specific service.
-    > -   Policies support only API-level authorization. You need to fill the **Action** field with the permissions in the API permissions table of the specific service. IAM then implements fine-grained authorization by calling the corresponding APIs in the table.
-
-        For details about the API permissions of each service, see:
+    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >-   _Service name_: indicates the product name, such as  **ecs**,  **evs**, or  **vpc**. Only lowercase letters are allowed.  
+    >-   _Resource type_  and  _Action_: The values are case-insensitive, and the wildcard \(\*\) are allowed. A wildcard \(\*\) can represent all or part of information about resource types and actions for the specific service.  
 
 
 ## Example Policies<a name="section44276331103751"></a>
@@ -40,28 +35,27 @@ The **Statement** field provides detailed information about a policy and contai
 
     ```
     {
-        "Version": "1.1",
-        "Statement": [
-            {
-                "Effect": "Allow",
-                "Action": [
-                    "ecs:servers:list",
-                    "ecs:servers:get",
-                    "ecs:serverVolumes:use",
-                    "ecs:diskConfigs:use",
-                    "ecs:securityGroups:use",
-                    "ecs:serverKeypairs:get",
-                    "ecs:serverKeypairs:use",
-                    "vpc:securityGroups:list",
-                    "vpc:securityGroups:get"'
-                    "vpc:securityGroupRules:get"'
-                    "vpc:networks:get"'
-                    "vpc:subnets:get"'
-                    "vpc:ports:get"'
-                    "vpc:routers:get"'
-                ]
-            }
-        ]
+          "Version": "1.1",
+          "Statement": [
+                {
+                      "Effect": "Allow",
+                      "Action": [
+                            "ecs:servers:list",
+                            "ecs:servers:get",
+                            "ecs:serverVolumes:use",
+                            "ecs:diskConfigs:use",
+                            "ecs:securityGroups:use",
+                            "ecs:serverKeypairs:get",
+                            "vpc:securityGroups:list",
+                            "vpc:securityGroups:get",
+                            "vpc:securityGroupRules:get",
+                            "vpc:networks:get",
+                            "vpc:subnets:get",
+                            "vpc:ports:get",
+                            "vpc:routers:get"
+                      ]
+                }
+          ]
     }
     ```
 
@@ -70,97 +64,52 @@ The **Statement** field provides detailed information about a policy and contai
     ```
     {
         "Version": "1.1",
-        "Statement": [
-            {
-                "Effect": "Allow",
-                "Action": [
-                    "ecs:servers:lock",
-                    "evs:volumes:create"
-                ]
-            }
-        ]
+          "Statement": [
+                {
+                      "Effect": "Allow",
+                      "Action": [
+                            "ecs:servers:lock",
+                            "evs:volumes:create"
+                      ]
+                }
+          ]
     }
     ```
 
--   The following example shows how to use the wildcard \(\*\) in a policy, which defines the **Tenant Guest** permission for ECS resources.
-
-    > ![](public_sys-resources/icon-note.gif) **NOTE:** 
-
-    > To grant the **Tenant Guest** permission for ECS, you must also grant this permission for EVS, VPC, and IMS.
+-   The following example shows how to use the wildcard \(\*\) to define all permissions on Image Management Service \(IMS\) resources.
 
     ```
-    > {
-    >     "Version": "1.1",
-    >     "Statement": [
-    >         {
-    >             "Effect": "Allow",
-    >             "Action": [
-    >                 "ecs:*:get",
-    >                 "ecs:*:list",
-    >                 "ecs:serverGroups:manage",
-    >                 "evs:*:get",
-    >                 "evs:*:list",
-    >                 "vpc:*:get",
-    >                 "vpc:*:list",
-    >                 "ims:*:get",
-    >                 "ims:*:list"
-    >             ]
-    >         }
-    >     ]
-    > }
+    {
+            "Version": "1.1",
+            "Statement": [
+                    {
+                            "Action": [
+                                    "ims:*:*",
+                                    "ecs:*:list",
+                                    "ecs:*:get",
+                                    "evs:*:get"
+                            ],
+                            "Effect": "Allow"
+                    }
+            ]
+    }
     ```
 
 
-## Policy Syntax<a name="section1479310270352"></a>
+-   
+## Authentication Logic<a name="section565017773111"></a>
 
-A policy can be verified only when its syntax is correct. The following policy is used as an example:
+IAM authenticates users according to the permissions that have been granted to them. The authentication logic is as follows:
 
-```
-Policy = {
-<version_block>,
-<statement_block>
-}
+**Figure  1**  Authentication logic<a name="fig4148178111014"></a>  
+![](figures/authentication-logic.png "authentication-logic")
 
-<version_block> = "Version" : "1.1"
+>![](public_sys-resources/icon-note.gif) **NOTE:**   
+>The actions in each policy bear the OR relationship.  
 
-<statement_block> = "Statement": [<statement>,<statement>, ...]
-
-<statement> = {
-<effect_block>,
-<action_block>
-}
-
-<effect_block> = "Effect" : ("Allow" | "Deny")
-
-<action_block> = "Action": ("*" | [<action_string>, <action_string>,...])
-```
-
--   If an element allows multiple values, it is indicated using repeated values, a comma delimiter, and an ellipsis \(...\). Example: **\[<statement\>,<statement\>, ...\]** or **\[<action\_string\>, <action\_string\>,...\]**
--   A vertical bar \(|\) between elements indicates alternatives. Example: **\("Allow" | "Deny"\)**
--   If the value of an element is a number, the value must be enclosed in double quotation marks \("\). Example: **<version\_block\> = "Version" : "1.1"**
--   If the value of an element is a string, the wildcard \(\*\) can be used to represent zero or more letters for fuzzy match.
-
-For more information about the syntax of the JSON policy language, visit:
-
-[https://tools.ietf.org/html/rfc7159?spm=a2c4g.11186623.2.12.M8YmXV](https://tools.ietf.org/html/rfc7159?spm=a2c4g.11186623.2.12.M8YmXV)
-
-## Policy Evaluation Logic<a name="section565017773111"></a>
-
-A policy may consist of multiple statements. If both **Allow** and **Deny** are found in statements, the policy evaluation starts with Deny.
-
-When users make a request for accessing resources, the policy evaluation starts. The following figure shows the policy evaluation logic.
-
-**Figure 1** Policy evaluation logic<a name="fig11089053175940"></a>
-![](figures/policy-evaluation-logic.png "Policy evaluation logic")
-
-> ![](public_sys-resources/icon-note.gif) **NOTE:** 
-
-> Multiple actions in each policy bear the OR relationship.
-
-1.  When a user makes a request, the evaluation starts.
-2.  IAM evaluates all policies that are applicable to the request. In all those policies, IAM looks for an explicit deny instruction. If IAM finds even one explicit deny that applies, it returns a decision of Deny and the evaluation ends.
-3.  If no explicit deny is found, IAM looks for any Allow instructions that would apply to the request.
-    -   If it finds even one explicit allow, it returns a decision of Allow and the service continues to process the request.
-    -   If no explicit allow is found, the final decision is Deny.
-4.  If the code encounters an error at any point during the evaluation, it will generate an exception and close.
+1.  A user accesses the system and initiates an operation request.
+2.  IAM evaluates all the access policies that have been granted to the user.
+3.  In these policies, IAM looks for explicit deny instructions. If IAM finds an explicit deny that applies, it returns a decision of Deny, and the authentication ends.
+4.  If no explicit deny is found, IAM looks for Allow instructions that would apply to the request. If IAM finds an explicit permit that applies, it returns a decision of Allow, and the authentication ends.
+5.  If no explicit permit is found, IAM returns a decision of Deny, and the authentication ends.
 
