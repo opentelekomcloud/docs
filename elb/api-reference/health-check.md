@@ -6,6 +6,6 @@
 
 -   **[Modifying a Health Check](modifying-a-health-check.md)**  
 
--   **[Querying Health Check Details](querying-health-check-details.md)**  
+-   **[Querying Details of a Health Check](querying-details-of-a-health-check.md)**  
 
 

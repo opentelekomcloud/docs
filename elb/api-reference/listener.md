@@ -6,7 +6,7 @@
 
 -   **[Modifying a Listener](modifying-a-listener.md)**  
 
--   **[Querying Listener Details](querying-listener-details.md)**  
+-   **[Querying Details of a Listener](querying-details-of-a-listener.md)**  
 
 -   **[Querying Listeners](querying-listeners.md)**  
 
