@@ -21,5 +21,4 @@
     -   [Status Code](status-code.md)
     -   [Error Codes](error-codes.md)
 
--   [Change History](change-history.md)
 
