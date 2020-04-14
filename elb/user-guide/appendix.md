@@ -1,5 +1,5 @@
-# Appendix<a name="en-us_elb_06_0000"></a>
+# Appendix<a name="EN-US_TOPIC_0098947026"></a>
 
--   **[Configure the TOA Plug-in](configure-the-toa-plug-in.md)**  
+-   **[Configuring the TOA Plug-in](configuring-the-toa-plug-in.md)**  
 
 

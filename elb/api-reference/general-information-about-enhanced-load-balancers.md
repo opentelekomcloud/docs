@@ -1,6 +1,6 @@
 # General Information About Enhanced Load Balancers<a name="EN-US_TOPIC_0109430487"></a>
 
-The following sections apply only to enhanced load balancers.
+The following information applies only to enhanced load balancers.
 
 -   **[Querying Data in Pages](querying-data-in-pages.md)**  
 

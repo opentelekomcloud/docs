@@ -1,23 +1,38 @@
-# Application Scenarios<a name="en-us_elb_01_0009"></a>
+# Application Scenarios<a name="EN-US_TOPIC_0093312312"></a>
 
--   High Traffic Services
+## High-Traffic Business<a name="section747414212515"></a>
 
-    For services with high volume of traffic, such as large portals and mobile application stores, ELB evenly distributes the access traffic to multiple backend ECSs. The sticky session feature ensures that requests from the same client are forwarded to the same backend ECS, improving the access efficiency.
+For business with high volume of traffic, ELB evenly distributes incoming traffic to multiple backend servers, for example, large portals and mobile app stores.
 
--   Services with Significant Traffic Peaks
+You can also enable sticky sessions to ensure that requests from the same client are routed to the same backend server during a session. This improves the access efficiency.
 
-    ELB automatically scales its request handling capacity according to the incoming traffic. Deep integration with AS enables ELB to automatically add or remove backend ECSs, improving the service flexibility. This makes ELB ideal for services that have significant traffic peaks, such as e-commerce websites, mobile games, and live websites.
+**Figure  1**  Session stickiness<a name="fig145320429220"></a>  
+![](figures/session-stickiness.png "session-stickiness")
 
--   SPOF Elimination
+## Business with Significant Traffic Peaks<a name="section1151610117243"></a>
 
-    ELB routinely performs health checks on backend ECSs to monitor their healthy state. If a backend ECS becomes faulty, ELB automatically distributes incoming requests to healthy backend ECSs, ensuring service continuity.
+For business that has significant traffic peaks, integration with AS enables backend servers can be added or removed to keep up with business needs, improving resource utilization. An example is flash sale, which usually lasts for only a few days or even several hours and during which demand on your applications increases rapidly in a short period. To handle the demand, you may need additional servers, which will cost a lot. By combining ELB with AS, you can always run desired number of backend servers.
 
-    This makes ELB the right choice for services that require high reliability, such as official websites, toll collection systems, and common web services.
+**Figure  2**  Flexible expansion<a name="fig1927134415176"></a>  
+![](figures/flexible-expansion.png "flexible-expansion")
 
--   Cross-AZ Load Balancing
+## SPOF Elimination<a name="section430324872511"></a>
 
-    ELB can distribute traffic across AZs. If an AZ becomes faulty, ELB distributes the traffic to backend ECSs in other AZs that are running properly.
+ELB periodically performs health checks on backend servers to monitor their health status. If a backend server is considered unhealthy, ELB routes incoming traffic to other healthy ones, ensuring service continuity.
 
-    Banking, policing, and large application systems can use ELB to ensure high service availability.
+This makes ELB a good choice for services that require high reliability, such as official websites, toll collection systems, and web services.
 
+**Figure  3**  Eliminating SPOFs<a name="fig158310309337"></a>  
+![](figures/eliminating-spofs.png "eliminating-spofs")
+
+## Cross-AZ Load Balancing<a name="section220419419265"></a>
+
+Cross-AZ Load Balancing
+
+ELB can distribute traffic across AZs. When an AZ becomes faulty, ELB distributes traffic to backend servers in other AZs that are running properly.
+
+Banking, policing, and large application systems that require high availability can use ELB to achieve this.
+
+**Figure  4**  Traffic distribution to servers in one or more AZs<a name="fig539117712156"></a>  
+![](figures/traffic-distribution-to-servers-in-one-or-more-azs.png "traffic-distribution-to-servers-in-one-or-more-azs")
 
