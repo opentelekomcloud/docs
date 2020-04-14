@@ -1,25 +1,25 @@
 # User Guide
 
--   [Introduction]
+-   Introduction
     -   [Functions](functions.md)
     -   [Region and AZ](region-and-az.md)
     -   [Project](project.md)
     -   [Application Scenarios](application-scenarios.md)
-    -   [Accessing and Using Anti-DDoS]
+    -   Accessing and Using Anti-DDoS
         -   [How to Access Anti-DDoS](how-to-access-anti-ddos.md)
         -   [How to Use Anti-DDoS](how-to-use-anti-ddos.md)
         -   [Related Services](related-services.md)
         -   [User Permissions](user-permissions.md)
 
 
--   [Operation Guide]
+-   Operation Guide
     -   [Enabling Anti-DDoS](enabling-anti-ddos.md)
     -   [Enabling Alarm Notification](enabling-alarm-notification.md)
     -   [Adjusting Security Settings](adjusting-security-settings.md)
     -   [Viewing a Monitoring Report](viewing-a-monitoring-report.md)
     -   [Viewing an Interception Report](viewing-an-interception-report.md)
 
--   [FAQs]
+-   FAQs
     -   [What Is Anti-DDoS?](what-is-anti-ddos.md)
     -   [What Services Can Anti-DDoS Protect?](what-services-can-anti-ddos-protect.md)
     -   [How Do I Use Anti-DDoS?](how-do-i-use-anti-ddos.md)
