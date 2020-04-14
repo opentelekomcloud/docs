@@ -1,8 +1,8 @@
-# SNAT<a name="en-us_topic_0051191229"></a>
+# SNAT<a name="vpc_Concepts_0004"></a>
 
-Besides requiring services provided by the system, some ECSs also need to access the Internet to obtain information or download software. The public cloud system allows users to bind EIPs \(public IP addresses\) to virtual NICs \(ports\) of ECSs to enable the ECSs to access the Internet. However, assigning a public IP address to each ECS consumes already-limited IPv4 addresses, incurs additional costs, and may increase the attack surface for a virtual environment. Therefore, enabling multiple ECSs to share one public IP address is a preferable and feasible method. This can be done using SNAT.
+In addition to services provided by the system, some ECSs need to access the Internet to obtain information or download software. You can bind EIPs to virtual NICs \(ports\) of ECSs to enable the ECSs to access the Internet. However, assigning a public IP address to each ECS consumes already-limited IPv4 addresses, incurs additional costs, and may increase the attack surface for a virtual environment. Therefore, SNAT is introduced to enable multiple ECSs to share one public IP address.
 
-The public cloud system supports SNAT. A public IP address is assigned to an ECS that serves as the SNAT router or gateway for other ECSs from the same subnet or VPC.
+On a public cloud, a public IP address can be assigned to an ECS that serves as the SNAT router or gateway for other ECSs from the same subnet or VPC.
 
-For details about how to configure SNAT, see section  [Configuring an SNAT Server](configuring-an-snat-server.md).
+For details about how to configure SNAT, see  [Configuring an SNAT Server](configuring-an-snat-server.md).
 

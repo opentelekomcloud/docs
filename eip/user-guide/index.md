@@ -35,7 +35,7 @@
 -   [FAQs]
     -   [General]
         -   [What Is a Quota?](what-is-a-quota.md)
-       
+
     -   [EIP]
         -   [What Are EIPs?](what-are-eips-0.md)
         -   [How Many ECSs Can One EIP Be Assigned to?](how-many-ecss-can-one-eip-be-assigned-to.md)
