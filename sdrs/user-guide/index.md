@@ -1,6 +1,6 @@
 # Storage Disaster Recovery Service User Guide
 
--   [Overview](overview.md)
+-   [Overview]
     -   [SDRS Introduction](sdrs-introduction.md)
     -   [Product Advantages](product-advantages.md)
     -   [Application Scenarios](application-scenarios.md)
@@ -8,13 +8,13 @@
     -   [Supported DR Scenarios](supported-dr-scenarios.md)
     -   [Compatible Applications and Versions](compatible-applications-and-versions.md)
     -   [Relationships with Other Services](relationships-with-other-services.md)
-    -   [Basic Concepts](basic-concepts.md)
+    -   [Basic Concepts]
         -   [SDRS Basic Concepts](sdrs-basic-concepts.md)
         -   [Region and AZ](region-and-az.md)
 
 
--   [Getting Started](getting-started.md)
-    -   [Configuring Cross-AZ DR for Servers](configuring-cross-az-dr-for-servers.md)
+-   [Getting Started]
+    -   [Configuring Cross-AZ DR for Servers]
         -   [Configuration Process](configuration-process.md)
         -   [Step 1: Create a Protection Group](step-1-create-a-protection-group.md)
         -   [Step 2: Create a Protected Instance](step-2-create-a-protected-instance.md)
@@ -22,15 +22,15 @@
 
     -   [Performing a DR Drill](performing-a-dr-drill.md)
 
--   [Management](management.md)
-    -   [Managing Protection Groups](managing-protection-groups.md)
+-   [Management]
+    -   [Managing Protection Groups]
         -   [Disabling Protection](disabling-protection.md)
         -   [Performing a Planned Failover](performing-a-planned-failover.md)
         -   [Performing a Failover](performing-a-failover.md)
         -   [Performing Reprotection](performing-reprotection.md)
         -   [Deleting a Protection Group](deleting-a-protection-group.md)
 
-    -   [Managing Protected Instances](managing-protected-instances.md)
+    -   [Managing Protected Instances]
         -   [Modifying Specifications of a Protected Instance](modifying-specifications-of-a-protected-instance.md)
         -   [Deleting a Protected Instance](deleting-a-protected-instance.md)
         -   [Creating a Replication Pair](creating-a-replication-pair.md)
@@ -40,21 +40,21 @@
         -   [Deleting a NIC](deleting-a-nic.md)
         -   [Managing Protected Instance Tags](managing-protected-instance-tags.md)
 
-    -   [Managing Replication Pairs](managing-replication-pairs.md)
+    -   [Managing Replication Pairs]
         -   [Creating a Replication Pair](creating-a-replication-pair-0.md)
         -   [Expanding Replication Pair Capacity](expanding-replication-pair-capacity.md)
         -   [Deleting a Replication Pair](deleting-a-replication-pair.md)
 
-    -   [Managing DR Drills](managing-dr-drills.md)
+    -   [Managing DR Drills]
         -   [Performing a DR Drill](performing-a-dr-drill-1.md)
         -   [Deleting a DR Drill](deleting-a-dr-drill.md)
 
-    -   [Interconnecting with CTS ](interconnecting-with-cts.md)
+    -   [Interconnecting with CTS ]
         -   [Key SDRS Operations Recorded by CTS](key-sdrs-operations-recorded-by-cts.md)
         -   [Viewing Traces](viewing-traces.md)
 
 
--   [FAQs](faqs.md)
+-   [FAQs]
     -   [What Is DR?](what-is-dr.md)
     -   [What Are the Highlights of SDRS?](what-are-the-highlights-of-sdrs.md)
     -   [What Are RPO and RTO?](what-are-rpo-and-rto.md)
