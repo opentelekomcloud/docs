@@ -42,7 +42,7 @@ A trust relationship has been established between the two systems. For details, 
         The system supports uploading and manual configuration of metadata. If the metadata file size exceeds 500 KB, you can click the  **manually configure**  link to configure it. If metadata is updated subsequently, you need to upload or edit metadata. Otherwise, federated users cannot log in to the cloud system.
 
         -   Upload metadata.
-            1.  Click  ![](figures/en-us_image_0147665833.png)  next to  **Upload**, and select the metadata file of the enterprise IdP.
+            1.  Upload the metadata file of the enterprise IdP.
             2.  Click  **Upload**.
 
                 A dialog box is displayed, showing the metadata extracted by the system.

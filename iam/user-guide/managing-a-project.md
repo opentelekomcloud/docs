@@ -44,7 +44,7 @@ In the  **User Group Permissions**  area on the  **Modify User Group**  page, lo
 
 -   Modifying project data
 
-    1.  In the project list, click  ![](figures/en-us_image_0147665873.jpg)  next to the region where the target project resides.
+    1.  In the project list, expand the region where the target project resides.
     2.  Click  **Modify**  in the  **Operation**  column of the row that contains the target project. In the displayed  **Modify Project**  dialog box, modify  **Project Name**  and  **Description**.
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   

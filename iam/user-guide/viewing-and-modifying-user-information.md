@@ -4,7 +4,7 @@ Administrators can view and modify the basic information of a user, belonged use
 
 ## Viewing User Information<a name="section36783718"></a>
 
-In the user list, click  ![](figures/en-us_image_0154412605.png)  next to a user to view the detailed user information, including  **Basic Information**,  **User Groups**, and  **User Logs**.
+In the user list, expand a user to view the detailed user information, including  **Basic Information**,  **User Groups**, and  **User Logs**.
 
 ## Modifying User Information<a name="section4671248204913"></a>
 
