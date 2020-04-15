@@ -1,18 +1,18 @@
 # Storage Disaster Recovery Service API Reference
 
 -   [API Usage Guidelines](api-usage-guidelines.md)
--   [SDRS APIs](sdrs-apis.md)
-    -   [Job](job.md)
+-   [SDRS APIs]
+    -   [Job]
         -   [Querying the Job Status](querying-the-job-status.md)
 
-    -   [API Version](api-version.md)
+    -   [API Version]
         -   [Querying API Versions](querying-api-versions.md)
         -   [Querying a Specified API Version](querying-a-specified-api-version.md)
 
-    -   [Active-Active Domain](active-active-domain.md)
+    -   [Active-Active Domain]
         -   [Querying an Active-Active Domain](querying-an-active-active-domain.md)
 
-    -   [Protection Group](protection-group.md)
+    -   [Protection Group]
         -   [Creating a Protection Group](creating-a-protection-group.md)
         -   [Querying Protection Groups](querying-protection-groups.md)
         -   [Querying the Details of a Protection Group](querying-the-details-of-a-protection-group.md)
@@ -23,7 +23,7 @@
         -   [Performing a Failover for a Protection Group](performing-a-failover-for-a-protection-group.md)
         -   [Performing a Planned Failover for a Protection Group](performing-a-planned-failover-for-a-protection-group.md)
 
-    -   [Protected Instance](protected-instance.md)
+    -   [Protected Instance]
         -   [Creating a Protected Instance](creating-a-protected-instance.md)
         -   [Deleting a Protected Instance](deleting-a-protected-instance.md)
         -   [Querying Protected Instances](querying-protected-instances.md)
@@ -35,7 +35,7 @@
         -   [Deleting an NIC from a Protected Instance](deleting-an-nic-from-a-protected-instance.md)
         -   [Modifying the Specifications of a Protected Instance](modifying-the-specifications-of-a-protected-instance.md)
 
-    -   [Replication Pair](replication-pair.md)
+    -   [Replication Pair]
         -   [Creating a Replication Pair](creating-a-replication-pair.md)
         -   [Deleting a Replication Pair](deleting-a-replication-pair.md)
         -   [Querying Replication Pairs](querying-replication-pairs.md)
@@ -43,14 +43,14 @@
         -   [Expanding the Capacity of a Replication Pair](expanding-the-capacity-of-a-replication-pair.md)
         -   [Changing the Name of a Replication Pair](changing-the-name-of-a-replication-pair.md)
 
-    -   [DR Drill](dr-drill.md)
+    -   [DR Drill]
         -   [Creating a DR Drill](creating-a-dr-drill.md)
         -   [Deleting a DR Drill](deleting-a-dr-drill.md)
         -   [Querying DR Drills](querying-dr-drills.md)
         -   [Querying Details About a DR Drill](querying-details-about-a-dr-drill.md)
         -   [Updating a DR Drill Name](updating-a-dr-drill-name.md)
 
-    -   [Tag Management](tag-management.md)
+    -   [Tag Management]
         -   [Querying Protected Instances by Tag](querying-protected-instances-by-tag.md)
         -   [Adding or Deleting Protected Instance Tags in Batches](adding-or-deleting-protected-instance-tags-in-batches.md)
         -   [Adding a Protected Instance Tag](adding-a-protected-instance-tag.md)
@@ -58,17 +58,17 @@
         -   [Querying a Protected Instance Tag](querying-a-protected-instance-tag.md)
         -   [Querying Tags of All Protected Instances in a Specified Project](querying-tags-of-all-protected-instances-in-a-specified-project.md)
 
-    -   [Task Center](task-center.md)
+    -   [Task Center]
         -   [Querying Failed Tasks](querying-failed-tasks.md)
         -   [Deleting a Failed Task](deleting-a-failed-task.md)
         -   [Deleting All Failed Tasks of All Protection Groups](deleting-all-failed-tasks-of-all-protection-groups.md)
         -   [Deleting All Failed Tasks of a Protection Group](deleting-all-failed-tasks-of-a-protection-group.md)
 
-    -   [Tenant Quota Management](tenant-quota-management.md)
+    -   [Tenant Quota Management]
         -   [Querying the Tenant Quota](querying-the-tenant-quota.md)
 
 
--   [Appendixes](appendixes.md)
+-   [Appendixes]
     -   [Error Code Description](error-code-description.md)
     -   [Protection Group Status](protection-group-status.md)
     -   [Protected Instance Status](protected-instance-status.md)
