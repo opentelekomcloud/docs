@@ -2,7 +2,7 @@
 
 ## Scenarios<a name="section6114814810429"></a>
 
-This section describes how to create a log transfer task. Logs uploaded to LTS can be stored for seven days. To store the logs for a longer period of time, you can transfer them to an OBS bucket.
+This section describes how to create a log transfer task. Logs uploaded to Log Tank Service \(LTS\) can be stored for seven days. To store the logs for a longer period of time, you can transfer them to an Object Storage Service \(OBS\) bucket.
 
 ## Prerequisites<a name="section61878755104447"></a>
 
@@ -19,13 +19,13 @@ This section describes how to create a log transfer task. Logs uploaded to LTS c
 
 1.  In the navigation pane on the left, choose  **Log Transfer**.
 
-    **Figure  1**  Create Log Transfer<a name="fig129031841175410"></a>  
-    ![](figures/create-log-transfer.png "create-log-transfer")
+    **Figure  1**  Creating a log transfer task<a name="fig129031841175410"></a>  
+    ![](figures/creating-a-log-transfer-task.png "creating-a-log-transfer-task")
 
 2.  On the displayed page, click  **Create Log Transfer**.
 
-    **Figure  2**  Create Log Transfer<a name="fig85471646319"></a>  
-    ![](figures/create-log-transfer-4.png "create-log-transfer-4")
+    **Figure  2**  Configuring parameters for a log transfer task<a name="fig85471646319"></a>  
+    ![](figures/configuring-parameters-for-a-log-transfer-task.png "configuring-parameters-for-a-log-transfer-task")
 
 3.  On the displayed page, configure parameters.
 

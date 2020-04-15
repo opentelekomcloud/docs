@@ -17,8 +17,8 @@ This section describes how to create a log topic in a log group.
 4.  In the log group list, click the name of the target log group.
 5.  Click  **Create Log Topic**.
 
-    **Figure  1**  Create Log Topic<a name="fig1191493472911"></a>  
-    ![](figures/create-log-topic.png "create-log-topic")
+    **Figure  1**  Creating a log topic<a name="fig1191493472911"></a>  
+    ![](figures/creating-a-log-topic-4.png "creating-a-log-topic-4")
 
 6.  On the displayed page, enter a log topic name.
 7.  Click  **OK**.

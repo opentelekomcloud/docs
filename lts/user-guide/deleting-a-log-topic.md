@@ -22,7 +22,7 @@ This section describes how to delete a log topic that will no longer be used.
 2.  In the log topic list, locate the target log topic and click  **Delete**  in the  **Operation**  column.
 3.  Click  **Yes**.
 
-    **Figure  1**  Delete Log Topic<a name="fig988213512226"></a>  
-    ![](figures/delete-log-topic.png "delete-log-topic")
+    **Figure  1**  Deleting a log topic<a name="fig988213512226"></a>  
+    ![](figures/deleting-a-log-topic.png "deleting-a-log-topic")
 
 

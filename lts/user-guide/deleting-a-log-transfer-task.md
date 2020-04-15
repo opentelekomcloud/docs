@@ -6,7 +6,7 @@ This section describes how to delete a log transfer task.
 
 >![](public_sys-resources/icon-note.gif) **NOTE:**   
 >-   Deleting log transfer tasks will stop transferring any logs. Therefore, exercise caution when performing this deletion operation.  
->-   After a log transfer task is deleted, the logs that have been transferred to your OBS bucket will be continually stored.  
+>-   After a log transfer task is deleted, the logs that have been transferred to your Object Storage Service \(OBS\) bucket will be continually stored.  
 
 ## Prerequisites<a name="section60196570174813"></a>
 
@@ -24,8 +24,8 @@ This section describes how to delete a log transfer task.
 
     The  **Delete Log Transfer**  dialog box is displayed.
 
-    **Figure  1**  Delete Log Transfer<a name="fig105581347183419"></a>  
-    ![](figures/delete-log-transfer.png "delete-log-transfer")
+    **Figure  1**  Deleting a log transfer task<a name="fig105581347183419"></a>  
+    ![](figures/deleting-a-log-transfer-task.png "deleting-a-log-transfer-task")
 
 6.  Click  **Yes**.
 

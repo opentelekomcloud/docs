@@ -2,7 +2,7 @@
 
 ## Scenarios<a name="section48277357143234"></a>
 
-This section describes how to modify a log transfer task. You can modify the log topic, OBS bucket, log prefix, and status of the transfer task.
+This section describes how to modify a log transfer task. You can modify the log topic, Object Storage Service \(OBS\) bucket, log prefix, and status of the transfer task.
 
 ## Prerequisites<a name="section29149019143234"></a>
 
@@ -24,8 +24,8 @@ This section describes how to modify a log transfer task. You can modify the log
 
     The  **Modify Log Transfer**  page is displayed.
 
-    **Figure  2**  Modify Log Transfer<a name="fig1162012511176"></a>  
-    ![](figures/modify-log-transfer.png "modify-log-transfer")
+    **Figure  2**  Modifying parameters for a log transfer task<a name="fig1162012511176"></a>  
+    ![](figures/modifying-parameters-for-a-log-transfer-task.png "modifying-parameters-for-a-log-transfer-task")
 
 6.  Modify the transfer task by following the instructions in  [Table 1](#table23279244163823).
 
