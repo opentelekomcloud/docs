@@ -7,7 +7,7 @@ This section describes how to view a log transfer task.
 The status of a transfer task can be  **Normal**,  **Abnormal**, or  **Disabled**  as follows:
 
 -   **Normal**: indicates that the log transfer task works properly.
--   **Abnormal**: indicates that the OBS bucket to which logs are transferred is deleted or the bucket policy is abnormal. Rectify the fault by following the instructions in  [Why Is Log Transfer Abnormal on the Log Transfer Page?](why-is-log-transfer-abnormal-on-the-log-transfer-page.md)
+-   **Abnormal**: indicates that the Object Storage Service \(OBS\) bucket to which logs are transferred is deleted or the bucket policy is abnormal. Rectify the fault by following the instructions in  [Why Is Log Transfer Abnormal on the Log Transfer Page?](why-is-log-transfer-abnormal-on-the-log-transfer-page.md)
 -   **Disabled**: indicates that the log transfer task is stopped.
 
 You can enable or disable a log transfer task by following the instructions in  [Modifying a Log Transfer Task](modifying-a-log-transfer-task.md).

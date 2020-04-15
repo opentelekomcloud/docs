@@ -20,7 +20,7 @@ This section describes how to delete a log group.
 4.  In the log group list, locate the target log group and click  **Delete**  in the  **Operation**  column.
 5.  Click  **Yes**.
 
-    **Figure  1**  Delete Log Group<a name="fig911518521452"></a>  
-    ![](figures/delete-log-group.png "delete-log-group")
+    **Figure  1**  Deleting a log group<a name="fig911518521452"></a>  
+    ![](figures/deleting-a-log-group.png "deleting-a-log-group")
 
 

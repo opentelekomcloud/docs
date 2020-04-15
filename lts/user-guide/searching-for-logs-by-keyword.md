@@ -47,7 +47,7 @@ The rules for searching for logs by keyword are as follows:
 
     For example, if you enter  **error\***, all logs that contain  **error**  will be displayed and especially those start with  **error**  will be highlighted.
 
--   Supporting search based on combined conditions \(including  **host\_name:**,  **ip:**,  **path:**, and  **time:**\). The format is  **key1:value1** _\[__condition__\] _**key2:value2**, for example,  **host\_name:ecs-rxm NOT ip:192.168.1.205 AND path:/home/home.log**.
+-   Search based on combined conditions \(including  **host\_name:**,  **ip:**,  **path:**, and  **time:**\) is supported. The format is  **key1:value1** _\[__condition__\] _**key2:value2**, for example,  **host\_name:ecs-rxm NOT ip:192.168.1.205 AND path:/home/home.log**.
 
 The following are examples:
 
@@ -81,11 +81,11 @@ To set search filters and a time range, perform the following operations:
     **Figure  1**  Search box<a name="fig1919211014810"></a>  
     ![](figures/search-box.png "search-box")
 
-7.  Click  ![](figures/en-us_image_0224007658.png)  to start the search.
+7.  Click the search icon to start the search.
 
     Logs containing the keyword are displayed.
 
-8.  Click  ![](figures/en-us_image_0224007657.jpg)  to set a time range.
+8.  Click the calendar icon to set a time range of logs.
 
     Only the latest 100,000 logs reported within the specified time range are displayed.
 
