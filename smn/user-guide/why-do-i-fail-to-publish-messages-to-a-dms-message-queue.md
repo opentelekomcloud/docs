@@ -3,7 +3,7 @@
 Check whether required message queue permission is granted to SMN in the DMS service. If no, perform the following operations to grant permissions. If SMN has been granted but you still cannot push messages, the failure may be caused by unstable network connection or other reasons. You can contact customer service to deal with the problem.
 
 1.  Log in to the management console.
-2.  Click  ![](figures/d00356819-云计算开发部-公有云_iaas-image-f1cac6ef-c4f7-462b-a7f1-85e988937e64.png)  on the upper left to select the desired region and project.
+2.  Click  ![](figures/icon-region.png)  on the upper left to select the desired region and project.
 3.  In the  **Application** category, click **Distributed Message Service**.
 
     The DMS console is displayed.

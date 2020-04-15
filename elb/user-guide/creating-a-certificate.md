@@ -10,7 +10,7 @@ To enable authentication for securing data transmission over HTTPS, ELB allows y
 ## Create a Certificate<a name="section26868475171830"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0163776996.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  In the navigation pane, choose  **Certificates**.
 5.  Click  **Create Certificate**. In the  **Create Certificate**  dialog box, configure the following parameters:
@@ -54,7 +54,7 @@ To enable authentication for securing data transmission over HTTPS, ELB allows y
 Only certificates that are not in use can be deleted.
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0095109447.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  In the navigation pane, choose  **Certificates**.
 5.  Locate the row that contains the target certificate and click  **Delete**  in the  **Operation**  column.
@@ -63,7 +63,7 @@ Only certificates that are not in use can be deleted.
 ## Modify a Certificate<a name="section45960980171830"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0095109448.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  In the navigation pane, choose  **Certificates**.
 5.  Locate the row that contains the target certificate and click  **Modify**  in the  **Operation**  column.
@@ -73,7 +73,7 @@ Only certificates that are not in use can be deleted.
 ## Bind a Certificate<a name="section49683221908"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0162304296.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Under  **Listeners**, click  **Add Listener**.

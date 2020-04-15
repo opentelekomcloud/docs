@@ -3,7 +3,7 @@
 If the existing stack cannot meet your service requirements, you can use the update function to modify the stack. The procedure for updating a stack is the same as that for creating a stack.
 
 1.  Log in to the management console.
-2.  Click  ![](figures/q00355783-云计算开发部-公有云_iaas-image-541f928f-f9be-4dd9-89fb-50ccdfaeb744.png)  in the upper left corner to select the desired region and project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner to select the desired region and project.
 3.  Under  **Management & Deployment**, click  **Resource Template Service**.
 4.  In the stack list, locate the target stack and click  **Update**  in the  **Operation**  column.
 

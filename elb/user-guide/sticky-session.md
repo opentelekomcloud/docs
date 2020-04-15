@@ -30,10 +30,10 @@ Classic load balancers support two types of sticky session,  **Source IP address
 ## Enable Sticky Sessions<a name="section8831828124420"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0167649596.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
-5.  For an enhanced load balancer, click  **Backend Server Groups**, locate the target backend server group, and click  ![](figures/en-us_image_0167649598.png)  on the right of its name.
+5.  For an enhanced load balancer, click  **Backend Server Groups**, locate the target backend server group, and click  ![](figures/icon-edit.png)  on the right of its name.
 
     For a classic load balancer, click  **Listeners**, locate the target listener, and click  **Modify**  in the  **Operation**  column.
 

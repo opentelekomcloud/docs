@@ -11,7 +11,7 @@ If a load balancer is associated with an AS group, instances in the AS group are
 ## Add Backend Servers<a name="section388715404610"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0164706633.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Backend Server Groups**, locate the target backend server group, and click its name.
@@ -26,7 +26,7 @@ If a load balancer is associated with an AS group, instances in the AS group are
 ## Remove Backend Servers<a name="section689235434617"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0164706634.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Backend Server Groups**, locate the target backend server group, and click its name.
@@ -36,7 +36,7 @@ If a load balancer is associated with an AS group, instances in the AS group are
 ## Add a Backend Server Group<a name="section27164710517"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0164706635.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Under  **Backend Server Groups**, click  **Add Backend Server Group**.
@@ -201,18 +201,18 @@ If a load balancer is associated with an AS group, instances in the AS group are
 ## Modify a Backend Server Group<a name="section54011642158"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0169513346.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
-5.  Click  **Backend Server Groups**, locate the target backend server group, and click  ![](figures/en-us_image_0169513347.png)  on the right of its name.
+5.  Click  **Backend Server Groups**, locate the target backend server group, and click  ![](figures/icon-edit.png)  on the right of its name.
 6.  In the displayed dialog box, modify the parameters as needed and click  **OK**.
 
 ## Delete a Backend Server Group<a name="section01807511112"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0169513445.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
-5.  Click  **Backend Server Groups**, locate the target backend server group, and click  ![](figures/en-us_image_0169513446.png)  on the right of its name.
+5.  Click  **Backend Server Groups**, locate the target backend server group, and click  ![](figures/icon-delete.png)  on the right of its name.
 6.  In the displayed dialog box, click  **Yes**.
 

@@ -17,7 +17,7 @@ The following resources have been deleted or removed:
 ## Procedure<a name="section13384917815"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0166344751.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click  **Delete**  in the  **Operation**  column.
 5.  In the displayed dialog box, click  **Yes**.
@@ -27,7 +27,7 @@ The following resources have been deleted or removed:
 You can also export the load balancer list as a local backup.
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0167078563.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
-4.  In the upper right corner of the load balancer list, click  ![](figures/20180702-151924(espace).png).
+4.  In the upper right corner of the load balancer list, click  ![](figures/icon-image-3.png).
 

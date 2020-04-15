@@ -14,7 +14,7 @@ After a forwarding policy is added, the load balancer forwards requests based on
 ## Add a Forwarding Policy<a name="section191183222317"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0114695108.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Listeners**, locate the target listener, and click its name.
@@ -169,22 +169,22 @@ In this figure, the system first searches the requested URL \(/elb\_gls/glossary
 ## Modify a Forwarding Policy<a name="section0239201242216"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0155033570.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Listeners**, locate the target listener, and click its name.
 6.  Click  **Forwarding Policies**. 
-7.  Locate the target forwarding policy and click  ![](figures/en-us_image_0155041158.png)  on the right of its name.
+7.  Locate the target forwarding policy and click  ![](figures/icon-edit.png)  on the right of its name.
 8.  In the  **Modify Forwarding Policy**  dialog box, modify the parameters and click  **OK**.
 
 ## Delete a Forwarding Policy<a name="section4306132117396"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0121143837.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Listeners**, locate the target listener, and click its name.
 6.  Click  **Forwarding Policies**. 
-7.  Locate the target forwarding policy and click  ![](figures/en-us_image_0155036235.png)  on the right of its name.
+7.  Locate the target forwarding policy and click  ![](figures/icon-delete.png)  on the right of its name.
 8.  In the displayed dialog box, click  **Yes**.
 

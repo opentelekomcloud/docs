@@ -9,7 +9,7 @@ Load balancers receive requests from clients and route them to backend servers, 
 ## Create a Classic Load Balancer<a name="section3645846124218"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0166344753.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Click  **Create Classic Load Balancer**. On the displayed page, specify the parameters by referring to  [Table 1](#table806872716142).
 
@@ -100,7 +100,7 @@ Load balancers receive requests from clients and route them to backend servers, 
 ## Create an Enhanced Load Balancer<a name="section19343262431"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0166344754.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click  **Create Enhanced Load Balancer**  in the  **Operation**  column. Set the parameters by referring to  [Table 2](#table1312515231668).
 

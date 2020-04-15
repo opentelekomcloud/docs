@@ -31,7 +31,7 @@ This section describes how to query or export the last seven days of operation r
     -   **Trace Status**: Select one of  **All trace statuses**,  **normal**,  **warning**, and  **incident**.
     -   Time range: You can select start and end time to query traces generated during a time range of the last seven days.
 
-6.  Click  ![](figures/en-us_image_0109289530.jpg)  on the left of the required trace to expand its details.
+6.  Click  ![](figures/icon-image-1.jpg)  on the left of the required trace to expand its details.
 7.  Click  **View Trace**. The trace structure details are displayed.
 
 ## CTS Log Entries<a name="section54032088155336"></a>

@@ -7,7 +7,7 @@ To delete a connection, you first need to delete the associated virtual interfac
 ## **Procedure**<a name="section217716422393"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/d00356819-云计算开发部-公有云_iaas-image-f1cac6ef-c4f7-462b-a7f1-85e988937e64.png)  in the upper left corner and select a region and a project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner and select a region and a project.
 3.  Under  **Network**, click  **Direct Connect**.
 4.  In the navigation pane on the left, choose  **Direct Connect**  \>  **Virtual Interfaces**.
 5.  In the virtual interface list, locate the row containing the target virtual interface and click  **Delete**  under  **Operation**.

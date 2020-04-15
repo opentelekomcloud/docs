@@ -19,7 +19,7 @@ An HTTP listener is used as an example here describe how to route requests from 
 In this topic, ECSs are used as backend servers. Perform the following operations to create two ECSs:
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0166358915.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Computing**, click  **Elastic Cloud Server**.
 4.  Click  **Create ECS**. On the displayed page, set the parameters and click  **Create Now**.
 5.  The following table lists the specifications of the two ECSs.
@@ -195,7 +195,7 @@ Deploy Nginx on the two ECSs and edit two HTML pages for the web applications so
 ## Create a Load Balancer<a name="section15436447172917"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0166358928.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Click  **Create Enhanced Load Balancer**. On the displayed page, set the parameters as needed.
 5.  Click  **Create Now**.
@@ -212,7 +212,7 @@ For example, configure two forwarding policies to forward HTTP requests to the t
 ![](figures/traffic-forwarding-3.png "traffic-forwarding-3")
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0166358939.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the created load balancer and click its name \(**elb-mq01**\).
 5.  Under  **Listeners**, click  **Add Listener**.

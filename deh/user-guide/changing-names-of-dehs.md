@@ -7,7 +7,7 @@ Change names of DeHs on the management console.
 ## Procedure<a name="section537104621190"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/9.png)  in the upper left corner and select the desired region and project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner and select the desired region and project.
 3.  Under  **Computing**, click  **Dedicated Host**.
 
     The  **Dedicated Host**  page is displayed.
@@ -16,12 +16,12 @@ Change names of DeHs on the management console.
 
     The DeH details page is displayed.
 
-5.  Click  ![](figures/10.png)  next to the name of the DeH.
+5.  Click  ![](figures/icon-penned.png)  next to the name of the DeH.
 
     The name becomes editable.
 
-6.  Change the name and click  ![](figures/11.png).
+6.  Change the name and click  ![](figures/icon-check.png).
 
-    If you do not want to change the name, click  ![](figures/snap8.png).
+    If you do not want to change the name, click  ![](figures/icon-wrong.png).
 
 

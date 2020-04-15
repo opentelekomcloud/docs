@@ -9,7 +9,7 @@ You can also request more quotas if the existing resource quotas cannot meet you
 ## How Do I View My Quota?<a name="section07760615438"></a>
 
 1.  Log in to the management console.
-2.  In the upper right corner of the page, click  ![](figures/66.png).
+2.  In the upper right corner of the page, click  ![](figures/icon-quota.png).
 
     The  **Service Quota**  page is displayed.
 

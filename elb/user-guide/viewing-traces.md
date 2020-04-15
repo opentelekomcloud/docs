@@ -7,7 +7,7 @@ CTS records the operations performed on cloud service resources in the form of t
 ## Procedure<a name="en-us_topic_0107211964_section35541637205812"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0114944683.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Under  **Management & Deployment**, click  **Cloud Trace Service**.
 4.  In the navigation pane on the left, choose  **Trace List**.
 5.  Specify the filters used for querying traces. The following four filters are available:
@@ -29,7 +29,7 @@ CTS records the operations performed on cloud service resources in the form of t
     -   **Trace Status**: Available options include  **All trace statuses**,  **normal**,  **warning**, and  **incident**. You can only select one of them.
     -   Time range: You can query traces generated at any time range of the last seven days.
 
-6.  Click  ![](figures/en-us_image_0114944782.jpg)  on the left of the required trace to expand its details.
+6.  Click  ![](figures/icon-dropdown.jpg)  on the left of the required trace to expand its details.
 
     **Figure  2**  Expanding trace details<a name="fig541353043919"></a>  
     ![](figures/expanding-trace-details.png "expanding-trace-details")

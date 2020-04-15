@@ -14,7 +14,7 @@
 
 -   [Operation Guide](operation-guide.md)
 -   [Stack Management]
-    -   [Preparing a Template or a Template Package](preparing-a-template-or-a-template-package.md)
+    -   [Preparing a Template or a Template Package]
         -   [Scenarios](scenarios.md)
         -   [Template Package Structure](template-package-structure.md)
         -   [Template File Packaging](template-file-packaging.md)
@@ -47,7 +47,7 @@
 
 -   [Auditing]
     -   [Key Operations Recorded by CTS](key-operations-recorded-by-cts.md)
-    -   [Viewing CTS Traces](viewing-cts-traces.md)
+    -   [Viewing Audit Logs](viewing-audit-logs.md)
 
 -   [Resource Type Reference]
     -   [OS::Cinder::Volume](os-cinder-volume.md)
@@ -100,4 +100,4 @@
     -   [How Are Router Resources in the Native OpenStack Mapped to VPC Resources on the Network Console?](how-are-router-resources-in-the-native-openstack-mapped-to-vpc-resources-on-the-network-console.md)
     -   [How to Obtain the flavor Value of Resource OSE::RDS::Instance?](how-to-obtain-the-flavor-value-of-resource-ose-rds-instance.md)
 
-
+- 

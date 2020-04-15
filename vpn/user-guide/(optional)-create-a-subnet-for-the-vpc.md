@@ -9,7 +9,7 @@ The created subnet is configured with DHCP by default. After an ECS using this V
 ## Procedure<a name="en-us_topic_0118498844_en-us_topic_0118498823_section8897384201653"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/icon-region-0.png)  in the upper left corner and select the desired region and project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner and select the desired region and project.
 3.  On the console homepage, under  **Network**, click  **Virtual Private Cloud**.
 4.  In the navigation pane on the left, click  **Virtual Private Cloud**.
 5.  On the  **Virtual Private Cloud**  page, locate the VPC for which a subnet is to be created and click the VPC name.

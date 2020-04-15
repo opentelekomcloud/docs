@@ -9,7 +9,7 @@ You have prepared a stack template.
 ## Procedure<a name="section16219936205317"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/q00355783-云计算开发部-公有云_iaas-image-541f928f-f9be-4dd9-89fb-50ccdfaeb744.png)  in the upper left corner to select the desired region and project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner to select the desired region and project.
 3.  Under  **Management & Deployment**, click  **Resource Template Service**.
 4.  Click  **Create Stack**  in the upper right corner.
 
@@ -33,7 +33,7 @@ You have prepared a stack template.
         ![](figures/uploading-a-template-file.png "uploading-a-template-file")
 
         1.  **Template Source**: Select  **Upload template**.
-        2.  **Stack Template**: Click  ![](figures/3.png), select the prepared template package, and click  **Upload**.
+        2.  **Stack Template**: Click  ![](figures/icon-vertexs.png), select the prepared template package, and click  **Upload**.
         3.  **Main File**: Select a template file as the main file based on the resources you want to create. A template package may contain multiple template files.
         4.  After selecting a main file, click  **Next**  to check the syntax.
 

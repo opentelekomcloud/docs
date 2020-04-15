@@ -7,7 +7,7 @@ After creating a connection, you can modify its information.
 ## Procedure<a name="section4450972211"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/d00356819-云计算开发部-公有云_iaas-image-f1cac6ef-c4f7-462b-a7f1-85e988937e64-1.png)  in the upper left corner and select a region and a project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner and select a region and a project.
 3.  Under  **Network**, click  **Direct Connect**.
 4.  In the navigation pane on the left, choose  **Direct Connect**  \>  **Connections**.
 5.  In the connection list, locate the row containing the target connection and click  **Modify**  under  **Operation**.

@@ -7,7 +7,7 @@ You can configure the automatic placement function for each DeH. This function d
 ## Procedure<a name="section65161568234"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/9.png)  in the upper left corner and select the desired region and project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner and select the desired region and project.
 3.  Under  **Computing**, click  **Dedicated Host**.
 
     The  **Dedicated Host**  page is displayed.

@@ -35,7 +35,7 @@ This topic describes how to query or export the last seven days of operation rec
     -   Time range: You can select start and end time to query traces generated during a time range of the last seven days.
 
 
-1.  Click  ![](figures/en-us_image_0095370375.jpg)  on the left of the required trace to expand its details.
+1.  Click  ![](figures/icon-image-1.jpg)  on the left of the required trace to expand its details.
 
     **Figure  2**  Expanding trace details<a name="en-us_topic_0030598499_fig60616999161744"></a>  
     ![](figures/expanding-trace-details.png "expanding-trace-details")

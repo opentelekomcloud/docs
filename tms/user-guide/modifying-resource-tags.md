@@ -16,14 +16,14 @@ When modifying the tag for a single resource, you can modify only the cloud reso
 
     If the key of the tag to be modified is not displayed in the list, perform the following steps:
 
-    1.  Click  ![](figures/guolvshezhi.png)  in the upper right of the  **Search Result**  area.
+    1.  Click  ![](figures/icon-image.png)  in the upper right of the  **Search Result**  area.
     2.  Select the key of the tag to be modified from the drop-down list.
 
         You are advised not to select more than 20 keys to display.
 
 7.  Locate the row containing the cloud resource whose tag you want to modify and click  ![](figures/pen-dt.png).
 8.  Enter a tag value for the target tag.
-9.  Click  ![](figures/dui-dt.png).
+9.  Click  ![](figures/icon-image4.png).
 
     After the resource tag is modified, the cloud resources can be managed based on the new tag.
 

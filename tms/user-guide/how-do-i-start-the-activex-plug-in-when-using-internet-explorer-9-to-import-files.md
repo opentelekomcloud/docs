@@ -6,7 +6,7 @@ If you use Internet Explorer 9 to import files, you need to start the ActiveX pl
 
 ## Procedure<a name="section26118472161749"></a>
 
-1.  Click  ![](figures/en-us_image_0141727097.png)  in the upper right corner of the browser.
+1.  Click  ![](figures/icon-manage-1.png)  in the upper right corner of the browser.
 2.  Select  **Internet Options**.
 3.  Click the  **Security**  tab in the displayed dialog box.
 4.  Click  **Internet**.

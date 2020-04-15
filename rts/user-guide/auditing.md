@@ -4,6 +4,6 @@ Cloud Trace Service \(CTS\) is a log audit intended for cloud security. It allow
 
 -   **[Key Operations Recorded by CTS](key-operations-recorded-by-cts.md)**  
 
--   **[Viewing CTS Traces](viewing-cts-traces.md)**  
+-   **[Viewing Audit Logs](viewing-audit-logs.md)**  
 
 

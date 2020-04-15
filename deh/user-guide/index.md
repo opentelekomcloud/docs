@@ -35,7 +35,7 @@
     -   [Modifying Specifications of ECSs on DeHs](modifying-specifications-of-ecss-on-dehs.md)
     -   [Migrating ECSs on DeHs](migrating-ecss-on-dehs.md)
 
--   [Tag Management]
+-   [Tag Management](tag-management.md)
 -   [Key Operations Recorded by CTS]
     -   [Key DeH Operations Recorded by CTS](key-deh-operations-recorded-by-cts.md)
     -   [Viewing CTS Traces](viewing-cts-traces.md)
@@ -55,5 +55,4 @@
         -   [Do I Need to Pay for ECSs Deployed on My DeHs?](do-i-need-to-pay-for-ecss-deployed-on-my-dehs.md)
 
 
--   [Glossary]
-
+-   

@@ -9,7 +9,7 @@ ECSs can be migrated between DeHs and public resource pools.
 -   An ECS deployed in a public resource pool can be migrated to a DeH.
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >Operations in this scenario need to be performed on the ECS console. For details, see  **Migrating an ECS**  in the  _Elastic Cloud Server User Guide_.  
+    >Operations in this scenario need to be performed on the ECS console. For details, see Migrating an ECS in the  _Elastic Cloud Server User Guide_.  
 
 
 ## Notes<a name="section1213835718599"></a>
@@ -19,7 +19,7 @@ Only a stopped ECS can be migrated.
 ## **Procedure**<a name="section12638144614015"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/9.png)  in the upper left corner and select the desired region and project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner and select the desired region and project.
 3.  Under  **Computing**, click  **Dedicated Host**.
 
     The  **Dedicated Host**  page is displayed.

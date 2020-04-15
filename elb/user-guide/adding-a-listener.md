@@ -9,7 +9,7 @@ A listener also defines the health check configuration, based on which the load 
 ## Add a Listener to an Enhanced Load Balancer<a name="section117173315403"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0166397871.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Under  **Listeners**, click  **Add Listener**. Configure the parameters by referring to  [Table 1](#table1441020925310),  [Table 2](#table6414109125314), and  [Table 3](#table124201898534).
@@ -311,7 +311,7 @@ A listener also defines the health check configuration, based on which the load 
 ## Add a Listener to a Classic Load Balancer<a name="section7841311103416"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0166397902.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Click  **Classic**, locate the target load balancer, and click its name.
 5.  Under  **Listeners**, click  **Add Listener**. In the  **Add Listener**  dialog box, specify the parameters by referring to  [Table 4](#table3947759918410).

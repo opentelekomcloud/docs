@@ -9,7 +9,7 @@ Currently, only enhanced load balancers support this function.
 ## Bind an EIP<a name="section1250145151913"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0166344746.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click  **More**  \>  **Bind EIP**  in the  **Operation**  column.
 5.  In the  **Bind EIP**  dialog box, select the EIP to be bound and click  **OK**.
@@ -19,7 +19,7 @@ You can also access the basic information page of the load balancer and click  *
 ## Unbind an EIP<a name="section109343553249"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0166344749.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click  **More**  \>  **Unbind EIP**  in the  **Operation**  column.
 5.  In the displayed dialog box, click  **Yes**.

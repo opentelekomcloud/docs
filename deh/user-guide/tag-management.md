@@ -49,7 +49,7 @@ On the  **Dedicated Host**  page, you can search for the desired DeHs based on t
 
     Neither the tag key nor tag value can be empty. When the tag key and tag value are matched, the system automatically shows your desired DeHs.
 
-5.  Click  ![](figures/6.png)  to add a tag.
+5.  Click  ![](figures/icon-add.png)  to add a tag.
 
     You can add multiple tags to DeHs. The system will display DeHs that match all tags.
 

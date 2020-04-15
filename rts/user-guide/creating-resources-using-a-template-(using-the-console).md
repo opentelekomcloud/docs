@@ -15,7 +15,7 @@ To create an ECS using RTS, you need to create a key pair first for identity aut
 >If you already have a key pair, skip this step.  
 
 1.  Log in to the management console.
-2.  Click  ![](figures/q00355783-云计算开发部-公有云_iaas-image-541f928f-f9be-4dd9-89fb-50ccdfaeb744.png)  in the upper left corner to select the desired region and project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner to select the desired region and project.
 3.  Under  **Computing**, click  **Elastic Cloud Server**.
 4.  In the navigation tree on the left, choose  **Key Pairs**  and click  **Create Key Pair**.
 5.  Enter a key pair name and click  **OK**.
@@ -31,7 +31,7 @@ To create an ECS using RTS, you need to create a key pair first for identity aut
 ## Create an ECS Stack<a name="section955894365412"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/q00355783-云计算开发部-公有云_iaas-image-541f928f-f9be-4dd9-89fb-50ccdfaeb744.png)  in the upper left corner to select the desired region and project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner to select the desired region and project.
 3.  Under  **Management & Deployment**, click  **Resource Template Service**.
 4.  Click  **Create Stack**.
 

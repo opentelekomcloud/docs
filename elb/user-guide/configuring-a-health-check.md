@@ -11,7 +11,7 @@ To configure a health check or change the health check settings of an enhanced l
 ## Procedure<a name="section126005588310"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0164706646.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Backend Server Groups**, locate the target backend server group, and click its name.

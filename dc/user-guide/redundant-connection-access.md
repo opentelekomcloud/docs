@@ -19,7 +19,7 @@ You need to create two connections, with one connecting to Biere and the other t
 **Creating a Connection**
 
 1.  Log in to the management console.
-2.  Click  ![](figures/d00356819-云计算开发部-公有云_iaas-image-f1cac6ef-c4f7-462b-a7f1-85e988937e64.png)  in the upper left corner and select a region and a project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner and select a region and a project.
 3.  Under  **Network**, click  **Direct Connect**.
 4.  <a name="li1734982310613"></a>In the navigation pane of  **Network Console**, choose  **Direct Connect**  \>  **Connections**.
 5.  On the displayed  **Connections**  page, click  **Create Connection**  in the upper right corner to create the first connection.

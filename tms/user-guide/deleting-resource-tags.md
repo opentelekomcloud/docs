@@ -15,7 +15,7 @@ To delete a predefined tag for one cloud resource, perform the following steps:
 
     If the key of the tag to be deleted is not displayed in the list, perform the following steps:
 
-    1.  Click  ![](figures/guolvshezhi-1.png)  in the upper right of the  **Search Result**  area.
+    1.  Click  ![](figures/icon-image.png)  in the upper right of the  **Search Result**  area.
     2.  Select the key of the tag to be deleted from the drop-down list.
 
         You are advised not to select more than 20 keys to display.

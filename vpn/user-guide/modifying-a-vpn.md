@@ -7,7 +7,7 @@ If the VPN network information conflicts the VPC network information or you need
 ## **Procedure**<a name="en-us_topic_0029397275_section40696903171247"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/d00356819-云计算开发部-公有云_iaas-image-f1cac6ef-c4f7-462b-a7f1-85e988937e64-4.png)  in the upper left corner and select a region and project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner and select a region and project.
 3.  On the console homepage, under  **Network**, click  **Virtual Private Network**.
 4.  On the  **Virtual Private Network**  page, locate the target VPN and click  **Modify**.
 5.  In the displayed dialog box, set parameters as prompted.

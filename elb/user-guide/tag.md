@@ -16,7 +16,7 @@ You can use either of the following methods to add a tag to a load balancer:
 
 -   Add a tag to an existing load balancer.
     1.  Log in to the management console.
-    2.  In the upper left corner of the page, click  ![](figures/en-us_image_0113514605.png)  and select the desired region and project.
+    2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
     3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
     4.  Locate the target load balancer and click its name.
     5.  Under  **Tags**, click  **Add Tag**.
@@ -35,7 +35,7 @@ When adding a listener, you can find the tagging function in advanced settings.
 To add a tag to an existing listener, perform the following steps:
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0149794058.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Listeners**, locate the target listener, and click its name.
@@ -50,7 +50,7 @@ To add a tag to an existing listener, perform the following steps:
 ## Modify a Tag<a name="section1432939104616"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0113514605.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Tags**, select the tag to be edited, and click  **Edit**  in the  **Operation**  column. In the  **Edit Tag**  dialog box, change the tag value.
@@ -65,7 +65,7 @@ The preceding steps describe how to modify a load balancer tag. The operations f
 ## Delete a Tag<a name="section1864818172465"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0113514605.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Tags**, select the tag to be deleted, and click  **Delete**  in the  **Operation**  column.

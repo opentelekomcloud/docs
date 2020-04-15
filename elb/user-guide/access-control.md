@@ -10,7 +10,7 @@ Access control allows you to add a whitelist to specify IP addresses that can ac
 ## Add a Whitelist<a name="section9017688174523"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/en-us_image_0094007003.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 
 1.  Locate the target load balancer and click its name.

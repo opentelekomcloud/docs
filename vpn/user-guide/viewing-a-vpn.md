@@ -7,7 +7,7 @@ You can view details about an existing VPN.
 ## **Procedure**<a name="section47858803105754"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/d00356819-云计算开发部-公有云_iaas-image-f1cac6ef-c4f7-462b-a7f1-85e988937e64-3.png)  in the upper left corner and select the desired region and project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner and select the desired region and project.
 3.  On the console homepage, under  **Network**, click  **Virtual Private Network**.
 4.  On the displayed  **Virtual Private Network**  page, view the target VPN.  [Table 1](#en-us_topic_0013748707_table1573616693718)  describes the VPN status.
 

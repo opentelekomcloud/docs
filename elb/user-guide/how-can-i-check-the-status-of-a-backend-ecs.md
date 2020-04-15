@@ -16,6 +16,6 @@
 
     For example, if the ECS uses the HTTP protocol and port 80, you can run the  **curl**  command to check whether the communication function is normal.
 
-    ![](figures/iaas-image-ddfe20e6-23d3-4702-9465-b417b2284703.jpg)
+    ![](figures/icon-image-2.jpg)
 
 

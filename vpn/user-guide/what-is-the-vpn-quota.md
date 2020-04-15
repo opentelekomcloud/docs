@@ -9,7 +9,7 @@ This section describes how to view the VPN resource usage and the total quotas i
 ## How Do I View My Quotas?<a name="section1913382141415"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/icon-region-8.png)  in the upper left corner and select the desired region and project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner and select the desired region and project.
 3.  In the upper right corner of the page, click  ![](figures/my-quota.png).
 
     The  **Service Quota**  page is displayed.
