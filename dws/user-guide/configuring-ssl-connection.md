@@ -27,7 +27,7 @@ The following parts are included in this section:
 
     ![](figures/icon-button2.png): indicates that the server forcibly requires SSL connection.
 
-    ![](figures/icon_dws_off.jpg): indicates that the server does not forcibly require SSL connection. This function is disabled by default.
+    ![](figures/icon-dws-off.jpg): indicates that the server does not forcibly require SSL connection. This function is disabled by default.
 
     **Figure  1**  View of SSL connection<a name="fig624582833812"></a>  
     ![](figures/view-of-ssl-connection.png "view-of-ssl-connection")

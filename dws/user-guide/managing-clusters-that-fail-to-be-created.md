@@ -23,7 +23,7 @@ All clusters that fail to be created are displayed. If a large number of cluster
 
 ## Checking the Cause of a Creation Failure<a name="section39994919104021"></a>
 
-On the  **Manage Creation Failure**  page, locate the row containing the target cluster and click  ![](figures/icon_dws_info.png)  in the  **Cluster Status**  column to view the cause of the cluster creation failure.
+On the  **Manage Creation Failure**  page, locate the row containing the target cluster and click  ![](figures/icon-dws-info.png)  in the  **Cluster Status**  column to view the cause of the cluster creation failure.
 
 ## Deleting a Cluster That Fails to Be Created<a name="section30523241103312"></a>
 

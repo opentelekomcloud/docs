@@ -69,7 +69,7 @@ This section describes how to create a data warehouse cluster on the DWS managem
     <a name="table11569171131419"></a>
     <table><thead align="left"><tr id="row1858451161414"><th class="cellrowborder" valign="top" width="21.62%" id="mcps1.2.4.1.1"><p id="p859013118144"><a name="p859013118144"></a><a name="p859013118144"></a><strong id="b18455557143338"><a name="b18455557143338"></a><a name="b18455557143338"></a>Parameter</strong></p>
     </th>
-    <th class="cellrowborder" valign="top" width="53.76%" id="mcps1.2.4.1.2"><p id="p16598111101411"><a name="p16598111101411"></a><a name="p16598111101411"></a><strong id="b2115959000"><a name="b2115959000"></a><a name="b2115959000"></a>Description</strong></p>
+    <th class="cellrowborder" valign="top" width="53.76%" id="mcps1.2.4.1.2"><p id="p16598111101411"><a name="p16598111101411"></a><a name="p16598111101411"></a><strong id="b2031400697"><a name="b2031400697"></a><a name="b2031400697"></a>Description</strong></p>
     </th>
     <th class="cellrowborder" valign="top" width="24.62%" id="mcps1.2.4.1.3"><p id="p10605111110145"><a name="p10605111110145"></a><a name="p10605111110145"></a><strong id="b171032388"><a name="b171032388"></a><a name="b171032388"></a>Example Value</strong></p>
     </th>
@@ -96,15 +96,15 @@ This section describes how to create a data warehouse cluster on the DWS managem
     **Table  3**  Flavor description
 
     <a name="table111901234141316"></a>
-    <table><thead align="left"><tr id="row1222193461316"><th class="cellrowborder" valign="top" width="29.630000000000003%" id="mcps1.2.6.1.1"><p id="p1123813348130"><a name="p1123813348130"></a><a name="p1123813348130"></a><strong id="b1058353993"><a name="b1058353993"></a><a name="b1058353993"></a>Type</strong></p>
+    <table><thead align="left"><tr id="row1222193461316"><th class="cellrowborder" valign="top" width="29.630000000000003%" id="mcps1.2.6.1.1"><p id="p1123813348130"><a name="p1123813348130"></a><a name="p1123813348130"></a><strong id="b571358716"><a name="b571358716"></a><a name="b571358716"></a>Type</strong></p>
     </th>
-    <th class="cellrowborder" valign="top" width="13.94%" id="mcps1.2.6.1.2"><p id="p72462034201310"><a name="p72462034201310"></a><a name="p72462034201310"></a><strong id="b1680600595"><a name="b1680600595"></a><a name="b1680600595"></a>vCPU Cores</strong></p>
+    <th class="cellrowborder" valign="top" width="13.94%" id="mcps1.2.6.1.2"><p id="p72462034201310"><a name="p72462034201310"></a><a name="p72462034201310"></a><strong id="b142834586"><a name="b142834586"></a><a name="b142834586"></a>vCPU Cores</strong></p>
     </th>
-    <th class="cellrowborder" valign="top" width="12.45%" id="mcps1.2.6.1.3"><p id="p52541134191315"><a name="p52541134191315"></a><a name="p52541134191315"></a><strong id="b222878739"><a name="b222878739"></a><a name="b222878739"></a>Memory</strong></p>
+    <th class="cellrowborder" valign="top" width="12.45%" id="mcps1.2.6.1.3"><p id="p52541134191315"><a name="p52541134191315"></a><a name="p52541134191315"></a><strong id="b1053883782"><a name="b1053883782"></a><a name="b1053883782"></a>Memory</strong></p>
     </th>
-    <th class="cellrowborder" valign="top" width="15.97%" id="mcps1.2.6.1.4"><p id="p326853417138"><a name="p326853417138"></a><a name="p326853417138"></a><strong id="b545631780"><a name="b545631780"></a><a name="b545631780"></a>Disk Size</strong></p>
+    <th class="cellrowborder" valign="top" width="15.97%" id="mcps1.2.6.1.4"><p id="p326853417138"><a name="p326853417138"></a><a name="p326853417138"></a><strong id="b1824025355"><a name="b1824025355"></a><a name="b1824025355"></a>Disk Size</strong></p>
     </th>
-    <th class="cellrowborder" valign="top" width="28.01%" id="mcps1.2.6.1.5"><p id="p12761734181310"><a name="p12761734181310"></a><a name="p12761734181310"></a><strong id="b1313258909"><a name="b1313258909"></a><a name="b1313258909"></a>Disk Type</strong></p>
+    <th class="cellrowborder" valign="top" width="28.01%" id="mcps1.2.6.1.5"><p id="p12761734181310"><a name="p12761734181310"></a><a name="p12761734181310"></a><strong id="b1092947105"><a name="b1092947105"></a><a name="b1092947105"></a>Disk Type</strong></p>
     </th>
     </tr>
     </thead>
@@ -178,7 +178,7 @@ This section describes how to create a data warehouse cluster on the DWS managem
     <a name="table175013003914"></a>
     <table><thead align="left"><tr id="row9384101317142"><th class="cellrowborder" valign="top" width="21.62%" id="mcps1.2.4.1.1"><p id="p1438491319146"><a name="p1438491319146"></a><a name="p1438491319146"></a><strong id="b5863685143335"><a name="b5863685143335"></a><a name="b5863685143335"></a>Parameter</strong></p>
     </th>
-    <th class="cellrowborder" valign="top" width="53.76%" id="mcps1.2.4.1.2"><p id="p1138413133148"><a name="p1138413133148"></a><a name="p1138413133148"></a><strong id="b1129413493"><a name="b1129413493"></a><a name="b1129413493"></a>Description</strong></p>
+    <th class="cellrowborder" valign="top" width="53.76%" id="mcps1.2.4.1.2"><p id="p1138413133148"><a name="p1138413133148"></a><a name="p1138413133148"></a><strong id="b684577358"><a name="b684577358"></a><a name="b684577358"></a>Description</strong></p>
     </th>
     <th class="cellrowborder" valign="top" width="24.62%" id="mcps1.2.4.1.3"><p id="p038431301410"><a name="p038431301410"></a><a name="p038431301410"></a><strong id="b18263659143335"><a name="b18263659143335"></a><a name="b18263659143335"></a>Example Value</strong></p>
     </th>
@@ -268,9 +268,9 @@ This section describes how to create a data warehouse cluster on the DWS managem
     </td>
     <td class="cellrowborder" valign="top" width="53.76%" headers="mcps1.2.4.1.2 "><p id="p17540313111411"><a name="p17540313111411"></a><a name="p17540313111411"></a>Specify a virtual private network for nodes in a cluster to isolate networks of different services.</p>
     <p id="p0540151317149"><a name="p0540151317149"></a><a name="p0540151317149"></a>If you create a data warehouse cluster for the first time and have not configured the VPC, click <span class="uicontrol" id="uicontrol4891633712228"><a name="uicontrol4891633712228"></a><a name="uicontrol4891633712228"></a><b>View VPC</b></span>. On the VPC management console that is displayed, create a new VPC that satisfies your needs.</p>
-    <p id="p165411113171414"><a name="p165411113171414"></a><a name="p165411113171414"></a>For details about how to create a VPC, see section <span class="filepath" id="filepath1055331361414"><a name="filepath1055331361414"></a><a name="filepath1055331361414"></a><b>Creating a VPC</b></span> in the <i><cite id="cite3ad4ea7608b6445db29e0e86134bfd35152413"><a name="cite3ad4ea7608b6445db29e0e86134bfd35152413"></a><a name="cite3ad4ea7608b6445db29e0e86134bfd35152413"></a>Virtual Private Cloud User Guide</cite></i>.</p>
+    <p id="p165411113171414"><a name="p165411113171414"></a><a name="p165411113171414"></a>For details about how to create a VPC, see section <span class="filepath" id="filepath1055331361414"><a name="filepath1055331361414"></a><a name="filepath1055331361414"></a><b>Creating a VPC</b></span> in the <i><cite id="cite92ace8dc725e4eb6b9051e53943f28d3134156"><a name="cite92ace8dc725e4eb6b9051e53943f28d3134156"></a><a name="cite92ace8dc725e4eb6b9051e53943f28d3134156"></a>Virtual Private Cloud User Guide</cite></i>.</p>
     <p id="p16541181391415"><a name="p16541181391415"></a><a name="p16541181391415"></a>After selecting a VPC from the drop-down list, click <span class="uicontrol" id="uicontrol733273424119"><a name="uicontrol733273424119"></a><a name="uicontrol733273424119"></a><b>View VPC</b></span> to enter the VPC management console and view the detailed information about the VPC.</p>
-    <p id="p3541151301418"><a name="p3541151301418"></a><a name="p3541151301418"></a>You can click <a name="image248195688125018"></a><a name="image248195688125018"></a><span><img id="image248195688125018" src="figures/refresh1.png" width="19.796119" height="17.596432"></span> to refresh the options in the <span class="parmname" id="parmname571132519124912"><a name="parmname571132519124912"></a><a name="parmname571132519124912"></a><b>VPC</b></span> drop-down list.</p>
+    <p id="p3541151301418"><a name="p3541151301418"></a><a name="p3541151301418"></a>You can click <a name="image15726345135818"></a><a name="image15726345135818"></a><span><img id="image15726345135818" src="figures/icon-dws-refresh.png"></span> to refresh the options in the <span class="parmname" id="parmname571132519124912"><a name="parmname571132519124912"></a><a name="parmname571132519124912"></a><b>VPC</b></span> drop-down list.</p>
     </td>
     <td class="cellrowborder" valign="top" width="24.62%" headers="mcps1.2.4.1.3 "><p id="p95412131144"><a name="p95412131144"></a><a name="p95412131144"></a>vpc-dws</p>
     </td>
@@ -292,7 +292,7 @@ This section describes how to create a data warehouse cluster on the DWS managem
     <p id="p1754111341418"><a name="p1754111341418"></a><a name="p1754111341418"></a>The format of the default security group's name is dws-&lt;<em id="i151231534105623"><a name="i151231534105623"></a><a name="i151231534105623"></a>cluster name</em>&gt;-&lt;<em id="i783314206105623"><a name="i783314206105623"></a><a name="i783314206105623"></a>database port of the data warehouse cluster</em>&gt;, for example, <strong id="b842352706105715"><a name="b842352706105715"></a><a name="b842352706105715"></a>dws-dws-demo-8000</strong>.</p>
     <div class="note" id="note4217101371018"><a name="note4217101371018"></a><a name="note4217101371018"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p1221741315103"><a name="p1221741315103"></a><a name="p1221741315103"></a>If the quotas of the security group and the security group rule are insufficient, an error message will be displayed after you submit the cluster creation application. Select an existing group and retry.</p>
     </div></div>
-    </li><li>Manually create and configure a security group.<p id="p1467461213432"><a name="p1467461213432"></a><a name="p1467461213432"></a>You can also log in to the VPC management console to manually create a security group. Then, go back to the page for creating data warehouse clusters, click the <a name="image1734202181112"></a><a name="image1734202181112"></a><span><img id="image1734202181112" src="figures/icon_dws_refresh.png"></span> button next to the <span class="parmname" id="parmname1140614311489"><a name="parmname1140614311489"></a><a name="parmname1140614311489"></a><b>Security Group</b></span> drop-down list to refresh the page, and select the new security group.</p>
+    </li><li>Manually create and configure a security group.<p id="p1467461213432"><a name="p1467461213432"></a><a name="p1467461213432"></a>You can also log in to the VPC management console to manually create a security group. Then, go back to the page for creating data warehouse clusters, click the <a name="image1734202181112"></a><a name="image1734202181112"></a><span><img id="image1734202181112" src="figures/icon-dws-refresh.png"></span> button next to the <span class="parmname" id="parmname1140614311489"><a name="parmname1140614311489"></a><a name="parmname1140614311489"></a><b>Security Group</b></span> drop-down list to refresh the page, and select the new security group.</p>
     <p id="p1483411371220"><a name="p1483411371220"></a><a name="p1483411371220"></a>To enable the DWS client to connect to the cluster, you need to add an inbound rule to the new security group to grant the access permission to the database port of the data warehouse cluster. An example of the inbound rule is as follows:</p>
     <a name="ul834751052511"></a><a name="ul834751052511"></a><ul id="ul834751052511"><li><strong id="b842352706111211"><a name="b842352706111211"></a><a name="b842352706111211"></a>Protocol</strong>: <strong id="b842352706111216"><a name="b842352706111216"></a><a name="b842352706111216"></a>TCP</strong></li><li><strong id="b2418462181044"><a name="b2418462181044"></a><a name="b2418462181044"></a>Port</strong>: <strong id="b40326830181048"><a name="b40326830181048"></a><a name="b40326830181048"></a>8000</strong> Use the database port set when creating the data warehouse cluster. This port is used for receiving client connections to DWS.</li><li><strong id="b842352706111337"><a name="b842352706111337"></a><a name="b842352706111337"></a>Source</strong>: Select <strong id="b842352706111342"><a name="b842352706111342"></a><a name="b842352706111342"></a>IP address</strong> and use the host IP address of the client, for example, <strong id="b842352706111428"><a name="b842352706111428"></a><a name="b842352706111428"></a>192.168.0.10/32</strong>.</li></ul>
     </li></ul>
@@ -385,7 +385,7 @@ This section describes how to create a data warehouse cluster on the DWS managem
 
             ![](figures/icon-button2.png)  indicates that the policy is enabled.
 
-            ![](figures/icon_dws_off.jpg)  indicates that the policy is disabled \(default\).
+            ![](figures/icon-dws-off.jpg)  indicates that the policy is disabled \(default\).
 
             When it is enabled, configure the following parameters:
 

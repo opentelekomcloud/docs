@@ -173,9 +173,9 @@ The following table describes cluster task statuses:
 </th>
 </tr>
 </thead>
-<tbody><tr id="row60954660145753"><td class="cellrowborder" valign="top" width="16.650000000000002%" headers="mcps1.2.3.1.1 "><p id="p1171986415013"><a name="p1171986415013"></a><a name="p1171986415013"></a><a name="image145412311186"></a><a name="image145412311186"></a><span><img id="image145412311186" src="figures/icon_dws_search_cluster_02.png"></span></p>
+<tbody><tr id="row60954660145753"><td class="cellrowborder" valign="top" width="16.650000000000002%" headers="mcps1.2.3.1.1 "><p id="p1171986415013"><a name="p1171986415013"></a><a name="p1171986415013"></a><a name="image145412311186"></a><a name="image145412311186"></a><span><img id="image145412311186" src="figures/icon-dws-search-cluster-02.png"></span></p>
 </td>
-<td class="cellrowborder" valign="top" width="83.35000000000001%" headers="mcps1.2.3.1.2 "><p id="p2095556215013"><a name="p2095556215013"></a><a name="p2095556215013"></a>Enter the cluster name in the search box, and click <a name="image913333811816"></a><a name="image913333811816"></a><span><img id="image913333811816" src="figures/icon_dws_search_cluster_02.png"></span> to search a cluster.</p>
+<td class="cellrowborder" valign="top" width="83.35000000000001%" headers="mcps1.2.3.1.2 "><p id="p2095556215013"><a name="p2095556215013"></a><a name="p2095556215013"></a>Enter the cluster name in the search box, and click <a name="image913333811816"></a><a name="image913333811816"></a><span><img id="image913333811816" src="figures/icon-dws-search-cluster-02.png"></span> to search a cluster.</p>
 </td>
 </tr>
 <tr id="row5392135513410"><td class="cellrowborder" valign="top" width="16.650000000000002%" headers="mcps1.2.3.1.1 "><p id="p1427711183519"><a name="p1427711183519"></a><a name="p1427711183519"></a>Search by Tag</p>
@@ -183,9 +183,9 @@ The following table describes cluster task statuses:
 <td class="cellrowborder" valign="top" width="83.35000000000001%" headers="mcps1.2.3.1.2 "><p id="p73922551348"><a name="p73922551348"></a><a name="p73922551348"></a>Click <span class="uicontrol" id="uicontrol44951351125611"><a name="uicontrol44951351125611"></a><a name="uicontrol44951351125611"></a><b>Search by Tag</b></span> to expand the tag page, on which you can set tag filtering criteria to search for clusters. For details, see section <a href="tag-management.md#section887643535616">Searching for Clusters Based on Tags</a>.</p>
 </td>
 </tr>
-<tr id="row62041377145753"><td class="cellrowborder" valign="top" width="16.650000000000002%" headers="mcps1.2.3.1.1 "><p id="p5049056515013"><a name="p5049056515013"></a><a name="p5049056515013"></a><a name="image1163515308616"></a><a name="image1163515308616"></a><span><img id="image1163515308616" src="figures/icon_dws_refresh_02.png"></span></p>
+<tr id="row62041377145753"><td class="cellrowborder" valign="top" width="16.650000000000002%" headers="mcps1.2.3.1.1 "><p id="p5049056515013"><a name="p5049056515013"></a><a name="p5049056515013"></a><a name="image1163515308616"></a><a name="image1163515308616"></a><span><img id="image1163515308616" src="figures/icon-dws-refresh-02.png"></span></p>
 </td>
-<td class="cellrowborder" valign="top" width="83.35000000000001%" headers="mcps1.2.3.1.2 "><p id="p3196483515013"><a name="p3196483515013"></a><a name="p3196483515013"></a>Click <a name="image8968728474"></a><a name="image8968728474"></a><span><img id="image8968728474" src="figures/icon_dws_refresh_02.png"></span> to manually refresh the cluster list.</p>
+<td class="cellrowborder" valign="top" width="83.35000000000001%" headers="mcps1.2.3.1.2 "><p id="p3196483515013"><a name="p3196483515013"></a><a name="p3196483515013"></a>Click <a name="image8968728474"></a><a name="image8968728474"></a><span><img id="image8968728474" src="figures/icon-dws-refresh-02.png"></span> to manually refresh the cluster list.</p>
 </td>
 </tr>
 </tbody>

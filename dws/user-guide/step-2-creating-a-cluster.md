@@ -35,7 +35,7 @@ Before using DWS to execute data analysis tasks, you need to create a data wareh
 
 6.  Configure network parameters.
 
-    -   **VPC**: You can select an existing VPC from the drop-down list. If no VPC has been configured, click  **Create VPC**  to enter the VPC management console to create one, for example,  **vpc-dws**. Then, go back to the page for creating a cluster on the DWS management console, click  ![](figures/en-us_image_0169938641.png)  next to the  **VPC**  drop-down list, and select the new VPC.
+    -   **VPC**: You can select an existing VPC from the drop-down list. If no VPC has been configured, click  **Create VPC**  to enter the VPC management console to create one, for example,  **vpc-dws**. Then, go back to the page for creating a cluster on the DWS management console, click  ![](figures/icon-dws-refresh.png)  next to the  **VPC**  drop-down list, and select the new VPC.
 
         For details, see the  _Virtual Private Cloud User Guide_.
 

@@ -151,7 +151,7 @@ With CTS, you can record operations associated with DWS for later query, audit, 
         ![](figures/querying-traces.png "querying-traces")
 
 4.  Click  **Query**.
-5.  Click  ![](figures/icon_dws_expand.png)  on the left of the trace to be queried to extend its details.
+5.  Click  ![](figures/icon-dws-expand.png)  on the left of the trace to be queried to extend its details.
 
     **Figure  2**  Traces<a name="fig1272611231835"></a>  
     ![](figures/traces.png "traces")

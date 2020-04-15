@@ -71,9 +71,9 @@ On DWS, you can connect to the database in a cluster using pgAdmin over the Inte
     Download the SSL certificate. For details, see section  [Downloading the SSL Certificate File](downloading-the-ssl-certificate-file.md). Then, decompress the certificate file to the specified path.
 
     -   **SSL mode**: Select an SSL mode from the drop-down list. Possible values are  **Allow**,  **Prefer**,  **Require**,  **Disable**, and  **Verify-CA**  \(DWS does not support the  **Verify-Full**  mode\). If  **SSL mode**  is set to  **Verify-CA**, the root certificate is required.
-    -   **Client certificate**: Click  ![](figures/icon_dws_pg_login_set_parm.png)  and select the  **sslcert\\client.crt**  file in the decompressed directory.
-    -   **Client certificate key**: Click  ![](figures/icon_dws_pg_login_set_parm.png)  and select the  **sslcert\\client.key**  file in the decompressed directory.
-    -   **Root certificate**: Based on the selected  **SSL Mode**, click  ![](figures/icon_dws_pg_login_set_parm.png)  and select the  **sslcert\\cacert.pem**  file in the decompressed directory.
+    -   **Client certificate**: Click  ![](figures/icon-dws-pg-login-set-parm.png)  and select the  **sslcert\\client.crt**  file in the decompressed directory.
+    -   **Client certificate key**: Click  ![](figures/icon-dws-pg-login-set-parm.png)  and select the  **sslcert\\client.key**  file in the decompressed directory.
+    -   **Root certificate**: Based on the selected  **SSL Mode**, click  ![](figures/icon-dws-pg-login-set-parm.png)  and select the  **sslcert\\cacert.pem**  file in the decompressed directory.
     -   \(Optional\)  **Certificate revocation list**: List of revoked digital certificates. It is a list consisting of timestamps of all authentications that are abolished by the authentication center.
     -   **SSL compression**: Whether to enable the certificate compression transmission. Select  **True**  to enable the compression transmission, and select  **False**  to disable the compressed transmission. In this example, select  **False**  \(default value\).
 
@@ -89,7 +89,7 @@ On DWS, you can connect to the database in a cluster using pgAdmin over the Inte
     **Figure  5**  Opening the Query Tool<a name="fig1929235674320"></a>  
     ![](figures/opening-the-query-tool.png "opening-the-query-tool")
 
-10. On the Query Tool page, enter the following query command, and then click  ![](figures/icon_dws_excute_sql.png)  or press  **F5**  to check whether the connection is successful.
+10. On the Query Tool page, enter the following query command, and then click  ![](figures/icon-dws-excute-sql.png)  or press  **F5**  to check whether the connection is successful.
 
     **select \* from information\_schema.tables**
 

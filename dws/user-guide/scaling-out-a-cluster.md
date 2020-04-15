@@ -19,7 +19,7 @@ When you need more computing and storage resources to meet service needs, add mo
 ## Prerequisites<a name="section6414583815542"></a>
 
 -   The cluster to be scaled out is in the  **Available**,  **Read-only**, or  **Low performance**  state.
--   The number of existing nodes in the cluster for which you want to scale out must be less than or equal to  **29**. If the number is greater than  **29**, you can click  the  **My Quota**  button  ![](figures/en-us_image_0169938417.png)  in the upper right corner of the management console and click  **Increase Quota**  in the upper right corner of  **Service Quota**  to increase the node quota. A cluster can house a maximum of 128 nodes.
+-   The number of existing nodes in the cluster for which you want to scale out must be less than or equal to  **29**. If the number is greater than  **29**, you can click  the  **My Quota**  button  in the upper right corner of the management console and click  **Increase Quota**  in the upper right corner of  **Service Quota**  to increase the node quota. A cluster can house a maximum of 128 nodes.
 -   The number of nodes to be added must be less than or equal to the available nodes. Otherwise, the system will prompt a message indicating that scale-out is not allowed. You can view the number of available nodes on the  **Cluster Management**  page.
 
 ## Scaling Out a Cluster<a name="section31992607155626"></a>
