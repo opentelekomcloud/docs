@@ -41,7 +41,7 @@ Click  **Edit**  next to the  **Queue Name**  to modify the Kafka queue and send
 >![](public_sys-resources/icon-note.gif) **NOTE:**   
 >The access key ID cannot be changed. If you have deleted the access key ID or need to change the access key ID, you can disable the log subscription function and enable it again. Then enter a new access key ID.  
 
-![](figures/en-us_image_0224007612.png)
+![](figures/modifying-log-subscription.png)
 
 ## Disabling Log Subscription<a name="section1864713254423"></a>
 
@@ -50,5 +50,5 @@ Click the button next to  **Start Subscription**  to disable the log subscriptio
 >![](public_sys-resources/icon-note.gif) **NOTE:**   
 >If you enable the log subscription function again after disabling it, you need to enter an access key ID and select a Kafka queue again. The access key ID and Kafka queue can be the ones before or after the function is disabled.  
 
-![](figures/en-us_image_0224007694.png)
+![](figures/disabling-log-subscription.png)
 
