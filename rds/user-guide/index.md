@@ -158,8 +158,7 @@
 
 
 -   [Working with RDS for PostgreSQL](working-with-rds-for-postgresql.md)
-    -   [Data Migration](data-migration-(PostgreSQL)
-.md)
+    -   [Data Migration](data-migration-(PostgreSQL).md)
         -   [Migrating PostgreSQL Data Using psql](migrating-postgresql-data-using-psql.md)
 
     -   [Connection Management](connection-management-(PostgreSQL).md)
