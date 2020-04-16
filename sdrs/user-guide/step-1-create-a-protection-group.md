@@ -82,6 +82,6 @@ Verify the servers at the production and DR sites before you create a protection
 5.  Click  **Create Now**.
 6.  Click  **Back to Protection Group List**  to return to the SDRS homepage and query the protection group status.
 
-    If the protection group is displayed in the  **Storage Disaster Recovery Service**  page and its status is  **Available**  \(![](figures/23.png)\), the protection group has been created successfully.
+    If the protection group is displayed in the  **Storage Disaster Recovery Service**  page and its status is  **Available**  \(![](figures/available.png)\), the protection group has been created successfully.
 
 
