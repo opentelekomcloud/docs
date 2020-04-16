@@ -23,7 +23,7 @@ The enterprise administrator uses the enterprise IdP to manage the identities an
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >After an IdP is created successfully, the cloud system will preconfigure a default rule. This rule converts the usernames of federated users to  **FederationUser**, which is displayed in the cloud system. This rule only allows the federated users in the current IdP to access certain resources. If this default rule does not meet your requirements, you can click  **Edit Rule**  to modify it.  
 
-    ![](figures/en-us_image_0147665900.jpg)
+    ![](figures/create-rule.jpg)
 
     -   **Username**: indicates the username displayed in the cloud system after a federated user logs in. You are advised to enter a username that starts with  **FederationUser\_**  to differentiate between users in the cloud system and federated users. You can also enter a simple expression, such as  **FederationUser**\_\{email\}. After this rule is created successfully, the system automatically replaces \{email\} with the email address of the federated user. The username displayed in the cloud system is  **FederationUser\_**_XXX@XXX_.  _XXX@XXX_  indicates the email address of the federated user. This rule only takes effect if the assertion contains an email address.
 

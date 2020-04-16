@@ -32,7 +32,7 @@ If the default policies cannot meet the requirements on fine-grained access cont
         >-   Policies support only API-level authorization. You need to fill the  **Action**  field with the permissions in the API permissions table of the specific service. IAM then implements fine-grained authorization by calling the corresponding APIs in the table. If the scope of all permissions in a custom policy includes  **Project**  and  **Enterprise Project**, the custom policy can be granted on IAM.  For details, see: .  
         >    Section  [API Permissions](https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0103071509.html)  in the  _Elastic Cloud Server API Reference_  
         >    Section  [API Permissions](https://docs.otc.t-systems.com/en-us/api/vpc/vpc_permission_0000.html)  in the  _Virtual Private Cloud API Reference_  
-        >    Section  [API Permissions](https://docs.otc.t-systems.com/en-us/api/evs/en-us_topic_0103526772.html)  in the  _Elastic Volume Service API Reference_  
+        >    Section  [API Permissions](https://docs.otc.t-systems.com/en-us/api/evs/evs_04_0045.html)  in the  _Elastic Volume Service API Reference_  
 
 
 9.  Click  **OK**.
