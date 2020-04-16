@@ -29,15 +29,15 @@ This section describes how to use Windows Server 2012 R2 to create a domain serv
     3.  Enter the password and then confirm it. Deselect all check boxes \(do not change the password at the first login\).
     4.  After the user is added, a figure similar to the following is displayed. You can add domain accounts to user groups for permission control.
 
-        ![](figures/en-us_image_0226196845.png)
+        ![](figures/image_three.png)
 
-    5.  Add the domain account for logging in to RDS to the Admin group.  ![](figures/en-us_image_0226196426.png)![](figures/en-us_image_0226196782.png)![](figures/en-us_image_0226196735.png)![](figures/en-us_image_0226197229.png)
+    5.  Add the domain account for logging in to RDS to the Admin group.  ![](figures/image_one.png)![](figures/en-us_image_0226196782.png)![](figures/en-us_image_0226196735.png)![](figures/image_two.png)
 
 3.  Add an RDS DB instance to the domain.
 
     On the Microsoft SQL Server instance creation page, click  **Configure**  to configure the AD domain and then complete the DB instance creation. After the instance is created, the AD domain can be used.
 
-    ![](figures/en-us_image_0226196838.png)
+    ![](figures/image_four.png)
 
     **Table  1**  AD domain parameters
 
