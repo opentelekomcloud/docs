@@ -30,13 +30,13 @@ To use the 20 GB capacity, performing the following operations to adjust system 
 
         In the following command output,  **/dev/xvda**  or  **/dev/vda**  indicates the system disk.
 
-        ![](figures/en-us_image_0076540987.png)
+        ![](figures/Viewing-details-about-the-ECS-disk.png)
 
     4.  Run the following command to view disk partitions:
 
         **parted -l /dev/xvda**
 
-        ![](figures/en-us_image_0076598858.jpg)
+        ![](figures/Viewing-disk-partitions.jpg)
 
 2.  Create a partition for the expanded system disk capacity.
     1.  Run the following command to switch to the fdisk mode \(taking  **/dev/xvda**  as an example\):
@@ -61,25 +61,25 @@ To use the 20 GB capacity, performing the following operations to adjust system 
 
         Information similar to the following is displayed.
 
-        ![](figures/en-us_image_0076540988.png)
+        ![](figures/Creating-a-new-partition.png)
 
     3.  Enter the new partition's start cylinder number and press  **Enter**.
 
         The start cylinder number must be greater than the end cylinder numbers of existing partitions. In this example, use the default value for the new partition's start cylinder number and press  **Enter**. Information similar to the following is displayed.
 
-        ![](figures/en-us_image_0076595619.jpg)
+        ![](figures/Specifying-the-new-partition's-start-cylinder-number.jpg)
 
     4.  Enter the new partition's end cylinder number and press  **Enter**.
 
         In this example, use the default value for the new partition's end cylinder number and press  **Enter**. Information similar to the following is displayed.
 
-        ![](figures/en-us_image_0076595620.jpg)
+        ![](figures/Specifying-the-new-partition's-end-cylinder-number.jpg)
 
     5.  Enter  **p**  and press  **Enter**  to view the created partition.
 
         Information similar to the following is displayed.
 
-        ![](figures/en-us_image_0076596029.jpg)
+        ![](figures/Viewing-the-created-partition.jpg)
 
     6.  Enter  **w**  and press  **Enter**. The system saves and exits the partition.
 
@@ -87,13 +87,13 @@ To use the 20 GB capacity, performing the following operations to adjust system 
 
         Information similar to the following is displayed.
 
-        ![](figures/en-us_image_0076596326.jpg)
+        ![](figures/Completing-the-partition-creation.jpg)
 
     7.  Run the following command to view disk partitions:
 
         **parted -l /dev/xvda**
 
-        ![](figures/en-us_image_0076600080.jpg)
+        ![](figures/Viewing-disk-partitions-02.jpg)
 
 3.  Run the following command to synchronize the modifications in the partition list with the OS:
 
@@ -104,7 +104,7 @@ To use the 20 GB capacity, performing the following operations to adjust system 
 
         **df -TH**
 
-        ![](figures/en-us_image_0076541187.png)
+        ![](figures/Viewing-the-file-system-type.png)
 
     2.  Run the following command to format the partition \(taking the  **ext4**  type as an example\):
 
@@ -167,7 +167,7 @@ To use the 20 GB capacity, performing the following operations to adjust system 
 
         Information similar to the following is displayed:
 
-        ![](figures/en-us_image_0076543500.jpg)
+        ![](figures/Viewing-the-mounted-file-systems.jpg)
 
 6.  Determine whether to set automatic mounting upon system startup for the new disk.
 
@@ -185,7 +185,7 @@ To use the 20 GB capacity, performing the following operations to adjust system 
 
         **blkid**
 
-        ![](figures/en-us_image_0076543501.jpg)
+        ![](figures/Viewing-the-file-system-type.jpg)
 
         According to the preceding figure, the UUID of the new partition is 96e5e028-b0fb-4547-a82a-35ace1086c4f.
 
