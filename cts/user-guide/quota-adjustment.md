@@ -9,7 +9,7 @@ If the existing resource quota cannot meet your service requirements, you can ap
 ## How do I View My Quota?<a name="section07760615438"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/icon-region-1.png)  in the upper left corner and choose a region and project.
+2.  Click  ![](figures/icon-region-0.png)  in the upper left corner to select the desired region and project.
 3.  Click  ![](figures/my-quota.png)  \(the  **My Quota**  icon\) in the upper right corner of the page.
 
     The  **Service Quota**  page is displayed.
