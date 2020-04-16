@@ -97,7 +97,7 @@ The method for initializing a disk varies depending on the OS running on the ser
     **Figure  10**  Disk initialization succeeded \(Windows Server 2016\)<a name="en-us_topic_0115255433_fig14464150329"></a>  
     ![](figures/disk-initialization-succeeded-(windows-server-2016).png "disk-initialization-succeeded-(windows-server-2016)")
 
-12. After the volume is created, click  ![](figures/en-us_image_0175083514.png)  on the taskbar and check whether a new volume appears in  **This PC**. In this example, New Volume \(D:\) is the new volume.
+12. After the volume is created, click  ![](figures/icon_folder.png)  on the taskbar and check whether a new volume appears in  **This PC**. In this example, New Volume \(D:\) is the new volume.
 
     If New Volume \(D:\) appears, the disk is successfully initialized and no further action is required.
 

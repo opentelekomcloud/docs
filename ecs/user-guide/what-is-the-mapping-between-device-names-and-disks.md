@@ -30,7 +30,7 @@ Disk information displayed varies according to the ECS virtualization type. For 
 2.  <a name="li65954291187"></a>Check the device name of a VBD disk on the ECS.
     1.  Obtain the disk device ID by referring to  [1](#li1078411215720).
 
-        The device ID of the VBD disk shows the PCI address of the disk on the ECS. The address is in the format of "domain:bus:slot.function".
+        The device ID of the VBD disk shows the PCI address of the disk on the ECS. The address is in the format of "DOMIN:BUS:SLOT.FUNCTION".
 
     2.  Log in to the ECS as user  **root**.
     3.  In  **/sys/bus/pci/devices/DOMIN:BUS:SLOT.FUNCTION/virtio\*/block**, view the device name.
