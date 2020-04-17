@@ -9,7 +9,7 @@ If a cluster is terminated before data processing and analysis are completed, da
 ## Procedure<a name="sed29d729c038409ca93295dd1d8d21b1"></a>
 
 1.  Log in to the MRS management console.
-2.  Click  ![](figures/wwx437827-中软基础平台部-datasight-image-bbfbe22f-2a2d-4e1b-8f10-a7782fd1d3ed-29.png)  in the upper-left corner on the management console and select **Region** and **Project**.
+2.  Click  ![](figures/dt_mrs_project_region_image01.png)  in the upper-left corner on the management console and select **Region** and **Project**.
 3.  In the navigation tree of the MRS management console, choose  **Clusters \> Active Clusters**.
 4.  In the  **Operation** column of the cluster that you want to terminate, click **Terminate**.
 

@@ -154,7 +154,7 @@ You have accessed the Loader page. For details, see  [Loader Page](introduction_
 ## Deleting a Job<a name="sd8331aa6361d4ac48a8181671cb6cc76"></a>
 
 1.  Access the Loader page.
-2.  In the line of the specified job, click  ![](figures/en-us_image_0125375561.jpg).
+2.  In the line of the specified job, click  ![](figures/icon_mrs_deleteloaderjob.jpg).
 
     Alternatively, you can select one or more jobs and click  **Delete jobs**  in the upper right corner of the job list.
 

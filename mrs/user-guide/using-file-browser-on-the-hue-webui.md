@@ -82,7 +82,7 @@ An MRS cluster administrator has granted users with permission to view, create, 
 1.  On  **File Browser**, select one or more directories or files.
 2.  Click  **Move to trash**. In **Confirm Delete**, click **Yes**  to move them to the recycle bin.
 
-    If you want to directly delete the files without moving them to the recycle bin, click  ![](figures/en-us_image_0125375452.jpg) and select **Delete forever**. In **Confirm Delete**, click **Yes**  to confirm the operation.
+    If you want to directly delete the files without moving them to the recycle bin, click  ![](figures/icon_mrs_undo.jpg) and select **Delete forever**. In **Confirm Delete**, click **Yes**  to confirm the operation.
 
 
 ## Accessing Other Directories<a name="section61809860173857"></a>

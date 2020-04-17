@@ -25,7 +25,7 @@ Up to 1000 roles can be created on MRS Manager.
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >-   The  **Permission**  parameter is optional.  
-    >-   If you select  **View Name** to set component permissions, you can enter a resource name in the **Search** box in the upper-right corner and click ![](figures/en-us_image_0125375241.jpg). The search result is displayed.  
+    >-   If you select  **View Name** to set component permissions, you can enter a resource name in the **Search** box in the upper-right corner and click ![](figures/icon_mrs_search_l_l.jpg). The search result is displayed.  
     >-   The search scope covers only directories with current permissions. You cannot search subdirectories. Search by keywords supports fuzzy match and is case-insensitive. Results of the next page can be searched.  
 
     **Table  1**  Manager permission description

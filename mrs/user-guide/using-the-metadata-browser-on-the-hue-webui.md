@@ -26,14 +26,14 @@ The MRS cluster administrator has assigned the permission for using Hive to the 
 
     The default database is  **default**.
 
-2.  Click  ![](figures/en-us_image_0125375849.jpg) to access the **Create a new table from a file**  page.
+2.  Click  ![](figures/icon_mrs_dbcrate.jpg) to access the **Create a new table from a file**  page.
 3.  Select a file.
     1.  In  **Table Name**, enter a Hive table name.
 
         A Hive table name contains no more than 128 letters, numbers, or underscores \(\_\) and must start with a letter or number.
 
     2.  In  **Description**, enter description about the Hive table as required.
-    3.  In  **Input File or Location**, click ![](figures/en-us_image_0125375641.jpg)  and select a file in HDFS for creating a Hive table. The file is used to store new data of the Hive table.
+    3.  In  **Input File or Location**, click ![](figures/icon_mrs_dbmanu.jpg)  and select a file in HDFS for creating a Hive table. The file is used to store new data of the Hive table.
 
         If the file is not stored in HDFS, click  **Upload a file**  to upload the file from the local directory to HDFS. Multiple files can be simultaneously uploaded. The files cannot be empty.
 
@@ -57,13 +57,13 @@ The MRS cluster administrator has assigned the permission for using Hive to the 
     3.  Click  **Next**.
 
 5.  Define a column.
-    1.  If you click  ![](figures/en-us_image_0125376015.jpg) on the right side of **Use first row as column names**, the first row of data in the file is used as a column name. If you do not click it, the first row of data is not used as the column name.
+    1.  If you click  ![](figures/icon_mrs_hue_columnname.jpg) on the right side of **Use first row as column names**, the first row of data in the file is used as a column name. If you do not click it, the first row of data is not used as the column name.
     2.  In  **Column name**, set a name for each column.
 
         A Hive table name contains no more than 128 letters, numbers, or underscores \(\_\) and must start with a letter or number.
 
         >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >You can rename columns in batches by clicking  ![](figures/en-us_image_0125375219.jpg) on the right side of **Bulk edit column names**. Enter all column names and separate them by commas \(,\).  
+        >You can rename columns in batches by clicking  ![](figures/icon_mrs_edit.jpg) on the right side of **Bulk edit column names**. Enter all column names and separate them by commas \(,\).  
 
     3.  In  **Column Type**, select a type for each column.
 
@@ -75,7 +75,7 @@ The MRS cluster administrator has assigned the permission for using Hive to the 
 
     The default database is  **default**.
 
-2.  Click  ![](figures/en-us_image_0125375563.jpg) to access the **Create a new table manually**  page.
+2.  Click  ![](figures/icon_mrs_jiahao.png) to access the **Create a new table manually**  page.
 3.  Set a table name.
     1.  In  **Table Name**, enter a Hive table name.
 

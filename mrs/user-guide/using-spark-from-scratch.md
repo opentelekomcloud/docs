@@ -14,7 +14,7 @@ This section describes how to use Spark to submit a sparkPi job. SparkPi, a typi
     1.  Log in to the OBS console.
     2.  Click  **Create Bucket** to create a bucket and name it. The name must be unique; otherwise the bucket cannot be created. Here name **sparkPi**  will be used as an example.
     3.  In the  **sparkpi** bucket, click **Create Folder** to create the **program**, **output**, and **log** folders.
-    4.  Go to the  **program** folder, choose  **Upload Object**, click ![](figures/en-us_image_0125375462.jpg) to select the program package downloaded in [1](#l16861bd9eed2462b8c8624a720cf5ab5), and click **Upload Object**.
+    4.  Go to the  **program** folder, choose  **Upload Object**, click ![](figures/icon_mrs_obsmanu.jpg) to select the program package downloaded in [1](#l16861bd9eed2462b8c8624a720cf5ab5), and click **Upload Object**.
 
 3.  Log in to the MRS management console. In the navigation tree on the left, choose  **Clusters \> Active Clusters** and click the cluster named **mrs\_20160907**. The **mrs\_20160907** cluster was created in section [Creating a Cluster](creating-a-cluster_quick-start.md).
 4.  Submit a sparkPi job.

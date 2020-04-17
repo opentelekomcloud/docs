@@ -84,7 +84,7 @@ The specified time period is shorter than the execution time. \(Executing a MapR
         -   If yes, go to  [2.d](#en-us_topic_0035998739_clean).
         -   If no, go to  [4](#l24f44a5a64234e9c963e6e65dfb0f5b4).
 
-    4.  <a name="en-us_topic_0035998739_clean"></a>In the alarm list, choose  **Operation \>** ![](figures/h00296026-应用组件pdu-01_productdoc-image-a2bfb71d-9772-42d8-a0fb-ba94ca8f6857.png)  to manually clear the alarm. No further action is required.
+    4.  <a name="en-us_topic_0035998739_clean"></a>In the alarm list, choose  **Operation \>** ![](figures/icon_mrs_almopretion.png)  to manually clear the alarm. No further action is required.
 
 3.  <a name="l3f6577fc988143b09f22d3a0126fa7ad"></a>Adjust the timeout threshold.
 

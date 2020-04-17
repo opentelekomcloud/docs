@@ -15,7 +15,7 @@ MRS supports data import from the OBS system to HDFS. This function is recommend
 Both files and folders containing files can be imported. The operations are as follows:
 
 1.  Log in to the MRS management console.
-2.  Click  ![](figures/wwx437827-中软基础平台部-datasight-image-bbfbe22f-2a2d-4e1b-8f10-a7782fd1d3ed-31.png)  in the upper-left corner on the management console and select **Region** and **Project**.
+2.  Click  ![](figures/dt_mrs_project_region_image01.png)  in the upper-left corner on the management console and select **Region** and **Project**.
 3.  Choose  **Clusters \> Active Clusters**, select a cluster, and click its name to switch to the cluster details page.
 4.  Click  **Files** and go to the  **Files**  tab page.
 5.  Select  **HDFS File List**.
@@ -62,7 +62,7 @@ After data is processed and analyzed, you can either store the data in HDFS or e
 Both files and folders containing files can be exported. The operations are as follows:
 
 1.  Log in to the MRS management console.
-2.  Click  ![](figures/wwx437827-中软基础平台部-datasight-image-bbfbe22f-2a2d-4e1b-8f10-a7782fd1d3ed-32.png)  in the upper-left corner on the management console and select **Region** and **Project**.
+2.  Click  ![](figures/dt_mrs_project_region_image01.png)  in the upper-left corner on the management console and select **Region** and **Project**.
 3.  Choose  **Clusters \> Active Clusters**, select a cluster, and click its name to switch to the cluster details page.
 4.  Click  **Files** and go to the **Files**  tab page.
 5.  Select  **HDFS File List**.

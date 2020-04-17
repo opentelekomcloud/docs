@@ -20,7 +20,7 @@ You can create a customized resource pool on MRS Manager and add hosts that hav
 
     -   **Available Hosts**:
 
-        In the host list on the left, select the name of a specified host and click  ![](figures/en-us_image_0125375986.jpg)  to add the selected host to the resource pool. Only hosts in the cluster can be selected. The host list of a resource pool can be left blank.
+        In the host list on the left, select the name of a specified host and click  ![](figures/icon_mrs_addhost.jpg)  to add the selected host to the resource pool. Only hosts in the cluster can be selected. The host list of a resource pool can be left blank.
 
 5.  Click  **OK**  to save the settings.
 6.  After the resource pool is created, users can view the  **Name**, **Members**, **Association Mode**, **vCore**, and **Memory** in the resource pool list. Hosts that have been added to the customized resource pool are no longer members of the **Default**  resource pool.

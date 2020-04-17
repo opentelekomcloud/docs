@@ -80,7 +80,7 @@ If the cluster version is earlier than MRS 1.9.2, perform the following steps:
     >-   If you access MRS Manager with other MRS cluster usernames, change the password upon your first access. The new password must meet the requirements of the current password complexity policies. For details, contact the administrator.  
     >-   By default, a user is locked after inputting an incorrect password five consecutive times. The user is automatically unlocked after 5 minutes.  
 
-7.  If you want to exit MRS Manager, move the cursor to  ![](figures/en-us_image_0125375393.jpg) in the upper-right corner and click **Log Out**.
+7.  If you want to exit MRS Manager, move the cursor to  ![](figures/icon_mrs_loginout-dt.jpg) in the upper-right corner and click **Log Out**.
 
 ## Related Operation<a name="section5824002417933"></a>
 

@@ -32,7 +32,7 @@ This section describes how to use Hadoop to submit a wordcount job. Wordcount, a
         -   **program**: stores user programs.
         -   **input**: stores user data files.
 
-    4.  Go to the  **program** folder, choose  **Upload Object**, click ![](figures/en-us_image_0125375688.jpg) to select the program package downloaded in [1](#l524d34c525384f6b9c4fb83c88ec28e8), and click **Upload Object**.
+    4.  Go to the  **program** folder, choose  **Upload Object**, click ![](figures/icon_mrs_obsmanu.jpg) to select the program package downloaded in [1](#l524d34c525384f6b9c4fb83c88ec28e8), and click **Upload Object**.
     5.  Go to the  **input** folder and upload the data file that is prepared in [2](#l1959d41cee6e4ff2b70572897ba1d330).
 
 4.  Log in to the MRS management console. In the navigation tree on the left, choose  **Clusters \> Active Clusters** and click the cluster named **mrs\_20160907**. The **mrs\_20160907** cluster was created in section [Creating a Cluster](creating-a-cluster_quick-start.md).

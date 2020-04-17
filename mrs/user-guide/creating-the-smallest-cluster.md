@@ -13,7 +13,7 @@ Perform the following steps to create the smallest cluster.
     -   **AZ**: Select eu-de-01 or eu-de-02.
     -   **Cluster Name**: You can use the default name. However, you are recommended to include a project name abbreviation or date for consolidated memory and easy distinguishing, for example, **mrs\_20180321**.
     -   **Cluster Version**: Use the default value.
-    -   **Kerberos Authentication**: It is enabled by default, as shown in ![](figures/wwx437827-中软基础平台部-datasight-image-2684cf81-d351-4504-ae1a-2fb70826e877-20.png).
+    -   **Kerberos Authentication**: It is enabled by default, as shown in ![](figures/dt_enable.png).
     -   **Username**: Indicates the username for the administrator of MRS Manager.  **admin**  is used by default.
     -   **Password**: Indicates the password of the MRS Manager administrator.
     -   **Cluster Type**: Use the default value **Analysis cluster**.
@@ -22,7 +22,7 @@ Perform the following steps to create the smallest cluster.
     -   **Subnet**: Use the default value.
     -   **Security Group**: Select  **Auto create**.
     -   **EIP**: Select  **Bind later**.
-    -   **Cluster HA**: Click ![](figures/wwx437827-中软基础平台部-datasight-image-2684cf81-d351-4504-ae1a-2fb70826e877-21.png)  to disable cluster HA.
+    -   **Cluster HA**: Click ![](figures/dt_enable.png)  to disable cluster HA.
     -   **Instance Specifications**: Select  ****4 vCPUs 16 GB\(c3.xlarge.4\)****  under  **General computing-plus C3**  for both Master and Core nodes.
     -   **Instance Count**: The number of Master nodes is fixed to 1. Set the number of Core nodes to 1.
     -   **Storage Type**: Select **Common I/O**  for both Master and Core nodes.

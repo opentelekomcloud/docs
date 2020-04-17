@@ -9,7 +9,7 @@ Before creating jobs, upload the local data to OBS for computing and analysis. M
 ## Procedure<a name="s9fd52b50176c4cdb8be9442ebf5ffad3"></a>
 
 1.  Log in to the MRS management console.
-2.  Click  ![](figures/wwx437827-中软基础平台部-datasight-image-bbfbe22f-2a2d-4e1b-8f10-a7782fd1d3ed-1.png)  in the upper-left corner on the management console and select **Region** and **Project**.
+2.  Click  ![](figures/wwx437827-中软基础平台部-datasight-image-bbfbe22f-2a2d-4e1b-8f10-a7782fd1d3ed.png)  in the upper-left corner on the management console and select **Region** and **Project**.
 3.  Choose  **Cluster**  \>  **Active Cluster**, select a cluster, and click its name to switch to the cluster details page.
 4.  Click  **Job Management** and go to the **Job Management**  tab page.
 5.  On the  **Jobs** tab page, click **Create** and go to the **Create Job**  page.

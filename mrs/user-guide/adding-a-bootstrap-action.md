@@ -37,7 +37,7 @@
     <tr id="row274823064014"><td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.3.1.1 "><p id="p8748183014016"><a name="p8748183014016"></a><a name="p8748183014016"></a>Execution Node</p>
     </td>
     <td class="cellrowborder" valign="top" width="73%" headers="mcps1.2.3.1.2 "><p id="p474833019404"><a name="p474833019404"></a><a name="p474833019404"></a>Select a type of the node where the bootstrap action script is executed.</p>
-    <div class="note" id="note4748530114019"><a name="note4748530114019"></a><a name="note4748530114019"></a><span class="notetitle"> NOTE: </span><div class="notebody"><a name="ul7461220103311"></a><a name="ul7461220103311"></a><ul id="ul7461220103311"><li>If you select <strong id="b842352706113232"><a name="b842352706113232"></a><a name="b842352706113232"></a>Master</strong>, you can choose whether to run the script only on the active Master nodes by enabling or disabling the switch <a name="image188871133428"></a><a name="image188871133428"></a><span><img id="image188871133428" src="figures/icon_mrs_disable_hec-53.png"></span>.</li><li>If you enable it, the script runs only on the active Master nodes. If you disable it, the script runs on all Master nodes. This switch is disabled by default.</li></ul>
+    <div class="note" id="note4748530114019"><a name="note4748530114019"></a><a name="note4748530114019"></a><span class="notetitle"> NOTE: </span><div class="notebody"><a name="ul7461220103311"></a><a name="ul7461220103311"></a><ul id="ul7461220103311"><li>If you select <strong id="b842352706113232"><a name="b842352706113232"></a><a name="b842352706113232"></a>Master</strong>, you can choose whether to run the script only on the active Master nodes by enabling or disabling the switch <a name="image188871133428"></a><a name="image188871133428"></a><span><img id="image188871133428" src="figures/icon_mrs_disable_dt.png"></span>.</li><li>If you enable it, the script runs only on the active Master nodes. If you disable it, the script runs on all Master nodes. This switch is disabled by default.</li></ul>
     </div></div>
     </td>
     </tr>
@@ -70,7 +70,7 @@
 ## Adding an Automation Script on the Auto Scaling Page<a name="section1675203104312"></a>
 
 1.  Log in to the MRS management console.
-2.  Click  ![](figures/wwx437827-中软基础平台部-datasight-image-bbfbe22f-2a2d-4e1b-8f10-a7782fd1d3ed-54.png)in the upper left corner on the management console and select  **Region**  and  **Project**.
+2.  Click  ![](figures/dt_mrs_project_region_image01.png)in the upper left corner on the management console and select  **Region**  and  **Project**.
 3.  Choose  **Clusters**  \>  **Active Clusters**, select a running cluster, and click its name to switch to the cluster details page.
 4.  On the  **Nodes**  tab page, click  **Auto Scaling**  in the  **Operation**  column of the Task node group. The  **Auto Scaling**  page is displayed.
 5.  Configure a resource plan.

@@ -360,9 +360,9 @@ After clusters are created, you can monitor and manage clusters. Choose  **Clust
 </th>
 </tr>
 </thead>
-<tbody><tr id="row10659077145753"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p31390333102326"><a name="p31390333102326"></a><a name="p31390333102326"></a><a name="image21167408145618"></a><a name="image21167408145618"></a><span><img id="image21167408145618" src="figures/wwx437827-中软基础平台部-datasight-image-2876b042-9202-4604-a10c-0132a8b0eed4-22.png"></span></p>
+<tbody><tr id="row10659077145753"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p31390333102326"><a name="p31390333102326"></a><a name="p31390333102326"></a><a name="image21167408145618"></a><a name="image21167408145618"></a><span><img id="image21167408145618" src="figures/icon_mrs_fresh_r.png"></span></p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p66539681102326"><a name="p66539681102326"></a><a name="p66539681102326"></a>Click <a name="image20461066145633"></a><a name="image20461066145633"></a><span><img id="image20461066145633" src="figures/wwx437827-中软基础平台部-datasight-image-2876b042-9202-4604-a10c-0132a8b0eed4-23.png"></span> to manually refresh the node.</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p66539681102326"><a name="p66539681102326"></a><a name="p66539681102326"></a>Click <a name="image20461066145633"></a><a name="image20461066145633"></a><span><img id="image20461066145633" src="figures/icon_mrs_fresh_r.png"></span> to manually refresh the node.</p>
 </td>
 </tr>
 </tbody>

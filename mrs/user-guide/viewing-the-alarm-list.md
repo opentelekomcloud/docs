@@ -51,15 +51,15 @@ Alarms are listed in chronological order by default in the alarm list, with the 
 </th>
 </tr>
 </thead>
-<tbody><tr id="row53160630151843"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p64136143151939"><a name="p64136143151939"></a><a name="p64136143151939"></a><a name="image40354382151939"></a><a name="image40354382151939"></a><span><img id="image40354382151939" src="figures/en-us_image_0125376017.jpg" height="44.8875" width="48.877500000000005"></span></p>
+<tbody><tr id="row53160630151843"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p64136143151939"><a name="p64136143151939"></a><a name="p64136143151939"></a><a name="image40354382151939"></a><a name="image40354382151939"></a><span><img id="image40354382151939" src="figures/icon_mrs_cluster_state.jpg"></span></p>
 </td>
 <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p47479496151939"><a name="p47479496151939"></a><a name="p47479496151939"></a>In the drop-down list, select an alarm severity to filter alarms.</p>
 <a name="ul24662286151939"></a><a name="ul24662286151939"></a><ul id="ul24662286151939"><li>All: displays all alarms.</li><li>Critical: displays <span class="parmvalue" id="parmvalue1458800615362"><a name="parmvalue1458800615362"></a><a name="parmvalue1458800615362"></a><b>Critical</b></span> alarms.</li><li>Major: displays <span class="parmvalue" id="parmvalue2412419915366"><a name="parmvalue2412419915366"></a><a name="parmvalue2412419915366"></a><b>Major</b></span> alarms.</li><li>Warning: displays <span class="parmvalue" id="parmvalue1964970015369"><a name="parmvalue1964970015369"></a><a name="parmvalue1964970015369"></a><b>Warning</b></span> alarms.</li><li>Minor: displays <span class="parmvalue" id="parmvalue3614253153613"><a name="parmvalue3614253153613"></a><a name="parmvalue3614253153613"></a><b>Minor</b></span> alarms.</li></ul>
 </td>
 </tr>
-<tr id="row42104918151843"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p58196289151939"><a name="p58196289151939"></a><a name="p58196289151939"></a><a name="image3778219415559"></a><a name="image3778219415559"></a><span><img id="image3778219415559" src="figures/wwx437827-中软基础平台部-datasight-image-2876b042-9202-4604-a10c-0132a8b0eed4-33.png"></span></p>
+<tr id="row42104918151843"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p58196289151939"><a name="p58196289151939"></a><a name="p58196289151939"></a><a name="image3778219415559"></a><a name="image3778219415559"></a><span><img id="image3778219415559" src="figures/icon_mrs_fresh_r.png"></span></p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p12292998151939"><a name="p12292998151939"></a><a name="p12292998151939"></a>Click&nbsp;<a name="image55036940155521"></a><a name="image55036940155521"></a><span><img id="image55036940155521" src="figures/wwx437827-中软基础平台部-datasight-image-2876b042-9202-4604-a10c-0132a8b0eed4-34.png"></span>&nbsp;to manually refresh the alarm list.</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p12292998151939"><a name="p12292998151939"></a><a name="p12292998151939"></a>Click&nbsp;<a name="image55036940155521"></a><a name="image55036940155521"></a><span><img id="image55036940155521" src="figures/icon_mrs_fresh_r.png"></span>&nbsp;to manually refresh the alarm list.</p>
 </td>
 </tr>
 </tbody>

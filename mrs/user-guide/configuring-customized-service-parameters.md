@@ -24,8 +24,8 @@ You have learned the meanings of parameters to be added, configuration files to 
     The configuration files that save the newly added customized parameters are displayed in  **Parameter File**. Different configuration files may support open source parameters with the same names. After the parameters in different files are set to different values, the configuration effect depends on the sequence of the configuration files that are loaded by components. Service-level and role-level customized parameters are supported. Perform configuration based on the actual service requirements. Customized parameters for a single role instance are not supported.
 
 6.  Based on the configuration files and parameter functions, enter parameter names supported by components in  **Name** and enter the parameter values in the **Value**  column of the row where the parameters are located.
-    -   You can click  ![](figures/en-us_image_0125375405.jpg) or ![](figures/en-us_image_0125375887.jpg) to add or delete a customized parameter. A customized parameter can be deleted only after you click ![](figures/en-us_image_0125375908.jpg)  to add the parameter.
-    -   You can click  ![](figures/en-us_image_0125375964.jpg)  to restore a parameter value.
+    -   You can click  ![](figures/icon_mrs_addsource.jpg) or ![](figures/icon_mrs_mj.jpg) to add or delete a customized parameter. A customized parameter can be deleted only after you click ![](figures/icon_mrs_addsource.jpg)  to add the parameter.
+    -   You can click  ![](figures/icon_mrs_cancel.jpg)  to restore a parameter value.
 
 7.  Click  **Save Configuration**, select **Restart the affected services or instances**, and click **OK**  to restart the service.
 

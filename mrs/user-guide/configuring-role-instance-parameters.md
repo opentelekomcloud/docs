@@ -19,7 +19,7 @@ After the attributes of HBase, HDFS, Hive, Spark, Yarn, and MapReduce are config
     6.  Set  **Type** to **All**. All configuration parameters of the role instances are displayed in the navigation tree.
     7.  In the navigation tree, choose a parameter and change its value. You can also enter the parameter name in  **Search**  to search for the parameter and view the result.
 
-        You can click  ![](figures/en-us_image_0125375386.jpg)  to restore a parameter value.
+        You can click  ![](figures/icon_mrs_cancel.jpg)  to restore a parameter value.
 
     8.  Click  **Save Configuration**, select **Restart the role instance**, and click **OK**  to restart the role instance.
 

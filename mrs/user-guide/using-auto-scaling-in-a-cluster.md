@@ -45,7 +45,7 @@ You can configure either auto scaling rules or resource plans or both of them to
 You can configure auto scaling rules to adjust the number of Task nodes based on data volume changes to increase or decrease resources.
 
 1.  Log in to the MRS management console.
-2.  Click  ![](figures/wwx437827-中软基础平台部-datasight-image-bbfbe22f-2a2d-4e1b-8f10-a7782fd1d3ed-26.png)  in the upper-left corner on the management console and select **Region** and **Project**.
+2.  Click  ![](figures/dt_mrs_project_region_image01.png)  in the upper-left corner on the management console and select **Region** and **Project**.
 3.  Choose  **Clusters \> Active Clusters**, select a running cluster, and click its name to switch to the cluster information page.
 4.  On the  **Nodes**  tab page, click  **Auto Scaling**  in the  **Operation**  column of the Task node group. The  **Auto Scaling**  page is displayed.
 5.  Configure an auto scaling rule.
@@ -79,7 +79,7 @@ If the data volume changes regularly every day and you want to scale out or in a
 For example, the service data volume for real-time processing peaks between 7:00 and 13:00 every day and is stable and low for other time. Assume that an MRS streaming cluster is used to process the service data. Between 7:00 and 13:00, five Task nodes are required for processing the peak data volume, and only two task nodes are required for other time. You can perform the following steps to configure a resource plan.
 
 1.  Log in to the MRS management console.
-2.  Click  ![](figures/wwx437827-中软基础平台部-datasight-image-bbfbe22f-2a2d-4e1b-8f10-a7782fd1d3ed-27.png)in the upper left corner on the management console and select  **Region**  and  **Project**.
+2.  Click  ![](figures/dt_mrs_project_region_image01.png)in the upper left corner on the management console and select  **Region**  and  **Project**.
 3.  Choose  **Clusters**  \>  **Active Clusters**, select a running cluster, and click its name to switch to the cluster details page.
 4.  On the  **Nodes**  tab page, click  **Auto Scaling**  in the  **Operation**  column of the Task node group. The  **Auto Scaling**  page is displayed.
 5.  Configure a resource plan.
@@ -113,7 +113,7 @@ For example, even though the service data volume for real-time processing change
 Assume that from five to eight Task nodes are needed from 7:00 to 13:00 and two to four Task nodes are required for other time. Therefore, you can set an auto scaling rule in addition to a resource plan. Therefore, when the data volume exceeds the expected value, the number of Task nodes can be adjusted based on the loads, without exceeding the node range specified in the resource plan. When a resource plan is triggered, the number of nodes is adjusted within the specified node range with minimum affect. That is, increase nodes to the minimum value of the node range and decrease nodes to the maximum value of the node range. Perform the following steps to configure both the auto scaling rule and the resource plan:
 
 1.  Log in to the MRS management console.
-2.  Click![](figures/wwx437827-中软基础平台部-datasight-image-bbfbe22f-2a2d-4e1b-8f10-a7782fd1d3ed-28.png)in the upper left corner on the management console and select  **Region**  and  **Project**.
+2.  Click![](figures/dt_mrs_project_region_image01.png)in the upper left corner on the management console and select  **Region**  and  **Project**.
 3.  Choose  **Clusters**  \>  **Active Clusters**, select a running cluster, and click its name to switch to the cluster details page.
 4.  On the  **Nodes**  tab page, click  **Auto Scaling**  in the  **Operation**  column of the Task node group. The  **Auto Scaling**  page is displayed.
 5.  Configure the auto scaling rule.
@@ -386,7 +386,7 @@ When adding an automation script, you can set related parameters by referring to
 <tr id="row96451235185718"><td class="cellrowborder" valign="top" width="22.720000000000002%" headers="mcps1.2.3.1.1 "><p id="p19295152914568"><a name="p19295152914568"></a><a name="p19295152914568"></a>Execution Node Type</p>
 </td>
 <td class="cellrowborder" valign="top" width="77.28%" headers="mcps1.2.3.1.2 "><p id="p15324353145617"><a name="p15324353145617"></a><a name="p15324353145617"></a>Select a type of the node where the bootstrap action script is executed.</p>
-<div class="note" id="note1385223393710"><a name="note1385223393710"></a><a name="note1385223393710"></a><span class="notetitle"> NOTE: </span><div class="notebody"><a name="ul26783219257"></a><a name="ul26783219257"></a><ul id="ul26783219257"><li>If you select <strong id="b175610565714"><a name="b175610565714"></a><a name="b175610565714"></a>Master</strong> nodes, you can choose whether to run the script only on the active Master nodes by enabling or disabling the switch <a name="image16678182112518"></a><a name="image16678182112518"></a><span><img id="image16678182112518" src="figures/en-us_image_0221410253.png"></span>.</li><li>If you enable it, the script runs only on the active Master nodes. If you disable it, the script runs on all Master nodes. This switch is disabled by default.</li></ul>
+<div class="note" id="note1385223393710"><a name="note1385223393710"></a><a name="note1385223393710"></a><span class="notetitle"> NOTE: </span><div class="notebody"><a name="ul26783219257"></a><a name="ul26783219257"></a><ul id="ul26783219257"><li>If you select <strong id="b175610565714"><a name="b175610565714"></a><a name="b175610565714"></a>Master</strong> nodes, you can choose whether to run the script only on the active Master nodes by enabling or disabling the switch <a name="image16678182112518"></a><a name="image16678182112518"></a><span><img id="image16678182112518" src="figures/icon_mrs_disable_dt.png"></span>.</li><li>If you enable it, the script runs only on the active Master nodes. If you disable it, the script runs on all Master nodes. This switch is disabled by default.</li></ul>
 </div></div>
 </td>
 </tr>

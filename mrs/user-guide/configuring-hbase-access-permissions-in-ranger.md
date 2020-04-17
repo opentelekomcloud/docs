@@ -3,7 +3,7 @@
 After an MRS cluster with Ranger installed is created, HBase access control is not integrated into Ranger. This section describes how to integrate HBase into Ranger.
 
 1.  Log in to the Ranger web UI.
-2.  In the  **Service Manager**  area, click  ![](figures/en-us_image_0228886616.png)  next to  **HBASE**  to add an HBase service.
+2.  In the  **Service Manager**  area, click  ![](figures/icon_mrs_jiahao.png)  next to  **HBASE**  to add an HBase service.
 
     **Figure  1**  Adding an HBase service<a name="fig1355517248383"></a>  
     ![](figures/adding-an-hbase-service.png "adding-an-hbase-service")
@@ -80,8 +80,8 @@ After an MRS cluster with Ranger installed is created, HBase access control is n
     </tbody>
     </table>
 
-    **Figure  2**  Create Service<a name="fig39091316015"></a>  
-    ![](figures/create-service-61.png "create-service-61")
+    **Figure  2**  Create an HBase service<a name="fig39091316015"></a>  
+    ![](figures/create-an-hbase-service.png "create-an-hbase-service")
 
 4.  Click  **Add**  to add the service.
 5.  Start the Ranger HBase plugin to authorize Ranger to manage HBase.
@@ -147,8 +147,8 @@ After an MRS cluster with Ranger installed is created, HBase access control is n
         </tbody>
         </table>
 
-        **Figure  3**  Adding an access control policy<a name="fig2047532791212"></a>  
-        ![](figures/adding-an-access-control-policy-62.png "adding-an-access-control-policy-62")
+        **Figure  3**  Adding an access control policy for hbasedev<a name="fig2047532791212"></a>  
+        ![](figures/adding-an-access-control-policy-for-hbasedev.png "adding-an-access-control-policy-for-hbasedev")
 
     5.  Click  **Add**  to add the policy. According to the preceding policy, user  **testuser**  in the  **testuser**  user group has the  **Create**  and  **select**  permissions on the  **cf1:name**  column in the  **test1**  table of the  **default**  namespace in HBase, but no permission to access other columns.
 
@@ -172,8 +172,8 @@ After an MRS cluster with Ranger installed is created, HBase access control is n
 
             **put 'test1','001','cf1:age',10**
 
-        **Figure  5**  Verifying Ranger integration<a name="fig11361364170"></a>  
-        ![](figures/verifying-ranger-integration-63.png "verifying-ranger-integration-63")
+        **Figure  5**  Verifying whether HBase is integrated in Ranger<a name="fig11361364170"></a>  
+        ![](figures/verifying-whether-hbase-is-integrated-in-ranger.png "verifying-whether-hbase-is-integrated-in-ranger")
 
 
 

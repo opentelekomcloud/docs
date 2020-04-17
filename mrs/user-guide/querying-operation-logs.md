@@ -62,27 +62,27 @@ Logs are listed in chronological order by default in the log list, with the most
 </th>
 </tr>
 </thead>
-<tbody><tr id="row9266410139"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p750586110139"><a name="p750586110139"></a><a name="p750586110139"></a><a name="image6147517310551"></a><a name="image6147517310551"></a><span><img id="image6147517310551" src="figures/en-us_image_0125375836.jpg" height="44.8875" width="48.877500000000005"></span></p>
+<tbody><tr id="row9266410139"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p750586110139"><a name="p750586110139"></a><a name="p750586110139"></a><a name="image6147517310551"></a><a name="image6147517310551"></a><span><img id="image6147517310551" src="figures/icon_mrs_cluster_state.jpg"></span></p>
 </td>
 <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p5344702710412"><a name="p5344702710412"></a><a name="p5344702710412"></a>In the drop-down list, select an operation type to filter logs.</p>
 <a name="ul1294383513519"></a><a name="ul1294383513519"></a><ul id="ul1294383513519"><li>All: displays all logs.</li><li>Cluster: displays logs of <span class="parmname" id="parmname38069190102037"><a name="parmname38069190102037"></a><a name="parmname38069190102037"></a><b>Clusters</b></span>.</li><li>Job: displays logs of <span class="parmname" id="parmname13142044102056"><a name="parmname13142044102056"></a><a name="parmname13142044102056"></a><b>Jobs</b></span>.</li></ul>
 </td>
 </tr>
-<tr id="row63630108154320"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p53765115154320"><a name="p53765115154320"></a><a name="p53765115154320"></a><a name="image53709734154348"></a><a name="image53709734154348"></a><span><img id="image53709734154348" src="figures/en-us_image_0125375823.jpg" height="42.892500000000005" width="43.89"></span></p>
+<tr id="row63630108154320"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p53765115154320"><a name="p53765115154320"></a><a name="p53765115154320"></a><a name="image53709734154348"></a><a name="image53709734154348"></a><span><img id="image53709734154348" src="figures/icon_mrs_time-dt.jpg"></span></p>
 </td>
 <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p60007083154320"><a name="p60007083154320"></a><a name="p60007083154320"></a>Filter logs by time.</p>
 <a name="ol2595430715486"></a><a name="ol2595430715486"></a><ol id="ol2595430715486"><li>Click the button.</li><li>Specify the date and time.</li><li>Click <span class="uicontrol" id="uicontrol44366937155920"><a name="uicontrol44366937155920"></a><a name="uicontrol44366937155920"></a><b>OK</b></span>.</li></ol>
 <p id="p57734443154828"><a name="p57734443154828"></a><a name="p57734443154828"></a>Enter the query start time in the left box and end time in the right box. The end time must be later than the start time. Otherwise, logs cannot be filtered by time.</p>
 </td>
 </tr>
-<tr id="row3595494810139"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p2666966910139"><a name="p2666966910139"></a><a name="p2666966910139"></a><a name="image63573541154216"></a><a name="image63573541154216"></a><span><img id="image63573541154216" src="figures/wwx437827-中软基础平台部-datasight-image-104c5f07-74cb-459f-adb9-fed0c8cbc399-49.png"></span></p>
+<tr id="row3595494810139"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p2666966910139"><a name="p2666966910139"></a><a name="p2666966910139"></a><a name="image63573541154216"></a><a name="image63573541154216"></a><span><img id="image63573541154216" src="figures/icon_mrs_search_l.png"></span></p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p1275954610139"><a name="p1275954610139"></a><a name="p1275954610139"></a>Enter key words in <span class="parmname" id="parmname10790254155939"><a name="parmname10790254155939"></a><a name="parmname10790254155939"></a><b>Operation Details</b></span>&nbsp;and click&nbsp;<a name="image20607779154221"></a><a name="image20607779154221"></a><span><img id="image20607779154221" src="figures/wwx437827-中软基础平台部-datasight-image-104c5f07-74cb-459f-adb9-fed0c8cbc399-50.png"></span> to search for logs.</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p1275954610139"><a name="p1275954610139"></a><a name="p1275954610139"></a>Enter key words in <span class="parmname" id="parmname10790254155939"><a name="parmname10790254155939"></a><a name="parmname10790254155939"></a><b>Operation Details</b></span>&nbsp;and click&nbsp;<a name="image20607779154221"></a><a name="image20607779154221"></a><span><img id="image20607779154221" src="figures/icon_mrs_search_l.png"></span> to search for logs.</p>
 </td>
 </tr>
-<tr id="row4772705110139"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p4068596210139"><a name="p4068596210139"></a><a name="p4068596210139"></a><a name="image2384057154134"></a><a name="image2384057154134"></a><span><img id="image2384057154134" src="figures/wwx437827-中软基础平台部-datasight-image-2876b042-9202-4604-a10c-0132a8b0eed4-51.png"></span></p>
+<tr id="row4772705110139"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p4068596210139"><a name="p4068596210139"></a><a name="p4068596210139"></a><a name="image2384057154134"></a><a name="image2384057154134"></a><span><img id="image2384057154134" src="figures/icon_mrs_fresh_r.png"></span></p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p722865810139"><a name="p722865810139"></a><a name="p722865810139"></a>Click <a name="image46828546154136"></a><a name="image46828546154136"></a><span><img id="image46828546154136" src="figures/wwx437827-中软基础平台部-datasight-image-2876b042-9202-4604-a10c-0132a8b0eed4-52.png"></span> to manually refresh the log list.</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p722865810139"><a name="p722865810139"></a><a name="p722865810139"></a>Click <a name="image46828546154136"></a><a name="image46828546154136"></a><span><img id="image46828546154136" src="figures/icon_mrs_fresh_r.png"></span> to manually refresh the log list.</p>
 </td>
 </tr>
 </tbody>

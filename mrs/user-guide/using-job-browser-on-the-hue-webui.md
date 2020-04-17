@@ -25,7 +25,7 @@ After Kerberos authentication is enabled for an MRS cluster, users can use the H
     </thead>
     <tbody><tr id="row1800768317408"><td class="cellrowborder" valign="top" width="30.64%" headers="mcps1.2.3.1.1 "><p id="p5674433917408"><a name="p5674433917408"></a><a name="p5674433917408"></a><span class="parmname" id="parmname630492617408"><a name="parmname630492617408"></a><a name="parmname630492617408"></a><b>Logs</b></span></p>
     </td>
-    <td class="cellrowborder" valign="top" width="69.36%" headers="mcps1.2.3.1.2 "><p id="p2756296517408"><a name="p2756296517408"></a><a name="p2756296517408"></a>Log information. If a job has logs, <a name="image3288871317408"></a><a name="image3288871317408"></a><span><img id="image3288871317408" src="figures/en-us_image_0125375893.jpg" height="11.97" width="15.96"></span> is displayed.</p>
+    <td class="cellrowborder" valign="top" width="69.36%" headers="mcps1.2.3.1.2 "><p id="p2756296517408"><a name="p2756296517408"></a><a name="p2756296517408"></a>Log information. If a job has logs, <a name="image3288871317408"></a><a name="image3288871317408"></a><span><img id="image3288871317408" src="figures/icon_mrs_mma.jpg"></span> is displayed.</p>
     </td>
     </tr>
     <tr id="row2890271317408"><td class="cellrowborder" valign="top" width="30.64%" headers="mcps1.2.3.1.1 "><p id="p4933622217408"><a name="p4933622217408"></a><a name="p4933622217408"></a><span class="parmname" id="parmname2785142317408"><a name="parmname2785142317408"></a><a name="parmname2785142317408"></a><b>ID</b></span></p>
@@ -101,6 +101,6 @@ After Kerberos authentication is enabled for an MRS cluster, users can use the H
 2.  On the  **Metadata**  tab page, you can view the metadata of the job.
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >You can click  ![](figures/en-us_image_0125375841.jpg)  to open job running logs.  
+    >You can click  ![](figures/icon_mrs_dbjoblog.jpg)  to open job running logs.  
 
 

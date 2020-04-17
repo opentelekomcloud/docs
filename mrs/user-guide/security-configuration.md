@@ -82,7 +82,8 @@ Flink sample project data is stored in Kafka. Data is sent to and received from 
 
                 The command execution result is displayed as follows:
 
-                ![](figures/en-us_image_0221415220.png)
+                **Figure  1**  Generate the  **truststore**<a name="fig1387918141184"></a>  
+                ![](figures/generate-the-truststore.png "generate-the-truststore")
 
             3.  Running parameters
 

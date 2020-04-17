@@ -15,7 +15,7 @@ If you have downloaded a user authentication file, download it again and obtain 
 
 ## Procedure<a name="s907e908244c449769e272990cc5c4c52"></a>
 
-1.  On MRS Manager, move the mouse cursor to  ![](figures/en-us_image_0125375212.jpg)  in the upper-right corner.
+1.  On MRS Manager, move the mouse cursor to  ![](figures/icon_mrs_loginout-dt.jpg)  in the upper-right corner.
 
     On the menu that is displayed, select  **Change Password**.
 
