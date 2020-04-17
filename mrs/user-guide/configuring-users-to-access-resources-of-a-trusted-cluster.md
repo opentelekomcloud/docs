@@ -14,7 +14,7 @@ The mutual trust relationship has been configured between two clusters \(cluster
     -   If yes, go to  [2](#l19561ff7f8b4469db842fe0beb479e26).
     -   If no, go to  [3](#l3332dd26fdd64330a98ba30f083b7c2d).
 
-2.  <a name="l19561ff7f8b4469db842fe0beb479e26"></a>Click  ![](figures/en-us_image_0125375247.png)  on the left side of the username to unfold detailed user information. Check the user groups and roles of the accounts to ensure that they have the same permission as the accounts of cluster B.
+2.  <a name="l19561ff7f8b4469db842fe0beb479e26"></a>Click  ![](figures/icon_mrs_up.png)  on the left side of the username to unfold detailed user information. Check the user groups and roles of the accounts to ensure that they have the same permission as the accounts of cluster B.
 
     For example, user  **admin** of cluster A has the permission to access and create files in the **/tmp** directory of cluster A. Then go to [4](#l30e0cd486de24332a3172a6563226f78).
 

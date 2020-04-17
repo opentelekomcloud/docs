@@ -8,7 +8,7 @@ By default, MRS Manager keeps the records of the latest 10 running tasks, such a
 
 ## Procedure<a name="section1220278114313"></a>
 
-1.  On the MRS Manager portal, click  ![](figures/en-us_image_0125375825.jpg)and open **Task List**.
+1.  On the MRS Manager portal, click  ![](figures/icon_mrs_tasknum.jpg)and open **Task List**.
 
     You can view the following information under  **Task List**: **Name**, **Status**, **Progress**, **Start Time**, and **End Time**.
 

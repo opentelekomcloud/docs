@@ -13,7 +13,7 @@ On the MRS management console, you can enable or disable the notification servic
 ## Procedure<a name="section2769747914132"></a>
 
 1.  Log in to the MRS management console.
-2.  Click  ![](figures/wwx437827-中软基础平台部-datasight-image-bbfbe22f-2a2d-4e1b-8f10-a7782fd1d3ed-35.png)  in the upper-left corner on the management console and select **Region** and **Project**.
+2.  Click  ![](figures/dt_mrs_project_region_image01.png)  in the upper-left corner on the management console and select **Region** and **Project**.
 3.  Choose  **Clusters \> Active Clusters**, select a running cluster, and click its name to switch to the cluster details page.
 4.  Click  **Alarms**  tab page.
 5.  Choose  **Notification Rules**  \>  **Add Notification Rule**. The  **Add Notification Rule**  page is displayed.

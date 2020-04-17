@@ -32,7 +32,7 @@ You have obtained the AK/SK for writing data from the OBS data source to the Spa
     1.  Log in to the OBS management console.
     2.  Click  **Create Bucket** to create a bucket and name it. The name must be unique or else the bucket cannot be created. Here name **sparksql**  will be used as an example.
     3.  In the  **sparksql** bucket, click **Create Folder** to create the **input**  folder.
-    4.  Go to the input folder, click  ![](figures/en-us_image_0125375374.jpg) to select a local text file, and click **Upload Object**.
+    4.  Go to the input folder, click  ![](figures/icon_mrs_obsmanu.jpg) to select a local text file, and click **Upload Object**.
 
 3.  Import the text file in OBS to HDFS.
     1.  Log in to the MRS management console. In the navigation tree on the left, choose  **Clusters \> Active Clusters** and click the cluster named **mrs\_20160907**. The **mrs\_20160907** cluster was created in section [Creating a Cluster](creating-a-cluster_quick-start.md).

@@ -14,7 +14,7 @@ You have uploaded the program packages and data files required for running jobs 
 2.  Choose  **Clusters \> Active Clusters**, select a running cluster, and click its name to switch to the cluster details page.
 3.  If Kerberos authentication is enabled for the cluster, perform the following steps. If Kerberos authentication is not enabled for the cluster, skip this step.
 
-    In the  **Basic Information**  area on the  **Dashboard**  tab page, click  ![](figures/en-us_image_0226013652.png)  on the right side of  **IAM User Sync**  to synchronize IAM users. For details, see  [Synchronizing IAM Users to MRS](synchronizing-iam-users-to-mrs.md).
+    In the  **Basic Information**  area on the  **Dashboard**  tab page, click  ![](figures/icon_mrs_iamsy-dt.png)  on the right side of  **IAM User Sync**  to synchronize IAM users. For details, see  [Synchronizing IAM Users to MRS](synchronizing-iam-users-to-mrs.md).
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >-   In the versions earlier than MRS 1.9.2, the job management function is unavailable in a cluster with Kerberos authentication enabled. You need to submit a job in the background.  
@@ -64,7 +64,7 @@ You have uploaded the program packages and data files required for running jobs 
         <tr id="row203713398279"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p17371939172710"><a name="p17371939172710"></a><a name="p17371939172710"></a>Service Parameter</p>
         </td>
         <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p4371163914272"><a name="p4371163914272"></a><a name="p4371163914272"></a>This parameter is optional. It is used to modify service parameters for the job. The parameter modification applies only to the current job. To make the modification take effect permanently for the cluster, follow instructions in <a href="configuring-service-parameters.md">Configuring Service Parameters</a>.</p>
-        <p id="p15371139132712"><a name="p15371139132712"></a><a name="p15371139132712"></a>To add multiple parameters, click <a name="image177776216108"></a><a name="image177776216108"></a><span><img id="image177776216108" src="figures/en-us_image_0226013676.png"></span> on the right. To delete a parameter, click <span class="parmvalue" id="parmvalue163711139122718"><a name="parmvalue163711139122718"></a><a name="parmvalue163711139122718"></a><b>Delete</b></span> on the right.</p>
+        <p id="p15371139132712"><a name="p15371139132712"></a><a name="p15371139132712"></a>To add multiple parameters, click <a name="image177776216108"></a><a name="image177776216108"></a><span><img id="image177776216108" src="figures/icon_mrs_jiapragranm.png"></span> on the right. To delete a parameter, click <span class="parmvalue" id="parmvalue163711139122718"><a name="parmvalue163711139122718"></a><a name="parmvalue163711139122718"></a><b>Delete</b></span> on the right.</p>
         </td>
         </tr>
         <tr id="row9373839142712"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p12373339132716"><a name="p12373339132716"></a><a name="p12373339132716"></a>Command Reference</p>

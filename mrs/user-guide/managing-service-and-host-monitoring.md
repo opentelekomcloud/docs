@@ -9,7 +9,7 @@ On MRS Manager, you can manage status and indicator information for all services
 -   Monitoring indicator exports.
 
 >![](public_sys-resources/icon-note.gif) **NOTE:**   
->You can set an interval for automatic page refreshing or click  ![](figures/en-us_image_0125376136.jpg)  to refresh the page immediately.  
+>You can set an interval for automatic page refreshing or click  ![](figures/icon_mrs_fresh_r.png)  to refresh the page immediately.  
 >The following parameters are supported:  
 >-   **Refresh every 30 seconds**: refreshes the page once every 30 seconds.  
 >-   **Refresh every 60 seconds**: refreshes the page once every 60 seconds.  

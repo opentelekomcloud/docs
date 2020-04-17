@@ -5,7 +5,7 @@
 This API is used to add and submit a job in an MRS cluster.
 
 >![](public_sys-resources/icon-note.gif) **NOTE:**   
->-   If Kerberos authentication is enabled for a cluster, on the  **Dashboard**  tab page of the cluster details page, click  ![](figures/en-us_image_0218832430.png)  on the right side of  **IAM User Sync**  to synchronize IAM users, and then submit a job through this API.  
+>-   If Kerberos authentication is enabled for a cluster, on the  **Dashboard**  tab page of the cluster details page, click  ![](figures/icon_mrs_iamsy-dt.png)  on the right side of  **IAM User Sync**  to synchronize IAM users, and then submit a job through this API.  
 
 ## URI<a name="section10186656193217"></a>
 

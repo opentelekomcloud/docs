@@ -18,7 +18,7 @@ On MRS Manager, users can view and modify the default service configurations bas
     4.  Set  **Type** to **All**. All configuration parameters of the service are displayed in the navigation tree. The root nodes in the navigation tree represent the service names and role names.
     5.  In the navigation tree, choose a parameter and change its value. You can also enter the parameter name in  **Search**  to search for it and view the result.
 
-        You can click  ![](figures/en-us_image_0125376070.jpg)  to restore a parameter value.
+        You can click  ![](figures/icon_mrs_cancel.jpg)  to restore a parameter value.
 
         >![](public_sys-resources/icon-note.gif) **NOTE:**   
         >You can also use host groups to change role instance configurations in batches. Choose a role name in  **Role**, and then choose **<select hosts\>** in **Host**. Enter a name in **Host Group Name**, select the target host from **All Hosts** and add it to **Selected Hosts**. Click **OK** to add it to the host group. The added host group can be selected from **Host**  and is only valid on the current page. The page cannot be saved after being refreshed.  

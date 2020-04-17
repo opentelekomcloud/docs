@@ -32,12 +32,12 @@ If MRS audit logs are stored in the system for a long time, the disk space for d
     </thead>
     <tbody><tr id="row48464500171458"><td class="cellrowborder" valign="top" width="35%" headers="mcps1.2.4.1.1 "><p id="p33310409171458"><a name="p33310409171458"></a><a name="p33310409171458"></a>Export Audit Log</p>
     </td>
-    <td class="cellrowborder" valign="top" width="35%" headers="mcps1.2.4.1.2 "><a name="ul13788623171458"></a><a name="ul13788623171458"></a><ul id="ul13788623171458"><li><a name="image1487081217655"></a><a name="image1487081217655"></a><span><img id="image1487081217655" src="figures/wwx437827-中软基础平台部-datasight-image-8602897a-b990-4838-8c30-36b5459e48ff-57.png"></span>&nbsp;</li><li><a name="image99561931783"></a><a name="image99561931783"></a><span><img id="image99561931783" src="figures/wwx437827-中软基础平台部-datasight-image-dcd81e5f-3df4-40ac-a2e7-fe1afef5102f-58.png"></span>&nbsp;</li></ul>
+    <td class="cellrowborder" valign="top" width="35%" headers="mcps1.2.4.1.2 "><a name="ul13788623171458"></a><a name="ul13788623171458"></a><ul id="ul13788623171458"><li><a name="image1487081217655"></a><a name="image1487081217655"></a><span><img id="image1487081217655" src="figures/dt_enable.png"></span>&nbsp;</li><li><a name="image99561931783"></a><a name="image99561931783"></a><span><img id="image99561931783" src="figures/icon_mrs_disable_dt.png"></span>&nbsp;</li></ul>
     </td>
     <td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.4.1.3 "><p id="p4410636171458"><a name="p4410636171458"></a><a name="p4410636171458"></a>Mandatory</p>
     <p id="p94113692422"><a name="p94113692422"></a><a name="p94113692422"></a>Indicates whether to enable the audit log export function.</p>
-    <a name="ul62002798163126"></a><a name="ul62002798163126"></a><ul id="ul62002798163126"><li><a name="image35774533163126"></a><a name="image35774533163126"></a><span><img id="image35774533163126" src="figures/wwx437827-中软基础平台部-datasight-image-8602897a-b990-4838-8c30-36b5459e48ff-59.png"></span>: Enabled</li></ul>
-    <a name="ul1089276919373"></a><a name="ul1089276919373"></a><ul id="ul1089276919373"><li><a name="image13231465163119"></a><a name="image13231465163119"></a><span><img id="image13231465163119" src="figures/wwx437827-中软基础平台部-datasight-image-dcd81e5f-3df4-40ac-a2e7-fe1afef5102f-60.png"></span>: Disabled</li></ul>
+    <a name="ul62002798163126"></a><a name="ul62002798163126"></a><ul id="ul62002798163126"><li><a name="image35774533163126"></a><a name="image35774533163126"></a><span><img id="image35774533163126" src="figures/dt_enable.png"></span>: Enabled</li></ul>
+    <a name="ul1089276919373"></a><a name="ul1089276919373"></a><ul id="ul1089276919373"><li><a name="image13231465163119"></a><a name="image13231465163119"></a><span><img id="image13231465163119" src="figures/icon_mrs_disable_dt.png"></span>: Disabled</li></ul>
     </td>
     </tr>
     <tr id="row14268268171458"><td class="cellrowborder" valign="top" width="35%" headers="mcps1.2.4.1.1 "><p id="p14879036171458"><a name="p14879036171458"></a><a name="p14879036171458"></a>Start Time</p>

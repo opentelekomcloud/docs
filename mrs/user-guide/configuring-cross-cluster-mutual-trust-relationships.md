@@ -66,7 +66,7 @@ If no trust relationship is configured, resources of a cluster are available onl
     </table>
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   To deploy trust relationships with multiple clusters, click  ![](figures/en-us_image_0125375701.jpg) to add items and specify relevant parameters. To delete an item, click ![](figures/en-us_image_0125375549.jpg).  
+    >-   To deploy trust relationships with multiple clusters, click  ![](figures/icon_mrs_addsource.jpg) to add items and specify relevant parameters. To delete an item, click ![](figures/icon_mrs_mj.jpg).  
     >-   A cluster can have trust relationships with a maximum of 16 clusters. By default, no trust relationship exists between different clusters that are trusted by a local cluster.  
 
 6.  Click  **Save Configuration**. In the dialog box that is displayed, select **Restart the affected services or instances** and click **OK**.

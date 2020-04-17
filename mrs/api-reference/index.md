@@ -1,4 +1,4 @@
-# 15\_MRS API Reference-Copy20180504-Copy
+# MRS API Reference
 
 -   [Before You Start]
     -   [Overview](overview.md)

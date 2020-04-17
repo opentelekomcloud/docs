@@ -16,7 +16,7 @@ A tenant associated with Yarn and allocated with dynamic resources has been adde
 4.  In the tenant queue table, click  **Modify** in the **Operation** column of the specified  tenant queue.
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >In the tenant list on the left of the  **Tenant Management** tab, click the target tenant. In the displayed window, choose **Resource**. On the displayed page, click ![](figures/en-us_image_0125375723.jpg)  to open the queue configuration modification page.  
+    >In the tenant list on the left of the  **Tenant Management** tab, click the target tenant. In the displayed window, choose **Resource**. On the displayed page, click ![](figures/icon_mrs_clip.gif)  to open the queue configuration modification page.  
 
     **Table  1**  Queue configuration parameters
 

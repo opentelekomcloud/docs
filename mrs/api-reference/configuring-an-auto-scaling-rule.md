@@ -355,7 +355,7 @@ The API used for cluster creation and job execution can also be used to creation
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a125498882f804fa99362663be962a9ec"><a name="en-us_topic_0172486173_a125498882f804fa99362663be962a9ec"></a><a name="en-us_topic_0172486173_a125498882f804fa99362663be962a9ec"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a962e8faec9684b4b9388ddaae5f20f25"><a name="en-us_topic_0172486173_a962e8faec9684b4b9388ddaae5f20f25"></a><a name="en-us_topic_0172486173_a962e8faec9684b4b9388ddaae5f20f25"></a>Cluster cooling time after an auto scaling rule is triggered, when no auto scaling operation is performed. The unit is minute.</p>
-<p id="en-us_topic_0172486173_a934200a982984f90a54b157715b28542"><a name="en-us_topic_0172486173_a934200a982984f90a54b157715b28542"></a><a name="en-us_topic_0172486173_a934200a982984f90a54b157715b28542"></a>Value range: 0 to 10080. One week is equal to 10080 minutes.</p>
+<p id="en-us_topic_0172486173_a934200a982984f90a54b157715b28542"><a name="en-us_topic_0172486173_a934200a982984f90a54b157715b28542"></a><a name="en-us_topic_0172486173_a934200a982984f90a54b157715b28542"></a>Value range: 0 to 10080. One week is equal to 10,080 minutes.</p>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_r83dc95f88c514f349fe399e2daec1acf"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_a1bf156eb290c4eacac485c8e69bb9b8a"><a name="en-us_topic_0172486173_a1bf156eb290c4eacac485c8e69bb9b8a"></a><a name="en-us_topic_0172486173_a1bf156eb290c4eacac485c8e69bb9b8a"></a>scaling_adjustment</p>

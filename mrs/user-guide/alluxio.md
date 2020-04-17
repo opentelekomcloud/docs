@@ -2,7 +2,8 @@
 
 Alluxio is data orchestration technology for analytics and AI for the cloud. In the MRS big data ecosystem, Alluxio lies between computing and storage. It provides a data abstraction layer for computing frameworks including Apache Spark, Presto, MapReduce, and Apache Hive, so that upper-layer computing applications can access persistent storage systems including HDFS and OBS through unified client APIs and a global namespace. In this way, computing and storage are separated.
 
-![](figures/en-us_image_0228886238.png)
+**Figure  1**  Alluxio architecture<a name="fig202807177388"></a>  
+![](figures/alluxio-architecture.png "alluxio-architecture")
 
 Advantages:
 

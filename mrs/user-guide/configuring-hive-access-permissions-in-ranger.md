@@ -3,7 +3,7 @@
 After an MRS cluster with Ranger installed is created, Hive access control is not integrated into Ranger. This section describes how to integrate Hive into Ranger.
 
 1.  Log in to the Ranger web UI.
-2.  In the  **Service Manager**  area, click  ![](figures/en-us_image_0228886248.png)  next to  **HIVE**  to add a Hive service.
+2.  In the  **Service Manager**  area, click  ![](figures/icon_mrs_jiahao.png)  next to  **HIVE**  to add a Hive service.
 
     **Figure  1**  Adding a Hive service<a name="fig1355517248383"></a>  
     ![](figures/adding-a-hive-service.png "adding-a-hive-service")

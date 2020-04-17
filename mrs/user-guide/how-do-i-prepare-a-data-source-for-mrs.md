@@ -9,7 +9,7 @@ MRS can process data in both OBS and HDFS. Before using MRS to analyze data, you
         2.  In the  **userdata** bucket, click **Create Folder** to create the **program**, **input**, **output**, and **log**  folders.
 
     3.  Upload local data to the  **userdata**  bucket.
-        1.  Go to the  **program** folder, choose  **Upload Object**, and click ![](figures/wwx437827-中软基础平台部-datasight-image-7be10b43-f17e-4b71-9d5b-3bc08ad26beb.png)  to select a user program.
+        1.  Go to the  **program** folder, choose  **Upload Object**, and click ![](figures/icon_mrs_obsmanu.jpg)  to select a user program.
         2.  Click  **Upload Object**.
         3.  Repeat preceding steps to upload the data files to the  **input**  folder.
 

@@ -9,7 +9,7 @@ Generally, the system automatically clears an alarm when the fault that generate
 On the MRS Manager portal, you can view the most recent 100,000 alarms, including those that have either been manually or automatically cleared, or not cleared. If the number of cleared alarms exceeds 100,000 and is about to reach 110,000, the system automatically dumps the earliest 10,000 cleared alarms to the dump path  **$\{BIGDATA\_HOME\}/OMSV100R001C00x8664/workspace/data**  on the active management node. The directory will be automatically generated when alarms are dumped for the first time.
 
 >![](public_sys-resources/icon-note.gif) **NOTE:**   
->You can set an interval for automatic page refreshing or click  ![](figures/en-us_image_0125375675.jpg)  to refresh the page immediately.  
+>You can set an interval for automatic page refreshing or click  ![](figures/icon_mrs_fresh_r.png)  to refresh the page immediately.  
 >The following parameters are supported:  
 >-   **Refresh every 30 seconds**: refreshes the page once every 30 seconds.  
 >-   **Refresh every 60 seconds**: refreshes the page once every 60 seconds.  
@@ -20,7 +20,7 @@ On the MRS Manager portal, you can view the most recent 100,000 alarms, includin
 1.  On MRS Manager, click  **Alarms**  and view the alarm information.
     -   By default, alarms are displayed in descending order by  **Generated On**. You can click **Alarm ID**,  **Alarm Name**,  **Severity**, **Generated On**, **Location**, or **Operation**  to change the display mode.
     -   You can filter out all alarms of the same severity in  **Severity**, including cleared alarms and uncleared alarms.
-    -   You can click![](figures/en-us_image_0125375994.jpg),![](figures/en-us_image_0125375251.jpg),![](figures/en-us_image_0125376031.jpg) or ![](figures/en-us_image_0125375210.jpg) to filter out alarms whose severity is **Critical**, **Major**, **Minor**, or **Warning**.
+    -   You can click![](figures/icon_mrs_critical.jpg),![](figures/icon_mrs_major.jpg),![](figures/icon_mrs_minor.jpg) or ![](figures/icon_mrs_waring.jpg) to filter out alarms whose severity is **Critical**, **Major**, **Minor**, or **Warning**.
 
 
 1.  Click  **Advanced Search**. In the displayed alarm search area, set search criteria and click **Search**  to view the information about specified alarms. Click **Reset**  to reset search criteria.

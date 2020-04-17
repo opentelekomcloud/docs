@@ -102,7 +102,7 @@ For versions earlier than MRS 1.9.2, you can display the real-time monitoring re
 
             You can click  **Customize**  to display the specified monitoring metrics.
 
-    3.  Set an automatic refresh interval or click  ![](figures/icon_mrs_fresh_r-56.png)  for an immediate refresh.
+    3.  Set an automatic refresh interval or click  ![](figures/icon_mrs_fresh_r.png)  for an immediate refresh.
 
         The following refresh interval options are supported:
 

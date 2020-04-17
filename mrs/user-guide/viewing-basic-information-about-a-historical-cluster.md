@@ -328,9 +328,9 @@ To view historical clusters, choose  **Clusters \> Cluster History**. Select a 
 </th>
 </tr>
 </thead>
-<tbody><tr id="row10659077145753"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p31390333102326"><a name="p31390333102326"></a><a name="p31390333102326"></a><a name="image8851100145812"></a><a name="image8851100145812"></a><span><img id="image8851100145812" src="figures/wwx437827-中软基础平台部-datasight-image-2876b042-9202-4604-a10c-0132a8b0eed4-38.png"></span></p>
+<tbody><tr id="row10659077145753"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p31390333102326"><a name="p31390333102326"></a><a name="p31390333102326"></a><a name="image8851100145812"></a><a name="image8851100145812"></a><span><img id="image8851100145812" src="figures/icon_mrs_fresh_r.png"></span></p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p66539681102326"><a name="p66539681102326"></a><a name="p66539681102326"></a>Click <a name="image40902082145815"></a><a name="image40902082145815"></a><span><img id="image40902082145815" src="figures/wwx437827-中软基础平台部-datasight-image-2876b042-9202-4604-a10c-0132a8b0eed4-39.png"></span> to manually refresh the node.</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p66539681102326"><a name="p66539681102326"></a><a name="p66539681102326"></a>Click <a name="image40902082145815"></a><a name="image40902082145815"></a><span><img id="image40902082145815" src="figures/icon_mrs_fresh_r.png"></span> to manually refresh the node.</p>
 </td>
 </tr>
 </tbody>

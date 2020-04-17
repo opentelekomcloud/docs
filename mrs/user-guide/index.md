@@ -1,4 +1,4 @@
-# 13\_MRS User Guide\(DT2.1.0\)
+# MRS User Guide
 
 -   [Overview]
     -   [Introduction](introduction.md)
@@ -444,4 +444,3 @@
     -   [Can MRS Cluster Nodes Be Changed on the MRS Management Console?](can-mrs-cluster-nodes-be-changed-on-the-mrs-management-console.md)
 
 -   [ECS Specifications Used by MRS](ecs-specifications-used-by-mrs.md)
-

@@ -31,7 +31,7 @@ MRS Manager supports the collecting of all monitoring indicator data in managed 
     </td>
     <td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p56579820193153"><a name="p56579820193153"></a><a name="p56579820193153"></a>Mandatory.</p>
     <p id="p33830997193450"><a name="p33830997193450"></a><a name="p33830997193450"></a>Specifies whether to enable the audit log export function.</p>
-    <a name="ul1089276919373"></a><a name="ul1089276919373"></a><ul id="ul1089276919373"><li><a name="image1220780219327"></a><a name="image1220780219327"></a><span><img id="image1220780219327" src="figures/wwx437827-中软基础平台部-datasight-image-8602897a-b990-4838-8c30-36b5459e48ff.png"></span> : Enabled</li><li><a name="image2579164419228"></a><a name="image2579164419228"></a><span><img id="image2579164419228" src="figures/wwx437827-中软基础平台部-datasight-image-dcd81e5f-3df4-40ac-a2e7-fe1afef5102f.png"></span> : Disabled</li></ul>
+    <a name="ul1089276919373"></a><a name="ul1089276919373"></a><ul id="ul1089276919373"><li><a name="image1220780219327"></a><a name="image1220780219327"></a><span><img id="image1220780219327" src="figures/dt_enable.png"></span> : Enabled</li><li><a name="image2579164419228"></a><a name="image2579164419228"></a><span><img id="image2579164419228" src="figures/icon_mrs_disable_dt.png"></span> : Disabled</li></ul>
     </td>
     </tr>
     <tr id="row4801562712414"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p6406054812414"><a name="p6406054812414"></a><a name="p6406054812414"></a>FTP IP Address</p>

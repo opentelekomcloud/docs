@@ -9,11 +9,11 @@ If no default image password is set when Cloud-Init is installed, you must log i
 ## Logging In to an ECS<a name="section26776515111928"></a>
 
 1.  Log in to the MRS management console.
-2.  Click  ![](figures/wwx437827-中软基础平台部-datasight-image-bbfbe22f-2a2d-4e1b-8f10-a7782fd1d3ed-55.png)  in the upper-left corner on the management console and select **Region** and **Project**.
+2.  Click  ![](figures/dt_mrs_project_region_image01.png)  in the upper-left corner on the management console and select **Region** and **Project**.
 3.  Choose  **Clusters \> Active Clusters**, select a running cluster, and click its name to switch to the cluster details page.
 4.  On the basic information page, query the IP addresses of Master1 and Master2 nodes.
 5.  Log in to the ECS management console. Choose  **IP Address**  from the drop-down list of the search box on the right.
-6.  Enter the IP address of Master1 or Master2 and click  ![](figures/en-us_image_0125375943.jpg).
+6.  Enter the IP address of Master1 or Master2 and click  ![](figures/icon_mrs_search_r.jpg).
 7.  In the searched ECS, click  **Remote Login**  in  **Operation**.
 
     For details about remote login to an ECS, see "Logging In to an ECS Using VNC" in the  _ECS User Guide_ \(**Getting Started \> Logging In to an ECS \> Logging In to an ECS Using VNC**\).

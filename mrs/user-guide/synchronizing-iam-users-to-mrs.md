@@ -103,7 +103,7 @@ IAM user synchronization is to synchronize IAM users bound with MRS policies to 
 1.  Log in to the IAM management console and create a user and authorize the user to use MRS.
 2.  Log in to the MRS management console and create a cluster. For details, see  [Creating a Cluster](creating-a-cluster.md).
 3.  In the left navigation pane, choose  **Clusters**  \>  **Active Clusters**. Click the cluster name to go to the cluster details page.
-4.  <a name="li6999515311"></a>In the  **Basic Information**  area on the  ****Dashboard****  tab page, click  ![](figures/en-us_image_0226013672.png)  on the right side of  ****IAM User Sync****  to synchronize IAM users.
+4.  <a name="li6999515311"></a>In the  **Basic Information**  area on the  ****Dashboard****  tab page, click  ![](figures/icon_mrs_iamsy-dt.png)  on the right side of  ****IAM User Sync****  to synchronize IAM users.
 5.  After a synchronization request is sent, choose  **Operation Logs**  in the left navigation pane on the MRS console to check whether the synchronization is successful. For details about the logs, see  [Querying Operation Logs](querying-operation-logs.md).
 6.  After the synchronization is successful, use the user synchronized with IAM to perform subsequent operations.
 
