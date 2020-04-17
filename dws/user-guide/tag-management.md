@@ -17,9 +17,9 @@ If tags have been added to a cluster, you can search for the cluster by setting 
 
     You can only enter a tag key or value that exists in the drop-down list. If no tag key or value is available, create a tag for the cluster. For details, see  [Adding a Tag to a Cluster](#section77515910494).
 
-5.  Click  ![](figures/icon_dws_add_tag.png)  to add the selected tag to the area under the text boxes.
-    -   Select another tag in the text boxes and click  ![](figures/icon_dws_add_tag.png)  to generate a tag combination for cluster search. You can add a maximum of 10 tags to search for data warehouse clusters. If you specify more than one tag, clusters containing all the specified tags will be displayed.
-    -   To delete an existing tag, click  ![](figures/icon_dws_delete_tag.png)  next to the tag.
+5.  Click  ![](figures/icon-dws-add-tag.png)  to add the selected tag to the area under the text boxes.
+    -   Select another tag in the text boxes and click  ![](figures/icon-dws-add-tag.png)  to generate a tag combination for cluster search. You can add a maximum of 10 tags to search for data warehouse clusters. If you specify more than one tag, clusters containing all the specified tags will be displayed.
+    -   To delete an existing tag, click  ![](figures/icon-dws-delete-tag.png)  next to the tag.
     -   You can click  **Reset**  to clear all added tags.
 
         **Figure  2**  Adding the tag key and value<a name="fig19996114485913"></a>  

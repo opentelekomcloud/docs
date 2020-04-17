@@ -9,7 +9,7 @@ This section describes how to set the automated snapshot policy for a cluster. A
 3.  In the cluster list, click the name of the cluster that you want to view. Then click  **Snapshots**.
 4.  On the  **Snapshots**  page, click the  **Automated Snapshot Status**  switch to enable the policy. The  **Snapshot Policy**  page is displayed.
     -   ![](figures/icon-button3.png)  indicates that the policy is enabled.
-    -   ![](figures/icon_dws_off.jpg)  indicates that the policy is disabled \(default\).
+    -   ![](figures/icon-dws-off.jpg)  indicates that the policy is disabled \(default\).
 
 5.  On the  **Snapshot Policy**  page, configure the following parameters:
 

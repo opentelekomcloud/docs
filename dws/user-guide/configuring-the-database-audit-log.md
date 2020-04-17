@@ -56,7 +56,7 @@ You can change security settings only when  **Cluster Status**  is  **Available*
 
 5.  Enable the audit function for the following operations if necessary.
 
-    ![](figures/icon-button4.png)  indicates that the audit function is enabled.  ![](figures/icon_dws_off.jpg)  indicates that the audit function is disabled.
+    ![](figures/icon-button4.png)  indicates that the audit function is enabled.  ![](figures/icon-dws-off.jpg)  indicates that the audit function is disabled.
 
     **Figure  2**  Audit items<a name="fig33013552162725"></a>  
     ![](figures/audit-items.png "audit-items")
@@ -138,7 +138,7 @@ You can change security settings only when  **Cluster Status**  is  **Available*
 
 6.  Click  **Apply**.
 
-    On the  **Security Settings**  page, click  ![](figures/icon_dws_refresh_blue.jpg). If  **Configuration Status**  is  **Applying**, the system is saving the settings.
+    On the  **Security Settings**  page, click  ![](figures/icon-dws-refresh-blue.jpg). If  **Configuration Status**  is  **Applying**, the system is saving the settings.
 
     Wait for a moment and then refresh  **Configuration Status**. When  **Configuration Status**  is  **Synchronized**, the configuration is saved and takes effect.
 

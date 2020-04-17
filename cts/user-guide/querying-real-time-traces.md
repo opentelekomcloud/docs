@@ -38,7 +38,7 @@ This section describes how to query or export the last seven days of operation r
     -   Time range: You can query traces generated during any time range in the last seven days.
 
 6.  On the right of the filter box, click  **Export**. CTS exports traces collected in the past seven days to a CSV file. The CSV file contains all information related to these traces on the management console.
-7.  Click  ![](figures/en-us_image_0168422376.jpg)  on the left of the required trace to expand its details.
+7.  Click  ![](figures/icon_expanding_trace_details.png)  on the left of the required trace to expand its details.
 
     **Figure  2**  Expanding trace details<a name="fig60616999161744"></a>  
     ![](figures/expanding-trace-details.png "expanding-trace-details")

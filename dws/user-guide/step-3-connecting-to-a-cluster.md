@@ -76,7 +76,7 @@ The ECS must meet the following requirements:
 
 1.  Log in to the management console at  [https://console.otc.t-systems.com/dws/](https://console.otc.t-systems.com/dws/).
 2.  In the navigation tree on the left, click  **Cluster Management**.
-3.  In the cluster list, select a created cluster \(for example,  **dws-demo**\) click  ![](figures/en-us_image_0169938471.png)  next to  **Cluster Name**  to obtain the public network address. Save this information.
+3.  In the cluster list, select a created cluster \(for example,  **dws-demo**\) click  ![](figures/icon-dws-expand.png)  next to  **Cluster Name**  to obtain the public network address. Save this information.
 
     The public network address will be used to connect to the database in the cluster in  [6](#li41463031113158).
 

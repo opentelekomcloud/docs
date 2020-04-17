@@ -113,9 +113,9 @@ DataStudio versions include  **Windows x86**  \(32-bit Windows system\) and  **W
 
         Download the SSL certificate. For details, see section  [Downloading the SSL Certificate File](downloading-the-ssl-certificate-file.md). Then, decompress the certificate file to the specified path.
 
-        -   **Client SSL Certificate**: Click  ![](figures/icon_dws_ds_ssl_select_file.png)  and select the  **sslcert\\client.crt**  file in the decompressed directory.
-        -   **Client SSL Key**: Click  ![](figures/icon_dws_ds_ssl_select_file.png)  and select the  **sslcert\\client.key**  file in the decompressed directory.
-        -   **Root Certificate**: Based on the selected  **SSL Mode**, click  ![](figures/icon_dws_ds_ssl_select_file.png)  and select the  **sslcert\\cacert.pem**  file in the decompressed directory.
+        -   **Client SSL Certificate**: Click  ![](figures/icon-dws-ds-ssl-select-file.png)  and select the  **sslcert\\client.crt**  file in the decompressed directory.
+        -   **Client SSL Key**: Click  ![](figures/icon-dws-ds-ssl-select-file.png)  and select the  **sslcert\\client.key**  file in the decompressed directory.
+        -   **Root Certificate**: Based on the selected  **SSL Mode**, click  ![](figures/icon-dws-ds-ssl-select-file.png)  and select the  **sslcert\\cacert.pem**  file in the decompressed directory.
         -   **SSL mode**: Select an SSL mode from the drop-down list. Possible values are  **require**  and  **verify-ca**  \(DWS does not support the  **verify-full**  mode\). If  **SSL Mode**  is set to  **verify-ca**, the root certificate is required.
 
         **Figure  4**  Configuring SSL parameters<a name="dws_01_0107_fig124184451275"></a>  

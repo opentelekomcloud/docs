@@ -11,7 +11,7 @@ This section describes how to view snapshot information on the  **Snapshot Manag
 
 3.  You can view  **Snapshot Name**,  **Snapshot Status**,  **Cluster Name**,  **Snapshot Type**, and  **Snapshot Created**  of snapshots.
 
-    You can also enter a snapshot name or cluster name in the upper right corner of the snapshot list and click  ![](figures/icon_dws_search.jpg)  to search for the specified snapshot. DWS supports fuzzy search.
+    You can also enter a snapshot name or cluster name in the upper right corner of the snapshot list and click  ![](figures/icon-dws-search.jpg)  to search for the specified snapshot. DWS supports fuzzy search.
 
     [Table 1](#table3259774163926)  describes snapshot status.
 
@@ -67,6 +67,6 @@ This section describes how to view snapshot information on the  **Snapshot Manag
     </table>
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >Click  ![](figures/icon_dws_expand_02.jpg)  to view other information about the snapshot.  
+    >Click  ![](figures/icon-dws-expand-02.jpg)  to view other information about the snapshot.  
 
 

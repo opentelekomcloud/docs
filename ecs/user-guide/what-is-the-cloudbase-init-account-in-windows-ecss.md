@@ -26,10 +26,10 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
 
 -   LM-HASH and NT-HASH values of the  **cloudbase-init**  account for ecs01
 
-    ![](figures/en-us_image_0202311481.gif)
+    ![](figures/ecs01.gif)
 
 -   LM-HASH and NT-HASH values of the  **cloudbase-init**  account for ecs02
 
-    ![](figures/en-us_image_0202311491.gif)
+    ![](figures/ecs02.gif)
 
 

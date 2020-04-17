@@ -443,7 +443,7 @@ With the DWS monitoring metrics provided by Cloud Eye, you can obtain informatio
 
 5.  Click  **OK**.
 
-    After the monitoring metrics are added successfully, you can view the corresponding monitoring graph on the  **Monitoring Panels**  page. Move the cursor to the graph and click  ![](figures/icon_dws_monitor_detail.png)  in the upper right corner to zoom in the graph and view detailed metric comparison data.
+    After the monitoring metrics are added successfully, you can view the corresponding monitoring graph on the  **Monitoring Panels**  page. Move the cursor to the graph and click  ![](figures/icon-dws-monitor-detail.png)  in the upper right corner to zoom in the graph and view detailed metric comparison data.
 
 
 ## Creating Alarm Rules<a name="section76461040113"></a>

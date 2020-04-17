@@ -3,7 +3,7 @@
 -   Enhanced ETL + Real-time BI analysis
 
     **Figure  1**  ETL + BI analysis<a name="fig1611416585285"></a>  
-    ![](figures/etl-+-bi-analysis.png "etl-+-bi-analysis")
+    ![](figures/dws-analysis.png "dws-analysis")
 
     The data warehouse is the pillar of the Business Intelligence \(BI\) system for collecting, storing, and analyzing massive amounts of data. It provides powerful business analysis support for IoT, mobile Internet, gaming, and Online to Offline \(O2O\) industries.
 

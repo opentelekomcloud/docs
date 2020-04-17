@@ -5,13 +5,13 @@ For a Linux ECS, its disk partitions correspond to disk devices. This section us
 1.  Log in to the Linux ECS as user  **root**.
 2.  Right-click in the blank area of the desktop and choose  **Open Terminal**  from the shortcut menu.
 
-    ![](figures/en-us_image_0087903699.png)
+    ![](figures/open-terminal.png)
 
 3.  Run the following command to view disk partitions and disk devices:
 
     **fdisk -l**
 
-    ![](figures/en-us_image_0087903704.png)
+    ![](figures/view-disk.png)
 
     [Table 1](#table18572291102543)  lists the mapping between disk partitions and disk devices.
 
