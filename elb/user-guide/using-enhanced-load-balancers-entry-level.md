@@ -196,7 +196,7 @@ A listener is a set of configurations that specify the protocol and port to rece
 ![](figures/traffic-forwarding.png "traffic-forwarding")
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the created load balancer and click its name \(**elb-mq01**\).
 5.  Under  **Listeners**, click  **Add Listener**.

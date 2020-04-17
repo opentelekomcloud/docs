@@ -94,7 +94,7 @@ The configuration operations of the TOA module for Linux OSs with kernel version
 2.  Compile the Kernel module.
     1.  Use the git tool and run the following command to download the TOA kernel module source code:
 
-        **git clone **[https://github.com/Huawei/TCP\_option\_address.git](https://github.com/Huawei/TCP_option_address)
+        **git** **clone** [https://github.com/Huawei/TCP\_option\_address.git](https://github.com/Huawei/TCP_option_address)
 
         >![](public_sys-resources/icon-note.gif) **NOTE:**   
         >If the git tool is not installed, download the TOA kernel module source code from the following link:  

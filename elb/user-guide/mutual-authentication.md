@@ -139,7 +139,7 @@ The server certificate can be a CA-signed certificate or a self-signed one. The 
 2.  In the navigation pane, choose  **Certificates**. On the displayed page, click  **Create Certificate**. In the  **Create Certificate**  dialog box, select  **CA certificate**, copy the content of CA certificate  **ca.crt**  created in  [Prepare Certificates](#section780514219136)  to the  **Certificate Content**  area, and click  **OK**.
 
     **Figure  2**  Create Certificate<a name="fig1498179155416"></a>  
-    ![](figures/create-certificate-7.png "create-certificate-7")
+    ![](figures/create-certificate-9.png "create-certificate-9")
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >The certificate content must be PEM-encoded.  

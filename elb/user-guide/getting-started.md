@@ -1,6 +1,6 @@
 # Getting Started<a name="EN-US_TOPIC_0091131364"></a>
 
--   **[Overview](overview.md)**  
+-   **[Overview](overview-getting-started.md)**  
 
 -   **[Using Enhanced Load Balancers — Entry Level](using-enhanced-load-balancers-entry-level.md)**  
 

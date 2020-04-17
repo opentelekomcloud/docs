@@ -2,7 +2,7 @@
 
 Elastic Load Balancing \(ELB\) automatically distributes incoming traffic across multiple backend servers based on the rules you configure. ELB expands service capabilities of applications and eliminates single points of failure \(SPOFs\), improving application availability.
 
-![](figures/jieshao.png)
+![](figures/image-1.png)
 
 ## Service Architecture<a name="section031725010213"></a>
 

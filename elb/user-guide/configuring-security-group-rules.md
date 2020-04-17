@@ -50,7 +50,7 @@ A firewall is an optional subnet-class security configuration. You can associate
 You can configure an inbound firewall rule to permit access from 100.125.0.0/16.
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region-8.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  On the console homepage, under  **Network**, click  **Virtual Private Cloud**.
 4.  In the navigation pane on the left, choose  **Access Control**  \>  **Firewalls**.
 5.  Locate the target firewall, and click the firewall name to switch to the page showing details of that particular firewall.

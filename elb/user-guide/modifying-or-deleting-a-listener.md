@@ -7,7 +7,7 @@ You can modify or delete existing listeners as required.
 ## Modify a Listener<a name="section564617427424"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Listeners**.
@@ -19,12 +19,12 @@ You can modify or delete existing listeners as required.
 ## Delete a Listener<a name="section630190201235"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Listeners**.
 
-    -   For an enhanced load balancer listener, locate the target listener and click  ![](figures/icon-delete.png)  on the right of its name.
+    -   For an enhanced load balancer listener, locate the target listener and click  ![](figures/delete.png)  on the right of its name.
     -   For a classic load balancer listener, locate the target listener and click  **Delete**  in the  **Operation**  column.
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   

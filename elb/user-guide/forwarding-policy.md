@@ -32,9 +32,9 @@ After a forwarding policy is added, the load balancer forwards requests based on
 </th>
 <th class="cellrowborder" valign="top" width="19.321932193219325%" id="mcps1.2.5.1.2"><p id="p69376201010"><a name="p69376201010"></a><a name="p69376201010"></a><strong>Parameter</strong></p>
 </th>
-<th class="cellrowborder" valign="top" width="47.97479747974798%" id="mcps1.2.5.1.3"><p id="p294665107"><a name="p294665107"></a><a name="p294665107"></a><strong id="b501472349"><a name="b501472349"></a><a name="b501472349"></a>Description</strong></p>
+<th class="cellrowborder" valign="top" width="47.97479747974798%" id="mcps1.2.5.1.3"><p id="p294665107"><a name="p294665107"></a><a name="p294665107"></a><strong id="b1842795998"><a name="b1842795998"></a><a name="b1842795998"></a>Description</strong></p>
 </th>
-<th class="cellrowborder" valign="top" width="16.541654165416542%" id="mcps1.2.5.1.4"><p id="p119718601010"><a name="p119718601010"></a><a name="p119718601010"></a><strong id="b159418934"><a name="b159418934"></a><a name="b159418934"></a>Example Value</strong></p>
+<th class="cellrowborder" valign="top" width="16.541654165416542%" id="mcps1.2.5.1.4"><p id="p119718601010"><a name="p119718601010"></a><a name="p119718601010"></a><strong id="b193437319"><a name="b193437319"></a><a name="b193437319"></a>Example Value</strong></p>
 </th>
 </tr>
 </thead>
@@ -63,9 +63,9 @@ After a forwarding policy is added, the load balancer forwards requests based on
 </tr>
 <tr id="row11113116161018"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p171138691020"><a name="p171138691020"></a><a name="p171138691020"></a>URL Matching Rule</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><a name="ul141168619107"></a><a name="ul141168619107"></a><ul id="ul141168619107"><li><strong id="b70231846"><a name="b70231846"></a><a name="b70231846"></a>Exact match</strong><p id="p17117367106"><a name="p17117367106"></a><a name="p17117367106"></a>The request URL is identical to the preset URL.</p>
-</li><li><strong id="b215297650"><a name="b215297650"></a><a name="b215297650"></a>Prefix match</strong><p id="p1111820611102"><a name="p1111820611102"></a><a name="p1111820611102"></a>The requested URL starts with the specified URL string.</p>
-</li><li><strong id="b1923641375"><a name="b1923641375"></a><a name="b1923641375"></a>Regular expression match</strong><div class="p" id="p1612017621016"><a name="p1612017621016"></a><a name="p1612017621016"></a>The requested URL matches the specified URL string based on the regular expression.<div class="note" id="note15121066104"><a name="note15121066104"></a><a name="note15121066104"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p57071461154245"><a name="p57071461154245"></a><a name="p57071461154245"></a><strong id="b1280834494519"><a name="b1280834494519"></a><a name="b1280834494519"></a>Exact match</strong> enjoys the highest priority, followed by <strong id="b1886234814455"><a name="b1886234814455"></a><a name="b1886234814455"></a>Prefix match</strong>. <strong id="b18195185313454"><a name="b18195185313454"></a><a name="b18195185313454"></a>Regular expression match</strong> is the last matching rule that will be used.</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><a name="ul141168619107"></a><a name="ul141168619107"></a><ul id="ul141168619107"><li><strong id="b1988025532"><a name="b1988025532"></a><a name="b1988025532"></a>Exact match</strong><p id="p17117367106"><a name="p17117367106"></a><a name="p17117367106"></a>The request URL is identical to the preset URL.</p>
+</li><li><strong id="b1183386603"><a name="b1183386603"></a><a name="b1183386603"></a>Prefix match</strong><p id="p1111820611102"><a name="p1111820611102"></a><a name="p1111820611102"></a>The requested URL starts with the specified URL string.</p>
+</li><li><strong id="b896658258"><a name="b896658258"></a><a name="b896658258"></a>Regular expression match</strong><div class="p" id="p1612017621016"><a name="p1612017621016"></a><a name="p1612017621016"></a>The requested URL matches the specified URL string based on the regular expression.<div class="note" id="note15121066104"><a name="note15121066104"></a><a name="note15121066104"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p57071461154245"><a name="p57071461154245"></a><a name="p57071461154245"></a><strong id="b1280834494519"><a name="b1280834494519"></a><a name="b1280834494519"></a>Exact match</strong> enjoys the highest priority, followed by <strong id="b1886234814455"><a name="b1886234814455"></a><a name="b1886234814455"></a>Prefix match</strong>. <strong id="b18195185313454"><a name="b18195185313454"></a><a name="b18195185313454"></a>Regular expression match</strong> is the last matching rule that will be used.</p>
 </div></div>
 </div>
 </li></ul>
@@ -174,7 +174,7 @@ In this figure, the system first searches the requested URL \(/elb\_gls/glossary
 4.  Locate the target load balancer and click its name.
 5.  Click  **Listeners**, locate the target listener, and click its name.
 6.  Click  **Forwarding Policies**. 
-7.  Locate the target forwarding policy and click  ![](figures/icon-edit.png)  on the right of its name.
+7.  Locate the target forwarding policy and click  ![](figures/icon-edit-7.png)  on the right of its name.
 8.  In the  **Modify Forwarding Policy**  dialog box, modify the parameters and click  **OK**.
 
 ## Delete a Forwarding Policy<a name="section4306132117396"></a>
@@ -185,6 +185,6 @@ In this figure, the system first searches the requested URL \(/elb\_gls/glossary
 4.  Locate the target load balancer and click its name.
 5.  Click  **Listeners**, locate the target listener, and click its name.
 6.  Click  **Forwarding Policies**. 
-7.  Locate the target forwarding policy and click  ![](figures/icon-delete.png)  on the right of its name.
+7.  Locate the target forwarding policy and click  ![](figures/delete-8.png)  on the right of its name.
 8.  In the displayed dialog box, click  **Yes**.
 

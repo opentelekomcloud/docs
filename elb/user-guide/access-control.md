@@ -29,8 +29,10 @@ Access control allows you to add a whitelist to specify IP addresses that can ac
     </thead>
     <tbody><tr id="row6352683318541"><td class="cellrowborder" valign="top" width="21.000000000000004%" headers="mcps1.2.4.1.1 "><p id="p4539988218541"><a name="p4539988218541"></a><a name="p4539988218541"></a>Access Control</p>
     </td>
-    <td class="cellrowborder" valign="top" width="58.00000000000001%" headers="mcps1.2.4.1.2 "><a name="ul25916715105429"></a><a name="ul25916715105429"></a><ul id="ul25916715105429"><li>If access control is enabled but no whitelist is added, no IP address is allowed to access the listener.</li><li>If access control is enabled and a whitelist is added, only IP addresses specified in the whitelist can access the listener.</li></ul>
-    <a name="ul32263783105429"></a><a name="ul32263783105429"></a><ul id="ul32263783105429"><li>If access control is disabled, the listener can be accessed by any IP address.</li></ul>
+    <td class="cellrowborder" valign="top" width="58.00000000000001%" headers="mcps1.2.4.1.2 "><p id="p2634610118936"><a name="p2634610118936"></a><a name="p2634610118936"></a>Enabled</p>
+    <a name="ul2943297718957"></a><a name="ul2943297718957"></a><ul id="ul2943297718957"><li>If access control is enabled and no whitelist is set, no IP address can access the listener.</li><li>If access control function is enabled and a whitelist is set, only IP addresses in the whitelist can access the listener.</li></ul>
+    <p id="p5351183118541"><a name="p5351183118541"></a><a name="p5351183118541"></a>Disabled</p>
+    <a name="ul42097092181052"></a><a name="ul42097092181052"></a><ul id="ul42097092181052"><li>If access control is disabled, load listener can be accessed from any IP address.</li></ul>
     </td>
     <td class="cellrowborder" valign="top" width="21.000000000000004%" headers="mcps1.2.4.1.3 "><p id="p3949107318541"><a name="p3949107318541"></a><a name="p3949107318541"></a>N/A</p>
     </td>

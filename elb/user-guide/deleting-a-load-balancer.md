@@ -29,5 +29,5 @@ You can also export the load balancer list as a local backup.
 1.  Log in to the management console.
 2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
-4.  In the upper right corner of the load balancer list, click  ![](figures/icon-image-3.png).
+4.  In the upper right corner of the load balancer list, click  ![](figures/icon-image-6.png).
 

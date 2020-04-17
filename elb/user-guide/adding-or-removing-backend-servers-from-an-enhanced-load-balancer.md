@@ -151,7 +151,7 @@ If a load balancer is associated with an AS group, instances in the AS group are
     <tr id="en-us_topic_0091131437_en-us_topic_0091131454_row941639115316"><td class="cellrowborder" valign="top" width="20.849999999999998%" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0091131437_en-us_topic_0091131454_p154163918539"><a name="en-us_topic_0091131437_en-us_topic_0091131454_p154163918539"></a><a name="en-us_topic_0091131437_en-us_topic_0091131454_p154163918539"></a>Port</p>
     </td>
     <td class="cellrowborder" valign="top" width="49.29%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0091131437_en-us_topic_0091131454_p1941659135311"><a name="en-us_topic_0091131437_en-us_topic_0091131454_p1941659135311"></a><a name="en-us_topic_0091131437_en-us_topic_0091131454_p1941659135311"></a>Specifies the port the load balancer uses to perform health checks on backend servers. This is an optional parameter. The port numbers range from 1 to 65535.</p>
-    <div class="note" id="en-us_topic_0091131437_en-us_topic_0091131454_note1641616913534"><a name="en-us_topic_0091131437_en-us_topic_0091131454_note1641616913534"></a><a name="en-us_topic_0091131437_en-us_topic_0091131454_note1641616913534"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="en-us_topic_0091131437_en-us_topic_0091131454_p14416492538"><a name="en-us_topic_0091131437_en-us_topic_0091131454_p14416492538"></a><a name="en-us_topic_0091131437_en-us_topic_0091131454_p14416492538"></a>If no port is specified, the port of each backend server is used for health checks by default.</p>
+    <div class="note" id="en-us_topic_0091131437_en-us_topic_0091131454_note1641616913534"><a name="en-us_topic_0091131437_en-us_topic_0091131454_note1641616913534"></a><a name="en-us_topic_0091131437_en-us_topic_0091131454_note1641616913534"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="en-us_topic_0091131437_en-us_topic_0091131454_p14416492538"><a name="en-us_topic_0091131437_en-us_topic_0091131454_p14416492538"></a><a name="en-us_topic_0091131437_en-us_topic_0091131454_p14416492538"></a>If no port is specified, the port of each backend <span id="text235014302362"><a name="text235014302362"></a><a name="text235014302362"></a>server</span> is used for health checks by default.</p>
     </div></div>
     </td>
     <td class="cellrowborder" valign="top" width="29.86%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0091131437_en-us_topic_0091131454_p114161199530"><a name="en-us_topic_0091131437_en-us_topic_0091131454_p114161199530"></a><a name="en-us_topic_0091131437_en-us_topic_0091131454_p114161199530"></a>80</p>
@@ -201,18 +201,18 @@ If a load balancer is associated with an AS group, instances in the AS group are
 ## Modify a Backend Server Group<a name="section54011642158"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
-5.  Click  **Backend Server Groups**, locate the target backend server group, and click  ![](figures/icon-edit.png)  on the right of its name.
+5.  Click  **Backend Server Groups**, locate the target backend server group, and click  ![](figures/icon-edit-10.png)  on the right of its name.
 6.  In the displayed dialog box, modify the parameters as needed and click  **OK**.
 
 ## Delete a Backend Server Group<a name="section01807511112"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
-5.  Click  **Backend Server Groups**, locate the target backend server group, and click  ![](figures/icon-delete.png)  on the right of its name.
+5.  Click  **Backend Server Groups**, locate the target backend server group, and click  ![](figures/icon-dropdown.png)  on the right of its name.
 6.  In the displayed dialog box, click  **Yes**.
 

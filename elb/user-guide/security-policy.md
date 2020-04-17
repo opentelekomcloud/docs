@@ -328,7 +328,7 @@ Only enhanced load balancers support this function.
 2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
-5.  Locate the target listener and click  ![](figures/icon-edit.png)  on the right of its name.
+5.  Locate the target listener and click  ![](figures/icon-edit-10.png)  on the right of its name.
 6.  On the  **Modify Listener**  page, expand  **Advanced Settings**  and modify the security policy.
 7.  Click  **OK**.
 

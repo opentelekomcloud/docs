@@ -16,7 +16,7 @@ Currently, only enhanced load balancers support this function.
 ## Create a Redirect<a name="section0460104412272"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Listeners**, locate the target HTTP listener, and click its name.
@@ -66,7 +66,7 @@ Currently, only enhanced load balancers support this function.
 ## Modify a Redirect<a name="section143162510568"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Listeners**, locate the target HTTP listener, and click its name.
@@ -76,7 +76,7 @@ Currently, only enhanced load balancers support this function.
 ## Delete a Redirect<a name="section4978153735217"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Click  **Listeners**, locate the target listener, and click its name.

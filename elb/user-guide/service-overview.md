@@ -10,7 +10,7 @@
 
 -   **[How ELB Works](how-elb-works.md)**  
 
--   **[Network Type](network-type.md)**  
+-   **[Network Type](network-type-service-overview.md)**  
 
 -   **[ELB and Other Services](elb-and-other-services.md)**  
 

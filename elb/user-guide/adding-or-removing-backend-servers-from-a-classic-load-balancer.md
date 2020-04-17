@@ -7,7 +7,7 @@ If you need adjust the number of backend servers added to a classic load balance
 ## Add Backend Servers<a name="section8273133872011"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Click  **Classic**, locate the target load balancer, and click its name.
 5.  Click  **Listeners**, locate the target listener, and click  **Add Backend ECS**  in the  **Operation**  column.
@@ -21,7 +21,7 @@ If you need adjust the number of backend servers added to a classic load balance
 ## View Backend Servers<a name="section049293110219"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Click  **Classic**, locate the target load balancer, and click its name.
 5.  Click  **Listeners**, locate the target listener, and click the number in the  **Backend ECSs**  column.
@@ -29,7 +29,7 @@ If you need adjust the number of backend servers added to a classic load balance
 ## Remove Backend Servers<a name="section1669926112218"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Click  **Classic**, locate the target load balancer, and click its name.
 5.  Click  **Listeners**, locate the target listener, and click the number in the  **Backend ECSs**  column.

@@ -9,7 +9,7 @@ A listener also defines the health check configuration, based on which the load 
 ## Add a Listener to an Enhanced Load Balancer<a name="section117173315403"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Locate the target load balancer and click its name.
 5.  Under  **Listeners**, click  **Add Listener**. Configure the parameters by referring to  [Table 1](#table1441020925310),  [Table 2](#table6414109125314), and  [Table 3](#table124201898534).
@@ -311,7 +311,7 @@ A listener also defines the health check configuration, based on which the load 
 ## Add a Listener to a Classic Load Balancer<a name="section7841311103416"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-region.jpg)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 4.  Click  **Classic**, locate the target load balancer, and click its name.
 5.  Under  **Listeners**, click  **Add Listener**. In the  **Add Listener**  dialog box, specify the parameters by referring to  [Table 4](#table3947759918410).
@@ -352,7 +352,7 @@ A listener also defines the health check configuration, based on which the load 
     <tr id="row49179263162422"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p39960184162422"><a name="p39960184162422"></a><a name="p39960184162422"></a>Backend Protocol/Port</p>
     </td>
     <td class="cellrowborder" valign="top" width="54%" headers="mcps1.2.4.1.2 "><p id="p15549454162422"><a name="p15549454162422"></a><a name="p15549454162422"></a>Specifies the protocol used by backend servers to receive requests. The port numbers range from 1 to 65535.</p>
-    <a name="ul115418117206"></a><a name="ul115418117206"></a><ul id="ul115418117206"><li>TCP: layer-4 load balancing. When <strong id="b842352706144454"><a name="b842352706144454"></a><a name="b842352706144454"></a>Frontend Protocol</strong> is set to <strong id="b84235270614451"><a name="b84235270614451"></a><a name="b84235270614451"></a>SSL</strong>, <strong id="b84235270614457"><a name="b84235270614457"></a><a name="b84235270614457"></a>Backend Protocol</strong> is <strong id="b842352706144511"><a name="b842352706144511"></a><a name="b842352706144511"></a>TCP</strong> by default.</li><li>UDP: layer-4 load balancing. When <strong id="b589306666"><a name="b589306666"></a><a name="b589306666"></a>Frontend Protocol</strong> is set to <strong id="b1393199421"><a name="b1393199421"></a><a name="b1393199421"></a>UDP</strong>, <strong id="b1471478617"><a name="b1471478617"></a><a name="b1471478617"></a>Backend Protocol</strong> is <strong id="b2036138733"><a name="b2036138733"></a><a name="b2036138733"></a>UDP</strong> by default.</li></ul>
+    <a name="ul115418117206"></a><a name="ul115418117206"></a><ul id="ul115418117206"><li>TCP: layer-4 load balancing. When <strong id="b842352706144454"><a name="b842352706144454"></a><a name="b842352706144454"></a>Frontend Protocol</strong> is set to <strong id="b84235270614451"><a name="b84235270614451"></a><a name="b84235270614451"></a>SSL</strong>, <strong id="b84235270614457"><a name="b84235270614457"></a><a name="b84235270614457"></a>Backend Protocol</strong> is <strong id="b842352706144511"><a name="b842352706144511"></a><a name="b842352706144511"></a>TCP</strong> by default.</li><li>UDP: layer-4 load balancing. When <strong id="b1234778996"><a name="b1234778996"></a><a name="b1234778996"></a>Frontend Protocol</strong> is set to <strong id="b1950183613"><a name="b1950183613"></a><a name="b1950183613"></a>UDP</strong>, <strong id="b655815659"><a name="b655815659"></a><a name="b655815659"></a>Backend Protocol</strong> is <strong id="b2031500924"><a name="b2031500924"></a><a name="b2031500924"></a>UDP</strong> by default.</li></ul>
     </td>
     <td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.3 "><p id="p66231138124610"><a name="p66231138124610"></a><a name="p66231138124610"></a>TCP/22</p>
     </td>

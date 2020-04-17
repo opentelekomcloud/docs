@@ -16,7 +16,7 @@ A certificate has been created. For details, see  [Creating a Certificate](creat
 ## Procedure<a name="section61198541679"></a>
 
 1.  Log in to the management console.
-2.  In the upper left corner of the page, click  ![](figures/icon-edit.png)  and select the desired region and project.
+2.  In the upper left corner of the page, click  ![](figures/icon-region.png)  and select the desired region and project.
 3.  Click  **Service List**. Under  **Network**, click  **Elastic Load Balancing**.
 
 1.  Locate the target load balancer and click its name.
