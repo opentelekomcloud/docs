@@ -46,7 +46,7 @@ Scaling up the storage space of a read replica does not affect that of the prima
 1.  Log in to the management console.
 2.  Click  ![](figures/region.png)  in the upper left corner and select a region and a project.
 3.  Click  **Service List**. Under  **Database**, click  **Relational Database Service**  to go to the RDS console. The RDS console is displayed.
-4.  On the  **Instance Management**  page, locate the target DB instance and click  ![](figures/xiala.png)  in front of it. Locate a read replica to be scaled and choose  **More**  \>  **Scale Storage Space**  in the  **Operation**  column.
+4.  On the  **Instance Management**  page, locate the target DB instance and click  ![](figures/expand.PNG)  in front of it. Locate a read replica to be scaled and choose  **More**  \>  **Scale Storage Space**  in the  **Operation**  column.
 
     You can also scale up storage space in either of the following ways:
 
