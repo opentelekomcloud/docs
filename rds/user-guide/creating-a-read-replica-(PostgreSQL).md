@@ -134,7 +134,7 @@ After DB instances are created, you can  create read replicas  for them.
     -   If you need to modify your settings, click  **Previous**.
     -   If you do not need to modify your settings, click  **Submit**.
 
-7.  After a read replica has been created, you can view and manage it on the  **Instance Management**  page by clicking  ![](figures/xiala.png)  on the left of the DB instance to which it belongs.
+7.  After a read replica has been created, you can view and manage it on the  **Instance Management**  page by clicking  ![](figures/expand.PNG)  on the left of the DB instance to which it belongs.
 
     Alternatively, click the target DB instance. In the DB instance topology, click the target read replica. You can view and manage it in the displayed pane.
 
