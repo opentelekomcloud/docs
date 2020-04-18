@@ -9,7 +9,7 @@ This section describes how to  change the database port of a primary DB instance
 1.  Log in to the management console.
 2.  Click  ![](figures/region.png)  in the upper left corner and select a region and a project.
 3.  Click  **Service List**. Under  **Database**, click  **Relational Database Service**  to go to the RDS console. The RDS console is displayed.
-4.  On the  **Instance Management**  page, click the target DB instance or click  ![](figures/xiala.png)  first and then click the target read replica.
+4.  On the  **Instance Management**  page, click the target DB instance or click  ![](figures/expand.PNG)  first and then click the target read replica.
 5.  In the  **Connection Information**  area on the  **Basic Information**  page, click  ![](figures/port.png)  in the  **Database Port**  field.
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
