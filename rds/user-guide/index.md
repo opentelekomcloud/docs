@@ -387,6 +387,5 @@
         -   [How Much Storage Space Is Required for DDL Operations?](how-much-storage-space-is-required-for-ddl-operations.md)
 
 
--   [Change History](change-history.md)
 -   [Glossary](glossary.md)
 
