@@ -177,7 +177,7 @@
         -   [Manually Switching Between Primary and Standby DB Instances](manually-switching-between-primary-and-standby-db-instances-(PostgreSQL).md)
         -   [Selecting Displayed Items](selecting-displayed-items-(PostgreSQL).md)
         -   [Exporting DB Instance Information](exporting-db-instance-information-(PostgreSQL).md)
-        -   [ a Same DB Instance](a-same-db-instance.md)
+        -   [Creating a Same DB Instance](creating-a-same-db-instance.md)
         -   [Deleting a DB Instance or Read Replica](deleting-a-db-instance-or-read-replica-(PostgreSQL).md)
         -   [Managing Tags](managing-tags-(PostgreSQL).md)
 
@@ -251,7 +251,7 @@
         -   [Manually Switching Between Primary and Standby DB Instances](manually-switching-between-primary-and-standby-db-instances-(Microsoft-SQL-Server).md)
         -   [Selecting Displayed Items](selecting-displayed-items-(Microsoft-SQL-Server).md)
         -   [Exporting DB Instance Information](exporting-db-instance-information-(Microsoft-SQL-Server).md)
-        -   [ a Same DB Instance](a-same-db-instance-(Microsoft-SQL-Server).md)
+        -   [Creating a Same DB Instance](creating-a-same-db-instance-(Microsoft-SQL-Server).md)
         -   [Deleting a DB Instance or Read Replica](deleting-a-db-instance-or-read-replica-(Microsoft-SQL-Server).md)
         -   [Managing Tags](managing-tags-(Microsoft-SQL-Server).md)
 
