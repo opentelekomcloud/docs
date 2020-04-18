@@ -19,7 +19,7 @@ To reboot a DB instance, the following requirements must be met:
 1.  Log in to the management console.
 2.  Click  ![](figures/region.png)  in the upper left corner and select a region and a project.
 3.  Click  **Service List**. Under  **Database**, click  **Relational Database Service**  to go to the RDS console. The RDS console is displayed.
-4.  On the  **Instance Management**  page, locate the target DB instance, or click  ![](figures/xiala.png)  and then locate the target read replica. Choose  **More**  \>  **Reboot**  in the  **Operation**  column.
+4.  On the  **Instance Management**  page, locate the target DB instance, or click  ![](figures/expand.PNG)  and then locate the target read replica. Choose  **More**  \>  **Reboot**  in the  **Operation**  column.
 
     Alternatively, click the target DB instance on the  **Instance Management**  page to go to the  **Basic Information**  page. In the upper right corner, click  **Reboot**.
 
