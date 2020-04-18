@@ -124,5 +124,3 @@
     -   [RDS Monitoring Metrics Description](rds-monitoring-metrics-description.md)
     -   [DB Instance Specifications](db-instance-specifications.md)
 
--   [Change History](change-history.md)
-
