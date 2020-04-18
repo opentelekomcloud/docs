@@ -1,4 +1,4 @@
-#  a Same DB Instance<a name="rds_pg_05_0055"></a>
+#  Creating a Same DB Instance<a name="rds_pg_05_0055"></a>
 
 ## Scenarios<a name="en-us_topic_0171122593_section17375927183"></a>
 
