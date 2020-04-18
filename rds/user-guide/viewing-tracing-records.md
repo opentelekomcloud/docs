@@ -26,6 +26,6 @@ This section describes how to query the operation records of last 7 days on the 
     -   **Trace Status**: Available options include  **All trace statuses**,  **normal**,  **warning**, and  **incident**. You can only select one of them.
     -   Start time and end time: You can specify a time period for querying traces.
 
-5.  Click  ![](figures/xiala.png)  on the left of the target record to expand its details.
+5.  Click  ![](figures/expand.PNG)  on the left of the target record to expand its details.
 6.  Click  **View Trace**  in the  **Operation**  column. A dialog box is displayed, on which the trace structure details are displayed.
 
