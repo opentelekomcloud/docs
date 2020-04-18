@@ -1,4 +1,4 @@
-#  creating a Same DB Instance<a name="rds_sqlserver_05_0055"></a>
+#  Creating a Same DB Instance<a name="rds_sqlserver_05_0055"></a>
 
 ## Scenarios<a name="section329943120322"></a>
 
