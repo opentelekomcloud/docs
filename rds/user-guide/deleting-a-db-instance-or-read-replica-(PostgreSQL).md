@@ -27,7 +27,7 @@ DB instance deletion has the following constraints:
 1.  Log in to the management console.
 2.  Click  ![](figures/region.png)  in the upper left corner and select a region and a project.
 3.  Click  **Service List**. Under  **Database**, click  **Relational Database Service**  to go to the RDS console. The RDS console is displayed.
-4.  On the  **Instance Management**  page, locate the target DB instance and click  ![](figures/jiantou.png)  in front of it. All the read replicas created for the DB instance are displayed.
+4.  On the  **Instance Management**  page, locate the target DB instance and click  ![](figures/expand.PNG)  in front of it. All the read replicas created for the DB instance are displayed.
 5.  Locate the target read replicas to be deleted and click  **More**  \>  **Delete**  in the  **Operation**  column.
 6.  In the displayed dialog box, click  **Yes**.
 7.  Refresh the DB instance list later to check that the deletion is successful.
