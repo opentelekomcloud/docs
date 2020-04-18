@@ -48,7 +48,7 @@ Monitored data takes some time for transmission and display. The RDS status disp
     Alternatively, click the target DB instance. On the displayed page, click  **View Metric**  in the upper right corner of the page to go to the Cloud Eye console.
 
 5.  On the displayed page, click  ![](figures/ces.png)  to return to the  **Relational Database Service**  page.
-6.  In the DB instance list, click  ![](figures/xiala.png)  in front of the target DB instance, locate the standby DB instance, and click  **View Metric**  in the  **Operation**  column to view the monitoring information of the standby DB instance.
+6.  In the DB instance list, click  ![](figures/expand.PNG)  in front of the target DB instance, locate the standby DB instance, and click  **View Metric**  in the  **Operation**  column to view the monitoring information of the standby DB instance.
 7.  On the Cloud Eye console, view monitoring information of the standby DB instance.
     -   On the Cloud Eye console, click the target RDS DB instance name and click  **Select Metric**  in the upper right corner. In the displayed dialog box, you can select the metrics to be displayed and sort them by dragging them at desired locations.
     -   You can sort graphs by dragging them based on service requirements.
