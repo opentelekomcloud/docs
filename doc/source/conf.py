@@ -28,7 +28,8 @@ sys.path.insert(0, os.path.abspath('.'))
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
     'otcdocstheme',
-    'recommonmark'
+    'recommonmark',
+    'os_api_ref'
 ]
 
 # openstackdocstheme options
@@ -49,7 +50,11 @@ enforcer_warnings_as_errors = False
 templates_path = ['_templates']
 
 # The suffix of source filenames.
-source_suffix = ['.md', 'rst']
+#source_suffix = ['.md', 'rst']
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
 
 # The master toctree document.
 master_doc = 'index'
@@ -107,6 +112,11 @@ latex_documents = [
      '%s.tex' % project,
      u'%s Documentation' % project,
      u'OpenTelekomCloud', 'manual'),
+]
+
+suppress_warnings = [
+    'toc.*',
+    'app.*'
 ]
 
 
