@@ -22,7 +22,7 @@ You must observe the following rules when using tags:
 ## Adding a Tag to an AS Group<a name="section12477432195230"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/d00356819-云计算开发部-公有云_iaas-image-f1cac6ef-c4f7-462b-a7f1-85e988937e64-3.png)  in the upper left corner to select a region and a project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner to select a region and a project.
 3.  Under  **Computing**, click  **Auto Scaling**. In the navigation pane on the left, choose  **Instance Scaling**.
 4.  Click the AS group name. On the  **Basic Information**  page, click the  **Tags**  tab and then click  **Add Tag**.
 5.  Set the parameters listed in  [Table 1](#table1794599823119).
@@ -60,7 +60,7 @@ You must observe the following rules when using tags:
 ## Modifying or Deleting Tags of an AS Group<a name="section8057725103917"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/d00356819-云计算开发部-公有云_iaas-image-f1cac6ef-c4f7-462b-a7f1-85e988937e64-4.png)  in the upper left corner to select a region and a project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner to select a region and a project.
 3.  Under  **Computing**, click  **Auto Scaling**. In the navigation pane on the left, choose  **Instance Scaling**. Then click the  **AS Groups**  tab.
 4.  Click the AS group name. On the  **Basic Information**  page, click the  **Tags**  tab.
 5.  Locate the row that contains the tag and click  **Edit**  or  **Delete**  in the  **Operation**  column.

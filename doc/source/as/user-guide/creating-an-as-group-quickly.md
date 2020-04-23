@@ -10,7 +10,7 @@ If you use AS for the first time, it is recommended that you follow the wizard-b
 ## Procedure<a name="section48883615"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/d00356819-云计算开发部-公有云_iaas-image-f1cac6ef-c4f7-462b-a7f1-85e988937e64.png)  in the upper left corner to select a region and a project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner to select a region and a project.
 3.  Under  **Computing**, click  **Auto Scaling**. In the navigation pane on the left, choose  **Instance Scaling**.
 4.  Click  **Create AS Group**.
 5.  Set basic information about the AS group, such as  **Name**,  **Max. Instances**,  **Min. Instances**, and  **Expected Instances**.  [Table 1](#table2153361016143)  lists the parameters.

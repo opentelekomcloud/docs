@@ -15,7 +15,7 @@ The ECS is running properly.
 ## Viewing Monitoring Metrics on Auto Scaling<a name="section53841197455"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/d00356819-云计算开发部-公有云_iaas-image-f1cac6ef-c4f7-462b-a7f1-85e988937e64-3.png)  in the upper left corner to select a region and a project.
+2.  Click  ![](figures/icon-region.png)  in the upper left corner to select a region and a project.
 3.  Under  **Computing**, click  **Auto Scaling**. In the navigation pane on the left, choose  **Instance Scaling**.
 4.  On the  **AS Groups**  page, find the AS group to view monitoring data and click its name.
 5.  Click the  **Monitoring**  tab to view the monitoring data.
