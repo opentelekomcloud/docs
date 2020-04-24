@@ -1,12 +1,12 @@
 # API Reference
 
 -   [API Usage Guidelines](api-usage-guidelines.md)
--   [APIs](apis.md)
-    -   [API Version Query](api-version-query.md)
+-   [APIs]
+    -   [API Version Query]
         -   [Querying All API Versions](querying-all-api-versions.md)
         -   [Querying Information About API v3](querying-information-about-api-v3.md)
 
-    -   [Cluster Management](cluster-management.md)
+    -   [Cluster Management]
         -   [Creating a Cluster](creating-a-cluster.md)
         -   [Reading a Specified Cluster](reading-a-specified-cluster.md)
         -   [Listing Clusters in a Specified Project](listing-clusters-in-a-specified-project.md)
@@ -24,13 +24,13 @@
         -   [Modifying the Access Information of a Specified Cluster](modifying-the-access-information-of-a-specified-cluster.md)
 
 
--   [Kubernetes APIs](kubernetes-apis.md)
-    -   [Node](node.md)
+-   [Kubernetes APIs]
+    -   [Node]
         -   [Reading a Specified Node](reading-a-specified-node-v1.md)
         -   [Listing Specified Nodes](listing-specified-nodes.md)
         -   [Updating a Specified Node](updating-a-specified-node-v1.md)
 
-    -   [Namespace](namespace.md)
+    -   [Namespace]
         -   [Creating a Namespace](creating-a-namespace.md)
         -   [Deleting a Namespace](deleting-a-namespace.md)
         -   [Reading a Specified Namespace](reading-a-specified-namespace.md)
@@ -40,10 +40,10 @@
         -   [Listing Namespaces](listing-namespaces.md)
         -   [Updating a Specified Namespace](updating-a-specified-namespace.md)
 
-    -   [Resource Quotas](resource-quotas.md)
+    -   [Resource Quotas]
         -   [Obtaining Resource Quotas](obtaining-resource-quotas.md)
 
-    -   [Pod](pod.md)
+    -   [Pod]
         -   [Creating a Pod](creating-a-pod.md)
         -   [Deleting a Pod](deleting-a-pod.md)
         -   [Deleting All Pods](deleting-all-pods.md)
@@ -54,7 +54,7 @@
         -   [Listing Pods](listing-pods.md)
         -   [Updating a Specified Pod](updating-a-specified-pod.md)
 
-    -   [Deployment](deployment.md)
+    -   [Deployment]
         -   [Creating a Deployment](creating-a-deployment.md)
         -   [Rolling Back a Deployment](rolling-back-a-deployment.md)
         -   [Deleting a Deployment](deleting-a-deployment.md)
@@ -71,7 +71,7 @@
         -   [Updating the Status of a Specified Deployment](updating-the-status-of-a-specified-deployment.md)
         -   [Updating the Scaling Operation of a Specified Deployment](updating-the-scaling-operation-of-a-specified-deployment.md)
 
-    -   [StatefulSet](statefulset.md)
+    -   [StatefulSet]
         -   [Creating a StatefulSet](creating-a-statefulset.md)
         -   [Deleting a StatefulSet](deleting-a-statefulset.md)
         -   [Delete All StatefulSets](delete-all-statefulsets.md)
@@ -84,7 +84,7 @@
         -   [Updating a Specified StatefulSet](updating-a-specified-statefulset.md)
         -   [Updating the Status of a Specified StatefulSet](updating-the-status-of-a-specified-statefulset.md)
 
-    -   [DaemonSet](daemonset.md)
+    -   [DaemonSet]
         -   [Creating a DaemonSet](creating-a-daemonset.md)
         -   [Deleting a DaemonSet](deleting-a-daemonset.md)
         -   [Delete All DaemonSets](delete-all-daemonsets.md)
@@ -97,7 +97,7 @@
         -   [Updating a Specified DaemonSet](updating-a-specified-daemonset.md)
         -   [Updating the Status of a Specified DaemonSet](updating-the-status-of-a-specified-daemonset.md)
 
-    -   [Job](job.md)
+    -   [Job]
         -   [Creating a Job](creating-a-job.md)
         -   [Deleting a Job](deleting-a-job.md)
         -   [Deleting All Jobs](deleting-all-jobs.md)
@@ -110,7 +110,7 @@
         -   [Updating the Status of a Specified Job](updating-the-status-of-a-specified-job.md)
         -   [Updating a Specified Job](updating-a-specified-job.md)
 
-    -   [CronJob](cronjob.md)
+    -   [CronJob]
         -   [Creating a CronJob](creating-a-cronjob.md)
         -   [Deleting a CronJob](deleting-a-cronjob.md)
         -   [Deleting All CronJobs](deleting-all-cronjobs.md)
@@ -123,12 +123,12 @@
         -   [Updating the Status of a Specified CronJob](updating-the-status-of-a-specified-cronjob.md)
         -   [Updating a Specified CronJob](updating-a-specified-cronjob.md)
 
-    -   [ReplicaSet](replicaset.md)
+    -   [ReplicaSet]
         -   [Listing ReplicaSets](listing-replicasets.md)
         -   [Reading a Specified ReplicaSet](reading-a-specified-replicaset.md)
         -   [Reading the ReplicaSets](reading-the-replicasets.md)
 
-    -   [ReplicationController](replicationcontroller.md)
+    -   [ReplicationController]
         -   [Creating a ReplicationController](creating-a-replicationcontroller.md)
         -   [Deleting a ReplicationController](deleting-a-replicationcontroller.md)
         -   [Deleting All ReplicationControllers](deleting-all-replicationcontrollers.md)
@@ -139,7 +139,7 @@
         -   [Listing ReplicationControllers](listing-replicationcontrollers.md)
         -   [Updating a Specified ReplicationController](updating-a-specified-replicationcontroller.md)
 
-    -   [Endpoints](endpoints.md)
+    -   [Endpoints]
         -   [Creating an Endpoints Object](creating-an-endpoints-object.md)
         -   [Deleting an Endpoints Object](deleting-an-endpoints-object.md)
         -   [Deleting All Endpoints](deleting-all-endpoints.md)
@@ -149,7 +149,7 @@
         -   [Listing Endpoints in a Specified Namespace](listing-endpoints-in-a-specified-namespace.md)
         -   [Updating a Specified Endpoints](updating-a-specified-endpoints.md)
 
-    -   [Service](service.md)
+    -   [Service]
         -   [Creating a Service](creating-a-service.md)
         -   [Deleting a Service](deleting-a-service.md)
         -   [Obtaining a Specified Service](obtaining-a-specified-service.md)
@@ -158,7 +158,7 @@
         -   [Listing Services](listing-services.md)
         -   [Updating a Specified Service](updating-a-specified-service.md)
 
-    -   [Ingress](ingress.md)
+    -   [Ingress]
         -   [Creating an Ingress](creating-an-ingress.md)
         -   [Updating a Specified Ingress](updating-a-specified-ingress.md)
         -   [Replacing a Specified Ingress](replacing-a-specified-ingress.md)
@@ -171,7 +171,7 @@
         -   [Replacing the Status of an Ingress in a Specified Namespace](replacing-the-status-of-an-ingress-in-a-specified-namespace.md)
         -   [Updating the Status of an Ingress in a Specified Namespace](updating-the-status-of-an-ingress-in-a-specified-namespace.md)
 
-    -   [NetworkPolicy](networkpolicy.md)
+    -   [NetworkPolicy]
         -   [Creating a NetworkPolicy](creating-a-networkpolicy.md)
         -   [Updating a Specified NetworkPolicy](updating-a-specified-networkpolicy.md)
         -   [Replacing a Specified NetworkPolicy](replacing-a-specified-networkpolicy.md)
@@ -181,7 +181,7 @@
         -   [Obtaining the NetworkPolicy List Under a Specified Namespace](obtaining-the-networkpolicy-list-under-a-specified-namespace.md)
         -   [Obtaining the NetworkPolicy List](obtaining-the-networkpolicy-list.md)
 
-    -   [PersistentVolume](persistentvolume.md)
+    -   [PersistentVolume]
         -   [Creating a PersistentVolume](creating-a-persistentvolume.md)
         -   [Deleting a Specified PersistentVolume](deleting-a-specified-persistentvolume.md)
         -   [Deleting All PersistentVolumes](deleting-all-persistentvolumes.md)
@@ -191,7 +191,7 @@
         -   [Listing All PersistentVolumes](listing-all-persistentvolumes.md)
         -   [Updating a Specified PersistentVolume](updating-a-specified-persistentvolume.md)
 
-    -   [PersistentVolumeClaim](persistentvolumeclaim.md)
+    -   [PersistentVolumeClaim]
         -   [Creating a PersistentVolumeClaim](creating-a-persistentvolumeclaim.md)
         -   [Deleting a Specified PersistentVolumeClaim](deleting-a-specified-persistentvolumeclaim.md)
         -   [Deleting All PersistentVolumeClaims](deleting-all-persistentvolumeclaims.md)
@@ -202,7 +202,7 @@
         -   [Listing All PersistentVolumeClaims](listing-all-persistentvolumeclaims.md)
         -   [Updating a Specified PersistentVolumeClaim](updating-a-specified-persistentvolumeclaim.md)
 
-    -   [ConfigMap](configmap.md)
+    -   [ConfigMap]
         -   [Creating a ConfigMap](creating-a-configmap.md)
         -   [Deleting a ConfigMap](deleting-a-configmap.md)
         -   [Deleting All ConfigMaps](deleting-all-configmaps.md)
@@ -212,7 +212,7 @@
         -   [Listing ConfigMaps](listing-configmaps.md)
         -   [Updating a Specified ConfigMap](updating-a-specified-configmap.md)
 
-    -   [Secret](secret.md)
+    -   [Secret]
         -   [Creating a Secret](creating-a-secret.md)
         -   [Deleting a Secret](deleting-a-secret.md)
         -   [Deleting All Secrets](deleting-all-secrets.md)
@@ -221,8 +221,8 @@
         -   [Listing the Secrets in a Specified Namespace](listing-the-secrets-in-a-specified-namespace.md)
         -   [Listing the Secrets in a Cluster](listing-the-secrets-in-a-cluster.md)
 
-    -   [RBAC](rbac.md)
-        -   [ClusterRole](clusterrole.md)
+    -   [RBAC]
+        -   [ClusterRole]
             -   [Creating a ClusterRole](creating-a-clusterrole.md)
             -   [Updating a Specified ClusterRole](updating-a-specified-clusterrole.md)
             -   [Replacing a Specified ClusterRole](replacing-a-specified-clusterrole.md)
@@ -231,7 +231,7 @@
             -   [Reading a Specified ClusterRole](reading-a-specified-clusterrole.md)
             -   [Reading the List of ClusterRoles](reading-the-list-of-clusterroles.md)
 
-        -   [ClusterRoleBinding](clusterrolebinding.md)
+        -   [ClusterRoleBinding]
             -   [Creating a ClusterRoleBinding](creating-a-clusterrolebinding.md)
             -   [Updating a Specified ClusterRoleBinding](updating-a-specified-clusterrolebinding.md)
             -   [Replacing a Specified ClusterRoleBinding](replacing-a-specified-clusterrolebinding.md)
@@ -240,7 +240,7 @@
             -   [Reading a Specified ClusterRoleBinding](reading-a-specified-clusterrolebinding.md)
             -   [Reading the List of ClusterRoleBindings](reading-the-list-of-clusterrolebindings.md)
 
-        -   [Role](role.md)
+        -   [Role]
             -   [Creating a Role](creating-a-role.md)
             -   [Updating a Specified Role](updating-a-specified-role.md)
             -   [Replacing a Specified Role](replacing-a-specified-role.md)
@@ -250,7 +250,7 @@
             -   [Obtaining the Role List in a Specified Namespace](obtaining-the-role-list-in-a-specified-namespace.md)
             -   [Obtaining the Role List](obtaining-the-role-list.md)
 
-        -   [RoleBinding](rolebinding.md)
+        -   [RoleBinding]
             -   [Creating a RoleBinding](creating-a-rolebinding.md)
             -   [Updating a Specified RoleBinding](updating-a-specified-rolebinding.md)
             -   [Replacing a Specified RoleBinding](replacing-a-specified-rolebinding.md)
@@ -261,7 +261,7 @@
             -   [Obtaining the RoleBinding List](obtaining-the-rolebinding-list.md)
 
 
-    -   [API Groups](api-groups.md)
+    -   [API Groups]
         -   [Listing APIVersions](listing-apiversions.md)
         -   [Listing APIGroups](listing-apigroups.md)
         -   [Listing APIResources of GroupVersion apiregistration.k8s.io/v1beta1](listing-apiresources-of-groupversion-apiregistration-k8s-io-v1beta1.md)
@@ -282,17 +282,17 @@
         -   [Listing APIResources of GroupVersion apiextensions.k8s.io/v1beta1](listing-apiresources-of-groupversion-apiextensions-k8s-io-v1beta1.md)
         -   [Listing APIResources of GroupVersion v1](listing-apiresources-of-groupversion-v1.md)
 
-    -   [Event](event.md)
+    -   [Event]
         -   [Reading Events](reading-events.md)
         -   [Listing Specified Events](listing-specified-events.md)
 
 
--   [Data Structure](data-structure.md)
+-   [Data Structure]
     -   [Data Structure of Request Parameters](data-structure-of-request-parameters.md)
     -   [Data Structure of Response Parameters](data-structure-of-response-parameters.md)
 
 -   [Permissions Policies and Supported Actions](permissions-policies-and-supported-actions.md)
--   [Appendix](appendix.md)
+-   [Appendix]
     -   [Patch Request Method Operation Description](patch-request-method-operation-description.md)
     -   [Patch Request Method Operation Example](patch-request-method-operation-example.md)
     -   [Status Code](status-code.md)
@@ -306,5 +306,4 @@
     -   [\(Optional\) Creating a High-Speed Network]((optional)-creating-a-high-speed-network.md)
     -   [Creating a Key Pair](creating-a-key-pair.md)
 
--   [Change History](change-history.md)
 
