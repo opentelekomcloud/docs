@@ -4,7 +4,7 @@
       find:
         file_type: any
         follow: true
-        paths: "{{ zuul_work_dir }}/doc/build"
+        paths: "{{ zuul.project.src_dir }}/doc/build"
       register: sphinx_dir
 
     - name: Parse sphinx build directory
