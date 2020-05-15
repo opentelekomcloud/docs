@@ -16,25 +16,23 @@
         state: file
       register: ssh_private_key_tmp
 
+    - name: Create SSH private key from secret
+      copy:
+        content: "{{  hc2.ssh_private_key }}"
+        dest: "{{ ssh_private_key_tmp.path }}"
+        mode: 0600
 
+    - name: Add fileserver ssh key
+      command: "ssh-add {{ ssh_private_key_tmp.path }}"
 
-      #    - name: Create SSH private key from secret
-      #      copy:
-      #        content: "{{  hc2.ssh_private_key }}"
-      #        dest: "{{ ssh_private_key_tmp.path }}"
-      #        mode: 0600
-      #
-      #    - name: Add fileserver ssh key
-      #      command: "ssh-add {{ ssh_private_key_tmp.path }}"
-      #
-      #    - name: Remove SSH private key from disk
-      #      command: "shred {{ ssh_private_key_tmp.path }}"
-      #
-      #    - name: Add fileserver to inventory
-      #      add_host:
-      #        name: "{{ hc2.fqdn }}"
-      #        ansible_user: "{{ hc2.ssh_username }}"
-      #
-      #    - name: push
-      #      command:
-      #        cmd: "scp {{ zuul.project.src_dir }}/doc/build/html {{ hc2.ssh_username }}@{{ hc2.fqdn }}/mnt/sfs/hc2"
+    - name: Remove SSH private key from disk
+      command: "shred {{ ssh_private_key_tmp.path }}"
+
+    - name: Add fileserver to inventory
+      add_host:
+        name: "{{ hc2.fqdn }}"
+        ansible_user: "{{ hc2.ssh_username }}"
+
+    - name: push
+      command:
+        cmd: "scp {{ zuul.project.src_dir }}/doc/build/html {{ hc2.ssh_username }}@{{ hc2.fqdn }}/mnt/sfs/hc2"
