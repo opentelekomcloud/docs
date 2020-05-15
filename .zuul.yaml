@@ -6,7 +6,6 @@
       playbooks/docs/promote.yaml
     secrets:
       - hc2
-      - ccc
 
 - project:
     merge-mode: squash-merge
