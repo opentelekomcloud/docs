@@ -128,7 +128,7 @@ SYS.AS
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   The image based on which the target ECS is created must have OTC Tools installed. Otherwise, the  **Memory Usage**  and  **Disk Usage**  metrics are unavailable. For details about how to install the OTC Tools, visit  [https://github.com/UVP-Tools/UVP-Tools/](https://github.com/UVP-Tools/UVP-Tools/).  
 >-   For details about whether your OS supports the  **Memory Usage**,  **Inband Outgoing Rate**, and  **Inband Incoming Rate**  metrics, see  _[Elastic Cloud Server User Guide](https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0030911465.html)_.  
 

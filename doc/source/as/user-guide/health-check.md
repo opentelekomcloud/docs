@@ -13,6 +13,6 @@ When an AS group is disabled, checking instance health status continues. However
 
 Generally, instances automatically added to an AS group in scaling actions require sufficient warm-up time \(grace period\) to pass the ELB health check. Therefore, if you add a load balancer to an AS group and set the health check method to ELB health check, the AS group will check the status of instances only after their grace periods end.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >The grace period starts only after an instance is added to the AS group and enabled. The default grace period is 10 minutes.  
 

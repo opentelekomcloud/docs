@@ -11,7 +11,7 @@ This interface is used to query AS configurations based on search criteria. The 
 
 GET /autoscaling-api/v1/\{project\_id\}/scaling\_configuration
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >You can type the question mark \(?\) and ampersand \(&\) at the end of the URI to define multiple search criteria. AS configurations can be searched by all optional parameters in the following table. For details, see the example request.  
 
 **Table  1**  Parameter description

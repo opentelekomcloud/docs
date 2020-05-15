@@ -4,7 +4,7 @@
 
 You can modify an AS group as needed. The values of the following parameters can be changed: ,  **Max. Instances**,  **Min. Instances**,  **Expected Instances**,  **Cooldown Period**,  **Health Check Method**,  **Health Check Interval**,  **Health Check Grace Period**,  **Enterprise project**,  **Instance Removal Policy**,  **EIP**, and  **Notification Mode**.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >Changing the value of  **Expected Instances**  will trigger a scaling action. Then, AS automatically increases or decreases the number of instances to the value of  **Expected Instances**.  
 
 If an AS group is not enabled and does not contain any ECS instances, and no scaling action is being performed, you can also modify  **Subnet**  and  **ELB**  configurations.

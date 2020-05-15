@@ -406,7 +406,7 @@ This API allows you to query optional Anti-DDoS defense policies. Based on your 
 }
 ```
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >The  **extend\_ddos\_config**  field displays information about Anti-DDoS defense policies set by users based on their needs.   
 
 ## Returned Value<a name="section239263"></a>

@@ -13,7 +13,7 @@ Setting ECS alarm rules allows you to customize the monitored objects and notifi
 5.  On the  **Alarm Rules**  page, click  **Create Alarm Rule**  to create an alarm rule for the AS service or modify an existing alarm rule of the AS service.
 6.  After the parameters are set, click  **Finish**.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >-   For more information about how to set alarm rules, see  _Cloud Eye User Guide_.  
     >-   You can create alarm rules on the Cloud Eye console to dynamically expand resources.  
 

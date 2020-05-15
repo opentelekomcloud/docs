@@ -183,7 +183,7 @@ If you use AS for the first time, it is recommended that you follow the wizard-b
 
     Configure the required parameters, such as the  **Policy Type**,  **Scaling Action**, and  **Cooldown Period**. For details, see  [Dynamically Expanding Resources](dynamically-expanding-resources.md)  and  [Expanding Resources as Planned](expanding-resources-as-planned.md).
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >-   If a scaling action is triggered by an AS policy, the cooldown period is that which is configured for that AS policy.  
     >-   If a scaling action is triggered by manually changing the expected number of instances or by other actions, the cooldown period is that which is configured for the AS group.   
 

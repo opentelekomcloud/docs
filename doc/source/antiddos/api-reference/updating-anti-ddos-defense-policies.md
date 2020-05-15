@@ -109,7 +109,7 @@ This API enables you to update the Anti-DDoS defense policy of a specified EIP. 
     </tbody>
     </table>
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >If traffic\_pos\_id, http\_request\_pos\_id, cleaning\_access\_pos\_id are set from 33 to 36, their values must be the same.  
 
 

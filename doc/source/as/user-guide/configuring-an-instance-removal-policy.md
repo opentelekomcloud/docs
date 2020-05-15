@@ -9,6 +9,6 @@ AS supports the following instance removal policies:
 -   **Oldest instance created from oldest AS configuration**: The oldest instance created based on the oldest configuration is removed from the AS group first. Use this policy if you want to update an AS group and delete the instances created based on early AS configurations gradually.
 -   **Newest instance created from oldest AS configuration**: The latest instance created based on the oldest configuration is removed from the AS group first.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >A manually added ECS is removed in the lowest priority. AS does not delete a manually added ECS when removing it. If multiple manually added ECSs must be removed, AS preferentially removes the earliest-added ECS.  
 

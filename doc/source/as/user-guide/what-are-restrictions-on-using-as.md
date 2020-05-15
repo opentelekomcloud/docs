@@ -8,7 +8,7 @@ If the application status or related data must be saved, you can store the infor
 
     The AS administrator account requires permissions of the tenant guest, ECS administrator, Cloud Eye administrator, and ELB administrator.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >If the Cloud Eye administrator is not available, you can only use an existing alarm to create an alarm policy. If the ELB administrator is not available, you can still use existing load balancers.  
 
 -   AS resources must comply with quota requirements listed in  [Table 1](#table18879114515369).

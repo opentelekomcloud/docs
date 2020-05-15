@@ -162,6 +162,6 @@ You can manage instances in an AS group through AS policies. This section descri
     The newly added AS policy is displayed on the  **AS Policy**  tab. In addition, the AS policy is in  **Enabled**  state by default.
 
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >If you have created scheduled or periodic AS policies that are triggered at the same time, AS will execute the one created later. This constraint does not apply to alarm-triggered AS policies.  
 

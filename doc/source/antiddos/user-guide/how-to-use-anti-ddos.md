@@ -10,7 +10,7 @@ Description:
         **Figure  1**  Default protection settings<a name="fig1187371918561"></a>  
         ![](figures/default-protection-settings.png "default-protection-settings")
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
+        >![](/images/icon-note.gif) **NOTE:**   
         >-   Mbps = Mbit/s \(short for 1,000,000 bit/s\). It is a unit of transmission rate and refers to the number of bits transmitted per second.  
         >-   PPS, short for Packets Per Second, is a measure of throughput for network devices. It means the number of packets sent per second.  
 

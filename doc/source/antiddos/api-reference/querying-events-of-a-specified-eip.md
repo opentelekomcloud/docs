@@ -10,7 +10,7 @@ This API allows you to query events of a specified EIP in the last 24 hours. Eve
 
     GET /v1/\{project\_id\}/antiddos/\{floating\_ip\_id\}/logs
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >You can use  **?** and **&**  behind the URI to add query conditions, as shown in the request example.  
 
 

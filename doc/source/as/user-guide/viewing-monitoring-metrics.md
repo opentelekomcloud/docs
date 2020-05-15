@@ -8,7 +8,7 @@ The cloud platform provides Cloud Eye to help you obtain the running status of y
 
 The ECS is running properly.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   Monitoring metrics such as  **CPU Usage**  and  **Disks Read Rate**  are available only when there is at least one instance in an AS group. If not, only the  **Number of Instances**  metric is available.  
 >-   Monitoring data is not displayed for a stopped, faulty, or deleted ECS. After such an ECS restarts or recovers, the monitoring data is available.  
 
@@ -34,6 +34,6 @@ The ECS is running properly.
     You can view data of the last 1, 3, and 12 hours. Hover your mouse over a graph and click  ![](figures/icon-image.png)  to view data for a longer time range.
 
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >It can take a period of time to obtain and transfer the monitoring data. Therefore, wait for a while and then check the data.  
 

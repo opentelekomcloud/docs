@@ -15,8 +15,6 @@ import os
 import sys
 import warnings
 
-import otcdocstheme
-import recommonmark
 from recommonmark.transform import AutoStructify
 
 sys.path.insert(0, os.path.abspath('../..'))
@@ -27,15 +25,14 @@ sys.path.insert(0, os.path.abspath('.'))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
-    'otcdocstheme',
     'recommonmark',
-    'os_api_ref'
 ]
 
 # openstackdocstheme options
 repository_name = 'opentelekomcloud/docs'
 html_last_updated_fmt = '%Y-%m-%d %H:%M'
-html_theme = 'otcdocs'
+html_theme_path = ['../../theme']
+html_theme = 'hc'
 
 # TODO(shade) Set this to true once the build-openstack-sphinx-docs job is
 # updated to use sphinx-build.
@@ -50,7 +47,7 @@ enforcer_warnings_as_errors = False
 templates_path = ['_templates']
 
 # The suffix of source filenames.
-#source_suffix = ['.md', 'rst']
+#source_suffix = ['.md']
 source_suffix = {
     '.rst': 'restructuredtext',
     '.md': 'markdown',
@@ -60,7 +57,7 @@ source_suffix = {
 master_doc = 'index'
 
 # General information about the project.
-project = u'docs'
+project = u'OTC HelpCenter'
 copyright = u'2020, Various members of the OpenTelekomCloud'
 
 # A few variables have to be set for the log-a-bug feature.
@@ -120,11 +117,13 @@ suppress_warnings = [
 ]
 
 
-github_doc_root = 'https://github.com/rtfd/recommonmark/tree/master/doc/'
+github_doc_root = 'https://github.com/opentelekomcloud/docs'
 
 
 def setup(app):
     app.add_config_value('recommonmark_config', {
+            'enable_auto_toc_tree': True,
             'auto_toc_tree_section': 'Contents',
+ #           'url_resolver': lambda url: github_doc_root + url,
             }, True)
     app.add_transform(AutoStructify)

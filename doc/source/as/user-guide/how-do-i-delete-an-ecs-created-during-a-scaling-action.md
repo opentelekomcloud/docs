@@ -10,7 +10,7 @@ Method 1
 4.  On the AS group details page, click the  **Instances**  tab.
 5.  Locate the row that contains the target instance and click  **Remove and Delete**  in the  **Operation**  column.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >To delete multiple instances, select the check boxes in front of them and click  **Remove and Delete**.  
 
 

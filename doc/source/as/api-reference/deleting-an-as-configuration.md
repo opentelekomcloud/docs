@@ -4,7 +4,7 @@
 
 This interface is used to delete a specified AS configuration.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >AS configurations used by AS groups cannot be deleted.  
 
 ## URI<a name="section48428136"></a>

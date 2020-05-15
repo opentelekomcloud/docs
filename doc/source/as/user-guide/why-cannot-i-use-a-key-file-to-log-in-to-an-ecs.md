@@ -21,7 +21,7 @@ If the Cloud-Init tool had not been installed when you created a private image, 
 
 2.  <a name="li4126846117151"></a>Modify the AS configuration of the AS group. For details, see  [Replacing AS Configuration in an AS Group](replacing-as-configuration-in-an-as-group.md).
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >Make sure that the Cloud-Init or Cloudbase-Init tool has been installed in the image of the modified AS configuration. For instructions about how to install the Cloud-Init or Cloudbase-Init tool, see  _Image Management Service User Guide_.  
 
 After the AS configuration is modified, you can use the key file to log in to the new ECSs that are added when the AS action is performed in the AS group. In such a case, you do not need to use the original image password or key pair to log in to the new ECSs any more.

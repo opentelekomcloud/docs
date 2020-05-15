@@ -4,7 +4,7 @@
 
 This interface is used to enable or disable a specified AS group.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >For a disabled AS group, AS does not automatically trigger any scaling actions. When an AS group has an in-progress scaling action, the scaling action does not stop immediately after the AS group is disabled.  
 
 ## URI<a name="section244376"></a>

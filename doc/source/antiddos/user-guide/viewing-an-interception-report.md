@@ -20,7 +20,7 @@ You have obtained an account and its password to log in to the management consol
     **Figure  1**  Interception report<a name="fig1644131633612"></a>  
     ![](figures/interception-report.png "interception-report")
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >On the  **Statistics**  page, click  ![](figures/icon_download.png)  to download monitoring reports to view protection statistics of a certain period of time.  
 
 

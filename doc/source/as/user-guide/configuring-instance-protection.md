@@ -11,7 +11,7 @@ In the following scenarios, ECSs will still be removed from the AS group even if
 -   The ECS is not healthy according to the health check.
 -   The ECS is manually removed from the AS group.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >-   Instances in the abnormal health status cannot provide services. The AS group preferentially ensures that all instances in the group are normal. Therefore, instance protection cannot protect abnormal instances.  
     >-   By default, instance protection does not take effect on the ECSs that are newly created in or added to an AS group.  
     >-   Instance protection becomes invalid immediately when the target ECS is removed from the AS group.  

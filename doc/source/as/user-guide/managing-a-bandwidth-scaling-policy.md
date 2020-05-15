@@ -22,7 +22,7 @@ A bandwidth scaling policy can be disabled only when its status is  **Enabled**.
 4.  In the bandwidth scaling policy list, locate the row containing the target policy and click  **Disable**  in the  **Operation**  column.
 5.  In the displayed  **Disable Bandwidth Scaling Policy**  dialog box, click  **Yes**.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >After a bandwidth scaling policy is disabled, its status changes to  **Disabled**. AS does not automatically trigger any scaling action based on a  **Disabled**  bandwidth scaling policy.  
 
 
@@ -41,7 +41,7 @@ A bandwidth scaling policy can be disabled only when its status is  **Enabled**.
 2.  Modify parameters. You can modify the following parameters of a bandwidth scaling policy:  **Policy Name**,  **EIP**,  **Policy Type**,  **Scaling Action**, and  **Cooldown Period**.
 3.  Click  **OK**.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >A bandwidth scaling policy which is being executed cannot be modified.  
 
 ## Deleting a Bandwidth Scaling Policy<a name="en-us_topic_0042018375_section1959939911151"></a>
@@ -55,7 +55,7 @@ A bandwidth scaling policy can be disabled only when its status is  **Enabled**.
     You can also select one or more scaling policies and click  **Delete**  above the list to delete one or more scaling policies.
 
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   You can delete a bandwidth scaling policy when you no longer need it. If you do not need it only during a specified period of time, you are advised to disable rather than delete it.  
 >-   A bandwidth scaling policy can be deleted only when it is not being executed.  
 
@@ -71,7 +71,7 @@ By executing a bandwidth scaling policy, you can immediately adjust the bandwidt
 
 You can also go to the bandwidth scaling policy details page and click  **Execute Now**  in the upper right corner.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   A bandwidth scaling policy can be executed only when the policy is enabled and no other bandwidth scaling policy is being executed.  
 >-   Executing a bandwidth scaling policy does not affect automatic adjustment of the bandwidth when the trigger condition of the policy is met.  
 

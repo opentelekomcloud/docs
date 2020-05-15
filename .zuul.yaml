@@ -1,3 +1,15 @@
+- job:
+    name: promote-docs-base
+    abstract: True
+    run: playbooks/docs/promote.yaml
+    nodeset:
+      nodes: []
+
+- job:
+    name: promote-docs
+    parent: promote-docs-base
+    branches: build
+
 - project:
     merge-mode: squash-merge
     check:
@@ -6,3 +18,6 @@
     gate:
       jobs:
         - tox-docs
+    promote:
+      jobs:
+        - promote-docs

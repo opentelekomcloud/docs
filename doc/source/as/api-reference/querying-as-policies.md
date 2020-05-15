@@ -11,7 +11,7 @@ This interface is used to query AS policies based on search criteria. The result
 
 GET /autoscaling-api/v1/\{project\_id\}/scaling\_policy/\{scaling\_group\_id\}/list
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >You can type the question mark \(?\) and ampersand \(&\) at the end of the URI to define multiple search criteria. AS policies can be searched by all optional parameters in the following table. For details, see the example request.  
 
 **Table  1**  Parameter description

@@ -5,7 +5,7 @@
 -   Add or remove instances to or from an AS group in batches.
 -   Configure instance protection or cancel the configuration for the instances in an AS group in batches.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   A batch operation can be performed on a maximum of 10 instances at a time. After instances are added to an AS group, the number of instances in the AS group cannot be greater than the maximum number of instances. After instances are removed from an AS group, the number of instances in the AS group cannot be less than the minimum number of instances.  
 >-   Instances can be added to an AS group only when the AS group is in the  **INSERVICE**  state and has no scaling action in progress.  
 >-   You can remove instances from an AS group only when no scaling action is in progress.  

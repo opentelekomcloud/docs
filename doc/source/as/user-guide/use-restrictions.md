@@ -9,7 +9,7 @@ AS has the following restrictions:
 
     AutoScaling Administrator requires permissions of Tenant Guest, Server Administrator, CES Administrator, and ELB Administrator.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >If the Cloud Eye administrator is not available, you can only use an existing alarm to create an alarm policy. If the ELB administrator is not available, you can still use existing load balancers.  
 
 -   AS resources must comply with quota requirements listed in  [Table 1](#en-us_topic_0190954113_en-us_topic_0026721513_d0e195).
