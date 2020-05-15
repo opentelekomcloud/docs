@@ -12,7 +12,7 @@
             download_artifact_api: "https://zuul.eco.tsi-dev.otc-service.com/api/tenant/{{ zuul.tenant }}"
             download_artifact_type:
               - docs_archive
-              - docs_pdf
+                #              - docs_pdf
             download_artifact_pipeline: gate
         - name: Create working directory
           file:
