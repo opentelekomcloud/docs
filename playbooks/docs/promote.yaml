@@ -1,10 +1,16 @@
 - hosts: localhost
   tasks:
-    - name: Find content
-      command: "ls -al {{zuul.executor.work_root}}/docs"
-      register: dir_out
+    - name: Inspect sphinx build directory
+      find:
+        file_type: any
+        follow: true
+        paths: "{{ zuul_work_dir }}/doc/build"
+      register: sphinx_dir
+
+    - name: Parse sphinx build directory
+      set_fact:
+        sphinx_dir: "{{ sphinx_dir.files | map(attribute='path') | map('regex_replace', '^.*/(.*)$', '\\1') | list }}"
 
     - name: debug
       debug:
-        var: dir_out
-
+        var: sphinx_dir
