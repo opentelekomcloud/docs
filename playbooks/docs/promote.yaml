@@ -22,17 +22,17 @@
         dest: "{{ ssh_private_key_tmp.path }}"
         mode: 0600
 
-    - name: Add fileserver ssh key
-      command: "ssh-add {{ ssh_private_key_tmp.path }}"
+        #    - name: Add fileserver ssh key
+        #      command: "ssh-add {{ ssh_private_key_tmp.path }}"
 
-    - name: Remove SSH private key from disk
-      command: "shred {{ ssh_private_key_tmp.path }}"
+        #    - name: Remove SSH private key from disk
+        #      command: "shred {{ ssh_private_key_tmp.path }}"
 
-    - name: Add fileserver to inventory
-      add_host:
-        name: "{{ hc2.fqdn }}"
-        ansible_user: "{{ hc2.ssh_username }}"
+        #    - name: Add fileserver to inventory
+        #      add_host:
+        #        name: "{{ hc2.fqdn }}"
+        #        ansible_user: "{{ hc2.ssh_username }}"
 
     - name: push
       command:
-        cmd: "scp {{ zuul.project.src_dir }}/doc/build/html {{ hc2.ssh_username }}@{{ hc2.fqdn }}/mnt/sfs/hc2"
+        cmd: "scp -i {{ ssh_private_key_tmp.path }} {{ zuul.project.src_dir }}/doc/build/html {{ hc2.ssh_username }}@{{ hc2.fqdn }}/mnt/sfs/hc2"
