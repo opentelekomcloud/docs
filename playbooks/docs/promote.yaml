@@ -7,3 +7,4 @@
     - name: debug
       debug:
         var: dir_out
+
