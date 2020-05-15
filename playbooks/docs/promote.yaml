@@ -1,72 +1,9 @@
-    - hosts: localhost
-      tasks:
-        - name: Check execution context
-          when: "zuul.branch is not defined"
-          fail:
-            msg: "This playbook must be run in a branch-based pipeline (e.g., 'promote')."
-        - name: Download docs archive
-          include_role:
-            name: download-artifact
-          vars:
-            # download_artifact_job: provided by zuul job
-            download_artifact_api: "https://zuul.eco.tsi-dev.otc-service.com/api/tenant/{{ zuul.tenant }}"
-            download_artifact_type:
-              - docs_archive
-            download_artifact_pipeline: gate
-        - name: Create working directory
-          file:
-            path: "{{ zuul.executor.work_root }}/docs"
-            state: directory
-        - name: Extract docs archive
-          vars:
-            findme:
-              - "{{ zuul.executor.work_root }}/docs-html.tar.bz2"
-              - "{{ zuul.executor.work_root }}/docs-html.tar.gz"
-          unarchive:
-            src: "{{ lookup('first_found', findme) }}"
-            dest: "{{ zuul.executor.work_root }}/docs"
-        - name: Write root_marker file
-          include_role:
-            name: write-root-marker
-          when: "write_root_marker"
-          vars:
-            root_marker_dir: "{{ zuul.executor.work_root }}/docs"
-            #        - name: Find PDF files
-            #          find:
-            #            paths: "{{ zuul.executor.work_root }}/"
-            #            file_type: file
-            #            patterns: "*.pdf"
-            #          register: pdf_files
-            #        - name: Move found PDF file into doc dir
-            #          command: "mv {{ item.path }} {{ zuul.executor.work_root }}/docs"
-            #          with_items: "{{ pdf_files.files }}"
-            #          when: pdf_files.matched > 0
-            #        - name: Set target directory if master
-            #          when: "zuul.branch == 'master'"
-            #          set_fact:
-            #            target_dir: "{{ afs.docs_master_path }}"
-            #        - name: Set target directory if not master
-            #          when: "zuul.branch != 'master'"
-            #          set_fact:
-            #            target_dir: "{{ afs.docs_branch_path }}"
-            #        - name: Get an AFS token
-            #          include_role:
-            #            name: create-afs-token
-            #        - name: Create publication directory
-            #          file:
-            #            path: "{{ target_dir }}"
-            #            state: directory
-            #        - name: Create redirect htaccess file
-            #          when: "afs.docs_redirect_path is defined and zuul.branch == 'master'"
-            #          copy:
-            #            dest: "{{ afs.docs_redirect_path }}"
-            #            content: "{{ afs.docs_redirect_content }}"
-            #        - name: Upload to AFS
-            #          include_role:
-            #            name: upload-afs-roots
-            #          vars:
-            #            afs_source: "{{ zuul.executor.work_root }}/docs/"
-            #            afs_target: "{{ target_dir }}"
-            #        - name: Destroy AFS token
-            #          include_role:
-            #            name: destroy-afs-token
+- hosts: localhost
+  tasks:
+    - name: Find content
+      command: "ls {{zuul.executor.work_dir}}/docs"
+      register: dir_out
+
+    - name: debug
+      debug:
+        var: dir_out

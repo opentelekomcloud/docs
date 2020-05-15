@@ -1,17 +1,9 @@
 - job:
-    name: promote-docs-base
-    abstract: True
-    run: playbooks/docs/promote.yaml
-    nodeset:
-      nodes: []
-
-- job:
     name: promote-docs
-    parent: promote-docs-base
+    parent: tox-docs
     branches: build
-    vars:
-      download_artifact_job: tox-docs
-
+    post:
+      playbooks/docs/promote.yaml
 
 - project:
     merge-mode: squash-merge
