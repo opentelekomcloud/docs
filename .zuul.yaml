@@ -1,5 +1,5 @@
 - job:
-    name: promote-docs
+    name: promote-hc-docs
     parent: tox-docs
     branches: build
     post-run:
@@ -15,4 +15,4 @@
         - tox-docs
     promote:
       jobs:
-        - promote-docs
+        - promote-hc-docs
