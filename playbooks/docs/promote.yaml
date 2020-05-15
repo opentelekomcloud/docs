@@ -35,4 +35,4 @@
 
     - name: push
       command:
-        cmd: "rsync -av --delete -e 'ssh -i {{ ssh_private_key_tmp.path }}' {{ ansible_user_dir }}/{{ zuul.project.src_dir }}/doc/build/html {{ hc2.ssh_username }}@{{ hc2.fqdn }}:/mnt/sfs/hc2"
+        cmd: "rsync -av --delete -e 'ssh -i {{ ssh_private_key_tmp.path }} -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no' {{ ansible_user_dir }}/{{ zuul.project.src_dir }}/doc/build/html {{ hc2.ssh_username }}@{{ hc2.fqdn }}:/mnt/sfs/hc2"
