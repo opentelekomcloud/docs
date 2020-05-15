@@ -1,7 +1,7 @@
 - hosts: localhost
   tasks:
     - name: Find content
-      command: "ls {{zuul.executor.work_dir}}/docs"
+      command: "ls -al {{zuul.executor.work_root}}/docs"
       register: dir_out
 
     - name: debug
