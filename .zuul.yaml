@@ -4,6 +4,8 @@
     branches: build
     post-run:
       playbooks/docs/promote.yaml
+    secrets:
+      - hc2
 
 - project:
     merge-mode: squash-merge

@@ -1,16 +1,46 @@
-- hosts: all
+#- hosts: all
+#  tasks:
+#    - name: Inspect sphinx build directory
+#      find:
+#        file_type: any
+#        follow: true
+#        paths: "{{ zuul.project.src_dir }}/doc/build/html"
+#      register: sphinx_dir
+#
+#    - name: Parse sphinx build directory
+#      set_fact:
+#        sphinx_dir: "{{ sphinx_dir.files | map(attribute='path') | map('regex_replace', '^.*/(.*)$', '\\1') | list }}"
+#
+#    - name: debug
+#      debug:
+#        var: sphinx_dir
+
+- hosts: localhost
+  roles:
+    - role: add-fileserver
+      fileserver: "{{ hc2 }}"
+
+      #    - name: Add fileserver ssh key
+      #      command: "ssh-add {{ ssh_private_key_tmp.path }}"
+      #
+      #    - name: Remove SSH private key from disk
+      #      command: "shred {{ ssh_private_key_tmp.path }}"
+      #
+      #    - name: Add fileserver to inventory
+      #      add_host:
+      #        name: "{{ hc2.fqdn }}"
+      #        ansible_user: "{{ hc2.ssh_username }}"
+      #
+      #    - name: Add fileserver server to known hosts
+      #      known_hosts:
+      #        name: "{{ hc2.fqdn }}"
+      #        key: "{{ hc2.ssh_known_hosts }}"
+      #
+      #
+- hosts: " {{hc2.fqdn }}"
+  gather_facts: false
   tasks:
-    - name: Inspect sphinx build directory
-      find:
-        file_type: any
-        follow: true
-        paths: "{{ zuul.project.src_dir }}/doc/build"
-      register: sphinx_dir
-
-    - name: Parse sphinx build directory
-      set_fact:
-        sphinx_dir: "{{ sphinx_dir.files | map(attribute='path') | map('regex_replace', '^.*/(.*)$', '\\1') | list }}"
-
-    - name: debug
-      debug:
-        var: sphinx_dir
+    - name: push archive
+      synchronize:
+        src: "{{ zuul.executor.log_root }}/docs-html.tar.gz"
+        dest: "/mnt/sfs/hc2"
