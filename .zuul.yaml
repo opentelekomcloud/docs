@@ -9,6 +9,9 @@
     name: promote-docs
     parent: promote-docs-base
     branches: build
+    vars:
+      download_artifact_job: tox-docs
+
 
 - project:
     merge-mode: squash-merge
