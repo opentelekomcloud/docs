@@ -2,7 +2,7 @@
     name: promote-docs
     parent: tox-docs
     branches: build
-    post:
+    post-run:
       playbooks/docs/promote.yaml
 
 - project:
