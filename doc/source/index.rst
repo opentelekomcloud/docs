@@ -9,5 +9,6 @@ OTC is cool and has following services:
 
   antiddos/index
   as/index
+  dc/index
   iam/index
   vpn/index
