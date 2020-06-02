@@ -11,7 +11,7 @@ You have obtained an account and its password to log in to the management consol
 ## Procedure<a name="section1544716185202"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/icon_dt-4.png)  in the upper left corner and select the region or project.
+2.  Click  ![](figures/icon_dt.png)  in the upper left corner and select the region or project.
 3.  Under  **Security**, choose  **Anti-DDoS**. The  **Security Console**  is displayed.
 4.  Select the  **Public IP Addresses**  tab, locate the target IP address and click  **View Monitoring Report**  in the  **Operation**  column, as shown in  [Figure 1](#fig28737219154047)
 
