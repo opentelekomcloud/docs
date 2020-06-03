@@ -1,4 +1,4 @@
-# Viewing Basic Information<a name="EN-US_TOPIC_0193630256"></a>
+# Viewing Basic Information<a name="waf_01_0020"></a>
 
 This section describes how to view domain information and edit server information.
 
@@ -10,10 +10,12 @@ Login credentials have been obtained.
 
 1.  Log in to the management console.
 2.  Click  ![](figures/icon-region.png)  in the upper left corner of the management console and select a region or project.
-3.  Click  **Service List**  at the top of the page and choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 1](#fig157131545133816).  [Table 1](#table147842051135211)  lists the parameters.
+3.  Click  **Service List**  at the top of the page and choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 1](#fig1378145118527).  [Table 1](#table147842051135211)  describes the parameters.
 
-    **Figure  1** **Domains**  page<a name="fig157131545133816"></a>  
-    ![](figures/domains-page-name.png "domains-page-name")
+    In the upper right corner of the list, query domain information by domain name, policy name, or tag.
+
+    **Figure  1**  Domains page<a name="fig1378145118527"></a>  
+    ![](figures/domains-page.png "domains-page")
 
     **Table  1**  Parameter description
 
@@ -54,7 +56,7 @@ Login credentials have been obtained.
     </tbody>
     </table>
 
-4.  In the  **Name**  column, click the target domain name. Its information is displayed.
+4.  In the  **Name**  column, click the target domain name to go to the basic information page.
 5.  View domain information.
     1.  View  **Basic Information**  and  **WAF Information**. See  [Figure 2](#fig1902122615546)  and  [Figure 3](#fig16903112618542).
 
@@ -80,18 +82,33 @@ Login credentials have been obtained.
         >-   To update a certificate if  **Client Protocol**  is  **HTTPS**, click  ![](figures/icon-edit.png)  next to the value of  **Certificate Name**. In the dialog box displayed, select an existing certificate.  
         >-   If your web server starts using a proxy, click  ![](figures/icon-edit.png)  next to the value of  **Proxy Configured**. In the dialog box displayed, select  **Yes**.  
 
-    2.  View  **Server Information**. See  [Figure 4](#fig104141220121620).
+    2.  View  **Server Information**.
 
         **Figure  4**  Server Information<a name="fig104141220121620"></a>  
         ![](figures/server-information.png "server-information")
 
-        Click  ![](figures/icon-edit.png). On the  **Edit Server Information**  page, edit server configurations, such as the client protocol and associated certificate.
+        Click  **Edit Server Information**. On the  **Edit Server Information**  page shown in  [Figure 5](#fig3368635172714), edit server configurations \(such as client protocol and associated certificate\).
 
         **Figure  5**  Editing server information<a name="fig3368635172714"></a>  
         ![](figures/editing-server-information.png "editing-server-information")
 
         >![](public_sys-resources/icon-note.gif) **NOTE:**   
         >Web Application Firewall \(WAF\) does not support health check. If you want to use health check, use WAF along with Elastic Load Balancing \(ELB\). For details about how to configure ELB, see  [Backend Server \(Enhanced Load Balancer\)](https://docs.otc.t-systems.com/en-us/usermanual/elb/en-us_topic_0052569729.html). After ELB is configured, the elastic IP address \(EIP\) of ELB is used as the value of  **Server Address**  to connect to WAF for health check.  
+
+    3.  Click the  **Tags**  tab and view the tags, as shown in  [Figure 6](#fig1814661617294).
+
+        **Figure  6**  Tags<a name="fig1814661617294"></a>  
+        ![](figures/tags.png "tags")
+
+        -   In the  **Operation**  column of the tag list, click  **Edit**  to change the value.
+        -   Click  **Delete**  to delete a tag. A deleted tag cannot be restored. Exercise caution when performing this operation.
+        -   In the upper left corner of the tag list, click  **Add Tag**  to add one. See  [Figure 7](#fig0811031133312).
+
+            You can select an existing tag key and tag value from the  **Tag key**  and  **Tag value**  drop-down lists or click  **View predefined tags**  to create a tag on the TMS console.
+
+            **Figure  7**  Add Tag<a name="fig0811031133312"></a>  
+            ![](figures/add-tag.png "add-tag")
+
 
 
 

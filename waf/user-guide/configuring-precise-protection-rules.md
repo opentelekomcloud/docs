@@ -1,4 +1,4 @@
-# Configuring Precise Protection Rules<a name="EN-US_TOPIC_0193630285"></a>
+# Configuring Precise Protection Rules<a name="waf_01_0010"></a>
 
 This section describes how to configure  precise protection  rules.
 
@@ -13,14 +13,14 @@ With these rules, WAF allows you to customize combinations of HTTP headers, cook
 
 1.  Log in to the management console.
 2.  Click  ![](figures/icon-region.png)  in the upper left corner of the management console and select a region or project.
-3.  Click  **Service List**  at the top of the page and choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 1](#en-us_topic_0193630287_fig4838162174519).
+3.  Click  **Service List**  at the top of the page and choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 1](#waf_01_0008_fig164792010154510).
 
-    **Figure  1**  Domains<a name="en-us_topic_0193630287_fig4838162174519"></a>  
-    ![](figures/domains-policy.png "domains-policy")
+    **Figure  1**  Entrance to the domain configuration page<a name="waf_01_0008_fig164792010154510"></a>  
+    ![](figures/entrance-to-the-domain-configuration-page.png "entrance-to-the-domain-configuration-page")
 
-4.  In the  **Operation**  column of the row containing the target domain name, click  **Configure Policy**. The protection configuration page is displayed, as shown in  [Figure 2](#en-us_topic_0193630287_fig16197124372015).
+4.  In the  **Operation**  column of the row containing the target domain name, click  **Configure Policy**. The protection configuration page is displayed, as shown in  [Figure 2](#waf_01_0008_fig16197124372015).
 
-    **Figure  2**  Protection configuration page<a name="en-us_topic_0193630287_fig16197124372015"></a>  
+    **Figure  2**  Protection configuration page<a name="waf_01_0008_fig16197124372015"></a>  
     ![](figures/protection-configuration-page.png "protection-configuration-page")
 
 5.  <a name="li58723545102836"></a>In the  **Precise Protection**  configuration area, change  **Status**  as needed and then click  **Save**  in the upper right corner of the  **Protection Status**  list. In the dialog box displayed, click  **Yes**  to save the settings. Otherwise, click  **Cancel**. See  [Figure 3](#fig275911394277).
@@ -47,7 +47,7 @@ With these rules, WAF allows you to customize combinations of HTTP headers, cook
 
 7.  In the upper left corner of the  **Precise Protection**  page, click  **Add Rule**. See  [Figure 5](#fig124514224012).
 
-    **Figure  5**  Add Rule \(precise protection\)<a name="fig124514224012"></a>  
+    **Figure  5**  Add Rule \(Precise Protection\)<a name="fig124514224012"></a>  
     ![](figures/add-rule-(precise-protection).png "add-rule-(precise-protection)")
 
 8.  In the displayed dialog box shown in  [Figure 6](#fig39459217174738), specify the parameters by referring to  [Table 1](#table2299936310457).

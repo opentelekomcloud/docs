@@ -1,4 +1,4 @@
-# What Should I Do If the DNS Status Is Unconfigured?<a name="EN-US_TOPIC_0193630282"></a>
+# What Should I Do If the DNS Status Is Unconfigured?<a name="waf_01_0056"></a>
 
 If  **DNS**  is  **Unconfigured**, domain name resolution fails, that is, the domain name is not connected to WAF. In this case, perform the following steps to connect the domain name again:
 

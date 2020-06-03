@@ -1,4 +1,4 @@
-# User Permissions<a name="EN-US_TOPIC_0193630220"></a>
+# User Permissions<a name="waf_01_0052"></a>
 
 The system provides two types of default permissions:  user management  and  resource management. User management includes management of users, user groups, and user groups' rights. Users with resource management permissions can control the operations performed on cloud service resources.
 

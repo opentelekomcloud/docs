@@ -1,4 +1,4 @@
-# Testing WAF<a name="EN-US_TOPIC_0193630194"></a>
+# Testing WAF<a name="waf_01_0073"></a>
 
 This section describes how to connect your domain to WAF on a local PC and then access the site to verify whether WAF works properly.
 
@@ -16,10 +16,10 @@ Before testing WAF, ensure that the protocol, address, and port number used by t
     2.  Click  ![](figures/icon-region.png)  in the upper left corner of the management console and select a region or project.
     3.  Choose  **Security**  \>  **Web Application Firewall**  \>  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 1](#ff59c2762c2454fa8813e73da78489fd1).
 
-        **Figure  1** **Domains**  page<a name="ff59c2762c2454fa8813e73da78489fd1"></a>  
-        ![](figures/domains-page-name.png "domains-page-name")
+        **Figure  1**  Domains page<a name="ff59c2762c2454fa8813e73da78489fd1"></a>  
+        ![](figures/domains-page.png "domains-page")
 
-    4.  In the  **Name**  column, click the target domain name. Its information is displayed, as shown in  [Figure 2](#fig14325952203617).
+    4.  In the  **Name**  column, click the target domain name to go to the basic information page.
 
         **Figure  2**  Copying the CNAME value<a name="fig14325952203617"></a>  
         ![](figures/copying-the-cname-value.png "copying-the-cname-value")

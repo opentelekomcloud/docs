@@ -1,4 +1,4 @@
-# Enabling Alarm Notification<a name="EN-US_TOPIC_0193630334"></a>
+# Enabling Alarm Notification<a name="waf_01_0019"></a>
 
 This section describes how to enable notification for attack logs. Once this function is enabled, WAF sends attack logs to users by email or SMS.
 
@@ -34,13 +34,13 @@ This section describes how to enable notification for attack logs. Once this fun
     <tr id="row5386527415334"><td class="cellrowborder" valign="top" width="34.97%" headers="mcps1.2.3.1.1 "><p id="p101105415334"><a name="p101105415334"></a><a name="p101105415334"></a>Notification</p>
     </td>
     <td class="cellrowborder" valign="top" width="65.03%" headers="mcps1.2.3.1.2 "><p id="p515811198121"><a name="p515811198121"></a><a name="p515811198121"></a>Whether to enable notification</p>
-    <a name="ul131371286465"></a><a name="ul131371286465"></a><ul id="ul131371286465"><li><a name="image1832717314313"></a><a name="image1832717314313"></a><span><img id="image1832717314313" src="figures/icon-open.png"></span>: enabled.</li><li><a name="image830217398315"></a><a name="image830217398315"></a><span><img id="image830217398315" src="figures/icon-close.png"></span>: disabled.</li></ul>
+    <a name="ul131371286465"></a><a name="ul131371286465"></a><ul id="ul131371286465"><li><a name="image1434102202616"></a><a name="image1434102202616"></a><span><img id="image1434102202616" src="figures/icon-open.png"></span>: enabled.</li><li><a name="image17401145215288"></a><a name="image17401145215288"></a><span><img id="image17401145215288" src="figures/icon-close.png"></span>: disabled.</li></ul>
     </td>
     </tr>
     <tr id="row6597002315334"><td class="cellrowborder" valign="top" width="34.97%" headers="mcps1.2.3.1.1 "><p id="p4197165315334"><a name="p4197165315334"></a><a name="p4197165315334"></a>Notification Topic</p>
     </td>
     <td class="cellrowborder" valign="top" width="65.03%" headers="mcps1.2.3.1.2 "><p id="p58551974153615"><a name="p58551974153615"></a><a name="p58551974153615"></a>Click the drop-down list to select an available topic or click <strong id="b842352706155449"><a name="b842352706155449"></a><a name="b842352706155449"></a>View Topic</strong> to create a topic.</p>
-    <p id="p6285082315377"><a name="p6285082315377"></a><a name="p6285082315377"></a>For more information, see the <i><cite id="citec547fbf3e78d45c2be6f1d80107124ac090842"><a name="citec547fbf3e78d45c2be6f1d80107124ac090842"></a><a name="citec547fbf3e78d45c2be6f1d80107124ac090842"></a>Simple Message Notification User Guide</cite></i>.</p>
+    <p id="p6285082315377"><a name="p6285082315377"></a><a name="p6285082315377"></a>For more information, see the <i><cite id="citeb870b1acd70f447f813c713cd94420d1173137"><a name="citeb870b1acd70f447f813c713cd94420d1173137"></a><a name="citeb870b1acd70f447f813c713cd94420d1173137"></a>Simple Message Notification User Guide</cite></i>.</p>
     </td>
     </tr>
     <tr id="row2091915305414"><td class="cellrowborder" valign="top" width="34.97%" headers="mcps1.2.3.1.1 "><p id="p17919330341"><a name="p17919330341"></a><a name="p17919330341"></a>Threshold</p>

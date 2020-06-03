@@ -1,4 +1,4 @@
-# Connecting a Domain Name to WAF<a name="EN-US_TOPIC_0193630239"></a>
+# Connecting a Domain Name to WAF<a name="waf_01_0079"></a>
 
 This section describes how to  connect a domain name to WAF  so that website traffic passes through WAF.
 
@@ -26,16 +26,16 @@ To ensure that WAF works properly, you are advised to test WAF by following the 
 2.  Click  ![](figures/icon-region.png)  in the upper left corner of the management console and select a region or project.
 3.  Click  **Service List**  at the top of the page and choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 1](#en-us_topic_0154713166_f6b9e0be38f9b4498a46fea967ef351ae).
 
-    **Figure  1** **Domains**  page<a name="en-us_topic_0154713166_f6b9e0be38f9b4498a46fea967ef351ae"></a>  
-    ![](figures/domains-page-name.png "domains-page-name")
+    **Figure  1**  Domains page<a name="en-us_topic_0154713166_f6b9e0be38f9b4498a46fea967ef351ae"></a>  
+    ![](figures/domains-page.png "domains-page")
 
 4.  In the  **Name**  column, click the target domain name. Its information is displayed.
 
     -   Without a proxy
-        1.  In the  **CNAME**  row, click  ![](figures/icon-copy.png)  to copy the CNAME value.
+        1.  In the CNAME row, click  ![](figures/icon-copy.png)  to copy the CNAME value.
 
-            **Figure  2**  CNAME value<a name="fig15430175612226"></a>  
-            ![](figures/cname-value.png "cname-value")
+            **Figure  2**  Copying the CNAME value<a name="fig15430175612226"></a>  
+            ![](figures/copying-the-cname-value.png "copying-the-cname-value")
 
         1.  Go to your DNS provider and configure the CNAME record. For details, contact your DNS provider.
 
@@ -67,7 +67,7 @@ To ensure that WAF works properly, you are advised to test WAF by following the 
 
 
     -   With a proxy
-        1.  Click  ![](figures/icon-copy.png)  in the  **Access Address**,  **Subdomain Name**, and  **TXT Record**  to copy the required values, respectively.
+        1.  Click  ![](figures/icon-copy.png)  in the  **Access Address**,  **Subdomain Name**, and  **TXT Record**  rows to copy the required values, respectively.
 
             **Figure  3**  Copying the access address and TXT record<a name="fig174381156122211"></a>  
             ![](figures/copying-the-access-address-and-txt-record.png "copying-the-access-address-and-txt-record")

@@ -1,4 +1,4 @@
-# Creating a Policy<a name="EN-US_TOPIC_0193630325"></a>
+# Creating a Policy<a name="waf_01_0074"></a>
 
 A policy is a combination of multiple rules, such as basic web protection, blacklist or whitelist, and precise protection rules. A policy can be applied to multiple domain names. This section describes how to create a policy.
 

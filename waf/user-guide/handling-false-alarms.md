@@ -1,4 +1,4 @@
-# Handling False Alarms<a name="EN-US_TOPIC_0193630255"></a>
+# Handling False Alarms<a name="waf_01_0024"></a>
 
 This section describes how to mask  false alarms  and view event details if you find out that an event is misreported.
 
@@ -131,9 +131,9 @@ This section describes how to mask  false alarms  and view event details if you 
     </tr>
     <tr id="row6648026114540"><td class="cellrowborder" valign="top" width="19.46%" headers="mcps1.2.4.1.1 "><p id="p14932980114558"><a name="p14932980114558"></a><a name="p14932980114558"></a>Event ID</p>
     </td>
-    <td class="cellrowborder" valign="top" width="54.54%" headers="mcps1.2.4.1.2 "><p id="p6504365416657"><a name="p6504365416657"></a><a name="p6504365416657"></a>ID of a built-in rule, which is automatically read</p>
+    <td class="cellrowborder" valign="top" width="54.54%" headers="mcps1.2.4.1.2 "><p id="p6504365416657"><a name="p6504365416657"></a><a name="p6504365416657"></a>ID of a built-in rule that is automatically read. The value consists of six digits.</p>
     </td>
-    <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.4.1.3 "><p id="p637561071532"><a name="p637561071532"></a><a name="p637561071532"></a>--</p>
+    <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.4.1.3 "><p id="p637561071532"><a name="p637561071532"></a><a name="p637561071532"></a>223604</p>
     </td>
     </tr>
     </tbody>

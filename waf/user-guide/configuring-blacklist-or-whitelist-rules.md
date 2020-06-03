@@ -1,4 +1,4 @@
-# Configuring Blacklist or Whitelist Rules<a name="EN-US_TOPIC_0193630267"></a>
+# Configuring Blacklist or Whitelist Rules<a name="waf_01_0012"></a>
 
 This section describes how to configure  blacklist or whitelist  rules to block or allow specific IP addresses or address ranges.
 
@@ -13,14 +13,14 @@ Blacklist and Whitelist  only takes effect for specified domain names.
 
 1.  Log in to the management console.
 2.  Click  ![](figures/icon-region.png)  in the upper left corner of the management console and select a region or project.
-3.  Click  **Service List**  at the top of the page and choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 1](#en-us_topic_0193630287_fig4838162174519).
+3.  Click  **Service List**  at the top of the page and choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 1](#waf_01_0008_fig164792010154510).
 
-    **Figure  1**  Domains<a name="en-us_topic_0193630287_fig4838162174519"></a>  
-    ![](figures/domains-policy.png "domains-policy")
+    **Figure  1**  Entrance to the domain configuration page<a name="waf_01_0008_fig164792010154510"></a>  
+    ![](figures/entrance-to-the-domain-configuration-page.png "entrance-to-the-domain-configuration-page")
 
-4.  In the  **Operation**  column of the row containing the target domain name, click  **Configure Policy**. The protection configuration page is displayed, as shown in  [Figure 2](#en-us_topic_0193630287_fig16197124372015).
+4.  In the  **Operation**  column of the row containing the target domain name, click  **Configure Policy**. The protection configuration page is displayed, as shown in  [Figure 2](#waf_01_0008_fig16197124372015).
 
-    **Figure  2**  Protection configuration page<a name="en-us_topic_0193630287_fig16197124372015"></a>  
+    **Figure  2**  Protection configuration page<a name="waf_01_0008_fig16197124372015"></a>  
     ![](figures/protection-configuration-page.png "protection-configuration-page")
 
 5.  <a name="li33536816115011"></a>In the  **Blacklist and Whitelist**  configuration area, change  **Status**  as needed and then click  **Save**  in the upper right corner of the  **Protection Status**  list. In the dialog box displayed, click  **Yes**  to save the settings. Otherwise, click  **Cancel**. See  [Figure 3](#fig0358162863015).
@@ -35,8 +35,8 @@ Blacklist and Whitelist  only takes effect for specified domain names.
     >-   Click  **Yes**  to cancel the previous settings.  
     >-   Click  **No**  and then  **Save**  to save the settings.  
 
-    **Figure  4**  Add Rule \(blacklist or whitelist\)<a name="fig337411411269"></a>  
-    ![](figures/add-rule-(blacklist-or-whitelist).png "add-rule-(blacklist-or-whitelist)")
+    **Figure  4**  Add Rule \(Blacklist and Whitelist\)<a name="fig337411411269"></a>  
+    ![](figures/add-rule-(blacklist-and-whitelist).png "add-rule-(blacklist-and-whitelist)")
 
 7.  In the displayed dialog box shown in  [Figure 5](#fig22686744114137), specify the parameters by referring to  [Table 1](#table27095251482).
 
