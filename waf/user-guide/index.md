@@ -1,4 +1,4 @@
-# Web Application Firewall User Guide \(DT\)
+# User Guide
 
 -   [Introduction]
     -   [Web Application Firewall](web-application-firewall.md)
@@ -24,9 +24,11 @@
 
 -   [Domain Management]
     -   [Viewing Basic Information](viewing-basic-information.md)
+    -   [Configuring the Minimum TLS Version and Cipher Suite](configuring-the-minimum-tls-version-and-cipher-suite.md)
     -   [Enabling WAF Protection](enabling-waf-protection.md)
     -   [Disabling WAF Protection](disabling-waf-protection.md)
     -   [Setting the Bypassed Mode](setting-the-bypassed-mode.md)
+    -   [Modifying the Alarm Page](modifying-the-alarm-page.md)
     -   [Deleting a Domain Name](deleting-a-domain-name.md)
 
 -   [Rule Configurations](rule-configurations.md)
@@ -62,6 +64,7 @@
         -   [What Should I Do If the DNS Status Is Unconfigured?](what-should-i-do-if-the-dns-status-is-unconfigured.md)
         -   [How Do I Obtain the Real IP Address of a Web Visitor After WAF Is Enabled?](how-do-i-obtain-the-real-ip-address-of-a-web-visitor-after-waf-is-enabled.md)
         -   [How Do I Troubleshoot 500/502/504 Errors?](how-do-i-troubleshoot-500-502-504-errors.md)
+
 
 
 

@@ -1,4 +1,4 @@
-# Creating a Domain Name<a name="EN-US_TOPIC_0193630190"></a>
+# Creating a Domain Name<a name="waf_01_0002"></a>
 
 This section describes how to  create a domain name and connect it  to WAF. After connecting a domain name, WAF works as a reverse proxy between the client and server. The real IP address of the server is hidden and only the IP address of WAF is visible to web visitors.
 
@@ -34,15 +34,15 @@ Login credentials have been obtained.
 1.  Log in to the management console.
 2.  Click  ![](figures/icon-region.png)  in the upper left corner of the management console and select a region or project.
 3.  Choose  **Security**  \>  **Web Application Firewall**.
-4.  In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 3](#fig195112484402).
+4.  In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 3](#fig15593418182219).
 
-    **Figure  3** **Domains**  page<a name="fig195112484402"></a>  
-    ![](figures/domains-page.png "domains-page")
+    **Figure  3**  Domains<a name="fig15593418182219"></a>  
+    ![](figures/domains.png "domains")
 
 5.  In the upper right corner of the domain name list, click  **Create Domain**.
-6.  On the displayed page, configure basic settings.  [Figure 4](#fig12498853103415)  shows this page.  [Table 1](#table7692122554811)  lists the parameters.
+6.  On the displayed page, configure basic settings.  [Figure 4](#fig175731754141418)  shows this page.  [Table 1](#table7692122554811)  describes the parameters.
 
-    **Figure  4**  Configuring basic settings<a name="fig12498853103415"></a>  
+    **Figure  4**  Configuring basic settings<a name="fig175731754141418"></a>  
     ![](figures/configuring-basic-settings.png "configuring-basic-settings")
 
     **Table  1**  Parameter description
@@ -59,7 +59,7 @@ Login credentials have been obtained.
     <tbody><tr id="row1368718254486"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p41871027399"><a name="p41871027399"></a><a name="p41871027399"></a>Domain Name</p>
     </td>
     <td class="cellrowborder" valign="top" width="60.5%" headers="mcps1.2.4.1.2 "><p id="p168710252489"><a name="p168710252489"></a><a name="p168710252489"></a>A domain name to be protected, which can be a single domain name or a wildcard domain name.</p>
-    <a name="ul9206119142513"></a><a name="ul9206119142513"></a><ul id="ul9206119142513"><li>Single domain name: For example, <strong id="b9918165922216"><a name="b9918165922216"></a><a name="b9918165922216"></a>www.example.com</strong></li><li>Wildcard domain name<a name="ul776103520251"></a><a name="ul776103520251"></a><ul id="ul776103520251"><li>If the server IP address of each subdomain name is the same, enter a wildcard domain name. For example, <strong id="b5326475234"><a name="b5326475234"></a><a name="b5326475234"></a>*.example.com</strong>.</li><li>If the server IP addresses of subdomain names are different, add subdomain names as single domain names one by one.</li></ul>
+    <a name="ul9206119142513"></a><a name="ul9206119142513"></a><ul id="ul9206119142513"><li>Single domain name: For example, <em id="i115753818458"><a name="i115753818458"></a><a name="i115753818458"></a>www.example.com</em></li><li>Wildcard domain name<a name="ul776103520251"></a><a name="ul776103520251"></a><ul id="ul776103520251"><li>If the server IP address of each subdomain name is the same, enter a wildcard domain name. For example, <strong id="b5326475234"><a name="b5326475234"></a><a name="b5326475234"></a>*.example.com</strong>.</li><li>If the server IP addresses of subdomain names are different, add subdomain names as single domain names one by one.</li></ul>
     </li></ul>
     </td>
     <td class="cellrowborder" valign="top" width="24.5%" headers="mcps1.2.4.1.3 "><p id="p1268714259482"><a name="p1268714259482"></a><a name="p1268714259482"></a>Single domain name: <strong id="b565872715916"><a name="b565872715916"></a><a name="b565872715916"></a>www.example.com</strong></p>
@@ -78,7 +78,7 @@ Login credentials have been obtained.
     <tr id="row5690192514820"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.1 "><p id="p116898254489"><a name="p116898254489"></a><a name="p116898254489"></a>Server Configuration</p>
     </td>
     <td class="cellrowborder" valign="top" width="60.5%" headers="mcps1.2.4.1.2 "><p id="p568972554814"><a name="p568972554814"></a><a name="p568972554814"></a>Address configurations of the web server, including <strong id="b15392185820484"><a name="b15392185820484"></a><a name="b15392185820484"></a>Client Protocol</strong>, <strong id="b1240118583488"><a name="b1240118583488"></a><a name="b1240118583488"></a>Server Protocol</strong>, <strong id="b940275817489"><a name="b940275817489"></a><a name="b940275817489"></a>Server Address</strong>, and <strong id="b2402058204818"><a name="b2402058204818"></a><a name="b2402058204818"></a>Server Port</strong>.</p>
-    <a name="ul16689625134815"></a><a name="ul16689625134815"></a><ul id="ul16689625134815"><li><strong id="b82686283108"><a name="b82686283108"></a><a name="b82686283108"></a>Client Protocol:</strong> Type of client protocol. The options are <strong id="b8423527062032_3_1"><a name="b8423527062032_3_1"></a><a name="b8423527062032_3_1"></a>HTTP</strong> and <strong id="b842352706201123_1"><a name="b842352706201123_1"></a><a name="b842352706201123_1"></a>HTTPS</strong>.</li><li><strong id="b1012093220101"><a name="b1012093220101"></a><a name="b1012093220101"></a>Server Protocol</strong>: Protocol used by WAF to forward requests to the server. The options are <strong id="b8423527062032_3_3"><a name="b8423527062032_3_3"></a><a name="b8423527062032_3_3"></a>HTTP</strong> and <strong id="b842352706201123_3"><a name="b842352706201123_3"></a><a name="b842352706201123_3"></a>HTTPS</strong>.<div class="note" id="note031411715256"><a name="note031411715256"></a><a name="note031411715256"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p113161117172510"><a name="p113161117172510"></a><a name="p113161117172510"></a>For details about configuring <strong id="b171101317514"><a name="b171101317514"></a><a name="b171101317514"></a>Client Protocol</strong> and <strong id="b111101314517"><a name="b111101314517"></a><a name="b111101314517"></a>Server Protocol</strong>, see <a href="#section645014318511">Rules for Configuring Client Protocol and Server Protocol</a>.</p>
+    <a name="ul16689625134815"></a><a name="ul16689625134815"></a><ul id="ul16689625134815"><li><strong id="b82686283108"><a name="b82686283108"></a><a name="b82686283108"></a>Client Protocol:</strong> Type of client protocol. The options are <strong id="b8423527062032_3"><a name="b8423527062032_3"></a><a name="b8423527062032_3"></a>HTTP</strong> and <strong id="b842352706201123"><a name="b842352706201123"></a><a name="b842352706201123"></a>HTTPS</strong>.</li><li><strong id="b1012093220101"><a name="b1012093220101"></a><a name="b1012093220101"></a>Server Protocol</strong>: Protocol used by WAF to forward requests to the server. The options are <strong id="b754363541"><a name="b754363541"></a><a name="b754363541"></a>HTTP</strong> and <strong id="b1575463089"><a name="b1575463089"></a><a name="b1575463089"></a>HTTPS</strong>.<div class="note" id="note031411715256"><a name="note031411715256"></a><a name="note031411715256"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p113161117172510"><a name="p113161117172510"></a><a name="p113161117172510"></a>For details about configuring <strong id="b171101317514"><a name="b171101317514"></a><a name="b171101317514"></a>Client Protocol</strong> and <strong id="b111101314517"><a name="b111101314517"></a><a name="b111101314517"></a>Server Protocol</strong>, see <a href="#section645014318511">Rules for Configuring Client Protocol and Server Protocol</a>.</p>
     </div></div>
     </li><li><strong id="b161617122319"><a name="b161617122319"></a><a name="b161617122319"></a>Server Address</strong>: IP address (generally the A record before the domain name is connected to WAF) or domain name (generally the CNAME before the domain name is connected to WAF) of the web server that a client accesses<div class="note" id="note7392258153815"><a name="note7392258153815"></a><a name="note7392258153815"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p4393175815389"><a name="p4393175815389"></a><a name="p4393175815389"></a>Web Application Firewall (WAF) does not support health check. If you want to use health check, use WAF along with Elastic Load Balancing (ELB). For details about how to configure ELB, see <a href="https://docs.otc.t-systems.com/en-us/usermanual/elb/en-us_topic_0052569729.html" target="_blank" rel="noopener noreferrer">Backend Server (Enhanced Load Balancer)</a>. After ELB is configured, the elastic IP address (EIP) of ELB is used as the value of <strong id="b1142624815286"><a name="b1142624815286"></a><a name="b1142624815286"></a>Server Address</strong> to connect to WAF for health check.</p>
     </div></div>
@@ -161,19 +161,23 @@ Login credentials have been obtained.
 
     -   If your website does not use a proxy, select  **No**.
 
-9.  Click  **Create Now**. In the upper right corner of the page,  **Domain created successfully**  is displayed, indicating that the domain name is created.
+9.  \(Optional\) Configure a tag.
+
+    You can select an existing tag key and tag value from the  **Tag key**  and  **Tag value**  drop-down lists or click  **View predefined tags**  to create a tag on the TMS console.
+
+10. Click  **Create Now**. In the upper right corner of the page,  **Domain created successfully**  is displayed, indicating that the domain name is created.
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >If you do not want to connect the domain name to WAF in this step, click  **Next**. Then click  **Finish**.  **DNS**  is displayed as  **Unconfigured**. Later, you can refer to  [Connecting a Domain Name](connecting-a-domain-name-to-waf.md)  to finish domain connection.  
 
-    -   If a proxy such as CDN or AAD is used, you need to configure the back-to-source IP address, subdomain name, and TXT record.  [Figure 6](#en-us_topic_0193630282_fig450482413592)  displays the configurations.
+    -   If a proxy such as CDN or AAD is used, you need to configure the back-to-source IP address, subdomain name, and TXT record.  [Figure 6](#waf_01_0056_fig450482413592)  displays the configurations.
 
-        **Figure  6**  Connecting a domain name<a name="en-us_topic_0193630282_fig450482413592"></a>  
+        **Figure  6**  Connecting a domain name<a name="waf_01_0056_fig450482413592"></a>  
         ![](figures/connecting-a-domain-name.png "connecting-a-domain-name")
 
         1.  Configure the back-to-source IP address of the proxy on the website.
 
-            For example, change the back-to-source IP address of CDN or AAD to the WAF IP address as shown in  [Figure 6](#en-us_topic_0193630282_fig450482413592).
+            For example, change the back-to-source IP address of CDN or AAD to the WAF IP address as shown in  [Figure 6](#waf_01_0056_fig450482413592).
 
         2.  Configure  **Subdomain Name**  and  **TXT Record**.
 
@@ -182,9 +186,9 @@ Login credentials have been obtained.
         >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
         >The high availability of our system, which is based on multi-AZ deployments to support both active-active and disaster recovery, relies on the WAF CNAME record.  
 
-    -   If no proxy is used, the CNAME record must be configured.  [Figure 7](#en-us_topic_0193630282_fig84741317702)  displays the configuration.
+    -   If no proxy is used, the CNAME record must be configured.  [Figure 7](#waf_01_0056_fig84741317702)  displays the configuration.
 
-        **Figure  7**  Connecting a domain name \(CNAME record\)<a name="en-us_topic_0193630282_fig84741317702"></a>  
+        **Figure  7**  Connecting a domain name \(CNAME record\)<a name="waf_01_0056_fig84741317702"></a>  
         ![](figures/connecting-a-domain-name-(cname-record).png "connecting-a-domain-name-(cname-record)")
 
         1.  Go to your DNS provider and configure the CNAME record. For details, contact your DNS provider.
@@ -217,8 +221,8 @@ Login credentials have been obtained.
 
 
 
-10. After the domain name is connected to WAF, click  **Next**.
-11. Click  **Finish**.
+11. After the domain name is connected to WAF, click  **Next**.
+12. Click  **Finish**.
 
     You can view the DNS status and mode of the domain name in the domain list.
 

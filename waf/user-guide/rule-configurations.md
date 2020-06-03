@@ -1,4 +1,4 @@
-# Rule Configurations<a name="EN-US_TOPIC_0193630237"></a>
+# Rule Configurations<a name="waf_01_0007"></a>
 
 This section describes how to configure protection rules.
 

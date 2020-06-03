@@ -1,4 +1,4 @@
-# What Protection Policies Does WAF Support?<a name="EN-US_TOPIC_0193630236"></a>
+# What Protection Policies Does WAF Support?<a name="waf_01_0028"></a>
 
 The protection policies supported by WAF are described below.
 

@@ -1,4 +1,4 @@
-# Application Scenarios<a name="EN-US_TOPIC_0193630233"></a>
+# Application Scenarios<a name="waf_01_0046"></a>
 
 This section describes the application scenarios of WAF.
 

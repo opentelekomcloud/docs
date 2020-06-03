@@ -1,4 +1,4 @@
-# Deleting a Domain Name<a name="EN-US_TOPIC_0193630274"></a>
+# Deleting a Domain Name<a name="waf_01_0005"></a>
 
 This section describes how to delete a domain name.
 
@@ -15,10 +15,10 @@ This section describes how to delete a domain name.
 
 1.  Log in to the management console.
 2.  Click  ![](figures/icon-region.png)  in the upper left corner of the management console and select a region or project.
-3.  Click  **Service List**  at the top of the page and choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed.
+3.  Click  **Service List**  at the top of the page and choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed \(see  [Figure 1](#f6b9e0be38f9b4498a46fea967ef351ae)\).
 
-    **Figure  1**  Domains<a name="f6b9e0be38f9b4498a46fea967ef351ae"></a>  
-    ![](figures/domains.png "domains")
+    **Figure  1**  Domain configuration page<a name="f6b9e0be38f9b4498a46fea967ef351ae"></a>  
+    ![](figures/domain-configuration-page.png "domain-configuration-page")
 
 4.  In the row containing the target domain name, choose  **More \> Delete**  in the  **Operation**  column. The  **Delete Domain**  dialog box is displayed.
     -   For the scenario where no proxy is used, see  [Figure 2](#fig11194454171217).

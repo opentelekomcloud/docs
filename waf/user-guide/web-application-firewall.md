@@ -1,4 +1,4 @@
-# Web Application Firewall<a name="EN-US_TOPIC_0193630205"></a>
+# Web Application Firewall<a name="waf_01_0045"></a>
 
 Web Application Firewall \(WAF\) keeps web services stable and secure. It examines all HTTP and HTTPS requests to detect and block the following attacks: Structured Query Language \(SQL\) injection, cross-site scripting \(XSS\), webshells, command and code injections, file inclusion, sensitive file access, third-party vulnerability exploits,  Challenge Collapsar \(CC\) attacks, malicious crawlers, and cross-site request forgery \(CSRF\).
 
