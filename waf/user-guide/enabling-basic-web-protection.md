@@ -1,4 +1,4 @@
-# Enabling Basic Web Protection<a name="EN-US_TOPIC_0193630287"></a>
+# Enabling Basic Web Protection<a name="waf_01_0008"></a>
 
 This section describes how to enable  basic web protection.
 
@@ -13,10 +13,10 @@ Basic web protection defends against common web attacks, such as SQL injection, 
 
 1.  Log in to the management console.
 2.  Click  ![](figures/icon-region.png)  in the upper left corner of the management console and select a region or project.
-3.  Click  **Service List**  at the top of the page and choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 1](#fig4838162174519).
+3.  Click  **Service List**  at the top of the page and choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 1](#fig164792010154510).
 
-    **Figure  1**  Domains<a name="fig4838162174519"></a>  
-    ![](figures/domains-policy.png "domains-policy")
+    **Figure  1**  Entrance to the domain configuration page<a name="fig164792010154510"></a>  
+    ![](figures/entrance-to-the-domain-configuration-page.png "entrance-to-the-domain-configuration-page")
 
 4.  In the  **Operation**  column of the row containing the target domain name, click  **Configure Policy**. The protection configuration page is displayed, as shown in  [Figure 2](#fig16197124372015).
 
@@ -40,7 +40,7 @@ Basic web protection defends against common web attacks, such as SQL injection, 
     <tbody><tr id="row8899732153112"><td class="cellrowborder" valign="top" width="36.28%" headers="mcps1.2.3.1.1 "><p id="p189011132173111"><a name="p189011132173111"></a><a name="p189011132173111"></a>Status</p>
     </td>
     <td class="cellrowborder" valign="top" width="63.72%" headers="mcps1.2.3.1.2 "><p id="p11901832163110"><a name="p11901832163110"></a><a name="p11901832163110"></a>Status of Basic Web Protection</p>
-    <a name="ul115452316468"></a><a name="ul115452316468"></a><ul id="ul115452316468"><li><a name="image15101143152315"></a><a name="image15101143152315"></a><span><img id="image15101143152315" src="figures/icon-open.png"></span>: enabled.</li><li><a name="image17901195192414"></a><a name="image17901195192414"></a><span><img id="image17901195192414" src="figures/icon-close.png"></span>: disabled.</li></ul>
+    <a name="ul115452316468"></a><a name="ul115452316468"></a><ul id="ul115452316468"><li><a name="image4573204012119"></a><a name="image4573204012119"></a><span><img id="image4573204012119" src="figures/icon-open.png"></span>: enabled.</li><li><a name="image1568021112219"></a><a name="image1568021112219"></a><span><img id="image1568021112219" src="figures/icon-close.png"></span>: disabled.</li></ul>
     </td>
     </tr>
     <tr id="row28096830192825"><td class="cellrowborder" valign="top" width="36.28%" headers="mcps1.2.3.1.1 "><p id="p10384205820363"><a name="p10384205820363"></a><a name="p10384205820363"></a>Mode</p>
@@ -58,8 +58,8 @@ Basic web protection defends against common web attacks, such as SQL injection, 
     >-   Click  **Yes**  to cancel the previous settings.  
     >-   Click  **No**  and then  **Save**  to save the settings.  
 
-    **Figure  4**  Advanced settings<a name="fig185482343414"></a>  
-    ![](figures/advanced-settings.png "advanced-settings")
+    **Figure  4**  Basic web protection<a name="fig185482343414"></a>  
+    ![](figures/basic-web-protection.png "basic-web-protection")
 
     **Table  2**  Protection types
 

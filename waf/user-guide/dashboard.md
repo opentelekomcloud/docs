@@ -1,4 +1,4 @@
-# Dashboard<a name="EN-US_TOPIC_0193630186"></a>
+# Dashboard<a name="waf_01_0021"></a>
 
 This section describes how to  view event logs  in a specified time \(for example, today\), including attack and request statistics, the number of attacks from the top 5 source IP addresses, and event distribution.
 

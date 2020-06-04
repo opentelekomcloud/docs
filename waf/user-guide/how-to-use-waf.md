@@ -1,4 +1,4 @@
-# How to Use WAF<a name="EN-US_TOPIC_0193630314"></a>
+# How to Use WAF<a name="waf_01_0049"></a>
 
 The evolution of hacking techniques has caused frequent cybersecurity incidents against web servers. WAF provides comprehensive security protection for web services.
 

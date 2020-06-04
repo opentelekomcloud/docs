@@ -1,4 +1,4 @@
-# Overview<a name="EN-US_TOPIC_0193630273"></a>
+# Overview<a name="waf_01_0071"></a>
 
 Before using WAF, you need to  connect your domain name  to it and enable it for protection to take effect.
 

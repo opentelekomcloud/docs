@@ -1,4 +1,4 @@
-# Downloading Events Data<a name="EN-US_TOPIC_0193630321"></a>
+# Downloading Events Data<a name="waf_01_0077"></a>
 
 This section describes how to download events \(logged and blocked events\) data over the past five days. An event file is generated at 01:00:00 \(UTC time\) of the second day.
 

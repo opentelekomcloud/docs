@@ -1,4 +1,4 @@
-# How Do I Troubleshoot 500/502/504 Errors?<a name="EN-US_TOPIC_0193630309"></a>
+# How Do I Troubleshoot 500/502/504 Errors?<a name="waf_01_0066"></a>
 
 If an error such as 500 Internal Server Error, 502 Bad Gateway, or 504 Gateway Timeout occurs after your web server connects to WAF, use the following methods to locate the cause and remove the error:
 

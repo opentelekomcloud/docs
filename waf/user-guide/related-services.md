@@ -1,4 +1,4 @@
-# Related Services<a name="EN-US_TOPIC_0193630202"></a>
+# Related Services<a name="waf_01_0051"></a>
 
 This section describes the relationship between WAF and other cloud services.
 
@@ -263,6 +263,38 @@ Cloud Eye monitors the metrics of WAF, so that you can understand the protection
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0015479905_p52815001664"><a name="en-us_topic_0015479905_p52815001664"></a><a name="en-us_topic_0015479905_p52815001664"></a>≥ 0</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0015479905_p251483301664"><a name="en-us_topic_0015479905_p251483301664"></a><a name="en-us_topic_0015479905_p251483301664"></a>Domain</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## TMS<a name="section72601459152417"></a>
+
+Tag Management Service \(TMS\) is a visualized service for fast and unified tag management that enables you to label and manage WAF instances by tags.
+
+**Table  3**  WAF operations supported by TMS
+
+<a name="table126592286267"></a>
+<table><thead align="left"><tr id="row566116283269"><th class="cellrowborder" valign="top" width="26.292629262926294%" id="mcps1.2.4.1.1"><p id="p166611289266"><a name="p166611289266"></a><a name="p166611289266"></a>Operation</p>
+</th>
+<th class="cellrowborder" valign="top" width="31.973197319731973%" id="mcps1.2.4.1.2"><p id="p966162817264"><a name="p966162817264"></a><a name="p966162817264"></a>Resource Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="41.73417341734174%" id="mcps1.2.4.1.3"><p id="p36616282267"><a name="p36616282267"></a><a name="p36616282267"></a>Event Name</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row06611828162610"><td class="cellrowborder" valign="top" width="26.292629262926294%" headers="mcps1.2.4.1.1 "><p id="p1966152818262"><a name="p1966152818262"></a><a name="p1966152818262"></a>Creating a WAF instance tag</p>
+</td>
+<td class="cellrowborder" valign="top" width="31.973197319731973%" headers="mcps1.2.4.1.2 "><p id="p1566119285266"><a name="p1566119285266"></a><a name="p1566119285266"></a>Tag</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.73417341734174%" headers="mcps1.2.4.1.3 "><p id="p1480410418495"><a name="p1480410418495"></a><a name="p1480410418495"></a>createResourceTag</p>
+</td>
+</tr>
+<tr id="row6661128202611"><td class="cellrowborder" valign="top" width="26.292629262926294%" headers="mcps1.2.4.1.1 "><p id="p766116289264"><a name="p766116289264"></a><a name="p766116289264"></a>Deleting a WAF instance tag</p>
+</td>
+<td class="cellrowborder" valign="top" width="31.973197319731973%" headers="mcps1.2.4.1.2 "><p id="p96611328142610"><a name="p96611328142610"></a><a name="p96611328142610"></a>Tag</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.73417341734174%" headers="mcps1.2.4.1.3 "><p id="p1566122832619"><a name="p1566122832619"></a><a name="p1566122832619"></a>deleteResourceTag</p>
 </td>
 </tr>
 </tbody>

@@ -1,4 +1,4 @@
-# Product Advantages<a name="EN-US_TOPIC_0193630326"></a>
+# Product Advantages<a name="waf_01_0065"></a>
 
 WAF examines web traffic from multiple dimensions to accurately identify malicious requests and filter attacks, reducing the risks of data being tampered with or stolen.
 

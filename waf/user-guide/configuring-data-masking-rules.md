@@ -1,4 +1,4 @@
-# Configuring Data Masking Rules<a name="EN-US_TOPIC_0193630302"></a>
+# Configuring Data Masking Rules<a name="waf_01_0017"></a>
 
 This section describes how to configure data masking rules.  Data Masking  prevents such data as usernames and passwords from being displayed in event logs.
 
@@ -11,14 +11,14 @@ This section describes how to configure data masking rules.  Data Masking  preve
 
 1.  Log in to the management console.
 2.  Click  ![](figures/icon-region.png)  in the upper left corner of the management console and select a region or project.
-3.  Click  **Service List**  at the top of the page and choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 1](#en-us_topic_0193630287_fig4838162174519).
+3.  Click  **Service List**  at the top of the page and choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Domains**. The  **Domains**  page is displayed, as shown in  [Figure 1](#waf_01_0008_fig164792010154510).
 
-    **Figure  1**  Domains<a name="en-us_topic_0193630287_fig4838162174519"></a>  
-    ![](figures/domains-policy.png "domains-policy")
+    **Figure  1**  Entrance to the domain configuration page<a name="waf_01_0008_fig164792010154510"></a>  
+    ![](figures/entrance-to-the-domain-configuration-page.png "entrance-to-the-domain-configuration-page")
 
-4.  In the  **Operation**  column of the row containing the target domain name, click  **Configure Policy**. The protection configuration page is displayed, as shown in  [Figure 2](#en-us_topic_0193630287_fig16197124372015).
+4.  In the  **Operation**  column of the row containing the target domain name, click  **Configure Policy**. The protection configuration page is displayed, as shown in  [Figure 2](#waf_01_0008_fig16197124372015).
 
-    **Figure  2**  Protection configuration page<a name="en-us_topic_0193630287_fig16197124372015"></a>  
+    **Figure  2**  Protection configuration page<a name="waf_01_0008_fig16197124372015"></a>  
     ![](figures/protection-configuration-page.png "protection-configuration-page")
 
 5.  <a name="li45442459125143"></a>In the  **Data Masking**  configuration area, change  **Status**  as needed and then click  **Save**  in the upper right corner of the  **Protection Status**  list. In the dialog box displayed, click  **Yes**  to save the settings. Otherwise, click  **Cancel**. See  [Figure 3](#fig163378412590).
@@ -33,7 +33,7 @@ This section describes how to configure data masking rules.  Data Masking  preve
     >-   Click  **Yes**  to cancel the previous settings.  
     >-   Click  **No**  and then  **Save**  to save the settings.  
 
-    **Figure  4**  Add Rule \(data masking\)<a name="fig187391447920"></a>  
+    **Figure  4**  Add Rule \(Data Masking\)<a name="fig187391447920"></a>  
     ![](figures/add-rule-(data-masking).png "add-rule-(data-masking)")
 
 7.  In the displayed dialog box shown in  [Figure 5](#fig49385421125519), specify the parameters by referring to  [Table 1](#table4696626918715).
@@ -68,13 +68,13 @@ This section describes how to configure data masking rules.  Data Masking  preve
     <td class="cellrowborder" valign="top" width="52.2%" headers="mcps1.2.4.1.2 "><div class="p" id="p4124255145815"><a name="p4124255145815"></a><a name="p4124255145815"></a>A field set to be masked<a name="ul16778520183811"></a><a name="ul16778520183811"></a><ul id="ul16778520183811"><li><strong id="b1343103515012"><a name="b1343103515012"></a><a name="b1343103515012"></a>Params</strong>: A request parameter</li><li><strong id="b3268543155016"><a name="b3268543155016"></a><a name="b3268543155016"></a>Header</strong>: A user-defined HTTP header</li></ul>
     </div>
     </td>
-    <td class="cellrowborder" rowspan="2" valign="top" width="31.95%" headers="mcps1.2.4.1.3 "><a name="ul3574205795514"></a><a name="ul3574205795514"></a><ul id="ul3574205795514"><li>If <strong id="b33911257154612"><a name="b33911257154612"></a><a name="b33911257154612"></a>Masked Field</strong> is <strong id="b16810122213477"><a name="b16810122213477"></a><a name="b16810122213477"></a>Params</strong>, set <strong id="b15130102919477"><a name="b15130102919477"></a><a name="b15130102919477"></a>Subfield</strong> according to your actual needs. If it is set to <strong id="b9644145594714"><a name="b9644145594714"></a><a name="b9644145594714"></a>id</strong>, content that matches <strong id="b786051518488"><a name="b786051518488"></a><a name="b786051518488"></a>id</strong> is masked.</li><li>If <strong id="b1213020384"><a name="b1213020384"></a><a name="b1213020384"></a>Masked Field</strong> is <span class="parmvalue" id="parmvalue872616601"><a name="parmvalue872616601"></a><a name="parmvalue872616601"></a><b>Header</b></span>, set <span class="parmname" id="parmname11809701"><a name="parmname11809701"></a><a name="parmname11809701"></a><b>Subfield</b></span> according to your actual needs. If it is set to <span class="parmvalue" id="parmvalue1376279751"><a name="parmvalue1376279751"></a><a name="parmvalue1376279751"></a><b>Accept</b></span>, content that matches <span class="parmvalue" id="parmvalue1447348966"><a name="parmvalue1447348966"></a><a name="parmvalue1447348966"></a><b>Accept</b></span> is masked.</li></ul>
+    <td class="cellrowborder" rowspan="2" valign="top" width="31.95%" headers="mcps1.2.4.1.3 "><a name="ul3574205795514"></a><a name="ul3574205795514"></a><ul id="ul3574205795514"><li>If <strong id="b33911257154612"><a name="b33911257154612"></a><a name="b33911257154612"></a>Masked Field</strong> is <strong id="b16810122213477"><a name="b16810122213477"></a><a name="b16810122213477"></a>Params</strong>, set <strong id="b15130102919477"><a name="b15130102919477"></a><a name="b15130102919477"></a>Subfield</strong> according to your actual needs. If it is set to <strong id="b9644145594714"><a name="b9644145594714"></a><a name="b9644145594714"></a>id</strong>, content that matches <strong id="b786051518488"><a name="b786051518488"></a><a name="b786051518488"></a>id</strong> is masked.</li><li>If <strong id="b1579816587"><a name="b1579816587"></a><a name="b1579816587"></a>Masked Field</strong> is <span class="parmvalue" id="parmvalue1852725718"><a name="parmvalue1852725718"></a><a name="parmvalue1852725718"></a><b>Header</b></span>, set <span class="parmname" id="parmname1948091887"><a name="parmname1948091887"></a><a name="parmname1948091887"></a><b>Subfield</b></span> according to your actual needs. If it is set to <span class="parmvalue" id="parmvalue366156849"><a name="parmvalue366156849"></a><a name="parmvalue366156849"></a><b>Accept</b></span>, content that matches <span class="parmvalue" id="parmvalue2093604268"><a name="parmvalue2093604268"></a><a name="parmvalue2093604268"></a><b>Accept</b></span> is masked.</li></ul>
     </td>
     </tr>
     <tr id="row3251580618715"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p1653459218715"><a name="p1653459218715"></a><a name="p1653459218715"></a>Subfield</p>
     </td>
     <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p12165125012131"><a name="p12165125012131"></a><a name="p12165125012131"></a>Set the parameter based on <strong id="b771614580578"><a name="b771614580578"></a><a name="b771614580578"></a>Masked Field</strong>. The masked field will not be displayed in the log.</p>
-    <div class="notice" id="note106664883710"><a name="note106664883710"></a><a name="note106664883710"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="en-us_topic_0193630285_p954031113102"><a name="en-us_topic_0193630285_p954031113102"></a><a name="en-us_topic_0193630285_p954031113102"></a>The length of a subfield cannot exceed 2048 bytes. Only digits, letters, underscores (_), and hyphens (-) are allowed.</p>
+    <div class="notice" id="note106664883710"><a name="note106664883710"></a><a name="note106664883710"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="waf_01_0010_p954031113102"><a name="waf_01_0010_p954031113102"></a><a name="waf_01_0010_p954031113102"></a>The length of a subfield cannot exceed 2048 bytes. Only digits, letters, underscores (_), and hyphens (-) are allowed.</p>
     </div></div>
     </td>
     </tr>

@@ -1,4 +1,4 @@
-# Applying a Policy to Your Domain Names<a name="EN-US_TOPIC_0193630199"></a>
+# Applying a Policy to Your Domain Names<a name="waf_01_0075"></a>
 
 This section describes how to apply a policy to your domain names.
 
@@ -14,8 +14,8 @@ This section describes how to apply a policy to your domain names.
 3.  Choose  **Security**  \>  **Web Application Firewall**. In the navigation pane, choose  **Policies**. The  **Policies**  page is displayed.
 4.  In the row containing the target policy name, click  **Bind Domain**  in the  **Operation**  column. See  [Figure 1](#fig169858225460).
 
-    **Figure  1**  Bind Domain<a name="fig169858225460"></a>  
-    ![](figures/bind-domain.png "bind-domain")
+    **Figure  1**  Clicking Bind Domain<a name="fig169858225460"></a>  
+    ![](figures/clicking-bind-domain.png "clicking-bind-domain")
 
 5.  Select one or more domain names from the  **Domain Name**  drop-down list. See  [Figure 2](#fig4167335513).
 
