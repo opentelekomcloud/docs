@@ -3,7 +3,7 @@
 Description:
 
 -   Anti-DDoS defends IP addresses against DDoS attacks after you enable it.
-    -   After you purchase an elastic IP address, the Anti-DDoS service automatically enables the protection for this IP address.  [Figure 1](#fig1187371918561)  shows the default protection settings. When the service UDP \(User Datagram Protocol\) traffic is greater than 120 Mbps or the TCP \(Transmission Control Protocol\) traffic is greater than 35,000 pps, traffic scrubbing is triggered and Anti-DDoS will automatically intercept the attack traffic.
+    -   After you purchase an elastic IP address, the Anti-DDoS service automatically enables the protection for this IP address.  [Figure 1](#fig1187371918561)  shows the default protection settings. When the service UDP \(User Datagram Protocol\) traffic is greater than  **300 Mbps**  or the TCP \(Transmission Control Protocol\) traffic is greater than  **90000 pps**, traffic scrubbing is triggered and Anti-DDoS will automatically intercept the attack traffic.
 
         If you delete an elastic IP address, Anti-DDoS automatically disables the protection for the IP address, which is recorded in Cloud Trace Service \(CTS\).
 
