@@ -2,8 +2,10 @@
 Connection
 ==========
 
+
 .. toctree::
    :maxdepth: 1
+
 
    description.md
    creating-a-connection.md
