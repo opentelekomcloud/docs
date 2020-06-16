@@ -30,6 +30,7 @@ OTC is cool and has following services:
    ims/index
    kms/index
    lts/index
+   mrs/index
    nat/index
    obs/index
    rts/index
