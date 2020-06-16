@@ -11,7 +11,7 @@ You have obtained an account and its password to log in to the management consol
 ## Procedure<a name="section138668540256"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/icon_dt-5.png)  in the upper left corner and select the desired region or project.
+2.  Click  ![](figures/icon_dt.png)  in the upper left corner and select the desired region or project.
 3.  Under  **Security**, choose  **Anti-DDoS**. The  **Security Console**  is displayed.
 4.  Select the  **Statistics**  tab and view the protection statistics of all public IP addresses of a user, as shown in  [Figure 1](#fig1644131633612).
 
