@@ -2,7 +2,6 @@
 Quota Management
 ================
 
-
 .. toctree::
    :maxdepth: 1
 
