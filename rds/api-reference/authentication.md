@@ -6,7 +6,7 @@ Authentication using tokens: General requests are authenticated using tokens.
 
 ## Token-based Authentication<a name="section2417768214391"></a>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >The validity period of a token is 24 hours. When using a token for authentication, cache it to prevent frequently calling the IAM API used to obtain a user token.  
 
 A token specifies temporary permissions in a computer system. During API authentication using a token, the token is added to requests to get permissions for calling the API.

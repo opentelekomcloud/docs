@@ -87,7 +87,7 @@ You can connect to a DB instance through a common connection or an SSL connectio
     **Figure  3**  Opening a session<a name="fig4589305124"></a>  
     ![](figures/opening-a-session.png "opening-a-session")
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >If the connection fails, see  [What Should I Do If an ECS Cannot Connect to an RDS DB Instance?](what-should-i-do-if-an-ecs-cannot-connect-to-an-rds-db-instance.md)  
 
 
@@ -99,7 +99,7 @@ You can connect to a DB instance through a common connection or an SSL connectio
 4.  In the  **DB Information**  area on the  **Basic Information**  page, click  ![](figures/down.png)  in the  **SSL**  field to download the root certificate or certificate bundle.
 5.  Import the root certificate to the Linux OS on the ECS. For details, see  [How Can I Import the Root Certificate to the Windows or Linux OS?](how-can-i-import-the-root-certificate-to-the-windows-or-linux-os.md)
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >-   Since April 2017, RDS has offered a new root certificate that has a 20-year validation period. The new certificate takes effect after DB instances are rebooted. Replace the old certificate before it expires to improve system security.  
     >    For details, see section  [How Can I Identify the Validity Period of the SSL Root Certificate?](how-can-i-identify-the-validity-period-of-the-ssl-root-certificate.md)  
     >-   You can also download the certificate bundle, which contains both the new certificate provided since April 2017 and the old certificate.  
@@ -150,7 +150,7 @@ You can connect to a DB instance through a common connection or an SSL connectio
     Enter password:
     ```
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >If the connection fails, see  [What Should I Do If an ECS Cannot Connect to an RDS DB Instance?](what-should-i-do-if-an-ecs-cannot-connect-to-an-rds-db-instance.md)  
 
 

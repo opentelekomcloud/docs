@@ -4,7 +4,7 @@
 
 You can view the change history of a parameter template.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >An exported or custom parameter template has initially a blank change history.  
 
 ## Viewing Change History of DB Instance Parameters<a name="rds_05_0099_section19506644183319"></a>

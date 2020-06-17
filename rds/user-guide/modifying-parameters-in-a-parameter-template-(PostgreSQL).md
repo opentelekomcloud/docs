@@ -8,7 +8,7 @@ If you change a parameter value, when the change takes effect is determined by t
 
 The RDS console displays the statuses of DB instances to which the parameter template applies. For example, if the DB instance has not used the latest changes made to its parameter template, its status is  **Pending reboot**. You need to manually reboot the DB instance for the latest parameter changes to take effect for that DB instance.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >RDS has default parameter templates whose parameter values cannot be changed. You can view these parameter values by clicking the default parameter templates. If a custom parameter template is set incorrectly and causes a database reboot to fail, you can configure the custom parameter template by referring to the configurations of the default parameter template.  
 
 ## Modifying Parameters in Batches<a name="section11158153171920"></a>
@@ -30,14 +30,14 @@ The RDS console displays the statuses of DB instances to which the parameter tem
 
     Available operations are as follows:
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+    >![](/images/icon-notice.gif) **NOTICE:**   
     >After you modify parameters in a parameter template, some modifications immediately take effect for the DB instance to which the parameter template applies. Exercise caution when performing this operation.  
 
     -   To save the modifications, click  **Save**.
     -   To cancel the modifications, click  **Cancel**.
     -   To preview the modifications, click  **Preview**.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >For details about the parameter template statuses, see  [Parameter Template Statuses](db-instance-statuses.md#sf14afc99d1fe4941b44ffca460288867).  
     >After you modify parameters in a parameter template, you need to click the DB instance to which the parameter template applies to view the status of the parameter template. On the displayed  **Basic Information**  page, if the status of the parameter template is  **Pending reboot**, you must reboot the DB instance for the modifications to take effect.  
     >-   If you have modified parameters of a primary DB instance, you need to reboot the primary DB instance for the modifications to take effect. \(For primary/standby DB instances, the parameter modifications also apply to the standby DB instance.\)  
@@ -63,7 +63,7 @@ The RDS console displays the statuses of DB instances to which the parameter tem
 
     Available operations are as follows:
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+    >![](/images/icon-notice.gif) **NOTICE:**   
     >After you modify parameters in a parameter template, the modifications immediately take effect for the DB instance to which the parameter template applies.  
     >For details about the parameter template statuses, see  [Parameter Template Statuses](db-instance-statuses.md#sf14afc99d1fe4941b44ffca460288867).  
     >After you modify parameters in a parameter template, you need to view the status of the DB instance to which the parameter template applies. If the status is  **Pending reboot**, you must reboot the DB instance for the modifications to take effect.  
@@ -74,6 +74,6 @@ The RDS console displays the statuses of DB instances to which the parameter tem
     -   To cancel the modifications, click  **Cancel**.
     -   To preview the modifications, click  **Preview**.
 
-    After parameters are modified, you can view parameter change history by referring to section  [Viewing Parameter Change History](viewing-parameter-change-history-55.md).
+    After parameters are modified, you can view parameter change history by referring to section  [Viewing Parameter Change History](viewing-parameter-change-history-(PosgreSQL).md).
 
 

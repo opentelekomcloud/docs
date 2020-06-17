@@ -10,7 +10,7 @@ To stay aware of these metrics, you can configure the system to report alarms to
 -   Configure RDS to report alarms to Cloud Eye if its memory utilization reaches or exceeds a specific value \(for example, 90%\) multiple times \(for example, 4 times\) within a set period \(for example, 5 minutes\).
 -   Configure RDS to report alarms to Cloud Eye if its storage utilization reaches or exceeds a specific value \(for example, 85%\) multiple times \(for example, 5 times\) within a set period \(for example, 5 minutes\).
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >For details on Cloud Eye alarm configuration, see the "Alarm Rule Management" section in the  _Cloud Eye User Guide_.  
 
 **Measures:**

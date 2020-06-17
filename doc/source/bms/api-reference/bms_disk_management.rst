@@ -2,9 +2,9 @@
 BMS Disk Management
 ===================
 
+
 .. toctree::
    :maxdepth: 1
-
 
    querying-information-about-the-disks-attached-to-a-bms-(native-openstack-api).md
    querying-information-about-a-disk-attached-to-a-bms-(native-openstack-api).md

@@ -4,7 +4,7 @@
 
 By default, a DB instance is not publicly accessible \(not bound with an EIP\) after being created. You can bind an EIP to the DB instance for public accessibility and can unbind the EIP from the DB instance as required.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >To ensure successful access to the database, the security group associated with the database must allow access over the database port. For example, if the database port is 5432, ensure that the security group allow access over the 5432 port.  
 
 ## Prerequisites<a name="en-us_topic_0192953725_section25123869979"></a>
@@ -13,7 +13,7 @@ By default, a DB instance is not publicly accessible \(not bound with an EIP\) a
 -   You can bind an EIP to a primary DB instance or read replica only.
 -   If a DB instance has already been bound with an EIP, you must unbind the EIP from the DB instance first before binding a new EIP to it.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >This function is currently unavailable for some existing DB instances because the connection IP addresses were created in a way that does not support binding EIPs.  
 
 ## Binding an EIP<a name="en-us_topic_0192953725_section3199593620428"></a>

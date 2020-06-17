@@ -12,7 +12,7 @@ You must be familiar with:
 
 ## Connection with the SSL Certificate<a name="section17811586410"></a>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >The JDBC connection is an SSL connection. The SSL certificate needs to be downloaded and verified for connecting to databases.  
 >In the  **DB Information**  area on the  **Basic Information**  page, click  ![](figures/down.png)  in the  **SSL**  field to download the root certificate or certificate bundle.  
 
@@ -104,7 +104,7 @@ You must be familiar with:
 
 ## Connection Without the SSL Certificate<a name="s12a6f787675c4a6789f8c302301c2a74"></a>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >The JDBC connection is an SSL connection, but you do not need to download the SSL certificate because the certificate verification on the server is not required.  
 
 1.  Connect to the RDS PostgreSQL DB instance through JDBC.

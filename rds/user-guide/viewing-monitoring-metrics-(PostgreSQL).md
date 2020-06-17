@@ -13,7 +13,7 @@ Monitored data takes some time for transmission and display. The RDS status disp
     RDS DB instances that are faulty or have been deleted cannot be displayed on the Cloud Eye console. After they are rebooted or restored, you can view their statuses.
 
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >If an RDS DB instance has been faulty for 24 hours, Cloud Eye considers that it does not exist and deletes it from the monitoring object list. You need to clear the alarm rule for the DB instance.  
 
 -   The relational database has been running properly for about 10 minutes.

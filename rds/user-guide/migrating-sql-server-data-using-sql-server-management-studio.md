@@ -17,7 +17,7 @@ You can access RDS DB instances through an EIP or ECS.
 
     For details, see  [How Can I Install SQL Server Management Studio?](how-can-i-install-sql-server-management-studio.md)
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >The SQL Server Management Studio version must be equal to or later than the Microsoft SQL Server DB engine version.  
 
 
@@ -25,7 +25,7 @@ You can access RDS DB instances through an EIP or ECS.
 
 Before migrating an existing Microsoft SQL Server database to RDS, you need to export the Microsoft SQL Server database.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >-   The export tool must match the DB engine version.  
 >-   Database migration is performed offline. Before the migration, you must stop any applications using the source database.  
 
@@ -37,7 +37,7 @@ Before migrating an existing Microsoft SQL Server database to RDS, you need to e
     3.  Choose  **Choose Objects**  in the navigation pane on the left, select database objects to be exported, and click  **Next**.
     4.  Choose  **Set Scripting Options**  in the navigation pane on the left, click  **Save script to a specific location**, and select a path for storing exported files from the  **File name**  drop-down list, and click  **Next**.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
+        >![](/images/icon-note.gif) **NOTE:**   
         >-   If you select  **Single file**, all objects will be stored in the same file.  
         >-   If you select  **Single file per object**, each object will be stored in its own file.  
 
@@ -46,7 +46,7 @@ Before migrating an existing Microsoft SQL Server database to RDS, you need to e
     7.  Use SQL Server Management Studio to open the exported SQL file or SQL files.
     8.  Change  **USE \[DATABASE\]**  in the first line to  **USE \[_RDS database name_\]**  and save the change.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >For details on generating scripts, see  [Generate and Publish Scripts Wizard](https://docs.microsoft.com/en-us/sql/ssms/scripting/generate-and-publish-scripts-wizard?view=sql-server-2017).  
 
 3.  Use bcp to export data from the source database to a .txt file.
@@ -84,7 +84,7 @@ Before migrating an existing Microsoft SQL Server database to RDS, you need to e
 
 This section describes how to use an ECS or a device that can access RDS to connect to a DB instance and import the exported SQL file into RDS.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >If the source database contains the full-text index, you need to create one on RDS.  
 
 1.  Import data through tools.

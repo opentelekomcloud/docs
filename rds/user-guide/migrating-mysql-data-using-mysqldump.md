@@ -17,7 +17,7 @@ You can access RDS DB instances through an EIP or ECS.
 
     For details, see  [How Can I Install the MySQL Client?](how-can-i-install-the-mysql-client.md)
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >The MySQL client version must be the same as the version of RDS for MySQL. The MySQL database or client will provide mysqldump and mysql.  
 
 
@@ -25,14 +25,14 @@ You can access RDS DB instances through an EIP or ECS.
 
 Before migrating an existing MySQL database to RDS, you need to export the MySQL database.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >-   The export tool must match the DB engine version.  
 >-   Database migration is performed offline. Before the migration, you must stop any applications using the source database.  
 
 1.  Log in to the prepared ECS or device that can access RDS DB instances.
 2.  <a name="li16251172911136"></a>Use the mysqldump tool to export metadata into an SQL file.
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+    >![](/images/icon-notice.gif) **NOTICE:**   
     >The MySQL database is required for RDS management. When exporting metadata, do not specify  **--all-database**. Otherwise, the MySQL database will be unavailable.  
 
     **mysqldump** **--databases**  <_DB\_NAME_\>  **--single-transaction --order-by-primary --hex-blob --no-data --routines --events --set-gtid-purged=OFF**  -u <_DB\_USER_\>  **-p -h**  <_DB\_ADDRESS_\>  **-P **<_DB\_PORT_\>  **|sed -e 's/DEFINER\[ \]\*=\[ \]\*\[^\*\]\*\\\*/\\\*/' -e 's/DEFINER\[ \]\*=.\*FUNCTION/FUNCTION/' -e 's/DEFINER\[ \]\*=.\*PROCEDURE/PROCEDURE/' -e 's/DEFINER\[ \]\*=.\*TRIGGER/TRIGGER/' -e 's/DEFINER\[ \]\*=.\*EVENT/EVENT/' \>** _<BACKUP\_FILE\>_
@@ -51,7 +51,7 @@ Before migrating an existing MySQL database to RDS, you need to export the MySQL
 
     **Enter password:**
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >If you use mysqldump with a version earlier than 5.6, remove  **--set-gtid-purged=OFF**  before running this command.  
 
     After this command is executed, a  **dump-defs.sql**  file will be generated as follows:
@@ -63,7 +63,7 @@ Before migrating an existing MySQL database to RDS, you need to export the MySQL
 
 3.  Use the mysqldump tool to export data into an SQL file.
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+    >![](/images/icon-notice.gif) **NOTICE:**   
     >The MySQL database is required for RDS management. When exporting metadata, do not specify  **--all-database**. Otherwise, the MySQL database will be unavailable.  
 
     **mysqldump --databases**  <_DB\_NAME_\>  **--single-transaction --hex-blob --set-gtid-purged=OFF --no-create-info --skip-triggers** **-u**  <_DB\_USER_\>  **-p** **-h**  <_DB\_ADDRESS_\>  **-P**  <_DB\_PORT_\>  **-r**  <_BACKUP\_FILE_\>
@@ -76,7 +76,7 @@ Before migrating an existing MySQL database to RDS, you need to export the MySQL
 
     **mysqldump --databases rdsdb --single-transaction --hex-blob --set-gtid-purged=OFF --no-create-info --skip-triggers -u root -p -h 192.168.151.18 -P  **8635**  -r dump-data.sql**
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >If you use mysqldump with a version earlier than 5.6, remove  **--set-gtid-purged=OFF**  before running this command.  
 
     After this command is executed, a  **dump-data.sql**  file will be generated as follows:
@@ -91,7 +91,7 @@ Before migrating an existing MySQL database to RDS, you need to export the MySQL
 
 This section describes how to use an ECS or a device that can access RDS to connect to a DB instance and import the exported SQL file into RDS.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >If the source database contains triggers, storage processes, functions, or event invocation, you must set  **log\_bin\_trust\_function\_creators**  to  **ON**  for the destination database before importing data.  
 
 1.  Import metadata into RDS.

@@ -8,7 +8,7 @@ For details about the causes and solutions of insufficient storage space, see se
 
 RDS allows you to  scale up storage space  of DB instances but you cannot change the storage type. Services are not interrupted during scaling.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   DB instances can be scaled up enormous times.  
 >-   For primary/standby DB instances, scaling up the primary DB instance will cause the standby DB instance to also be scaled up accordingly.  
 >-   You cannot reboot or delete a DB instance that is being scaled up.  

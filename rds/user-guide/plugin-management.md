@@ -61,7 +61,7 @@ RDS provides the PostgreSQL plugin management solution for user  **root**. The a
         -   dict\_xsyn
         -   earthdistance
 
-            >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+            >![](/images/icon-notice.gif) **NOTICE:**   
             >To install the  **earthdistance**  plugin, you must install the  **cube**  plugin first.  
 
         -   intagg
@@ -70,7 +70,7 @@ RDS provides the PostgreSQL plugin management solution for user  **root**. The a
         -   pgcrypto
         -   timescaledb
 
-            >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+            >![](/images/icon-notice.gif) **NOTICE:**   
             >-   The timescaledb plugin supports PostgreSQL 9.6 and later versions.  
             >-   The timescaledb plugin does not support the TSL protocol.  
 
@@ -91,7 +91,7 @@ RDS provides the PostgreSQL plugin management solution for user  **root**. The a
 
         -   pg\_pathman
 
-            >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+            >![](/images/icon-notice.gif) **NOTICE:**   
             >The pg\_pathman plugin supports only the following versions: PostgreSQL 11.5, PostgreSQL 10, PostgreSQL 9.6, and PostgreSQL9.5.  
 
         -   pg\_stat\_statements
@@ -132,7 +132,7 @@ Connect to the database with a plugin created as user  **root**  and delete the 
     -   uuid-ossp
     -   cube
 
-        >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+        >![](/images/icon-notice.gif) **NOTICE:**   
         >If the  **earthdistance**  plugin has been installed, deleting the  **cube**  plugin will cause the  **earthdistance**  plugin to be unavailable.  
 
     -   dict\_int

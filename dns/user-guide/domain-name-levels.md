@@ -8,7 +8,7 @@ Domain names are classified into the following levels:
 -   Third-level domain: subdomain names of the second-level domain names, such as **abc.example.com**, **abc.example.net**, and **abc.example.org**
 -   The next level domain names are similarly expanded by adding prefixes on the left of the previous-level domain names.
 
-    > ![](public_sys-resources/icon-note.gif) **NOTE:** 
+    > ![](/images/icon-note.gif) **NOTE:** 
 
     > -   A domain name is segmented using dots \(.\).
     > -   Each segment can contain letters, digits, and hyphens \(-\) and cannot start or end with a hyphen.

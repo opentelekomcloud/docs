@@ -376,7 +376,7 @@ None
     </tbody>
     </table>
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >In the response example, some tasks in the task center are used as examples.  
 
 

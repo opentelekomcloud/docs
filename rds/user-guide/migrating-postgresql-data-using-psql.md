@@ -21,7 +21,7 @@ You can access RDS DB instances through an EIP or ECS.
 
     For details, see  [How Can I Install the PostgreSQL Client?](how-can-i-install-the-postgresql-client.md)
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >The PostgreSQL client version must be the same as the version of RDS for PostgreSQL. The PostgreSQL database or client will provide pg\_dump and psql.  
 
 
@@ -29,7 +29,7 @@ You can access RDS DB instances through an EIP or ECS.
 
 Before migrating an existing PostgreSQL database to RDS, you need to export the PostgreSQL database.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >-   The export tool must match the DB engine version.  
 >-   Database migration is performed offline. Before the migration, you must stop any applications using the source database.  
 

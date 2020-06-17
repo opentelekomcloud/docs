@@ -432,4 +432,3 @@ Create a record set.
 ## Returned Value<a name="section42637797161043"></a>
 
 See  [General Request Return Code](general-request-return-code.md).
-

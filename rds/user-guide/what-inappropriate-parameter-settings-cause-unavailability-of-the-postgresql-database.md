@@ -14,7 +14,7 @@ In the following cases, inappropriate parameter settings cause unavailability of
 
 
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >For details on parameter descriptions, visit the  [PostgreSQL official website](https://www.postgresql.org/docs/current/static/runtime-config.html).  
 
 Solution:

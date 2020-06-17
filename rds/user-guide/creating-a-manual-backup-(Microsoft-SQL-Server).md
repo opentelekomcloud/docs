@@ -4,7 +4,7 @@
 
 RDS allows you to  create manual backups  of a running primary DB instance. You can use these backups to restore data.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >When you delete a DB instance, its automated backups are also deleted but its manual backups are retained.  
 
 ## Method 1<a name="section4536153994816"></a>
@@ -19,7 +19,7 @@ RDS allows you to  create manual backups  of a running primary DB instance. You 
     -   The description consists of a maximum of 256 characters and cannot contain the carriage return character or the following special characters: \>!<"&'=
     -   The time required for creating a manual backup depends on the data volume.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >System databases are backed up by default.  
 
 6.  After a manual backup has been created, you can view and manage it on the  **Backup Management**  page.
@@ -39,7 +39,7 @@ RDS allows you to  create manual backups  of a running primary DB instance. You 
     -   The description consists of a maximum of 256 characters and cannot contain the carriage return character or the following special characters: \>!<"&'=
     -   During the creation process, the DB instance status is  **Backing up**. The time required for creating a manual backup depends on the data volume.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >System databases are backed up by default.  
 
 6.  After a manual backup has been created, you can view and manage it on the  **Backup Management**  page.
@@ -60,7 +60,7 @@ RDS allows you to  create manual backups  of a running primary DB instance. You 
     -   The description consists of a maximum of 256 characters and cannot contain the carriage return character or the following special characters: \>!<"&'=
     -   During the creation process, the DB instance status is  **Backing up**. The time required for creating a manual backup depends on the data volume.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >System databases are backed up by default.  
 
 6.  After a manual backup has been created, you can view and manage it on the  **Backup Management**  page.

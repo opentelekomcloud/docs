@@ -8,7 +8,7 @@ For details about the causes and solutions of insufficient storage space, see se
 
 RDS allows you to  scale up storage space  of DB instances but you cannot change the storage type. Services are not interrupted during scaling.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   DB instances can be scaled up enormous times.  
 >-   The DB instance is in  **Scaling up**  state when its storage space is being scaled up and the backup services are not affected.  
 >-   For primary/standby DB instances, scaling up the primary DB instance will cause the standby DB instance to also be scaled up accordingly.  
@@ -39,7 +39,7 @@ RDS allows you to  scale up storage space  of DB instances but you cannot change
 
     Scaling up storage space takes 3-5 minutes. During this time, the status of the DB instance on the  **Instance Management**  page will be  **Scaling up**. Click the DB instance and view the utilization on the displayed  **Basic Information**  page to verify that the scale-up is successful.
 
-    If the DB instance is running the MySQL DB engine, you can view the detailed progress and result of the task on the  **Task Center**  page. For details, see section  [Task Center](task-center.md).
+    If the DB instance is running the MySQL DB engine, you can view the detailed progress and result of the task on the  **Task Center**  page. For details, see section  [Task Center](task_center).
 
 
 ## Scaling Up a Read Replica<a name="section25847103185530"></a>
@@ -67,6 +67,6 @@ Scaling up the storage space of a read replica does not affect that of the prima
 
     Scaling up storage space takes 3-5 minutes. During this time, the status of the read replica on the  **Instance Management**  page will be  **Scaling up**. Click the read replica and view the utilization on the displayed  **Basic Information**  page to verify that the scale-up is successful.
 
-    If the read replica is running the MySQL DB engine, you can view the detailed progress and result of the task on the  **Task Center**  page. For details, see section  [Task Center](task-center.md).
+    If the read replica is running the MySQL DB engine, you can view the detailed progress and result of the task on the  **Task Center**  page. For details, see section  [Task Center](task_center).
 
 

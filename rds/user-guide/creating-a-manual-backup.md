@@ -4,7 +4,7 @@
 
 RDS allows you to  create manual backups  of a running primary DB instance. You can use these backups to restore data.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >When you delete a DB instance, its automated backups are also deleted but its manual backups are retained.  
 
 ## Method 1<a name="section3535102285710"></a>

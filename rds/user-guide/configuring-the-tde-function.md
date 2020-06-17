@@ -61,7 +61,7 @@ Currently, the TDE function supports single and primary/standby DB instances of 
 
 ## Configuring Database-Level TDE<a name="section17914116134615"></a>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >Before enabling the database-level TDE function, ensure that the instance-level TDE function has been enabled.  
 
 1.  Connect to the target DB instance.

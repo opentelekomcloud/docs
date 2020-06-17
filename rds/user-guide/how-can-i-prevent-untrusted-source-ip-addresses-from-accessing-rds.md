@@ -4,7 +4,7 @@
 -   To prevent your database password from being maliciously cracked, set a strong password according to the password strength policies and periodically change it.
 -   RDS for MySQL supports defense against brute force cracking. If malicious individuals have obtained your EIP DNS, database port, or database login information and try to crack your database with brute force, your service connections may be delayed. In this case, you can restrict the source connections and change the database username and password to prevent further damage.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >-   RDS for PostgreSQL does not support defense against brute force cracking.  
     >-   For RDS for Microsoft SQL Server, defense against brute force cracking is enabled by default and cannot be disabled.  
 

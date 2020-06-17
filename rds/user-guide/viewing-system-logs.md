@@ -13,7 +13,7 @@ System logs contain logs generated during the database running. These can help y
 5.  In the navigation pane on the left, choose  **Logs**. On the  **System Logs**  page, view details about system logs.
     -   You can select a log level in the upper right corner to view logs of the selected level.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
+        >![](/images/icon-note.gif) **NOTE:**   
         >For Microsoft SQL Server DB instances, only info-level logs are displayed currently.  
 
     -   You can click  ![](figures/time.png)  in the upper right corner to view logs generated in different time segments.

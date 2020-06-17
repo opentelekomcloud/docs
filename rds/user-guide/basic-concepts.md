@@ -2,7 +2,7 @@
 
 ## **DB Instances**<a name="section1319213812395"></a>
 
-An RDS DB instance is the minimum management unit of RDS and represents a relational database that can be run independently. You can use RDS to create and manage DB instances running various DB engines. For details about DB instance types, specifications, engines, versions, and statuses, see  [DB Instance Description](db-instance-description.md).
+An RDS DB instance is the minimum management unit of RDS and represents a relational database that can be run independently. You can use RDS to create and manage DB instances running various DB engines. For details about DB instance types, specifications, engines, versions, and statuses, see  [DB Instance Description](db_instance_description).
 
 ## **DB Engines**<a name="section79302616515"></a>
 

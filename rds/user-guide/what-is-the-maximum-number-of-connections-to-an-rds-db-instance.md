@@ -8,7 +8,7 @@ The max\_connections is closely related to storage space \(unit: GB\) of the DB 
 
 Estimated max\_connections = Available node memory/Estimated memory occupied by a single connection
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   Available node memory = Total memory – Memory occupied by the buffer pool – 1 GB \(mysqld process/OS/monitoring program\)  
 >-   Estimated memory usage of a single connection \(single\_thread\_memory\) = thread\_stack \(256K\) + binlog\_cache\_size \(32K\) + join\_buffer\_size \(256K\) + sort\_buffer\_size \(256K\) + read\_buffer\_size \(128K\) + read\_rnd\_buffer\_size \(256K\) = 1 MB  
 

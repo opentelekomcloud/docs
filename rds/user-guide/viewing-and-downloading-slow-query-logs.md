@@ -37,7 +37,7 @@ Slow query logs record statements that exceed  **long\_query\_time**  \(1 second
 5.  In the navigation pane on the left, choose  **Logs**. On the  **Slow Query Logs**  page, click  ![](figures/close.png)  to enable the slow query log function.
 6.  <a name="en-us_topic_0171818656_li654810813132"></a>The generated slow query logs are displayed.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >Enabling slow query log slightly affects DB instance performance.  
 
 7.  Connect to the DB instance through the Microsoft SQL Server client.
@@ -45,7 +45,7 @@ Slow query logs record statements that exceed  **long\_query\_time**  \(1 second
 
     **select \* from ::fn\_trace\_gettable\('D:\\SQLTrace\\audit\\**_XXX_**', default\)**
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >**_XXX_**  indicates the name of the slow query log recorded in  [6](#en-us_topic_0171818656_li654810813132).  
 
     Example:
@@ -66,7 +66,7 @@ Slow query logs record statements that exceed  **long\_query\_time**  \(1 second
 4.  On the  **Instance Management**  page, click the target DB instance.
 5.  In the navigation pane on the left, choose  **Logs**. On the  **Slow Query Logs**  page, click  ![](figures/关闭按钮-47.png)  to enable the slow query log function.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >Enabling slow query log slightly affects DB instance performance.  
 
 6.  <a name="en-us_topic_0171818656_li121912551908"></a>Locate a log to be downloaded and click  **Download**  in the  **Operation**  column.

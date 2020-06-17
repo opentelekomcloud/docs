@@ -21,7 +21,7 @@ You cannot perform the following operations when the database port of a DB insta
 4.  On the  **Instance Management**  page, click the target DB instance or click  ![](figures/expand.PNG)  first and then click the target read replica.
 5.  In the  **Connection Information**  area on the  **Basic Information**  page, click  ![](figures/port.png)  in the  **Database Port**  field.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >The MySQL database port ranges from 1024 to 65535, excluding 12017 and 33071, which are occupied by the RDS system and cannot be used.  
 
     -   To submit the change, click  ![](figures/port.png).

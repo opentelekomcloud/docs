@@ -19,6 +19,6 @@ Identify an RDS connection failure caused by a client problem from the following
     -   Login failed for user 'username'
 
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >If the problem persists, contact post-sales technical support.  
 

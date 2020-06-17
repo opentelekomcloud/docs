@@ -37,7 +37,7 @@ An RDS DB instance can be connected through a private network or a public networ
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   VPC: indicates the Virtual Private Cloud.  
 >-   ECS: indicates the Elastic Cloud Server.  
 >-   If the ECS is in the same VPC subnet as the RDS DB instance, you do not need to apply for an EIP.  

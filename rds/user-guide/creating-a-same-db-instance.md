@@ -4,7 +4,7 @@
 
 This section describes how to quickly  create the DB instance with the same configurations as the selected one.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   You can create DB instances with the same configurations enormous times.  
 >-   This function is unavailable for read replicas.  
 
@@ -18,9 +18,9 @@ This section describes how to quickly  create the DB instance with the same conf
 
     For details about MySQL DB instance configurations, see section  [Step 1: Create a DB Instance](step-1-create-a-db-instance.md).
 
-    For details about PostgreSQL DB instance configurations, see section  [Step 1: Create a DB Instance](step-1-create-a-db-instance-5.md).
+    For details about PostgreSQL DB instance configurations, see section  [Step 1: Create a DB Instance](step-1-create-a-db-instance-(PostgreSQL).md).
 
-    For details about Microsoft SQL Server DB instance configurations, see section  [Step 1: Create a DB Instance](step-1-create-a-db-instance-13.md).
+    For details about Microsoft SQL Server DB instance configurations, see section  [Step 1: Create a DB Instance](step-1-create-a-db-instance-Microsoft-SQL-Server.md).
 
 6.  Confirm the order.
 7.  Refresh the DB instance list and view the status of the DB instance. If the status is  **Available**, it has been created successfully.

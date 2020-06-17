@@ -12,7 +12,7 @@ You can reset all parameters in a custom parameter template to their default set
 4.  On the  **Parameter Template Management**  page, click  **Custom Templates**. Locate the target parameter template and choose  **More**  \>  **Reset**  in the  **Operation**  column.
 5.  Click  **Yes**.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >For details about the parameter template statuses, see  [Parameter Template Statuses](db-instance-statuses.md#sf14afc99d1fe4941b44ffca460288867).  
     >After you reset the parameter template, click the DB instance to which the parameter template applies to view the status of the parameter template. On the displayed  **Basic Information**  page, if the status of the parameter template is  **Pending reboot**, you must reboot the DB instance for the reset to take effect.  
 

@@ -123,7 +123,7 @@ You need to perform operations in [Figure 1](#f28bbf91c2c3e4b9c875c6375167fc7b1)
 
     You can query information about the private zone you created on the **Private Zones** page.
 
-    > ![](public_sys-resources/icon-note.gif) **NOTE:** 
+    > ![](/images/icon-note.gif) **NOTE:** 
 
     > Click the zone name to query detailed zone information. The system has created record sets of the SOA type and NS type in the zone.
 

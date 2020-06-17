@@ -6,7 +6,7 @@ Read replicas are used to enhance the read capabilities of primary DB instances 
 
 After DB instances are created, you can  create read replicas  for them.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >A maximum of five read replicas can be created for a primary DB instance.  
 
 ## Procedure<a name="s738501c07aa4426eaeea764d9297251d"></a>

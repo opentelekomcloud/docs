@@ -4,7 +4,7 @@
 
 To use the DNS service to manage domain names, you need to configure the service on the management console.
 
-> ![](public_sys-resources/icon-note.gif) **NOTE:** 
+> ![](/images/icon-note.gif) **NOTE:** 
 
 > The ap-sg region does not support public zones.
 
@@ -117,7 +117,7 @@ You need to perform operations in [Figure 1](#fe4910c96160749349abf31cb88cfe52b)
 
     You can query information about the zone you created on the **Public Zones** page.
 
-    > ![](public_sys-resources/icon-note.gif) **NOTE:** 
+    > ![](/images/icon-note.gif) **NOTE:** 
 
     > Click the zone name to query detailed zone information. The system has created record sets of the SOA type and NS type in the zone.
 
@@ -206,7 +206,7 @@ To resolve the domain name on the Internet, you need to change your domain name 
 
 After you create a zone, the system automatically creates an NS record set, which specifies the DNS servers used to resolve public network domain names.
 
-> ![](public_sys-resources/icon-note.gif) **NOTE:** 
+> ![](/images/icon-note.gif) **NOTE:** 
 
 > Generally, the update takes effect within 48 hours, but the time may vary depending on domain name registrars.
 

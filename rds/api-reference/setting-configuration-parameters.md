@@ -4,7 +4,7 @@
 
 This API is used to set DB instance parameters.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >A parameter template \(with same name as the DB instance\) will be created if needed.  
 
 ## URI<a name="section28961517113719"></a>

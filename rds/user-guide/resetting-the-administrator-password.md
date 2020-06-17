@@ -25,7 +25,7 @@ You cannot reset the administrator password under the following circumstances:
 4.  On the  **Instance Management**  page, locate the target DB instance and choose  **More**  \>  **Reset Password**  in the  **Operation**  column.
 5.  Enter a new password and confirm the password.
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+    >![](/images/icon-notice.gif) **NOTICE:**   
     >Keep this password secure. The system cannot retrieve it.  
 
     The new password must consist of 8 to 32 characters and contain at least three of the following: uppercase letters, lowercase letters, digits, and special characters \(\~!@\#%^\*-\_+?,\). Enter a strong password and periodically change it to improve security, preventing security risks such as brute force cracking.
@@ -43,7 +43,7 @@ You cannot reset the administrator password under the following circumstances:
 5.  In the  **DB Information**  area on the  **Basic Information**  page, click  **Reset Password**  in the  **Administrator**  field.
 6.  Enter a new password and confirm the password.
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+    >![](/images/icon-notice.gif) **NOTICE:**   
     >Keep this password secure. The system cannot retrieve it.  
 
     The new password must consist of 8 to 32 characters and contain at least three of the following: uppercase letters, lowercase letters, digits, and special characters \(\~!@\#%^\*-\_+?,\). Enter a strong password and periodically change it to improve security, preventing security risks such as brute force cracking.

@@ -219,7 +219,7 @@ The DB instance class and storage space you need depends on your processing powe
 
     After the configuration, click  **Price Calculator**  to view the RDS configuration fee.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >The performance of your DB instance depends on its configurations. Hardware configuration items include the instance specifications, storage type, and storage space.  
 
 6.  Confirm the specifications.

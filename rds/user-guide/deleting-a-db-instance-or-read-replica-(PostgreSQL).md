@@ -9,7 +9,7 @@ DB instance deletion has the following constraints:
 -   DB instances cannot be deleted when operations are being performed on them. They can be deleted only after the operations are completed.
 -   If you delete a DB instance, its automated backups are also deleted and you are no longer charged for them. Manual backups are still retained and will incur additional costs.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >-   If you delete a primary DB instance, its read replicas are also deleted automatically. Exercise caution when performing this operation.  
 >-   Deleted DB instances cannot be recovered. Exercise caution when performing this operation. If you want to retain data, complete a manual backup before deleting the DB instance.  
 

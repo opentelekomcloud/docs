@@ -1,8 +1,8 @@
 # Restoring Data from SQL Server Backup Files<a name="rds_05_0044"></a>
 
-You can download backup files by referring to section  [Downloading a Backup File](downloading-a-backup-file-105.md)  and restore data from them. You can use SQL Server Management Studio \(SSMS\) to connect to a self-built ECS database or local database to restore data. The following uses SSMS as an example to show how to restore data from a backup file on a local database.
+You can download backup files by referring to section  [Downloading a Backup File](downloading-a-backup-file.md)  and restore data from them. You can use SQL Server Management Studio \(SSMS\) to connect to a self-built ECS database or local database to restore data. The following uses SSMS as an example to show how to restore data from a backup file on a local database.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   Before restoring data, ensure that the ECS has been installed with the SQL Server database service running a same or later version than the SQL Server databases.  
 
 ## Procedure<a name="section1851238181713"></a>

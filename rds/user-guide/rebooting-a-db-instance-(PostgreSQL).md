@@ -9,7 +9,7 @@ To reboot a DB instance, the following requirements must be met:
 -   The status of the DB instance is  **Available**.
 -   No backup is being created or no read replica is being created.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >-   You can reboot a DB instance only when its status is  **Available**. Your database may be unavailable in some cases such as data is being backed up or some modifications are being made.  
 >-   Rebooting DB instances will reboot database services. Rebooting a DB instance will cause service interruption. During this period, the DB instance status is  **Rebooting**.  
 >-   This DB instance will not be available when it is being rebooted. After the reboot completes, the cached memory will be automatically cleared. The DB instance needs to be warmed up to prevent congestion during peak hours.  

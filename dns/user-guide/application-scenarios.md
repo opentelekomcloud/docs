@@ -4,7 +4,7 @@
 
     To enable an Elastic Cloud Server \(ECS\) accessible to Internet users, you must register a domain name with a domain name registrar, configure a public zone in the DNS service, and change the registrar's NS addresses to those provided by the public zone so that the DNS service can resolve the domain name.
 
-    > ![](public_sys-resources/icon-note.gif) **NOTE:** 
+    > ![](/images/icon-note.gif) **NOTE:** 
 
     > The ap-sg region does not support public zones.
 

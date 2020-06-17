@@ -11,12 +11,12 @@ MySQL provides client installation packages for different OSs on its official we
     **Figure  1**  Procedure<a name="f40223ae411b74068bbe28b35e2c4ba3e"></a>  
     ![](figures/procedure.png "procedure")
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >Click  **[No thanks, just start my download.](http://dev.mysql.com/get/Downloads/MySQL-5.6/MySQL-client-5.6.31-1.el6.x86_64.rpm)**  to download the installation package.  
 
 2.  Upload the installation package to the ECS.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >When you create an ECS, select an OS, such as Red Hat 6.6, and bind an EIP to it. Then, upload the installation package to the ECS using a remote tool, and use PuTTY to connect to the ECS.  
 
 3.  Run the following command to install the MySQL client:
@@ -25,7 +25,7 @@ MySQL provides client installation packages for different OSs on its official we
     sudo rpm -ivh MySQL-client-5.6.31-1.el6.x86_64.rpm
     ```
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >-   If any conflicts occur during the installation, add the  **replacefiles**  parameter to the command and try to install the client again. Example:  
     >    ```  
     >    rpm -ivh --replacefiles MySQL-client-5.6.31-1.el6.x86_64.rpm  

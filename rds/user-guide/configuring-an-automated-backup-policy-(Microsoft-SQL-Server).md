@@ -27,7 +27,7 @@ The default automated backup policy is as follows:
 
 ## Disabling the Automated Backup Policy<a name="en-us_topic_0192954006_section6125375132158"></a>
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >Automated full and incremental backups are created based on the automated backup policy. Once the automated backup policy is disabled, automated backups are no longer created and all incremental backups are deleted immediately. Operations related to the incremental backups, including downloads, replications and restorations may fail.  
 
 1.  Log in to the management console.

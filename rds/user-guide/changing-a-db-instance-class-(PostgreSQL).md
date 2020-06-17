@@ -4,7 +4,7 @@
 
 You can change the  CPU or memory  \(instance class\) of a DB instance as required. If the status of a DB instance changes from  **Changing instance class**  to  **Available**, the change is successful.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   A DB instance cannot be deleted while its instance class is being changed.  
 
 ## Procedure<a name="en-us_topic_0134328161_section4298797218435"></a>
@@ -21,7 +21,7 @@ You can change the  CPU or memory  \(instance class\) of a DB instance as requir
 
     Changing the DB instance class takes 5–15 minutes. During this period, the status of the DB instance on the  **Instance Management**  page is  **Changing instance class**. After a few minutes, click the DB instance and view the instance class on the displayed  **Basic Information**  page to check that the change is successful.
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+    >![](/images/icon-notice.gif) **NOTICE:**   
     >After the CPU or memory of a PostgreSQL DB instance is changed, the system will change the values of the following parameters accordingly:  
     >-   **shared\_buffers**  
     >-   **max\_connections**  

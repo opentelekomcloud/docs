@@ -13,7 +13,7 @@ Error logs contain warning- and error-level logs generated during the database r
 5.  In the navigation pane on the left, choose  **Logs**. On the  **Error Logs**  page, view details about error logs.
     -   You can select a log level in the upper right corner to view logs of the selected level.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
+        >![](/images/icon-note.gif) **NOTE:**   
         >For MySQL DB instances, the following levels of logs are displayed:  
         >-   ALL  
         >-   ERROR  

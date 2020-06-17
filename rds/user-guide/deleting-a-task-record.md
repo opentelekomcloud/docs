@@ -2,7 +2,7 @@
 
 You can delete the task records no longer need to be displayed. The deletion only deletes the task records, and does not delete the DB instances or terminate the tasks that are being executed.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >Deleted task records cannot be recovered. Exercise caution when performing this operation.  
 
 ## Procedure<a name="section0211819123318"></a>

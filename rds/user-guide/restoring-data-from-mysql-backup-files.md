@@ -4,7 +4,7 @@
 
 You can download backup files by referring to  [Downloading a Backup File](downloading-a-backup-file.md)  and restore data from them. This section uses CentOS 7.4 64bit and MySQL 5.6 as examples to describe how to restore data.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >Backup data cannot be restored to local databases that run the Windows operating system.  
 
 ## Prerequisites<a name="section10458182204011"></a>
@@ -27,7 +27,7 @@ During data restoration, run the following command to view the restoration proce
 
 2.  Download the XtraBackup software and upload it to the ECS for installation.
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+    >![](/images/icon-notice.gif) **NOTICE:**   
     >Ensure that the XtraBackup version is 2.4.9 or later. Otherwise, an error will be reported in subsequent steps.  
 
     Download  **percona-xtrabackup-24-2.4.9-1.el7.x86\_64.rpm**  from the  [website](https://www.percona.com/downloads/Percona-XtraBackup-2.4/LATEST/)  and upload it to the ECS.
@@ -56,7 +56,7 @@ During data restoration, run the following command to view the restoration proce
 
         **service **_mysql_** stop**
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
+        >![](/images/icon-note.gif) **NOTE:**   
         >For MySQL 5.7, run the following command to stop MySQL database services:  
         >**/bin/systemctl stop  mysqld.service**  
 
@@ -80,7 +80,7 @@ During data restoration, run the following command to view the restoration proce
 
     **service**_ mysql_ **start**
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >For MySQL 5.7, run the following command to start the database:  
     >**/bin/systemctl start  mysqld.service**  
 

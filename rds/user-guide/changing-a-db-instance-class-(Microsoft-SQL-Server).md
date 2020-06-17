@@ -4,7 +4,7 @@
 
 You can change the  CPU or memory  \(instance class\) of a DB instance as required. If the status of a DB instance changes from  **Changing instance class**  to  **Available**, the change is successful.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   A DB instance cannot be deleted while its instance class is being changed.  
 
 ## Procedure<a name="section1178211784615"></a>
@@ -21,7 +21,7 @@ You can change the  CPU or memory  \(instance class\) of a DB instance as requir
 
     Changing the DB instance class takes 5–15 minutes. During this period, the status of the DB instance on the  **Instance Management**  page is  **Changing instance class**. After a few minutes, click the DB instance and view the instance class on the displayed  **Basic Information**  page to check that the change is successful.
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+    >![](/images/icon-notice.gif) **NOTICE:**   
     >After you change a Microsoft SQL Server DB instance class, the value of  **max server memory**  will also be changed accordingly. You are advised to set it to a size equal to the memory size minus 520 MB. For example, if there is 1 GB of memory \(1024 MB\), you are advised to set  **max server memory**  to 504 MB \(1024 MB – 520 MB\).  
 
 

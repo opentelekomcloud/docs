@@ -4,7 +4,7 @@
 
 This section describes how to delete manual backups to release storage space.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >Deleted manual backups cannot be recovered. Exercise caution when performing this operation.  
 
 ## Procedure<a name="s84d6bef8cb664c9480d4c8fbec48744f"></a>

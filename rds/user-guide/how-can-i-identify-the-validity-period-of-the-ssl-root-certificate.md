@@ -12,7 +12,7 @@ Update the root certificate to the latest version before it expires:
 2.  Reboot the DB instance for the new certificate to take effect.
 3.  Connect to the DB instance using the new certificate or certificate bundle.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >Replace the certificate to be expired with an officially issued certificate to improve system security.  
 
 

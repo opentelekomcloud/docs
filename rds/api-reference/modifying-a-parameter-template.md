@@ -62,7 +62,7 @@ This API is used to modify a specified parameter template, including the name, d
 
 -   Parameter description
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+    >![](/images/icon-notice.gif) **NOTICE:**   
     >At least one parameter in the request body must be specified. Otherwise, the request fails to be delivered.  
 
     **Table  2**  Parameter description

@@ -2,7 +2,7 @@
 
 You can view the detailed progress and result of the task on the  **Task Center**  page.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >You can view and manage the following tasks:  
 >-   Creating DB instances  
 >-   Rebooting DB instances  

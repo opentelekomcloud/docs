@@ -114,7 +114,7 @@ Create a private zone if a new domain name is to be managed using the DNS servic
 
     You can query information about the private zone you created on the **Private Zones** page.
 
-    > ![](public_sys-resources/icon-note.gif) **NOTE:** 
+    > ![](/images/icon-note.gif) **NOTE:** 
 
     > Click the zone name to query detailed zone information. The system has created record sets of the SOA type and NS type in the zone.
 
@@ -194,7 +194,7 @@ You can associate a new VPC with the private zone on the DNS console.
 
 If multiple VPCs are associated with a private zone, you can disassociate one of them on the console.
 
-> ![](public_sys-resources/icon-note.gif) **NOTE:** 
+> ![](/images/icon-note.gif) **NOTE:** 
 
 > If only one VPC is associated, you cannot disassociate it from the private zone. You can choose to delete the private zone.
 
@@ -223,7 +223,7 @@ If multiple VPCs are associated with a private zone, you can disassociate one of
 
 A private zone can be deleted if you do not need to manage it using the DNS service. After the deletion, domain names included in this zone cannot be resolved.
 
-> ![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+> ![](/images/icon-notice.gif) **NOTICE:** 
 
 > Before deleting a private zone, ensure that all record sets in this zone have been backed up.
 

@@ -16,7 +16,7 @@
 
         In the displayed dialog box, configure required information and click  **OK**.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
+        >![](/images/icon-note.gif) **NOTE:**   
         >-   The template name must consist of 1 to 64 characters. It can contain only uppercase letters, lowercase letters, digits, hyphens \(-\), underscores \(\_\), and periods \(.\).  
         >-   The description consists of a maximum of 256 characters and cannot contain the carriage return character or the following special characters: \>!<"&'=  
 
@@ -26,7 +26,7 @@
 
         The parameter template information \(parameter names, values, and descriptions\) of a DB instance is exported to a CSV file. In the displayed dialog box, enter the file name and click  **OK**.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
+        >![](/images/icon-note.gif) **NOTE:**   
         >The file name must start with a letter and consist of 4 to 64 characters. It can contain only letters, digits, hyphens \(-\), and underscores \(\_\).  
 
 

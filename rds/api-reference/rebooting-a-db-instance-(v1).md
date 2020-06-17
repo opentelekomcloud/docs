@@ -4,7 +4,7 @@
 
 This API is used to reboot a DB instance.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >The RDS DB instance will be unavailable during the reboot process. Exercise caution when performing this operation.  
 
 ## URI<a name="section51263775102048"></a>

@@ -6,7 +6,7 @@ PTR records are used to prove the credibility of IP addresses and domain names o
 
 By creating a PTR record, you can map an EIP of another cloud service, for example, ECS, to a domain name.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >After an ECS is successfully created and assigned with an EIP, a PTR record will be generated for the EIP by default in format of  **ecs-xx-xx-xx-xx.compute.xxx.com**, where  **xx-xx-xx-xx**  is the EIP and  **xxx**  the domain name provided by the cloud platform.  
 >You can use one of the following methods to query the default PTR record of an EIP:  
 >-   ping -a  _EIP_  
@@ -128,7 +128,7 @@ Currently, you can configure a PTR record only for IP addresses with a 32-bit su
     **Figure  2**  PTR Records<a name="fig2608187413419"></a>  
     ![](figures/ptr-records.png "ptr-records")
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >If the domain name, for example, example.com, is mapped to multiple EIPs, you need to create a PTR record for each EIP.  
 
 

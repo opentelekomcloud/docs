@@ -13,7 +13,7 @@ Error logs contain logs generated during the database running. These can help yo
 5.  In the navigation pane on the left, choose  **Logs**. On the  **Error Logs**  page, view details about error logs.
     -   You can select a log level in the upper right corner of the log list.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
+        >![](/images/icon-note.gif) **NOTE:**   
         >For PostgreSQL DB instances, the following levels of logs are displayed:  
         >-   ERROR  
         >-   FATAL  

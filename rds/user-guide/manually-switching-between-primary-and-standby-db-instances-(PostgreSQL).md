@@ -19,7 +19,7 @@ If you choose to create primary/standby DB instances, RDS will create a primary 
 
     Alternatively, click  ![](figures/switch.PNG)  in the DB instance topology on the  **Basic Information**  page to perform a primary/standby switchover.
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+    >![](/images/icon-notice.gif) **NOTICE:**   
     >Primary/standby switchover may cause service interruption for some seconds or minutes \(determined by the replication delay\). If the primary/standby synchronization delay is too long, a small amount of data may get lost. After the switchover completes, the DB instance needs to be warmed up to prevent congestion during peak hours.  
 
 6.  In the  **Switch Primary/Standby Instances**  dialog box, click  **Yes**  to switch between the primary and standby DB instances.

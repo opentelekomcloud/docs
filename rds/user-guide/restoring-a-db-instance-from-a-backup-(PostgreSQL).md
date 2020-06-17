@@ -24,13 +24,13 @@ This section describes how to use an automated or manual backup to restore a DB 
 
     -   Restore to Original
 
-        >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+        >![](/images/icon-notice.gif) **NOTICE:**   
         >-   If the DB instance for which the backup is created has been deleted, data cannot be restored to the original DB instance.  
         >-   Restoring to the original DB instance will overwrite all existing data and the DB instance will be unavailable during the restoration process.  
 
     -   Restore to Existing
 
-        >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+        >![](/images/icon-notice.gif) **NOTICE:**   
         >-   If the target existing DB instance has been deleted, data cannot be restored to it.  
         >-   Restoring to an existing DB instance will overwrite data on it and cause the existing DB instance to be unavailable.  
         >-   To restore backup data to an existing DB instance, the selected DB instance must be in the same VPC as the original DB instance and must have the same DB engine and the same or later version than the original DB instance.  

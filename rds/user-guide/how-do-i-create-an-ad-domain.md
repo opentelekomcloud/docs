@@ -6,7 +6,7 @@ Active Directory, which is short for AD, is a directory service on Windows Stand
 
 This section describes how to use Windows Server 2012 R2 to create a domain server.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >1.  When you configure an AD domain information during the DB instance creation, do not configure or disable Group Policy Object \(GPO\) for your domain controller server. Otherwise, the DB instance creation will fail.  
 >2.  If GPO is required, you need to create an ECS and set up a new domain controller server with GPO disabled. Then, establish trust between your domain controller server and the new domain controller server. For details, contact customer service.  
 

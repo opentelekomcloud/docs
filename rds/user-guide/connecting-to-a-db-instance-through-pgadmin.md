@@ -2,7 +2,7 @@
 
 You can use the  pgAdmin  client to  connect to an RDS DB instance.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >-   The pgAdmin client only supports access through EIPs.  
 >-   The pgAdmin version must be 4 or later.  
 

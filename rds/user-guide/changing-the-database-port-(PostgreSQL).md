@@ -12,7 +12,7 @@ This section describes how to  change the database port of a primary DB instance
 4.  On the  **Instance Management**  page, click the target DB instance or click  ![](figures/expand.PNG)  first and then click the target read replica.
 5.  In the  **Connection Information**  area on the  **Basic Information**  page, click  ![](figures/port.png)  in the  **Database Port**  field.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >The PostgreSQL database port ranges from 2100 to 9500.  
 
     -   To submit the change, click  ![](figures/port.png).

@@ -2,9 +2,9 @@
 BMS 1D Tag Management
 =====================
 
-.. toctree::
-   :maxdepth: 2
 
+.. toctree::
+   :maxdepth: 1
 
    querying-bms-tags-(native-openstack-api).md
    adding-tags-to-a-bms-(native-openstack-api).md

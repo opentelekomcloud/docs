@@ -58,7 +58,7 @@ RDS provides the  PostgreSQL tablespace  management solution based on user  **ro
 
     If the creation fails, view error logs of the DB instance.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >To ensure performance, a maximum of 20 tablespaces can be created.  
 
 

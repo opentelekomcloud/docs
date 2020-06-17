@@ -4,7 +4,7 @@
 
 You can delete a custom parameter template that is no longer in use.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >-   Deleted parameter templates cannot be recovered. Exercise caution when performing this operation.  
 >-   Default parameter templates cannot be deleted.  
 

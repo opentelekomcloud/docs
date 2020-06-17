@@ -35,12 +35,12 @@ If you restore backup data to a new DB instance:
 
         -   Restore to Original
 
-            >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+            >![](/images/icon-notice.gif) **NOTICE:**   
             >-   Restoring to the original DB instance will overwrite data on it and cause the original DB instance to be unavailable during the restoration.  
 
         -   Restore to Existing
 
-            >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+            >![](/images/icon-notice.gif) **NOTICE:**   
             >-   Restoring to an existing DB instance will overwrite data on it and cause the existing DB instance to be unavailable.  
             >-   To restore backup data to an existing DB instance, the selected DB instance must be in the same VPC as the original DB instance and must have the same DB engine and the same or later version than the original DB instance.  
             >-   Ensure that the storage space of the selected DB instance is greater than or equal to the storage space of the original DB instance. Otherwise, data will not be restored.  
@@ -50,7 +50,7 @@ If you restore backup data to a new DB instance:
 
     3.  Select the databases to be restored. You can rename these databases as required. If you do not enter a new name, the original database name will be used.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
+        >![](/images/icon-note.gif) **NOTE:**   
         >-   The new database names must be different from each other and must be different from the original database names.  
         >-   The new database names cannot contain the following fields \(case-insensitive\): rdsadmin, master, msdb, tempdb, model, and resource.  
         >-   Each database name consists of 1 to 64 characters. Only letters, digits, hyphens \(-\), and underscores \(\_\) are allowed.  

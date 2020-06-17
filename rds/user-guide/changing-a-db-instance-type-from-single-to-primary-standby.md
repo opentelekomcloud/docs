@@ -16,7 +16,7 @@
 
 5.  Select a standby AZ. Other configurations are the same as those of the primary DB instance by default. Confirm the configurations and click  **Submit**.
 6.  After a single DB instance is changed to primary/standby instances, you can view and manage it on the  **Instance Management**  page.
-    -   The DB instance is in the  **Changing type to primary/standby**  status. You can view the progress on the  **Task Center**  page. For details, see section  [Task Center](task-center.md).
+    -   The DB instance is in the  **Changing type to primary/standby**  status. You can view the progress on the  **Task Center**  page. For details, see section  [Task Center](task_center).
     -   In the upper right corner of the DB instance list, click  ![](figures/refresh.png)  to refresh the list. After the DB instance type is changed to primary/standby, the instance status will change to  **Available**  and the instance type will change to  **Primary/Standby**.
 
 

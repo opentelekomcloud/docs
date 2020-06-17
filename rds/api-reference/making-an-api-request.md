@@ -42,7 +42,7 @@ Although a request URI is included in a request header, most programming languag
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >To simplify the URI display in this document, each API is provided only with a resource-path and a request method. The  **URI-scheme**  of all APIs is  **HTTPS**, and the endpoints of all APIs in the same region are identical.  
 
 ## Request Methods<a name="en-us_topic_0113746487_section5296154118345"></a>
@@ -173,7 +173,7 @@ The request body varies between APIs. Some APIs do not require the request body,
 
 In the case of the API used to  [obtain a user token](https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0057845583.html), the request parameters and parameter description can be obtained from the API request. The following provides an example request with a body included. Replace  _**username**_,  _**domainname**_,  **_\*\*\*\*\*\*\*\*_**  \(login password\), and  **_xxxxxxxxxxxxxxxxxx_**  \(project name\) with actual values. You can obtain the values from  [Regions and Endpoints](https://docs.otc.t-systems.com/en-us/endpoint/index.html).
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >The  **scope**  parameter specifies where a token takes effect. You can set  **scope**  to an account or a project under an account. In the following example, the token takes effect only for the resources in a specified project. For more information about this API, see  [Obtaining a User Token](https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0057845583.html).  
 
 ```

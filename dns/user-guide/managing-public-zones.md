@@ -1,6 +1,6 @@
 # Managing Public Zones<a name="en-us_topic_0035467702"></a>
 
-> ![](public_sys-resources/icon-note.gif) **NOTE:** 
+> ![](/images/icon-note.gif) **NOTE:** 
 
 > The ap-sg region does not support public zones.
 
@@ -107,7 +107,7 @@ Create a public zone if a new domain name is to be managed using the DNS service
 
     You can query information about the zone you created on the **Public Zones** page.
 
-    > ![](public_sys-resources/icon-note.gif) **NOTE:** 
+    > ![](/images/icon-note.gif) **NOTE:** 
 
     > Click the zone name to query detailed zone information. The system has created record sets of the SOA type and NS type in the zone.
 
@@ -138,7 +138,7 @@ If the information of your public zone has changed, you can modify its email add
 
 A public zone can be deleted if you do not need to manage it using the DNS service. After the deletion, domain names included in this zone cannot be resolved.
 
-> ![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+> ![](/images/icon-notice.gif) **NOTICE:** 
 
 > Before deleting a public zone, ensure that all record sets in this zone have been backed up.
 

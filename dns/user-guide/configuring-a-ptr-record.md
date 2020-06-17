@@ -8,7 +8,7 @@ When creating a PTR record, you can map an EIP of another cloud service, for exa
 
 This section describes how to configure the reverse domain name resolution.
 
-> ![](public_sys-resources/icon-note.gif) **NOTE:** 
+> ![](/images/icon-note.gif) **NOTE:** 
 
 > The ap-sg region does not support PTR records.
 
@@ -117,7 +117,7 @@ Currently, you can configure a PTR record only for IP addresses with a 32-bit su
     **Figure 2** PTR record<a name="fig2608187413419"></a>
     ![](figures/ptr-record.png "PTR record")
 
-    > ![](public_sys-resources/icon-note.gif) **NOTE:** 
+    > ![](/images/icon-note.gif) **NOTE:** 
 
     > If the domain name, for example, example.com, is mapped to multiple EIPs, you need to create a PTR record for each EIP.
 

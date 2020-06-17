@@ -15,7 +15,7 @@ This section describes how to download a manual backup or an  automated backup  
 
 5.  In the displayed dialog box, select a method to download backup data.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >If the size of the backup data is greater than 400 MB, you are advised to use OBS Browser to download the backup data.  
 
     -   **Use OBS Browser**
@@ -29,7 +29,7 @@ This section describes how to download a manual backup or an  automated backup  
 
             For details on how to configure OBS Browser, see section  [Configuring the System](https://docs.otc.t-systems.com/en-us/usermanual/obs/en-us_topic_0045853630.html)  in the  _Object Storage Service User Guide_.
 
-            >![](public_sys-resources/icon-note.gif) **NOTE:**   
+            >![](/images/icon-note.gif) **NOTE:**   
             >The OBS bucket name displayed in the  **Download Backup File**  pane on the RDS console does not support certificate verification. Therefore, you need to disable OBS Browser certificate verification before adding the external bucket and then enable it after the backup file is downloaded.  
 
         5.  Add an external bucket.

@@ -14,7 +14,7 @@
 10. Click  **Browse**  to change the file type to  **All Files \(\*.\*\)**.
 11. Locate the downloaded root certificate ca.pem file and click  **Open**. Then, click  **Next**.
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+    >![](/images/icon-notice.gif) **NOTICE:**   
     >You must change the file type to  **All Files \(\*.\*\)**  because  **.pem**  is not a standard certificate extension name.  
 
 12. Click  **Next**.

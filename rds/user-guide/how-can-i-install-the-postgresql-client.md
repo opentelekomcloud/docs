@@ -2,7 +2,7 @@
 
 PostgreSQL provides  [client installation packages](https://yum.postgresql.org/)  and the required dynamic shared library packages for different OSs on its official website.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >Ensure that the database client matches the DB engine version of your RDS PostgreSQL DB instances.  
 
 This following uses latest  [PostgreSQL 9.5](https://yum.postgresql.org/9.5/redhat/rhel-6-x86_64/repoview/postgresqldbserver95.group.html)  in Red Hat Linux 6 as an example to describe how to obtain the required installation package and complete the installation.
@@ -25,7 +25,7 @@ This following uses latest  [PostgreSQL 9.5](https://yum.postgresql.org/9.5/redh
 
 3.  Upload the installation and dynamic shared library packages to the ECS.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >When you create an ECS, select an OS, such as Red Hat 6.6, and bind an EIP to it. Then, upload the installation and dynamic shared library packages to the ECS using a remote tool, and use PuTTY to connect to the ECS.  
 
 4.  Run the following command to install the PostgreSQL client:
@@ -34,7 +34,7 @@ This following uses latest  [PostgreSQL 9.5](https://yum.postgresql.org/9.5/redh
     sudo rpm -ivh postgresql95-9.5.7-1PGDG.rhel6.x86_64.rpm postgresql95-libs-9.5.7-1PGDG.rhel6.x86_64.rpm
     ```
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >-   If any conflicts occur during the installation, add the  **replacefiles**  parameter to the command and try to install the client again. Example:  
     >    ```  
     >    rpm -ivh --replacefiles postgresql95-9.5.7-1PGDG.rhel6.x86_64.rpm postgresql95-libs-9.5.7-1PGDG.rhel6.x86_64.rpm  

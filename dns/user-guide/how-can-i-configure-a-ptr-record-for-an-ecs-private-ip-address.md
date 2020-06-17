@@ -6,7 +6,7 @@ On the **PTR Records** page on the DNS console, you can configure PTR records fo
 
 The domain name in a PTR record is specified in the ***x.x.x.x*.in-addr.arpa** format.
 
-> ![](public_sys-resources/icon-note.gif) **NOTE:** 
+> ![](/images/icon-note.gif) **NOTE:** 
 
 > **in-addr.arpa** is the top-level domain for reverse resolution.
 
@@ -115,7 +115,7 @@ The domain name in a PTR record is specified in the ***x.x.x.x*.in-addr.arpa** f
 
     You can query information about the private zone you created on the **Private Zones** page.
 
-    > ![](public_sys-resources/icon-note.gif) **NOTE:** 
+    > ![](/images/icon-note.gif) **NOTE:** 
 
     > Click the zone name to query detailed zone information. The system has created record sets of the SOA type and NS type in the zone.
 

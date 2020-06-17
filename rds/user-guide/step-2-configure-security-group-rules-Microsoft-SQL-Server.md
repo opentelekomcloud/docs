@@ -16,7 +16,7 @@ The default security group rule allows all outgoing data packets. ECSs and RDS D
 -   Too many security group rules will increase the first packet latency. You are advised to create a maximum of 50 rules for each security group.
 -   To access an RDS DB instance from resources outside the security group, you need to configure an  **inbound rule**  for the security group associated with the RDS DB instance.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >If you use  **0.0.0.0/0**, you enable all IP addresses to access RDS DB instances in the security group.  
 
 ## Procedure<a name="en-us_topic_0192964142_en-us_topic_0192953697_s1180e3b90880473c9b18090acab38155"></a>

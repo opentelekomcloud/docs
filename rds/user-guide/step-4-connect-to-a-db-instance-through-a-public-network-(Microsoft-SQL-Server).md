@@ -41,7 +41,7 @@ You can connect to a DB instance through a common connection or an SSL connectio
 
 3.  Click  **Connect**  to connect to the DB instance.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >If the connection fails, ensure that preparations have been correctly made in  [Preparations](#section367520762117)  and try again.  
 
 
@@ -52,7 +52,7 @@ You can connect to a DB instance through a common connection or an SSL connectio
     2.  Upload the root certificate to the ECS to be connected to the DB instance.
     3.  Import the root certificate to the Windows OS on the ECS. For details, see section  [How Can I Import the Root Certificate to the Windows or Linux OS?](how-can-i-import-the-root-certificate-to-the-windows-or-linux-os.md)
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
+        >![](/images/icon-note.gif) **NOTE:**   
         >-   Replace the old certificate before it expires to improve system security.  
         >-   After you bind an EIP to a Microsoft SQL Server DB instance, you must reboot the instance to make the SSL connection work.  
 
@@ -78,7 +78,7 @@ You can connect to a DB instance through a common connection or an SSL connectio
 
 5.  Click  **Connect**  to connect to the DB instance.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >If the connection fails, ensure that preparations have been correctly made in  [Preparations](#section367520762117)  and try again.  
 
 

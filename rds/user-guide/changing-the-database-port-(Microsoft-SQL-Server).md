@@ -12,7 +12,7 @@ This section describes how to  change the database port of a primary DB instance
 4.  On the  **Instance Management**  page, click the target DB instance or click  ![](figures/expand.PNG)  first and then click the target read replica.
 5.  In the  **Connection Information**  area on the  **Basic Information**  page, click  ![](figures/port.png)  in the  **Database Port**  field.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >![](/images/icon-note.gif) **NOTE:**   
     >The Microsoft SQL Server database port is 1433 \(default\) or ranges from 2100 to 9500 \(excluding 5355 and 5985\).   
 
     -   To submit the change, click  ![](figures/port.png).
@@ -20,7 +20,7 @@ This section describes how to  change the database port of a primary DB instance
             1.  If you change the database port of the primary DB instance, that of the standby DB instance will also be changed and both DB instances will be rebooted.
             2.  If you change the database port of a read replica, the change will not affect other DB instances. Only the read replica will reboot.
 
-                >![](public_sys-resources/icon-note.gif) **NOTE:**   
+                >![](/images/icon-note.gif) **NOTE:**   
                 >Currently, RDS for Microsoft SQL Server does not support read replicas.  
 
             3.  This process takes 1-5 minutes.

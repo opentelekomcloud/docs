@@ -4,7 +4,7 @@ You can use database parameter templates to manage the DB engine configuration. 
 
 When you create a DB instance, RDS will automatically allocate a default database parameter template for you, not allowing you to select parameter templates. This default template contains DB engine defaults and RDS system defaults based on the engine, compute class, and allocated storage of the instance. You cannot modify the parameter settings of a default parameter template. You must create your own parameter template to change parameter settings.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >Not all DB engine parameters can be changed in a custom parameter template.  
 
 If you want to use your custom parameter template, you simply create a parameter template and select it when you create a DB instance or apply it to an existing DB instance following the instructions provided in section  [Applying a Parameter Template](applying-a-parameter-template.md).
@@ -16,7 +16,7 @@ The following are the key points you should know when using parameters in a para
 -   When you change a dynamic parameter value in a parameter template and save the change, the change takes effect immediately. When you change a static parameter value in a parameter template and save the change, the change will take effect only after you manually reboot the DB instances to which the parameter template applies.
 -   Improperly setting parameters in a parameter template may have unintended adverse effects, including degraded performance and system instability. Exercise caution when modifying database parameters and you need to back up data before modifying parameters in a parameter template. Before applying parameter template changes to a production DB instance, you should try out these changes on a test DB instance.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >RDS does not share parameter template quotas with DDS.  
 >By default, each user can create a maximum of 100 parameter template for RDS DB instances. All RDS DB engines share the parameter template quota.  
 

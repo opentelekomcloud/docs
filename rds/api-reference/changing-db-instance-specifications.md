@@ -4,7 +4,7 @@
 
 This API is used to change DB instance specifications.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
+>![](/images/icon-notice.gif) **NOTICE:**   
 >Services will be interrupted for 5 to 10 minutes when you change DB instance specifications. Exercise caution when performing this operation.  
 
 ## URI<a name="section28961517113719"></a>

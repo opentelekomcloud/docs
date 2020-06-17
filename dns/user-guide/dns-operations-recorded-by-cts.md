@@ -6,7 +6,7 @@ After you enable CTS, whenever a DNS API is called, the operation is recorded in
 
 [Table 1](#table149110413017) and [Table 2](#table155718451405) list the DNS operations that will be recorded by CTS.
 
-> ![](public_sys-resources/icon-note.gif) **NOTE:** 
+> ![](/images/icon-note.gif) **NOTE:** 
 
 > The DNS service involves resources both at the global and region levels. [Table 1](#table149110413017) lists DNS operations at the global level. Traces of these operations are displayed only in the primary region.
 

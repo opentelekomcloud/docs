@@ -4,7 +4,7 @@
 
 You can modify the description of a parameter template you have created.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >You cannot modify the description of a default parameter template.  
 
 ## **Procedure**<a name="en-us_topic_0063405522_s0b4257cd13504b4e9af5cd8af578de78"></a>

@@ -4,7 +4,7 @@
 
 This section describes how to quickly  create the DB instance with the same configurations as the selected one.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
+>![](/images/icon-note.gif) **NOTE:**   
 >-   You can create DB instances with the same configurations enormous times.  
 >-   This function is unavailable for read replicas.  
 

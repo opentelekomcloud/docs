@@ -1,6 +1,6 @@
 # Managing PTR Records<a name="en-us_topic_0077500015"></a>
 
-> ![](public_sys-resources/icon-note.gif) **NOTE:** 
+> ![](/images/icon-note.gif) **NOTE:** 
 
 > The ap-sg region does not support PTR records.
 
@@ -119,7 +119,7 @@ If you have assigned a new EIP in your public cloud services \(for example, ECS\
     **Figure 2** PTR record<a name="en-us_topic_0040322596_fig2608187413419"></a>
     ![](figures/ptr-record.png "PTR record")
 
-    > ![](public_sys-resources/icon-note.gif) **NOTE:** 
+    > ![](/images/icon-note.gif) **NOTE:** 
 
     > If the domain name, for example, example.com, is mapped to multiple EIPs, you need to create a PTR record for each EIP.
 

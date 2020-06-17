@@ -191,7 +191,7 @@ The DNS service supports multiple types of record sets. Each record set type app
 
     -   [Table 4](#table51864159122254) lists the parameters required for adding a record set of the NS type.
 
-        > ![](public_sys-resources/icon-note.gif) **NOTE:** 
+        > ![](/images/icon-note.gif) **NOTE:** 
 
         > You can create NS record sets only in public zones.
 
@@ -494,7 +494,7 @@ The DNS service supports multiple types of record sets. Each record set type app
 
     -   [Table 9](#table676063732817) lists the parameters required for adding a record set of the CAA type.
 
-        > ![](public_sys-resources/icon-note.gif) **NOTE:** 
+        > ![](/images/icon-note.gif) **NOTE:** 
 
         > You can create CAA record sets only in public zones.
 
@@ -565,7 +565,7 @@ The DNS service supports multiple types of record sets. Each record set type app
 
     -   [Table 10](#table6260239895544) lists the parameters required for adding a record set of the PTR type.
 
-        > ![](public_sys-resources/icon-note.gif) **NOTE:** 
+        > ![](/images/icon-note.gif) **NOTE:** 
 
         > PTR records sets take effect only in a private zone whose top-level domain name is **in-addr.arpa**. For details about how to add a PTR record in a public zone, see section [Managing PTR Records](managing-ptr-records.md).
 
