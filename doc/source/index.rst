@@ -16,4 +16,3 @@ OTC is cool and has following services:
    dc/index
    iam/index
    vpn/index
-

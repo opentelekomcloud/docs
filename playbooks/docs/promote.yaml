@@ -1,0 +1,27 @@
+- hosts: all
+  tasks:
+    - name: Inspect sphinx build directory
+      find:
+        file_type: any
+        follow: true
+        paths: "{{ zuul.project.src_dir }}/doc/build/html"
+      register: sphinx_dir
+
+    - name: Parse sphinx build directory
+      set_fact:
+        sphinx_dir: "{{ sphinx_dir.files | map(attribute='path') | map('regex_replace', '^.*/(.*)$', '\\1') | list }}"
+
+    - name: Create SSH private key tempfile
+      tempfile:
+        state: file
+      register: ssh_private_key_tmp
+
+    - name: Create SSH private key from secret
+      copy:
+        content: "{{  hc2.ssh_private_key }}"
+        dest: "{{ ssh_private_key_tmp.path }}"
+        mode: 0600
+
+    - name: Push data to web server
+      command:
+        cmd: "rsync -av --delete -e 'ssh -i {{ ssh_private_key_tmp.path }} -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no' {{ ansible_user_dir }}/{{ zuul.project.src_dir }}/doc/build/html/ {{ hc2.ssh_username }}@{{ hc2.fqdn }}:/mnt/sfs/hc2"

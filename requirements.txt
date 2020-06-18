@@ -1,0 +1,4 @@
+Sphinx>=3.0.1 # BSD
+otcdocstheme # Apache-2.0
+recommonmark
+os-api-ref
