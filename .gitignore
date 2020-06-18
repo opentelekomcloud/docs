@@ -1,0 +1,8 @@
+# Built stuff
+doc/build
+# tox
+.tox/
+
+# Personal editors and OS files
+.DS_Store
+**/.DS_Store
