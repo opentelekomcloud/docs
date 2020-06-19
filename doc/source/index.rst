@@ -13,6 +13,8 @@ OTC is cool and has following services:
    cce/index
    ces/index
    csbs/index
+   css/index
+   cts/index
    dc/index
    iam/index
    vpn/index
