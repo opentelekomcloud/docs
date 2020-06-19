@@ -11,6 +11,8 @@ OTC is cool and has following services:
    as/index
    bms/index
    cce/index
+   ces/index
+   csbs/index
    dc/index
    iam/index
    vpn/index
