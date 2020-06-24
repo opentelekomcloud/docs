@@ -16,5 +16,7 @@ OTC is cool and has following services:
    css/index
    cts/index
    dc/index
+   dcs/index
+   dds/index
    iam/index
    vpn/index
