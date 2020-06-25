@@ -21,5 +21,8 @@ OTC is cool and has following services:
    deh/index
    dis/index
    iam/index
+   rts/index
+   sdrs/index
+   sfs/index
    vpn/index
 
