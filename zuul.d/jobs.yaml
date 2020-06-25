@@ -1,0 +1,20 @@
+- job:
+    name: promote-hc-docs
+    parent: tox-docs
+    branches: build
+    post-run:
+      playbooks/docs/promote.yaml
+    secrets:
+      - hc2
+
+- project:
+    merge-mode: squash-merge
+    check:
+      jobs:
+        - tox-docs
+    gate:
+      jobs:
+        - tox-docs
+    promote:
+      jobs:
+        - promote-hc-docs
