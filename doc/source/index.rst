@@ -25,4 +25,3 @@ OTC is cool and has following services:
    swr/index
    tms/index
    vpn/index
-
