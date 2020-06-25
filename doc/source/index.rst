@@ -24,6 +24,8 @@ OTC is cool and has following services:
    dns/index
    dws/index
    ecs/index
+   eip/index
+   elb/index
    iam/index
    vpn/index
 
