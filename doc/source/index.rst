@@ -18,6 +18,8 @@ OTC is cool and has following services:
    dc/index
    dcs/index
    dds/index
+   deh/index
+   dis/index
    iam/index
    vpn/index
 
