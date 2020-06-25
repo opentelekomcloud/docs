@@ -20,6 +20,8 @@ OTC is cool and has following services:
    dds/index
    deh/index
    dis/index
+   evs/index
+   ims/index
    iam/index
    vpn/index
 
