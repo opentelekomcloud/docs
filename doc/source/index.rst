@@ -25,4 +25,3 @@ OTC is cool and has following services:
    vpc/index
    vpn/index
    waf/index
-

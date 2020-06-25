@@ -2,10 +2,6 @@
 Cloud Eye API Reference
 ========================
 
-.. toctree::
-   :maxdepth: 1
-
-
 API Usage Guidelines
 ======================
 
