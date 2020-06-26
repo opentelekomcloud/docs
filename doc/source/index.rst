@@ -21,6 +21,8 @@ OTC is cool and has following services:
    deh/index
    dis/index
    iam/index
+   mrs/index
+   nat/index
    obs/index
    rds/index
    rts/index
