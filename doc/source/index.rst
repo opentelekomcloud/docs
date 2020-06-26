@@ -20,6 +20,12 @@ OTC is cool and has following services:
    dds/index
    deh/index
    dis/index
+   dms/index
+   dns/index
+   dws/index
+   ecs/index
+   eip/index
+   elb/index
    evs/index
    ims/index
    iam/index
