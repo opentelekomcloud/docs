@@ -26,6 +26,23 @@ OTC is cool and has following services:
    ecs/index
    eip/index
    elb/index
+   evs/index
+   ims/index
    iam/index
+   kms/index
+   lts/index
+   mrs/index
+   nat/index
+   obs/index
+   rds/index
+   rts/index
+   sdrs/index
+   sfs/index
+   smn/index
+   swr/index
+   tms/index
+   vbs/index
+   vpc/index
    vpn/index
-
+   waf/index
+   
