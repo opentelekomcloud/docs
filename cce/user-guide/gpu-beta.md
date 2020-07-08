@@ -30,7 +30,7 @@ gpu-beta is a device management add-on that supports GPUs in containers. It supp
 
 4.  Obtain the driver link in either of the following ways:
     -   Method 1: As shown in  [Figure 3](#fig5901194614534), find  _url=/tesla/396.37/NVIDIA-Linux-x86\_64-396.37.run_  in the browser address box. Then, supplement it to obtain the driver link  [https://us.download.nvidia.com/tesla/396.37/NVIDIA-Linux-x86\_64-396.37.run](https://us.download.nvidia.com/tesla/396.37/NVIDIA-Linux-x86_64-396.37.run). By using this method, you must bind an EIP to each GPU node.
-    -   Method 2: As shown in  [Figure 3](#fig5901194614534), click  **AGREE & DOWNLOAD**  to download the driver. Then, upload the driver to OBS and record the OBS URL. By using this method, you do not need to bind an EIP to GPU nodes.
+    -   Method 2: As shown in  [Figure 3](#fig5901194614534), click  **AGREE & DOWNLOAD**  to download the driver. Then, upload the driver to OBS and record the OBS URL. By using this method, you do not need to bind an EIP to GPU nodes. However, you must ensure that the policy of the OBS bucket is  **Public Read**. For details about how to upload the driver, see  [Uploading a File](https://docs.otc.t-systems.com/en-us/usermanual/obs/obs_03_0307.html).
 
         **Figure  3**  Obtaining the link<a name="fig5901194614534"></a>  
         ![](figures/obtaining-the-link.png "obtaining-the-link")

@@ -55,7 +55,7 @@ After a node is created, some fixed labels exist and cannot be deleted. For deta
 <tr id="row17411162365318"><td class="cellrowborder" valign="top" width="34%" headers="mcps1.2.3.1.1 "><p id="p8411102345311"><a name="p8411102345311"></a><a name="p8411102345311"></a>os.name</p>
 </td>
 <td class="cellrowborder" valign="top" width="66%" headers="mcps1.2.3.1.2 "><p id="p7411112315537"><a name="p7411112315537"></a><a name="p7411112315537"></a>Indicates the operating system name of a node.</p>
-<p id="p191918573565"><a name="p191918573565"></a><a name="p191918573565"></a>For example, <strong id="b842352706145337"><a name="b842352706145337"></a><a name="b842352706145337"></a>EulerOS_2.0_SP5</strong> indicates the version of Euler 2.5.</p>
+<p id="p191918573565"><a name="p191918573565"></a><a name="p191918573565"></a>For example, <strong id="b842352706145337"><a name="b842352706145337"></a><a name="b842352706145337"></a>EulerOS_2.0_SP5</strong> indicates the version of EulerOS 2.5.</p>
 </td>
 </tr>
 <tr id="row1041115238531"><td class="cellrowborder" valign="top" width="34%" headers="mcps1.2.3.1.1 "><p id="p2411323135319"><a name="p2411323135319"></a><a name="p2411323135319"></a>os.version</p>

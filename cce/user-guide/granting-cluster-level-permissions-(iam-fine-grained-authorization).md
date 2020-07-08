@@ -22,7 +22,7 @@ User groups facilitate centralized user management and streamlined permissions m
 
 To create a user group and grant it permissions, perform the following steps:
 
-**Figure  1**  Process for granting cluster-level permissions \(fine-grained policies\)<a name="fig2010044274814"></a>  
+**Figure  1**  Process for granting cluster-level permissions \(fine-grained policies\)<a name="fig96308271210"></a>  
 ![](figures/process-for-granting-cluster-level-permissions-(fine-grained-policies).png "process-for-granting-cluster-level-permissions-(fine-grained-policies)")
 
 ## Step 1: Create a User Group and Grant Permissions<a name="section1553217101617"></a>
@@ -32,13 +32,13 @@ Create a user group on the IAM console, and grant the  **CCE Viewer**  role to t
 1.  Log in to the CCE console. In the navigation pane, choose  **Permissions Management**.
 2.  Click the  **Cluster-Level Permissions**  tab and then  **Create User Group**.
 
-    **Figure  2**  Creating a user group<a name="fig18991193211471"></a>  
+    **Figure  2**  Creating a user group<a name="fig823713186204"></a>  
     ![](figures/creating-a-user-group.png "creating-a-user-group")
 
 3.  Enter the user group name and optimally group description. Then, click  **OK**. The name  **Developers**  is used as an example.
 
     **Figure  3**  Creating a user group<a name="fig5639129134912"></a>  
-    ![](figures/creating-a-user-group-2.png "creating-a-user-group-2")
+    ![](figures/creating-a-user-group-13.png "creating-a-user-group-13")
 
     The user group is then displayed in the user group list.
 
@@ -53,6 +53,10 @@ Create a user group on the IAM console, and grant the  **CCE Viewer**  role to t
     ![](figures/assigning-permissions-to-the-user-group.png "assigning-permissions-to-the-user-group")
 
 5.  In the  **Attach Policy**  dialog box, search for and select  **CCE Viewer**.
+
+    **Figure  6**  Modifying policies<a name="fig15517914131210"></a>  
+    ![](figures/modifying-policies.png "modifying-policies")
+
 6.  Click  **OK**.
 
 ## Step 2: Create an IAM User and Add It to the Group<a name="section1535210160"></a>
@@ -62,21 +66,21 @@ IAM users can be created for employees or applications of an enterprise. Each IA
 1.  Log in to the IAM console. In the navigation pane, choose  **Users**. Then, click  **Create User**.
 2.  Set user information.
 
-    **Figure  6**  Creating a user<a name="fig7931743195710"></a>  
+    **Figure  7**  Creating a user<a name="fig7931743195710"></a>  
     ![](figures/creating-a-user.png "creating-a-user")
 
-    -   **Username**: Used for logging in to the public cloud. For this example, enter  **James001**.
+    -   **Username**: Used for logging in to the cloud. For this example, enter  **James001**.
     -   **Credential Type**: Identity credential for authentication. For this example, select  **Password**.
-        -   **Password**: Used for accessing the public cloud using the console or development tools \(including APIs, CLI, and SDKs\).
-        -   **Access Key**: Used for logging to the public cloud using development tools. This credential type is more secure, and is recommended if the IAM user does not need to use the console.
+        -   **Password**: Used for accessing the cloud using the console or development tools \(including APIs, CLI, and SDKs\).
+        -   **Access Key**: Used for logging to the cloud using development tools. This credential type is more secure, and is recommended if the IAM user does not need to use the console.
 
     -   \(Optional\)  **User Groups**: Select  **Developers**. The IAM user will inherit the permissions granted to the user group. The default user group is  **admin**, which has the administrator permissions and all of the permissions required to use all cloud resources.
     -   \(Optional\)  **Description**: Description of the IAM user.
 
 3.  Click  **Next**. In the dialog box that is displayed, set the parameters.
     -   **Password Type**: Three password types are available. In this example,  **Set manually**  is selected.
-        -   **Set by user**: Select this option if you are not the entity using the IAM user  **James001**. James001 will receive a one-time login URL of the public cloud by email and can set a password at first login.
-        -   **Automatically generated**: Select this option if James001 accesses the public cloud using a development tool. The public cloud will generate a random 10-digit password.
+        -   **Set by user**: Select this option if you are not the entity using the IAM user  **James001**. James001 will receive a one-time login URL of the cloud by email and can set a password at first login.
+        -   **Automatically generated**: Select this option if James001 accesses the cloud using a development tool. The cloud will generate a random 10-digit password.
         -   **Set now**: Select this option if you are the entity using the IAM user  **James001**. Then set a password for login.
 
     -   **Password Reset**: By default, this option is selected, which means that the user will be required to set a new password at next login. In this example, this option is selected.
@@ -88,12 +92,12 @@ IAM users can be created for employees or applications of an enterprise. Each IA
 
 ## Step 3: Log In and Verify Permissions<a name="section1953761017615"></a>
 
-After the IAM user is created, use the username and identity credential to log in to the public cloud, and verify that the IAM user has the permissions defined by the  **CCE Viewer**  policy.
+After the IAM user is created, use the username and identity credential to log in to the cloud, and verify that the IAM user has the permissions defined by the  **CCE Viewer**  policy.
 
-1.  On the public cloud login page, click  **API Login**  in the upper right corner.
+1.  On the cloud login page, click  **API Login**  in the upper right corner.
 2.  Enter the account name, username, and password, and click  **Log In**.
 
-    -   The account name is the name of the public cloud account that created the IAM user.
+    -   The account name is the name of the cloud account that created the IAM user.
     -   The username and password are those set by the account when creating the IAM user James001. You will be prompted to change the initial password at initial login.
 
     If the login fails, contact the entity owning the account to verify the username and password. Alternatively, you can reset the password.

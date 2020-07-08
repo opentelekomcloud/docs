@@ -1,4 +1,4 @@
-# Creating an Organization<a name="cce_01_0207"></a>
+# Creating an Organization<a name="cce_01_1207"></a>
 
 An organization is used to isolate images and assign access permissions \(read, edit, and manage\) to different users.
 

@@ -17,7 +17,7 @@ Migrate the images stored in the image repository of CCE 1.0 to CCE 2.0.
 
 2.  Log in to the CCE 1.0 console, and obtain the docker login configuration file  **dockercfg.json**.
 
-    ![](figures/dockercfg.png)
+    ![](figures/dockercfg-json.png)
 
 3.  Log in to the Docker client as user  **root**, and copy the  **dockercfg.json**  file obtained in Step 2 and the image migration tool to the  **/root**  directory.
 4.  In the  **/root**  directory, create a file named  **image\_list**. In the file, write the images to be migrated in the following format. Each image occupies a row.
@@ -30,10 +30,10 @@ Migrate the images stored in the image repository of CCE 1.0 to CCE 2.0.
 
 5.  Run the following command to automatically migrate the images to the image repository of CCE 2.0:
 
-    **bash  migrate.sh**  "_\{__The_ _login_ _command_ _obtained_ _in_ _Step 1_"
+    **bash  migrate.sh**  "_\{__The login command obtained in __Step 1_"
 
     After the preceding command is executed, go to the image repository of CCE 2.0. You can find that images have been successfully pushed.
 
-    ![](figures/image-repository.png)
+    ![](figures/migrate-sh.png)
 
 

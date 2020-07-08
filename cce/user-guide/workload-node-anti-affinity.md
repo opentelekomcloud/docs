@@ -49,14 +49,14 @@ spec:
             nodeSelectorTerms:
             - matchExpressions:
               - key: nodeName          #node's label key
-                  operator: NotIn        #Indicates that the workload will not be deployed on the node.
-                  values:
+                operator: NotIn        #Indicates that the workload will not be deployed on the node.
+                values:
                 - test-node-1          #node's label value
 ```
 
 ## Setting the Object Type After Creating a Workload<a name="section02391513134618"></a>
 
-1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
+1.  Log in to the CCE console. In the navigation pane, choose** Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
 2.  Click the name of the workload for which you will add a scheduling policy. On the workload details page, choose  **Scheduling Policies**  \>  **Add Simple Scheduling Policy**  \>  **Add Anti-affinity Object**.
 3.  Set  **Object Type**  to  **Node**  and select the node on which the workload is ineligible to be deployed. The workload will be constrained from being deployed on the selected node.
 

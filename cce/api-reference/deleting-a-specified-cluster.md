@@ -117,7 +117,7 @@ N/A
 </tr>
 <tr id="row125326326151"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p6532732161518"><a name="p6532732161518"></a><a name="p6532732161518"></a>spec</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p1334385071712"><a name="p1334385071712"></a><a name="p1334385071712"></a><a href="creating-a-cluster.md#table195921039143517">spec</a> object</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p1334385071712"><a name="p1334385071712"></a><a name="p1334385071712"></a><a href="reading-a-specified-cluster.md#table1034041612134">spec</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="55.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p173598507179"><a name="p173598507179"></a><a name="p173598507179"></a>Detailed description of the cluster targeted by this API. CCE creates or updates objects by defining or updating its spec.</p>
 </td>
@@ -139,35 +139,50 @@ N/A
     "kind": "Cluster",
     "apiVersion": "v3",
     "metadata": {
-        "name": "mycluster-demo",
-        "uid": "40c54866-38c5-11e9-b246-0255ac101413",
-        "creationTimestamp": "2019-02-25 06:19:05.789462 +0000 UTC",
-        "updateTimestamp": "2019-02-25 06:37:33.878405 +0000 UTC"
+        "name": "mycluster",
+        "uid": "7a661f82-90d9-11ea-9f85-0255ac10110d",
+        "creationTimestamp": "2020-05-08 03:10:32.403757 +0000 UTC",
+        "updateTimestamp": "2020-05-08 03:18:29.238331 +0000 UTC"
     },
     "spec": {
         "type": "VirtualMachine",
         "flavor": "cce.s1.small",
-        "version": "v1.13.10-r0",
-        "description": "thisisademocluster",
+        "version": "v1.15.6-r1",
+        "az": "eu-de-01",
+        "ipv6enable": false,
+        "supportIstio": true,
         "hostNetwork": {
-            "vpc": "a8cc62dc-acc2-47d0-9bfb-3b1d776c520b",
-            "subnet": "6d9e5355-85af-4a89-af28-243edb700db6"
+            "vpc": "23d3725f-6ffe-400e-8fb6-b4f9a7b3e8c1",
+            "subnet": "c90b3ce5-e1f1-4c87-a006-644d78846438",
+            "SecurityGroup": "11fb88d1-0fc9-422d-963d-374ababa5f57"
         },
         "containerNetwork": {
             "mode": "overlay_l2",
             "cidr": "172.16.0.0/16"
         },
+        "eniNetwork": {},
         "authentication": {
             "mode": "rbac",
             "authenticatingProxy": {}
-        }
+        },
+        "billingMode": 0,
+        "extendParam": {
+            "alpha.cce/fixPoolMask": "",
+            "kubernetes.io/cpuManagerPolicy": "",
+            "upgradefrom": ""
+        },
+        "kubernetesSvcIpRange": "10.247.0.0/16",
+        "kubeProxyMode": "iptables"
     },
     "status": {
         "phase": "Available",
-        "jobID": "e1cbc576-3023-11e9-89af-0255ac101406",
-        "endpoints": {
-            "internal": "https://192.168.0.101:5443"
-        }
+        "jobID": "f5fd8cbf-90db-11ea-9f85-0255ac10110d",
+        "endpoints": [
+            {
+                "url": "https://192.168.0.158:5443",
+                "type": "Internal"
+            }
+        ]
     }
 }
 ```

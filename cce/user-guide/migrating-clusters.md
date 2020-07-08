@@ -247,11 +247,11 @@ To create clusters using APIs, see  _Cloud Container Engine API Reference 2.0_.
     <tr id="row770816592447"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p1270865944411"><a name="p1270865944411"></a><a name="p1270865944411"></a>Resource Tags</p>
     </td>
     <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p975613243456"><a name="p975613243456"></a><a name="p975613243456"></a>By adding tags to resources, you can classify resources.</p>
-    <p id="p10327184710426"><a name="p10327184710426"></a><a name="p10327184710426"></a>You can create predefined tags in Tag Management Service (TMS). Predefined tags are visible to all service resources that support the tagging function. You can use predefined tags to improve tag creation and migration efficiency. For details, see <a href="https://docs.otc.t-systems.com/en-us/usermanual/tms/en-us_topic_0144368884.html" target="_blank" rel="noopener noreferrer">Creating Predefined Tags</a>.</p>
+    <p id="p10327184710426"><a name="p10327184710426"></a><a name="p10327184710426"></a>You can create predefined tags in Tag Management Service (TMS). Predefined tags are visible to all service resources that support the tagging function. You can use predefined tags to improve tag creation and migration efficiency.</p>
     <p id="p1311422274512"><a name="p1311422274512"></a><a name="p1311422274512"></a>CCE will automatically create the "CCE-Dynamic-Provisioning-Node=node id" tag. A maximum of 20 tags can be added.</p>
     </td>
     </tr>
-    <tr id="row10556133134513"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p125562033174515"><a name="p125562033174515"></a><a name="p125562033174515"></a>Agency Name</p>
+    <tr id="row10556133134513"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p125562033174515"><a name="p125562033174515"></a><a name="p125562033174515"></a>Agency</p>
     </td>
     <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p96304546457"><a name="p96304546457"></a><a name="p96304546457"></a>The agency is created by the account administrator on the IAM console. By creating an agency, you can share your resources with another account, or delegate a more professional person or team to manage your resources. When creating an agency, set the agency type to <strong id="b56366226449"><a name="b56366226449"></a><a name="b56366226449"></a>Cloud service</strong>. Click <strong id="b13411946104411"><a name="b13411946104411"></a><a name="b13411946104411"></a>Select</strong>, and select <strong id="b197501418459"><a name="b197501418459"></a><a name="b197501418459"></a>ECS BMS</strong> in the dialog box displayed, which allows ECS or BMS to call cloud services.</p>
     </td>
@@ -270,7 +270,7 @@ To create clusters using APIs, see  _Cloud Container Engine API Reference 2.0_.
     </tr>
     <tr id="row014232420462"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p61428243461"><a name="p61428243461"></a><a name="p61428243461"></a>Add Data Disk</p>
     </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p1814215244461"><a name="p1814215244461"></a><a name="p1814215244461"></a>Click <strong id="b650211569524"><a name="b650211569524"></a><a name="b650211569524"></a>Add Data Disk</strong> to add a data disk and set the capacity of the data disk. Enter a disk formatting command in the input box of <a href="how-do-i-add-a-second-data-disk-to-a-cce-node.md">Pre-installation Script</a>. For a sample command, see <a href="how-do-i-add-a-second-data-disk-to-a-cce-node.md">How Do I Add a Second Data Disk to a CCE Node?</a>.</p>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p1814215244461"><a name="p1814215244461"></a><a name="p1814215244461"></a>Click <strong id="b650211569524"><a name="b650211569524"></a><a name="b650211569524"></a>Add Data Disk</strong> to add a data disk and set the capacity of the data disk.</p>
     </td>
     </tr>
     <tr id="row1510851394712"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p91081813144715"><a name="p91081813144715"></a><a name="p91081813144715"></a>Subnet IP Address</p>

@@ -28,7 +28,7 @@ data:
 
 ## Configuring the Data Volume of a Pod<a name="section472505211214"></a>
 
-A secret can be used as a file in a pod. As shown in the following example, the username and password of the  **mysecret**  secret are saved in the  **/etc/foo**  directory as files.
+A secret can be used as a file in a pod. As shown in the following example, the username and password of the  **mysecret **secret are saved in the  **/etc/foo**  directory as files.
 
 ```
 apiVersion: v1

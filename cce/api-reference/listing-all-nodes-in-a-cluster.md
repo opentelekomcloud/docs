@@ -15,24 +15,24 @@ GET /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 <a name="table2027961241820"></a>
 <table><thead align="left"><tr id="row122809120186"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p91421758131813"><a name="p91421758131813"></a><a name="p91421758131813"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="16.97%" id="mcps1.2.4.1.2"><p id="p101421758131816"><a name="p101421758131816"></a><a name="p101421758131816"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.4.1.2"><p id="p101421758131816"><a name="p101421758131816"></a><a name="p101421758131816"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="63.029999999999994%" id="mcps1.2.4.1.3"><p id="p19143115818187"><a name="p19143115818187"></a><a name="p19143115818187"></a>Description</p>
+<th class="cellrowborder" valign="top" width="68%" id="mcps1.2.4.1.3"><p id="p19143115818187"><a name="p19143115818187"></a><a name="p19143115818187"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="row32801312121810"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1714415589184"><a name="p1714415589184"></a><a name="p1714415589184"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.97%" headers="mcps1.2.4.1.2 "><p id="p814518580186"><a name="p814518580186"></a><a name="p814518580186"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p814518580186"><a name="p814518580186"></a><a name="p814518580186"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="63.029999999999994%" headers="mcps1.2.4.1.3 "><p id="p5145175891811"><a name="p5145175891811"></a><a name="p5145175891811"></a>Project ID. For details about how to obtain the project ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.4.1.3 "><p id="p5145175891811"><a name="p5145175891811"></a><a name="p5145175891811"></a>Project ID. For details about how to obtain the project ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
 </td>
 </tr>
 <tr id="row1649094164612"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p749015414462"><a name="p749015414462"></a><a name="p749015414462"></a>cluster_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.97%" headers="mcps1.2.4.1.2 "><p id="p1849084134615"><a name="p1849084134615"></a><a name="p1849084134615"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p1849084134615"><a name="p1849084134615"></a><a name="p1849084134615"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="63.029999999999994%" headers="mcps1.2.4.1.3 "><p id="p8491141114617"><a name="p8491141114617"></a><a name="p8491141114617"></a>Cluster ID. For details about how to obtain the cluster ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.4.1.3 "><p id="p8491141114617"><a name="p8491141114617"></a><a name="p8491141114617"></a>Cluster ID. For details about how to obtain the cluster ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -131,16 +131,16 @@ N/A
       "metadata": {
         "name": "myhost",
         "uid": "4d1ecb2c-229a-11e8-9c75-0255ac100ceb",
-        "creationTimestamp": "2018-08-02 07:37:24.005071325 +0000 UTC",
-        "updateTimestamp": "2018-08-02 07:44:04.965500815 +0000 UTC",
+        "creationTimestamp": "2020-02-02 07:37:24.005071325 +0000 UTC",
+        "updateTimestamp": "2020-02-02 07:44:04.965500815 +0000 UTC",
         "annotations": {
-         "kubernetes.io/node-pool.id": "eu-de-01#s1.medium#EulerOS 2.5"        
+         "kubernetes.io/node-pool.id": "eu-de-01#s1.medium#EulerOS 2.5"        
         }
       },
       "spec": {
         "flavor": "s1.medium",
         "az": "eu-de-01",
-        "os": "EulerOS 2.5",
+        "os": "EulerOS 2.5",
         "login": {
           "sshKey": "KeyPair-demo"
         },
@@ -158,7 +158,13 @@ N/A
           "eip": {
             "bandwidth": {}
           }
+        },
+        "nodeNicSpec": {
+            "primaryNic": {
+            "subnetId": "c90b3ce5-e1f1-4c87-a006-644d78846438"
         }
+       },
+        "billingMode": 0
       },
       "status": {
         "phase": "Active",

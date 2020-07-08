@@ -2,7 +2,7 @@
 
 The Linux Kernel SACK vulnerabilities have been fixed. This section describes the solution to these vulnerabilities.
 
-## Vulnerability Details<a name="en-us_topic_0203988290_section14399183415550"></a>
+## Vulnerability Details<a name="section14399183415550"></a>
 
 On June 18, 2019, Red Hat released a security notice, stating that three security vulnerabilities \(CVE-2019-11477, CVE-2019-11478, and CVE-2019-11479\) were found on the TCP SACK module of the Linux kernel. These vulnerabilities are related to the maximum segment size \(MSS\) and TCP selective acknowledgment \(SACK\) packets. Remote attackers can exploit these vulnerabilities to trigger a denial of service \(DoS\), resulting in server unavailability or breakdown.
 
@@ -20,52 +20,52 @@ Helpful links:
 
 **Table  1**  Vulnerability information
 
-<a name="en-us_topic_0203988290_table124875855510"></a>
-<table><thead align="left"><tr id="en-us_topic_0203988290_row1649155811555"><th class="cellrowborder" valign="top" width="25.72742725727427%" id="mcps1.2.5.1.1"><p id="en-us_topic_0203988290_p1516913249564"><a name="en-us_topic_0203988290_p1516913249564"></a><a name="en-us_topic_0203988290_p1516913249564"></a>Type</p>
+<a name="table124875855510"></a>
+<table><thead align="left"><tr id="row1649155811555"><th class="cellrowborder" valign="top" width="25.72742725727427%" id="mcps1.2.5.1.1"><p id="p1516913249564"><a name="p1516913249564"></a><a name="p1516913249564"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="18.688131186881314%" id="mcps1.2.5.1.2"><p id="en-us_topic_0203988290_p1216962415619"><a name="en-us_topic_0203988290_p1216962415619"></a><a name="en-us_topic_0203988290_p1216962415619"></a>CVE-ID</p>
+<th class="cellrowborder" valign="top" width="18.688131186881314%" id="mcps1.2.5.1.2"><p id="p1216962415619"><a name="p1216962415619"></a><a name="p1216962415619"></a>CVE-ID</p>
 </th>
-<th class="cellrowborder" valign="top" width="24.75752424757524%" id="mcps1.2.5.1.3"><p id="en-us_topic_0203988290_p1916932413568"><a name="en-us_topic_0203988290_p1916932413568"></a><a name="en-us_topic_0203988290_p1916932413568"></a>Discovered</p>
+<th class="cellrowborder" valign="top" width="24.75752424757524%" id="mcps1.2.5.1.3"><p id="p1916932413568"><a name="p1916932413568"></a><a name="p1916932413568"></a>Discovered</p>
 </th>
-<th class="cellrowborder" valign="top" width="30.826917308269174%" id="mcps1.2.5.1.4"><p id="en-us_topic_0203988290_p616920246567"><a name="en-us_topic_0203988290_p616920246567"></a><a name="en-us_topic_0203988290_p616920246567"></a>Fixed</p>
+<th class="cellrowborder" valign="top" width="30.826917308269174%" id="mcps1.2.5.1.4"><p id="p616920246567"><a name="p616920246567"></a><a name="p616920246567"></a>Fixed</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="en-us_topic_0203988290_row24985819559"><td class="cellrowborder" valign="top" width="25.72742725727427%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0203988290_p16641153545619"><a name="en-us_topic_0203988290_p16641153545619"></a><a name="en-us_topic_0203988290_p16641153545619"></a>Input validation flaw</p>
+<tbody><tr id="row24985819559"><td class="cellrowborder" valign="top" width="25.72742725727427%" headers="mcps1.2.5.1.1 "><p id="p16641153545619"><a name="p16641153545619"></a><a name="p16641153545619"></a>Input validation flaw</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.688131186881314%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0203988290_p064163519566"><a name="en-us_topic_0203988290_p064163519566"></a><a name="en-us_topic_0203988290_p064163519566"></a><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11477" target="_blank" rel="noopener noreferrer">CVE-2019-11477</a></p>
+<td class="cellrowborder" valign="top" width="18.688131186881314%" headers="mcps1.2.5.1.2 "><p id="p064163519566"><a name="p064163519566"></a><a name="p064163519566"></a><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11477" target="_blank" rel="noopener noreferrer">CVE-2019-11477</a></p>
 </td>
-<td class="cellrowborder" valign="top" width="24.75752424757524%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0203988290_p4641103525615"><a name="en-us_topic_0203988290_p4641103525615"></a><a name="en-us_topic_0203988290_p4641103525615"></a>2019-06-17</p>
+<td class="cellrowborder" valign="top" width="24.75752424757524%" headers="mcps1.2.5.1.3 "><p id="p4641103525615"><a name="p4641103525615"></a><a name="p4641103525615"></a>2019-06-17</p>
 </td>
-<td class="cellrowborder" valign="top" width="30.826917308269174%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0203988290_p464183516563"><a name="en-us_topic_0203988290_p464183516563"></a><a name="en-us_topic_0203988290_p464183516563"></a>2019-07-06</p>
-</td>
-</tr>
-<tr id="en-us_topic_0203988290_row1549195865511"><td class="cellrowborder" valign="top" width="25.72742725727427%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0203988290_p964133555616"><a name="en-us_topic_0203988290_p964133555616"></a><a name="en-us_topic_0203988290_p964133555616"></a>Resource management flaw</p>
-</td>
-<td class="cellrowborder" valign="top" width="18.688131186881314%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0203988290_p106411935125617"><a name="en-us_topic_0203988290_p106411935125617"></a><a name="en-us_topic_0203988290_p106411935125617"></a><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11478" target="_blank" rel="noopener noreferrer">CVE-2019-11478</a></p>
-</td>
-<td class="cellrowborder" valign="top" width="24.75752424757524%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0203988290_p196415352561"><a name="en-us_topic_0203988290_p196415352561"></a><a name="en-us_topic_0203988290_p196415352561"></a>2019-06-17</p>
-</td>
-<td class="cellrowborder" valign="top" width="30.826917308269174%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0203988290_p1464212357560"><a name="en-us_topic_0203988290_p1464212357560"></a><a name="en-us_topic_0203988290_p1464212357560"></a>2019-07-06</p>
+<td class="cellrowborder" valign="top" width="30.826917308269174%" headers="mcps1.2.5.1.4 "><p id="p464183516563"><a name="p464183516563"></a><a name="p464183516563"></a>2019-07-06</p>
 </td>
 </tr>
-<tr id="en-us_topic_0203988290_row24965816558"><td class="cellrowborder" valign="top" width="25.72742725727427%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0203988290_p764216351564"><a name="en-us_topic_0203988290_p764216351564"></a><a name="en-us_topic_0203988290_p764216351564"></a>Resource management flaw</p>
+<tr id="row1549195865511"><td class="cellrowborder" valign="top" width="25.72742725727427%" headers="mcps1.2.5.1.1 "><p id="p964133555616"><a name="p964133555616"></a><a name="p964133555616"></a>Resource management flaw</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.688131186881314%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0203988290_p1264253595610"><a name="en-us_topic_0203988290_p1264253595610"></a><a name="en-us_topic_0203988290_p1264253595610"></a><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11479" target="_blank" rel="noopener noreferrer">CVE-2019-11479</a></p>
+<td class="cellrowborder" valign="top" width="18.688131186881314%" headers="mcps1.2.5.1.2 "><p id="p106411935125617"><a name="p106411935125617"></a><a name="p106411935125617"></a><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11478" target="_blank" rel="noopener noreferrer">CVE-2019-11478</a></p>
 </td>
-<td class="cellrowborder" valign="top" width="24.75752424757524%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0203988290_p19642435185613"><a name="en-us_topic_0203988290_p19642435185613"></a><a name="en-us_topic_0203988290_p19642435185613"></a>2019-06-17</p>
+<td class="cellrowborder" valign="top" width="24.75752424757524%" headers="mcps1.2.5.1.3 "><p id="p196415352561"><a name="p196415352561"></a><a name="p196415352561"></a>2019-06-17</p>
 </td>
-<td class="cellrowborder" valign="top" width="30.826917308269174%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0203988290_p4642133595612"><a name="en-us_topic_0203988290_p4642133595612"></a><a name="en-us_topic_0203988290_p4642133595612"></a>2019-07-06</p>
+<td class="cellrowborder" valign="top" width="30.826917308269174%" headers="mcps1.2.5.1.4 "><p id="p1464212357560"><a name="p1464212357560"></a><a name="p1464212357560"></a>2019-07-06</p>
+</td>
+</tr>
+<tr id="row24965816558"><td class="cellrowborder" valign="top" width="25.72742725727427%" headers="mcps1.2.5.1.1 "><p id="p764216351564"><a name="p764216351564"></a><a name="p764216351564"></a>Resource management flaw</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.688131186881314%" headers="mcps1.2.5.1.2 "><p id="p1264253595610"><a name="p1264253595610"></a><a name="p1264253595610"></a><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11479" target="_blank" rel="noopener noreferrer">CVE-2019-11479</a></p>
+</td>
+<td class="cellrowborder" valign="top" width="24.75752424757524%" headers="mcps1.2.5.1.3 "><p id="p19642435185613"><a name="p19642435185613"></a><a name="p19642435185613"></a>2019-06-17</p>
+</td>
+<td class="cellrowborder" valign="top" width="30.826917308269174%" headers="mcps1.2.5.1.4 "><p id="p4642133595612"><a name="p4642133595612"></a><a name="p4642133595612"></a>2019-07-06</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Impact<a name="en-us_topic_0203988290_section1128815452562"></a>
+## Impact<a name="section1128815452562"></a>
 
 Linux 2.6.29 and later versions \(CVE-2019-11477\)
 
-## Solution<a name="en-us_topic_0203988290_section37521058125620"></a>
+## Solution<a name="section37521058125620"></a>
 
 >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
 >-   EulerOS 2.2 supports an upgrade to the kernel version 3.10.0-327.62.59.83.h162.x86\_64.  

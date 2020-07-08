@@ -5,15 +5,16 @@ This chapter describes how to obtain a long-term valid  **docker login**  comman
 ## Procedure<a name="section12571630161312"></a>
 
 1.  <a name="li5768123671815"></a>Obtain an image repository address and the name of a regional project.
-    1.  Visit  [https://console.otc.t-systems.com/iam/\#/myCredential](https://console.otc.t-systems.com/iam/#/myCredential).
-    2.  On the  **Projects**  tab page, view the project corresponding to the current region.
+    1.  Log in to the management console.
+    2.  Click the username and choose  **My Credential**  from the drop-down list.
+    3.  On the  **Projects**  tab page, view the project corresponding to the current region.
 
         The  **eu-de**  project corresponds to  **eu-de**, as shown in the following figure.
 
         **Figure  1**  Regions and projects<a name="fig108278021113"></a>  
         ![](figures/regions-and-projects.png "regions-and-projects")
 
-    3.  Obtain the image repository address in CCE Console.
+    4.  Obtain the image repository address in CCE Console.
 
         **Figure  2**  Image repository address<a name="fig28617278018"></a>  
         ![](figures/image-repository-address.png "image-repository-address")
@@ -23,18 +24,19 @@ This chapter describes how to obtain a long-term valid  **docker login**  comman
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >If the AK/SK is available, you can directly use it.  
 
-    1.  Visit  [https://console.otc.t-systems.com/iam/\#/myCredential](https://console.otc.t-systems.com/iam/#/myCredential).
-    2.  On the  **Access Keys**  tab page, click  **Create Access Key**  to create an access key.
+    1.  Log in to the management console.
+    2.  Click the username and choose  **My Credential**  from the drop-down list.
+    3.  On the  **Access Keys**  tab page, click  **Add Access Key**  to create an access key.
 
         **Figure  3**  Adding an access key<a name="fig1750516234350"></a>  
         ![](figures/adding-an-access-key.png "adding-an-access-key")
 
-    3.  Enter the login password of the current user and verify the password by email or mobile phone.
+    4.  Enter the login password of the current user and verify the password by email or mobile phone.
 
         >![](public_sys-resources/icon-note.gif) **NOTE:**   
         >For the accounts created in Identity and Access Management \(IAM\), if no email address or mobile phone is filled during account creation, you only need to verify the login password.  
 
-    4.  Click  **OK**  to download an access key.
+    5.  Click  **OK**  to download an access key.
 
         Properly keep the downloaded key. You need to upload the key when creating a cluster. Otherwise, the cluster cannot be created.
 
@@ -54,7 +56,7 @@ This chapter describes how to obtain a long-term valid  **docker login**  comman
 
 4.  Splice the  **docker login**  command in the following format:
 
-    **docker** **login** **-u**  \[_Name of the regional project_\]**@**\[AK\]  **-p**  \[_Login key_\] \[_Image repository address_\]
+    **docker login -u **\[_Name of the regional project_\]**@**\[AK\]  **-p**  \[_Login key_\] \[_Image repository address_\]
 
     In the preceding information, the name of the regional project and the image repository address are obtained in  [1](#li5768123671815), the AK is obtained in  [2](#li1863783911295), and the login key is the execution result in  [3](#li132430753010).
 

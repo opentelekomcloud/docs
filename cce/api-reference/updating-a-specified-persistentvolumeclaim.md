@@ -82,52 +82,107 @@ For the description about response parameters, see  [Table 2](creating-a-persist
 
 **Example response:**
 
-```
-{
-    "kind": "PersistentVolumeClaim",
-    "apiVersion": "v1",
-    "metadata": {
-        "name": "db-mysql-0",
-        "namespace": "default",
-        "selfLink": "/api/v1/namespaces/default/persistentvolumeclaims/db-mysql-0",
-        "uid": "9d070d77-8ce1-11e8-8ee0-fa163e49263c",
-        "resourceVersion": "4202924",
-        "creationTimestamp": "2018-07-21T12:28:46Z",
-        "labels": {
-            "app": "mysql",
-            "failure-domain.beta.kubernetes.io/region": "eu-de",
-            "failure-domain.beta.kubernetes.io/zone": "eu-de-01"
+-   Example for clusters of v1.15:
+
+    ```
+    {
+        "kind":"PersistentVolumeClaim",
+        "apiVersion":"v1",
+        "metadata":{
+            "name":"cce-evs-k6m131jj-i1px",
+            "namespace":"default",
+            "selfLink":"/api/v1/namespaces/default/persistentvolumeclaims/cce-evs-k6m131jj-i1px",
+            "uid":"d34f6a93-9eba-4a33-9320-8fa4addd3753",
+            "resourceVersion":"2286592",
+            "creationTimestamp":"2020-02-14T10:27:43Z",
+            "labels":{
+                "failure-domain.beta.kubernetes.io/region":"eu-de",
+                "failure-domain.beta.kubernetes.io/zone":"eu-de-01"
+            },
+            "annotations":{
+                "everest.io/disk-volume-type":"SATA",
+                "pv.kubernetes.io/bind-completed":"yes",
+                "pv.kubernetes.io/bound-by-controller":"yes",
+                "volume.beta.kubernetes.io/storage-provisioner":"everest-csi-provisioner"
+            },
+            "finalizers":[
+                "kubernetes.io/pvc-protection"
+            ]
         },
-        "annotations": {
-            "pv.kubernetes.io/bind-completed": "yes",
-            "pv.kubernetes.io/bound-by-controller": "yes",
-            "volume.beta.kubernetes.io/storage-class": "sata",
-            "volume.beta.kubernetes.io/storage-provisioner": "flexvolume-huawei.com/fuxivol"
-        }
-    },
-    "spec": {
-        "accessModes": [
-            "ReadWriteMany"
-        ],
-        "resources": {
-            "requests": {
-                "storage": "5Gi"
+        "spec":{
+            "accessModes":[
+                "ReadWriteOnce"
+            ],
+            "resources":{
+                "requests":{
+                    "storage":"10Gi"
+                }
+            },
+            "volumeName":"pvc-d34f6a93-9eba-4a33-9320-8fa4addd3753",
+            "storageClassName":"csi-disk",
+            "volumeMode":"Filesystem"
+        },
+        "status":{
+            "phase":"Bound",
+            "accessModes":[
+                "ReadWriteOnce"
+            ],
+            "capacity":{
+                "storage":"10Gi"
             }
-        },
-        "volumeName": "pvc-9d070d77-8ce1-11e8-8ee0-fa163e49263c",
-        "volumeNamespace": "default"
-    },
-    "status": {
-        "phase": "Bound",
-        "accessModes": [
-            "ReadWriteMany"
-        ],
-        "capacity": {
-            "storage": "5Gi"
         }
     }
-}
-```
+    ```
+
+-   Example for clusters of v1.13 or earlier:
+
+    ```
+    {
+        "kind": "PersistentVolumeClaim",
+        "apiVersion": "v1",
+        "metadata": {
+            "name": "db-mysql-0",
+            "namespace": "default",
+            "selfLink": "/api/v1/namespaces/default/persistentvolumeclaims/db-mysql-0",
+            "uid": "9d070d77-8ce1-11e8-8ee0-fa163e49263c",
+            "resourceVersion": "4202924",
+            "creationTimestamp": "2018-07-21T12:28:46Z",
+            "labels": {
+                "app": "mysql",
+                "failure-domain.beta.kubernetes.io/region": "eu-de",
+                "failure-domain.beta.kubernetes.io/zone": "eu-de-01"
+            },
+            "annotations": {
+                "pv.kubernetes.io/bind-completed": "yes",
+                "pv.kubernetes.io/bound-by-controller": "yes",
+                "volume.beta.kubernetes.io/storage-class": "sata",
+                "volume.beta.kubernetes.io/storage-provisioner": "flexvolume-huawei.com/fuxivol"
+            }
+        },
+        "spec": {
+            "accessModes": [
+                "ReadWriteMany"
+            ],
+            "resources": {
+                "requests": {
+                    "storage": "5Gi"
+                }
+            },
+            "volumeName": "pvc-9d070d77-8ce1-11e8-8ee0-fa163e49263c",
+            "volumeNamespace": "default"
+        },
+        "status": {
+            "phase": "Bound",
+            "accessModes": [
+                "ReadWriteMany"
+            ],
+            "capacity": {
+                "storage": "5Gi"
+            }
+        }
+    }
+    ```
+
 
 ## Status Code<a name="s800fc422a2ea4527bad9e1828fcea6e1"></a>
 

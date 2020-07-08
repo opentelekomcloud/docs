@@ -4,7 +4,7 @@
 
 Pod affinity determines the pods as which the target workload will be deployed in the same topology domain.
 
-1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
+1.  Log in to the CCE console. In the navigation pane, choose** Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
 2.  Click a workload name in the Deployment or StatefulSet list. On the displayed workload details page, click the  **Scheduling Policies**  tab and then click  **Add Custom Scheduling Policy**.
 3.  In the  **Pod Affinity**  area, set the namespace, topology key, and the label requirements to be met.
 

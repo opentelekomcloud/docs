@@ -1,6 +1,6 @@
 # Network Policy<a name="cce_01_0059"></a>
 
-CCE has enhanced the  Kubernetes-based  network policy  function, allowing network isolation in a  cluster  by configuring network policies. This means that a  firewall  can be set between  instances  \(pods\).
+CCE has enhanced the Kubernetes-based network policy function, allowing network isolation in a cluster by configuring network policies. This means that a firewall can be set between instances \(pods\).
 
 ## What Are Network Policies?<a name="section322222112010"></a>
 
@@ -71,7 +71,7 @@ For example, to make a payment system accessible only to specified components fo
 
 You can configure a namespace-level network policy by enabling network isolation.
 
-By default,  **Network Isolation**  is disabled for  namespaces. For example, if network isolation is off for namespace  **default**,  **all pods in the current cluster**  can access the  **pods in namespace default**.
+By default,  **Network Isolation**  is disabled for  namespaces. For example, if network isolation is off for namespace  **default**,  **all pods in the current cluster**  can access the  **pods in namespace ******default****.
 
 To prevent other pods from accessing the pods in namespace  **default**, perform the following steps:
 
@@ -81,6 +81,6 @@ To prevent other pods from accessing the pods in namespace  **default**, perform
     After network isolation is enabled, pods in namespace  **default**  can access each other but they cannot be accessed by pods in other namespaces.
 
     **Figure  1**  Namespace-level network policy<a name="fig13427151918417"></a>  
-    ![](figures/namespace-level-network-policy-1.png "namespace-level-network-policy-1")
+    ![](figures/namespace-level-network-policy-11.png "namespace-level-network-policy-11")
 
 

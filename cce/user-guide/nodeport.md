@@ -29,7 +29,7 @@ NodePort access is further classified into intra-VPC access and EIP-based access
 You can set the service access type when creating a  workload  on the CCE console. An Nginx workload is used as an example.
 
 1.  In the  **Set Application Access**  step of  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md), click  **Add Service**  and set the following parameters:
-    -   **Access Type**: Select  **Node access \(node port\)**.
+    -   **Access Type**: Select  **NodePort**.
     -   **Service Name**: can be the same as the workload name.
     -   **Service Affinity**
         -   **Cluster level**: External traffic is routed to all nodes in the cluster while masking clients' source IP addresses.
@@ -202,7 +202,7 @@ You have configured the kubectl and connected an ECS to the cluster. For details
 
 5.  Run the  **curl**  command to verify whether the workload is accessible.
 
-    **curl** _192.168.2.240:30000_
+    **curl **_192.168.2.240:30000_
 
     **192.168.2.240**  is the IP address of any node in the cluster, and  **30000**  is the port opened on all nodes in the cluster.
 
@@ -409,7 +409,7 @@ You have configured the kubectl and connected an ECS to the cluster. For details
 
 -   **Verifying Intra-VPC Access**
 
-1.  On the homepage of management console, choose  **Computing**  \>  **Elastic Cloud Server**.
+1.  On the homepage of management console, choose  **Service List \> Computing**  \>  **Elastic Cloud Server**.
 2.  Select any ECS in the same VPC as the workload that will be accessed, and confirm that the  security group  is open to the IP address and port to be connected.
 
     **Figure  4**  Confirming that the security group is open<a name="fig89539873216"></a>  
@@ -421,7 +421,7 @@ You have configured the kubectl and connected an ECS to the cluster. For details
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >Like other NodePort services, an intra-VPC access service will be assigned a cluster-internal IP address. You can use <service's cluster-internal IP address\>:<access port\> to verify whether the workload is reachable from inside the cluster. By default, <access port\> in <service's cluster-internal IP address\>:<access port\> is the same as the container port \(for example, 80\).  
 
-    **curl** _192.168.0.160:_30358
+    **curl **_192.168.0.160:_30358
 
     **192.168.0.160:30358**  is the access address obtained in  [3](#li13702330143312).
 
@@ -461,7 +461,7 @@ You have configured the kubectl and connected an ECS to the cluster. For details
 2.  Click the access address.
 
     **Figure  5**  Accessing Nginx through an EIP<a name="fig1543716518012"></a>  
-    ![](figures/accessing-nginx-through-an-eip-0.png "accessing-nginx-through-an-eip-0")
+    ![](figures/accessing-nginx-through-an-eip-10.png "accessing-nginx-through-an-eip-10")
 
 
 ## Setting the Access Type After Creating a Workload on the Console<a name="section41290043210"></a>
@@ -474,7 +474,7 @@ You can set the access type after creating a workload. This has no impact on the
     >If the service is associated with an ingress, the ingress is unavailable after the port information of the service is updated. In this case, you need to delete and recreate the service.  
 
 2.  On the  **Services**  tab page, click  **Create Service**.
-3.  On the  **Create Service**  page, select  **Node access \(node port\)**  from the  **Access Type**  drop-down list.
+3.  On the  **Create Service**  page, select  **NodePort**  from the  **Access Type**  drop-down list.
 4.  Set node access parameters.
     -   **Service Name**: can be the same as the workload name.
     -   **Cluster Name**: name of the cluster where the workload runs. The value is inherited from the workload creation page and cannot be changed.
@@ -499,7 +499,7 @@ You can set the access type after creating a workload. This has no impact on the
 After adding a service, you can update the port configuration of the service. The procedure is as follows:
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Network**. On the  **Services**  tab page, click  **Update**  for the service to be updated.
-2.  On the  **Update Service**  page, select  **Node access \(node port\)**  from the  **Access Type**  drop-down list.
+2.  On the  **Update Service**  page, select  **NodePort**  from the  **Access Type**  drop-down list.
 3.  Update node access parameters.
     -   **Cluster Name**: name of the cluster where the workload runs. The value is inherited from the workload creation page and cannot be changed.
     -   **Namespace**: namespace where the workload is located. The value is inherited from the workload creation page and cannot be changed.

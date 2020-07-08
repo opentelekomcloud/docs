@@ -12,7 +12,7 @@ Common Kubernetes resources include Deployments, StatefulSets, jobs, DaemonSets,
 
 1.  <a name="li156087595210"></a>Export resource files from CCE 1.0.
 
-    **kubectl** **get** _\{resource\} \{name\}_ **-n** _\{namespace\}_ **-oyaml** **--export**  \>  _\{namespace\}\_\{resource\}\_\{name\}_**.yaml**
+    **kubectl get **_\{resource\} \{name\}_** -n **_\{namespace\}_** -oyaml --export \> **_\{namespace\}\_\{resource\}\_\{name\}_**.yaml**
 
     Assume that the following resource files are exported:
 
@@ -44,70 +44,69 @@ Common Kubernetes resources include Deployments, StatefulSets, jobs, DaemonSets,
     apiVersion: v1
     kind: ReplicationController
     metadata:
-      annotations:
-        cce/app-createTimestamp: 2019-09-09-08-59-13
-        cce/app-description: ""
-        cce/app-updateTimestamp: 2019-09-09-08-59-13
-      creationTimestamp: null
-      generation: 1
-      labels:
-        cce/appgroup: app-test
-        name: ssss
-        rollingupdate: "false"
-      name: ssss
-      selfLink: /api/v1/namespaces/default/replicationcontrollers/ssss
+    annotations:
+    cce/app-createTimestamp: 2019-09-09-08-59-13
+    cce/app-description: ""
+    cce/app-updateTimestamp: 2019-09-09-08-59-13
+    creationTimestamp: null
+    generation: 1
+    labels:
+    cce/appgroup: app-test
+    name: ssss
+    rollingupdate: "false"
+    name: ssss
+    selfLink: /api/v1/namespaces/default/replicationcontrollers/ssss
     spec:
-      replicas: 1
-      selector:
-        cce/appgroup: app-test
-        name: ssss
-        rollingupdate: "false"
-      template:
-        metadata:
-          annotations:
-            scheduler.alpha.kubernetes.io/affinity: '{"nodeAffinity":{"requiredDuringSchedulingIgnoredDuringExecution":{"nodeSelectorTerms":[{"matchExpressions":[{"key
-    ":"failure-domain.beta.kubernetes.io/zone","operator":"In","values":["eu-de-02","eu-de-01"]}]}]}}}'
-          creationTimestamp: null
-          labels:
-            cce/appgroup: app-test
-            name: ssss
-            rollingupdate: "false"
-        spec:
-          affinity:
-            nodeAffinity:
-              requiredDuringSchedulingIgnoredDuringExecution:
-                nodeSelectorTerms:
-                - matchExpressions:
-                 - key: failure-domain.beta.kubernetes.io/zone
-                  operator: In
-                  values:
-                    - eu-de-02
-                    - eu-de-01
-          containers:
-                      - args:
-                    - "360000"
-          command:
-             - sleep
-          image: 10.125.1.72:6443/otc00000000001000010000/busybox:latest
-          imagePullPolicy: Always
-          name: container01
-          ports:
-               - containerPort: 80
-          protocol: TCP
-          resources: {}
-          securityContext:
-          privileged: true
-          terminationMessagePath: /dev/termination-log
-          terminationMessagePolicy: File
-          dnsPolicy: ClusterFirst
-          imagePullSecrets:
-               - name: myregistry
-          restartPolicy: Always
-          schedulerName: default-scheduler
-          securityContext: {}
-          terminationGracePeriodSeconds: 30
-          status:
-            replicas: 0
+    replicas: 1
+    selector:
+    cce/appgroup: app-test
+    name: ssss
+    rollingupdate: "false"
+    template:
+    metadata:
+    annotations:
+    scheduler.alpha.kubernetes.io/affinity: '{"nodeAffinity":{"requiredDuringSchedulingIgnoredDuringExecution":{"nodeSelectorTerms":[{"matchExpressions":[{"key":"failure-domain.beta.kubernetes.io/zone","operator":"In","values":["eu-de-02","eu-de-01"]}]}]}}}'
+    creationTimestamp: null
+    labels:
+    cce/appgroup: app-test
+    name: ssss
+    rollingupdate: "false"
+    spec:
+    affinity:
+    nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+    nodeSelectorTerms:
+    - matchExpressions:
+    - key: failure-domain.beta.kubernetes.io/zone
+    operator: In
+    values:
+    - eu-de-02
+    - eu-de-01
+    containers:
+    - args:
+    - "360000"
+    command:
+    - sleep
+    image: 10.125.1.72:6443/otc00000000001000010000/busybox:latest
+    imagePullPolicy: Always
+    name: container01
+    ports:
+    - containerPort: 80
+    protocol: TCP
+    resources: {}
+    securityContext:
+    privileged: true
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    dnsPolicy: ClusterFirst
+    imagePullSecrets:
+    - name: myregistry
+    restartPolicy: Always
+    schedulerName: default-scheduler
+    securityContext: {}
+    terminationGracePeriodSeconds: 30
+    status:
+    replicas: 0
     ```
 
     Replace the content in bold in the preceding YAML file to generate a YAML file for Deployments in CCE 2.0.

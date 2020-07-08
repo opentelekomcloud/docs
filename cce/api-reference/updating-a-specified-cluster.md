@@ -137,7 +137,7 @@ PUT /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}
 
 **Response parameters:**
 
-[Table 5](#table111553952019)  describes the response parameters.
+For details about the response parameters, see  [Table 5](#table111553952019).
 
 **Table  5**  Parameters in the response body
 
@@ -180,7 +180,7 @@ PUT /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}
 </tr>
 <tr id="row98251185230"><td class="cellrowborder" valign="top" width="23.26%" headers="mcps1.2.4.1.1 "><p id="p118251118192315"><a name="p118251118192315"></a><a name="p118251118192315"></a>status</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.93%" headers="mcps1.2.4.1.2 "><p id="p148261618142315"><a name="p148261618142315"></a><a name="p148261618142315"></a><a href="reading-a-specified-cluster.md#table6749834132215">status</a> object</p>
+<td class="cellrowborder" valign="top" width="20.93%" headers="mcps1.2.4.1.2 "><p id="p148261618142315"><a name="p148261618142315"></a><a name="p148261618142315"></a><a href="creating-a-cluster.md#table6749834132215">status</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="55.81%" headers="mcps1.2.4.1.3 "><p id="p188261618172317"><a name="p188261618172317"></a><a name="p188261618172317"></a>Cluster status and jobID of the job that reads a specified cluster.</p>
 </td>
@@ -197,14 +197,17 @@ PUT /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}
     "metadata": {
         "name": "mycluster",
         "uid": "4d1ecb2c-229a-11e8-9c75-0255ac100ceb",
-        "creationTimestamp": "2018-08-02 03:48:58.968214406 +0000 UTC",
-        "updateTimestamp": "2018-08-02 06:39:36.844676088 +0000 UTC"
+        "creationTimestamp": "2020-02-02 03:48:58.968214406 +0000 UTC",
+        "updateTimestamp": "2020-02-02 06:39:36.844676088 +0000 UTC"
     },
     "spec": {
         "type": "VirtualMachine",
         "flavor": "cce.s1.small",
-        "version": "v1.13.10-r0",
+        "version": "v1.15.6-r1",
         "description": "new description",
+        "az": "eu-de-01",
+        "ipv6enable": false,
+        "supportIstio": true,
         "hostNetwork": {
             "vpc": "4d1ecb2c-229a-11e8-9c75-0255ac100ceb",
             "subnet": "4d1ecb2c-229a-11e8-9c75-0255ac100ceb",
@@ -214,6 +217,7 @@ PUT /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}
             "mode": "overlay_l2",
             "cidr": "172.17.0.0/16"
         },
+        "eniNetwork": {},
         "authentication": {
             "mode": "rbac",
             "authenticatingProxy": {}
@@ -230,9 +234,12 @@ PUT /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}
     },
     "status": {
         "phase": "Available",
-        "endpoints": {
-            "internal": "https://192.168.1.182:5443"
-        }
+        "endpoints": [
+            {
+                "url": "https://192.168.0.61:5443",
+                "type": "Internal"
+            }
+        ]
     }
 }
 ```

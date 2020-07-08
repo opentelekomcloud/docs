@@ -14,7 +14,7 @@ A cluster-internal domain name format is  _<User-defined service name\>_._<Names
 You can set the service access type when creating a workload on the CCE console.
 
 1.  In the  **Set Application Access**  step of  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md), click  **Add Service**  and set the following parameters:
-    -   **Access Type**: Select  **Intra-cluster access \(cluster IP\)**.
+    -   **Access Type**: Select** ClusterIP**.
     -   **Service Name**: can be the same as the workload name.
     -   **Port Settings**
         -   **Protocol**: a protocol used by the service.
@@ -62,7 +62,7 @@ You can set the service access type when creating a workload on the CCE console.
 
     -   By using the domain name
 
-        **curl** _nginx.default.svc.cluster.local:2_
+        **curl **_nginx.default.svc.cluster.local:2_
 
         _nginx.default.svc.cluster.local_  is the domain name obtained in  [Step 3](#li16964121448).
 
@@ -242,7 +242,7 @@ The ECS where the kubectl client runs has been connected to your cluster. For de
 6.  Run the  **curl**  command to check whether the workload is accessible. You can perform the verification by using the IP address or domain name.
     -   By using the  IP address
 
-        **curl** _10.247.200.134__:2_
+        **curl **_10.247.200.134__:2_
 
         If information similar to the following is displayed, the workload is accessible.
 
@@ -275,7 +275,7 @@ The ECS where the kubectl client runs has been connected to your cluster. For de
 
     -   By using the  domain name
 
-        **curl** _nginx-_**clusterip.default.svc.cluster.local:**_2_
+        **curl **_nginx-_**clusterip.default.svc.cluster.local:**_2_
 
         If information similar to the following is displayed, the workload is accessible.
 
@@ -314,7 +314,7 @@ You can set the access type after creating a workload. This has no impact on the
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**. On the workload list, click the name of the workload for which you will create a service.
 2.  On the  **Services**  tab page, click  **Create Service**.
-3.  On the  **Create Service**  page, select  **Intra-cluster access \(cluster IP\)**  from the  **Access Type**  drop-down list.
+3.  On the  **Create Service**  page, select  **ClusterIP**  from the  **Access Type**  drop-down list.
 4.  Set intra-cluster access parameters.
     -   **Service Name**: can be the same as the workload name.
     -   **Cluster Name**: name of the cluster where the workload runs. The value is inherited from the workload creation page and cannot be changed.
@@ -332,7 +332,7 @@ You can set the access type after creating a workload. This has no impact on the
 After adding a service, you can update the port configuration of the service. The procedure is as follows:
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Network**. On the  **Services**  tab page, click  **Update**  for the service to be updated.
-2.  On the  **Update Service**  page, select  **Intra-cluster access \(cluster IP\)**  from the  **Access Type**  drop-down list.
+2.  On the  **Update Service**  page, select  **ClusterIP**  from the  **Access Type**  drop-down list.
 3.  Update intra-cluster access parameters.
     -   **Cluster Name**: name of the cluster where the workload runs. The value is inherited from the workload creation page and cannot be changed.
     -   **Namespace**: namespace where the workload is located. The value is inherited from the workload creation page and cannot be changed.

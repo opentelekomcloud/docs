@@ -15,24 +15,24 @@ PUT /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/mastereip
 <a name="tcb491e3c1e0f4805bc2a0f117c2e5291"></a>
 <table><thead align="left"><tr id="rb1f18e3e47264a689ce8837da9540243"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="a751f244cbf5b43bbae736c7fe4157a65"><a name="a751f244cbf5b43bbae736c7fe4157a65"></a><a name="a751f244cbf5b43bbae736c7fe4157a65"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.24%" id="mcps1.2.4.1.2"><p id="a8cd1c6a113cc42b5b1ed7195b0d632ea"><a name="a8cd1c6a113cc42b5b1ed7195b0d632ea"></a><a name="a8cd1c6a113cc42b5b1ed7195b0d632ea"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.4.1.2"><p id="a8cd1c6a113cc42b5b1ed7195b0d632ea"><a name="a8cd1c6a113cc42b5b1ed7195b0d632ea"></a><a name="a8cd1c6a113cc42b5b1ed7195b0d632ea"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="62.760000000000005%" id="mcps1.2.4.1.3"><p id="a130c3125c9c54410a8213b4095e993a7"><a name="a130c3125c9c54410a8213b4095e993a7"></a><a name="a130c3125c9c54410a8213b4095e993a7"></a>Description</p>
+<th class="cellrowborder" valign="top" width="68%" id="mcps1.2.4.1.3"><p id="a130c3125c9c54410a8213b4095e993a7"><a name="a130c3125c9c54410a8213b4095e993a7"></a><a name="a130c3125c9c54410a8213b4095e993a7"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="r233fdbfefc734b3f872982d4f6bbe5f0"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="a210d020408a14eaabab2b4f4411603f2"><a name="a210d020408a14eaabab2b4f4411603f2"></a><a name="a210d020408a14eaabab2b4f4411603f2"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.24%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0102499104_p814518580186"><a name="en-us_topic_0102499104_p814518580186"></a><a name="en-us_topic_0102499104_p814518580186"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0102499104_p814518580186"><a name="en-us_topic_0102499104_p814518580186"></a><a name="en-us_topic_0102499104_p814518580186"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="62.760000000000005%" headers="mcps1.2.4.1.3 "><p id="a11311534aa924643804a0f42eca7da84"><a name="a11311534aa924643804a0f42eca7da84"></a><a name="a11311534aa924643804a0f42eca7da84"></a>Project ID.</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.4.1.3 "><p id="a11311534aa924643804a0f42eca7da84"><a name="a11311534aa924643804a0f42eca7da84"></a><a name="a11311534aa924643804a0f42eca7da84"></a>Project ID.</p>
 </td>
 </tr>
 <tr id="rc13dcfbc5dc94afa9fa3c0533f438e88"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p614194762313"><a name="p614194762313"></a><a name="p614194762313"></a>cluster_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.24%" headers="mcps1.2.4.1.2 "><p id="af22431c45a934fc3b3d29abe71edf037"><a name="af22431c45a934fc3b3d29abe71edf037"></a><a name="af22431c45a934fc3b3d29abe71edf037"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="af22431c45a934fc3b3d29abe71edf037"><a name="af22431c45a934fc3b3d29abe71edf037"></a><a name="af22431c45a934fc3b3d29abe71edf037"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="62.760000000000005%" headers="mcps1.2.4.1.3 "><p id="ad84b46caf65641eaa6a2a0136244932d"><a name="ad84b46caf65641eaa6a2a0136244932d"></a><a name="ad84b46caf65641eaa6a2a0136244932d"></a>Cluster ID.</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.4.1.3 "><p id="ad84b46caf65641eaa6a2a0136244932d"><a name="ad84b46caf65641eaa6a2a0136244932d"></a><a name="ad84b46caf65641eaa6a2a0136244932d"></a>Cluster ID.</p>
 </td>
 </tr>
 </tbody>
@@ -49,21 +49,21 @@ PUT /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/mastereip
 <a name="t97650ea1b00a431b9ba9075aafc7e494"></a>
 <table><thead align="left"><tr id="r834c19a7a4b345b2b8a955d744cbb20c"><th class="cellrowborder" valign="top" width="20.202020202020204%" id="mcps1.2.5.1.1"><p id="en-us_topic_0102499074_p2030132"><a name="en-us_topic_0102499074_p2030132"></a><a name="en-us_topic_0102499074_p2030132"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="16.747474747474747%" id="mcps1.2.5.1.2"><p id="en-us_topic_0102499074_p30222992"><a name="en-us_topic_0102499074_p30222992"></a><a name="en-us_topic_0102499074_p30222992"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="13.131313131313133%" id="mcps1.2.5.1.2"><p id="en-us_topic_0102499074_p30222992"><a name="en-us_topic_0102499074_p30222992"></a><a name="en-us_topic_0102499074_p30222992"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="21.797979797979796%" id="mcps1.2.5.1.3"><p id="en-us_topic_0102499074_p32143248"><a name="en-us_topic_0102499074_p32143248"></a><a name="en-us_topic_0102499074_p32143248"></a>Type</p>
+<th class="cellrowborder" valign="top" width="18.181818181818183%" id="mcps1.2.5.1.3"><p id="en-us_topic_0102499074_p32143248"><a name="en-us_topic_0102499074_p32143248"></a><a name="en-us_topic_0102499074_p32143248"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="41.25252525252525%" id="mcps1.2.5.1.4"><p id="en-us_topic_0102499074_p53466268"><a name="en-us_topic_0102499074_p53466268"></a><a name="en-us_topic_0102499074_p53466268"></a>Description</p>
+<th class="cellrowborder" valign="top" width="48.484848484848484%" id="mcps1.2.5.1.4"><p id="en-us_topic_0102499074_p53466268"><a name="en-us_topic_0102499074_p53466268"></a><a name="en-us_topic_0102499074_p53466268"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="en-us_topic_0102499074_row9619511127"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0102499074_p4785161212"><a name="en-us_topic_0102499074_p4785161212"></a><a name="en-us_topic_0102499074_p4785161212"></a>spec</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.747474747474747%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0102499074_p97205171219"><a name="en-us_topic_0102499074_p97205171219"></a><a name="en-us_topic_0102499074_p97205171219"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0102499074_p97205171219"><a name="en-us_topic_0102499074_p97205171219"></a><a name="en-us_topic_0102499074_p97205171219"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="21.797979797979796%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0102499074_p67105119126"><a name="en-us_topic_0102499074_p67105119126"></a><a name="en-us_topic_0102499074_p67105119126"></a><a href="#t18f5d0505d9048cab59a8ecd4fa7138d">Table 3</a></p>
+<td class="cellrowborder" valign="top" width="18.181818181818183%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0102499074_p67105119126"><a name="en-us_topic_0102499074_p67105119126"></a><a name="en-us_topic_0102499074_p67105119126"></a><a href="#t18f5d0505d9048cab59a8ecd4fa7138d">Table 3</a></p>
 </td>
-<td class="cellrowborder" valign="top" width="41.25252525252525%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0102499074_p10785112129"><a name="en-us_topic_0102499074_p10785112129"></a><a name="en-us_topic_0102499074_p10785112129"></a>-</p>
+<td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0102499074_p10785112129"><a name="en-us_topic_0102499074_p10785112129"></a><a name="en-us_topic_0102499074_p10785112129"></a>-</p>
 </td>
 </tr>
 </tbody>
@@ -74,9 +74,9 @@ PUT /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/mastereip
 <a name="t18f5d0505d9048cab59a8ecd4fa7138d"></a>
 <table><thead align="left"><tr id="r113f74eeb0da4e56bfcf3584e489d2c7"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="a5b5028a5cb07467b83f5dab81fe07f19"><a name="a5b5028a5cb07467b83f5dab81fe07f19"></a><a name="a5b5028a5cb07467b83f5dab81fe07f19"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.11%" id="mcps1.2.5.1.2"><p id="a23cedfd53bad4d57a6ca33bf335dfccb"><a name="a23cedfd53bad4d57a6ca33bf335dfccb"></a><a name="a23cedfd53bad4d57a6ca33bf335dfccb"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="13%" id="mcps1.2.5.1.2"><p id="a23cedfd53bad4d57a6ca33bf335dfccb"><a name="a23cedfd53bad4d57a6ca33bf335dfccb"></a><a name="a23cedfd53bad4d57a6ca33bf335dfccb"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="13.889999999999999%" id="mcps1.2.5.1.3"><p id="ad2af0c8795624545820501099fc4ce30"><a name="ad2af0c8795624545820501099fc4ce30"></a><a name="ad2af0c8795624545820501099fc4ce30"></a>Type</p>
+<th class="cellrowborder" valign="top" width="18%" id="mcps1.2.5.1.3"><p id="ad2af0c8795624545820501099fc4ce30"><a name="ad2af0c8795624545820501099fc4ce30"></a><a name="ad2af0c8795624545820501099fc4ce30"></a>Type</p>
 </th>
 <th class="cellrowborder" valign="top" width="49%" id="mcps1.2.5.1.4"><p id="a7980ec18617e4c289eb4f3a1bcd82699"><a name="a7980ec18617e4c289eb4f3a1bcd82699"></a><a name="a7980ec18617e4c289eb4f3a1bcd82699"></a>Description</p>
 </th>
@@ -84,9 +84,9 @@ PUT /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/mastereip
 </thead>
 <tbody><tr id="row10434569144"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p143175631416"><a name="p143175631416"></a><a name="p143175631416"></a>action</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.2.5.1.2 "><p id="p1619112174"><a name="p1619112174"></a><a name="p1619112174"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p1619112174"><a name="p1619112174"></a><a name="p1619112174"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.889999999999999%" headers="mcps1.2.5.1.3 "><p id="aeefd5eaaf23042b28237905441e36728"><a name="aeefd5eaaf23042b28237905441e36728"></a><a name="aeefd5eaaf23042b28237905441e36728"></a>String</p>
+<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="aeefd5eaaf23042b28237905441e36728"><a name="aeefd5eaaf23042b28237905441e36728"></a><a name="aeefd5eaaf23042b28237905441e36728"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p6979056174910"><a name="p6979056174910"></a><a name="p6979056174910"></a>Whether to bind an elastic IP address to the cluster or unbind an elastic IP address from the cluster. The value is <strong id="b126925119524"><a name="b126925119524"></a><a name="b126925119524"></a>bind</strong> or <strong id="b1569291125213"><a name="b1569291125213"></a><a name="b1569291125213"></a>unbind</strong> (case insensitive).</p>
 <div class="note" id="note1219018516273"><a name="note1219018516273"></a><a name="note1219018516273"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p79151358133419"><a name="p79151358133419"></a><a name="p79151358133419"></a><strong id="b1137652614523"><a name="b1137652614523"></a><a name="b1137652614523"></a>id</strong> needs to be configured only when <strong id="b1937613269521"><a name="b1937613269521"></a><a name="b1937613269521"></a>action</strong> is set to <strong id="b143768268523"><a name="b143768268523"></a><a name="b143768268523"></a>bind</strong>.</p>
@@ -95,9 +95,9 @@ PUT /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/mastereip
 </tr>
 <tr id="row202921151201520"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p18292105141517"><a name="p18292105141517"></a><a name="p18292105141517"></a>spec</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.11%" headers="mcps1.2.5.1.2 "><p id="p119991001173"><a name="p119991001173"></a><a name="p119991001173"></a>No</p>
+<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p119991001173"><a name="p119991001173"></a><a name="p119991001173"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.889999999999999%" headers="mcps1.2.5.1.3 "><p id="p11293195141517"><a name="p11293195141517"></a><a name="p11293195141517"></a><a href="#table985812714268">Table 4</a></p>
+<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p11293195141517"><a name="p11293195141517"></a><a name="p11293195141517"></a><a href="#table985812714268">Table 4</a></p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p178443385523"><a name="p178443385523"></a><a name="p178443385523"></a>Information about the elastic IP address.</p>
 </td>
@@ -108,23 +108,23 @@ PUT /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/mastereip
 **Table  4**  Data structure of the spec-spec field
 
 <a name="table985812714268"></a>
-<table><thead align="left"><tr id="row186619714265"><th class="cellrowborder" valign="top" width="20.464646464646467%" id="mcps1.2.5.1.1"><p id="p148697782611"><a name="p148697782611"></a><a name="p148697782611"></a>Parameter</p>
+<table><thead align="left"><tr id="row186619714265"><th class="cellrowborder" valign="top" width="20.202020202020204%" id="mcps1.2.5.1.1"><p id="p148697782611"><a name="p148697782611"></a><a name="p148697782611"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="16.87878787878788%" id="mcps1.2.5.1.2"><p id="p16871779269"><a name="p16871779269"></a><a name="p16871779269"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="13.131313131313133%" id="mcps1.2.5.1.2"><p id="p16871779269"><a name="p16871779269"></a><a name="p16871779269"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="18.737373737373737%" id="mcps1.2.5.1.3"><p id="p108739762610"><a name="p108739762610"></a><a name="p108739762610"></a>Type</p>
+<th class="cellrowborder" valign="top" width="18.181818181818183%" id="mcps1.2.5.1.3"><p id="p108739762610"><a name="p108739762610"></a><a name="p108739762610"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="43.91919191919192%" id="mcps1.2.5.1.4"><p id="p148751718269"><a name="p148751718269"></a><a name="p148751718269"></a>Description</p>
+<th class="cellrowborder" valign="top" width="48.484848484848484%" id="mcps1.2.5.1.4"><p id="p148751718269"><a name="p148751718269"></a><a name="p148751718269"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row108781475261"><td class="cellrowborder" valign="top" width="20.464646464646467%" headers="mcps1.2.5.1.1 "><p id="p5880472261"><a name="p5880472261"></a><a name="p5880472261"></a>id</p>
+<tbody><tr id="row108781475261"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p5880472261"><a name="p5880472261"></a><a name="p5880472261"></a>id</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.87878787878788%" headers="mcps1.2.5.1.2 "><p id="p58836772619"><a name="p58836772619"></a><a name="p58836772619"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p58836772619"><a name="p58836772619"></a><a name="p58836772619"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.737373737373737%" headers="mcps1.2.5.1.3 "><p id="p188711926195018"><a name="p188711926195018"></a><a name="p188711926195018"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.181818181818183%" headers="mcps1.2.5.1.3 "><p id="p188711926195018"><a name="p188711926195018"></a><a name="p188711926195018"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="43.91919191919192%" headers="mcps1.2.5.1.4 "><p id="p98720266503"><a name="p98720266503"></a><a name="p98720266503"></a>ID of the elastic IP address.</p>
+<td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p98720266503"><a name="p98720266503"></a><a name="p98720266503"></a>ID of the elastic IP address.</p>
 </td>
 </tr>
 </tbody>

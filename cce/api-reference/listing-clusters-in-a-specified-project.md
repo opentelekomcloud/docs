@@ -15,17 +15,17 @@ GET /api/v3/projects/\{project\_id\}/clusters
 <a name="table2027961241820"></a>
 <table><thead align="left"><tr id="row122809120186"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p91421758131813"><a name="p91421758131813"></a><a name="p91421758131813"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="16.71%" id="mcps1.2.4.1.2"><p id="p101421758131816"><a name="p101421758131816"></a><a name="p101421758131816"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.4.1.2"><p id="p101421758131816"><a name="p101421758131816"></a><a name="p101421758131816"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="63.29%" id="mcps1.2.4.1.3"><p id="p19143115818187"><a name="p19143115818187"></a><a name="p19143115818187"></a>Description</p>
+<th class="cellrowborder" valign="top" width="68%" id="mcps1.2.4.1.3"><p id="p19143115818187"><a name="p19143115818187"></a><a name="p19143115818187"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="row32801312121810"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1714415589184"><a name="p1714415589184"></a><a name="p1714415589184"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.71%" headers="mcps1.2.4.1.2 "><p id="p814518580186"><a name="p814518580186"></a><a name="p814518580186"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p814518580186"><a name="p814518580186"></a><a name="p814518580186"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="63.29%" headers="mcps1.2.4.1.3 "><p id="p5145175891811"><a name="p5145175891811"></a><a name="p5145175891811"></a>Project ID. For details on how to obtain the project ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.4.1.3 "><p id="p5145175891811"><a name="p5145175891811"></a><a name="p5145175891811"></a>Project ID. For details on how to obtain the project ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -173,14 +173,16 @@ N/A
             "metadata": {
                 "name": "mycluster",
                 "uid": "4d1ecb2c-229a-11e8-9c75-0255ac100ceb",
-                "creationTimestamp": "2018-08-02 03:48:58.968214406 +0000 UTC",
-                "updateTimestamp": "2018-08-02 04:05:29.386391813 +0000 UTC"
+                "creationTimestamp": "2020-02-02 03:48:58.968214406 +0000 UTC",
+                "updateTimestamp": "2020-02-02 04:05:29.386391813 +0000 UTC"
             },
             "spec": {
                 "type": "VirtualMachine",
                 "flavor": "cce.s1.small",
-                "version": "v1.13.10-r0",
+                "version": "v1.15.6-r1",
                 "description": "awesome cluster",
+                "ipv6enable": false,
+                "supportIstio": true,
                 "hostNetwork": {
                     "vpc": "f0c12911-4fdb-4284-9230-7ffb0860826a",
                     "subnet": "ac274229-fd2e-4695-9f01-a0c1372b8006",
@@ -190,6 +192,7 @@ N/A
                     "mode": "overlay_l2",
                     "cidr": "172.16.0.0/16"
                 },
+                "eniNetwork": {},
                 "authentication": {
                     "mode": "rbac",
                     "authenticatingProxy": {}
@@ -206,9 +209,12 @@ N/A
             },
             "status": {
                 "phase": "Available",
-                "endpoints": {
-                    "internal": "https://192.168.1.182:5443"
-                }
+                "endpoints": [
+                    {
+                        "url": "https://192.168.0.61:5443",
+                        "type": "Internal"
+                    }
+                ]
             }
         }
     ]

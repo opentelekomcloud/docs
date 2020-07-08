@@ -7,4 +7,7 @@ An account ID is required for some URLs when an API is called. To obtain an acco
 
     On the  **My Credentials**  page, view account IDs in the project list.
 
+    **Figure  1**  Obtaining the Account ID<a name="fig102417619133"></a>  
+    ![](figures/obtaining-the-account-id.png "obtaining-the-account-id")
+
 

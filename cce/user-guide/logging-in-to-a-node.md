@@ -41,7 +41,7 @@ You can log in to an ECS in either of the following modes:
 <td class="cellrowborder" valign="top" width="20.312031203120313%" headers="mcps1.2.4.1.2 "><p id="p48080138173"><a name="p48080138173"></a><a name="p48080138173"></a>Windows</p>
 </td>
 <td class="cellrowborder" valign="top" width="61.626162616261624%" headers="mcps1.2.4.1.3 "><p id="p1065011512466"><a name="p1065011512466"></a><a name="p1065011512466"></a>Use remote login tools such as PuTTY and Xshell.</p>
-<p id="p146111921720"><a name="p146111921720"></a><a name="p146111921720"></a>For details, see "Logging In to the Linux ECS from Local Windows" in <a href="https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0017955380.html" target="_blank" rel="noopener noreferrer">Login Using an SSH Key</a>.</p>
+<p id="p146111921720"><a name="p146111921720"></a><a name="p146111921720"></a>For details, see "Logging In to the Linux ECS from Local Windows" in <a href="https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0017955633.html" target="_blank" rel="noopener noreferrer">Login Using an SSH Key</a>.</p>
 </td>
 </tr>
 <tr id="row14822105881716"><td class="cellrowborder" valign="top" width="18.061806180618063%" headers="mcps1.2.4.1.1 "><p id="p141559316187"><a name="p141559316187"></a><a name="p141559316187"></a>Yes</p>
@@ -49,7 +49,7 @@ You can log in to an ECS in either of the following modes:
 <td class="cellrowborder" valign="top" width="20.312031203120313%" headers="mcps1.2.4.1.2 "><p id="p1815593101813"><a name="p1815593101813"></a><a name="p1815593101813"></a>Linux</p>
 </td>
 <td class="cellrowborder" valign="top" width="61.626162616261624%" headers="mcps1.2.4.1.3 "><p id="p865975924510"><a name="p865975924510"></a><a name="p865975924510"></a>Run commands.</p>
-<p id="p1082285816172"><a name="p1082285816172"></a><a name="p1082285816172"></a>For details, see "Logging In to the Linux ECS from Local Windows" in <a href="https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0017955633.html" target="_blank" rel="noopener noreferrer">Login Using an SSH Password</a></p>
+<p id="p1082285816172"><a name="p1082285816172"></a><a name="p1082285816172"></a>For details, see "Logging In to the Linux ECS from Local Windows" in <a href="https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0017955633.html" target="_blank" rel="noopener noreferrer">Login Using an SSH Password</a>.</p>
 </td>
 </tr>
 <tr id="row0207145014149"><td class="cellrowborder" valign="top" width="18.061806180618063%" headers="mcps1.2.4.1.1 "><p id="p13383131101518"><a name="p13383131101518"></a><a name="p13383131101518"></a>Yes/No</p>

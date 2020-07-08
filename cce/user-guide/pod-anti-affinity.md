@@ -4,7 +4,7 @@
 
 Pod anti-affinity determines the pods to which the target workload will be deployed in a different topology domain.
 
-1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
+1.  Log in to the CCE console. In the navigation pane, choose** Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
 2.  Click a workload name in the Deployment or StatefulSet list. On the displayed workload details page, click the  **Scheduling Policies**  tab and then click  **Add Custom Scheduling Policy**.
 3.  In the  **Pod Anti-Affinity**  area, set the namespace, topology key, and the label requirements to be met.
 
@@ -60,11 +60,11 @@ spec:
             - labelSelector:
                 matchExpressions:
                   - key: app
-                      operator: In
-                      values:
-                        - redis
-                namespaces:
-                  - default
-                topologyKey: kubernetes.io/hostname
+                    operator: In
+                    values:
+                      - redis
+              namespaces:
+                - default
+              topologyKey: kubernetes.io/hostname
 ```
 

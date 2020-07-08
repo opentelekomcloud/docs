@@ -2,7 +2,7 @@
 
 ## Using the CCE Console<a name="section14975195565810"></a>
 
-1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
+1.  Log in to the CCE console. In the navigation pane, choose** Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
 2.  Click a workload name in the Deployment or StatefulSet list. On the displayed workload details page, click the  **Scheduling Policies**  tab and then click  **Add Custom Scheduling Policy**.
 3.  In the  **Node Affinity**  area, configure scheduling rules using node labels.
 

@@ -8,10 +8,6 @@ This section describes how to collect standard output logs of containers. If you
 
 1.  When creating a  workload, add a  container. Then, expand  **Log Policies**.
 2.  Retain the default configurations. Create your workload \(Nginx as an example\).
-
-    **Figure  1**  Standard output logs<a name="fig172324319509"></a>  
-    ![](figures/standard-output-logs.png "standard-output-logs")
-
 3.  View logs.
 
     After the workload is created, access Nginx. Go to the workload details page and click the  **Logs**  button in the upper right corner to view the log details. Wait for about 5 minutes to view logs.

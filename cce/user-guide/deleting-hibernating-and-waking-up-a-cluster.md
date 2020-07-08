@@ -19,6 +19,9 @@ This section takes VM clusters as an example. The procedure for BMS clusters is 
     >-   Enter  **DELETE**  into the text box below to confirm that the delete operation will continue.  
     >-   If a cluster whose status is Unavailable is deleted, some storage resources of the cluster may need to be manually deleted.  
 
+    **Figure  1**  Deleting a cluster<a name="fig28752011924"></a>  
+    ![](figures/deleting-a-cluster.png "deleting-a-cluster")
+
 4.  Click  **OK**  to start deleting the cluster.
 
 ## Hibernating a Cluster<a name="section080654155210"></a>
@@ -29,11 +32,11 @@ After a cluster is hibernated, resources such as workloads cannot be created or 
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Clusters**.
 2.  Choose  **More**  \>  **Hibernate**  for the target cluster.
-3.  In the  **Hibernate**  dialog box, read the precautions and select  **Stop all the nodes in the cluster**, and click  **OK**.
+3.  In the  **Hibernate**  dialog box, read the precautions and select  **Stop all the nodes in the cluster**, and click  **Yes**.
 
     Wait until the cluster hibernation is complete.
 
-    **Figure  1**  Hibernating a Cluster<a name="fig27367109201"></a>  
+    **Figure  2**  Hibernating a Cluster<a name="fig27367109201"></a>  
     ![](figures/hibernating-a-cluster.png "hibernating-a-cluster")
 
 
@@ -47,7 +50,7 @@ A hibernated cluster can be quickly woken up and used normally.
 
     Wait until the cluster is woken up.
 
-    **Figure  2**  Waking up a cluster<a name="fig15105161315251"></a>  
+    **Figure  3**  Waking up a cluster<a name="fig15105161315251"></a>  
     ![](figures/waking-up-a-cluster.png "waking-up-a-cluster")
 
 

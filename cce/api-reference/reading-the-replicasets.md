@@ -137,7 +137,7 @@ When the status code is 200
 </tr>
 <tr id="row16786332181810"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p2790133291811"><a name="p2790133291811"></a><a name="p2790133291811"></a>items</p>
 </td>
-<td class="cellrowborder" valign="top" width="24.47%" headers="mcps1.2.4.1.2 "><p id="p17791143211182"><a name="p17791143211182"></a><a name="p17791143211182"></a>Array of <a href="reading-the-replicasets.md">io.k8s.api.apps.v1.ReplicaSet</a> objects</p>
+<td class="cellrowborder" valign="top" width="24.47%" headers="mcps1.2.4.1.2 "><p id="p17791143211182"><a name="p17791143211182"></a><a name="p17791143211182"></a>Array of io.k8s.api.apps.v1.ReplicaSet objects</p>
 </td>
 <td class="cellrowborder" valign="top" width="55.53%" headers="mcps1.2.4.1.3 "><p id="p19792193281812"><a name="p19792193281812"></a><a name="p19792193281812"></a>List of ReplicaSets. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller</p>
 </td>
@@ -151,7 +151,7 @@ When the status code is 200
 </tr>
 <tr id="row1478683215182"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p47945326188"><a name="p47945326188"></a><a name="p47945326188"></a>metadata</p>
 </td>
-<td class="cellrowborder" valign="top" width="24.47%" headers="mcps1.2.4.1.2 "><p id="p2503122825912"><a name="p2503122825912"></a><a name="p2503122825912"></a>Array of <a href="reading-the-replicasets.md">io.k8s.apimachinery.pkg.apis.meta.v1.ListMeta</a> objects</p>
+<td class="cellrowborder" valign="top" width="24.47%" headers="mcps1.2.4.1.2 "><p id="p2503122825912"><a name="p2503122825912"></a><a name="p2503122825912"></a>Array of io.k8s.apimachinery.pkg.apis.meta.v1.ListMeta objects</p>
 </td>
 <td class="cellrowborder" valign="top" width="55.53%" headers="mcps1.2.4.1.3 "><p id="p15795153213184"><a name="p15795153213184"></a><a name="p15795153213184"></a>Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds</p>
 </td>

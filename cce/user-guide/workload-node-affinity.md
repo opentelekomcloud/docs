@@ -49,14 +49,14 @@ spec:
             nodeSelectorTerms:
             - matchExpressions:
               - key: nodeName          #node's label key
-                  operator: In
-                  values:
+                operator: In
+                values:
                 - test-node-1          #node's label value
 ```
 
 ## Setting the Object Type After Creating a Workload<a name="section15605646144516"></a>
 
-1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
+1.  Log in to the CCE console. In the navigation pane, choose** Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
 2.  Click the name of the workload for which you will add a scheduling policy. On the workload details page, choose  **Scheduling Policies**  \>  **Add Simple Scheduling Policy**  \>  **Add Affinity Object**.
 3.  Set  **Object Type**  to  **Node**  and select the node where the workload is to be deployed. The workload will be deployed on the selected node.
 

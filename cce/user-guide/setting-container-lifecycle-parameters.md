@@ -5,8 +5,8 @@ CCE provides  callback functions  for the lifecycle management of containerized 
 CCE provides the following lifecycle callback functions:
 
 -   **Start Command**: executed to start a container. For details, see  [Setting Container Startup Commands](setting-container-startup-commands.md).
--   **Post-Start Processing**: executed immediately after a container is started. For details, see  [Post-Start Processing](#section15243544163715).
--   **Pre-Stop** **Processing**: executed before a container is stopped. The pre-stop processing function helps you ensure that the services running in the instances can be completed in advance in the case of instance upgrade or deletion. For details, see  [Pre-Stop Processing](#section2334114473712).
+-   **Post-Start**: executed immediately after a container is started. For details, see  [Post-Start Processing](#section15243544163715).
+-   **Pre-Stop**: executed before a container is stopped. The pre-stop processing function helps you ensure that the services running in the instances can be completed in advance in the case of instance upgrade or deletion. For details, see  [Pre-Stop Processing](#section2334114473712).
 
 ## Commands and Parameters Used to Run a Container<a name="section913591582414"></a>
 

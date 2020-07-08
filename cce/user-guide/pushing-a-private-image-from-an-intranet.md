@@ -1,4 +1,4 @@
-# Pushing a Private Image from an Intranet<a name="cce_01_0211"></a>
+# Pushing a Private Image from an Intranet<a name="cce_01_0311"></a>
 
 This section uses the nginx:1.10 image as an example to describe how to push a private image from an intranet to the CCE image repository. Images will be displayed in the image repository after being pushed.
 
@@ -7,7 +7,7 @@ This section uses the nginx:1.10 image as an example to describe how to push a p
 -   A VM is available, on which Docker 1.11.2, 1.12.0, 1.12.1, or 1.12.6 is installed. You are advised to use the VM created in CCE to upload images. The VM has Docker client 1.11.2 installed and can access the Intranet of CCE to obtain a faster upload speed.
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   For more information on how to create a node on CCE, see  [Creating a VM Cluster](creating-a-vm-cluster.md).  
+    >-   For more information on how to create a node on CCE, see  [Creating a Hybrid Cluster](creating-a-hybrid-cluster.md).  
     >-   For more information on how to log in to a VM, see  [Connecting to a Kubernetes Cluster Using kubectl](connecting-to-a-kubernetes-cluster-using-kubectl.md).  
 
 -   The Docker client has been configured. For details, see section  [Connecting to Private Container Registry](connecting-to-private-container-registry.md).
@@ -39,9 +39,9 @@ This section uses the nginx:1.10 image as an example to describe how to push a p
     2.  On the  **Pull/Push Guide**  tab page, click  **Generate the Docker login command**, as shown in  [Figure 1](#fig1931918174407).
 
         **Figure  1**  Generating a Docker login command<a name="fig1931918174407"></a>  
-        ![](figures/generating-a-docker-login-command-3.png "generating-a-docker-login-command-3")
+        ![](figures/generating-a-docker-login-command-14.png "generating-a-docker-login-command-14")
 
-        1.  In the Docker login command that is displayed, click  ![](figures/icon-copy-01.png)  to copy the command. For example, the Docker login command may be similar to the following:
+        1.  In the Docker login command that is displayed, click  ![](figures/icon-copy-01-15.png)  to copy the command. For example, the Docker login command may be similar to the following:
 
             ```
             docker login -u eu-de@MMZES9KTH43ELTVYTGXA -p c4c8b79699abe427daf60b8035955230c146f744b990b03f7f30a5cb89fb382c 10.158.24.86
@@ -64,7 +64,7 @@ This section uses the nginx:1.10 image as an example to describe how to push a p
 
     Example command:
 
-    **docker** **tag** _nginx:1.10 10.125.7.25:20202/test/nginx:1.10_
+    **docker tag **_nginx:1.10 10.125.7.25:20202/test/nginx:1.10_
 
 6.  Run the following command to push the image to the image repository:
 
@@ -79,6 +79,6 @@ This section uses the nginx:1.10 image as an example to describe how to push a p
     1.10: digest: sha256:eb7e3bbd8e3040efa71d9c2cacfa12a8e39c6b2ccd15eac12bdc49e0b66cee63 size: 948
     ```
 
-    On the CCE console, refresh the  **Image** **Repository**  \>  _**imagename**_  page of the image repository. The pushed image is displayed in the list.
+    On the CCE console, refresh the  **Image Repository \> **_**imagename**_  page of the image repository. The pushed image is displayed in the list.
 
 

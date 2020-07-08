@@ -12,7 +12,7 @@ Before accessing cluster resources through open-source Kubernetes APIs, obtain t
 1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Clusters**.
 2.  In the card view of the target cluster, choose  **More \> Download X.509 Certificate**.
 
-    **Figure  1**  Downloading a cluster certificate<a name="fig1618718117461"></a>  
+    **Figure  1**  Downloading a cluster certificate<a name="fig8922105815467"></a>  
     ![](figures/downloading-a-cluster-certificate.png "downloading-a-cluster-certificate")
 
 3.  In the displayed  **Download X.509 Certificate**  dialog box, download the X.509 certificate of the cluster as prompted.

@@ -130,6 +130,15 @@ POST /api/v1/persistentvolumes
 <td class="cellrowborder" valign="top" width="42%" headers="mcps1.2.5.1.4 "><p id="af3fdde5703fa48ffbe089443037827fc"><a name="af3fdde5703fa48ffbe089443037827fc"></a><a name="af3fdde5703fa48ffbe089443037827fc"></a>A description of the persistent volume's resources and capacity.</p>
 </td>
 </tr>
+<tr id="row18682614079"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p868212145715"><a name="p868212145715"></a><a name="p868212145715"></a><span id="ph6951522175"><a name="ph6951522175"></a><a name="ph6951522175"></a>csi</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.5.1.2 "><p id="p36821514876"><a name="p36821514876"></a><a name="p36821514876"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p id="p568217141719"><a name="p568217141719"></a><a name="p568217141719"></a><a href="#table1821283920715">csi</a> object</p>
+</td>
+<td class="cellrowborder" valign="top" width="42%" headers="mcps1.2.5.1.4 "><p id="p1168213141711"><a name="p1168213141711"></a><a name="p1168213141711"></a>CSI represents storage that is handled by an external CSI driver.</p>
+</td>
+</tr>
 <tr id="r6c874aaed56f4a9080acc97e62169a0d"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="acc4b6006cbbb4a1fb4cae2dcb0aea4a1"><a name="acc4b6006cbbb4a1fb4cae2dcb0aea4a1"></a><a name="acc4b6006cbbb4a1fb4cae2dcb0aea4a1"></a>claimRef</p>
 </td>
 <td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.5.1.2 "><p id="ac0e00a03dd504f6fb22d7d47676f6548"><a name="ac0e00a03dd504f6fb22d7d47676f6548"></a><a name="ac0e00a03dd504f6fb22d7d47676f6548"></a>No</p>
@@ -175,10 +184,150 @@ POST /api/v1/persistentvolumes
 <td class="cellrowborder" valign="top" width="42%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0079614924_p188779198221"><a name="en-us_topic_0079614924_p188779198221"></a><a name="en-us_topic_0079614924_p188779198221"></a>Name of StorageClass to which this persistent volume belongs. Empty value means that this volume does not belong to any StorageClass.</p>
 </td>
 </tr>
+<tr id="row117084211555"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p127095215558"><a name="p127095215558"></a><a name="p127095215558"></a>volumeMode</p>
+</td>
+<td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.5.1.2 "><p id="p15709421551"><a name="p15709421551"></a><a name="p15709421551"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p id="p57090255518"><a name="p57090255518"></a><a name="p57090255518"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="42%" headers="mcps1.2.5.1.4 "><p id="p157096275515"><a name="p157096275515"></a><a name="p157096275515"></a>VolumeMode defines if a volume is intended to be used with a formatted filesystem or to remain in raw block state. Value of Filesystem is implied when not included in spec.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
-**Table  4**  Data structure of the status field
+**Table  4**  Data structure of the csi field
+
+<a name="table1821283920715"></a>
+<table><thead align="left"><tr id="row8212173914715"><th class="cellrowborder" valign="top" width="21.61%" id="mcps1.2.5.1.1"><p id="p92121739275"><a name="p92121739275"></a><a name="p92121739275"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="16.81%" id="mcps1.2.5.1.2"><p id="p18212133913716"><a name="p18212133913716"></a><a name="p18212133913716"></a>Mandatory</p>
+</th>
+<th class="cellrowborder" valign="top" width="19.66%" id="mcps1.2.5.1.3"><p id="p1821211395710"><a name="p1821211395710"></a><a name="p1821211395710"></a>Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="41.92%" id="mcps1.2.5.1.4"><p id="p7212139679"><a name="p7212139679"></a><a name="p7212139679"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row521216399710"><td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.1 "><p id="p20665349874"><a name="p20665349874"></a><a name="p20665349874"></a>driver</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.81%" headers="mcps1.2.5.1.2 "><p id="p15663649273"><a name="p15663649273"></a><a name="p15663649273"></a>Yes</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.5.1.3 "><p id="p1166113491177"><a name="p1166113491177"></a><a name="p1166113491177"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.92%" headers="mcps1.2.5.1.4 "><p id="p166599494715"><a name="p166599494715"></a><a name="p166599494715"></a>Driver is the name of the driver to use for this volume.</p>
+</td>
+</tr>
+<tr id="row15540450135917"><td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.1 "><p id="p754110508591"><a name="p754110508591"></a><a name="p754110508591"></a>volumeHandle</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.81%" headers="mcps1.2.5.1.2 "><p id="p16541195016599"><a name="p16541195016599"></a><a name="p16541195016599"></a>Yes</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.5.1.3 "><p id="p1054145045920"><a name="p1054145045920"></a><a name="p1054145045920"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.92%" headers="mcps1.2.5.1.4 "><p id="p14541165055911"><a name="p14541165055911"></a><a name="p14541165055911"></a>VolumeHandle is the unique volume name returned by the CSI volume plugin's CreateVolume to refer to the volume on all subsequent calls.</p>
+</td>
+</tr>
+<tr id="row1121317391712"><td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.1 "><p id="p0657194916718"><a name="p0657194916718"></a><a name="p0657194916718"></a>fsType</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.81%" headers="mcps1.2.5.1.2 "><p id="p1565511491278"><a name="p1565511491278"></a><a name="p1565511491278"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.5.1.3 "><p id="p86531549478"><a name="p86531549478"></a><a name="p86531549478"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.92%" headers="mcps1.2.5.1.4 "><p id="p45081532144113"><a name="p45081532144113"></a><a name="p45081532144113"></a>Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "nfs", "s3fs", "obsfs".</p>
+</td>
+</tr>
+<tr id="row19213173917715"><td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.1 "><p id="p186492491575"><a name="p186492491575"></a><a name="p186492491575"></a>volumeAttributes</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.81%" headers="mcps1.2.5.1.2 "><p id="p161842019105814"><a name="p161842019105814"></a><a name="p161842019105814"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.66%" headers="mcps1.2.5.1.3 "><p id="p864413491970"><a name="p864413491970"></a><a name="p864413491970"></a><a href="#table111672021689">volumeAttributes</a> object</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.92%" headers="mcps1.2.5.1.4 "><p id="p132651645135914"><a name="p132651645135914"></a><a name="p132651645135914"></a>Attributes of the volume to publish.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  5**  Data structure of the  **volumeAttributes **field
+
+<a name="table111672021689"></a>
+<table><thead align="left"><tr id="row1916718216814"><th class="cellrowborder" valign="top" width="21.61%" id="mcps1.2.5.1.1"><p id="p131671212814"><a name="p131671212814"></a><a name="p131671212814"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="16.73%" id="mcps1.2.5.1.2"><p id="p1716711211583"><a name="p1716711211583"></a><a name="p1716711211583"></a>Mandatory</p>
+</th>
+<th class="cellrowborder" valign="top" width="19.74%" id="mcps1.2.5.1.3"><p id="p18167202113810"><a name="p18167202113810"></a><a name="p18167202113810"></a>Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="41.92%" id="mcps1.2.5.1.4"><p id="p8168192116817"><a name="p8168192116817"></a><a name="p8168192116817"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row13168122119820"><td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.1 "><p id="p6972449087"><a name="p6972449087"></a><a name="p6972449087"></a>everest.io/disk-mode</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.73%" headers="mcps1.2.5.1.2 "><p id="p7168121388"><a name="p7168121388"></a><a name="p7168121388"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.3 "><p id="p31686211383"><a name="p31686211383"></a><a name="p31686211383"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.92%" headers="mcps1.2.5.1.4 "><p id="p01689211481"><a name="p01689211481"></a><a name="p01689211481"></a>Specify the mode of disk. Ex. "SISC", "VBD". This parameter is required when the parameter storageClassName is "csi-disk".</p>
+</td>
+</tr>
+<tr id="row61683211787"><td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.1 "><p id="p1897154915814"><a name="p1897154915814"></a><a name="p1897154915814"></a>everest.io/disk-volume-type</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.73%" headers="mcps1.2.5.1.2 "><p id="p181686218817"><a name="p181686218817"></a><a name="p181686218817"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.3 "><p id="p101682211185"><a name="p101682211185"></a><a name="p101682211185"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.92%" headers="mcps1.2.5.1.4 "><p id="p7168142118811"><a name="p7168142118811"></a><a name="p7168142118811"></a>Specify type of disk. Ex "SATA", "SSD", "SAS". This parameter is required when the parameter storageClassName is "csi-disk".</p>
+</td>
+</tr>
+<tr id="row01685211787"><td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.1 "><p id="p89691849987"><a name="p89691849987"></a><a name="p89691849987"></a>storage.kubernetes.io/csiProvisionerIdentity</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.73%" headers="mcps1.2.5.1.2 "><p id="p181681821484"><a name="p181681821484"></a><a name="p181681821484"></a>Yes</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.3 "><p id="p0168192119814"><a name="p0168192119814"></a><a name="p0168192119814"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.92%" headers="mcps1.2.5.1.4 "><p id="p19168122116816"><a name="p19168122116816"></a><a name="p19168122116816"></a>For everest, Set its value to "everest-csi-provisioner".</p>
+</td>
+</tr>
+<tr id="row18625123017421"><td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.1 "><p id="p1362653054211"><a name="p1362653054211"></a><a name="p1362653054211"></a>everest.io/crypt-key-id</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.73%" headers="mcps1.2.5.1.2 "><p id="p062643064218"><a name="p062643064218"></a><a name="p062643064218"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.3 "><p id="p1626153044215"><a name="p1626153044215"></a><a name="p1626153044215"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.92%" headers="mcps1.2.5.1.4 "><p id="p0626143011423"><a name="p0626143011423"></a><a name="p0626143011423"></a>Specify the ID of key resource when you use ncrypted storage, This parameter is optional when the parameter storageClassName is "csi-disk" or "csi-nas".</p>
+</td>
+</tr>
+<tr id="row6884144994211"><td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.1 "><p id="p688515490421"><a name="p688515490421"></a><a name="p688515490421"></a>everest.io/share-export-location</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.73%" headers="mcps1.2.5.1.2 "><p id="p14885114994216"><a name="p14885114994216"></a><a name="p14885114994216"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.3 "><p id="p788524944210"><a name="p788524944210"></a><a name="p788524944210"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.92%" headers="mcps1.2.5.1.4 "><p id="p198855491426"><a name="p198855491426"></a><a name="p198855491426"></a>Path that is exported by the SFS server. This parameter is optional when the parameter storageClassName is "csi-nas".</p>
+</td>
+</tr>
+<tr id="row1992317471421"><td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.1 "><p id="p129231347174215"><a name="p129231347174215"></a><a name="p129231347174215"></a>everest.io/obs-volume-type</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.73%" headers="mcps1.2.5.1.2 "><p id="p12923124720421"><a name="p12923124720421"></a><a name="p12923124720421"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.3 "><p id="p792319476427"><a name="p792319476427"></a><a name="p792319476427"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.92%" headers="mcps1.2.5.1.4 "><p id="p19923104724210"><a name="p19923104724210"></a><a name="p19923104724210"></a>Specify type of obs storage. Ex "STANDARD" , "WARM". This parameter is required when the parameter storageClassName is "csi-obs".</p>
+</td>
+</tr>
+<tr id="row9238300435"><td class="cellrowborder" valign="top" width="21.61%" headers="mcps1.2.5.1.1 "><p id="p13231130194315"><a name="p13231130194315"></a><a name="p13231130194315"></a>everest.io/region</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.73%" headers="mcps1.2.5.1.2 "><p id="p72473084317"><a name="p72473084317"></a><a name="p72473084317"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.3 "><p id="p1324130104312"><a name="p1324130104312"></a><a name="p1324130104312"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.92%" headers="mcps1.2.5.1.4 "><p id="p024103004311"><a name="p024103004311"></a><a name="p024103004311"></a>Specify region of obs storage. This parameter is required when the parameter storageClassName is "csi-obs".</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  6**  Data structure of the status field
 
 <a name="tab4eab31a17149b4b5cd8d26c93b5a7e"></a>
 <table><thead align="left"><tr id="r96f77f4a7bc345b4ab55432cc57a9558"><th class="cellrowborder" valign="top" width="21.61%" id="mcps1.2.5.1.1"><p id="a49f5bd9a5d9d4d7e822a713be20a5bc8"><a name="a49f5bd9a5d9d4d7e822a713be20a5bc8"></a><a name="a49f5bd9a5d9d4d7e822a713be20a5bc8"></a>Parameter</p>
@@ -221,7 +370,7 @@ POST /api/v1/persistentvolumes
 </tbody>
 </table>
 
-**Table  5**  Data structure of the claimRef field
+**Table  7**  Data structure of the claimRef field
 
 <a name="t5fe2db24d4ee4588b001da6f826e3d3a"></a>
 <table><thead align="left"><tr id="r0c9eacb1d1f44d099edd92ab1ccdc411"><th class="cellrowborder" valign="top" width="21.61%" id="mcps1.2.5.1.1"><p id="adaeb206a9e294ead8a84afe179925760"><a name="adaeb206a9e294ead8a84afe179925760"></a><a name="adaeb206a9e294ead8a84afe179925760"></a>Parameter</p>
@@ -300,7 +449,7 @@ POST /api/v1/persistentvolumes
 </tbody>
 </table>
 
-**Table  6**  Data structure of the hostPath field
+**Table  8**  Data structure of the hostPath field
 
 <a name="t49e3547d603e4c019abc62b357512bf6"></a>
 <table><thead align="left"><tr id="rf9e8a0fc08f342b1877bad35e8767d4e"><th class="cellrowborder" valign="top" width="21.607839216078393%" id="mcps1.2.5.1.1"><p id="aac066a194f5a4c43b31933fd1ae24c13"><a name="aac066a194f5a4c43b31933fd1ae24c13"></a><a name="aac066a194f5a4c43b31933fd1ae24c13"></a>Parameter</p>
@@ -325,7 +474,7 @@ POST /api/v1/persistentvolumes
 </tbody>
 </table>
 
-**Table  7**  Data structure of the nfs field
+**Table  9**  Data structure of the nfs field
 
 <a name="t2f5e70bc193c4769a21652324f8fec4d"></a>
 <table><thead align="left"><tr id="r1067814d8e7f4472ae3269ecd5155dd3"><th class="cellrowborder" valign="top" width="21.61%" id="mcps1.2.5.1.1"><p id="a4a18517e98684fb683a58e73d22ef6e4"><a name="a4a18517e98684fb683a58e73d22ef6e4"></a><a name="a4a18517e98684fb683a58e73d22ef6e4"></a>Parameter</p>
@@ -370,7 +519,54 @@ POST /api/v1/persistentvolumes
 
 **Example request:**
 
--   **Example request \(EVS volume\):**
+-   Example for clusters of v1.15:
+
+    ```
+    {
+        "apiVersion": "v1",
+        "kind": "PersistentVolume",
+        "metadata": {
+            "annotations": {
+                "pv.kubernetes.io/namespace": "default",
+                "pv.kubernetes.io/provisioned-by": "everest-csi-provisioner"
+            },
+            "creationTimestamp": "2020-01-08T02:00:31Z",
+            "deletionGracePeriodSeconds": 0,
+            "deletionTimestamp": "2020-01-13T02:04:12Z",
+            "finalizers": [
+                "everest-csi-attacher/disk-csi-everest-io"
+            ],
+            "labels": {
+                "failure-domain.beta.kubernetes.io/region": "eu-de",
+                "failure-domain.beta.kubernetes.io/zone": "eu-de-01"
+            },
+            "name": "pvc-efe92ec5-fb39-4e17-bb26-c5d336ce5c14",
+        },
+        "spec": {
+            "accessModes": [
+                "ReadWriteOnce"
+            ],
+            "capacity": {
+                "storage": "20Gi"
+            },
+            "csi": {
+                "driver": "disk.csi.everest.io",
+                "fsType": "ext4",
+                "volumeAttributes": {
+                    "everest.io/disk-mode": "SCSI",
+                    "everest.io/disk-volume-type": "SATA",
+                    "storage.kubernetes.io/csiProvisionerIdentity": "everest-csi-provisioner"
+                },
+                "volumeHandle": "9c44d068-42ab-4fcf-bb8f-1609823da5bb"
+            },
+            "persistentVolumeReclaimPolicy": "Delete",
+            "storageClassName": "csi-disk",
+            "volumeMode": "Filesystem"
+        }
+    }
+    ```
+
+-   Example for clusters of version 1.13 or earlier:
 
     ```
     { 
@@ -403,37 +599,6 @@ POST /api/v1/persistentvolumes
     }
     ```
 
--   **Example request** **\(SFS Turbo volume\)**:
-
-    ```
-    {
-        "apiVersion": "v1",
-        "kind": "PersistentVolume",
-        "metadata": {
-            "name": "pv-efs-example"
-        },
-        "spec": {
-            "accessModes": [
-                "ReadWriteMany"
-            ],
-            "capacity": {
-                "storage": "100Gi"
-            },
-            "flexVolume": {
-                "driver": "huawei.com/fuxiefs",
-                "fsType": "efs",
-                "options": {
-                    "deviceMountPath": "192.168.0.169:/",
-                    "fsType": "efs",
-                    "volumeID": "8962a2a2-a583-4b7f-bb74-fe76712d8414"
-                },
-                "persistentVolumeReclaimPolicy": "Delete",
-                "storageClassName": "efs-standard"
-            }
-        }
-    }
-    ```
-
 
 ## Response<a name="s10a5fb14ddb8474d98072b106aef5bf9"></a>
 
@@ -443,51 +608,96 @@ For the description about response parameters, see  [Table 2](#tfdb73431f39846d4
 
 **Example response:**
 
-```
-{
-    "kind": "PersistentVolume",
-    "apiVersion": "v1",
-    "metadata": {
-        "name": "pv-test-02",
-        "namespace": "default",
-        "selfLink": "/api/v1/namespaces/default/persistentvolumes/pv-test-02",
-        "uid": "98efd6aa-920a-11e8-81cc-fa163e49263c",
-        "resourceVersion": "5672675",
-        "creationTimestamp": "2018-07-28T02:04:44Z",
-        "labels": {
-            "failure-domain.beta.kubernetes.io/region": "eu-de",
-            "failure-domain.beta.kubernetes.io/zone": "eu-de-01",
-            "name": "pv-test-02"
+-   Example for clusters of v1.15:
+
+    ```
+    {
+        "kind":"PersistentVolumeClaim",
+        "apiVersion":"v1",
+        "metadata":{
+            "name":"cce-evs-k6m0pl2w-en9i",
+            "namespace":"default",
+            "selfLink":"/api/v1/namespaces/default/persistentvolumeclaims/pv-test-02",
+            "uid":"67db6e01-d42f-45af-8abd-913f9aaca171",
+            "resourceVersion":"2284565",
+            "creationTimestamp":"2020-02-14T10:17:22Z",
+            "labels":{
+                "failure-domain.beta.kubernetes.io/region":"eu-de",
+                "failure-domain.beta.kubernetes.io/zone":"eu-de-01"
+            },
+            "annotations":{
+                "everest.io/disk-volume-type":"SATA"
+            },
+            "finalizers":[
+                "kubernetes.io/pvc-protection"
+            ]
         },
-        "annotations": {
-            "volume.beta.kubernetes.io/storage-class": "sata",
-            "volume.beta.kubernetes.io/storage-provisioner": "flexvolume-huawei.com/fuxivol"
+        "spec":{
+            "accessModes":[
+                "ReadWriteOnce"
+            ],
+            "resources":{
+                "requests":{
+                    "storage":"10Gi"
+                }
+            },
+            "storageClassName":"csi-disk",
+            "volumeMode":"Filesystem"
+        },
+        "status":{
+            "phase":"Pending"
         }
-    },
-    "spec": {
-        "capacity": {
-            "storage": "10Gi"
-        },
-        "hostPath": {
-            "path": "/home",
-            "type": ""
-        },
-        "accessModes": [
-            "ReadWriteMany"
-        ],
-        "persistentVolumeReclaimPolicy": "Delete"
-    },
-    "status": {
-        "phase": "Pending"
     }
-}
-```
+    ```
+
+-   Example for clusters of version 1.13 or earlier:
+
+    ```
+    {
+        "kind": "PersistentVolume",
+        "apiVersion": "v1",
+        "metadata": {
+            "name": "pv-test-02",
+            "namespace": "default",
+            "selfLink": "/api/v1/namespaces/default/persistentvolumes/pv-test-02",
+            "uid": "98efd6aa-920a-11e8-81cc-fa163e49263c",
+            "resourceVersion": "5672675",
+            "creationTimestamp": "2018-07-28T02:04:44Z",
+            "labels": {
+                "failure-domain.beta.kubernetes.io/region": "eu-de",
+                "failure-domain.beta.kubernetes.io/zone": "eu-de-01",
+                "name": "pv-test-02"
+            },
+            "annotations": {
+                "volume.beta.kubernetes.io/storage-class": "sata",
+                "volume.beta.kubernetes.io/storage-provisioner": "flexvolume-huawei.com/fuxivol"
+            }
+        },
+        "spec": {
+            "capacity": {
+                "storage": "10Gi"
+            },
+            "hostPath": {
+                "path": "/home",
+                "type": ""
+            },
+            "accessModes": [
+                "ReadWriteMany"
+            ],
+            "persistentVolumeReclaimPolicy": "Delete"
+        },
+        "status": {
+            "phase": "Pending"
+        }
+    }
+    ```
+
 
 ## Status Code<a name="s9bf8cf335c8b4ceda65a73e0447ae83f"></a>
 
-[Table 8](#teef67263b8ad4388911a1071b7457482)  describes the status code of this API.
+[Table 10](#teef67263b8ad4388911a1071b7457482)  describes the status code of this API.
 
-**Table  8**  Status code
+**Table  10**  Status code
 
 <a name="teef67263b8ad4388911a1071b7457482"></a>
 <table><thead align="left"><tr id="r3b2414a3fe4b46bb9e39039567404d32"><th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.1"><p id="p122844522619"><a name="p122844522619"></a><a name="p122844522619"></a>Status Code</p>

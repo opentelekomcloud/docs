@@ -1,4 +1,4 @@
-# Connecting to Private Container Registry<a name="cce_01_0209"></a>
+# Connecting to Private Container Registry<a name="cce_01_1209"></a>
 
 Before pushing container images, ensure that your local Docker client can access your private container registry.
 
@@ -63,13 +63,13 @@ Before pushing container images, ensure that your local Docker client can access
 
         On the  **Daemon**  tab page of the Docker GUI, add the container registry address obtained in  [1](#l90ddb6fb28304a4c8c8b656192258be7)  to the  **Insecure registries**  list. Then restart Docker.
 
-        ![](figures/insecure-registries.png)
+        ![](figures/daemon-osx.png)
 
     -   Windows 10:
 
         On the  **Daemon**  tab page of the Docker GUI, add the container registry address obtained in  [1](#l90ddb6fb28304a4c8c8b656192258be7)  to the  **Insecure registries**  list. Then restart Docker.
 
-        ![](figures/insecure-registries10.png)
+        ![](figures/windows-10.png)
 
     -   OS Yosemite 10.10.2 or earlier; Windows 7 or earlier:
 

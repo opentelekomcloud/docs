@@ -17,7 +17,7 @@ After a node in the cluster is stopped, the services on the node are also stoppe
     **Figure  1**  Node list<a name="fig760211287419"></a>  
     ![](figures/node-list.png "node-list")
 
-3.  Click the node name in the  **Basic Information**  area to open the ECS details page on the Cloud Server Console.
+3.  Click the node name to open the ECS details page on the Cloud Server Console.
 
     **Figure  2**  Nodes details page<a name="fig781172715419"></a>  
     ![](figures/nodes-details-page.png "nodes-details-page")

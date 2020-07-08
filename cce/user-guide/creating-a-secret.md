@@ -4,7 +4,7 @@ A  secret  is a type of resource that holds sensitive data, such as authenticati
 
 ## Prerequisites<a name="section19209149103913"></a>
 
-Cluster and node resources have been created. For more information, see  [Creating a VM Cluster](creating-a-vm-cluster.md). If you have available clusters and node resources, skip this operation.
+Cluster and node resources have been created. For more information, see  [Creating a Hybrid Cluster](creating-a-hybrid-cluster.md). If you have available clusters and node resources, skip this operation.
 
 ## Creating a Secret<a name="section18512531861"></a>
 
@@ -73,7 +73,7 @@ Cluster and node resources have been created. For more information, see  [Creati
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >To create a resource by uploading a file, ensure that the resource description file has been created. CCE supports files in JSON or YAML format. For more information, see  [Secret Resource File Configuration](#section187197531454).  
 
-    Click  **Create** **YAML**  on the right of the page.
+    Click  **Create** **YAML **on the right of the page.
 
     -   Method 1: Import the orchestration file.
 

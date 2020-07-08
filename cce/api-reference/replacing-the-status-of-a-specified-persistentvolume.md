@@ -4,9 +4,9 @@
 
 This API is used to replace the status of a specified PersistentVolume.
 
-The following field can be updated: 
+The following field can be updated:
 
--   status.phase
+status.phase
 
 ## URI<a name="s276514e02b864c299d30dd77b707d0be"></a>
 

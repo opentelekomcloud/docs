@@ -16,7 +16,7 @@ To use cloud services, you need to register an account using your mobile number.
 
 ## IAM User<a name="section7961729"></a>
 
-IAM users are created by an account. Each IAM user has its own password and access keys to access the public cloud, and uses cloud resources based on assigned permissions. IAM users do not make payments. It is the account that pays the bills.
+IAM users are created by an account. Each IAM user has its own password and access keys to access the cloud, and uses cloud resources based on assigned permissions. IAM users do not make payments. It is the account that pays the bills.
 
 ## Relationship Between an Account and Its IAM Users<a name="section697464020268"></a>
 

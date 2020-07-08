@@ -216,7 +216,7 @@ N/A
 <td class="cellrowborder" valign="top" width="31.080000000000002%" headers="mcps1.2.4.1.2 "><p id="a3b7a410b3c3b45318b6c2a8209e59480"><a name="a3b7a410b3c3b45318b6c2a8209e59480"></a><a name="a3b7a410b3c3b45318b6c2a8209e59480"></a>Object</p>
 </td>
 <td class="cellrowborder" valign="top" width="44.42%" headers="mcps1.2.4.1.3 "><p id="aaad98d488e6e4343b73f92c64694e1ce"><a name="aaad98d488e6e4343b73f92c64694e1ce"></a><a name="aaad98d488e6e4343b73f92c64694e1ce"></a>Limits describes the maximum amount of compute resources allowed.</p>
-<div class="note" id="n25be9a768ae14f75b308034d81680de6"><a name="n25be9a768ae14f75b308034d81680de6"></a><a name="n25be9a768ae14f75b308034d81680de6"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="af8ea8976fc664d1aadf81dc7d8407c6f"><a name="af8ea8976fc664d1aadf81dc7d8407c6f"></a><a name="af8ea8976fc664d1aadf81dc7d8407c6f"></a>Parameter <strong id="b12216152584010"><a name="b12216152584010"></a><a name="b12216152584010"></a>limits</strong> is invalid.</p>
+<div class="note" id="n25be9a768ae14f75b308034d81680de6"><a name="n25be9a768ae14f75b308034d81680de6"></a><a name="n25be9a768ae14f75b308034d81680de6"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="af8ea8976fc664d1aadf81dc7d8407c6f"><a name="af8ea8976fc664d1aadf81dc7d8407c6f"></a><a name="af8ea8976fc664d1aadf81dc7d8407c6f"></a>Parameter <strong id="en-us_topic_0079615064_b161542016202"><a name="en-us_topic_0079615064_b161542016202"></a><a name="en-us_topic_0079615064_b161542016202"></a>limits </strong>is invalid.</p>
 </div></div>
 </td>
 </tr>
@@ -297,51 +297,106 @@ N/A
 
 **Example response:**
 
-```
-{
-    "kind": "PersistentVolumeClaim",
-    "apiVersion": "v1",
-    "metadata": {
-        "name": "db-mysql",
-        "namespace": "default",
-        "selfLink": "/api/v1/namespaces/default/persistentvolumeclaims/db-mysql",
-        "uid": "ac34af93-8cdd-11e8-8ee0-fa163e49263c",
-        "resourceVersion": "4197709",
-        "creationTimestamp": "2018-07-21T12:00:33Z",
-        "labels": {
-            "failure-domain.beta.kubernetes.io/region": "eu-de",
-            "failure-domain.beta.kubernetes.io/zone": "eu-de-01"
+-   Example for clusters of v1.15:
+
+    ```
+    {
+        "kind":"PersistentVolumeClaim",
+        "apiVersion":"v1",
+        "metadata":{
+            "name":"cce-evs-k6m131jj-i1px",
+            "namespace":"default",
+            "selfLink":"/api/v1/namespaces/default/persistentvolumeclaims/cce-evs-k6m131jj-i1px",
+            "uid":"d34f6a93-9eba-4a33-9320-8fa4addd3753",
+            "resourceVersion":"2286592",
+            "creationTimestamp":"2020-02-14T10:27:43Z",
+            "labels":{
+                "failure-domain.beta.kubernetes.io/region":"eu-de",
+                "failure-domain.beta.kubernetes.io/zone":"eu-de-01"
+            },
+            "annotations":{
+                "everest.io/disk-volume-type":"SATA",
+                "pv.kubernetes.io/bind-completed":"yes",
+                "pv.kubernetes.io/bound-by-controller":"yes",
+                "volume.beta.kubernetes.io/storage-provisioner":"everest-csi-provisioner"
+            },
+            "finalizers":[
+                "kubernetes.io/pvc-protection"
+            ]
         },
-        "annotations": {
-            "pv.kubernetes.io/bind-completed": "yes",
-            "pv.kubernetes.io/bound-by-controller": "yes",
-            "volume.beta.kubernetes.io/storage-class": "sata",
-            "volume.beta.kubernetes.io/storage-provisioner": "flexvolume-huawei.com/fuxivol"
-        }
-    },
-    "spec": {
-        "accessModes": [
-            "ReadWriteMany"
-        ],
-        "resources": {
-            "requests": {
-                "storage": "10Gi"
+        "spec":{
+            "accessModes":[
+                "ReadWriteOnce"
+            ],
+            "resources":{
+                "requests":{
+                    "storage":"10Gi"
+                }
+            },
+            "volumeName":"pvc-d34f6a93-9eba-4a33-9320-8fa4addd3753",
+            "storageClassName":"csi-disk",
+            "volumeMode":"Filesystem"
+        },
+        "status":{
+            "phase":"Bound",
+            "accessModes":[
+                "ReadWriteOnce"
+            ],
+            "capacity":{
+                "storage":"10Gi"
             }
-        },
-        "volumeName": "pvc-ac34af93-8cdd-11e8-8ee0-fa163e49263c",
-        "volumeNamespace": "default"
-    },
-    "status": {
-        "phase": "Bound",
-        "accessModes": [
-            "ReadWriteMany"
-        ],
-        "capacity": {
-            "storage": "10Gi"
         }
     }
-}
-```
+    ```
+
+-   Example for clusters of v1.13 or earlier:
+
+    ```
+    {
+        "kind": "PersistentVolumeClaim",
+        "apiVersion": "v1",
+        "metadata": {
+            "name": "db-mysql",
+            "namespace": "default",
+            "selfLink": "/api/v1/namespaces/default/persistentvolumeclaims/db-mysql",
+            "uid": "ac34af93-8cdd-11e8-8ee0-fa163e49263c",
+            "resourceVersion": "4197709",
+            "creationTimestamp": "2018-07-21T12:00:33Z",
+            "labels": {
+                "failure-domain.beta.kubernetes.io/region": "eu-de",
+                "failure-domain.beta.kubernetes.io/zone": "eu-de-01"
+            },
+            "annotations": {
+                "pv.kubernetes.io/bind-completed": "yes",
+                "pv.kubernetes.io/bound-by-controller": "yes",
+                "volume.beta.kubernetes.io/storage-class": "sata",
+                "volume.beta.kubernetes.io/storage-provisioner": "flexvolume-huawei.com/fuxivol"
+            }
+        },
+        "spec": {
+            "accessModes": [
+                "ReadWriteMany"
+            ],
+            "resources": {
+                "requests": {
+                    "storage": "10Gi"
+                }
+            },
+            "volumeName": "pvc-ac34af93-8cdd-11e8-8ee0-fa163e49263c",
+            "volumeNamespace": "default"
+        },
+        "status": {
+            "phase": "Bound",
+            "accessModes": [
+                "ReadWriteMany"
+            ],
+            "capacity": {
+                "storage": "10Gi"
+            }
+        }
+    }
+    ```
+
 
 ## Status Code<a name="s5e327306549c4e9883cffd48fd3dd116"></a>
 

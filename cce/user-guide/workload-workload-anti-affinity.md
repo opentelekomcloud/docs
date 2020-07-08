@@ -2,7 +2,7 @@
 
 ## Using the CCE Console<a name="section189731748476"></a>
 
-1.  When  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md), in the  **Scheduling Policies**  area on the  **Configure Advanced Settings**  page, choose  **Workload-Workload Affinity and Anti-affinity**  \>  **Anti-affinity with Workloads**  \>  **Add**.
+1.  When  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md), in the  **Scheduling Policies**  area on the  **Configure Advanced Settings**  page, choose  **Inter-Pod Affinity and Anti-affinity**  \>  **Anti-affinity with Pods**  \>  **Add**.
 2.  Select the workloads to which you want to deploy the target workload on a different node, and click  **OK**.
 
     The workload to be created and the selected workloads will be deployed on different nodes.
@@ -48,15 +48,15 @@ spec:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
             - matchExpressions:
-                - key: app          #workload's label key
-                  operator: NotIn        
-                 values:
-                 - test     #workload's label value
+              - key: app          #workload's label key
+                operator: NotIn        
+                values:
+                - test     #workload's label value
 ```
 
 ## Setting the Object Type After Creating a Workload<a name="section097418414472"></a>
 
-1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
+1.  Log in to the CCE console. In the navigation pane, choose** Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
 2.  Click the name of the workload for which you will add a scheduling policy. On the workload details page, choose  **Scheduling Policies**  \>  **Add Simple Scheduling Policy**  \>  **Add Anti-affinity Object**.
 3.  Set  **Object Type**  to  **Workload**  and select the workloads to be deployed on a different node from the created workload. The created workload and the selected workloads will be deployed on different nodes.
 

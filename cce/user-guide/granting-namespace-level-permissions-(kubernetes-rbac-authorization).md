@@ -4,7 +4,7 @@ This section describes how to grant CCE users and user groups the permissions to
 
 ## Configuration<a name="section188449192496"></a>
 
--   You need a public cloud account that has created one or more user groups and IAM users.
+-   You need a cloud account that has created one or more user groups and IAM users.
 -   By way of example, both a user group and a user are granted permissions to access namespaced resources. You have the choice to grant permissions to either users or user groups.
 -   The process flow is used only to add namespace permissions policies for users or user groups who never have such policies. To edit permissions policies of users or user groups, click  **Edit**  on the  **Permissions Management**  \>  **Namespace-Level Permissions**  page.
 -   If multiple permissions are granted to a user or user group, all of these permissions will take effect at the same time. The permissions granted to a user group are applicable to all users in the user group.
@@ -72,7 +72,7 @@ A namespace is an abstract collection of resources and objects. It enables resou
 
 This section describes how to grant namespace-level permissions to the IAM user James001 and the user group Developers created in  [Granting IAM Users the Permissions to Access CCE](granting-iam-users-the-permissions-to-access-cce.md).
 
-**Figure  1**  Process for granting namespace permissions<a name="fig19140481542"></a>  
+**Figure  1**  Process for granting namespace permissions<a name="fig138211475517"></a>  
 ![](figures/process-for-granting-namespace-permissions.png "process-for-granting-namespace-permissions")
 
 ## Step 1: Grant Namespace Permissions to an IAM User or User Group<a name="section39693318615"></a>
@@ -122,9 +122,9 @@ In this step, the IAM user James001 and user group Developers will be granted pe
 
 Use the username James001 and identity credential to log in to the CCE console, and verify that the IAM user James001 has the namespace permissions.
 
-1.  On the public cloud login page, enter the account name, username, and password, and click  **Log In**.
+1.  On the cloud login page, enter the account name, username, and password, and click  **Log In**.
 
-    -   The account name is the name of the public cloud account that created the IAM user.
+    -   The account name is the name of the cloud account that created the IAM user.
     -   The username and password are those set by the account when creating the IAM user James001. You will be prompted to change the initial password at initial login.
 
     If the login fails, contact the entity owning the account to verify the username and password. Alternatively, you can reset the password.

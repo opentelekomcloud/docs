@@ -15,7 +15,7 @@ Local hard disks are applicable to the following scenarios:
 
 In this scenario, the files or directories on the host machine are mounted to a  container. Such a volume is usually used to store containerized workload logs that need to be stored permanently or containerized workloads that need to access internal data structure of the  Docker  engine on the host.
 
-1.  Create a workload by referring to  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md). After you add a container, expand  **Data Storage**, and click  **Add Local Disk**.
+1.  Create a workload by referring to  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md). After you add a container, expand  **Data Storage**, and click  **Add Local Volume**.
 2.  Set parameters for adding a local disk, as listed in  [Table 1](#table14312815449).
 
     **Table  1**  Setting the volume type to host path mounting
@@ -27,7 +27,7 @@ In this scenario, the files or directories on the host machine are mounted to a 
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row931118184415"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p7315824414"><a name="p7315824414"></a><a name="p7315824414"></a>Volume Type</p>
+    <tbody><tr id="row931118184415"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p7315824414"><a name="p7315824414"></a><a name="p7315824414"></a>Type</p>
     </td>
     <td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p193112817449"><a name="p193112817449"></a><a name="p193112817449"></a>HostPath.</p>
     </td>
@@ -37,12 +37,14 @@ In this scenario, the files or directories on the host machine are mounted to a 
     <td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p133114874418"><a name="p133114874418"></a><a name="p133114874418"></a>Path of the host to which the local disk is to be mounted, for example, <strong id="b1936602094412"><a name="b1936602094412"></a><a name="b1936602094412"></a>/etc/hosts</strong>.</p>
     </td>
     </tr>
-    <tr id="row53620864414"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p153212810443"><a name="p153212810443"></a><a name="p153212810443"></a>Add Container Path</p>
+    <tr id="row596881812309"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p17969118123010"><a name="p17969118123010"></a><a name="p17969118123010"></a>Add Container Path</p>
     </td>
-    <td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><a name="ol1535285447"></a><a name="ol1535285447"></a><ol id="ol1535285447"><li>Click <span class="uicontrol" id="uicontrol962276955105213"><a name="uicontrol962276955105213"></a><a name="uicontrol962276955105213"></a><b>Add Container Path</b></span>.</li><li>Enter the container path to which the data volume is mounted.<div class="notice" id="note235158114415"><a name="note235158114415"></a><a name="note235158114415"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><a name="ul12344814413"></a><a name="ul12344814413"></a><ul id="ul12344814413"><li>The container path cannot be a system directory, such as <strong id="b8930115520267"><a name="b8930115520267"></a><a name="b8930115520267"></a>/</strong> or /<strong id="b1739622817252"><a name="b1739622817252"></a><a name="b1739622817252"></a>var/run</strong>. Otherwise, the container may not function properly. You are advised to mount the container to an empty directory. If the directory is not empty, ensure that there are no files affecting container startup in the directory. Otherwise, such files will be replaced, resulting in failures to start the container and create the workload.</li><li>When the container is mounted to a high-risk directory, you are advised to use an account with minimum permissions to start the container; otherwise, high-risk files on the host machine may be damaged.</li></ul>
+    <td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p1764516582300"><a name="p1764516582300"></a><a name="p1764516582300"></a>Configure the following parameters:</p>
+    <a name="ol8532417300"></a><a name="ol8532417300"></a><ol id="ol8532417300"><li>subPath: Enter a subpath, for example, tmp.<p id="p183671375216"><a name="p183671375216"></a><a name="p183671375216"></a>A subpath is used to mount a local disk so that the same data volume is used in a single pod. If this parameter is left blank, the root path is used by default.</p>
+    </li><li>Enter the container path to which the data volume is mounted.<div class="notice" id="note521172913303"><a name="note521172913303"></a><a name="note521172913303"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><a name="ul722112943014"></a><a name="ul722112943014"></a><ul id="ul722112943014"><li>The container path cannot be a system directory, such as <strong id="b722102913019"><a name="b722102913019"></a><a name="b722102913019"></a>/ </strong>or /<strong id="b22218290301"><a name="b22218290301"></a><a name="b22218290301"></a>var/run</strong>. Otherwise, the container may not function properly. You are advised to mount the container to an empty directory. If the directory is not empty, ensure that there are no files affecting container startup in the directory. Otherwise, such files will be replaced, resulting in failures to start the container and create the workload.</li><li>When the container is mounted to a high-risk directory, you are advised to use an account with minimum permissions to start the container; otherwise, high-risk files on the host machine may be damaged.</li></ul>
     </div></div>
-    </li><li>Set permissions.<a name="ul3352818447"></a><a name="ul3352818447"></a><ul id="ul3352818447"><li><strong id="b75061752152618"><a name="b75061752152618"></a><a name="b75061752152618"></a>Read-only</strong>: You can only read the data volumes in the path.</li><li><strong id="b1534191362715"><a name="b1534191362715"></a><a name="b1534191362715"></a>Read/Write</strong>: You can modify the data volumes in the path. Newly written data is not migrated if the container is migrated, which may cause a data loss.</li></ul>
-    </li><li>Click <strong id="b143281381402"><a name="b143281381402"></a><a name="b143281381402"></a>OK</strong>.</li></ol>
+    </li><li>Set permissions.<a name="ul17156103511305"></a><a name="ul17156103511305"></a><ul id="ul17156103511305"><li><strong id="b141565353300"><a name="b141565353300"></a><a name="b141565353300"></a>Read-only</strong>: You can only read the data volumes in the path.</li><li><strong id="b16156123511307"><a name="b16156123511307"></a><a name="b16156123511307"></a>Read/Write</strong>: You can modify the data volumes in the path. Newly written data is not migrated if the container is migrated, which may cause a data loss.</li></ul>
+    </li><li>Click <strong id="b1715683513305"><a name="b1715683513305"></a><a name="b1715683513305"></a>OK</strong>.</li></ol>
     </td>
     </tr>
     </tbody>
@@ -53,7 +55,7 @@ In this scenario, the files or directories on the host machine are mounted to a 
 
 EmptyDir applies to temporary data storage, disaster recovery, and shared running. It will be deleted upon deletion or transfer of workload instances.
 
-1.  Create a workload by referring to  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md). After you add a container, expand  **Data Storage**, and click  **Add Local Disk**.
+1.  Create a workload by referring to  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md). After you add a container, expand  **Data Storage**, and click  **Add Local Volume**.
 2.  Set the local disk type to temporary path mounting and set parameters for adding a local disk, as shown in  [Table 2](#table1867417102475).
 
     **Table  2**  Setting the volume type to temporary path mounting
@@ -65,22 +67,25 @@ EmptyDir applies to temporary data storage, disaster recovery, and shared runnin
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row867231016476"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p15672210204710"><a name="p15672210204710"></a><a name="p15672210204710"></a>Volume Type</p>
+    <tbody><tr id="row867231016476"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p15672210204710"><a name="p15672210204710"></a><a name="p15672210204710"></a>Type</p>
     </td>
-    <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><p id="p1267271094716"><a name="p1267271094716"></a><a name="p1267271094716"></a>Temporary path (EmptyDir).</p>
-    </td>
-    </tr>
-    <tr id="row8672181011474"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p967231014479"><a name="p967231014479"></a><a name="p967231014479"></a>Storage Media Type</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><a name="ul2672201015476"></a><a name="ul2672201015476"></a><ul id="ul2672201015476"><li>If you select <strong id="b84235270614480"><a name="b84235270614480"></a><a name="b84235270614480"></a>In-memory</strong> <strong id="b084920592428"><a name="b084920592428"></a><a name="b084920592428"></a>storage</strong>, the running speed is improved, but the storage capacity is limited by the memory size. This mode applies to scenarios where the data volume is small and the read and write efficiency is high.</li><li>If <strong id="b22791941418"><a name="b22791941418"></a><a name="b22791941418"></a>In-memory</strong> <strong id="b127914420411"><a name="b127914420411"></a><a name="b127914420411"></a>storage</strong> is deselected, data is stored in disks, which is applicable to a large amount of data with low requirements on reading and writing efficiency.</li></ul>
+    <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><p id="p1267271094716"><a name="p1267271094716"></a><a name="p1267271094716"></a>EmptyDir.</p>
     </td>
     </tr>
-    <tr id="row10674101084717"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p96728108473"><a name="p96728108473"></a><a name="p96728108473"></a>Add Container Path</p>
+    <tr id="row8672181011474"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p967231014479"><a name="p967231014479"></a><a name="p967231014479"></a>Medium</p>
     </td>
-    <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><a name="ol186742104479"></a><a name="ol186742104479"></a><ol id="ol186742104479"><li>Click <span class="uicontrol" id="uicontrol283550550"><a name="uicontrol283550550"></a><a name="uicontrol283550550"></a><b>Add Container Path</b></span>.</li><li>Enter the container path to which the data volume is mounted.<div class="notice" id="note767281014713"><a name="note767281014713"></a><a name="note767281014713"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><a name="ul12672010114719"></a><a name="ul12672010114719"></a><ul id="ul12672010114719"><li>The container path cannot be a system directory, such as <strong id="b110136275"><a name="b110136275"></a><a name="b110136275"></a>/</strong> or /<strong id="b2084791252"><a name="b2084791252"></a><a name="b2084791252"></a>var/run</strong>. Otherwise, the container may not function properly. You are advised to mount the container to an empty directory. If the directory is not empty, ensure that there are no files affecting container startup in the directory. Otherwise, such files will be replaced, resulting in failures to start the container and create the workload.</li><li>When the container is mounted to a high-risk directory, you are advised to use an account with minimum permissions to start the container; otherwise, high-risk files on the host machine may be damaged.</li></ul>
+    <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><a name="ul2672201015476"></a><a name="ul2672201015476"></a><ul id="ul2672201015476"><li>If you select <strong id="b84235270614480"><a name="b84235270614480"></a><a name="b84235270614480"></a>Memory</strong>, the running speed is improved, but the storage capacity is limited by the memory size. This mode applies to scenarios where the data volume is small and the read and write efficiency is high.</li><li>If <strong id="b1720652327144854"><a name="b1720652327144854"></a><a name="b1720652327144854"></a>Memory</strong> is deselected, data is stored in disks, which is applicable to a large amount of data with low requirements on reading and writing efficiency.</li></ul>
+    </td>
+    </tr>
+    <tr id="row1168113508328"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p068212505326"><a name="p068212505326"></a><a name="p068212505326"></a>Add Container Path</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><p id="p4174161519591"><a name="p4174161519591"></a><a name="p4174161519591"></a>Configure the following parameters:</p>
+    <a name="ol1981735103319"></a><a name="ol1981735103319"></a><ol id="ol1981735103319"><li>subPath: Enter a subpath, for example, tmp.<p id="p788619598263"><a name="p788619598263"></a><a name="p788619598263"></a>A subpath is used to mount a local disk so that the same data volume is used in a single pod. If this parameter is left blank, the root path is used by default.</p>
+    </li></ol>
+    <a name="ol39326573329"></a><a name="ol39326573329"></a><ol id="ol39326573329"><li>Enter the container path to which the data volume is mounted.<div class="notice" id="note9932125743214"><a name="note9932125743214"></a><a name="note9932125743214"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><a name="ul129322057113220"></a><a name="ul129322057113220"></a><ul id="ul129322057113220"><li>The container path cannot be a system directory, such as <strong id="b493235718322"><a name="b493235718322"></a><a name="b493235718322"></a>/ </strong>or /<strong id="b17932175733213"><a name="b17932175733213"></a><a name="b17932175733213"></a>var/run</strong>. Otherwise, the container may not function properly. You are advised to mount the container to an empty directory. If the directory is not empty, ensure that there are no files affecting container startup in the directory. Otherwise, such files will be replaced, resulting in failures to start the container and create the workload.</li><li>When the container is mounted to a high-risk directory, you are advised to use an account with minimum permissions to start the container; otherwise, high-risk files on the host machine may be damaged.</li></ul>
     </div></div>
-    </li><li>Set permissions.<a name="ul2673810164716"></a><a name="ul2673810164716"></a><ul id="ul2673810164716"><li><strong id="b1595618187"><a name="b1595618187"></a><a name="b1595618187"></a>Read-only</strong>: You can only read the data volumes in the path.</li><li><strong id="b1543536318"><a name="b1543536318"></a><a name="b1543536318"></a>Read/Write</strong>: You can modify the data volumes in the path. Newly written data is not migrated if the container is migrated, which may cause a data loss.</li></ul>
-    </li><li>Click <strong id="b1803214168"><a name="b1803214168"></a><a name="b1803214168"></a>OK</strong>.</li></ol>
+    </li><li>Set permissions.<a name="ul993285713219"></a><a name="ul993285713219"></a><ul id="ul993285713219"><li><strong id="b11932195713214"><a name="b11932195713214"></a><a name="b11932195713214"></a>Read-only</strong>: You can only read the data volumes in the path.</li><li><strong id="b1093275720322"><a name="b1093275720322"></a><a name="b1093275720322"></a>Read/Write</strong>: You can modify the data volumes in the path. Newly written data is not migrated if the container is migrated, which may cause a data loss.</li></ul>
+    </li><li>Click <strong id="b993312579323"><a name="b993312579323"></a><a name="b993312579323"></a>OK</strong>.</li></ol>
     </td>
     </tr>
     </tbody>
@@ -91,7 +96,7 @@ EmptyDir applies to temporary data storage, disaster recovery, and shared runnin
 
 The platform provides the separation of workload codes and configuration files. ConfigMap mounting is used to process workload configuration parameters. You need to create workload configurations in advance. For more information, see  [Creating a ConfigMap](creating-a-configmap.md).
 
-1.  Create a workload by referring to  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md). After you add a container, expand  **Data Storage**, and click  **Add Local Disk**.
+1.  Create a workload by referring to  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md). After you add a container, expand  **Data Storage**, and click  **Add Local Volume**.
 2.  Set the local disk type to ConfigMap mounting and set parameters for adding a local disk, as shown in  [Table 3](#table1776324831114).
 
     **Table  3**  Setting the volume type to ConfigMap mounting
@@ -103,7 +108,7 @@ The platform provides the separation of workload codes and configuration files. 
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row20785144820118"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p197881548171117"><a name="p197881548171117"></a><a name="p197881548171117"></a>Volume Type</p>
+    <tbody><tr id="row20785144820118"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p197881548171117"><a name="p197881548171117"></a><a name="p197881548171117"></a>Type</p>
     </td>
     <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><p id="p479110483117"><a name="p479110483117"></a><a name="p479110483117"></a>ConfigMap.</p>
     </td>
@@ -115,11 +120,13 @@ The platform provides the separation of workload codes and configuration files. 
     </div>
     </td>
     </tr>
-    <tr id="row28091948181115"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p9813048191118"><a name="p9813048191118"></a><a name="p9813048191118"></a>Add Container Path</p>
+    <tr id="row127473716343"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p927463733410"><a name="p927463733410"></a><a name="p927463733410"></a>Add Container Path</p>
     </td>
-    <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><a name="ol18607172216391"></a><a name="ol18607172216391"></a><ol id="ol18607172216391"><li>Click <span class="uicontrol" id="uicontrol1561422293919"><a name="uicontrol1561422293919"></a><a name="uicontrol1561422293919"></a><b>Add Container Path</b></span>.</li><li>Enter the container path to which the data volume is mounted.<div class="notice" id="note36191022193911"><a name="note36191022193911"></a><a name="note36191022193911"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><a name="ul3921344985"></a><a name="ul3921344985"></a><ul id="ul3921344985"><li>Do not mount a data volume to a system directory such as <strong id="b1336093528144242"><a name="b1336093528144242"></a><a name="b1336093528144242"></a>/</strong> or <strong id="b903433524144242"><a name="b903433524144242"></a><a name="b903433524144242"></a>/var/run</strong>; otherwise, the container becomes abnormal. You are advised to mount the container to an empty directory. If the directory is not empty, ensure that there are no files affecting container startup in the directory. Otherwise, such files will be replaced, resulting in failures to start the container and create the workload.</li><li>When the data volume is mounted to a high-risk directory, you are advised to use an account with minimum permissions to start the container; otherwise, high-risk files on the host machine may be damaged.</li></ul>
+    <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><p id="p179901734202616"><a name="p179901734202616"></a><a name="p179901734202616"></a>Configure the following parameters:</p>
+    <a name="ol16872134320346"></a><a name="ol16872134320346"></a><ol id="ol16872134320346"><li>subPath: Enter a subpath, for example, tmp.<p id="p128311819112611"><a name="p128311819112611"></a><a name="p128311819112611"></a>A subpath is used to mount a local disk so that the same data volume is used in a single pod. If this parameter is left blank, the root path is used by default.</p>
+    </li><li>Enter the container path to which the data volume is mounted.<div class="notice" id="note6872174311348"><a name="note6872174311348"></a><a name="note6872174311348"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><a name="ul88733437344"></a><a name="ul88733437344"></a><ul id="ul88733437344"><li>Do not mount a data volume to a system directory such as <strong id="b8873164303412"><a name="b8873164303412"></a><a name="b8873164303412"></a>/</strong> or <strong id="b587334313419"><a name="b587334313419"></a><a name="b587334313419"></a>/var/run</strong>; otherwise, the container becomes abnormal. You are advised to mount the container to an empty directory. If the directory is not empty, ensure that there are no files affecting container startup in the directory. Otherwise, such files will be replaced, resulting in failures to start the container and create the workload.</li><li>When the data volume is mounted to a high-risk directory, you are advised to use an account with minimum permissions to start the container; otherwise, high-risk files on the host machine may be damaged.</li></ul>
     </div></div>
-    </li><li>Set the permission to <strong id="b617845293615"><a name="b617845293615"></a><a name="b617845293615"></a>Read-only</strong>. Data volumes in the path are read-only.</li><li>Click <span class="uicontrol" id="uicontrol76431122133918"><a name="uicontrol76431122133918"></a><a name="uicontrol76431122133918"></a><b>OK</b></span>.</li></ol>
+    </li><li>Set the permission to <strong id="b1587311436342"><a name="b1587311436342"></a><a name="b1587311436342"></a>Read-only</strong>. Data volumes in the path are read-only.</li><li>Click <span class="uicontrol" id="uicontrol687394314343"><a name="uicontrol687394314343"></a><a name="uicontrol687394314343"></a><b>OK</b></span>.</li></ol>
     </td>
     </tr>
     </tbody>
@@ -130,7 +137,7 @@ The platform provides the separation of workload codes and configuration files. 
 
 Mount the data in the key to the specified container. The content of the key is user-defined. You need to create application configurations in advance. For more information, see  [Creating a Secret](creating-a-secret.md).
 
-1.  Create a workload by referring to  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md). After you add a container, expand  **Data Storage**, and click  **Add** **Local** **Disk**.
+1.  Create a workload by referring to  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md). After you add a container, expand  **Data Storage**, and click  **Add Local Volume**.
 2.  Set the local disk type to secret mounting and set parameters for adding a local disk, as shown in  [Table 4](#table861818920109).
 
     **Table  4**  Setting the volume type to secret mounting
@@ -142,7 +149,7 @@ Mount the data in the key to the specified container. The content of the key is 
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row20632792101"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p56341798108"><a name="p56341798108"></a><a name="p56341798108"></a>Volume Type</p>
+    <tbody><tr id="row20632792101"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p56341798108"><a name="p56341798108"></a><a name="p56341798108"></a>Type</p>
     </td>
     <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><p id="p206363911018"><a name="p206363911018"></a><a name="p206363911018"></a>Secret.</p>
     </td>
@@ -154,11 +161,13 @@ Mount the data in the key to the specified container. The content of the key is 
     </div>
     </td>
     </tr>
-    <tr id="row146458911015"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p46473921020"><a name="p46473921020"></a><a name="p46473921020"></a>Add Container Path</p>
+    <tr id="row1477564020354"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p677514015357"><a name="p677514015357"></a><a name="p677514015357"></a>Add Container Path</p>
     </td>
-    <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><a name="ol1365012913103"></a><a name="ol1365012913103"></a><ol id="ol1365012913103"><li>Click <span class="uicontrol" id="uicontrol1045062984"><a name="uicontrol1045062984"></a><a name="uicontrol1045062984"></a><b>Add Container Path</b></span>.</li><li>Enter the container path to which the data volume is mounted.<div class="notice" id="note86567931015"><a name="note86567931015"></a><a name="note86567931015"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><a name="ul116574911106"></a><a name="ul116574911106"></a><ul id="ul116574911106"><li>Do not mount a data volume to a system directory such as <strong id="b50506472010547"><a name="b50506472010547"></a><a name="b50506472010547"></a>/</strong> or <strong id="b96350457710547"><a name="b96350457710547"></a><a name="b96350457710547"></a>/var/run</strong>; otherwise, the container becomes abnormal. You are advised to mount the container to an empty directory. If the directory is not empty, ensure that there are no files affecting container startup in the directory. Otherwise, such files will be replaced, resulting in failures to start the container and create the workload.</li><li>When the data volume is mounted to a high-risk directory, you are advised to use an account with minimum permissions to start the container; otherwise, high-risk files on the host machine may be damaged.</li></ul>
+    <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><p id="p162227152818"><a name="p162227152818"></a><a name="p162227152818"></a>Configure the following parameters:</p>
+    <a name="ol38552041193517"></a><a name="ol38552041193517"></a><ol id="ol38552041193517"><li>subPath: Enter a subpath, for example, tmp.<p id="p1315881742817"><a name="p1315881742817"></a><a name="p1315881742817"></a>A subpath is used to mount a local disk so that the same data volume is used in a single pod. If this parameter is left blank, the root path is used by default.</p>
+    </li><li>Enter the container path to which the data volume is mounted.<div class="notice" id="note06684494355"><a name="note06684494355"></a><a name="note06684494355"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><a name="ul19668144913518"></a><a name="ul19668144913518"></a><ul id="ul19668144913518"><li>Do not mount a data volume to a system directory such as <strong id="b14668114983512"><a name="b14668114983512"></a><a name="b14668114983512"></a>/</strong> or <strong id="b146689492355"><a name="b146689492355"></a><a name="b146689492355"></a>/var/run</strong>; otherwise, the container becomes abnormal. You are advised to mount the container to an empty directory. If the directory is not empty, ensure that there are no files affecting container startup in the directory. Otherwise, such files will be replaced, resulting in failures to start the container and create the workload.</li><li>When the data volume is mounted to a high-risk directory, you are advised to use an account with minimum permissions to start the container; otherwise, high-risk files on the host machine may be damaged.</li></ul>
     </div></div>
-    </li><li>Set the permission to <strong id="b101758409373"><a name="b101758409373"></a><a name="b101758409373"></a>Read-only</strong>. Data volumes in the path are read-only.</li><li>Click <span class="uicontrol" id="uicontrol1920679261"><a name="uicontrol1920679261"></a><a name="uicontrol1920679261"></a><b>OK</b></span>.</li></ol>
+    </li><li>Set the permission to <strong id="b0668104963517"><a name="b0668104963517"></a><a name="b0668104963517"></a>Read-only</strong>. Data volumes in the path are read-only.</li><li>Click <span class="uicontrol" id="uicontrol166681249173520"><a name="uicontrol166681249173520"></a><a name="uicontrol166681249173520"></a><b>OK</b></span>.</li></ol>
     </td>
     </tr>
     </tbody>

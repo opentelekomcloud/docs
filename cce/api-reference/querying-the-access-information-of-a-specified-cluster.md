@@ -15,24 +15,24 @@ GET /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/openapi
 <a name="tcb491e3c1e0f4805bc2a0f117c2e5291"></a>
 <table><thead align="left"><tr id="rb1f18e3e47264a689ce8837da9540243"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="a751f244cbf5b43bbae736c7fe4157a65"><a name="a751f244cbf5b43bbae736c7fe4157a65"></a><a name="a751f244cbf5b43bbae736c7fe4157a65"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="19.74%" id="mcps1.2.4.1.2"><p id="a8cd1c6a113cc42b5b1ed7195b0d632ea"><a name="a8cd1c6a113cc42b5b1ed7195b0d632ea"></a><a name="a8cd1c6a113cc42b5b1ed7195b0d632ea"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="15.22%" id="mcps1.2.4.1.2"><p id="a8cd1c6a113cc42b5b1ed7195b0d632ea"><a name="a8cd1c6a113cc42b5b1ed7195b0d632ea"></a><a name="a8cd1c6a113cc42b5b1ed7195b0d632ea"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="60.260000000000005%" id="mcps1.2.4.1.3"><p id="a130c3125c9c54410a8213b4095e993a7"><a name="a130c3125c9c54410a8213b4095e993a7"></a><a name="a130c3125c9c54410a8213b4095e993a7"></a>Description</p>
+<th class="cellrowborder" valign="top" width="64.78%" id="mcps1.2.4.1.3"><p id="a130c3125c9c54410a8213b4095e993a7"><a name="a130c3125c9c54410a8213b4095e993a7"></a><a name="a130c3125c9c54410a8213b4095e993a7"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="r233fdbfefc734b3f872982d4f6bbe5f0"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="a210d020408a14eaabab2b4f4411603f2"><a name="a210d020408a14eaabab2b4f4411603f2"></a><a name="a210d020408a14eaabab2b4f4411603f2"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0102499104_p814518580186"><a name="en-us_topic_0102499104_p814518580186"></a><a name="en-us_topic_0102499104_p814518580186"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="15.22%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0102499104_p814518580186"><a name="en-us_topic_0102499104_p814518580186"></a><a name="en-us_topic_0102499104_p814518580186"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.260000000000005%" headers="mcps1.2.4.1.3 "><p id="a11311534aa924643804a0f42eca7da84"><a name="a11311534aa924643804a0f42eca7da84"></a><a name="a11311534aa924643804a0f42eca7da84"></a>Project ID.</p>
+<td class="cellrowborder" valign="top" width="64.78%" headers="mcps1.2.4.1.3 "><p id="a11311534aa924643804a0f42eca7da84"><a name="a11311534aa924643804a0f42eca7da84"></a><a name="a11311534aa924643804a0f42eca7da84"></a>Project ID.</p>
 </td>
 </tr>
 <tr id="rc13dcfbc5dc94afa9fa3c0533f438e88"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p614194762313"><a name="p614194762313"></a><a name="p614194762313"></a>cluster_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.4.1.2 "><p id="af22431c45a934fc3b3d29abe71edf037"><a name="af22431c45a934fc3b3d29abe71edf037"></a><a name="af22431c45a934fc3b3d29abe71edf037"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="15.22%" headers="mcps1.2.4.1.2 "><p id="af22431c45a934fc3b3d29abe71edf037"><a name="af22431c45a934fc3b3d29abe71edf037"></a><a name="af22431c45a934fc3b3d29abe71edf037"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.260000000000005%" headers="mcps1.2.4.1.3 "><p id="ad84b46caf65641eaa6a2a0136244932d"><a name="ad84b46caf65641eaa6a2a0136244932d"></a><a name="ad84b46caf65641eaa6a2a0136244932d"></a>Cluster ID.</p>
+<td class="cellrowborder" valign="top" width="64.78%" headers="mcps1.2.4.1.3 "><p id="ad84b46caf65641eaa6a2a0136244932d"><a name="ad84b46caf65641eaa6a2a0136244932d"></a><a name="ad84b46caf65641eaa6a2a0136244932d"></a>Cluster ID.</p>
 </td>
 </tr>
 </tbody>
@@ -183,7 +183,7 @@ N/A
 <td class="cellrowborder" valign="top" width="25.742574257425744%" headers="mcps1.2.4.1.2 "><p id="p11901855153716"><a name="p11901855153716"></a><a name="p11901855153716"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="48.51485148514851%" headers="mcps1.2.4.1.3 "><p id="p10781737104310"><a name="p10781737104310"></a><a name="p10781737104310"></a>Specifies the bandwidth sharing type.</p>
-<p id="p590185512376"><a name="p590185512376"></a><a name="p590185512376"></a>Enumerated values: <strong id="b1441015514311"><a name="b1441015514311"></a><a name="b1441015514311"></a>PER</strong> (indicates exclusive bandwidth) and <strong id="b1083935964315"><a name="b1083935964315"></a><a name="b1083935964315"></a>WHOLE</strong> (indicates sharing).</p>
+<p id="p590185512376"><a name="p590185512376"></a><a name="p590185512376"></a>Enumerated values: <strong id="b1441015514311"><a name="b1441015514311"></a><a name="b1441015514311"></a>PER </strong>(indicates exclusive bandwidth) and <strong id="b1083935964315"><a name="b1083935964315"></a><a name="b1083935964315"></a>WHOLE </strong>(indicates sharing).</p>
 </td>
 </tr>
 </tbody>

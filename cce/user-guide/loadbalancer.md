@@ -17,7 +17,7 @@ The access address is in the format of <IP address of public network  load balan
 You can set the service access type when creating a workload on the CCE console. An Nginx workload is used as an example.
 
 1.  In the  **Set Application Access**  step of  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md), click  **Add Service**  and set the following parameters:
-    -   **Access Type**: Select  **Load balancing \(load balancer\)**.
+    -   **Access Type**: Select  **LoadBalancer \(ELB\)**.
     -   **Service Name**: can be the same as the workload name.
     -   **Service Affinity**
         -   **Cluster level**: External traffic is routed to all nodes in the cluster while masking clients' source IP addresses.
@@ -27,7 +27,7 @@ You can set the service access type when creating a workload on the CCE console.
 
         -   **Public network**: You can select an existing public network load balancer or have the system automatically create a new public network load balancer.
 
-            If you have the system automatically create a public network load balancer, you can click  **Change Configuration**  to modify its name, EIP type, billing mode, and bandwidth.
+            If you have the system automatically create a public network load balancer, you can click  **Change Configuration**  to modify its name, EIP type, and bandwidth.
 
         -   **Private network**: You can select an existing private network load balancer or have the system automatically create a new private network load balancer.
 
@@ -35,7 +35,13 @@ You can set the service access type when creating a workload on the CCE console.
 
         **Other configurations**
 
-        -   **Specifications**  : This field is displayed only when you select  **Public network**  and  **Automatic creation**  for  **Elastic Load Balancer**. You can click  **Change configuration**  to modify the name, specifications, and bandwidth of the load balancer.
+        -   **Specifications**: This field is displayed only when you select  **Public network**  and  **Automatic creation**  for  **Elastic Load Balancer**. You can click  **Change configuration**  to modify the name, specifications, and bandwidth of the load balancer.
+        -   **Algorithm Type**:  **Weighted round robin**,  **Weighted least connections**, and  **Source IP hash**  are available. The weight is dynamically adjusted based on the number of pods of the workload associated with the service on each node.
+            -   **Weighted round robin**: Requests are forwarded to different servers based on their weights, which indicate server processing performance. Backend servers with higher weights receive proportionately more requests, whereas equal-weighted servers receive the same number of requests. This algorithm is often used for short connections, such as HTTP services.
+            -   **Weighted least connections**: In addition to the weight assigned to each server, the number of connections processed by each backend server is also considered. Requests are forwarded to the server with the lowest connections-to-weight ratio. Building on  **least connections**, the  **weighted least connections**  algorithm assigns a weight to each server based on their processing capability. This algorithm is often used for persistent connections, such as database connections.
+            -   **Source IP hash**: The source IP address of each request is calculated using the hash algorithm to obtain a unique hash key, and all backend servers are numbered. The generated key allocates the client to a particular server. This enables requests from different clients to be distributed in load balancing mode and ensures that requests from the same client are forwarded to the same server. This algorithm applies to TCP connections without cookies.
+
+        -   **Sticky Session**: Listeners ensure session stickiness based on IP addresses. Requests from the same IP address will be forwarded to the same backend server. This feature is disabled by default. You can specify a source IP address when this feature is enabled.
         -   **Health Check**: This option is enabled by default. Configure health check parameters as prompted.
 
     -   **Port Settings**
@@ -44,7 +50,7 @@ You can set the service access type when creating a workload on the CCE console.
         -   **Access Port**: a port to which the container port will be mapped when the load balancer IP address is used for accessing the workload. The port number range is 1–65535.
 
 2.  After the configuration is complete, click  **OK**.
-3.  On the workload creation page, click  **Next**. On the  **Configure Advanced Settings**  page, click  **Create**.
+3.  On the workload creation page, click  **Next: Configure Advanced Settings**. On the  **Configure Advanced Settings**  page, click  **Create**.
 4.  After the workload is successfully created, choose  **Workloads**  \>  **Deployments**  or  **Workloads**  \>  **StatefulSets**  on the CCE console. Click the name of the workload to show more details of the workload. On the workload details page, click the  **Services**  tab and obtain the access address.
 5.  Click the access address.
 
@@ -107,7 +113,7 @@ You have configured the kubectl and connected an ECS to the cluster. For details
             kubernetes.io/elb.class: union
             kubernetes.io/session-affinity-mode: SOURCE_IP
             kubernetes.io/elb.subnet-id: 5083f225-9bf8-48fa-9c8b-67bd9693c4c0
-            kubernetes.io/elb.autocreate: "{\"type\":\"public\",\"bandwidth_name\":\"cce-bandwidth-1551163379627\",\"bandwidth_chargemode\":\"bandwidth\",\"bandwidth_size\":5,\"bandwidth_sharetype\":\"PER\",\"eip_type\":\"5_bgp\",\"name\":\"james\"}"
+            kubernetes.io/elb.autocreate: "{\"type\":\"public\",\"bandwidth_name\":\"cce-bandwidth-1551163379627\",\"bandwidth_chargemode\":\"traffic\",\"bandwidth_size\":5,\"bandwidth_sharetype\":\"PER\",\"eip_type\":\"5_bgp\",\"name\":\"james\"}"
           labels: 
             app: nginx 
           name: nginx 
@@ -197,7 +203,7 @@ You have configured the kubectl and connected an ECS to the cluster. For details
     </td>
     <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p127521028194718"><a name="p127521028194718"></a><a name="p127521028194718"></a>Optional. This parameter is mandatory if a public network load balancer will be automatically created. The system will create an enhanced load balancer and an EIP. This parameter is also mandatory if a private network load balancer will be automatically created. The system will create an enhanced load balancer.</p>
     <p id="p115519391615"><a name="p115519391615"></a><a name="p115519391615"></a><strong id="b11252194113380"><a name="b11252194113380"></a><a name="b11252194113380"></a>Example:</strong></p>
-    <a name="ul286913611614"></a><a name="ul286913611614"></a><ul id="ul286913611614"><li>Value for a public network load balancer that is automatically created: "{\"type\":\"public\",\"bandwidth_name\":\"cce-bandwidth-1551163379627\",\"bandwidth_chargemode\":\"bandwidth\",\"bandwidth_size\":5,\"bandwidth_sharetype\":\"PER\",\"eip_type\":\"5_bgp\",\"name\":\"james\"}"</li><li>Value for a private network load balancer that is automatically created: "{\"type\":\"inner\"}"</li></ul>
+    <a name="ul286913611614"></a><a name="ul286913611614"></a><ul id="ul286913611614"><li>Value for a public network load balancer that is automatically created: "{\"type\":\"public\",\"bandwidth_name\":\"cce-bandwidth-1551163379627\",\"bandwidth_chargemode\":\"traffic\",\"bandwidth_size\":5,\"bandwidth_sharetype\":\"PER\",\"eip_type\":\"5_bgp\",\"name\":\"james\"}"</li><li>Value for a private network load balancer that is automatically created: "{\"type\":\"inner\"}"</li></ul>
     </td>
     </tr>
     <tr id="row121515334113"><td class="cellrowborder" valign="top" width="34.28657134286571%" headers="mcps1.2.4.1.1 "><p id="p92162033131111"><a name="p92162033131111"></a><a name="p92162033131111"></a>loadBalancerIP</p>
@@ -271,7 +277,7 @@ You have configured the kubectl and connected an ECS to the cluster. For details
     <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p11421446191914"><a name="p11421446191914"></a><a name="p11421446191914"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p3178181495216"><a name="p3178181495216"></a><a name="p3178181495216"></a>Bandwidth billing mode.</p>
-    <a name="ul567215235528"></a><a name="ul567215235528"></a><ul id="ul567215235528"><li><strong id="b842352706184028"><a name="b842352706184028"></a><a name="b842352706184028"></a>bandwidth</strong>: billed by bandwidth.</li><li><strong id="b842352706184041"><a name="b842352706184041"></a><a name="b842352706184041"></a>traffic</strong>: billed by traffic.</li></ul>
+    <p id="p17993157195913"><a name="p17993157195913"></a><a name="p17993157195913"></a>The value is <strong id="b267410514014"><a name="b267410514014"></a><a name="b267410514014"></a>traffic</strong>, indicating that the billing is based on traffic.</p>
     </td>
     </tr>
     <tr id="row124211046101910"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p187492819229"><a name="p187492819229"></a><a name="p187492819229"></a>bandwidth_size</p>
@@ -317,7 +323,7 @@ You have configured the kubectl and connected an ECS to the cluster. For details
     NAME                     READY     STATUS             RESTARTS   AGE
     etcd-0                   0/1       ImagePullBackOff   0          1h
     icagent-m9dkt            0/0       Running            0          3d
-    nginx-2601814895-c1xhw 1/1      Running          0          6s
+    nginx-2601814895-c1xhw   1/1       Running            0          6s
     ```
 
 4.  Create a service.
@@ -355,7 +361,7 @@ You can set the access type after creating a workload. This has no impact on the
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**  or  **Workloads**  \>  **StatefulSets**. On the workload list, click the name of the workload for which you will add a service.
 2.  On the  **Services**  tab page, click  **Create Service**.
-3.  On the  **Create Service**  page, set  **Access Type**  to  **Load balancing \(load balancer\)**.
+3.  On the  **Create Service**  page, set  **Access Type**  to  **LoadBalancer \(ELB\)**.
 4.  Configure load balancing parameters.
     -   **Service Name**: can be the same as the workload name.
     -   **Cluster Name**: name of the cluster where the workload runs. The value is inherited from the workload creation page and cannot be changed.
@@ -377,7 +383,13 @@ You can set the access type after creating a workload. This has no impact on the
 
         **Other configurations**
 
-        -   **Specifications**  : This field is displayed only when you select  **Public network**  and  **Automatic creation**  for  **Elastic Load Balancer**. You can click  **Change configuration**  to modify the name, specifications, and bandwidth of the load balancer.
+        -   **Specifications**: This field is displayed only when you select  **Public network**  and  **Automatic creation**  for  **Elastic Load Balancer**. You can click  **Change configuration**  to modify the name, specifications, and bandwidth of the load balancer.
+        -   **Algorithm Type**:  **Weighted round robin**,  **Weighted least connections**, and  **Source IP hash**  are available. The weight is dynamically adjusted based on the number of pods of the workload associated with the service on each node.
+            -   **Weighted round robin**: Requests are forwarded to different servers based on their weights, which indicate server processing performance. Backend servers with higher weights receive proportionately more requests, whereas equal-weighted servers receive the same number of requests. This algorithm is often used for short connections, such as HTTP services.
+            -   **Weighted least connections**: In addition to the weight assigned to each server, the number of connections processed by each backend server is also considered. Requests are forwarded to the server with the lowest connections-to-weight ratio. Building on  **least connections**, the  **weighted least connections**  algorithm assigns a weight to each server based on their processing capability. This algorithm is often used for persistent connections, such as database connections.
+            -   **Source IP hash**: The source IP address of each request is calculated using the hash algorithm to obtain a unique hash key, and all backend servers are numbered. The generated key allocates the client to a particular server. This enables requests from different clients to be distributed in load balancing mode and ensures that requests from the same client are forwarded to the same server. This algorithm applies to TCP connections without cookies.
+
+        -   **Sticky Session**: Listeners ensure session stickiness based on IP addresses. Requests from the same IP address will be forwarded to the same backend server. This feature is disabled by default. You can specify a source IP address when this feature is enabled.
         -   **Health Check**: This option is enabled by default. Configure health check parameters as prompted.
 
     -   **Port Settings**
@@ -392,7 +404,7 @@ You can set the access type after creating a workload. This has no impact on the
 After adding a service, you can update the port configuration of the service. The procedure is as follows:
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Network**. On the  **Services**  tab page, filter services by cluster and namespace, and click  **Update**  for the service to be updated.
-2.  On the  **Update Service**  page, set  **Access Type**  to  **Load balancing \(load balancer\)**.
+2.  On the  **Update Service**  page, set  **Access Type**  to  **LoadBalancer \(ELB\)**.
 3.  Update load balancing parameters.
     -   **Cluster Name**: name of the cluster where the workload runs. The value is inherited from the workload creation page and cannot be changed.
     -   **Namespace**: namespace where the workload is located. The value is inherited from the workload creation page and cannot be changed.
@@ -411,6 +423,12 @@ After adding a service, you can update the port configuration of the service. Th
         **Other configurations**
 
         -   **Specifications**  : This field is displayed only when you select  **Public network**  and  **Automatic creation**  for  **Elastic Load Balancer**. You can click  **Change configuration**  to modify the name, specifications, and bandwidth of the load balancer.
+        -   **Algorithm Type**:  **Weighted round robin**,  **Weighted least connections**, and  **Source IP hash**  are available. The weight is dynamically adjusted based on the number of pods of the workload associated with the service on each node.
+            -   **Weighted round robin**: Requests are forwarded to different servers based on their weights, which indicate server processing performance. Backend servers with higher weights receive proportionately more requests, whereas equal-weighted servers receive the same number of requests. This algorithm is often used for short connections, such as HTTP services.
+            -   **Weighted least connections**: In addition to the weight assigned to each server, the number of connections processed by each backend server is also considered. Requests are forwarded to the server with the lowest connections-to-weight ratio. Building on  **least connections**, the  **weighted least connections**  algorithm assigns a weight to each server based on their processing capability. This algorithm is often used for persistent connections, such as database connections.
+            -   **Source IP hash**: The source IP address of each request is calculated using the hash algorithm to obtain a unique hash key, and all backend servers are numbered. The generated key allocates the client to a particular server. This enables requests from different clients to be distributed in load balancing mode and ensures that requests from the same client are forwarded to the same server. This algorithm applies to TCP connections without cookies.
+
+        -   **Sticky Session**: Listeners ensure session stickiness based on IP addresses. Requests from the same IP address will be forwarded to the same backend server. This feature is disabled by default. You can specify a source IP address when this feature is enabled.
         -   **Health Check**: This option is enabled by default. Configure health check parameters as prompted.
 
     -   **Port Settings**

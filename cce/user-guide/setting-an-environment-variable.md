@@ -12,7 +12,7 @@ CCE provides three ways to add environment variables:  Manually add environment 
 
 ## Manually Adding Environment Variables<a name="section183878514214"></a>
 
-1.  When creating a workload, add a container image. Then, expand  **Environment Variables**  and click  **Add Environment Variables**.
+1.  When creating a workload, add a container image. Then, expand  **Environment Variables**  and click  **Add Environment Variable**.
 2.  Configure the following parameters as required:
 
     -   **Type**: Set this to  **Added manually**.
@@ -26,7 +26,7 @@ CCE provides three ways to add environment variables:  Manually add environment 
 ## Importing Environment Variables from a Secret<a name="section132188247237"></a>
 
 1.  You need to create a key first. For details, see  [Creating a Secret](creating-a-secret.md).
-2.  When creating a workload, add a container image. Then, expand  **Environment Variables**  and click  **Add Environment Variables**.
+2.  When creating a workload, add a container image. Then, expand  **Environment Variables**  and click  **Add Environment Variable**.
 3.  Configure the following parameters as required:
 
     -   **Type**: Set this to  **Added from Secret**.
@@ -40,7 +40,7 @@ CCE provides three ways to add environment variables:  Manually add environment 
 ## Importing Environment Variables from a ConfigMap<a name="section147322221248"></a>
 
 1.  Create a ConfigMap first. For details, see  [Creating a ConfigMap](creating-a-configmap.md).
-2.  When creating a workload, add a container image. Then, expand  **Environment Variables**  and click  **Add Environment Variables**.
+2.  When creating a workload, add a container image. Then, expand  **Environment Variables**  and click  **Add Environment Variable**.
 3.  Configure the following parameters as required:
 
     -   **Type**: Set this to  **Added from ConfigMap**.

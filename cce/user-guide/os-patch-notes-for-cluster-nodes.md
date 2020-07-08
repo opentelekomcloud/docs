@@ -1,8 +1,8 @@
 # OS Patch Notes for Cluster Nodes<a name="cce_01_0301"></a>
 
-## Nodes in VM Clusters<a name="section326285833711"></a>
+## Nodes in Hybrid Clusters<a name="section326285833711"></a>
 
-CCE nodes in VM clusters can run on EulerOS 2.2 and EulerOS 2.5. The following table lists the supported patches for these OSs.
+CCE nodes in Hybrid clusters can run on EulerOS 2.2 and EulerOS 2.5. The following table lists the supported patches for these OSs.
 
 **Table  1**  Node OS patches
 
