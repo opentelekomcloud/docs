@@ -11,7 +11,7 @@ You have obtained an account and its password to log in to the management consol
 ## Procedure<a name="section12143195913595"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/icon_dt-0.png)  in the upper left corner and select the region or project.
+2.  Click  ![](figures/icon_dt.png)  in the upper left corner and select the region or project.
 3.  Under  **Security**, choose  **Anti-DDoS**. The  **Security Console**  is displayed.
 4.  Select the  **Alarm Notifications**  tab. On the displayed page, set the alarm notifications.
 
@@ -32,16 +32,16 @@ You have obtained an account and its password to log in to the management consol
     <tbody><tr id="row1162064382412"><td class="cellrowborder" valign="top" width="27.63%" headers="mcps1.2.4.1.1 "><p id="p12105514172050"><a name="p12105514172050"></a><a name="p12105514172050"></a>Alarm Notifications</p>
     </td>
     <td class="cellrowborder" valign="top" width="59.209999999999994%" headers="mcps1.2.4.1.2 "><p id="p11316655172050"><a name="p11316655172050"></a><a name="p11316655172050"></a>Indicates whether the alarm notification function is enabled. There are two values:</p>
-    <a name="ul25555843172050"></a><a name="ul25555843172050"></a><ul id="ul25555843172050"><li><a name="image141490566381"></a><a name="image141490566381"></a><span><img id="image141490566381" src="figures/icon_open.png"></span>: enabled</li><li><a name="image171101033245"></a><a name="image171101033245"></a><span><img id="image171101033245" src="figures/icon_close.png"></span>: disabled</li></ul>
-    <p id="p39747874172050"><a name="p39747874172050"></a><a name="p39747874172050"></a>If the function is in disabled state, click <a name="image878155315243"></a><a name="image878155315243"></a><span><img id="image878155315243" src="figures/icon_close.png"></span> to set it to <a name="image54111173910"></a><a name="image54111173910"></a><span><img id="image54111173910" src="figures/icon_open-1.png"></span>.</p>
+    <a name="ul25555843172050"></a><a name="ul25555843172050"></a><ul id="ul25555843172050"><li><a name="image1081851421410"></a><a name="image1081851421410"></a><span><img id="image1081851421410" src="figures/icon-open-antiddos.png"></span>: enabled</li><li><a name="image171101033245"></a><a name="image171101033245"></a><span><img id="image171101033245" src="figures/icon_close.png"></span>: disabled</li></ul>
+    <p id="p39747874172050"><a name="p39747874172050"></a><a name="p39747874172050"></a>If the function is in disabled state, click <a name="image878155315243"></a><a name="image878155315243"></a><span><img id="image878155315243" src="figures/icon_close.png"></span> to set it to <a name="image683534941215"></a><a name="image683534941215"></a><span><img id="image683534941215" src="figures/icon-open-antiddos.png"></span>.</p>
     </td>
-    <td class="cellrowborder" valign="top" width="13.16%" headers="mcps1.2.4.1.3 "><p id="p36525361172033"><a name="p36525361172033"></a><a name="p36525361172033"></a><a name="image7938826396"></a><a name="image7938826396"></a><span><img id="image7938826396" src="figures/icon_open-2.png"></span></p>
+    <td class="cellrowborder" valign="top" width="13.16%" headers="mcps1.2.4.1.3 "><p id="p36525361172033"><a name="p36525361172033"></a><a name="p36525361172033"></a><a name="image74912412138"></a><a name="image74912412138"></a><span><img id="image74912412138" src="figures/icon-open-antiddos.png"></span></p>
     </td>
     </tr>
     <tr id="row462471113516"><td class="cellrowborder" valign="top" width="27.63%" headers="mcps1.2.4.1.1 "><p id="p45819551164949"><a name="p45819551164949"></a><a name="p45819551164949"></a>SMN Topic</p>
     </td>
     <td class="cellrowborder" valign="top" width="59.209999999999994%" headers="mcps1.2.4.1.2 "><p id="p62760665165036"><a name="p62760665165036"></a><a name="p62760665165036"></a>You can select an existing topic or click <strong id="b1177551861910"><a name="b1177551861910"></a><a name="b1177551861910"></a>View Topic</strong> to create a topic.</p>
-    <p id="p12883729165036"><a name="p12883729165036"></a><a name="p12883729165036"></a>For details about topics, see the <i><cite id="cite47c2be5ebd23451fb6788fe7d1f9a9f9155714"><a name="cite47c2be5ebd23451fb6788fe7d1f9a9f9155714"></a><a name="cite47c2be5ebd23451fb6788fe7d1f9a9f9155714"></a>Simple Message Notification User Guide</cite></i>.</p>
+    <p id="p12883729165036"><a name="p12883729165036"></a><a name="p12883729165036"></a>For details about topics, see the <i><cite id="cite359fad7cafc3403eb8687df9a9d81e2f101327"><a name="cite359fad7cafc3403eb8687df9a9d81e2f101327"></a><a name="cite359fad7cafc3403eb8687df9a9d81e2f101327"></a>Simple Message Notification User Guide</cite></i>.</p>
     </td>
     <td class="cellrowborder" valign="top" width="13.16%" headers="mcps1.2.4.1.3 "><p id="p2060682164949"><a name="p2060682164949"></a><a name="p2060682164949"></a>N/A</p>
     </td>
