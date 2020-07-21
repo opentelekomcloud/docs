@@ -197,8 +197,8 @@ This API allows you to query alarm configuration, such as whether a certain type
     }
     ```
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >SFTP is more secure than FTP. To secure data transmission, use SFTP to transfer files.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >SFTP is more secure than FTP. To secure data transmission, use SFTP to transfer files.
 
 
 ## Returned Value<a name="section39638980"></a>

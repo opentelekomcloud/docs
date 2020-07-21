@@ -84,7 +84,7 @@ This API enables you to query configured Anti-DDoS defense policies. You can que
     </td>
     <td class="cellrowborder" valign="top" width="16.54%" headers="mcps1.1.5.1.3 "><p id="p3079683015913"><a name="p3079683015913"></a><a name="p3079683015913"></a>Integer</p>
     </td>
-    <td class="cellrowborder" valign="top" width="35.54%" headers="mcps1.1.5.1.4 "><p id="p58963189"><a name="p58963189"></a><a name="p58963189"></a>Position ID of traffic. The value ranges from 1 to 9.</p>
+    <td class="cellrowborder" valign="top" width="35.54%" headers="mcps1.1.5.1.4 "><p id="p58963189"><a name="p58963189"></a><a name="p58963189"></a>Position ID of traffic. The value ranges from 1 to 9 and 33 to 36.</p>
     </td>
     </tr>
     <tr id="row60906657"><td class="cellrowborder" valign="top" width="30.44%" headers="mcps1.1.5.1.1 "><p id="p34492175"><a name="p34492175"></a><a name="p34492175"></a>http_request_pos_id</p>
@@ -93,7 +93,7 @@ This API enables you to query configured Anti-DDoS defense policies. You can que
     </td>
     <td class="cellrowborder" valign="top" width="16.54%" headers="mcps1.1.5.1.3 "><p id="p6409858615917"><a name="p6409858615917"></a><a name="p6409858615917"></a>Integer</p>
     </td>
-    <td class="cellrowborder" valign="top" width="35.54%" headers="mcps1.1.5.1.4 "><p id="p38491397"><a name="p38491397"></a><a name="p38491397"></a>Position ID of number of HTTP requests. The value ranges from 1 to 15.</p>
+    <td class="cellrowborder" valign="top" width="35.54%" headers="mcps1.1.5.1.4 "><p id="p38491397"><a name="p38491397"></a><a name="p38491397"></a>Position ID of number of HTTP requests. The value ranges from 1 to 15 and 33 to 36.</p>
     </td>
     </tr>
     <tr id="row10878253"><td class="cellrowborder" valign="top" width="30.44%" headers="mcps1.1.5.1.1 "><p id="p8723262"><a name="p8723262"></a><a name="p8723262"></a>cleaning_access_pos_id</p>
@@ -102,7 +102,7 @@ This API enables you to query configured Anti-DDoS defense policies. You can que
     </td>
     <td class="cellrowborder" valign="top" width="16.54%" headers="mcps1.1.5.1.3 "><p id="p1175927815921"><a name="p1175927815921"></a><a name="p1175927815921"></a>Integer</p>
     </td>
-    <td class="cellrowborder" valign="top" width="35.54%" headers="mcps1.1.5.1.4 "><p id="p18980661"><a name="p18980661"></a><a name="p18980661"></a>Position ID of access limit during cleaning. The value ranges from 1 to 8.</p>
+    <td class="cellrowborder" valign="top" width="35.54%" headers="mcps1.1.5.1.4 "><p id="p18980661"><a name="p18980661"></a><a name="p18980661"></a>Position ID of access limit during cleaning. The value ranges from 1 to 8 and 33 to 36.</p>
     </td>
     </tr>
     <tr id="row36608226"><td class="cellrowborder" valign="top" width="30.44%" headers="mcps1.1.5.1.1 "><p id="p12476353"><a name="p12476353"></a><a name="p12476353"></a>app_type_id</p>

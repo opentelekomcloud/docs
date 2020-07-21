@@ -75,7 +75,7 @@ This API enables you to update the Anti-DDoS defense policy of a specified EIP. 
     </td>
     <td class="cellrowborder" valign="top" width="13.94%" headers="mcps1.1.5.1.3 "><p id="p367798481566"><a name="p367798481566"></a><a name="p367798481566"></a>Integer</p>
     </td>
-    <td class="cellrowborder" valign="top" width="36.78%" headers="mcps1.1.5.1.4 "><p id="p24544935"><a name="p24544935"></a><a name="p24544935"></a>Position ID of traffic. The value ranges from 1 to 9from 33 to 36.</p>
+    <td class="cellrowborder" valign="top" width="36.78%" headers="mcps1.1.5.1.4 "><p id="p24544935"><a name="p24544935"></a><a name="p24544935"></a>Position ID of traffic. The value ranges from 1 to 9 and 33 to 36.</p>
     </td>
     </tr>
     <tr id="row19577827"><td class="cellrowborder" valign="top" width="30.3%" headers="mcps1.1.5.1.1 "><p id="p42300179"><a name="p42300179"></a><a name="p42300179"></a>http_request_pos_id</p>
@@ -84,7 +84,7 @@ This API enables you to update the Anti-DDoS defense policy of a specified EIP. 
     </td>
     <td class="cellrowborder" valign="top" width="13.94%" headers="mcps1.1.5.1.3 "><p id="p2257395515612"><a name="p2257395515612"></a><a name="p2257395515612"></a>Integer</p>
     </td>
-    <td class="cellrowborder" valign="top" width="36.78%" headers="mcps1.1.5.1.4 "><p id="p56757654"><a name="p56757654"></a><a name="p56757654"></a>Position ID of number of HTTP requests. The value ranges from 1 to 15from 33 to 36.</p>
+    <td class="cellrowborder" valign="top" width="36.78%" headers="mcps1.1.5.1.4 "><p id="p56757654"><a name="p56757654"></a><a name="p56757654"></a>Position ID of number of HTTP requests. The value ranges from 1 to 15 and 33 to 36.</p>
     </td>
     </tr>
     <tr id="row41056841"><td class="cellrowborder" valign="top" width="30.3%" headers="mcps1.1.5.1.1 "><p id="p37269850"><a name="p37269850"></a><a name="p37269850"></a>cleaning_access_pos_id</p>
@@ -93,7 +93,7 @@ This API enables you to update the Anti-DDoS defense policy of a specified EIP. 
     </td>
     <td class="cellrowborder" valign="top" width="13.94%" headers="mcps1.1.5.1.3 "><p id="p1659686615617"><a name="p1659686615617"></a><a name="p1659686615617"></a>Integer</p>
     </td>
-    <td class="cellrowborder" valign="top" width="36.78%" headers="mcps1.1.5.1.4 "><p id="p15422169"><a name="p15422169"></a><a name="p15422169"></a>Position ID of access limit during cleaning. The value ranges from 1 to 8from 33 to 36.</p>
+    <td class="cellrowborder" valign="top" width="36.78%" headers="mcps1.1.5.1.4 "><p id="p15422169"><a name="p15422169"></a><a name="p15422169"></a>Position ID of access limit during cleaning. The value ranges from 1 to 8 and 33 to 36.</p>
     </td>
     </tr>
     <tr id="row4581796"><td class="cellrowborder" valign="top" width="30.3%" headers="mcps1.1.5.1.1 "><p id="p35581233"><a name="p35581233"></a><a name="p35581233"></a>app_type_id</p>
@@ -109,8 +109,8 @@ This API enables you to update the Anti-DDoS defense policy of a specified EIP. 
     </tbody>
     </table>
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >If traffic\_pos\_id, http\_request\_pos\_id, cleaning\_access\_pos\_id are set from 33 to 36, their values must be the same.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >If values of  **traffic\_pos\_id**,  **http\_request\_pos\_id**,  **cleaning\_access\_pos\_id**  are set between  **33 to 36**, their values must be the same.
 
 
 -   Example request

@@ -10,8 +10,8 @@ This API enables you to query the defense statuses of all EIPs, regardless wheth
 
     GET /v1/\{project\_id\}/antiddos
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >You can use  **?**  and  **&**  behind the URI to add query conditions, as shown in the request example.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >You can use  **?**  and  **&**  behind the URI to add query conditions, as shown in the request example.
 
 
 -   Parameter description

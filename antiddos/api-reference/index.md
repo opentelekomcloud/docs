@@ -1,7 +1,7 @@
 # API Reference
 
--   [Before You Start](before-you-start.md)
--   Anti-DDoS APIs
+-   [API Usage Guidelines](api-usage-guidelines.md)
+-   [Anti-DDoS APIs]
     -   [Querying Optional Anti-DDoS Defense Policies](querying-optional-anti-ddos-defense-policies.md)
     -   [Querying Configured Anti-DDoS Defense Policies](querying-configured-anti-ddos-defense-policies.md)
     -   [Updating Anti-DDoS Defense Policies](updating-anti-ddos-defense-policies.md)
@@ -13,12 +13,13 @@
     -   [Querying Weekly Defense Statistics](querying-weekly-defense-statistics.md)
     -   [Querying All API Versions](querying-all-api-versions.md)
     -   [Querying a Specified API Version](querying-a-specified-api-version.md)
+    -   [Querying the Default Protection Policy Configured for the Newly Purchased Public IP Addresses](querying-the-default-protection-policy-configured-for-the-newly-purchased-public-ip-addresses.md)
+    -   [Configuring the Default Protection Policy for Newly Purchased Public IP Addresses](configuring-the-default-protection-policy-for-newly-purchased-public-ip-addresses.md)
 
--   Alarm Reminding APIs
+-   [Alarm Reminding APIs]
     -   [Querying Alarm Configuration](querying-alarm-configuration.md)
 
--   Appendix
+-   [Appendix]
     -   [Status Code](status-code.md)
     -   [Error Codes](error-codes.md)
-
 

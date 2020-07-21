@@ -10,8 +10,8 @@ This API allows you to query weekly defense statistics about all your EIPs, incl
 
     GET /v1/\{project\_id\}/antiddos/weekly
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >You can use  **?**  and  **&**  behind the URI to add query conditions, as shown in the request example.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >You can use  **?**  and  **&**  behind the URI to add query conditions, as shown in the request example.
 
 
 -   Parameter description
