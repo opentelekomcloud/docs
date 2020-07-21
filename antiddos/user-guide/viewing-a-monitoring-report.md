@@ -30,7 +30,7 @@ You have obtained an account and its password to log in to the management consol
     **Figure  2**  Monitoring report<a name="fig3537135062113"></a>  
     ![](figures/monitoring-report.png "monitoring-report")
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >On the  **Monitoring Report**  page, click  ![](figures/icon_download.png)  to download the monitoring report about the public IP address.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >On the  **Monitoring Report**  page, click  ![](figures/icon_download.png)  to download the monitoring report about the public IP address.
 
 

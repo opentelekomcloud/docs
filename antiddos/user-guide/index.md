@@ -13,6 +13,7 @@
 
 
 -   [Operation Guide]
+    -   [Setting a Default Protection Policy for Newly Purchased Public IP Addresses](setting-a-default-protection-policy-for-newly-purchased-public-ip-addresses.md)
     -   [Enabling Anti-DDoS](enabling-anti-ddos.md)
     -   [Enabling Alarm Notification](enabling-alarm-notification.md)
     -   [Adjusting Security Settings](adjusting-security-settings.md)
