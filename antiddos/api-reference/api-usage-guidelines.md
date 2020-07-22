@@ -1,4 +1,4 @@
-# Before You Start<a name="en-us_topic_0037386201"></a>
+# API Usage Guidelines<a name="en-us_topic_0037386201"></a>
 
 Public cloud APIs comply with the RESTful API design principles. REST-based Web services are organized into resources. Each resource is identified by one or more Uniform Resource Identifiers \(URIs\). An application accesses a resource based on the resource's Unified Resource Locator \(URL\). A URL is usually in the following format:  _https://Endpoint/uri_. In the URL,  **uri**  indicates the resource path, that is, the API access path.
 
