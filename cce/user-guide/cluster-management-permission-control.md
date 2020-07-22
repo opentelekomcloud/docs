@@ -4,7 +4,7 @@ To perform  permission control  on resources in a cluster \(for example, user A 
 
 ## Procedure<a name="section12024043015"></a>
 
-1.  To perform permission control on a cluster, select  **Enhanced authentication capability**  for  **Authentication Mode**  and then select  **Authenticating Proxy**. Click  **Upload**  next to  **CA root certificate**  to upload a qualified and valid certificate. For details, see  [Table 2](creating-a-vm-cluster.md#table8638121213265).
+1.  To perform permission control on a cluster, select  **Enhanced authentication capability**  for  **Authentication Mode**  and then select  **Authenticating Proxy**. Click  **Upload**  next to  **CA root certificate**  to upload a qualified and valid certificate. For details, see  [Table 2](creating-a-hybrid-cluster.md#table8638121213265).
 2.  Create a role using kubectl.
 
     The following example shows how to create a  **role**  and allow the role to read all pods in the default namespace. For details about the parameters, see the  [official Kubernetes documentation](https://kubernetes.io/docs/reference/).
@@ -33,7 +33,7 @@ To perform  permission control  on resources in a cluster \(for example, user A 
       namespace: default
     subjects:
     - kind: User
-      name: jane   #the public cloud username
+      name: jane   #the cloud username
       apiGroup: rbac.authorization.k8s.io
     roleRef:
       kind: Role

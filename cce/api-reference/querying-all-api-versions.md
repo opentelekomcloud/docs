@@ -121,7 +121,7 @@ N/A
             "id": "v3",
             "links": [
                 {
-                    "href": "https://container.eu-de.otc.t-systems.com/v3",
+                    "href": "https://container.eu-de.***.t-systems.com/v3",
                     "rel": "self"
                 }
             ],

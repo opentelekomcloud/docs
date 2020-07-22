@@ -90,7 +90,7 @@ For the description about response parameters, see  [Table 2](creating-a-persist
             "name": "pv-test-03"
         },
         "annotations": {
-            "volume.beta.kubernetes.io/storage-class": "sata",
+            "volume.beta.kubernetes.io/storage-class": "sas",
             "volume.beta.kubernetes.io/storage-provisioner": "flexvolume-huawei.com/fuxivol"
         }
     },

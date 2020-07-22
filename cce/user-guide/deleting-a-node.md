@@ -14,7 +14,7 @@ When a node in a CCE cluster is deleted, services running on the node will also 
 
 ## Procedure<a name="section727210277269"></a>
 
-1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Nodes**. In the same row as the node you will delete, choose  **Operation**  \>  **Delete**.
+1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Nodes**. In the same row as the node you will delete, choose  **Operation**  \>  **More \> Delete**.
 2.  In the  **Delete Node**  dialog box, enter  **DELETE**  and click  **Yes**.
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   

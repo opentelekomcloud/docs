@@ -1,8 +1,8 @@
 # Using ELB<a name="cce_01_0148"></a>
 
-Charts  support the  ELB  service. The definition method is the same as that of the Kubernetes community.
+Charts support the ELB service. The definition method is the same as that of the Kubernetes community.
 
-To display the  ELB  information on the CCE console, add the annotation to the chart of the corresponding resource type.
+To display the ELB information on the CCE console, add the annotation to the chart of the corresponding resource type.
 
 ```
 apiVersion: apps/v1beta1

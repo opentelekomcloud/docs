@@ -15,7 +15,7 @@ The following is an example response. The value of  **id**  in the  **projects**
             "domain_id": "65382450e8f64ac0870cd180d14e684b",
             "is_domain": false,
             "parent_id": "65382450e8f64ac0870cd180d14e684b",
-            "name": "eu-de",
+            "name": "xxxxxxxx",
             "description": "",
             "links": {
                 "next": null,
@@ -34,15 +34,14 @@ The following is an example response. The value of  **id**  in the  **projects**
 }
 ```
 
-## Obtaining a Project ID on the Console<a name="section59621329127"></a>
+## Obtaining a Project ID from the Console<a name="section14547182915611"></a>
 
-A project ID needs to be specified in the URLs of some APIs. Therefore, you need to obtain a project ID before calling such APIs. To obtain a project ID, perform the following operations:
+A project ID is required for some URLs when an API is called. To obtain a project ID, perform the following operations:
 
-1.  Sign up and log in to the management console.
-2.  Click the username and select  **Basic Information**  from the drop-down list.
-3.  On the  **Account Info**  page, click  **Manage**.
+1.  Log in to the management console.
+2.  Click the username and choose  **My Credential**  from the drop-down list.
 
-    On the  **My Credentials**  page, view project IDs in the project list.
+    On the  **My Credential**  page, view project IDs in the project list.
 
     **Figure  1**  Viewing project IDs<a name="fig555610358190"></a>  
     ![](figures/viewing-project-ids.png "viewing-project-ids")

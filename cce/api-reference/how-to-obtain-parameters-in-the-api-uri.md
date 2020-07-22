@@ -5,7 +5,7 @@
 1.  Log in to the CCE console, click the username in the upper right corner, and select  **My Credential**.
 2.  On the  **Project List**  tab page, obtain the project ID of the corresponding region.
 
-    **Figure  1**  Viewing project IDs<a name="fig13706162311919"></a>  
+    **Figure  1**  Viewing project IDs<a name="fig161112910194"></a>  
     ![](figures/viewing-project-ids-0.png "viewing-project-ids-0")
 
 
@@ -13,6 +13,10 @@
 
 1.  Log in to the CCE console, and choose  **Resource Management**  \>  **Clusters**  from the navigation pane.
 2.  Click the name of the created cluster. The cluster details page is displayed. Obtain the cluster ID.
+
+    **Figure  2**  Obtaining the cluster ID<a name="fig1148731210177"></a>  
+    ![](figures/obtaining-the-cluster-id.png "obtaining-the-cluster-id")
+
 
 ## node\_id<a name="section38161013195615"></a>
 
@@ -27,7 +31,7 @@
 
     If you are using Google Chrome, press  **F12**. On the pane displayed on the right, click the  **Network**  tab. Enter  **jobs**  in the  **Filter**  text box to filter the job list. Select a job from the list on the left and click  **Preview**. The UID field indicates the UID of the job.
 
-    **Figure  2**  Obtaining the job ID<a name="fig49321312222"></a>  
+    **Figure  3**  Obtaining the job ID<a name="fig49321312222"></a>  
     ![](figures/obtaining-the-job-id.png "obtaining-the-job-id")
 
 

@@ -2,7 +2,7 @@
 
 ## Using the CCE Console<a name="section1243114616439"></a>
 
-1.  When  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md), in the  **Scheduling Policies**  area on the  **Configure Advanced Settings**  page, click  ![](figures/icon-monitoring.png)  next to  **Workload-AZ Affinity and Anti-affinity**  \>  **Affinity with AZs**.
+1.  When  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md), in the  **Scheduling Policies**  area on the  **Configure Advanced Settings**  page, click  ![](figures/icon-monitoring-8.png)  next to  **Workload-AZ Affinity and Anti-affinity**  \>  **Affinity with AZs**.
 2.  Select the AZ in which you want to deploy the workload.
 
     The created workload will be deployed in the selected AZ.
@@ -51,12 +51,12 @@ spec:
               - key: failure-domain.beta.kubernetes.io/zone #node's label key
                 operator: In        
                 values:
-                - az1                              # node's key value
+                - az1                              #node's key value
 ```
 
 ## Setting the Object Type After Creating a Workload<a name="section19244104614316"></a>
 
-1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
+1.  Log in to the CCE console. In the navigation pane, choose** Workloads**  \>  **Deployments**  or  **Workload**  \>  **StatefulSets**.
 2.  Click the name of the workload for which you will add a scheduling policy. On the workload details page, choose  **Scheduling Policies**  \>  **Add Simple Scheduling Policy**  \>  **Add Affinity Object**.
 3.  Set  **Object Type**  to  **Availability Zone**, and select the AZ in which the workload is eligible to be deployed. The workload will be deployed in the selected AZ.
 

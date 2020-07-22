@@ -15,31 +15,31 @@ DELETE /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes/\{node\_i
 <a name="table2027961241820"></a>
 <table><thead align="left"><tr id="row122809120186"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p91421758131813"><a name="p91421758131813"></a><a name="p91421758131813"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p id="p101421758131816"><a name="p101421758131816"></a><a name="p101421758131816"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="16%" id="mcps1.2.4.1.2"><p id="p101421758131816"><a name="p101421758131816"></a><a name="p101421758131816"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p id="p19143115818187"><a name="p19143115818187"></a><a name="p19143115818187"></a>Description</p>
+<th class="cellrowborder" valign="top" width="64%" id="mcps1.2.4.1.3"><p id="p19143115818187"><a name="p19143115818187"></a><a name="p19143115818187"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="row32801312121810"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1714415589184"><a name="p1714415589184"></a><a name="p1714415589184"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p814518580186"><a name="p814518580186"></a><a name="p814518580186"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.4.1.2 "><p id="p814518580186"><a name="p814518580186"></a><a name="p814518580186"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p5145175891811"><a name="p5145175891811"></a><a name="p5145175891811"></a>Project ID. For details about how to obtain the project ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
+<td class="cellrowborder" valign="top" width="64%" headers="mcps1.2.4.1.3 "><p id="p5145175891811"><a name="p5145175891811"></a><a name="p5145175891811"></a>Project ID. For details about how to obtain the project ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
 </td>
 </tr>
 <tr id="row1649094164612"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p749015414462"><a name="p749015414462"></a><a name="p749015414462"></a>cluster_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p1849084134615"><a name="p1849084134615"></a><a name="p1849084134615"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.4.1.2 "><p id="p1849084134615"><a name="p1849084134615"></a><a name="p1849084134615"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p8491141114617"><a name="p8491141114617"></a><a name="p8491141114617"></a>Cluster ID. For details about how to obtain the cluster ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
+<td class="cellrowborder" valign="top" width="64%" headers="mcps1.2.4.1.3 "><p id="p8491141114617"><a name="p8491141114617"></a><a name="p8491141114617"></a>Cluster ID. For details about how to obtain the cluster ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
 </td>
 </tr>
 <tr id="row256414484464"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1856454818463"><a name="p1856454818463"></a><a name="p1856454818463"></a>node_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p2564134816468"><a name="p2564134816468"></a><a name="p2564134816468"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.4.1.2 "><p id="p2564134816468"><a name="p2564134816468"></a><a name="p2564134816468"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p0564048184619"><a name="p0564048184619"></a><a name="p0564048184619"></a>Cluster ID. For details about how to obtain the cluster ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
+<td class="cellrowborder" valign="top" width="64%" headers="mcps1.2.4.1.3 "><p id="p0564048184619"><a name="p0564048184619"></a><a name="p0564048184619"></a>Cluster ID. For details about how to obtain the cluster ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -198,8 +198,8 @@ N/A
     "metadata": {
         "name": "new-hostname",
         "uid": "cc697ad9-9563-11e8-8ea7-0255ac106311",
-        "creationTimestamp": "2018-08-01 08:20:49.944664515 +0000 UTC",
-        "updateTimestamp": "2018-08-01 09:20:05.644032347 +0000 UTC",
+        "creationTimestamp": "2020-02-01 08:20:49.944664515 +0000 UTC",
+        "updateTimestamp": "2020-02-01 09:20:05.644032347 +0000 UTC",
         "annotations": {
             "kubernetes.io/node-pool.id": "eu-de-01#s1.medium#EulerOS 2.5"
         }
@@ -225,7 +225,13 @@ N/A
             "eip": {
                 "bandwidth": {}
             }
-        }
+        },
+        "nodeNicSpec": {
+            "primaryNic": {
+                "subnetId": "c90b3ce5-e1f1-4c87-a006-644d78846438"
+            }
+        },
+        "billingMode": 0
     },
     "status": {
         "phase": "Active",

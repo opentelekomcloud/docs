@@ -5,6 +5,7 @@
 This API is used to create an empty cluster, which has only master nodes but do not have worker nodes. After creating a cluster by calling this API, you can add nodes to the cluster. For details, see  [Creating a Node](creating-a-node.md).
 
 >![](public_sys-resources/icon-note.gif) **NOTE:**   
+>-   By default, info collect agent \(ICAgent\) is not installed for the cluster created by this API. ICAgent is an O&M data collection agent used by Application Performance Management \(APM\) service. It runs on each server to collect data from probes in real time. ICAgent is the prerequisite for achieving application O&M. If ICAgent is not installed, the application O&M functions cannot be used.  
 >-   Before creating a cluster,  [Creating a VPC and Subnet](creating-a-vpc-and-subnet.md). If a VPC and subnet already exists, you do not need to create them again.  
 >-   By default, an account can create a maximum of five clusters in each region.  
 
@@ -19,17 +20,17 @@ POST /api/v3/projects/\{project\_id\}/clusters
 <a name="table2027961241820"></a>
 <table><thead align="left"><tr id="row122809120186"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p91421758131813"><a name="p91421758131813"></a><a name="p91421758131813"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.5%" id="mcps1.2.4.1.2"><p id="p101421758131816"><a name="p101421758131816"></a><a name="p101421758131816"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.4.1.2"><p id="p101421758131816"><a name="p101421758131816"></a><a name="p101421758131816"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="62.5%" id="mcps1.2.4.1.3"><p id="p19143115818187"><a name="p19143115818187"></a><a name="p19143115818187"></a>Description</p>
+<th class="cellrowborder" valign="top" width="68%" id="mcps1.2.4.1.3"><p id="p19143115818187"><a name="p19143115818187"></a><a name="p19143115818187"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="row32801312121810"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1714415589184"><a name="p1714415589184"></a><a name="p1714415589184"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.5%" headers="mcps1.2.4.1.2 "><p id="p814518580186"><a name="p814518580186"></a><a name="p814518580186"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p814518580186"><a name="p814518580186"></a><a name="p814518580186"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="62.5%" headers="mcps1.2.4.1.3 "><p id="p1320413331216"><a name="p1320413331216"></a><a name="p1320413331216"></a>Project ID. For details about how to obtain the project ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.4.1.3 "><p id="p1320413331216"><a name="p1320413331216"></a><a name="p1320413331216"></a>Project ID. For details about how to obtain the project ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -75,9 +76,9 @@ POST /api/v3/projects/\{project\_id\}/clusters
 <a name="table34052983203655"></a>
 <table><thead align="left"><tr id="row30254333203655"><th class="cellrowborder" valign="top" width="20.202020202020204%" id="mcps1.2.5.1.1"><p id="p34681881203655"><a name="p34681881203655"></a><a name="p34681881203655"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="16.87878787878788%" id="mcps1.2.5.1.2"><p id="p333122111014"><a name="p333122111014"></a><a name="p333122111014"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="13.131313131313133%" id="mcps1.2.5.1.2"><p id="p333122111014"><a name="p333122111014"></a><a name="p333122111014"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="14.434343434343436%" id="mcps1.2.5.1.3"><p id="p57769002203655"><a name="p57769002203655"></a><a name="p57769002203655"></a>Type</p>
+<th class="cellrowborder" valign="top" width="18.181818181818183%" id="mcps1.2.5.1.3"><p id="p57769002203655"><a name="p57769002203655"></a><a name="p57769002203655"></a>Type</p>
 </th>
 <th class="cellrowborder" valign="top" width="48.484848484848484%" id="mcps1.2.5.1.4"><p id="p58673482203655"><a name="p58673482203655"></a><a name="p58673482203655"></a>Description</p>
 </th>
@@ -85,36 +86,36 @@ POST /api/v3/projects/\{project\_id\}/clusters
 </thead>
 <tbody><tr id="row54931625203655"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p44731858185518"><a name="p44731858185518"></a><a name="p44731858185518"></a>kind</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.87878787878788%" headers="mcps1.2.5.1.2 "><p id="p20715132635516"><a name="p20715132635516"></a><a name="p20715132635516"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p20715132635516"><a name="p20715132635516"></a><a name="p20715132635516"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.434343434343436%" headers="mcps1.2.5.1.3 "><p id="p57145269553"><a name="p57145269553"></a><a name="p57145269553"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.181818181818183%" headers="mcps1.2.5.1.3 "><p id="p57145269553"><a name="p57145269553"></a><a name="p57145269553"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p12712326175517"><a name="p12712326175517"></a><a name="p12712326175517"></a>API type. For a cluster management API, the parameter must be set to <strong id="b8304143918315"><a name="b8304143918315"></a><a name="b8304143918315"></a>Cluster</strong> and cannot be changed.</p>
 </td>
 </tr>
 <tr id="row15234185203655"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p144741580551"><a name="p144741580551"></a><a name="p144741580551"></a>apiVersion</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.87878787878788%" headers="mcps1.2.5.1.2 "><p id="p2709192613559"><a name="p2709192613559"></a><a name="p2709192613559"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p2709192613559"><a name="p2709192613559"></a><a name="p2709192613559"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.434343434343436%" headers="mcps1.2.5.1.3 "><p id="p6707526185513"><a name="p6707526185513"></a><a name="p6707526185513"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.181818181818183%" headers="mcps1.2.5.1.3 "><p id="p6707526185513"><a name="p6707526185513"></a><a name="p6707526185513"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p1770492695518"><a name="p1770492695518"></a><a name="p1770492695518"></a>API version. The value is fixed at <strong id="b95215361854"><a name="b95215361854"></a><a name="b95215361854"></a>v3</strong> and cannot be changed.</p>
 </td>
 </tr>
 <tr id="row1122635417553"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p144741558135518"><a name="p144741558135518"></a><a name="p144741558135518"></a>metadata</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.87878787878788%" headers="mcps1.2.5.1.2 "><p id="p112261154155517"><a name="p112261154155517"></a><a name="p112261154155517"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p112261154155517"><a name="p112261154155517"></a><a name="p112261154155517"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.434343434343436%" headers="mcps1.2.5.1.3 "><p id="p16227554165511"><a name="p16227554165511"></a><a name="p16227554165511"></a><a href="#table888212551117">metadata</a> object</p>
+<td class="cellrowborder" valign="top" width="18.181818181818183%" headers="mcps1.2.5.1.3 "><p id="p16227554165511"><a name="p16227554165511"></a><a name="p16227554165511"></a><a href="#table888212551117">metadata</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p102271654195515"><a name="p102271654195515"></a><a name="p102271654195515"></a>Basic information about a cluster. metadata is a collection of attributes.</p>
 </td>
 </tr>
 <tr id="row9619511127"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p4785161212"><a name="p4785161212"></a><a name="p4785161212"></a>spec</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.87878787878788%" headers="mcps1.2.5.1.2 "><p id="p97205171219"><a name="p97205171219"></a><a name="p97205171219"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p97205171219"><a name="p97205171219"></a><a name="p97205171219"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.434343434343436%" headers="mcps1.2.5.1.3 "><p id="p67105119126"><a name="p67105119126"></a><a name="p67105119126"></a><a href="#table1034041612134">spec</a> object</p>
+<td class="cellrowborder" valign="top" width="18.181818181818183%" headers="mcps1.2.5.1.3 "><p id="p67105119126"><a name="p67105119126"></a><a name="p67105119126"></a><a href="#table1034041612134">spec</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p10785112129"><a name="p10785112129"></a><a name="p10785112129"></a>Detailed description of the cluster to be created. CCE creates or updates objects by defining or updating its spec.</p>
 </td>
@@ -127,9 +128,9 @@ POST /api/v3/projects/\{project\_id\}/clusters
 <a name="table888212551117"></a>
 <table><thead align="left"><tr id="row18888115514119"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="p11890655514"><a name="p11890655514"></a><a name="p11890655514"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="15.790000000000001%" id="mcps1.2.5.1.2"><p id="p289311553114"><a name="p289311553114"></a><a name="p289311553114"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="13%" id="mcps1.2.5.1.2"><p id="p289311553114"><a name="p289311553114"></a><a name="p289311553114"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="15.21%" id="mcps1.2.5.1.3"><p id="p128941055417"><a name="p128941055417"></a><a name="p128941055417"></a>Type</p>
+<th class="cellrowborder" valign="top" width="18%" id="mcps1.2.5.1.3"><p id="p128941055417"><a name="p128941055417"></a><a name="p128941055417"></a>Type</p>
 </th>
 <th class="cellrowborder" valign="top" width="49%" id="mcps1.2.5.1.4"><p id="p1289615519119"><a name="p1289615519119"></a><a name="p1289615519119"></a>Description</p>
 </th>
@@ -137,9 +138,9 @@ POST /api/v3/projects/\{project\_id\}/clusters
 </thead>
 <tbody><tr id="row1489715551111"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p1289114562017"><a name="p1289114562017"></a><a name="p1289114562017"></a>name</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.790000000000001%" headers="mcps1.2.5.1.2 "><p id="p716614322018"><a name="p716614322018"></a><a name="p716614322018"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p716614322018"><a name="p716614322018"></a><a name="p716614322018"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.21%" headers="mcps1.2.5.1.3 "><p id="p9195144141410"><a name="p9195144141410"></a><a name="p9195144141410"></a>String</p>
+<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p9195144141410"><a name="p9195144141410"></a><a name="p9195144141410"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p1630772215148"><a name="p1630772215148"></a><a name="p1630772215148"></a>Cluster name.</p>
 <p id="p9110173318412"><a name="p9110173318412"></a><a name="p9110173318412"></a>Enter 4 to 128 characters starting with a letter and not ending with a hyphen (-). Only lowercase letters, digits, and hyphens (-) are allowed.</p>
@@ -147,9 +148,9 @@ POST /api/v3/projects/\{project\_id\}/clusters
 </tr>
 <tr id="row6865639152015"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p689194513209"><a name="p689194513209"></a><a name="p689194513209"></a>labels</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.790000000000001%" headers="mcps1.2.5.1.2 "><p id="p1886511394203"><a name="p1886511394203"></a><a name="p1886511394203"></a>No</p>
+<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p1886511394203"><a name="p1886511394203"></a><a name="p1886511394203"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.21%" headers="mcps1.2.5.1.3 "><p id="p919624191418"><a name="p919624191418"></a><a name="p919624191418"></a>Object</p>
+<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p919624191418"><a name="p919624191418"></a><a name="p919624191418"></a>Object</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p1831411614564"><a name="p1831411614564"></a><a name="p1831411614564"></a>Cluster labels in the format of key-value pairs.</p>
 <p id="p1671617184505"><a name="p1671617184505"></a><a name="p1671617184505"></a>Labels are used to select objects that meet certain criteria.</p>
@@ -161,9 +162,9 @@ POST /api/v3/projects/\{project\_id\}/clusters
 </tr>
 <tr id="row1267164013200"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p889194582016"><a name="p889194582016"></a><a name="p889194582016"></a>annotations</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.790000000000001%" headers="mcps1.2.5.1.2 "><p id="p116764015202"><a name="p116764015202"></a><a name="p116764015202"></a>No</p>
+<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p116764015202"><a name="p116764015202"></a><a name="p116764015202"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.21%" headers="mcps1.2.5.1.3 "><p id="p15196841191420"><a name="p15196841191420"></a><a name="p15196841191420"></a>Object</p>
+<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p15196841191420"><a name="p15196841191420"></a><a name="p15196841191420"></a>Object</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p13308162211145"><a name="p13308162211145"></a><a name="p13308162211145"></a>Cluster annotations in the format of key-value pairs.</p>
 <pre class="screen" id="screen1163751913466"><a name="screen1163751913466"></a><a name="screen1163751913466"></a>"annotations": {
@@ -180,115 +181,125 @@ POST /api/v3/projects/\{project\_id\}/clusters
 **Table  5**  Data structure of the  **spec**  field
 
 <a name="table1034041612134"></a>
-<table><thead align="left"><tr id="row14348121616132"><th class="cellrowborder" valign="top" width="20.2020202020202%" id="mcps1.2.5.1.1"><p id="p133505167139"><a name="p133505167139"></a><a name="p133505167139"></a>Parameter</p>
+<table><thead align="left"><tr id="row14348121616132"><th class="cellrowborder" valign="top" width="20.202020202020204%" id="mcps1.2.5.1.1"><p id="p133505167139"><a name="p133505167139"></a><a name="p133505167139"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.545454545454543%" id="mcps1.2.5.1.2"><p id="p6353201611319"><a name="p6353201611319"></a><a name="p6353201611319"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="13.131313131313133%" id="mcps1.2.5.1.2"><p id="p6353201611319"><a name="p6353201611319"></a><a name="p6353201611319"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="16.747474747474747%" id="mcps1.2.5.1.3"><p id="p735501615139"><a name="p735501615139"></a><a name="p735501615139"></a>Type</p>
+<th class="cellrowborder" valign="top" width="18.353535353535353%" id="mcps1.2.5.1.3"><p id="p735501615139"><a name="p735501615139"></a><a name="p735501615139"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="45.505050505050505%" id="mcps1.2.5.1.4"><p id="p15357151631311"><a name="p15357151631311"></a><a name="p15357151631311"></a>Description</p>
+<th class="cellrowborder" valign="top" width="48.313131313131315%" id="mcps1.2.5.1.4"><p id="p15357151631311"><a name="p15357151631311"></a><a name="p15357151631311"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row178365271483"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.5.1.1 "><p id="p146521540191916"><a name="p146521540191916"></a><a name="p146521540191916"></a>type</p>
+<tbody><tr id="row178365271483"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p146521540191916"><a name="p146521540191916"></a><a name="p146521540191916"></a>type</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.545454545454543%" headers="mcps1.2.5.1.2 "><p id="p202632127"><a name="p202632127"></a><a name="p202632127"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p202632127"><a name="p202632127"></a><a name="p202632127"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.747474747474747%" headers="mcps1.2.5.1.3 "><p id="p1052510179227"><a name="p1052510179227"></a><a name="p1052510179227"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.353535353535353%" headers="mcps1.2.5.1.3 "><p id="p1052510179227"><a name="p1052510179227"></a><a name="p1052510179227"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45.505050505050505%" headers="mcps1.2.5.1.4 "><p id="p1691385774411"><a name="p1691385774411"></a><a name="p1691385774411"></a>Cluster type. Possible values:</p>
-<a name="ul123801520452"></a><a name="ul123801520452"></a><ul id="ul123801520452"><li><strong id="b122221723185118"><a name="b122221723185118"></a><a name="b122221723185118"></a>VirtualMachine</strong>: The cluster is a VM cluster.<p id="p138192583535"><a name="p138192583535"></a><a name="p138192583535"></a>A VM cluster manages a group of node resources based on Kubernetes. It can manage VMs, physical machines (PMs), or a combination of both. Kubernetes automatically schedules containers onto available nodes. Before creating a containerized workload, ensure that a cluster is available.</p>
+<td class="cellrowborder" valign="top" width="48.313131313131315%" headers="mcps1.2.5.1.4 "><p id="p1691385774411"><a name="p1691385774411"></a><a name="p1691385774411"></a>Cluster type. Possible values:</p>
+<a name="ul123801520452"></a><a name="ul123801520452"></a><ul id="ul123801520452"><li><strong id="b122221723185118"><a name="b122221723185118"></a><a name="b122221723185118"></a>VirtualMachine</strong>: The cluster is a hybrid cluster.<p id="p138192583535"><a name="p138192583535"></a><a name="p138192583535"></a>A hybrid cluster manages a group of node resources based on Kubernetes. It can manage VMs, physical machines (PMs), or a combination of both. Kubernetes automatically schedules containers onto available nodes. Before creating a containerized workload, ensure that a cluster is available.</p>
 </li><li><strong id="b2026825310204"><a name="b2026825310204"></a><a name="b2026825310204"></a>BareMetal</strong>: The cluster is a BMS cluster.<p id="p13891132020474"><a name="p13891132020474"></a><a name="p13891132020474"></a>BMS clusters are Kubernetes container clusters with high computing and high network performance. To use a BMS cluster, <a href="https://docs.otc.t-systems.com/en-us/usermanual/bms/en-us_topic_0053536894.html" target="_blank" rel="noopener noreferrer">apply for a BMS</a>. To provide a high-speed container network, add a high-speed network interface card (NIC) when creating a BMS. For details, see <a href="https://docs.otc.t-systems.com/en-us/usermanual/bms/en-us_topic_0053537013.html" target="_blank" rel="noopener noreferrer">Managing High-Speed Networks</a>.</p>
 </li></ul>
 </td>
 </tr>
-<tr id="row111221127144415"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.5.1.1 "><p id="p1612362713448"><a name="p1612362713448"></a><a name="p1612362713448"></a>flavor</p>
+<tr id="row111221127144415"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p1612362713448"><a name="p1612362713448"></a><a name="p1612362713448"></a>flavor</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.545454545454543%" headers="mcps1.2.5.1.2 "><p id="p1112372718448"><a name="p1112372718448"></a><a name="p1112372718448"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p1112372718448"><a name="p1112372718448"></a><a name="p1112372718448"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.747474747474747%" headers="mcps1.2.5.1.3 "><p id="p1512392713442"><a name="p1512392713442"></a><a name="p1512392713442"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.353535353535353%" headers="mcps1.2.5.1.3 "><p id="p1512392713442"><a name="p1512392713442"></a><a name="p1512392713442"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45.505050505050505%" headers="mcps1.2.5.1.4 "><p id="p16621941104417"><a name="p16621941104417"></a><a name="p16621941104417"></a>Cluster flavor, which cannot be changed after the cluster is created.</p>
+<td class="cellrowborder" valign="top" width="48.313131313131315%" headers="mcps1.2.5.1.4 "><p id="p16621941104417"><a name="p16621941104417"></a><a name="p16621941104417"></a>Cluster flavor, which cannot be changed after the cluster is created.</p>
 <a name="ul154851748174415"></a><a name="ul154851748174415"></a><ul id="ul154851748174415"><li><strong id="b11489836273"><a name="b11489836273"></a><a name="b11489836273"></a>cce.s1.small</strong>: small-scale, single-master VM cluster (≤ 50 nodes)</li><li><strong id="b367910942720"><a name="b367910942720"></a><a name="b367910942720"></a>cce.s1.medium</strong>: medium-scale, single-master VM cluster (≤ 200 nodes)</li><li><strong id="b6271153114279"><a name="b6271153114279"></a><a name="b6271153114279"></a>cce.s1.large</strong>: large-scale, single-master VM cluster (≤ 1,000 nodes)</li><li><strong id="b181461333281"><a name="b181461333281"></a><a name="b181461333281"></a>cce.t1.small</strong>: small-scale, single-master BMS cluster (≤ 10 nodes)</li><li><strong id="b1961019276282"><a name="b1961019276282"></a><a name="b1961019276282"></a>cce.t1.medium</strong>: medium-scale, single-master BMS cluster (≤ 100 nodes)</li><li><strong id="b3357144892811"><a name="b3357144892811"></a><a name="b3357144892811"></a>cce.t1.large</strong>: large-scale, single-master BMS cluster (≤ 500 nodes)</li><li><strong id="b1081317262919"><a name="b1081317262919"></a><a name="b1081317262919"></a>cce.s2.small</strong>: small-scale, high availability VM cluster (≤ 50 nodes)</li><li><strong id="b1689322115296"><a name="b1689322115296"></a><a name="b1689322115296"></a>cce.s2.medium</strong>: medium-scale, high availability VM cluster (≤ 200 nodes)</li><li><strong id="b57413316296"><a name="b57413316296"></a><a name="b57413316296"></a>cce.s2.large</strong>: large-scale, high availability VM cluster (≤ 1,000 nodes)</li><li><strong id="b12121245192917"><a name="b12121245192917"></a><a name="b12121245192917"></a>cce.t2.small</strong>: small-scale, high availability BMS cluster (≤ 10 nodes)</li><li><strong id="b01951338302"><a name="b01951338302"></a><a name="b01951338302"></a>cce.t2.medium</strong>: medium-scale, high availability BMS cluster (≤ 100 nodes)</li><li><strong id="b198171213303"><a name="b198171213303"></a><a name="b198171213303"></a>cce.t2.large</strong>: large-scale, high availability BMS cluster (≤ 500 nodes)</li></ul>
 <div class="note" id="note10821115618447"><a name="note10821115618447"></a><a name="note10821115618447"></a><span class="notetitle"> NOTE: </span><div class="notebody"><a name="ul13821356164415"></a><a name="ul13821356164415"></a><ul id="ul13821356164415"><li>s1: single-master VM cluster</li><li>s2: high availability VM cluster</li><li>t1: single-master BMS cluster</li><li>t2: high-availability BMS cluster</li><li>For example, <strong id="b1251010481560"><a name="b1251010481560"></a><a name="b1251010481560"></a>≤ 50 nodes</strong> indicates that the maximum number of nodes that can be managed by the cluster is 50.</li><li>A single-master cluster has only one master node. If the master node is down, the cluster will become unavailable and stop serving new workloads. However, existing workloads in the cluster are not affected.</li><li>A high-availability cluster has multiple master nodes. Faults in a single master node will not take the cluster down.</li></ul>
 </div></div>
 </td>
 </tr>
-<tr id="row83711516191317"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.5.1.1 "><p id="p1565217404195"><a name="p1565217404195"></a><a name="p1565217404195"></a>version</p>
+<tr id="row83711516191317"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p1565217404195"><a name="p1565217404195"></a><a name="p1565217404195"></a>version</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.545454545454543%" headers="mcps1.2.5.1.2 "><p id="p43761516111313"><a name="p43761516111313"></a><a name="p43761516111313"></a>No</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p43761516111313"><a name="p43761516111313"></a><a name="p43761516111313"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.747474747474747%" headers="mcps1.2.5.1.3 "><p id="p252511174227"><a name="p252511174227"></a><a name="p252511174227"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.353535353535353%" headers="mcps1.2.5.1.3 "><p id="p252511174227"><a name="p252511174227"></a><a name="p252511174227"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45.505050505050505%" headers="mcps1.2.5.1.4 "><p id="p0929195015409"><a name="p0929195015409"></a><a name="p0929195015409"></a>Cluster's baseline Kubernetes version. The latest version is recommended.</p>
-<a name="ul148721154111"></a><a name="ul148721154111"></a><ul id="ul148721154111"><li>You can create clusters of two latest versions on the CCE console. To learn which cluster versions are available, choose <span class="uicontrol" id="uicontrol13187124153518"><a name="uicontrol13187124153518"></a><a name="uicontrol13187124153518"></a><b>Dashboard &gt; Create Cluster</b></span> on the CCE console and check the <span class="uicontrol" id="uicontrol33339853610"><a name="uicontrol33339853610"></a><a name="uicontrol33339853610"></a><b>Cluster</b></span> parameter.</li><li>You can call APIs to create clusters of other versions. However, these clusters will be gradually brought offline. For details about the offline policy, see the official CCE announcement.</li></ul>
+<td class="cellrowborder" valign="top" width="48.313131313131315%" headers="mcps1.2.5.1.4 "><p id="p0929195015409"><a name="p0929195015409"></a><a name="p0929195015409"></a>Cluster's baseline Kubernetes version. The latest version is recommended.</p>
 <div class="note" id="note19341279382"><a name="note19341279382"></a><a name="note19341279382"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p1993516279385"><a name="p1993516279385"></a><a name="p1993516279385"></a>If this parameter is not set, the cluster of the latest version is created by default.</p>
 </div></div>
 </td>
 </tr>
-<tr id="row438141651319"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.5.1.1 "><p id="p1653144010196"><a name="p1653144010196"></a><a name="p1653144010196"></a>description</p>
+<tr id="row438141651319"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p1653144010196"><a name="p1653144010196"></a><a name="p1653144010196"></a>description</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.545454545454543%" headers="mcps1.2.5.1.2 "><p id="p9485133718193"><a name="p9485133718193"></a><a name="p9485133718193"></a>No</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p9485133718193"><a name="p9485133718193"></a><a name="p9485133718193"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.747474747474747%" headers="mcps1.2.5.1.3 "><p id="p65261417142217"><a name="p65261417142217"></a><a name="p65261417142217"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.353535353535353%" headers="mcps1.2.5.1.3 "><p id="p65261417142217"><a name="p65261417142217"></a><a name="p65261417142217"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45.505050505050505%" headers="mcps1.2.5.1.4 "><p id="p1318113472302"><a name="p1318113472302"></a><a name="p1318113472302"></a>Cluster description, for example, which purpose the cluster is intended to serve. By default, this parameter is left unspecified. To modify cluster description after the cluster is created, call the <a href="updating-a-specified-cluster.md">API that is used to update information about a specified cluster</a> or go to the cluster details page on the CCE console.</p>
-</td>
-</tr>
-<tr id="row17011947507"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.5.1.1 "><p id="p4701194125011"><a name="p4701194125011"></a><a name="p4701194125011"></a>hostNetwok</p>
-</td>
-<td class="cellrowborder" valign="top" width="17.545454545454543%" headers="mcps1.2.5.1.2 "><p id="p1570134145017"><a name="p1570134145017"></a><a name="p1570134145017"></a>Yes</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.747474747474747%" headers="mcps1.2.5.1.3 "><p id="p167012042507"><a name="p167012042507"></a><a name="p167012042507"></a><a href="#table1622013552507">hostNetwork</a> object</p>
-</td>
-<td class="cellrowborder" valign="top" width="45.505050505050505%" headers="mcps1.2.5.1.4 "><p id="p123281848104313"><a name="p123281848104313"></a><a name="p123281848104313"></a>Node network parameters, including a VPC and subnet ID. <strong id="b13136114517294"><a name="b13136114517294"></a><a name="b13136114517294"></a>hostNetwok</strong> is mandatory because nodes in a cluster communicate with each other by using a VPC.</p>
+<td class="cellrowborder" valign="top" width="48.313131313131315%" headers="mcps1.2.5.1.4 "><p id="p1318113472302"><a name="p1318113472302"></a><a name="p1318113472302"></a>Cluster description, for example, which purpose the cluster is intended to serve. By default, this parameter is left unspecified. To modify cluster description after the cluster is created, call the <a href="updating-a-specified-cluster.md">API that is used to update information about a specified cluster</a> or go to the cluster details page on the CCE console.</p>
 </td>
 </tr>
-<tr id="row651719205217"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.5.1.1 "><p id="p851151955212"><a name="p851151955212"></a><a name="p851151955212"></a>containerNetwork</p>
+<tr id="row17011947507"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p4701194125011"><a name="p4701194125011"></a><a name="p4701194125011"></a>hostNetwok</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.545454545454543%" headers="mcps1.2.5.1.2 "><p id="p11511019115210"><a name="p11511019115210"></a><a name="p11511019115210"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p1570134145017"><a name="p1570134145017"></a><a name="p1570134145017"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.747474747474747%" headers="mcps1.2.5.1.3 "><p id="p7514193520"><a name="p7514193520"></a><a name="p7514193520"></a><a href="#table882310145412">containerNetwork</a> object</p>
+<td class="cellrowborder" valign="top" width="18.353535353535353%" headers="mcps1.2.5.1.3 "><p id="p167012042507"><a name="p167012042507"></a><a name="p167012042507"></a><a href="#table1622013552507">hostNetwork</a> object</p>
 </td>
-<td class="cellrowborder" valign="top" width="45.505050505050505%" headers="mcps1.2.5.1.4 "><p id="p16930187201117"><a name="p16930187201117"></a><a name="p16930187201117"></a>Container network parameters, including a container network model and container CIDR block.</p>
-</td>
-</tr>
-<tr id="row9493123913567"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.5.1.1 "><p id="p2493239145620"><a name="p2493239145620"></a><a name="p2493239145620"></a><span>authentication</span></p>
-</td>
-<td class="cellrowborder" valign="top" width="17.545454545454543%" headers="mcps1.2.5.1.2 "><p id="p2493123917565"><a name="p2493123917565"></a><a name="p2493123917565"></a>No</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.747474747474747%" headers="mcps1.2.5.1.3 "><p id="p6493113918562"><a name="p6493113918562"></a><a name="p6493113918562"></a><a href="#table71529332533">authentication</a> object</p>
-</td>
-<td class="cellrowborder" valign="top" width="45.505050505050505%" headers="mcps1.2.5.1.4 "><p id="p14939395566"><a name="p14939395566"></a><a name="p14939395566"></a>Configurations of the cluster authentication mode.</p>
+<td class="cellrowborder" valign="top" width="48.313131313131315%" headers="mcps1.2.5.1.4 "><p id="p123281848104313"><a name="p123281848104313"></a><a name="p123281848104313"></a>Node network parameters, including a VPC and subnet ID. <strong id="b13136114517294"><a name="b13136114517294"></a><a name="b13136114517294"></a>hostNetwok</strong> is mandatory because nodes in a cluster communicate with each other by using a VPC.</p>
 </td>
 </tr>
-<tr id="row97803915130"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.5.1.1 "><p id="p156284113136"><a name="p156284113136"></a><a name="p156284113136"></a>kubernetesSvcIpRange</p>
+<tr id="row651719205217"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p851151955212"><a name="p851151955212"></a><a name="p851151955212"></a>containerNetwork</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.545454545454543%" headers="mcps1.2.5.1.2 "><p id="p8782169151311"><a name="p8782169151311"></a><a name="p8782169151311"></a>No</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p11511019115210"><a name="p11511019115210"></a><a name="p11511019115210"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.747474747474747%" headers="mcps1.2.5.1.3 "><p id="p0703163016251"><a name="p0703163016251"></a><a name="p0703163016251"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.353535353535353%" headers="mcps1.2.5.1.3 "><p id="p7514193520"><a name="p7514193520"></a><a name="p7514193520"></a><a href="#table882310145412">containerNetwork</a> object</p>
 </td>
-<td class="cellrowborder" valign="top" width="45.505050505050505%" headers="mcps1.2.5.1.4 "><p id="p7782199181315"><a name="p7782199181315"></a><a name="p7782199181315"></a>Service CIDR block or the IP address range which the <strong id="b1853831421311"><a name="b1853831421311"></a><a name="b1853831421311"></a>kubernetes clusterIp</strong> must fall within. This parameter is available only for clusters of v1.11.7 and later.</p>
+<td class="cellrowborder" valign="top" width="48.313131313131315%" headers="mcps1.2.5.1.4 "><p id="p16930187201117"><a name="p16930187201117"></a><a name="p16930187201117"></a>Container network parameters, including a container network model and container CIDR block.</p>
 </td>
 </tr>
-<tr id="row334518801617"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.5.1.1 "><p id="p6345128161614"><a name="p6345128161614"></a><a name="p6345128161614"></a>billingMode</p>
+<tr id="row9493123913567"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p2493239145620"><a name="p2493239145620"></a><a name="p2493239145620"></a><span>authentication</span></p>
 </td>
-<td class="cellrowborder" valign="top" width="17.545454545454543%" headers="mcps1.2.5.1.2 "><p id="p183451883168"><a name="p183451883168"></a><a name="p183451883168"></a>No</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p2493123917565"><a name="p2493123917565"></a><a name="p2493123917565"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.747474747474747%" headers="mcps1.2.5.1.3 "><p id="p734518141613"><a name="p734518141613"></a><a name="p734518141613"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="18.353535353535353%" headers="mcps1.2.5.1.3 "><p id="p6493113918562"><a name="p6493113918562"></a><a name="p6493113918562"></a><a href="#table71529332533">authentication</a> object</p>
 </td>
-<td class="cellrowborder" valign="top" width="45.505050505050505%" headers="mcps1.2.5.1.4 "><p id="p1834638101617"><a name="p1834638101617"></a><a name="p1834638101617"></a>Billing mode of a node.</p>
+<td class="cellrowborder" valign="top" width="48.313131313131315%" headers="mcps1.2.5.1.4 "><p id="p14939395566"><a name="p14939395566"></a><a name="p14939395566"></a>Configurations of the cluster authentication mode.</p>
+</td>
+</tr>
+<tr id="row97803915130"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p156284113136"><a name="p156284113136"></a><a name="p156284113136"></a>kubernetesSvcIpRange</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p8782169151311"><a name="p8782169151311"></a><a name="p8782169151311"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.353535353535353%" headers="mcps1.2.5.1.3 "><p id="p0703163016251"><a name="p0703163016251"></a><a name="p0703163016251"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="48.313131313131315%" headers="mcps1.2.5.1.4 "><p id="p7782199181315"><a name="p7782199181315"></a><a name="p7782199181315"></a>Service CIDR block or the IP address range which the <strong id="b1853831421311"><a name="b1853831421311"></a><a name="b1853831421311"></a>kubernetes clusterIp</strong> must fall within. This parameter is available only for clusters of v1.11.7 and later.</p>
+</td>
+</tr>
+<tr id="row10323532155414"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p14324183215541"><a name="p14324183215541"></a><a name="p14324183215541"></a>kubeProxyMode</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p9324183255411"><a name="p9324183255411"></a><a name="p9324183255411"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.353535353535353%" headers="mcps1.2.5.1.3 "><p id="p232415326549"><a name="p232415326549"></a><a name="p232415326549"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="48.313131313131315%" headers="mcps1.2.5.1.4 "><p id="p113568261434"><a name="p113568261434"></a><a name="p113568261434"></a>Service forwarding mode. Two modes are available:</p>
+<a name="ul1435618265318"></a><a name="ul1435618265318"></a><ul id="ul1435618265318"><li><strong id="b106749431705"><a name="b106749431705"></a><a name="b106749431705"></a>iptables</strong>: Traditional kube-proxy uses iptables rules to implement service load balancing. In this mode, too many iptables rules will be generated when many services are deployed. In addition, non-incremental updates will cause a latency and even obvious performance issues in the case of heavy service traffic.</li><li><strong id="b17542918173615"><a name="b17542918173615"></a><a name="b17542918173615"></a>ipvs</strong>: Optimized kube-proxy mode with higher throughput and faster speed. This mode supports incremental updates and can keep connections uninterrupted during service updates. It is suitable for large-sized clusters.</li></ul>
+</td>
+</tr>
+<tr id="row1441131711197"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p6345128161614"><a name="p6345128161614"></a><a name="p6345128161614"></a>billingMode</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p183451883168"><a name="p183451883168"></a><a name="p183451883168"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.353535353535353%" headers="mcps1.2.5.1.3 "><p id="p734518141613"><a name="p734518141613"></a><a name="p734518141613"></a>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="48.313131313131315%" headers="mcps1.2.5.1.4 "><p id="p1834638101617"><a name="p1834638101617"></a><a name="p1834638101617"></a>Billing mode of a node.</p>
 <div class="note" id="note0702131124412"><a name="note0702131124412"></a><a name="note0702131124412"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p77026184417"><a name="p77026184417"></a><a name="p77026184417"></a>This field is not supported for the current version.</p>
 </div></div>
 </td>
 </tr>
-<tr id="row1384175110463"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.5.1.1 "><p id="p484119516469"><a name="p484119516469"></a><a name="p484119516469"></a>extendParam</p>
+<tr id="row1384175110463"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p484119516469"><a name="p484119516469"></a><a name="p484119516469"></a>extendParam</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.545454545454543%" headers="mcps1.2.5.1.2 "><p id="p084112512463"><a name="p084112512463"></a><a name="p084112512463"></a>No</p>
+<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p084112512463"><a name="p084112512463"></a><a name="p084112512463"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.747474747474747%" headers="mcps1.2.5.1.3 "><p id="p19841451184614"><a name="p19841451184614"></a><a name="p19841451184614"></a><a href="#table17575013586">extendParam</a> object</p>
+<td class="cellrowborder" valign="top" width="18.353535353535353%" headers="mcps1.2.5.1.3 "><p id="p19841451184614"><a name="p19841451184614"></a><a name="p19841451184614"></a><a href="#table17575013586">extendParam</a> object</p>
 </td>
-<td class="cellrowborder" valign="top" width="45.505050505050505%" headers="mcps1.2.5.1.4 "><p id="p13817123194716"><a name="p13817123194716"></a><a name="p13817123194716"></a>Extended fields in the format of key-value pairs.</p>
+<td class="cellrowborder" valign="top" width="48.313131313131315%" headers="mcps1.2.5.1.4 "><p id="p13817123194716"><a name="p13817123194716"></a><a name="p13817123194716"></a>Extended fields in the format of key-value pairs.</p>
+<p id="p128174394710"><a name="p128174394710"></a><a name="p128174394710"></a>If the cluster will span across AZs or belong to a specified enterprise project, set extended fields as described in <a href="#table17575013586">Table 10</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -337,7 +348,7 @@ POST /api/v3/projects/\{project\_id\}/clusters
 </tbody>
 </table>
 
-**Table  7**  Data structure of the authentication field
+**Table  7**  Data structure of the  **authentication** field
 
 <a name="table71529332533"></a>
 <table><thead align="left"><tr id="row131521433135310"><th class="cellrowborder" valign="top" width="21.29%" id="mcps1.2.5.1.1"><p id="p16152133325312"><a name="p16152133325312"></a><a name="p16152133325312"></a>Parameter</p>
@@ -362,10 +373,40 @@ POST /api/v3/projects/\{project\_id\}/clusters
 </li></ul>
 </td>
 </tr>
+<tr id="row1790141562916"><td class="cellrowborder" valign="top" width="21.29%" headers="mcps1.2.5.1.1 "><p id="p149011915202913"><a name="p149011915202913"></a><a name="p149011915202913"></a>authenticatingProxy</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.71%" headers="mcps1.2.5.1.2 "><p id="p1290171520290"><a name="p1290171520290"></a><a name="p1290171520290"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.36%" headers="mcps1.2.5.1.3 "><p id="p8901161513297"><a name="p8901161513297"></a><a name="p8901161513297"></a><a href="#table17313161473013">authenticatingProxy</a> object</p>
+</td>
+<td class="cellrowborder" valign="top" width="43.64%" headers="mcps1.2.5.1.4 "><p id="p2901121513292"><a name="p2901121513292"></a><a name="p2901121513292"></a>Configurations of the <strong id="b1076411138231"><a name="b1076411138231"></a><a name="b1076411138231"></a>authenticating_proxy</strong> mode.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
-**Table  8**  Data structure of the  **containerNetwork**  field
+**Table  8**  Data structure of the  **authenticatingProxy**  field
+
+<a name="table17313161473013"></a>
+<table><thead align="left"><tr id="row1531310142305"><th class="cellrowborder" valign="top" width="25.575757575757574%" id="mcps1.2.4.1.1"><p id="p1931491463016"><a name="p1931491463016"></a><a name="p1931491463016"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="19.87878787878788%" id="mcps1.2.4.1.2"><p id="p0314131443011"><a name="p0314131443011"></a><a name="p0314131443011"></a>Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="54.545454545454554%" id="mcps1.2.4.1.3"><p id="p33141014163014"><a name="p33141014163014"></a><a name="p33141014163014"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row931417146309"><td class="cellrowborder" valign="top" width="25.575757575757574%" headers="mcps1.2.4.1.1 "><p id="p3314191412304"><a name="p3314191412304"></a><a name="p3314191412304"></a>ca</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.87878787878788%" headers="mcps1.2.4.1.2 "><p id="p7314151433012"><a name="p7314151433012"></a><a name="p7314151433012"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.545454545454554%" headers="mcps1.2.4.1.3 "><p id="p1931431423013"><a name="p1931431423013"></a><a name="p1931431423013"></a>CA root certificate provided in the <strong id="b331411473019"><a name="b331411473019"></a><a name="b331411473019"></a>authenticating_proxy</strong> mode. The CA root certificate is encoded to the Base64 format.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  9**  Data structure of the  **containerNetwork**  field
 
 <a name="table882310145412"></a>
 <table><thead align="left"><tr id="row1682316016545"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="p1694819205543"><a name="p1694819205543"></a><a name="p1694819205543"></a>Parameter</p>
@@ -403,7 +444,7 @@ POST /api/v3/projects/\{project\_id\}/clusters
 </tbody>
 </table>
 
-**Table  9**  Data structure of the extendParam field
+**Table  10**  Data structure of the  **extendParam**  field
 
 <a name="table17575013586"></a>
 <table><thead align="left"><tr id="row51071750155814"><th class="cellrowborder" valign="top" width="17.29%" id="mcps1.2.5.1.1"><p id="p41071050115816"><a name="p41071050115816"></a><a name="p41071050115816"></a>Parameter</p>
@@ -436,14 +477,40 @@ POST /api/v3/projects/\{project\_id\}/clusters
 <td class="cellrowborder" valign="top" width="51.790000000000006%" headers="mcps1.2.5.1.4 "><p id="p1038132513014"><a name="p1038132513014"></a><a name="p1038132513014"></a>Whether the system and data disks of a master node use dedicated distributed storage. If this parameter is omitted or left unspecified, EVS disks are used by default.</p>
 </td>
 </tr>
-<tr id="row88812033134"><td class="cellrowborder" valign="top" width="17.29%" headers="mcps1.2.5.1.1 "><p id="p288212341311"><a name="p288212341311"></a><a name="p288212341311"></a>kubeProxyMode</p>
+<tr id="row2685716193113"><td class="cellrowborder" valign="top" width="17.29%" headers="mcps1.2.5.1.1 "><p id="p136861116153119"><a name="p136861116153119"></a><a name="p136861116153119"></a><span id="ph129965585111"><a name="ph129965585111"></a><a name="ph129965585111"></a>clusterExternalIP</span></p>
 </td>
-<td class="cellrowborder" valign="top" width="11.73%" headers="mcps1.2.5.1.2 "><p id="p880914216224"><a name="p880914216224"></a><a name="p880914216224"></a>No</p>
+<td class="cellrowborder" valign="top" width="11.73%" headers="mcps1.2.5.1.2 "><p id="p768621620318"><a name="p768621620318"></a><a name="p768621620318"></a><span id="ph162983218522"><a name="ph162983218522"></a><a name="ph162983218522"></a>No</span></p>
 </td>
-<td class="cellrowborder" valign="top" width="19.189999999999998%" headers="mcps1.2.5.1.3 "><p id="p1429542271318"><a name="p1429542271318"></a><a name="p1429542271318"></a>String</p>
+<td class="cellrowborder" valign="top" width="19.189999999999998%" headers="mcps1.2.5.1.3 "><p id="p1686191683110"><a name="p1686191683110"></a><a name="p1686191683110"></a><span id="ph1550142365319"><a name="ph1550142365319"></a><a name="ph1550142365319"></a>String</span></p>
 </td>
-<td class="cellrowborder" valign="top" width="51.790000000000006%" headers="mcps1.2.5.1.4 "><p id="p113568261434"><a name="p113568261434"></a><a name="p113568261434"></a>Service forwarding mode. Two modes are available:</p>
-<a name="ul1435618265318"></a><a name="ul1435618265318"></a><ul id="ul1435618265318"><li><strong id="b106749431705"><a name="b106749431705"></a><a name="b106749431705"></a>iptables</strong>: Traditional kube-proxy uses iptables rules to implement service load balancing. In this mode, too many iptables rules will be generated when many services are deployed. In addition, non-incremental updates will cause a latency and even obvious performance issues in the case of heavy service traffic.</li><li><strong id="b17542918173615"><a name="b17542918173615"></a><a name="b17542918173615"></a>ipvs</strong>: Optimized kube-proxy mode with higher throughput and faster speed. This mode supports incremental updates and can keep connections uninterrupted during service updates. It is suitable for large-sized clusters.</li></ul>
+<td class="cellrowborder" valign="top" width="51.790000000000006%" headers="mcps1.2.5.1.4 "><p id="p1667535984212"><a name="p1667535984212"></a><a name="p1667535984212"></a>EIP used to access the cluster.</p>
+</td>
+</tr>
+<tr id="row2863140104013"><td class="cellrowborder" valign="top" width="17.29%" headers="mcps1.2.5.1.1 "><p id="p9864604409"><a name="p9864604409"></a><a name="p9864604409"></a><span id="ph10968151564019"><a name="ph10968151564019"></a><a name="ph10968151564019"></a>alpha.cce/fixPoolMask</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="11.73%" headers="mcps1.2.5.1.2 "><p id="p10864150134011"><a name="p10864150134011"></a><a name="p10864150134011"></a><span id="ph1731053019404"><a name="ph1731053019404"></a><a name="ph1731053019404"></a>No</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="19.189999999999998%" headers="mcps1.2.5.1.3 "><p id="p178642084019"><a name="p178642084019"></a><a name="p178642084019"></a><span id="ph146031733184015"><a name="ph146031733184015"></a><a name="ph146031733184015"></a>String</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="51.790000000000006%" headers="mcps1.2.5.1.4 "><p id="p368203111208"><a name="p368203111208"></a><a name="p368203111208"></a>Reserved. This parameter is not used in the current version.</p>
+</td>
+</tr>
+<tr id="row20579145174016"><td class="cellrowborder" valign="top" width="17.29%" headers="mcps1.2.5.1.1 "><p id="p1157918534017"><a name="p1157918534017"></a><a name="p1157918534017"></a><span id="ph1850612184016"><a name="ph1850612184016"></a><a name="ph1850612184016"></a>kubernetes.io/cpuManagerPolicy</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="11.73%" headers="mcps1.2.5.1.2 "><p id="p105797584015"><a name="p105797584015"></a><a name="p105797584015"></a><span id="ph19912930104016"><a name="ph19912930104016"></a><a name="ph19912930104016"></a>No</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="19.189999999999998%" headers="mcps1.2.5.1.3 "><p id="p20579151409"><a name="p20579151409"></a><a name="p20579151409"></a><span id="ph1757513367404"><a name="ph1757513367404"></a><a name="ph1757513367404"></a>String</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="51.790000000000006%" headers="mcps1.2.5.1.4 "><p id="p1756334142010"><a name="p1756334142010"></a><a name="p1756334142010"></a>Reserved. This parameter is not used in the current version.</p>
+</td>
+</tr>
+<tr id="row816313919408"><td class="cellrowborder" valign="top" width="17.29%" headers="mcps1.2.5.1.1 "><p id="p191639915401"><a name="p191639915401"></a><a name="p191639915401"></a><span id="ph1532562694020"><a name="ph1532562694020"></a><a name="ph1532562694020"></a>upgradefrom</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="11.73%" headers="mcps1.2.5.1.2 "><p id="p111637994010"><a name="p111637994010"></a><a name="p111637994010"></a><span id="ph25012317405"><a name="ph25012317405"></a><a name="ph25012317405"></a>No</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="19.189999999999998%" headers="mcps1.2.5.1.3 "><p id="p1163189174016"><a name="p1163189174016"></a><a name="p1163189174016"></a><span id="ph819020387405"><a name="ph819020387405"></a><a name="ph819020387405"></a>String</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="51.790000000000006%" headers="mcps1.2.5.1.4 "><p id="p7176173622017"><a name="p7176173622017"></a><a name="p7176173622017"></a>Reserved. This parameter is not used in the current version.</p>
 </td>
 </tr>
 </tbody>
@@ -451,7 +518,7 @@ POST /api/v3/projects/\{project\_id\}/clusters
 
 **Example Request**
 
--   Request for creating a VM cluster
+-   Request for creating a hybrid cluster
 
     ```
     {
@@ -468,12 +535,12 @@ POST /api/v3/projects/\{project\_id\}/clusters
         },
         "spec": {
             "type": "VirtualMachine",
-            "flavor": "cce.s1.small",
-            "version": "v1.13.10-r0",
+            "flavor": "cce.s2.small",
+            "version": "v1.15.6-r1",
             "description": "this is a demo cluster",
             "hostNetwork": {
-                "vpc": "1cb74d47-8e09-4d14-a065-75f4fc03e5eb",
-                "subnet": "d44c089c-fbdc-49b3-ae8f-7b42c64219cf"
+                "vpc": "23d3725f-6ffe-400e-8fb6-b4f9a7b3e8c1",
+                "subnet": "c90b3ce5-e1f1-4c87-a006-644d78846438"
             },
             "containerNetwork": {
                 "mode": "overlay_l2",
@@ -481,13 +548,14 @@ POST /api/v3/projects/\{project\_id\}/clusters
             },
             "authentication": {
                 "mode": "rbac",
-                "authenticatingProxy": {}
+                "authenticatingProxy": {
+                    "ca": "LS0tLS1CRUdJTiBD****8JUSUZJQ0FURS0tLS0t"
+                }
             },
             "kubeProxyMode": "iptables",
             "billingMode": 0,
             "extendParam": {
-                "clusterAZ": "multi_az",
-                "foo": "bar"
+                "clusterAZ": "multi_az"
             }
         }
     }
@@ -511,7 +579,7 @@ POST /api/v3/projects/\{project\_id\}/clusters
         "spec":{
             "type":"BareMetal",
             "flavor":"cce.t1.small",
-            "version":"v1.13.10-r0",
+            "version":"v1.11.7-r2",
             "description":"this is a demo cluster",
             "hostNetwork":{
                 "vpc":"09f9ee41-6a1e-475b-977b-a16adf0b14c5",
@@ -534,9 +602,9 @@ POST /api/v3/projects/\{project\_id\}/clusters
 
 **Response parameters:**
 
-[Table 10](#en-us_topic_0079616779_en-us_topic_0079614912_ref458774242)  describes the response parameters.
+[Table 11](#en-us_topic_0079616779_en-us_topic_0079614912_ref458774242)  describes the response parameters.
 
-**Table  10**  Response parameters
+**Table  11**  Response parameters
 
 <a name="en-us_topic_0079616779_en-us_topic_0079614912_ref458774242"></a>
 <table><thead align="left"><tr id="en-us_topic_0079616779_en-us_topic_0079614912_row38450714"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="en-us_topic_0079616779_en-us_topic_0079614912_p27500114"><a name="en-us_topic_0079616779_en-us_topic_0079614912_p27500114"></a><a name="en-us_topic_0079616779_en-us_topic_0079614912_p27500114"></a>Parameter</p>
@@ -585,7 +653,7 @@ POST /api/v3/projects/\{project\_id\}/clusters
 </tbody>
 </table>
 
-**Table  11**  Data structure of the  **metadata**  field
+**Table  12**  Data structure of the  **metadata**  field
 
 <a name="table669019286188"></a>
 <table><thead align="left"><tr id="row869032841815"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p196902028151813"><a name="p196902028151813"></a><a name="p196902028151813"></a>Parameter</p>
@@ -635,13 +703,13 @@ POST /api/v3/projects/\{project\_id\}/clusters
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p14802164201917"><a name="p14802164201917"></a><a name="p14802164201917"></a>Object</p>
 </td>
-<td class="cellrowborder" valign="top" width="55.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p18181491919"><a name="p18181491919"></a><a name="p18181491919"></a>Cluster annotations in the format of key-value pairs. The response parameter <strong id="b1811614143104"><a name="b1811614143104"></a><a name="b1811614143104"></a>metadata.annotations</strong>is the same as the request parameter <strong id="b2116414121020"><a name="b2116414121020"></a><a name="b2116414121020"></a>metadata.annotations</strong>.</p>
+<td class="cellrowborder" valign="top" width="55.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p18181491919"><a name="p18181491919"></a><a name="p18181491919"></a>Cluster annotations in the format of key-value pairs. The response parameter <strong id="b1573820449715"><a name="b1573820449715"></a><a name="b1573820449715"></a>metadata.annotations</strong> is the same as the request parameter <strong id="b2116414121020"><a name="b2116414121020"></a><a name="b2116414121020"></a>metadata.annotations</strong>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-**Table  12**  Data structure of the  **spec**  field
+**Table  13**  Data structure of the  **spec**  field
 
 <a name="table195921039143517"></a>
 <table><thead align="left"><tr id="row1960853920353"><th class="cellrowborder" valign="top" width="23%" id="mcps1.2.4.1.1"><p id="p11624153903519"><a name="p11624153903519"></a><a name="p11624153903519"></a>Parameter</p>
@@ -657,7 +725,7 @@ POST /api/v3/projects/\{project\_id\}/clusters
 <td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p76391539183511"><a name="p76391539183511"></a><a name="p76391539183511"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p13501152113195"><a name="p13501152113195"></a><a name="p13501152113195"></a>Cluster type. Possible values:</p>
-<a name="ul750132119199"></a><a name="ul750132119199"></a><ul id="ul750132119199"><li><strong id="b161768187422"><a name="b161768187422"></a><a name="b161768187422"></a>VirtualMachine</strong>: The cluster is a VM cluster.<p id="p15501182110199"><a name="p15501182110199"></a><a name="p15501182110199"></a>A VM cluster manages a group of node resources based on Kubernetes. It can manage VMs, PMs, or a combination of both. Kubernetes automatically schedules containers onto available nodes. Before creating a containerized workload, ensure that a cluster is available.</p>
+<a name="ul750132119199"></a><a name="ul750132119199"></a><ul id="ul750132119199"><li><strong id="b161768187422"><a name="b161768187422"></a><a name="b161768187422"></a>VirtualMachine</strong>: The cluster is a hybrid cluster.<p id="p15501182110199"><a name="p15501182110199"></a><a name="p15501182110199"></a>A hybrid cluster manages a group of node resources based on Kubernetes. It can manage VMs, PMs, or a combination of both. Kubernetes automatically schedules containers onto available nodes. Before creating a containerized workload, ensure that a cluster is available.</p>
 </li><li><strong id="b47051851714"><a name="b47051851714"></a><a name="b47051851714"></a>BareMetal</strong>: The cluster is a BMS cluster.<p id="p17501921151917"><a name="p17501921151917"></a><a name="p17501921151917"></a>BMS clusters are Kubernetes container clusters with high computing and high network performance. To use a BMS cluster, <a href="https://docs.otc.t-systems.com/en-us/usermanual/bms/en-us_topic_0053536894.html" target="_blank" rel="noopener noreferrer">apply for a BMS</a>. To provide a high-speed container network, add a high-speed NIC when creating a BMS. For details, see <a href="https://docs.otc.t-systems.com/en-us/usermanual/bms/en-us_topic_0053537013.html" target="_blank" rel="noopener noreferrer">Managing High-Speed Networks</a>.</p>
 </li></ul>
 </td>
@@ -679,11 +747,11 @@ POST /api/v3/projects/\{project\_id\}/clusters
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p14701915145510"><a name="p14701915145510"></a><a name="p14701915145510"></a>Cluster's baseline Kubernetes version. The latest version is recommended.</p>
 </td>
 </tr>
-<tr id="row3182144152212"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p3183144418222"><a name="p3183144418222"></a><a name="p3183144418222"></a>az</p>
+<tr id="row198601644104612"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p14861194416463"><a name="p14861194416463"></a><a name="p14861194416463"></a>az</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p12183244142219"><a name="p12183244142219"></a><a name="p12183244142219"></a>String</p>
+<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p16861144484619"><a name="p16861144484619"></a><a name="p16861144484619"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p21831244162215"><a name="p21831244162215"></a><a name="p21831244162215"></a>AZ of the cluster.</p>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p12861174454615"><a name="p12861174454615"></a><a name="p12861174454615"></a>AZ of the cluster.</p>
 </td>
 </tr>
 <tr id="row9686193912354"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p5686133953518"><a name="p5686133953518"></a><a name="p5686133953518"></a>description</p>
@@ -693,9 +761,16 @@ POST /api/v3/projects/\{project\_id\}/clusters
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p1370233913517"><a name="p1370233913517"></a><a name="p1370233913517"></a>Cluster description.</p>
 </td>
 </tr>
+<tr id="row815323371218"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p181548333122"><a name="p181548333122"></a><a name="p181548333122"></a><span id="ph8375436138"><a name="ph8375436138"></a><a name="ph8375436138"></a>ipv6enable</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p18154173311127"><a name="p18154173311127"></a><a name="p18154173311127"></a>Boolean</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p14159181552117"><a name="p14159181552117"></a><a name="p14159181552117"></a>Reserved. This parameter is not used in the current version.</p>
+</td>
+</tr>
 <tr id="row770233993516"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p871733903513"><a name="p871733903513"></a><a name="p871733903513"></a>hostNetwok</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p77172039133514"><a name="p77172039133514"></a><a name="p77172039133514"></a><a href="#table1622013552507">hostNetwork</a> object</p>
+<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p77172039133514"><a name="p77172039133514"></a><a name="p77172039133514"></a><a href="#table662821045911">hostNetwork</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p373417399356"><a name="p373417399356"></a><a name="p373417399356"></a>Node network parameters.</p>
 </td>
@@ -707,6 +782,13 @@ POST /api/v3/projects/\{project\_id\}/clusters
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p12749539163518"><a name="p12749539163518"></a><a name="p12749539163518"></a>Container network parameters.</p>
 </td>
 </tr>
+<tr id="row22451425161415"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p1245112501418"><a name="p1245112501418"></a><a name="p1245112501418"></a><span id="ph1065916354144"><a name="ph1065916354144"></a><a name="ph1065916354144"></a>eniNetwork</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p72451025161414"><a name="p72451025161414"></a><a name="p72451025161414"></a><span id="ph781214821711"><a name="ph781214821711"></a><a name="ph781214821711"></a>String</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p127119222211"><a name="p127119222211"></a><a name="p127119222211"></a>Reserved. This parameter is not used in the current version.</p>
+</td>
+</tr>
 <tr id="row2751113913367"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p167519392363"><a name="p167519392363"></a><a name="p167519392363"></a>authentication</p>
 </td>
 <td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p87512392363"><a name="p87512392363"></a><a name="p87512392363"></a><a href="#table7220112133716">authentication</a> object</p>
@@ -714,33 +796,83 @@ POST /api/v3/projects/\{project\_id\}/clusters
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p175133914366"><a name="p175133914366"></a><a name="p175133914366"></a>Configurations of the cluster authentication mode.</p>
 </td>
 </tr>
-<tr id="row2989220112610"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p19901020112614"><a name="p19901020112614"></a><a name="p19901020112614"></a>billingMode</p>
+<tr id="row591414201496"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p725352519911"><a name="p725352519911"></a><a name="p725352519911"></a>billingMode</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p899082052611"><a name="p899082052611"></a><a name="p899082052611"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p32531825295"><a name="p32531825295"></a><a name="p32531825295"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p558875914438"><a name="p558875914438"></a><a name="p558875914438"></a>Billing mode of a node.</p>
-<div class="note" id="note1029811519260"><a name="note1029811519260"></a><a name="note1029811519260"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p132981518262"><a name="p132981518262"></a><a name="p132981518262"></a>This field is not supported for the current version.</p>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p3253162511916"><a name="p3253162511916"></a><a name="p3253162511916"></a>Billing mode of a node.</p>
+<div class="note" id="note20254925394"><a name="note20254925394"></a><a name="note20254925394"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p17254112516910"><a name="p17254112516910"></a><a name="p17254112516910"></a>This field is not supported for the current version.</p>
 </div></div>
 </td>
 </tr>
 <tr id="row87645397351"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p3764239143515"><a name="p3764239143515"></a><a name="p3764239143515"></a>extendParam</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p6420182613211"><a name="p6420182613211"></a><a name="p6420182613211"></a><a href="#table17575013586">extendParam</a> object</p>
+<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p127641039153517"><a name="p127641039153517"></a><a name="p127641039153517"></a><a href="#table0102129153810">extendParam</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p378014396351"><a name="p378014396351"></a><a name="p378014396351"></a>Extended fields in the format of key-value pairs.</p>
 </td>
 </tr>
-<tr id="row6457743102719"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p6457943142713"><a name="p6457943142713"></a><a name="p6457943142713"></a>kubernetesSvcIpRange</p>
+<tr id="row41742581998"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p12478124151010"><a name="p12478124151010"></a><a name="p12478124151010"></a>kubernetesSvcIpRange</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p345764313275"><a name="p345764313275"></a><a name="p345764313275"></a>String</p>
+<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p6175155812919"><a name="p6175155812919"></a><a name="p6175155812919"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p54571043152710"><a name="p54571043152710"></a><a name="p54571043152710"></a>Service CIDR block or the IP address range which the <strong id="b16261832152814"><a name="b16261832152814"></a><a name="b16261832152814"></a>kubernetes clusterIp</strong> must fall within. This parameter is available only for clusters of v1.11.7 and later.</p>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p1828218189101"><a name="p1828218189101"></a><a name="p1828218189101"></a>Service CIDR block or the IP address range which the kubernetes clusterIp must fall within. This parameter is available only for clusters of v1.11.7 and later.</p>
+</td>
+</tr>
+<tr id="row359216881519"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p13592387156"><a name="p13592387156"></a><a name="p13592387156"></a><span id="ph2026714158150"><a name="ph2026714158150"></a><a name="ph2026714158150"></a>kubeProxyMode</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p65920851519"><a name="p65920851519"></a><a name="p65920851519"></a><span id="ph1321172621616"><a name="ph1321172621616"></a><a name="ph1321172621616"></a>String</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p1912138191611"><a name="p1912138191611"></a><a name="p1912138191611"></a>Service forwarding mode. Two modes are available:</p>
+<a name="ul1912738101620"></a><a name="ul1912738101620"></a><ul id="ul1912738101620"><li><strong id="b141263810163"><a name="b141263810163"></a><a name="b141263810163"></a>iptables</strong>: Traditional kube-proxy uses iptables rules to implement service load balancing. In this mode, too many iptables rules will be generated when many services are deployed. In addition, non-incremental updates will cause a latency and even obvious performance issues in the case of heavy service traffic.</li><li><strong id="b312173821614"><a name="b312173821614"></a><a name="b312173821614"></a>ipvs</strong>: Optimized kube-proxy mode with higher throughput and faster speed. This mode supports incremental updates and can keep connections uninterrupted during service updates. It is suitable for large-sized clusters.</li></ul>
 </td>
 </tr>
 </tbody>
 </table>
 
-**Table  13**  Data structure of the  **authentication**  field
+**Table  14**  Data structure of the  **hostNetwork**  field
+
+<a name="table662821045911"></a>
+<table><thead align="left"><tr id="row66291710205919"><th class="cellrowborder" valign="top" width="22.99%" id="mcps1.2.4.1.1"><p id="p36296101596"><a name="p36296101596"></a><a name="p36296101596"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="21.84%" id="mcps1.2.4.1.2"><p id="p1162951019598"><a name="p1162951019598"></a><a name="p1162951019598"></a>Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="55.169999999999995%" id="mcps1.2.4.1.3"><p id="p3629110175918"><a name="p3629110175918"></a><a name="p3629110175918"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row136291210195917"><td class="cellrowborder" valign="top" width="22.99%" headers="mcps1.2.4.1.1 "><p id="p2062921035918"><a name="p2062921035918"></a><a name="p2062921035918"></a>vpc</p>
+</td>
+<td class="cellrowborder" valign="top" width="21.84%" headers="mcps1.2.4.1.2 "><p id="p6629310115911"><a name="p6629310115911"></a><a name="p6629310115911"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="55.169999999999995%" headers="mcps1.2.4.1.3 "><p id="p26291410175913"><a name="p26291410175913"></a><a name="p26291410175913"></a>ID of the VPC used to create a master node. The VPC ID is obtained from <a href="creating-a-vpc-and-subnet.md">Creating a VPC and Subnet</a>.</p>
+</td>
+</tr>
+<tr id="row062910104591"><td class="cellrowborder" valign="top" width="22.99%" headers="mcps1.2.4.1.1 "><p id="p1463011075911"><a name="p1463011075911"></a><a name="p1463011075911"></a>subnet</p>
+</td>
+<td class="cellrowborder" valign="top" width="21.84%" headers="mcps1.2.4.1.2 "><p id="p163001075914"><a name="p163001075914"></a><a name="p163001075914"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="55.169999999999995%" headers="mcps1.2.4.1.3 "><p id="p163019106595"><a name="p163019106595"></a><a name="p163019106595"></a>Network ID of the subnet. The value is obtained from <a href="creating-a-vpc-and-subnet.md">Creating a VPC and Subnet</a>.</p>
+</td>
+</tr>
+<tr id="row163101010598"><td class="cellrowborder" valign="top" width="22.99%" headers="mcps1.2.4.1.1 "><p id="p186312101594"><a name="p186312101594"></a><a name="p186312101594"></a>highwaySubnet</p>
+</td>
+<td class="cellrowborder" valign="top" width="21.84%" headers="mcps1.2.4.1.2 "><p id="p16312010185916"><a name="p16312010185916"></a><a name="p16312010185916"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="55.169999999999995%" headers="mcps1.2.4.1.3 "><p id="p10631161017597"><a name="p10631161017597"></a><a name="p10631161017597"></a>ID of the high-speed network that is used to create a BMS node. The value is obtained from <a href="(optional)-creating-a-high-speed-network.md">(Optional) Creating a High-Speed Network</a>. This parameter is required for creating a BMS cluster.</p>
+</td>
+</tr>
+<tr id="row6852515165918"><td class="cellrowborder" valign="top" width="22.99%" headers="mcps1.2.4.1.1 "><p id="p13853161510596"><a name="p13853161510596"></a><a name="p13853161510596"></a>SecurityGroup</p>
+</td>
+<td class="cellrowborder" valign="top" width="21.84%" headers="mcps1.2.4.1.2 "><p id="p148539152594"><a name="p148539152594"></a><a name="p148539152594"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="55.169999999999995%" headers="mcps1.2.4.1.3 "><p id="p364513385321"><a name="p364513385321"></a><a name="p364513385321"></a>ID of the default security group created for the node during cluster creation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  15**  Data structure of the  **authentication**  field
 
 <a name="table7220112133716"></a>
 <table><thead align="left"><tr id="row7252191263710"><th class="cellrowborder" valign="top" width="25.252525252525253%" id="mcps1.2.4.1.1"><p id="p162521412143717"><a name="p162521412143717"></a><a name="p162521412143717"></a>Parameter</p>
@@ -769,7 +901,7 @@ POST /api/v3/projects/\{project\_id\}/clusters
 </tbody>
 </table>
 
-**Table  14**  Data structure of the  **authenticatingProxy**  field
+**Table  16**  Data structure of the  **authenticatingProxy**  field
 
 <a name="table15520124212381"></a>
 <table><thead align="left"><tr id="row8552742173812"><th class="cellrowborder" valign="top" width="25.252525252525253%" id="mcps1.2.4.1.1"><p id="p35521942103816"><a name="p35521942103816"></a><a name="p35521942103816"></a>Parameter</p>
@@ -790,7 +922,44 @@ POST /api/v3/projects/\{project\_id\}/clusters
 </tbody>
 </table>
 
-**Table  15**  Data structure of the  **status**  field
+**Table  17**  Data structure of the extendParam field
+
+<a name="table0102129153810"></a>
+<table><thead align="left"><tr id="row81032096382"><th class="cellrowborder" valign="top" width="19.59%" id="mcps1.2.4.1.1"><p id="p410369123818"><a name="p410369123818"></a><a name="p410369123818"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="21.740000000000002%" id="mcps1.2.4.1.2"><p id="p310317973810"><a name="p310317973810"></a><a name="p310317973810"></a>Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="58.67%" id="mcps1.2.4.1.3"><p id="p5104209103816"><a name="p5104209103816"></a><a name="p5104209103816"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row101045918387"><td class="cellrowborder" valign="top" width="19.59%" headers="mcps1.2.4.1.1 "><p id="p010419933820"><a name="p010419933820"></a><a name="p010419933820"></a>clusterAZ</p>
+</td>
+<td class="cellrowborder" valign="top" width="21.740000000000002%" headers="mcps1.2.4.1.2 "><p id="p1010412916388"><a name="p1010412916388"></a><a name="p1010412916388"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="58.67%" headers="mcps1.2.4.1.3 "><p id="p110413993815"><a name="p110413993815"></a><a name="p110413993815"></a>If you want to enable multiple AZs for the cluster, enter {"clusterAZ": "multi_az"}.</p>
+<div class="note" id="note2010439103815"><a name="note2010439103815"></a><a name="note2010439103815"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p2104598383"><a name="p2104598383"></a><a name="p2104598383"></a>Only HA clusters support multiple AZs. To be specific, this field can be configured only when the <strong id="b410417943816"><a name="b410417943816"></a><a name="b410417943816"></a>flavor</strong> field in <a href="#table1034041612134">Table 5</a> is set to <strong id="b191049963818"><a name="b191049963818"></a><a name="b191049963818"></a>cce.s2.small</strong>, <strong id="b10105493386"><a name="b10105493386"></a><a name="b10105493386"></a>cce.s2.medium</strong>, <strong id="b151052923816"><a name="b151052923816"></a><a name="b151052923816"></a>cce.s2.large</strong>, <strong id="b110511916384"><a name="b110511916384"></a><a name="b110511916384"></a>cce.t2.small</strong>, <strong id="b4105399386"><a name="b4105399386"></a><a name="b4105399386"></a>cce.t2.medium</strong>, or <strong id="b10105129193813"><a name="b10105129193813"></a><a name="b10105129193813"></a>cce.t2.large</strong>. After multi-AZ deployment is enabled, the three master nodes of the cluster are distributed in different AZs. The cluster remains available even when one of the AZs is down.</p>
+</div></div>
+</td>
+</tr>
+<tr id="row161058923820"><td class="cellrowborder" valign="top" width="19.59%" headers="mcps1.2.4.1.1 "><p id="p810516914387"><a name="p810516914387"></a><a name="p810516914387"></a>dssMasterVolumes</p>
+</td>
+<td class="cellrowborder" valign="top" width="21.740000000000002%" headers="mcps1.2.4.1.2 "><p id="p101061191384"><a name="p101061191384"></a><a name="p101061191384"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="58.67%" headers="mcps1.2.4.1.3 "><p id="p6106294381"><a name="p6106294381"></a><a name="p6106294381"></a>Whether the system and data disks of a master node use dedicated distributed storage. If this parameter is omitted or left unspecified, EVS disks are used by default.</p>
+</td>
+</tr>
+<tr id="row2010619103816"><td class="cellrowborder" valign="top" width="19.59%" headers="mcps1.2.4.1.1 "><p id="p510639153818"><a name="p510639153818"></a><a name="p510639153818"></a><span id="ph7374114012810"><a name="ph7374114012810"></a><a name="ph7374114012810"></a>clusterExternalIP</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="21.740000000000002%" headers="mcps1.2.4.1.2 "><p id="p3106159153812"><a name="p3106159153812"></a><a name="p3106159153812"></a><span id="ph79173712543"><a name="ph79173712543"></a><a name="ph79173712543"></a>String</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="58.67%" headers="mcps1.2.4.1.3 "><p id="p139831857192418"><a name="p139831857192418"></a><a name="p139831857192418"></a>EIP used to access the cluster.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  18**  Data structure of the  **status**  field
 
 <a name="table6749834132215"></a>
 <table><thead align="left"><tr id="row14749534122218"><th class="cellrowborder" valign="top" width="25.252525252525253%" id="mcps1.2.4.1.1"><p id="p37490340223"><a name="p37490340223"></a><a name="p37490340223"></a>Parameter</p>
@@ -816,107 +985,64 @@ POST /api/v3/projects/\{project\_id\}/clusters
 <td class="cellrowborder" valign="top" width="54.545454545454554%" headers="mcps1.2.4.1.3 "><p id="p1774918349229"><a name="p1774918349229"></a><a name="p1774918349229"></a>ID of the cluster creation job. You can <a href="reading-job-progress.md">query job progress</a> by job ID to keep updated on cluster creation progress.</p>
 </td>
 </tr>
-<tr id="row15207101017299"><td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.4.1.1 "><p id="p9208410132916"><a name="p9208410132916"></a><a name="p9208410132916"></a>endpoints</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.4.1.2 "><p id="p12081710122914"><a name="p12081710122914"></a><a name="p12081710122914"></a><a href="#t3d666891caf940a39046a0807b3c480a">endpoint</a> object</p>
-</td>
-<td class="cellrowborder" valign="top" width="54.545454545454554%" headers="mcps1.2.4.1.3 "><p id="p92089103291"><a name="p92089103291"></a><a name="p92089103291"></a>Access address of the kube-apiserver in the cluster.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-**Table  16**  Data structure of the endpoint field
-
-<a name="t3d666891caf940a39046a0807b3c480a"></a>
-<table><thead align="left"><tr id="r21652f7a92354ddc97bb1eced149ff3a"><th class="cellrowborder" valign="top" width="20.792079207920793%" id="mcps1.2.4.1.1"><p id="a58d65dc53b9d4f2da3791b1612bedd1f"><a name="a58d65dc53b9d4f2da3791b1612bedd1f"></a><a name="a58d65dc53b9d4f2da3791b1612bedd1f"></a>Parameter</p>
-</th>
-<th class="cellrowborder" valign="top" width="26.732673267326735%" id="mcps1.2.4.1.2"><p id="aa02b4a8b12ab4109b4442ae3ffa03ee4"><a name="aa02b4a8b12ab4109b4442ae3ffa03ee4"></a><a name="aa02b4a8b12ab4109b4442ae3ffa03ee4"></a>Type</p>
-</th>
-<th class="cellrowborder" valign="top" width="52.475247524752476%" id="mcps1.2.4.1.3"><p id="acc10a55b9e224f2d8fe58f509a24b767"><a name="acc10a55b9e224f2d8fe58f509a24b767"></a><a name="acc10a55b9e224f2d8fe58f509a24b767"></a>Description</p>
-</th>
-</tr>
-</thead>
-<tbody><tr id="r03ad43ab59d1482795974193959e47a1"><td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.1 "><p id="af592733d401946dab4f8b1fe44a7d061"><a name="af592733d401946dab4f8b1fe44a7d061"></a><a name="af592733d401946dab4f8b1fe44a7d061"></a>internal</p>
-</td>
-<td class="cellrowborder" valign="top" width="26.732673267326735%" headers="mcps1.2.4.1.2 "><p id="a98c38a11ab774e22a973311375577841"><a name="a98c38a11ab774e22a973311375577841"></a><a name="a98c38a11ab774e22a973311375577841"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="52.475247524752476%" headers="mcps1.2.4.1.3 "><p id="a57119fe622d9407c9d52289cbd9e1195"><a name="a57119fe622d9407c9d52289cbd9e1195"></a><a name="a57119fe622d9407c9d52289cbd9e1195"></a>Internal network address.</p>
-</td>
-</tr>
-<tr id="r0c8fedfca25f4644899868c111dcc671"><td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.1 "><p id="ad046c7cf6d88431ba221243410dcdcb0"><a name="ad046c7cf6d88431ba221243410dcdcb0"></a><a name="ad046c7cf6d88431ba221243410dcdcb0"></a>external</p>
-</td>
-<td class="cellrowborder" valign="top" width="26.732673267326735%" headers="mcps1.2.4.1.2 "><p id="ac40b6385fc6d45ad8fbc3fee9858d294"><a name="ac40b6385fc6d45ad8fbc3fee9858d294"></a><a name="ac40b6385fc6d45ad8fbc3fee9858d294"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="52.475247524752476%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0102499095_p124413401524"><a name="en-us_topic_0102499095_p124413401524"></a><a name="en-us_topic_0102499095_p124413401524"></a>External network address.</p>
-</td>
-</tr>
-<tr id="r5b63e14d6af14ec3b11d0d751ddac684"><td class="cellrowborder" valign="top" width="20.792079207920793%" headers="mcps1.2.4.1.1 "><p id="aa60ee7a9d7fc49fcbc375f187b63a7e7"><a name="aa60ee7a9d7fc49fcbc375f187b63a7e7"></a><a name="aa60ee7a9d7fc49fcbc375f187b63a7e7"></a>external_otc</p>
-</td>
-<td class="cellrowborder" valign="top" width="26.732673267326735%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0102499095_p195161834514"><a name="en-us_topic_0102499095_p195161834514"></a><a name="en-us_topic_0102499095_p195161834514"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="52.475247524752476%" headers="mcps1.2.4.1.3 "><p id="ab7e1743c65a945f2b7ac796e28ebecf9"><a name="ab7e1743c65a945f2b7ac796e28ebecf9"></a><a name="ab7e1743c65a945f2b7ac796e28ebecf9"></a>Endpoint of the cluster to be accessed through API Gateway.</p>
-</td>
-</tr>
 </tbody>
 </table>
 
 **Example response:**
 
 ```
-{
-  "kind": "Cluster",
-  "apiVersion": "v3",
-  "metadata": {
-    "name": "mycluster", 
-    "uid": "4d1ecb2c-229a-11e8-9c75-0255ac100ceb", 
-    "creationTimestamp": "2018-08-02 03:48:58.968214406 +0000 UTC",
-    "updateTimestamp": "2018-08-02 03:48:58.968214406 +0000 UTC",
-    "labels": {
-      "foo": "bar"
+    "kind": "Cluster",
+    "apiVersion": "v3",
+    "metadata": {
+        "name": "test-create-cluster",
+        "uid": "d6a883a1-8529-11ea-8e34-0255ac101108",
+        "creationTimestamp": "2020-04-23 06:15:32.974281119 +0000 UTC",
+        "updateTimestamp": "2020-04-23 06:15:32.974281688 +0000 UTC",
+        "labels": {
+            "foo": "bar"
+        },
+        "annotations": {
+            "foo2": "bar2"
+        }
     },
-    "annotations": {
-      "foo2": "bar2"
+    "spec": {
+        "type": "VirtualMachine",
+        "flavor": "cce.s2.small",
+        "version": "v1.15.6-r1",
+        "description": "this is a demo cluster",
+        "ipv6enable": false,
+        "hostNetwork": {
+            "vpc": "23d3725f-6ffe-400e-8fb6-b4f9a7b3e8c1",
+            "subnet": "c90b3ce5-e1f1-4c87-a006-644d78846438"
+        },
+        "containerNetwork": {
+            "mode": "overlay_l2",
+            "cidr": "172.16.0.0/16"
+        },
+        "eniNetwork": {},
+        "authentication": {
+            "mode": "rbac",
+            "authenticatingProxy": {}
+        },
+        "billingMode": 0,
+        "extendParam": {
+            "clusterAZ": "multi_az"
+        },
+        "kubernetesSvcIpRange": "10.247.0.0/16",
+        "kubeProxyMode": "iptables"
+    },
+    "status": {
+        "phase": "Creating",
+        "jobID": "d6bcbb0b-8529-11ea-8e34-0255ac101108"
     }
-  },
-  "spec": {
-    "type": "VirtualMachine",
-    "flavor": "cce.s1.small",
-    "version": "v1.13.10-r0",
-    "description": "this is a demo cluster", 
-    "az": "eu-de-01",
-    "hostNetwork": {
-      "vpc": "4d1ecb2c-229a-11e8-9c75-0255ac100ceb", 
-      "subnet": "4d1ecb2c-229a-11e8-9c75-0255ac100ceb"
-    },
-    "containerNetwork": {
-      "mode": "overlay_l2",
-      "cidr": "172.16.0.0/16"
-    },
-    "authentication": {
-      "mode": "rbac",
-      "authenticatingProxy": {}
-    },
-    "kubernetesSvcIpRange": "10.247.0.0/16",
-    "kubeProxyMode": "iptables", 
-    "extendParam": {
-      "clusterAZ": "multi_az",
-      "foo": "bar"
-    }
-  },
-  "status": {
-    "phase": "Creating",
-    "jobID": "4d1ecb2c-229a-11e8-9c75-0255ac100ceb",
-    "endpoints": {}
-  }
 }
 ```
 
 ## Status Code<a name="s50f1049a6a4d404c895cf636eb8f3bf1"></a>
 
-[Table 17](#en-us_topic_0079614900_table46761928)  describes the status code of this API.
+[Table 19](#en-us_topic_0079614900_table46761928)  describes the status code of this API.
 
-**Table  17**  Status code
+**Table  19**  Status code
 
 <a name="en-us_topic_0079614900_table46761928"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614900_row33254664"><th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.1"><p id="p55616028205955"><a name="p55616028205955"></a><a name="p55616028205955"></a>Status Code</p>

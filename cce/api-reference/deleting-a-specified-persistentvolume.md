@@ -83,55 +83,119 @@ For the description about response parameters, see  [Table 2](deleting-a-secret.
 
 **Example response:**
 
-```
-{
-    "kind": "PersistentVolume",
-    "apiVersion": "v1",
-    "metadata": {
-        "name": "pv-test-02",
-        "generateName": "pv-demo",
-        "namespace": "default",
-        "selfLink": "/api/v1/namespaces/default/persistentvolumes/pv-test-02",
-        "uid": "98efd6aa-920a-11e8-81cc-fa163e49263c",
-        "resourceVersion": "5674455",
-        "creationTimestamp": "2018-07-28T02:04:44Z",
-        "labels": {
-            "failure-domain.beta.kubernetes.io/region": "eu-de",
-            "failure-domain.beta.kubernetes.io/zone": "eu-de-01",
-            "name": "pv-test-03"
+-   Example for clusters of v1.15:
+
+    ```
+    {
+        "apiVersion": "v1",
+        "kind": "PersistentVolume",
+        "metadata": {
+            "annotations": {
+                "pv.kubernetes.io/namespace": "default",
+                "pv.kubernetes.io/provisioned-by": "everest-csi-provisioner"
+            },
+            "creationTimestamp": "2020-01-08T02:00:31Z",
+            "deletionGracePeriodSeconds": 0,
+            "deletionTimestamp": "2020-01-13T02:04:12Z",
+            "finalizers": [
+                "everest-csi-attacher/disk-csi-everest-io"
+            ],
+            "labels": {
+                "failure-domain.beta.kubernetes.io/region": "eu-de",
+                "failure-domain.beta.kubernetes.io/zone": "eu-de-01"
+            },
+            "name": "pvc-efe92ec5-fb39-4e17-bb26-c5d336ce5c14",
+            "resourceVersion": "5025500",
+            "selfLink": "/api/v1/persistentvolumes/pvc-efe92ec5-fb39-4e17-bb26-c5d336ce5c14",
+            "uid": "b14a40bc-8be7-4b26-90e5-975261d470a2"
         },
-        "annotations": {
-            "pv.kubernetes.io/bound-by-controller": "yes",
-            "volume.beta.kubernetes.io/storage-class": "sata",
-            "volume.beta.kubernetes.io/storage-provisioner": "flexvolume-huawei.com/fuxivol"
+        "spec": {
+            "accessModes": [
+                "ReadWriteOnce"
+            ],
+            "capacity": {
+                "storage": "20Gi"
+            },
+            "claimRef": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "cce-evs-k54nobs9-ljhc",
+                "namespace": "default",
+                "resourceVersion": "3578282",
+                "uid": "efe92ec5-fb39-4e17-bb26-c5d336ce5c14"
+            },
+            "csi": {
+                "driver": "disk.csi.everest.io",
+                "fsType": "ext4",
+                "volumeAttributes": {
+                    "everest.io/disk-mode": "SCSI",
+                    "everest.io/disk-volume-type": "SATA",
+                    "storage.kubernetes.io/csiProvisionerIdentity": "everest-csi-provisioner"
+                },
+                "volumeHandle": "9c44d068-42ab-4fcf-bb8f-1609823da5bb"
+            },
+            "persistentVolumeReclaimPolicy": "Delete",
+            "storageClassName": "csi-disk",
+            "volumeMode": "Filesystem"
+        },
+        "status": {
+            "phase": "Released"
         }
-    },
-    "spec": {
-        "capacity": {
-            "storage": "11Gi"
-        },
-        "hostPath": {
-            "path": "/home",
-            "type": ""
-        },
-        "accessModes": [
-            "ReadWriteMany"
-        ],
-        "claimRef": {
-            "kind": "PersistentVolumeClaim",
-            "namespace": "default",
-            "name": "db-mysql",
-            "uid": "638e26ac-9148-11e8-8cd0-fa163e082286",
-            "apiVersion": "v1",
-            "resourceVersion": "5456583"
-        },
-        "persistentVolumeReclaimPolicy": "Delete"
-    },
-    "status": {
-        "phase": "Bound"
     }
-}
-```
+    ```
+
+-   Example for clusters of v1.13 or earlier:
+
+    ```
+    {
+        "kind": "PersistentVolume",
+        "apiVersion": "v1",
+        "metadata": {
+            "name": "pv-test-02",
+            "generateName": "pv-demo",
+            "namespace": "default",
+            "selfLink": "/api/v1/namespaces/default/persistentvolumes/pv-test-02",
+            "uid": "98efd6aa-920a-11e8-81cc-fa163e49263c",
+            "resourceVersion": "5674455",
+            "creationTimestamp": "2018-07-28T02:04:44Z",
+            "labels": {
+                "failure-domain.beta.kubernetes.io/region": "eu-de",
+                "failure-domain.beta.kubernetes.io/zone": "eu-de-01",
+                "name": "pv-test-03"
+            },
+            "annotations": {
+                "pv.kubernetes.io/bound-by-controller": "yes",
+                "volume.beta.kubernetes.io/storage-class": "sata",
+                "volume.beta.kubernetes.io/storage-provisioner": "flexvolume-huawei.com/fuxivol"
+            }
+        },
+        "spec": {
+            "capacity": {
+                "storage": "11Gi"
+            },
+            "hostPath": {
+                "path": "/home",
+                "type": ""
+            },
+            "accessModes": [
+                "ReadWriteMany"
+            ],
+            "claimRef": {
+                "kind": "PersistentVolumeClaim",
+                "namespace": "default",
+                "name": "db-mysql",
+                "uid": "638e26ac-9148-11e8-8cd0-fa163e082286",
+                "apiVersion": "v1",
+                "resourceVersion": "5456583"
+            },
+            "persistentVolumeReclaimPolicy": "Delete"
+        },
+        "status": {
+            "phase": "Bound"
+        }
+    }
+    ```
+
 
 ## Status Code<a name="sd1ea4eba5a624e07ba90fcd23319bd4e"></a>
 

@@ -217,10 +217,10 @@ spec:
       containers:
       - image: nginx 
         command:
-          - sleep 3600                        #Startup command
+        - sleep 3600                        #Startup command
         imagePullPolicy: Always
         lifecycle:
-            postStart:
+          postStart:
             exec:
               command:
               - /bin/bash
@@ -228,8 +228,8 @@ spec:
           preStop:
             exec:
               command:
-                - /bin/bash
-                - uninstall.sh                 # Pre-stop command
+              - /bin/bash
+              - uninstall.sh                 #Pre-stop command
         name: nginx
       imagePullSecrets:
       - name: default-secret

@@ -4,7 +4,7 @@ Upload a chart to  **Charts**  \>  **Uploaded Charts**  for subsequent workload 
 
 ## Procedure<a name="sc9d50e685619493ab88cda81ab8cb87d"></a>
 
-1.  Log in to the CCE console. In the navigation pane, choose  **Charts**  \>  **Uploaded Charts**. On the  **Uploaded Charts**  tab page, click  **Upload Chart**.
+1.  Log in to the CCE console. In the navigation pane, choose  **Charts**. On the  **Uploaded Charts**  tab page, click  **Upload Chart**.
 2.  Click  ![](figures/icon-select.png), select the chart to be uploaded, and click  **Upload**.
 
 ## Follow-up Procedure<a name="s8d328765721f42c8871de65dd6622b24"></a>
@@ -22,7 +22,7 @@ After a chart is created, you can perform operations listed in  [Table 1](#t84ae
 </thead>
 <tbody><tr id="rb2b3046a94794a319604f737388bf9eb"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="af61aeea5c6bc4bbdbf961299ca2b8aa8"><a name="af61aeea5c6bc4bbdbf961299ca2b8aa8"></a><a name="af61aeea5c6bc4bbdbf961299ca2b8aa8"></a><span class="keyword" id="keyword200261973911411"><a name="keyword200261973911411"></a><a name="keyword200261973911411"></a>Installing a chart</span></p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0093301014_p878302316119"><a name="en-us_topic_0093301014_p878302316119"></a><a name="en-us_topic_0093301014_p878302316119"></a>Click <strong id="b842352706115421"><a name="b842352706115421"></a><a name="b842352706115421"></a>Install</strong> to install the chart for creating workloads. For details, see <a href="creating-a-workload-from-a-chart.md">Creating a Workload from a Chart</a>.</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0093301014_p878302316119"><a name="en-us_topic_0093301014_p878302316119"></a><a name="en-us_topic_0093301014_p878302316119"></a>Click <strong id="b842352706115421"><a name="b842352706115421"></a><a name="b842352706115421"></a>Install Chart </strong>to install the chart for creating workloads. For details, see <a href="creating-a-workload-from-a-chart.md">Creating a Workload from a Chart</a>.</p>
 </td>
 </tr>
 <tr id="reda028ddd5b54babbbbc3902f75a740c"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="acc457286985e458c8a0914b64c9d041c"><a name="acc457286985e458c8a0914b64c9d041c"></a><a name="acc457286985e458c8a0914b64c9d041c"></a><span class="keyword" id="keyword2111232330114134"><a name="keyword2111232330114134"></a><a name="keyword2111232330114134"></a>Updating a chart</span></p>

@@ -128,7 +128,7 @@ For the description about response parameters, see  [Table 2](deleting-a-secret.
     "deletionTimestamp": "2018-03-07T12:15:11Z",
     "deletionGracePeriodSeconds": 0,
     "annotations": {
-      "container.io/container-0": "172.16.5.235:20202/test/nginx.png",
+      "container.io/container-0": "https://***/swr/dockerimage/nginx.png",
       "description": ""
     },
     "finalizers": [

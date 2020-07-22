@@ -312,7 +312,7 @@ For the description about response parameters, see  [Table 2](#table8040885).
     "kind": "CronJob",
     "metadata": {
         "annotations": {
-            "container.io/container-0": "172.16.5.235:20202/test/nginx.png",
+            "container.io/container-0": "https://***/swr/dockerimage/nginx.png",
             "description": ""
         },
         "creationTimestamp": "2018-03-07T12:08:52Z",

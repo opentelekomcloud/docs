@@ -1,4 +1,4 @@
-# Modifying an Image Repository<a name="cce_01_0213"></a>
+# Modifying an Image Repository<a name="cce_01_0321"></a>
 
 ## Procedure<a name="section39781550181218"></a>
 

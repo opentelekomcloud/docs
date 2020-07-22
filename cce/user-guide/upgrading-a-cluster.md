@@ -2,9 +2,10 @@
 
 Kubernetes versions are expressed as x.y.z, where x is the major version, y is the minor version \(for example, v1.13\), and z is the patch version. Minor releases occur approximately every 3 months to provide new features, design updates, and bug fixes, and each minor release branch is maintained for approximately 9 months. You can use the CCE console to upgrade your cluster to the latest Kubernetes version or a bug fix.
 
-## Precautions<a name="section193655817282"></a>
+## Precautions<a name="section4557144475115"></a>
 
 -   There is a certain possibility that cluster upgrade may fail. To avoid data loss, back up data before the upgrade.
+-   The upgrade from v1.13 or earlier to v1.15 is not supported.
 -   During the upgrade from Kubernetes 1.9 to 1.11, the kube-dns of the cluster will be uninstalled and replaced with CoreDNS, which may cause loss of the cascading DNS configuration in the kube-dns or temporary interruption of the DNS service. Back up the DNS address configured in the kube-dns so you can configure the domain name in the CoreDNS again when domain name resolution is abnormal.
 -   During a cluster upgrade, you can upgrade a user node only by resetting the node. This upgrade mode is simple and rarely fails, and also supports OS upgrade. However, services will be interrupted during the upgrade. In addition, the node OS will be reinstalled, and data in the system disk and data disk will be cleared.
 -   User nodes can be upgraded in batches to minimize service interruption.
@@ -73,7 +74,7 @@ Before upgrading a cluster, follow the pre-upgrade checklist to identify risks a
 <td class="cellrowborder" valign="top" width="78.29%" headers="mcps1.2.3.1.2 "><p id="p1424041263216"><a name="p1424041263216"></a><a name="p1424041263216"></a>Record the quantity and status of workloads for comparison after the upgrade.</p>
 </td>
 </tr>
-<tr id="row1296933813911"><td class="cellrowborder" valign="top" headers="mcps1.2.3.1.1 "><p id="p59693385919"><a name="p59693385919"></a><a name="p59693385919"></a>Evaluate the possible changes that the upgrade may bring to whitelists, routing, and security group policies of databases (such as Redis and Mongdb).</p>
+<tr id="row1296933813911"><td class="cellrowborder" valign="top" headers="mcps1.2.3.1.1 "><p id="p59693385919"><a name="p59693385919"></a><a name="p59693385919"></a>Evaluate the possible changes that the upgrade may bring to whitelists, routing, and security group policies of databases (such as Redis and MongoDB).</p>
 </td>
 </tr>
 <tr id="row15579521103820"><td class="cellrowborder" valign="top" width="21.709999999999997%" headers="mcps1.2.3.1.1 "><p id="p12579172163813"><a name="p12579172163813"></a><a name="p12579172163813"></a>Storage</p>
@@ -137,13 +138,9 @@ This section describes how to upgrade a VM cluster from v1.9.10-r2 to v1.11.7-r2
     ![](figures/basic-information-about-cluster-upgrade.png "basic-information-about-cluster-upgrade")
 
 7.  On the  **Upgrade Add-on**  page, click  **Upgrade**  in the lower right corner.
-
-    **Figure  5**  Upgrading cluster add-ons<a name="fig107810284215"></a>  
-    ![](figures/upgrading-cluster-add-ons.png "upgrading-cluster-add-ons")
-
 8.  In the displayed  **Upgrade**  dialog box, confirm the information and click  **OK**. The upgrade cannot be rolled back.
 
-    **Figure  6**  Confirming cluster upgrade<a name="fig1221222915614"></a>  
+    **Figure  5**  Confirming cluster upgrade<a name="fig1221222915614"></a>  
     ![](figures/confirming-cluster-upgrade.png "confirming-cluster-upgrade")
 
 9.  You can  **Back to Cluster List**  or  **Go to Cluster Details Page**  to view the cluster upgrade status.

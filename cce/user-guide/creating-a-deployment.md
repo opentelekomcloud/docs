@@ -4,7 +4,7 @@ Deployments are workloads \(for example, Nginx\) that do not store any data or s
 
 ## Prerequisites<a name="section7271245481"></a>
 
--   Before creating a containerized workload, you must have an available cluster. For details on how to create a cluster, see  [Creating a VM Cluster](creating-a-vm-cluster.md).
+-   Before creating a containerized workload, you must have an available cluster. For details on how to create a cluster, see  [Creating a Hybrid Cluster](creating-a-hybrid-cluster.md).
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >When creating multiple containerized workloads, ensure that each container has a unique port. Otherwise, workload creation will fail.  
@@ -17,7 +17,7 @@ Deployments are workloads \(for example, Nginx\) that do not store any data or s
     -   Use a third-party image to create a workload, without the need to upload an image.
     -   Perform required operations on the  **My Images**  page on the CCE console to create a workload, you need to upload the image to the Software Repository for Container \(SWR\). For details about how to upload an image, see  [Image Repository](image-repository.md).
     -   Use a shared image to create a workload. Specifically, other tenants share an image with you by using the SWR service.
-    -   Use a YAML file to create a workload. You can click  **Create YAML**  on the right of the  **Create Deployment**  page. For details about YAML, see  [Table 3](#table132326831016). After the YAML file is written, click  **Create**  to create a workload.
+    -   Use a YAML file to create a workload. You can click  **Create YAML**  on the right of the  **Create Deployment**  page. For details about YAML, see  [Using kubectl](#section155246177178). After the YAML file is written, click  **Create**  to create a workload.
 
         >![](public_sys-resources/icon-note.gif) **NOTE:**   
         >Settings in the YAML file are synchronized with settings on the console. You can also interact with the YAML to create a workload. For example, if you enter a workload name on the console, the name will automatically appear in the YAML file. Similarly, if you add an image on the console, the image will be automatically added to the YAML file.  
@@ -70,7 +70,7 @@ Deployments are workloads \(for example, Nginx\) that do not store any data or s
     </tbody>
     </table>
 
-3.  Click  **Next**  to add a container.
+3.  Click  **Next: Add Container**  to add a container.
     1.  Click  **Add Container**  and select the image to be deployed.
         -   **My Images**: Create a workload using an image in the image repository you created.
         -   **Third-Party Images**: Create a workload using an image from any third-party image repository \(image repositories other than SWR\). When you create a workload using a third-party image, ensure that the node where the workload is running can access public networks. For details on how to create a workload using a third-party image, see  [Using a Third-Party Image](using-a-third-party-image.md).
@@ -105,10 +105,10 @@ Deployments are workloads \(for example, Nginx\) that do not store any data or s
         <td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p528314415486"><a name="p528314415486"></a><a name="p528314415486"></a>Name of the container. You can modify it.</p>
         </td>
         </tr>
-        <tr id="row1449911299503"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p53374336504"><a name="p53374336504"></a><a name="p53374336504"></a>Privileged Pod</p>
+        <tr id="row1449911299503"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p53374336504"><a name="p53374336504"></a><a name="p53374336504"></a>Privileged Container</p>
         </td>
         <td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p49887211526"><a name="p49887211526"></a><a name="p49887211526"></a>Programs in a privileged container have certain privileges.</p>
-        <p id="p65001729105011"><a name="p65001729105011"></a><a name="p65001729105011"></a>If <strong id="b45015311555"><a name="b45015311555"></a><a name="b45015311555"></a>Privileged Pod</strong> is <strong id="b11849182725112"><a name="b11849182725112"></a><a name="b11849182725112"></a>On</strong>, the container is granted superuser permissions. For example, privileged containers can manipulate network devices on the host machine and modify kernel parameters.</p>
+        <p id="p65001729105011"><a name="p65001729105011"></a><a name="p65001729105011"></a>If <strong id="b13252222105114"><a name="b13252222105114"></a><a name="b13252222105114"></a>Privileged Container</strong> is <strong id="b11849182725112"><a name="b11849182725112"></a><a name="b11849182725112"></a>On</strong>, the container is granted superuser permissions. For example, privileged containers can manipulate network devices on the host machine and modify kernel parameters.</p>
         </td>
         </tr>
         <tr id="row152831345485"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p875325925918"><a name="p875325925918"></a><a name="p875325925918"></a>Container Resources</p>
@@ -127,16 +127,16 @@ Deployments are workloads \(for example, Nginx\) that do not store any data or s
 
     3.  Configure the container lifecycle: Set the commands for starting and running containers.
         -   **Startup Command**: executed when the workload is started. For details, see  [Setting Container Startup Commands](setting-container-startup-commands.md).
-        -   **Post-Start Processing**: executed after the workload runs successfully. For more information, see  [Setting Container Lifecycle Parameters](setting-container-lifecycle-parameters.md).
-        -   **Pre-Stop Processing**: executed to delete logs or temporary files before the workload ends. For more information, see  [Setting Container Lifecycle Parameters](setting-container-lifecycle-parameters.md).
+        -   **Post-Start**: executed after the workload runs successfully. For more information, see  [Setting Container Lifecycle Parameters](setting-container-lifecycle-parameters.md).
+        -   **Pre-Stop**: executed to delete logs or temporary files before the workload ends. For more information, see  [Setting Container Lifecycle Parameters](setting-container-lifecycle-parameters.md).
 
     4.  Configure the health check function to check whether containers and services are running properly. CCE provides two types of probes: liveness probes and readiness probes. For more information, see  [Setting Health Check for a Container](setting-health-check-for-a-container.md).
-        -   **Workload Liveness Probe**: restarts the unhealthy container.
-        -   **Workload Service Probe**: changes the container to the unready state when detecting that the container is unhealthy. In this way, service traffic will not be directed to the container.
+        -   **Liveness Probe**: restarts the unhealthy container.
+        -   **Readiness Probe**: changes the container to the unready state when detecting that the container is unhealthy. In this way, service traffic will not be directed to the container.
 
     5.  Configure environment variables. Environment variables can be added to a container. In general, environment variables are used to set parameters.
 
-        On the  **Environment Variables**  tab page, click  **Add Environment Variables**. Add an environment variable in one of the following ways:
+        On the  **Environment Variables**  tab page, click  **Add Environment Variable**. Add an environment variable in one of the following ways:
 
         -   **Added manually**: Set  **Variable Name**  and  **Variable Value/Reference**.
         -   **Added from Secret**: Set  **Variable Name**  and select the desired secret name and data. A secret must be created in advance. For details, see  [Creating a Secret](creating-a-secret.md).
@@ -150,24 +150,27 @@ Deployments are workloads \(for example, Nginx\) that do not store any data or s
     8.  Configure the log collection policies and log directory to collect container logs for unified management and analysis. For details, see  [Collecting Standard Output Logs of Containers](collecting-standard-output-logs-of-containers.md)  and  [Collecting Container Logs from Specified Paths](collecting-container-logs-from-specified-paths.md).
     9.  \(Optional\) A pod contains one or more closely related containers. If your workload is a multi-container workload, click  **Add Container**  to add more containers.
 
-4.  Click  **Next**. Then, click  **Add Service**  and set the workload access type.
+4.  Click  **Next: Set Application Access**. Then, click  **Add Service**  and set the workload access type.
 
     If your workload will be reachable to other workloads or public networks, add a service to define the workload access type.
 
     The workload access type determines the network attributes of the workload. Workloads with different access types can provide different network capabilities. For details, see  [Network Overview](network-overview.md).
 
-5.  Click  **Next**  and configure advanced settings.
+5.  Click  **Next: Configure Advanced Settings**  and configure advanced settings.
     -   **Upgrade Policy**
         -   **Rolling upgrade**: Gradually replaces an old pod with a new pod. During the upgrade, service traffic is evenly distributed to the old and new pods to ensure service continuity.
 
-            **Maximum Number of Unavailable Instances**: Maximum number of unavailable pods allowed in a rolling upgrade. If the number is equal to the total number of pods, services may be interrupted. Minimum number of alive pods = Total pods – Maximum number of unavailable pods
+            **Maximum Number of Unavailable Pods**: Maximum number of unavailable pods allowed in a rolling upgrade. If the number is equal to the total number of pods, services may be interrupted. Minimum number of alive pods = Total pods – Maximum number of unavailable pods
 
         -   **In-place upgrade**: Deletes an old pod and then creates a new one. Services are interrupted during the upgrade.
 
-    -   **Graceful Deletion**: On the  **Graceful Time Window \(s\)**  page, set a time window \(0–9999s\) for pre-stop commands to finish execution before a workload is deleted. The default value is 30s. The graceful scale-in policy provides a time window for workload deletion and is reserved for executing commands in the PreStop phase in the lifecycle. If workload processes are not terminated after the time window elapses, the workload will be forcibly deleted.
+    -   **Graceful Deletion**:
+        -   **Graceful Time Window \(s\)**: Set a time window \(0–9999s\) for pre-stop commands to finish execution before a workload is deleted. The default value is 30s.
+        -   **Scale Order**: Choose  **Prioritize new pods**  or  **Prioritize old pods**  based on service requirements.
+
     -   **Migration Policy**: Set the time window. When the node where workload's pods are located is unavailable for the specified amount of time, the pods will be rescheduled to other available nodes. By default, the time window is 300s.
     -   **Scheduling Policies**: You can combine static global scheduling policies or dynamic runtime scheduling policies as required. For more information, see  [Scheduling Policy Overview](scheduling-policy-overview.md).
-    -   **Advanced Pod Settings**  \>  **User-Defined Label**: Built-in app labels are specified during workload creation and cannot be modified. You can click  **Add Label**  to add labels.
+    -   **Advanced Pod Settings**  \>  **Pod Label**: Built-in app labels are specified during workload creation and cannot be modified. You can click  **Add Label**  to add labels.
     -   **Client DNS Configuration**: A CCE cluster has a built-in DNS add-on \(CoreDNS\) to provide domain name resolution for workloads in the cluster. For details, see  [Using Kubernetes In-Cluster DNS](using-kubernetes-in-cluster-dns.md).
         -   **DNS Policy**:
             -   **ClusterFirst**: The default DNS configuration overrides the  **Nameserver**  and  **DNS Search Domain**  configurations of the client.
@@ -331,7 +334,7 @@ The ECS where the kubectl client runs has been connected to your cluster. For de
     <tr id="row6939151316138"><td class="cellrowborder" valign="top" width="37%" headers="mcps1.2.4.1.1 "><p id="p793911361316"><a name="p793911361316"></a><a name="p793911361316"></a>spec:</p>
     <p id="p17330235102212"><a name="p17330235102212"></a><a name="p17330235102212"></a>containers</p>
     </td>
-    <td class="cellrowborder" valign="top" width="47%" headers="mcps1.2.4.1.2 "><a name="ul48282256265"></a><a name="ul48282256265"></a><ul id="ul48282256265"><li><strong id="b021334265015"><a name="b021334265015"></a><a name="b021334265015"></a>image</strong> (mandatory): Name of a container image.</li><li><strong id="b146411720125515"><a name="b146411720125515"></a><a name="b146411720125515"></a>imagePullPolicy</strong> (optional): Policy for obtaining an image. The options include <strong id="b47004369113256"><a name="b47004369113256"></a><a name="b47004369113256"></a>Always</strong> (attempting to download images each time), <strong id="b1385119962113256"><a name="b1385119962113256"></a><a name="b1385119962113256"></a>Never</strong> (only using local images), and <strong id="b1264351417113256"><a name="b1264351417113256"></a><a name="b1264351417113256"></a>IfNotPresent</strong> (using local images if they are available; downloading images if local images are unavailable). The default value is <strong id="b184934519113256"><a name="b184934519113256"></a><a name="b184934519113256"></a>Always</strong>.</li><li><strong id="b119681138185520"><a name="b119681138185520"></a><a name="b119681138185520"></a>name</strong> (mandatory): Container name.</li></ul>
+    <td class="cellrowborder" valign="top" width="47%" headers="mcps1.2.4.1.2 "><a name="ul48282256265"></a><a name="ul48282256265"></a><ul id="ul48282256265"><li><strong id="b021334265015"><a name="b021334265015"></a><a name="b021334265015"></a>image</strong> (mandatory): Name of a container image.</li><li><strong id="b132081541916"><a name="b132081541916"></a><a name="b132081541916"></a>imagePullPolicy</strong> (optional): Policy for obtaining an image. The options include <strong id="b47004369113256"><a name="b47004369113256"></a><a name="b47004369113256"></a>Always</strong> (attempting to download images each time), <strong id="b1385119962113256"><a name="b1385119962113256"></a><a name="b1385119962113256"></a>Never</strong> (only using local images), and <strong id="b1264351417113256"><a name="b1264351417113256"></a><a name="b1264351417113256"></a>IfNotPresent</strong> (using local images if they are available; downloading images if local images are unavailable). The default value is <strong id="b184934519113256"><a name="b184934519113256"></a><a name="b184934519113256"></a>Always</strong>.</li><li><strong id="b10210122381914"><a name="b10210122381914"></a><a name="b10210122381914"></a>name</strong> (mandatory): Container name.</li></ul>
     </td>
     <td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.4.1.3 "><p id="p1193991381318"><a name="p1193991381318"></a><a name="p1193991381318"></a>Mandatory</p>
     </td>

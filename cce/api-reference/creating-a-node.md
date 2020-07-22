@@ -15,24 +15,24 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 <a name="table2027961241820"></a>
 <table><thead align="left"><tr id="row122809120186"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p91421758131813"><a name="p91421758131813"></a><a name="p91421758131813"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="12.030000000000001%" id="mcps1.2.4.1.2"><p id="p101421758131816"><a name="p101421758131816"></a><a name="p101421758131816"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="16.32%" id="mcps1.2.4.1.2"><p id="p101421758131816"><a name="p101421758131816"></a><a name="p101421758131816"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="67.97%" id="mcps1.2.4.1.3"><p id="p19143115818187"><a name="p19143115818187"></a><a name="p19143115818187"></a>Description</p>
+<th class="cellrowborder" valign="top" width="63.68000000000001%" id="mcps1.2.4.1.3"><p id="p19143115818187"><a name="p19143115818187"></a><a name="p19143115818187"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="row32801312121810"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1714415589184"><a name="p1714415589184"></a><a name="p1714415589184"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="12.030000000000001%" headers="mcps1.2.4.1.2 "><p id="p814518580186"><a name="p814518580186"></a><a name="p814518580186"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="16.32%" headers="mcps1.2.4.1.2 "><p id="p814518580186"><a name="p814518580186"></a><a name="p814518580186"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="67.97%" headers="mcps1.2.4.1.3 "><p id="p5145175891811"><a name="p5145175891811"></a><a name="p5145175891811"></a>Project ID. For details about how to obtain the project ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
+<td class="cellrowborder" valign="top" width="63.68000000000001%" headers="mcps1.2.4.1.3 "><p id="p5145175891811"><a name="p5145175891811"></a><a name="p5145175891811"></a>Project ID. For details about how to obtain the project ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
 </td>
 </tr>
 <tr id="row1410610454440"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p4106245124416"><a name="p4106245124416"></a><a name="p4106245124416"></a>cluster_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="12.030000000000001%" headers="mcps1.2.4.1.2 "><p id="p11061345164415"><a name="p11061345164415"></a><a name="p11061345164415"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="16.32%" headers="mcps1.2.4.1.2 "><p id="p11061345164415"><a name="p11061345164415"></a><a name="p11061345164415"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="67.97%" headers="mcps1.2.4.1.3 "><p id="p15106445114416"><a name="p15106445114416"></a><a name="p15106445114416"></a>Cluster ID. For details about how to obtain the cluster ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
+<td class="cellrowborder" valign="top" width="63.68000000000001%" headers="mcps1.2.4.1.3 "><p id="p15106445114416"><a name="p15106445114416"></a><a name="p15106445114416"></a>Cluster ID. For details about how to obtain the cluster ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -78,48 +78,48 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 <a name="table34052983203655"></a>
 <table><thead align="left"><tr id="row30254333203655"><th class="cellrowborder" valign="top" width="20.202020202020204%" id="mcps1.2.5.1.1"><p id="p34681881203655"><a name="p34681881203655"></a><a name="p34681881203655"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="13.131313131313133%" id="mcps1.2.5.1.2"><p id="p333122111014"><a name="p333122111014"></a><a name="p333122111014"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="16.1010101010101%" id="mcps1.2.5.1.2"><p id="p333122111014"><a name="p333122111014"></a><a name="p333122111014"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="18.181818181818183%" id="mcps1.2.5.1.3"><p id="p57769002203655"><a name="p57769002203655"></a><a name="p57769002203655"></a>Type</p>
+<th class="cellrowborder" valign="top" width="18.21212121212121%" id="mcps1.2.5.1.3"><p id="p57769002203655"><a name="p57769002203655"></a><a name="p57769002203655"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="48.484848484848484%" id="mcps1.2.5.1.4"><p id="p58673482203655"><a name="p58673482203655"></a><a name="p58673482203655"></a>Description</p>
+<th class="cellrowborder" valign="top" width="45.484848484848484%" id="mcps1.2.5.1.4"><p id="p58673482203655"><a name="p58673482203655"></a><a name="p58673482203655"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="row54931625203655"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p44731858185518"><a name="p44731858185518"></a><a name="p44731858185518"></a>kind</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p20715132635516"><a name="p20715132635516"></a><a name="p20715132635516"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="16.1010101010101%" headers="mcps1.2.5.1.2 "><p id="p20715132635516"><a name="p20715132635516"></a><a name="p20715132635516"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.181818181818183%" headers="mcps1.2.5.1.3 "><p id="p57145269553"><a name="p57145269553"></a><a name="p57145269553"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.21212121212121%" headers="mcps1.2.5.1.3 "><p id="p57145269553"><a name="p57145269553"></a><a name="p57145269553"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p12712326175517"><a name="p12712326175517"></a><a name="p12712326175517"></a>API type. The value is fixed at <strong id="b74472311522"><a name="b74472311522"></a><a name="b74472311522"></a>Node</strong> and cannot be changed.</p>
+<td class="cellrowborder" valign="top" width="45.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p12712326175517"><a name="p12712326175517"></a><a name="p12712326175517"></a>API type. The value is fixed at <strong id="b74472311522"><a name="b74472311522"></a><a name="b74472311522"></a>Node</strong> and cannot be changed.</p>
 </td>
 </tr>
 <tr id="row15234185203655"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p144741580551"><a name="p144741580551"></a><a name="p144741580551"></a>apiVersion</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p2709192613559"><a name="p2709192613559"></a><a name="p2709192613559"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="16.1010101010101%" headers="mcps1.2.5.1.2 "><p id="p2709192613559"><a name="p2709192613559"></a><a name="p2709192613559"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.181818181818183%" headers="mcps1.2.5.1.3 "><p id="p6707526185513"><a name="p6707526185513"></a><a name="p6707526185513"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.21212121212121%" headers="mcps1.2.5.1.3 "><p id="p6707526185513"><a name="p6707526185513"></a><a name="p6707526185513"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p1770492695518"><a name="p1770492695518"></a><a name="p1770492695518"></a>API version. The value is fixed at <strong id="b560354017214"><a name="b560354017214"></a><a name="b560354017214"></a>v3</strong> and cannot be changed.</p>
+<td class="cellrowborder" valign="top" width="45.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p1770492695518"><a name="p1770492695518"></a><a name="p1770492695518"></a>API version. The value is fixed at <strong id="b560354017214"><a name="b560354017214"></a><a name="b560354017214"></a>v3</strong> and cannot be changed.</p>
 </td>
 </tr>
 <tr id="row1122635417553"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p144741558135518"><a name="p144741558135518"></a><a name="p144741558135518"></a>metadata</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p112261154155517"><a name="p112261154155517"></a><a name="p112261154155517"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="16.1010101010101%" headers="mcps1.2.5.1.2 "><p id="p112261154155517"><a name="p112261154155517"></a><a name="p112261154155517"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.181818181818183%" headers="mcps1.2.5.1.3 "><p id="p16227554165511"><a name="p16227554165511"></a><a name="p16227554165511"></a><a href="#table65041257514">metadata</a> object</p>
+<td class="cellrowborder" valign="top" width="18.21212121212121%" headers="mcps1.2.5.1.3 "><p id="p16227554165511"><a name="p16227554165511"></a><a name="p16227554165511"></a><a href="#table65041257514">metadata</a> object</p>
 </td>
-<td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p102271654195515"><a name="p102271654195515"></a><a name="p102271654195515"></a>Node's metadata, which is a collection of attributes.</p>
+<td class="cellrowborder" valign="top" width="45.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p102271654195515"><a name="p102271654195515"></a><a name="p102271654195515"></a>Node's metadata, which is a collection of attributes.</p>
 </td>
 </tr>
 <tr id="row9619511127"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p4785161212"><a name="p4785161212"></a><a name="p4785161212"></a>spec</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.131313131313133%" headers="mcps1.2.5.1.2 "><p id="p97205171219"><a name="p97205171219"></a><a name="p97205171219"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="16.1010101010101%" headers="mcps1.2.5.1.2 "><p id="p97205171219"><a name="p97205171219"></a><a name="p97205171219"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.181818181818183%" headers="mcps1.2.5.1.3 "><p id="p67105119126"><a name="p67105119126"></a><a name="p67105119126"></a><a href="#table3150105216225">spec</a> object</p>
+<td class="cellrowborder" valign="top" width="18.21212121212121%" headers="mcps1.2.5.1.3 "><p id="p67105119126"><a name="p67105119126"></a><a name="p67105119126"></a><a href="#table3150105216225">spec</a> object</p>
 </td>
-<td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p10785112129"><a name="p10785112129"></a><a name="p10785112129"></a>Detailed description of the node targeted by this API. CCE creates or updates objects by defining or updating its spec.</p>
+<td class="cellrowborder" valign="top" width="45.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p10785112129"><a name="p10785112129"></a><a name="p10785112129"></a>Detailed description of the node targeted by this API. CCE creates or updates objects by defining or updating its spec.</p>
 </td>
 </tr>
 </tbody>
@@ -130,32 +130,32 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 <a name="table65041257514"></a>
 <table><thead align="left"><tr id="row1250482515512"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="p11890655514"><a name="p11890655514"></a><a name="p11890655514"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="13%" id="mcps1.2.5.1.2"><p id="p289311553114"><a name="p289311553114"></a><a name="p289311553114"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="16.79%" id="mcps1.2.5.1.2"><p id="p289311553114"><a name="p289311553114"></a><a name="p289311553114"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="18%" id="mcps1.2.5.1.3"><p id="p128941055417"><a name="p128941055417"></a><a name="p128941055417"></a>Type</p>
+<th class="cellrowborder" valign="top" width="14.16%" id="mcps1.2.5.1.3"><p id="p128941055417"><a name="p128941055417"></a><a name="p128941055417"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="49%" id="mcps1.2.5.1.4"><p id="p1289615519119"><a name="p1289615519119"></a><a name="p1289615519119"></a>Description</p>
+<th class="cellrowborder" valign="top" width="49.05%" id="mcps1.2.5.1.4"><p id="p1289615519119"><a name="p1289615519119"></a><a name="p1289615519119"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="row155045251758"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p1289114562017"><a name="p1289114562017"></a><a name="p1289114562017"></a>name</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p716614322018"><a name="p716614322018"></a><a name="p716614322018"></a>No</p>
+<td class="cellrowborder" valign="top" width="16.79%" headers="mcps1.2.5.1.2 "><p id="p716614322018"><a name="p716614322018"></a><a name="p716614322018"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p9195144141410"><a name="p9195144141410"></a><a name="p9195144141410"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.16%" headers="mcps1.2.5.1.3 "><p id="p9195144141410"><a name="p9195144141410"></a><a name="p9195144141410"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p1630772215148"><a name="p1630772215148"></a><a name="p1630772215148"></a>Node name.</p>
+<td class="cellrowborder" valign="top" width="49.05%" headers="mcps1.2.5.1.4 "><p id="p1630772215148"><a name="p1630772215148"></a><a name="p1630772215148"></a>Node name.</p>
 <div class="note" id="note71095339418"><a name="note71095339418"></a><a name="note71095339418"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p9110173318412"><a name="p9110173318412"></a><a name="p9110173318412"></a>Enter 4 to 32 characters starting with a letter and not ending with a hyphen (-). Only lowercase letters, digits, and hyphens (-) are allowed.</p>
 </div></div>
 </td>
 </tr>
 <tr id="row1450412518519"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p689194513209"><a name="p689194513209"></a><a name="p689194513209"></a>labels</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p1886511394203"><a name="p1886511394203"></a><a name="p1886511394203"></a>No</p>
+<td class="cellrowborder" valign="top" width="16.79%" headers="mcps1.2.5.1.2 "><p id="p1886511394203"><a name="p1886511394203"></a><a name="p1886511394203"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p919624191418"><a name="p919624191418"></a><a name="p919624191418"></a>Object</p>
+<td class="cellrowborder" valign="top" width="14.16%" headers="mcps1.2.5.1.3 "><p id="p919624191418"><a name="p919624191418"></a><a name="p919624191418"></a>Object</p>
 </td>
-<td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p354112509451"><a name="p354112509451"></a><a name="p354112509451"></a>CCE node label (not the native Kubernetes label).</p>
+<td class="cellrowborder" valign="top" width="49.05%" headers="mcps1.2.5.1.4 "><p id="p354112509451"><a name="p354112509451"></a><a name="p354112509451"></a>CCE node label (not the native Kubernetes label).</p>
 <p id="p1671617184505"><a name="p1671617184505"></a><a name="p1671617184505"></a>Labels are used to select objects that meet certain criteria. A label is a key-value pair.</p>
 <p id="p93074221142"><a name="p93074221142"></a><a name="p93074221142"></a>Example:</p>
 <pre class="screen" id="screen38331124185416"><a name="screen38331124185416"></a><a name="screen38331124185416"></a>"labels": {
@@ -165,11 +165,11 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </tr>
 <tr id="row8504102517519"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p889194582016"><a name="p889194582016"></a><a name="p889194582016"></a>annotations</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p116764015202"><a name="p116764015202"></a><a name="p116764015202"></a>No</p>
+<td class="cellrowborder" valign="top" width="16.79%" headers="mcps1.2.5.1.2 "><p id="p116764015202"><a name="p116764015202"></a><a name="p116764015202"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p15196841191420"><a name="p15196841191420"></a><a name="p15196841191420"></a>Object</p>
+<td class="cellrowborder" valign="top" width="14.16%" headers="mcps1.2.5.1.3 "><p id="p15196841191420"><a name="p15196841191420"></a><a name="p15196841191420"></a>Object</p>
 </td>
-<td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p131221035104512"><a name="p131221035104512"></a><a name="p131221035104512"></a>CCE node annotation in key-value pair format (not the native Kubernetes annotations).</p>
+<td class="cellrowborder" valign="top" width="49.05%" headers="mcps1.2.5.1.4 "><p id="p131221035104512"><a name="p131221035104512"></a><a name="p131221035104512"></a>CCE node annotation in key-value pair format (not the native Kubernetes annotations).</p>
 <p id="p678583015406"><a name="p678583015406"></a><a name="p678583015406"></a>Example:</p>
 <pre class="screen" id="screen1163751913466"><a name="screen1163751913466"></a><a name="screen1163751913466"></a>"annotations": {
   "key1" : "value1",
@@ -187,9 +187,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 <a name="table3150105216225"></a>
 <table><thead align="left"><tr id="row6150125212219"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="p6731192632411"><a name="p6731192632411"></a><a name="p6731192632411"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="13%" id="mcps1.2.5.1.2"><p id="p1373132617245"><a name="p1373132617245"></a><a name="p1373132617245"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="15.939999999999998%" id="mcps1.2.5.1.2"><p id="p1373132617245"><a name="p1373132617245"></a><a name="p1373132617245"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="18%" id="mcps1.2.5.1.3"><p id="p27311226112410"><a name="p27311226112410"></a><a name="p27311226112410"></a>Type</p>
+<th class="cellrowborder" valign="top" width="15.06%" id="mcps1.2.5.1.3"><p id="p27311226112410"><a name="p27311226112410"></a><a name="p27311226112410"></a>Type</p>
 </th>
 <th class="cellrowborder" valign="top" width="49%" id="mcps1.2.5.1.4"><p id="p15746192612248"><a name="p15746192612248"></a><a name="p15746192612248"></a>Description</p>
 </th>
@@ -197,9 +197,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </thead>
 <tbody><tr id="row61507522224"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p333015583253"><a name="p333015583253"></a><a name="p333015583253"></a>flavor</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p18150115219222"><a name="p18150115219222"></a><a name="p18150115219222"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p18150115219222"><a name="p18150115219222"></a><a name="p18150115219222"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p131508522226"><a name="p131508522226"></a><a name="p131508522226"></a>String</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p131508522226"><a name="p131508522226"></a><a name="p131508522226"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p71501352102211"><a name="p71501352102211"></a><a name="p71501352102211"></a>Node specifications. For details, see the description of the <strong id="b0244615535"><a name="b0244615535"></a><a name="b0244615535"></a>flavorRef</strong> parameter in <a href="https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0020212668.html" target="_blank" rel="noopener noreferrer">Creating an ECS</a>.</p>
 <div class="note" id="note148961115125815"><a name="note148961115125815"></a><a name="note148961115125815"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p1389415451812"><a name="p1389415451812"></a><a name="p1389415451812"></a>When adding a BMS node, check whether the flavor of the node to be added supports local disks. If local disks are not supported, add at least one 100 GB EVS disk.</p>
@@ -208,73 +208,75 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </tr>
 <tr id="row12150165217223"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p181506529221"><a name="p181506529221"></a><a name="p181506529221"></a>az</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p197861438122719"><a name="p197861438122719"></a><a name="p197861438122719"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p197861438122719"><a name="p197861438122719"></a><a name="p197861438122719"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p111505520222"><a name="p111505520222"></a><a name="p111505520222"></a>String</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p111505520222"><a name="p111505520222"></a><a name="p111505520222"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p151501252102216"><a name="p151501252102216"></a><a name="p151501252102216"></a>AZ of the node. For details, see the description of the <strong id="b214031310212"><a name="b214031310212"></a><a name="b214031310212"></a>availability_zone</strong> parameter in <a href="https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0020212668.html" target="_blank" rel="noopener noreferrer">Creating an ECS</a>.</p>
 </td>
 </tr>
-<tr id="row1396733435612"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p096753412561"><a name="p096753412561"></a><a name="p096753412561"></a>os</p>
+<tr id="row781216715292"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p781310719298"><a name="p781310719298"></a><a name="p781310719298"></a>os</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p14968143425612"><a name="p14968143425612"></a><a name="p14968143425612"></a>No</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p68131710294"><a name="p68131710294"></a><a name="p68131710294"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p4968934125616"><a name="p4968934125616"></a><a name="p4968934125616"></a>String</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p1881317112910"><a name="p1881317112910"></a><a name="p1881317112910"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p1054912457413"><a name="p1054912457413"></a><a name="p1054912457413"></a>Node OS.</p>
-<a name="ul3549345241"></a><a name="ul3549345241"></a><ul id="ul3549345241"><li>Nodes in clusters of Kubernetes v1.11 or earlier support EulerOS 2.2.</li><li>Nodes in clusters of Kubernetes v1.13 or later support EulerOS 2.5.</li></ul>
+<td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p138133710293"><a name="p138133710293"></a><a name="p138133710293"></a>Node OS.</p>
+<a name="ul13335103252910"></a><a name="ul13335103252910"></a><ul id="ul13335103252910"><li>Nodes in clusters of Kubernetes v1.11 or earlier support EulerOS 2.2.</li><li>Nodes in clusters of Kubernetes v1.13 or later support EulerOS 2.5.</li></ul>
+<div class="note" id="note250033420295"><a name="note250033420295"></a><a name="note250033420295"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p145001734112910"><a name="p145001734112910"></a><a name="p145001734112910"></a>BMS clusters supports only nodes whose operating system is EulerOS 2.3.</p>
+</div></div>
 </td>
 </tr>
 <tr id="row6201163842315"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p1420217389236"><a name="p1420217389236"></a><a name="p1420217389236"></a>dedicatedHostId</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p1020273822317"><a name="p1020273822317"></a><a name="p1020273822317"></a>No</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p1020273822317"><a name="p1020273822317"></a><a name="p1020273822317"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p17202238192311"><a name="p17202238192311"></a><a name="p17202238192311"></a>String</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p17202238192311"><a name="p17202238192311"></a><a name="p17202238192311"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p1657345220513"><a name="p1657345220513"></a><a name="p1657345220513"></a>ID of the dedicated host to which nodes will be scheduled.</p>
 </td>
 </tr>
 <tr id="row1150165232219"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p0393194582610"><a name="p0393194582610"></a><a name="p0393194582610"></a>login</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p8150105252219"><a name="p8150105252219"></a><a name="p8150105252219"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p8150105252219"><a name="p8150105252219"></a><a name="p8150105252219"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p1715065215226"><a name="p1715065215226"></a><a name="p1715065215226"></a><a href="#table10946114617286">login</a> object</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p1715065215226"><a name="p1715065215226"></a><a name="p1715065215226"></a><a href="#table10946114617286">login</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p41509523227"><a name="p41509523227"></a><a name="p41509523227"></a>Node login mode, which can be key pair or password.</p>
 </td>
 </tr>
 <tr id="row111501952182214"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p0677490262"><a name="p0677490262"></a><a name="p0677490262"></a>rootVolume</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p51501552132210"><a name="p51501552132210"></a><a name="p51501552132210"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p51501552132210"><a name="p51501552132210"></a><a name="p51501552132210"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p16150052162211"><a name="p16150052162211"></a><a name="p16150052162211"></a><a href="#table1359314517">rootVolume</a> object</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p16150052162211"><a name="p16150052162211"></a><a name="p16150052162211"></a><a href="#table1359314517">rootVolume</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p15150125219222"><a name="p15150125219222"></a><a name="p15150125219222"></a>System disk parameters of the node.</p>
 </td>
 </tr>
 <tr id="row1515016528222"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p1859810527263"><a name="p1859810527263"></a><a name="p1859810527263"></a>dataVolumes</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p161501852152218"><a name="p161501852152218"></a><a name="p161501852152218"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p161501852152218"><a name="p161501852152218"></a><a name="p161501852152218"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p13150652142210"><a name="p13150652142210"></a><a name="p13150652142210"></a><a href="#table876891063712">dataVolumes</a> object</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p13150652142210"><a name="p13150652142210"></a><a name="p13150652142210"></a><a href="#table876891063712">dataVolumes</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p1915035219225"><a name="p1915035219225"></a><a name="p1915035219225"></a>Data disk parameters of the node.</p>
 </td>
 </tr>
 <tr id="row215045242210"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p13629105762613"><a name="p13629105762613"></a><a name="p13629105762613"></a>publicIP</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p3150135292215"><a name="p3150135292215"></a><a name="p3150135292215"></a>No</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p3150135292215"><a name="p3150135292215"></a><a name="p3150135292215"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p131501952192211"><a name="p131501952192211"></a><a name="p131501952192211"></a><a href="#table139179586343">publicIP</a> object</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p131501952192211"><a name="p131501952192211"></a><a name="p131501952192211"></a><a href="#table139179586343">publicIP</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p51501752122215"><a name="p51501752122215"></a><a name="p51501752122215"></a>EIP used by the node to access public networks.</p>
 </td>
 </tr>
-<tr id="row13868164643712"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p1486984693719"><a name="p1486984693719"></a><a name="p1486984693719"></a><span id="ph1930412532375"><a name="ph1930412532375"></a><a name="ph1930412532375"></a>billingMode</span></p>
+<tr id="row1970917914119"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p137091919419"><a name="p137091919419"></a><a name="p137091919419"></a><span id="ph1930412532375"><a name="ph1930412532375"></a><a name="ph1930412532375"></a>billingMode</span></p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p1786984616373"><a name="p1786984616373"></a><a name="p1786984616373"></a><span id="ph16303145623719"><a name="ph16303145623719"></a><a name="ph16303145623719"></a>No</span></p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p1971010984118"><a name="p1971010984118"></a><a name="p1971010984118"></a><span id="ph16303145623719"><a name="ph16303145623719"></a><a name="ph16303145623719"></a>No</span></p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p98699462378"><a name="p98699462378"></a><a name="p98699462378"></a><span id="ph191141193818"><a name="ph191141193818"></a><a name="ph191141193818"></a>Integer</span></p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p12710169194115"><a name="p12710169194115"></a><a name="p12710169194115"></a><span id="ph191141193818"><a name="ph191141193818"></a><a name="ph191141193818"></a>Integer</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p558875914438"><a name="p558875914438"></a><a name="p558875914438"></a>Billing mode of a node.</p>
 <div class="note" id="note0702131124412"><a name="note0702131124412"></a><a name="note0702131124412"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p77026184417"><a name="p77026184417"></a><a name="p77026184417"></a>This field is not supported for the current version.</p>
@@ -283,40 +285,41 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </tr>
 <tr id="row133895911576"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p13898935713"><a name="p13898935713"></a><a name="p13898935713"></a>count</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p1338916913573"><a name="p1338916913573"></a><a name="p1338916913573"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p1338916913573"><a name="p1338916913573"></a><a name="p1338916913573"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p938920995713"><a name="p938920995713"></a><a name="p938920995713"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p938920995713"><a name="p938920995713"></a><a name="p938920995713"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p1714112632020"><a name="p1714112632020"></a><a name="p1714112632020"></a>Number of nodes to be created in a batch. The value must be a positive integer greater than or equal to 1.</p>
 </td>
 </tr>
 <tr id="row1920172414719"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p1292112474716"><a name="p1292112474716"></a><a name="p1292112474716"></a><span id="ph741675015303"><a name="ph741675015303"></a><a name="ph741675015303"></a>nodeNicSpec</span></p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p29211924104714"><a name="p29211924104714"></a><a name="p29211924104714"></a>No</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p29211924104714"><a name="p29211924104714"></a><a name="p29211924104714"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p11921122418478"><a name="p11921122418478"></a><a name="p11921122418478"></a><a href="#table322873620312">nodeNicSpec</a> object</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p11921122418478"><a name="p11921122418478"></a><a name="p11921122418478"></a><a href="#table322873620312">nodeNicSpec</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p218217915619"><a name="p218217915619"></a><a name="p218217915619"></a>Description about the node NIC.</p>
 </td>
 </tr>
 <tr id="row04202261820"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p642012610210"><a name="p642012610210"></a><a name="p642012610210"></a>extendParam</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p194201026527"><a name="p194201026527"></a><a name="p194201026527"></a>No</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p194201026527"><a name="p194201026527"></a><a name="p194201026527"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p6420182613211"><a name="p6420182613211"></a><a name="p6420182613211"></a><a href="#table153332427337">extendParam</a> object</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p6420182613211"><a name="p6420182613211"></a><a name="p6420182613211"></a><a href="#table153332427337">extendParam</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p1038263410216"><a name="p1038263410216"></a><a name="p1038263410216"></a>Extended parameter. Format: Key-value pair.</p>
 </td>
 </tr>
 <tr id="row550282612218"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p145037262222"><a name="p145037262222"></a><a name="p145037262222"></a>userTags</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p45031426132210"><a name="p45031426132210"></a><a name="p45031426132210"></a>No</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p45031426132210"><a name="p45031426132210"></a><a name="p45031426132210"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p9503202618229"><a name="p9503202618229"></a><a name="p9503202618229"></a>Object</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p9503202618229"><a name="p9503202618229"></a><a name="p9503202618229"></a>Object</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p7534153516413"><a name="p7534153516413"></a><a name="p7534153516413"></a>Tag of a VM.</p>
 <p id="p336932192717"><a name="p336932192717"></a><a name="p336932192717"></a>The format is key-value pair. The number of key-value pairs cannot exceed 20.</p>
-<a name="ul89974419513"></a><a name="ul89974419513"></a><ul id="ul89974419513"><li><strong id="b17052059141212"><a name="b17052059141212"></a><a name="b17052059141212"></a>Key</strong>: Only letters, digits, hyphens (-), underscores (_), and at signs (@) are supported.</li><li><strong id="b251321101314"><a name="b251321101314"></a><a name="b251321101314"></a>Value</strong>: Only letters, digits, hyphens (-), underscores (_), and at signs (@) are supported.</li></ul>
+<a name="ul237031115413"></a><a name="ul237031115413"></a>
+<a name="ul89974419513"></a><a name="ul89974419513"></a><ul id="ul89974419513"><li><strong id="b17052059141212"><a name="b17052059141212"></a><a name="b17052059141212"></a>Key</strong>: Only letters, digits, hyphens (-), underscores (_), and at signs (@) are supported.</li><li><strong id="b925644861514"><a name="b925644861514"></a><a name="b925644861514"></a>Value</strong>: Only letters, digits, hyphens (-), underscores (_), and at signs (@) are supported.</li></ul>
 <p id="p109975417513"><a name="p109975417513"></a><a name="p109975417513"></a>Example:</p>
 <pre class="screen" id="screen1963243983116"><a name="screen1963243983116"></a><a name="screen1963243983116"></a>"userTags": [
             {
@@ -331,9 +334,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </tr>
 <tr id="row15875955114618"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p587515516469"><a name="p587515516469"></a><a name="p587515516469"></a>k8sTags</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p687685520467"><a name="p687685520467"></a><a name="p687685520467"></a>No</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p687685520467"><a name="p687685520467"></a><a name="p687685520467"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p1487655534616"><a name="p1487655534616"></a><a name="p1487655534616"></a>Object</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p1487655534616"><a name="p1487655534616"></a><a name="p1487655534616"></a>Object</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p1932218501944"><a name="p1932218501944"></a><a name="p1932218501944"></a>Tag of a Kubernetes node.</p>
 <p id="p5876455194611"><a name="p5876455194611"></a><a name="p5876455194611"></a>The format is key-value pair. The number of key-value pairs cannot exceed 20.</p>
@@ -346,9 +349,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </tr>
 <tr id="row17268125919467"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p1026914596460"><a name="p1026914596460"></a><a name="p1026914596460"></a>taints</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p1926945954612"><a name="p1926945954612"></a><a name="p1926945954612"></a>No</p>
+<td class="cellrowborder" valign="top" width="15.939999999999998%" headers="mcps1.2.5.1.2 "><p id="p1926945954612"><a name="p1926945954612"></a><a name="p1926945954612"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.3 "><p id="p1612932717412"><a name="p1612932717412"></a><a name="p1612932717412"></a>Object</p>
+<td class="cellrowborder" valign="top" width="15.06%" headers="mcps1.2.5.1.3 "><p id="p1612932717412"><a name="p1612932717412"></a><a name="p1612932717412"></a>Object</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><div class="p" id="p81066511617"><a name="p81066511617"></a><a name="p81066511617"></a>You can add taints to created nodes to configure anti-affinity. Each taint contains the following parameters:<a name="ul17274222121015"></a><a name="ul17274222121015"></a><ul id="ul17274222121015"><li><strong id="b14101664369"><a name="b14101664369"></a><a name="b14101664369"></a>Key</strong>: A key must contain 1 to 63 characters starting with a letter or digit. Only letters, digits, hyphens (-), underscores (_), and periods (.) are allowed. A DNS subdomain name can be used as the prefix of a key.</li><li><strong id="b1538010103366"><a name="b1538010103366"></a><a name="b1538010103366"></a>Value</strong>: A value must start with a letter or digit and can contain a maximum of 63 characters, including letters, digits, hyphens (-), underscores (_), and periods (.).</li><li><strong id="b23151718366"><a name="b23151718366"></a><a name="b23151718366"></a>Effect</strong>: Available options are <strong id="b13216173361"><a name="b13216173361"></a><a name="b13216173361"></a>NoSchedule</strong>, <strong id="b1933201719369"><a name="b1933201719369"></a><a name="b1933201719369"></a>PreferNoSchedule</strong>, and <strong id="b3345173368"><a name="b3345173368"></a><a name="b3345173368"></a>NoExecute</strong>.</li></ul>
 </div>
@@ -372,21 +375,21 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 <a name="table322873620312"></a>
 <table><thead align="left"><tr id="row132296364316"><th class="cellrowborder" valign="top" width="18.970588235294116%" id="mcps1.2.5.1.1"><p id="p622943603116"><a name="p622943603116"></a><a name="p622943603116"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="14.362745098039214%" id="mcps1.2.5.1.2"><p id="p42290361314"><a name="p42290361314"></a><a name="p42290361314"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="16.558823529411764%" id="mcps1.2.5.1.2"><p id="p42290361314"><a name="p42290361314"></a><a name="p42290361314"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.64705882352941%" id="mcps1.2.5.1.3"><p id="p11229193612317"><a name="p11229193612317"></a><a name="p11229193612317"></a>Type</p>
+<th class="cellrowborder" valign="top" width="20.11764705882353%" id="mcps1.2.5.1.3"><p id="p11229193612317"><a name="p11229193612317"></a><a name="p11229193612317"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="49.01960784313725%" id="mcps1.2.5.1.4"><p id="p9229136163117"><a name="p9229136163117"></a><a name="p9229136163117"></a>Description</p>
+<th class="cellrowborder" valign="top" width="44.35294117647059%" id="mcps1.2.5.1.4"><p id="p9229136163117"><a name="p9229136163117"></a><a name="p9229136163117"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="row3229193616310"><td class="cellrowborder" valign="top" width="18.970588235294116%" headers="mcps1.2.5.1.1 "><p id="p20278134019444"><a name="p20278134019444"></a><a name="p20278134019444"></a>primaryNic</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.362745098039214%" headers="mcps1.2.5.1.2 "><p id="p4277340184413"><a name="p4277340184413"></a><a name="p4277340184413"></a>No</p>
+<td class="cellrowborder" valign="top" width="16.558823529411764%" headers="mcps1.2.5.1.2 "><p id="p4277340184413"><a name="p4277340184413"></a><a name="p4277340184413"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.64705882352941%" headers="mcps1.2.5.1.3 "><p id="p3276124012443"><a name="p3276124012443"></a><a name="p3276124012443"></a><a href="#table1054732719504">primaryNic</a> object</p>
+<td class="cellrowborder" valign="top" width="20.11764705882353%" headers="mcps1.2.5.1.3 "><p id="p3276124012443"><a name="p3276124012443"></a><a name="p3276124012443"></a><a href="#table1054732719504">primaryNic</a> object</p>
 </td>
-<td class="cellrowborder" valign="top" width="49.01960784313725%" headers="mcps1.2.5.1.4 "><p id="p327417407445"><a name="p327417407445"></a><a name="p327417407445"></a>Description about the primary NIC.</p>
+<td class="cellrowborder" valign="top" width="44.35294117647059%" headers="mcps1.2.5.1.4 "><p id="p327417407445"><a name="p327417407445"></a><a name="p327417407445"></a>Description about the primary NIC.</p>
 </td>
 </tr>
 </tbody>
@@ -397,21 +400,21 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 <a name="table1054732719504"></a>
 <table><thead align="left"><tr id="row654742745013"><th class="cellrowborder" valign="top" width="18.970588235294116%" id="mcps1.2.5.1.1"><p id="p14547162711509"><a name="p14547162711509"></a><a name="p14547162711509"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="14.362745098039214%" id="mcps1.2.5.1.2"><p id="p55471427175011"><a name="p55471427175011"></a><a name="p55471427175011"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="16.84313725490196%" id="mcps1.2.5.1.2"><p id="p55471427175011"><a name="p55471427175011"></a><a name="p55471427175011"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.64705882352941%" id="mcps1.2.5.1.3"><p id="p193671951669"><a name="p193671951669"></a><a name="p193671951669"></a>Type</p>
+<th class="cellrowborder" valign="top" width="18.8921568627451%" id="mcps1.2.5.1.3"><p id="p193671951669"><a name="p193671951669"></a><a name="p193671951669"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="49.01960784313725%" id="mcps1.2.5.1.4"><p id="p1254762710508"><a name="p1254762710508"></a><a name="p1254762710508"></a>Description</p>
+<th class="cellrowborder" valign="top" width="45.294117647058826%" id="mcps1.2.5.1.4"><p id="p1254762710508"><a name="p1254762710508"></a><a name="p1254762710508"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="row254872715011"><td class="cellrowborder" valign="top" width="18.970588235294116%" headers="mcps1.2.5.1.1 "><p id="p1654818277503"><a name="p1654818277503"></a><a name="p1654818277503"></a>subnetId</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.362745098039214%" headers="mcps1.2.5.1.2 "><p id="p2054842713508"><a name="p2054842713508"></a><a name="p2054842713508"></a>No</p>
+<td class="cellrowborder" valign="top" width="16.84313725490196%" headers="mcps1.2.5.1.2 "><p id="p2054842713508"><a name="p2054842713508"></a><a name="p2054842713508"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.64705882352941%" headers="mcps1.2.5.1.3 "><p id="p5548327205011"><a name="p5548327205011"></a><a name="p5548327205011"></a>String</p>
+<td class="cellrowborder" valign="top" width="18.8921568627451%" headers="mcps1.2.5.1.3 "><p id="p5548327205011"><a name="p5548327205011"></a><a name="p5548327205011"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="49.01960784313725%" headers="mcps1.2.5.1.4 "><p id="p18541105273310"><a name="p18541105273310"></a><a name="p18541105273310"></a>ID of the subnet to which the NIC belongs.</p>
+<td class="cellrowborder" valign="top" width="45.294117647058826%" headers="mcps1.2.5.1.4 "><p id="p18541105273310"><a name="p18541105273310"></a><a name="p18541105273310"></a>ID of the subnet to which the NIC belongs.</p>
 </td>
 </tr>
 </tbody>
@@ -422,9 +425,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 <a name="table153332427337"></a>
 <table><thead align="left"><tr id="row1333194263315"><th class="cellrowborder" valign="top" width="18.970588235294116%" id="mcps1.2.5.1.1"><p id="p1833364243316"><a name="p1833364243316"></a><a name="p1833364243316"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="14.362745098039214%" id="mcps1.2.5.1.2"><p id="p173331842193317"><a name="p173331842193317"></a><a name="p173331842193317"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="17.11764705882353%" id="mcps1.2.5.1.2"><p id="p173331842193317"><a name="p173331842193317"></a><a name="p173331842193317"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.64705882352941%" id="mcps1.2.5.1.3"><p id="p73331942143320"><a name="p73331942143320"></a><a name="p73331942143320"></a>Type</p>
+<th class="cellrowborder" valign="top" width="14.892156862745098%" id="mcps1.2.5.1.3"><p id="p73331942143320"><a name="p73331942143320"></a><a name="p73331942143320"></a>Type</p>
 </th>
 <th class="cellrowborder" valign="top" width="49.01960784313725%" id="mcps1.2.5.1.4"><p id="p93331942183314"><a name="p93331942183314"></a><a name="p93331942183314"></a>Description</p>
 </th>
@@ -432,18 +435,18 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </thead>
 <tbody><tr id="row1941456173613"><td class="cellrowborder" valign="top" width="18.970588235294116%" headers="mcps1.2.5.1.1 "><p id="p594212564360"><a name="p594212564360"></a><a name="p594212564360"></a><span>maxPods</span></p>
 </td>
-<td class="cellrowborder" valign="top" width="14.362745098039214%" headers="mcps1.2.5.1.2 "><p id="p149421756133614"><a name="p149421756133614"></a><a name="p149421756133614"></a>No</p>
+<td class="cellrowborder" valign="top" width="17.11764705882353%" headers="mcps1.2.5.1.2 "><p id="p149421756133614"><a name="p149421756133614"></a><a name="p149421756133614"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.64705882352941%" headers="mcps1.2.5.1.3 "><p id="p1094255614368"><a name="p1094255614368"></a><a name="p1094255614368"></a><span>Integer</span></p>
+<td class="cellrowborder" valign="top" width="14.892156862745098%" headers="mcps1.2.5.1.3 "><p id="p1094255614368"><a name="p1094255614368"></a><a name="p1094255614368"></a><span>Integer</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="49.01960784313725%" headers="mcps1.2.5.1.4 "><p id="p73419192371"><a name="p73419192371"></a><a name="p73419192371"></a>Maximum number of pods on the node.</p>
 </td>
 </tr>
 <tr id="row9333104293318"><td class="cellrowborder" valign="top" width="18.970588235294116%" headers="mcps1.2.5.1.1 "><p id="p203338425338"><a name="p203338425338"></a><a name="p203338425338"></a>alpha.cce/preInstall</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.362745098039214%" headers="mcps1.2.5.1.2 "><p id="p1033318426332"><a name="p1033318426332"></a><a name="p1033318426332"></a>No</p>
+<td class="cellrowborder" valign="top" width="17.11764705882353%" headers="mcps1.2.5.1.2 "><p id="p1033318426332"><a name="p1033318426332"></a><a name="p1033318426332"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.64705882352941%" headers="mcps1.2.5.1.3 "><p id="p15333164220338"><a name="p15333164220338"></a><a name="p15333164220338"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.892156862745098%" headers="mcps1.2.5.1.3 "><p id="p15333164220338"><a name="p15333164220338"></a><a name="p15333164220338"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="49.01960784313725%" headers="mcps1.2.5.1.4 "><p id="p3333154263315"><a name="p3333154263315"></a><a name="p3333154263315"></a>Script required before the installation</p>
 <div class="note" id="note137011215354"><a name="note137011215354"></a><a name="note137011215354"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p270172113358"><a name="p270172113358"></a><a name="p270172113358"></a>The input value must be encoded using Base64. (Command: <strong id="b10861022802"><a name="b10861022802"></a><a name="b10861022802"></a>echo -n "<em id="i155831735103"><a name="i155831735103"></a><a name="i155831735103"></a>Content to be encoded</em>" | base64</strong>)</p>
@@ -452,9 +455,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </tr>
 <tr id="row5367951183319"><td class="cellrowborder" valign="top" width="18.970588235294116%" headers="mcps1.2.5.1.1 "><p id="p173671051153311"><a name="p173671051153311"></a><a name="p173671051153311"></a>alpha.cce/postInstall</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.362745098039214%" headers="mcps1.2.5.1.2 "><p id="p163671751203313"><a name="p163671751203313"></a><a name="p163671751203313"></a>No</p>
+<td class="cellrowborder" valign="top" width="17.11764705882353%" headers="mcps1.2.5.1.2 "><p id="p163671751203313"><a name="p163671751203313"></a><a name="p163671751203313"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.64705882352941%" headers="mcps1.2.5.1.3 "><p id="p103676513337"><a name="p103676513337"></a><a name="p103676513337"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.892156862745098%" headers="mcps1.2.5.1.3 "><p id="p103676513337"><a name="p103676513337"></a><a name="p103676513337"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="49.01960784313725%" headers="mcps1.2.5.1.4 "><p id="p53689516336"><a name="p53689516336"></a><a name="p53689516336"></a>Script required after the installation</p>
 <div class="note" id="note19617843103510"><a name="note19617843103510"></a><a name="note19617843103510"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p1161734320357"><a name="p1161734320357"></a><a name="p1161734320357"></a>The input value must be encoded using Base64. (Command: <strong id="b1169154420012"><a name="b1169154420012"></a><a name="b1169154420012"></a>echo -n "<em id="i95364410019"><a name="i95364410019"></a><a name="i95364410019"></a>Content to be encoded</em>" | base64</strong>)</p>
@@ -469,9 +472,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 <a name="table10946114617286"></a>
 <table><thead align="left"><tr id="row094684614289"><th class="cellrowborder" valign="top" width="19.607843137254903%" id="mcps1.2.5.1.1"><p id="p1544713542283"><a name="p1544713542283"></a><a name="p1544713542283"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="13.725490196078432%" id="mcps1.2.5.1.2"><p id="p8447155482810"><a name="p8447155482810"></a><a name="p8447155482810"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="16.558823529411764%" id="mcps1.2.5.1.2"><p id="p8447155482810"><a name="p8447155482810"></a><a name="p8447155482810"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.64705882352941%" id="mcps1.2.5.1.3"><p id="p0447145472811"><a name="p0447145472811"></a><a name="p0447145472811"></a>Type</p>
+<th class="cellrowborder" valign="top" width="14.813725490196077%" id="mcps1.2.5.1.3"><p id="p0447145472811"><a name="p0447145472811"></a><a name="p0447145472811"></a>Type</p>
 </th>
 <th class="cellrowborder" valign="top" width="49.01960784313725%" id="mcps1.2.5.1.4"><p id="p17447254132813"><a name="p17447254132813"></a><a name="p17447254132813"></a>Description</p>
 </th>
@@ -479,18 +482,18 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </thead>
 <tbody><tr id="row69467461289"><td class="cellrowborder" valign="top" width="19.607843137254903%" headers="mcps1.2.5.1.1 "><p id="p994654602818"><a name="p994654602818"></a><a name="p994654602818"></a>sshKey</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.725490196078432%" headers="mcps1.2.5.1.2 "><p id="p1694654614287"><a name="p1694654614287"></a><a name="p1694654614287"></a>No</p>
+<td class="cellrowborder" valign="top" width="16.558823529411764%" headers="mcps1.2.5.1.2 "><p id="p1694654614287"><a name="p1694654614287"></a><a name="p1694654614287"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.64705882352941%" headers="mcps1.2.5.1.3 "><p id="p2094614692816"><a name="p2094614692816"></a><a name="p2094614692816"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.813725490196077%" headers="mcps1.2.5.1.3 "><p id="p2094614692816"><a name="p2094614692816"></a><a name="p2094614692816"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="49.01960784313725%" headers="mcps1.2.5.1.4 "><p id="p5946104616288"><a name="p5946104616288"></a><a name="p5946104616288"></a>Name of the key pair used for node login. For details on how to create a key pair, see <a href="creating-a-key-pair.md">Creating a Key Pair</a>.</p>
 </td>
 </tr>
-<tr id="row359392111369"><td class="cellrowborder" valign="top" width="19.607843137254903%" headers="mcps1.2.5.1.1 "><p id="p159412211365"><a name="p159412211365"></a><a name="p159412211365"></a>userPassword</p>
+<tr id="row31241526104213"><td class="cellrowborder" valign="top" width="19.607843137254903%" headers="mcps1.2.5.1.1 "><p id="p2124826124214"><a name="p2124826124214"></a><a name="p2124826124214"></a>userPassword</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.725490196078432%" headers="mcps1.2.5.1.2 "><p id="p4594221193618"><a name="p4594221193618"></a><a name="p4594221193618"></a>No</p>
+<td class="cellrowborder" valign="top" width="16.558823529411764%" headers="mcps1.2.5.1.2 "><p id="p18124192684210"><a name="p18124192684210"></a><a name="p18124192684210"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.64705882352941%" headers="mcps1.2.5.1.3 "><p id="p659482143614"><a name="p659482143614"></a><a name="p659482143614"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.813725490196077%" headers="mcps1.2.5.1.3 "><p id="p1912414264428"><a name="p1912414264428"></a><a name="p1912414264428"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="49.01960784313725%" headers="mcps1.2.5.1.4 "><p id="p059411218363"><a name="p059411218363"></a><a name="p059411218363"></a>Password used for node login.</p>
 <div class="note" id="note19491185043612"><a name="note19491185043612"></a><a name="note19491185043612"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p19491115003619"><a name="p19491115003619"></a><a name="p19491115003619"></a>This field is not supported for the current version.</p>
@@ -505,9 +508,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 <a name="table1359314517"></a>
 <table><thead align="left"><tr id="row86123184512"><th class="cellrowborder" valign="top" width="15.840000000000002%" id="mcps1.2.5.1.1"><p id="p5603104518"><a name="p5603104518"></a><a name="p5603104518"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="13.07%" id="mcps1.2.5.1.2"><p id="p335493817453"><a name="p335493817453"></a><a name="p335493817453"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="16.32%" id="mcps1.2.5.1.2"><p id="p335493817453"><a name="p335493817453"></a><a name="p335493817453"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="18.87%" id="mcps1.2.5.1.3"><p id="p146532454"><a name="p146532454"></a><a name="p146532454"></a>Type</p>
+<th class="cellrowborder" valign="top" width="15.620000000000001%" id="mcps1.2.5.1.3"><p id="p146532454"><a name="p146532454"></a><a name="p146532454"></a>Type</p>
 </th>
 <th class="cellrowborder" valign="top" width="52.22%" id="mcps1.2.5.1.4"><p id="p765334510"><a name="p765334510"></a><a name="p765334510"></a>Description</p>
 </th>
@@ -515,9 +518,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </thead>
 <tbody><tr id="row263118285255"><td class="cellrowborder" valign="top" width="15.840000000000002%" headers="mcps1.2.5.1.1 "><p id="p4631728142516"><a name="p4631728142516"></a><a name="p4631728142516"></a>volumetype</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.07%" headers="mcps1.2.5.1.2 "><p id="p235483818451"><a name="p235483818451"></a><a name="p235483818451"></a>No</p>
+<td class="cellrowborder" valign="top" width="16.32%" headers="mcps1.2.5.1.2 "><p id="p235483818451"><a name="p235483818451"></a><a name="p235483818451"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.87%" headers="mcps1.2.5.1.3 "><p id="p463115285250"><a name="p463115285250"></a><a name="p463115285250"></a>String</p>
+<td class="cellrowborder" valign="top" width="15.620000000000001%" headers="mcps1.2.5.1.3 "><p id="p463115285250"><a name="p463115285250"></a><a name="p463115285250"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="52.22%" headers="mcps1.2.5.1.4 "><p id="p35816473259"><a name="p35816473259"></a><a name="p35816473259"></a>Disk type. For details, see the description of <strong id="b185814710254"><a name="b185814710254"></a><a name="b185814710254"></a>root_volume</strong> in <a href="https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0020212668.html" target="_blank" rel="noopener noreferrer">Creating an ECS</a>.</p>
 <a name="ul1458114792517"></a><a name="ul1458114792517"></a><ul id="ul1458114792517"><li><strong id="b1558194742518"><a name="b1558194742518"></a><a name="b1558194742518"></a>SATA</strong>: common I/O disk type.</li><li><strong id="b859547132512"><a name="b859547132512"></a><a name="b859547132512"></a>SAS</strong>: high I/O disk type.</li><li><strong id="b17590476252"><a name="b17590476252"></a><a name="b17590476252"></a>SSD</strong>: ultra-high I/O disk type.</li></ul>
@@ -525,9 +528,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </tr>
 <tr id="row19703174511"><td class="cellrowborder" valign="top" width="15.840000000000002%" headers="mcps1.2.5.1.1 "><p id="p1971731452"><a name="p1971731452"></a><a name="p1971731452"></a>size</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.07%" headers="mcps1.2.5.1.2 "><p id="p1835412386451"><a name="p1835412386451"></a><a name="p1835412386451"></a>No</p>
+<td class="cellrowborder" valign="top" width="16.32%" headers="mcps1.2.5.1.2 "><p id="p1835412386451"><a name="p1835412386451"></a><a name="p1835412386451"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.87%" headers="mcps1.2.5.1.3 "><p id="p2071304513"><a name="p2071304513"></a><a name="p2071304513"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="15.620000000000001%" headers="mcps1.2.5.1.3 "><p id="p2071304513"><a name="p2071304513"></a><a name="p2071304513"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="52.22%" headers="mcps1.2.5.1.4 "><p id="p1875317289426"><a name="p1875317289426"></a><a name="p1875317289426"></a>Specifies the system disk size, in GB. The value ranges from 40 to 1024.</p>
 </td>
@@ -540,9 +543,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 <a name="table876891063712"></a>
 <table><thead align="left"><tr id="row187686108377"><th class="cellrowborder" valign="top" width="16.48%" id="mcps1.2.5.1.1"><p id="p8768131063717"><a name="p8768131063717"></a><a name="p8768131063717"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="12.43%" id="mcps1.2.5.1.2"><p id="p1638419435458"><a name="p1638419435458"></a><a name="p1638419435458"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="16.6%" id="mcps1.2.5.1.2"><p id="p1638419435458"><a name="p1638419435458"></a><a name="p1638419435458"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="18.87%" id="mcps1.2.5.1.3"><p id="p117681210123710"><a name="p117681210123710"></a><a name="p117681210123710"></a>Type</p>
+<th class="cellrowborder" valign="top" width="14.7%" id="mcps1.2.5.1.3"><p id="p117681210123710"><a name="p117681210123710"></a><a name="p117681210123710"></a>Type</p>
 </th>
 <th class="cellrowborder" valign="top" width="52.22%" id="mcps1.2.5.1.4"><p id="p1776813105373"><a name="p1776813105373"></a><a name="p1776813105373"></a>Description</p>
 </th>
@@ -550,9 +553,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </thead>
 <tbody><tr id="row17769121013375"><td class="cellrowborder" valign="top" width="16.48%" headers="mcps1.2.5.1.1 "><p id="p476913104370"><a name="p476913104370"></a><a name="p476913104370"></a>volumetype</p>
 </td>
-<td class="cellrowborder" valign="top" width="12.43%" headers="mcps1.2.5.1.2 "><p id="p63841643204511"><a name="p63841643204511"></a><a name="p63841643204511"></a>No</p>
+<td class="cellrowborder" valign="top" width="16.6%" headers="mcps1.2.5.1.2 "><p id="p63841643204511"><a name="p63841643204511"></a><a name="p63841643204511"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.87%" headers="mcps1.2.5.1.3 "><p id="p17693107374"><a name="p17693107374"></a><a name="p17693107374"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.7%" headers="mcps1.2.5.1.3 "><p id="p17693107374"><a name="p17693107374"></a><a name="p17693107374"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="52.22%" headers="mcps1.2.5.1.4 "><p id="p476941073711"><a name="p476941073711"></a><a name="p476941073711"></a>Disk type. For details, see the description of <strong id="b476911100378"><a name="b476911100378"></a><a name="b476911100378"></a>data_volumes</strong> in <a href="https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0020212668.html" target="_blank" rel="noopener noreferrer">Creating an ECS</a>.</p>
 <a name="ul1376951016373"></a><a name="ul1376951016373"></a><ul id="ul1376951016373"><li><strong id="b1776918109370"><a name="b1776918109370"></a><a name="b1776918109370"></a>SATA</strong>: common I/O disk type.</li><li><strong id="b1976931033715"><a name="b1976931033715"></a><a name="b1976931033715"></a>SAS</strong>: high I/O disk type.</li><li><strong id="b4769141083718"><a name="b4769141083718"></a><a name="b4769141083718"></a>SSD</strong>: ultra-high I/O disk type.</li></ul>
@@ -560,9 +563,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </tr>
 <tr id="row1769131043719"><td class="cellrowborder" valign="top" width="16.48%" headers="mcps1.2.5.1.1 "><p id="p127691410173715"><a name="p127691410173715"></a><a name="p127691410173715"></a>size</p>
 </td>
-<td class="cellrowborder" valign="top" width="12.43%" headers="mcps1.2.5.1.2 "><p id="p3384843164515"><a name="p3384843164515"></a><a name="p3384843164515"></a>No</p>
+<td class="cellrowborder" valign="top" width="16.6%" headers="mcps1.2.5.1.2 "><p id="p3384843164515"><a name="p3384843164515"></a><a name="p3384843164515"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.87%" headers="mcps1.2.5.1.3 "><p id="p876971033717"><a name="p876971033717"></a><a name="p876971033717"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="14.7%" headers="mcps1.2.5.1.3 "><p id="p876971033717"><a name="p876971033717"></a><a name="p876971033717"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="52.22%" headers="mcps1.2.5.1.4 "><p id="p1128183517418"><a name="p1128183517418"></a><a name="p1128183517418"></a>Specifies the data disk size, in GB. The value ranges from 100 to 32768.</p>
 </td>
@@ -575,9 +578,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 <a name="table139179586343"></a>
 <table><thead align="left"><tr id="row16917115833416"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.1"><p id="p147361906402"><a name="p147361906402"></a><a name="p147361906402"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="14.000000000000002%" id="mcps1.2.5.1.2"><p id="p773630144015"><a name="p773630144015"></a><a name="p773630144015"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="15.459999999999999%" id="mcps1.2.5.1.2"><p id="p773630144015"><a name="p773630144015"></a><a name="p773630144015"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="17%" id="mcps1.2.5.1.3"><p id="p675120144011"><a name="p675120144011"></a><a name="p675120144011"></a>Type</p>
+<th class="cellrowborder" valign="top" width="15.540000000000001%" id="mcps1.2.5.1.3"><p id="p675120144011"><a name="p675120144011"></a><a name="p675120144011"></a>Type</p>
 </th>
 <th class="cellrowborder" valign="top" width="49%" id="mcps1.2.5.1.4"><p id="p77514064014"><a name="p77514064014"></a><a name="p77514064014"></a>Description</p>
 </th>
@@ -585,9 +588,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </thead>
 <tbody><tr id="row139177581341"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p79179585341"><a name="p79179585341"></a><a name="p79179585341"></a>ids</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.5.1.2 "><p id="p159172586348"><a name="p159172586348"></a><a name="p159172586348"></a>No</p>
+<td class="cellrowborder" valign="top" width="15.459999999999999%" headers="mcps1.2.5.1.2 "><p id="p159172586348"><a name="p159172586348"></a><a name="p159172586348"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p69201306371"><a name="p69201306371"></a><a name="p69201306371"></a>Array of strings</p>
+<td class="cellrowborder" valign="top" width="15.540000000000001%" headers="mcps1.2.5.1.3 "><p id="p69201306371"><a name="p69201306371"></a><a name="p69201306371"></a>Array of strings</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p159171586349"><a name="p159171586349"></a><a name="p159171586349"></a>List of IDs of the existing EIPs.</p>
 <div class="notice" id="note1048219251376"><a name="note1048219251376"></a><a name="note1048219251376"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p14831251077"><a name="p14831251077"></a><a name="p14831251077"></a>If <strong id="b164005813575"><a name="b164005813575"></a><a name="b164005813575"></a>ids</strong> is set, you do not need to set <strong id="b74015865711"><a name="b74015865711"></a><a name="b74015865711"></a>count</strong> and <strong id="b94085865712"><a name="b94085865712"></a><a name="b94085865712"></a>eip</strong>.</p>
@@ -596,9 +599,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </tr>
 <tr id="row291745883414"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p1691715585341"><a name="p1691715585341"></a><a name="p1691715585341"></a>count</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.5.1.2 "><p id="p1091755873415"><a name="p1091755873415"></a><a name="p1091755873415"></a>No</p>
+<td class="cellrowborder" valign="top" width="15.459999999999999%" headers="mcps1.2.5.1.2 "><p id="p1091755873415"><a name="p1091755873415"></a><a name="p1091755873415"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p15917358153417"><a name="p15917358153417"></a><a name="p15917358153417"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="15.540000000000001%" headers="mcps1.2.5.1.3 "><p id="p15917358153417"><a name="p15917358153417"></a><a name="p15917358153417"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p8917185813344"><a name="p8917185813344"></a><a name="p8917185813344"></a>Number of EIPs to be dynamically created.</p>
 <div class="notice" id="note1619810214816"><a name="note1619810214816"></a><a name="note1619810214816"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p720116214812"><a name="p720116214812"></a><a name="p720116214812"></a>The <strong id="b444155895713"><a name="b444155895713"></a><a name="b444155895713"></a>count</strong> and <strong id="b1544195819572"><a name="b1544195819572"></a><a name="b1544195819572"></a>eip</strong> parameters must be set simultaneously.</p>
@@ -607,9 +610,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </tr>
 <tr id="row14917155811345"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p169171958153418"><a name="p169171958153418"></a><a name="p169171958153418"></a>eip</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.5.1.2 "><p id="p9917135853415"><a name="p9917135853415"></a><a name="p9917135853415"></a>No</p>
+<td class="cellrowborder" valign="top" width="15.459999999999999%" headers="mcps1.2.5.1.2 "><p id="p9917135853415"><a name="p9917135853415"></a><a name="p9917135853415"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p1491785863418"><a name="p1491785863418"></a><a name="p1491785863418"></a><a href="#table135065714419">eip</a> object</p>
+<td class="cellrowborder" valign="top" width="15.540000000000001%" headers="mcps1.2.5.1.3 "><p id="p1491785863418"><a name="p1491785863418"></a><a name="p1491785863418"></a><a href="#table135065714419">eip</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p20917105813410"><a name="p20917105813410"></a><a name="p20917105813410"></a>EIP.</p>
 <div class="notice" id="note1160713522814"><a name="note1160713522814"></a><a name="note1160713522814"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p186191852988"><a name="p186191852988"></a><a name="p186191852988"></a>The <strong id="b4485585571"><a name="b4485585571"></a><a name="b4485585571"></a>count</strong> and <strong id="b194845815716"><a name="b194845815716"></a><a name="b194845815716"></a>eip</strong> parameters must be set simultaneously.</p>
@@ -627,9 +630,9 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 <a name="table135065714419"></a>
 <table><thead align="left"><tr id="row4350185774110"><th class="cellrowborder" valign="top" width="21%" id="mcps1.2.5.1.1"><p id="p162565424423"><a name="p162565424423"></a><a name="p162565424423"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="13%" id="mcps1.2.5.1.2"><p id="p12566427429"><a name="p12566427429"></a><a name="p12566427429"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="14.499999999999998%" id="mcps1.2.5.1.2"><p id="p12566427429"><a name="p12566427429"></a><a name="p12566427429"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="17%" id="mcps1.2.5.1.3"><p id="p727315425421"><a name="p727315425421"></a><a name="p727315425421"></a>Type</p>
+<th class="cellrowborder" valign="top" width="15.5%" id="mcps1.2.5.1.3"><p id="p727315425421"><a name="p727315425421"></a><a name="p727315425421"></a>Type</p>
 </th>
 <th class="cellrowborder" valign="top" width="49%" id="mcps1.2.5.1.4"><p id="p4273104254210"><a name="p4273104254210"></a><a name="p4273104254210"></a>Description</p>
 </th>
@@ -637,18 +640,18 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </thead>
 <tbody><tr id="row10350145754113"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.1 "><p id="p835013575413"><a name="p835013575413"></a><a name="p835013575413"></a>iptype</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p2035010573419"><a name="p2035010573419"></a><a name="p2035010573419"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="14.499999999999998%" headers="mcps1.2.5.1.2 "><p id="p2035010573419"><a name="p2035010573419"></a><a name="p2035010573419"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p16350205710419"><a name="p16350205710419"></a><a name="p16350205710419"></a>String</p>
+<td class="cellrowborder" valign="top" width="15.5%" headers="mcps1.2.5.1.3 "><p id="p16350205710419"><a name="p16350205710419"></a><a name="p16350205710419"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p2035016576417"><a name="p2035016576417"></a><a name="p2035016576417"></a>EIP type. For details, see the description of the <strong id="b12315155585520"><a name="b12315155585520"></a><a name="b12315155585520"></a>iptype</strong> parameter in the <strong id="b63155559559"><a name="b63155559559"></a><a name="b63155559559"></a>eip</strong> field in <a href="https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0020212668.html" target="_blank" rel="noopener noreferrer">Data Structure for Creating ECSs</a>.</p>
 </td>
 </tr>
 <tr id="row14350155784118"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.1 "><p id="p5350165719413"><a name="p5350165719413"></a><a name="p5350165719413"></a>bandwidth</p>
 </td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.5.1.2 "><p id="p14350105734113"><a name="p14350105734113"></a><a name="p14350105734113"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="14.499999999999998%" headers="mcps1.2.5.1.2 "><p id="p14350105734113"><a name="p14350105734113"></a><a name="p14350105734113"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p1035013570419"><a name="p1035013570419"></a><a name="p1035013570419"></a><a href="#table16381121974213">bandwidth</a> object</p>
+<td class="cellrowborder" valign="top" width="15.5%" headers="mcps1.2.5.1.3 "><p id="p1035013570419"><a name="p1035013570419"></a><a name="p1035013570419"></a><a href="#table16381121974213">bandwidth</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="49%" headers="mcps1.2.5.1.4 "><p id="p15350757104113"><a name="p15350757104113"></a><a name="p15350757104113"></a>Bandwidth parameters of the EIP.</p>
 </td>
@@ -675,7 +678,7 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 </td>
 <td class="cellrowborder" valign="top" width="17.171717171717173%" headers="mcps1.2.5.1.3 "><p id="p6381919144212"><a name="p6381919144212"></a><a name="p6381919144212"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><a name="uec6c42f83e4e473680a784b2d1ba9be0"></a><a name="uec6c42f83e4e473680a784b2d1ba9be0"></a><ul id="uec6c42f83e4e473680a784b2d1ba9be0"><li>If this field is not carried, the node is charged by bandwidth.</li><li>If this field is carried but is left blank, the node is charged by bandwidth.</li><li>If this field is set to <strong id="en-us_topic_0102499099_b321210217596"><a name="en-us_topic_0102499099_b321210217596"></a><a name="en-us_topic_0102499099_b321210217596"></a>traffic</strong>, the node is charged by traffic.</li><li>If this parameter is set to another value, the ECS creation will fail.</li></ul>
+<td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.5.1.4 "><p id="p7730141912617"><a name="p7730141912617"></a><a name="p7730141912617"></a>The value is <strong id="b267410514014"><a name="b267410514014"></a><a name="b267410514014"></a>traffic</strong>, indicating that the billing is based on traffic.</p>
 </td>
 </tr>
 <tr id="row938121964218"><td class="cellrowborder" valign="top" width="21.21212121212121%" headers="mcps1.2.5.1.1 "><p id="p12381121914421"><a name="p12381121914421"></a><a name="p12381121914421"></a>size</p>
@@ -825,89 +828,89 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 **Table  16**  Data structure of the  **spec**  field
 
 <a name="table13949117115810"></a>
-<table><thead align="left"><tr id="row17982473586"><th class="cellrowborder" valign="top" width="23%" id="mcps1.2.4.1.1"><p id="p699720715814"><a name="p699720715814"></a><a name="p699720715814"></a>Parameter</p>
+<table><thead align="left"><tr id="row17982473586"><th class="cellrowborder" valign="top" width="23.02%" id="mcps1.2.4.1.1"><p id="p699720715814"><a name="p699720715814"></a><a name="p699720715814"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="21%" id="mcps1.2.4.1.2"><p id="p71217875816"><a name="p71217875816"></a><a name="p71217875816"></a>Type</p>
+<th class="cellrowborder" valign="top" width="20.979999999999997%" id="mcps1.2.4.1.2"><p id="p71217875816"><a name="p71217875816"></a><a name="p71217875816"></a>Type</p>
 </th>
 <th class="cellrowborder" valign="top" width="56.00000000000001%" id="mcps1.2.4.1.3"><p id="p2012138105813"><a name="p2012138105813"></a><a name="p2012138105813"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row14121683583"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p122888105817"><a name="p122888105817"></a><a name="p122888105817"></a>flavor</p>
+<tbody><tr id="row14121683583"><td class="cellrowborder" valign="top" width="23.02%" headers="mcps1.2.4.1.1 "><p id="p122888105817"><a name="p122888105817"></a><a name="p122888105817"></a>flavor</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p2280835810"><a name="p2280835810"></a><a name="p2280835810"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.979999999999997%" headers="mcps1.2.4.1.2 "><p id="p2280835810"><a name="p2280835810"></a><a name="p2280835810"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p134317814582"><a name="p134317814582"></a><a name="p134317814582"></a>Node specifications. For details, see the description of the <strong id="b4161181345919"><a name="b4161181345919"></a><a name="b4161181345919"></a>flavorRef</strong> parameter in <a href="https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0020212668.html" target="_blank" rel="noopener noreferrer">Creating an ECS</a>.</p>
 </td>
 </tr>
-<tr id="row44348155812"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p164320810589"><a name="p164320810589"></a><a name="p164320810589"></a>az</p>
+<tr id="row44348155812"><td class="cellrowborder" valign="top" width="23.02%" headers="mcps1.2.4.1.1 "><p id="p164320810589"><a name="p164320810589"></a><a name="p164320810589"></a>az</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p76016816581"><a name="p76016816581"></a><a name="p76016816581"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.979999999999997%" headers="mcps1.2.4.1.2 "><p id="p76016816581"><a name="p76016816581"></a><a name="p76016816581"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p106048105813"><a name="p106048105813"></a><a name="p106048105813"></a>AZ of the node. For details, see the description of the <strong id="b191248436590"><a name="b191248436590"></a><a name="b191248436590"></a>availability_zone</strong> parameter in <a href="https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0020212668.html" target="_blank" rel="noopener noreferrer">Creating an ECS</a>.</p>
 </td>
 </tr>
-<tr id="row1460168135810"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p9751586589"><a name="p9751586589"></a><a name="p9751586589"></a>os</p>
+<tr id="row1460168135810"><td class="cellrowborder" valign="top" width="23.02%" headers="mcps1.2.4.1.1 "><p id="p9751586589"><a name="p9751586589"></a><a name="p9751586589"></a>os</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p169117845811"><a name="p169117845811"></a><a name="p169117845811"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.979999999999997%" headers="mcps1.2.4.1.2 "><p id="p169117845811"><a name="p169117845811"></a><a name="p169117845811"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p13161571416"><a name="p13161571416"></a><a name="p13161571416"></a>Node OS. Currently, EulerOS 2.2 and EulerOS 2.5 are supported.</p>
-</td>
-</tr>
-<tr id="row1810788135812"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p61071980585"><a name="p61071980585"></a><a name="p61071980585"></a>login</p>
-</td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p3130161112911"><a name="p3130161112911"></a><a name="p3130161112911"></a><a href="#table10946114617286">login</a> object</p>
-</td>
-<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p212268155816"><a name="p212268155816"></a><a name="p212268155816"></a>Node login mode, which can be key pair or password.</p>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p19621199154620"><a name="p19621199154620"></a><a name="p19621199154620"></a>Node OS. Currently, EulerOS 2.2 and EulerOS 2.5 are supported.</p>
 </td>
 </tr>
-<tr id="row01388816589"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p121383885813"><a name="p121383885813"></a><a name="p121383885813"></a>rootVolume</p>
+<tr id="row1810788135812"><td class="cellrowborder" valign="top" width="23.02%" headers="mcps1.2.4.1.1 "><p id="p61071980585"><a name="p61071980585"></a><a name="p61071980585"></a>login</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p1615348125820"><a name="p1615348125820"></a><a name="p1615348125820"></a><a href="#table1359314517">rootVolume</a> object</p>
+<td class="cellrowborder" valign="top" width="20.979999999999997%" headers="mcps1.2.4.1.2 "><p id="p3130161112911"><a name="p3130161112911"></a><a name="p3130161112911"></a><a href="#table10946114617286">login</a> object</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p18610132923710"><a name="p18610132923710"></a><a name="p18610132923710"></a>Node login mode, which can only be key pair.</p>
+</td>
+</tr>
+<tr id="row01388816589"><td class="cellrowborder" valign="top" width="23.02%" headers="mcps1.2.4.1.1 "><p id="p121383885813"><a name="p121383885813"></a><a name="p121383885813"></a>rootVolume</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.979999999999997%" headers="mcps1.2.4.1.2 "><p id="p1615348125820"><a name="p1615348125820"></a><a name="p1615348125820"></a><a href="#table1359314517">rootVolume</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p12153208195815"><a name="p12153208195815"></a><a name="p12153208195815"></a>System disk parameters of the node.</p>
 </td>
 </tr>
-<tr id="row14169981580"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p21691982580"><a name="p21691982580"></a><a name="p21691982580"></a>dataVolumes</p>
+<tr id="row14169981580"><td class="cellrowborder" valign="top" width="23.02%" headers="mcps1.2.4.1.1 "><p id="p21691982580"><a name="p21691982580"></a><a name="p21691982580"></a>dataVolumes</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p818512815812"><a name="p818512815812"></a><a name="p818512815812"></a><a href="#table876891063712">dataVolumes</a> object</p>
+<td class="cellrowborder" valign="top" width="20.979999999999997%" headers="mcps1.2.4.1.2 "><p id="p818512815812"><a name="p818512815812"></a><a name="p818512815812"></a><a href="#table876891063712">dataVolumes</a> object</p>
 </td>
-<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p10185138205818"><a name="p10185138205818"></a><a name="p10185138205818"></a>Data disk parameters of the node. You can check details in <a href="https://docs.otc.t-systems.com/en-us/usermanual2/cce/cce_01_0202.html" target="_blank" rel="noopener noreferrer">How Do I Format a Data Disk Using Command Line Injection?</a></p>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p10185138205818"><a name="p10185138205818"></a><a name="p10185138205818"></a>Data disk parameters of the node.</p>
 </td>
 </tr>
-<tr id="row1518558145816"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p171997885817"><a name="p171997885817"></a><a name="p171997885817"></a>publicIP</p>
+<tr id="row1518558145816"><td class="cellrowborder" valign="top" width="23.02%" headers="mcps1.2.4.1.1 "><p id="p171997885817"><a name="p171997885817"></a><a name="p171997885817"></a>publicIP</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p151993811580"><a name="p151993811580"></a><a name="p151993811580"></a><a href="#table139179586343">publicIP</a> object</p>
+<td class="cellrowborder" valign="top" width="20.979999999999997%" headers="mcps1.2.4.1.2 "><p id="p151993811580"><a name="p151993811580"></a><a name="p151993811580"></a><a href="#table139179586343">publicIP</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p1721518815812"><a name="p1721518815812"></a><a name="p1721518815812"></a>EIP parameters of a node.</p>
 </td>
 </tr>
-<tr id="row57611951512"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p17731914151"><a name="p17731914151"></a><a name="p17731914151"></a>nodeNicSpec</p>
+<tr id="row57611951512"><td class="cellrowborder" valign="top" width="23.02%" headers="mcps1.2.4.1.1 "><p id="p17731914151"><a name="p17731914151"></a><a name="p17731914151"></a>nodeNicSpec</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p4771119181512"><a name="p4771119181512"></a><a name="p4771119181512"></a><a href="#table162751117166">nodeNicSpec</a> object</p>
+<td class="cellrowborder" valign="top" width="20.979999999999997%" headers="mcps1.2.4.1.2 "><p id="p4771119181512"><a name="p4771119181512"></a><a name="p4771119181512"></a><a href="#table162751117166">nodeNicSpec</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p977141911515"><a name="p977141911515"></a><a name="p977141911515"></a>Description about the node NIC.</p>
 </td>
 </tr>
-<tr id="row4760101273510"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p8761141218358"><a name="p8761141218358"></a><a name="p8761141218358"></a>count</p>
+<tr id="row4760101273510"><td class="cellrowborder" valign="top" width="23.02%" headers="mcps1.2.4.1.1 "><p id="p8761141218358"><a name="p8761141218358"></a><a name="p8761141218358"></a>count</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p980362212353"><a name="p980362212353"></a><a name="p980362212353"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20.979999999999997%" headers="mcps1.2.4.1.2 "><p id="p980362212353"><a name="p980362212353"></a><a name="p980362212353"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p1576219120354"><a name="p1576219120354"></a><a name="p1576219120354"></a>Number of nodes to be created in a batch. The value must be a positive integer greater than or equal to 1.</p>
 </td>
 </tr>
-<tr id="row129261258104912"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p12927158144918"><a name="p12927158144918"></a><a name="p12927158144918"></a>billingMode</p>
+<tr id="row5227708485"><td class="cellrowborder" valign="top" width="23.02%" headers="mcps1.2.4.1.1 "><p id="p6227150164816"><a name="p6227150164816"></a><a name="p6227150164816"></a>billingMode</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p149271058114917"><a name="p149271058114917"></a><a name="p149271058114917"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20.979999999999997%" headers="mcps1.2.4.1.2 "><p id="p622750184815"><a name="p622750184815"></a><a name="p622750184815"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p1467216550"><a name="p1467216550"></a><a name="p1467216550"></a>Billing mode of a node.</p>
 <div class="note" id="note647122120558"><a name="note647122120558"></a><a name="note647122120558"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p1847202165514"><a name="p1847202165514"></a><a name="p1847202165514"></a>This field is not supported for the current version.</p>
 </div></div>
 </td>
 </tr>
-<tr id="row16811419205015"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.4.1.1 "><p id="p9814194502"><a name="p9814194502"></a><a name="p9814194502"></a>extendParam</p>
+<tr id="row89546317484"><td class="cellrowborder" valign="top" width="23.02%" headers="mcps1.2.4.1.1 "><p id="p9814194502"><a name="p9814194502"></a><a name="p9814194502"></a>extendParam</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.2 "><p id="p16811419205014"><a name="p16811419205014"></a><a name="p16811419205014"></a><a href="#table17575013586">extendParam</a> object</p>
+<td class="cellrowborder" valign="top" width="20.979999999999997%" headers="mcps1.2.4.1.2 "><p id="p16811419205014"><a name="p16811419205014"></a><a name="p16811419205014"></a><a href="#table2039318361484">extendParam</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p1152473225511"><a name="p1152473225511"></a><a name="p1152473225511"></a>Extended parameter. Format: Key-value pair.</p>
 </td>
@@ -959,27 +962,105 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
 
 **Table  19**  Data structure of the  **extendParam**  field
 
-<a name="table17575013586"></a>
-<table><thead align="left"><tr id="row51071750155814"><th class="cellrowborder" valign="top" width="24%" id="mcps1.2.4.1.1"><p id="p41071050115816"><a name="p41071050115816"></a><a name="p41071050115816"></a>Parameter</p>
+<a name="table2039318361484"></a>
+<table><thead align="left"><tr id="row839453617483"><th class="cellrowborder" valign="top" width="24%" id="mcps1.2.4.1.1"><p id="p139413654820"><a name="p139413654820"></a><a name="p139413654820"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p id="p1312155019587"><a name="p1312155019587"></a><a name="p1312155019587"></a>Type</p>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.2"><p id="p113949369485"><a name="p113949369485"></a><a name="p113949369485"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="56.00000000000001%" id="mcps1.2.4.1.3"><p id="p13121155016582"><a name="p13121155016582"></a><a name="p13121155016582"></a>Description</p>
+<th class="cellrowborder" valign="top" width="56.00000000000001%" id="mcps1.2.4.1.3"><p id="p1439413611485"><a name="p1439413611485"></a><a name="p1439413611485"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row1916975011583"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.1 "><p id="p2185650105819"><a name="p2185650105819"></a><a name="p2185650105819"></a>ecs:performancetype</p>
+<tbody><tr id="row10138550175814"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.1 "><p id="p20138125019585"><a name="p20138125019585"></a><a name="p20138125019585"></a>chargingMode</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p141855504585"><a name="p141855504585"></a><a name="p141855504585"></a>String</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p141531503584"><a name="p141531503584"></a><a name="p141531503584"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p72001250115813"><a name="p72001250115813"></a><a name="p72001250115813"></a>Type of the ECS specifications. This field does not exist if the node is a BMS.</p>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p13620153710439"><a name="p13620153710439"></a><a name="p13620153710439"></a>Billing mode of a node. Value <strong id="b527418467189"><a name="b527418467189"></a><a name="b527418467189"></a>0</strong> indicates pay-per-use. If this parameter is left unspecified, the default value <strong id="b1727574661815"><a name="b1727574661815"></a><a name="b1727574661815"></a>0</strong> is used.</p>
+<div class="note" id="note47531622145610"><a name="note47531622145610"></a><a name="note47531622145610"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p13754822185613"><a name="p13754822185613"></a><a name="p13754822185613"></a>This field is not supported for the current version.</p>
+</div></div>
 </td>
 </tr>
-<tr id="row663581465617"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.1 "><p id="p1463581475612"><a name="p1463581475612"></a><a name="p1463581475612"></a>init-node-password</p>
+<tr id="row139533618480"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.1 "><p id="p93952366488"><a name="p93952366488"></a><a name="p93952366488"></a>ecs:performancetype</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p13635161495612"><a name="p13635161495612"></a><a name="p13635161495612"></a>String</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p1395163616489"><a name="p1395163616489"></a><a name="p1395163616489"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p11635181465614"><a name="p11635181465614"></a><a name="p11635181465614"></a>Init password of Node.</p>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p939533634810"><a name="p939533634810"></a><a name="p939533634810"></a>Type of the ECS specifications. This field does not exist if the node is a BMS.</p>
+</td>
+</tr>
+<tr id="row32006509581"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.1 "><p id="p221514508589"><a name="p221514508589"></a><a name="p221514508589"></a>orderID</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p1423216501586"><a name="p1423216501586"></a><a name="p1423216501586"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p1023295055817"><a name="p1023295055817"></a><a name="p1023295055817"></a>Order ID.</p>
+<div class="note" id="note177611525115611"><a name="note177611525115611"></a><a name="note177611525115611"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p47628253563"><a name="p47628253563"></a><a name="p47628253563"></a>This field is not supported for the current version.</p>
+</div></div>
+</td>
+</tr>
+<tr id="row82321750155816"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.1 "><p id="p10247165095818"><a name="p10247165095818"></a><a name="p10247165095818"></a>productID</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p20263115055810"><a name="p20263115055810"></a><a name="p20263115055810"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p726385013583"><a name="p726385013583"></a><a name="p726385013583"></a>Product ID.</p>
+<div class="note" id="note8489183214564"><a name="note8489183214564"></a><a name="note8489183214564"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p16489133275618"><a name="p16489133275618"></a><a name="p16489133275618"></a>This field is not supported for the current version.</p>
+</div></div>
+</td>
+</tr>
+<tr id="row45001520173"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.1 "><p id="p205019522175"><a name="p205019522175"></a><a name="p205019522175"></a>publicKey</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p95019526176"><a name="p95019526176"></a><a name="p95019526176"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p155061713154412"><a name="p155061713154412"></a><a name="p155061713154412"></a>Key pair used to log in to the node.</p>
+</td>
+</tr>
+<tr id="row920141615128"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.1 "><p id="p12202121671218"><a name="p12202121671218"></a><a name="p12202121671218"></a>maxPods</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p20203191618129"><a name="p20203191618129"></a><a name="p20203191618129"></a>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p720391621210"><a name="p720391621210"></a><a name="p720391621210"></a>Maximum number of pods on the node.</p>
+<div class="note" id="note1223324435610"><a name="note1223324435610"></a><a name="note1223324435610"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p223394485620"><a name="p223394485620"></a><a name="p223394485620"></a>This field is not supported for the current version.</p>
+</div></div>
+</td>
+</tr>
+<tr id="row926375016583"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.1 "><p id="p11263165015811"><a name="p11263165015811"></a><a name="p11263165015811"></a>periodType</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p2278350175817"><a name="p2278350175817"></a><a name="p2278350175817"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p1929416509587"><a name="p1929416509587"></a><a name="p1929416509587"></a>Purchase duration type, which can be:</p>
+<a name="ul172941750175820"></a><a name="ul172941750175820"></a><ul id="ul172941750175820"><li><strong id="b925413718215"><a name="b925413718215"></a><a name="b925413718215"></a>month</strong>: The unit of the validity period is month.</li><li><strong id="b614541272119"><a name="b614541272119"></a><a name="b614541272119"></a>year</strong>: The unit of the validity period is year.</li></ul>
+<div class="note" id="note123096507587"><a name="note123096507587"></a><a name="note123096507587"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p4549315135715"><a name="p4549315135715"></a><a name="p4549315135715"></a>This field is not supported for the current version.</p>
+</div></div>
+</td>
+</tr>
+<tr id="row1930975025819"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.1 "><p id="p13251450115816"><a name="p13251450115816"></a><a name="p13251450115816"></a>periodNum</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p11325155045815"><a name="p11325155045815"></a><a name="p11325155045815"></a>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p15341850115817"><a name="p15341850115817"></a><a name="p15341850115817"></a>Purchase duration, which can be:</p>
+<a name="ul1234145011581"></a><a name="ul1234145011581"></a><ul id="ul1234145011581"><li>If <strong id="b633683832119"><a name="b633683832119"></a><a name="b633683832119"></a>periodType</strong> is <strong id="b63381738192119"><a name="b63381738192119"></a><a name="b63381738192119"></a>month</strong>, the value ranges from <strong id="b333933816219"><a name="b333933816219"></a><a name="b333933816219"></a>1</strong> to <strong id="b18340338122119"><a name="b18340338122119"></a><a name="b18340338122119"></a>9</strong>.</li><li>If <strong id="b10872444172120"><a name="b10872444172120"></a><a name="b10872444172120"></a>periodType</strong> is <strong id="b168756442219"><a name="b168756442219"></a><a name="b168756442219"></a>year</strong>, the value is <strong id="b6875114412116"><a name="b6875114412116"></a><a name="b6875114412116"></a>1</strong>.</li></ul>
+<div class="note" id="note6357195015814"><a name="note6357195015814"></a><a name="note6357195015814"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p1183929185712"><a name="p1183929185712"></a><a name="p1183929185712"></a>This field is not supported for the current version.</p>
+</div></div>
+</td>
+</tr>
+<tr id="row2372650105820"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.1 "><p id="p18372135055818"><a name="p18372135055818"></a><a name="p18372135055818"></a>isAutoRenew</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p12388115018586"><a name="p12388115018586"></a><a name="p12388115018586"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p17388135013581"><a name="p17388135013581"></a><a name="p17388135013581"></a>Whether auto renewal is enabled.</p>
+<a name="ul15388105018589"></a><a name="ul15388105018589"></a><ul id="ul15388105018589"><li><strong id="b179869110220"><a name="b179869110220"></a><a name="b179869110220"></a>true</strong>: Indicates that auto renewal is enabled.</li><li><strong id="b27574712222"><a name="b27574712222"></a><a name="b27574712222"></a>false</strong>: Indicates that auto renewal is disabled.</li></ul>
+<div class="note" id="note840345012585"><a name="note840345012585"></a><a name="note840345012585"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p68256336579"><a name="p68256336579"></a><a name="p68256336579"></a>This field is not supported for the current version.</p>
+</div></div>
+</td>
+</tr>
+<tr id="row87462441454"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.1 "><p id="p67461344144510"><a name="p67461344144510"></a><a name="p67461344144510"></a>DockerLVMConfigOverride</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p id="p518515014467"><a name="p518515014467"></a><a name="p518515014467"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p2895446135813"><a name="p2895446135813"></a><a name="p2895446135813"></a>Docker data disk configurations. The following is the default configuration:</p>
+<pre class="screen" id="screen6185113310591"><a name="screen6185113310591"></a><a name="screen6185113310591"></a>"DockerLVMConfigOverride":"dockerThinpool=vgpaas/90%VG;kubernetesLV=vgpaas/10%VG;diskType=evs;lvType=linear"</pre>
+<p id="p20711135918501"><a name="p20711135918501"></a><a name="p20711135918501"></a>The configuration contains the following fields:</p>
+<a name="ul1955510468516"></a><a name="ul1955510468516"></a><ul id="ul1955510468516"><li><strong id="b1309461884"><a name="b1309461884"></a><a name="b1309461884"></a>userLV</strong>: size of the user space, for example: <strong id="b1958756615"><a name="b1958756615"></a><a name="b1958756615"></a>vgpaas/20%VG</strong>.</li><li><strong id="b427908317"><a name="b427908317"></a><a name="b427908317"></a>userPath</strong>: mount path of the user space, for example: <strong id="b1927922394"><a name="b1927922394"></a><a name="b1927922394"></a>/home/wqt-test</strong>.</li><li><strong id="b125978782"><a name="b125978782"></a><a name="b125978782"></a>diskType</strong>: disk type. Currently, only the <strong id="b871320377"><a name="b871320377"></a><a name="b871320377"></a>evs</strong>, <strong id="b691273661"><a name="b691273661"></a><a name="b691273661"></a>hdd</strong>, and <strong id="b870673055"><a name="b870673055"></a><a name="b870673055"></a>ssd</strong> are supported.</li><li><strong id="b1582687309"><a name="b1582687309"></a><a name="b1582687309"></a>lvType</strong>: type of a logic volume. Currently, the value can be <strong id="b1741532556"><a name="b1741532556"></a><a name="b1741532556"></a>linear</strong> or <strong id="b1583349201"><a name="b1583349201"></a><a name="b1583349201"></a>striped</strong>.</li><li><strong id="b1483352010557"><a name="b1483352010557"></a><a name="b1483352010557"></a>dockerThinpool</strong>: Docker disk space, for example: <strong id="b88349209554"><a name="b88349209554"></a><a name="b88349209554"></a>vgpaas/60%VG</strong>.</li><li><strong id="b10633424175519"><a name="b10633424175519"></a><a name="b10633424175519"></a>kubernetesLV</strong>: kubelet size, for example: <strong id="b26335248551"><a name="b26335248551"></a><a name="b26335248551"></a>vgpaas/20%VG</strong>.</li></ul>
+<div class="note" id="note1432154219573"><a name="note1432154219573"></a><a name="note1432154219573"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p1432164255713"><a name="p1432164255713"></a><a name="p1432164255713"></a>This field is not supported for the current version.</p>
+</div></div>
 </td>
 </tr>
 </tbody>
@@ -1056,9 +1137,12 @@ POST /api/v3/projects/\{project\_id\}/clusters/\{cluster\_id\}/nodes
             }
         },
         "count": 2,
-        "extendParam": { 
+        "extendParam": {
+            "chargingMode": 0,
             "ecs:performancetype": "normal",
-            "init-node-password": ""
+            "init-node-password": "",
+            "orderID": "",
+            "productID": ""
         }
     },
     "status": {

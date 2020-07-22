@@ -10,6 +10,8 @@ A  node  is a virtual or physical machine that provides computing resources. Suf
 
 -   **[Synchronizing Node Data](synchronizing-node-data.md)**  
 
+-   **[Resetting a Node](resetting-a-node.md)**  
+
 -   **[Managing Node Labels](managing-node-labels.md)**  
 You can add different labels to nodes and define different attributes for labels. By using these  node labels, you can quickly understand the characteristics of each node.
 -   **[Monitoring a Node](monitoring-a-node.md)**  

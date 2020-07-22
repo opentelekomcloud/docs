@@ -788,7 +788,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="aeb9abb483cfc4943a1d3eb4e4fd92e9c"><a name="aeb9abb483cfc4943a1d3eb4e4fd92e9c"></a><a name="aeb9abb483cfc4943a1d3eb4e4fd92e9c"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p id="a3f27537b0c5f43598e377734d8771bad"><a name="a3f27537b0c5f43598e377734d8771bad"></a><a name="a3f27537b0c5f43598e377734d8771bad"></a>Array of strings</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.3 "><p id="a3f27537b0c5f43598e377734d8771bad"><a name="a3f27537b0c5f43598e377734d8771bad"></a><a name="a3f27537b0c5f43598e377734d8771bad"></a><a href="#table416911513450">finalizers</a> object</p>
 </td>
 <td class="cellrowborder" valign="top" width="39%" headers="mcps1.2.5.1.4 "><p id="abd27c3d72bb04cc29f3b76476c8bb368"><a name="abd27c3d72bb04cc29f3b76476c8bb368"></a><a name="abd27c3d72bb04cc29f3b76476c8bb368"></a>Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed.</p>
 </td>
@@ -815,11 +815,22 @@
 </td>
 <td class="cellrowborder" valign="top" width="12.871287128712872%" headers="mcps1.2.5.1.3 "><p id="p787663812220"><a name="p787663812220"></a><a name="p787663812220"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="li14948310205911p0"><a name="li14948310205911p0"></a><a name="li14948310205911p0"></a>Storage type.</p>
+<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p1130738192213"><a name="p1130738192213"></a><a name="p1130738192213"></a>Name of the storage class used by CCE FlexVolume fuxi driver for clusters earlier than v1.15 (v1.9/v1.11/v1.13).</p>
+<div class="note" id="note15382851916"><a name="note15382851916"></a><a name="note15382851916"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p157093191228"><a name="p157093191228"></a><a name="p157093191228"></a>For CCE CSI Everest in clusters of v1.15 or later, this annotation is duplicated following Kubernetes usage, and replaced by <strong id="b1870914199229"><a name="b1870914199229"></a><a name="b1870914199229"></a>pvc/pv.spec.storageClassName</strong>.</p>
+</div></div>
 <a name="ul19422182211513"></a><a name="ul19422182211513"></a><ul id="ul19422182211513"><li>EVS<p id="p1411210591268"><a name="p1411210591268"></a><a name="p1411210591268"></a>Currently, EVS disks of high I/O (SAS disks), ultra-high I/O (SSD disks), and common I/O (SATA disks) types are supported.</p>
 </li><li>SFS<p id="p882586122712"><a name="p882586122712"></a><a name="p882586122712"></a>Currently, SFS file systems compatible with the standard file protocol (nfs-rw) are supported.</p>
 </li><li>SFS Turbo<p id="p1057518281122"><a name="p1057518281122"></a><a name="p1057518281122"></a>Currently, efs-standard and efs-performance are supported.</p>
 </li></ul>
+</td>
+</tr>
+<tr id="row3366134213477"><td class="cellrowborder" valign="top" width="31.683168316831683%" headers="mcps1.2.5.1.1 "><p id="p7366104213473"><a name="p7366104213473"></a><a name="p7366104213473"></a>everest.io/disk-volume-type</p>
+</td>
+<td class="cellrowborder" valign="top" width="10.891089108910892%" headers="mcps1.2.5.1.2 "><p id="p6366124214477"><a name="p6366124214477"></a><a name="p6366124214477"></a>Yes</p>
+</td>
+<td class="cellrowborder" valign="top" width="12.871287128712872%" headers="mcps1.2.5.1.3 "><p id="p19366174264718"><a name="p19366174264718"></a><a name="p19366174264718"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p183671642164716"><a name="p183671642164716"></a><a name="p183671642164716"></a>EVS disk type, high I/O (SAS), ultra-high I/O (SSD), or common I/O (SATA).</p>
 </td>
 </tr>
 <tr id="row11190183213217"><td class="cellrowborder" valign="top" width="31.683168316831683%" headers="mcps1.2.5.1.1 "><p id="p319114327321"><a name="p319114327321"></a><a name="p319114327321"></a>volume.beta.kubernetes.io/storage-provisioner</p>
@@ -828,7 +839,9 @@
 </td>
 <td class="cellrowborder" valign="top" width="12.871287128712872%" headers="mcps1.2.5.1.3 "><p id="p574619495197"><a name="p574619495197"></a><a name="p574619495197"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p144811036162310"><a name="p144811036162310"></a><a name="p144811036162310"></a>Mount path.</p>
+<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p13825153632219"><a name="p13825153632219"></a><a name="p13825153632219"></a>Name of the storage provisioner used by CCE FlexVolume fuxi driver for clusters earlier than v1.15 (v1.9/v1.11/v1.13).</p>
+<div class="note" id="note2181229152019"><a name="note2181229152019"></a><a name="note2181229152019"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p964515211222"><a name="p964515211222"></a><a name="p964515211222"></a>For PVCs related to CCE CSI Everest in clusters of v1.15 or later, the value of this parameter is <strong id="b264518525221"><a name="b264518525221"></a><a name="b264518525221"></a>everest-csi-provisioner</strong>.</p>
+</div></div>
 <a name="ul17715537161813"></a><a name="ul17715537161813"></a><ul id="ul17715537161813"><li>If the storage type is <strong id="b588670192719"><a name="b588670192719"></a><a name="b588670192719"></a>EVS</strong>, set this parameter to <strong id="b595119511274"><a name="b595119511274"></a><a name="b595119511274"></a>flexvolume-huawei.com/fuxivol</strong>.</li><li>If the storage type is <strong id="b12738194842915"><a name="b12738194842915"></a><a name="b12738194842915"></a>SFS</strong>, set this parameter to <strong id="b679720132301"><a name="b679720132301"></a><a name="b679720132301"></a>flexvolume-huawei.com/fuxinfs</strong>.</li><li>If the storage type is <strong id="b89581450131411"><a name="b89581450131411"></a><a name="b89581450131411"></a>SFS Turbo</strong>, set this parameter to <strong id="b18734436121315"><a name="b18734436121315"></a><a name="b18734436121315"></a>flexvolume-huawei.com/fuxiefs</strong>.</li></ul>
 </td>
 </tr>
@@ -838,9 +851,20 @@
 </td>
 <td class="cellrowborder" valign="top" width="12.871287128712872%" headers="mcps1.2.5.1.3 "><p id="p73793720241"><a name="p73793720241"></a><a name="p73793720241"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p1437916722418"><a name="p1437916722418"></a><a name="p1437916722418"></a>Encryption key ID.</p>
+<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p1797462611237"><a name="p1797462611237"></a><a name="p1797462611237"></a>Encryption key ID used by CCE FlexVolume fuxi driver for clusters v1.13.</p>
 <p id="p2030273515818"><a name="p2030273515818"></a><a name="p2030273515818"></a>This parameter is required only when the storage type is SFS or EVS and an encrypted volume needs to be created.</p>
 <p id="p58662034154910"><a name="p58662034154910"></a><a name="p58662034154910"></a>You can obtain the key ID from the Security Console by choosing <strong id="b44510264110"><a name="b44510264110"></a><a name="b44510264110"></a>Data Encryption Workshop</strong> &gt; <strong id="b6498521219"><a name="b6498521219"></a><a name="b6498521219"></a>Key Management Service</strong>.</p>
+</td>
+</tr>
+<tr id="row1990129122215"><td class="cellrowborder" valign="top" width="31.683168316831683%" headers="mcps1.2.5.1.1 "><p id="p12911797226"><a name="p12911797226"></a><a name="p12911797226"></a>everest.io/crypt-key-id</p>
+</td>
+<td class="cellrowborder" valign="top" width="10.891089108910892%" headers="mcps1.2.5.1.2 "><p id="p1391694223"><a name="p1391694223"></a><a name="p1391694223"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="12.871287128712872%" headers="mcps1.2.5.1.3 "><p id="p11916942217"><a name="p11916942217"></a><a name="p11916942217"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p16753164862319"><a name="p16753164862319"></a><a name="p16753164862319"></a>Encryption key ID used by CCE CSI Everest in clusters of v1.15 or later.</p>
+<p id="p18493153022220"><a name="p18493153022220"></a><a name="p18493153022220"></a>This parameter is required only when the storage type is SFS or EVS and an encrypted volume needs to be created.</p>
+<p id="p1049333011221"><a name="p1049333011221"></a><a name="p1049333011221"></a>You can obtain the key ID from the Security Console by choosing <strong id="b1249483019228"><a name="b1249483019228"></a><a name="b1249483019228"></a>Data Encryption Workshop</strong> &gt; <strong id="b1549423011222"><a name="b1549423011222"></a><a name="b1549423011222"></a>Key Management Service</strong>.</p>
 </td>
 </tr>
 <tr id="row598219115270"><td class="cellrowborder" valign="top" width="31.683168316831683%" headers="mcps1.2.5.1.1 "><p id="p2098514111275"><a name="p2098514111275"></a><a name="p2098514111275"></a>paas.storage.io/cryptAlias</p>
@@ -849,9 +873,20 @@
 </td>
 <td class="cellrowborder" valign="top" width="12.871287128712872%" headers="mcps1.2.5.1.3 "><p id="p17985718273"><a name="p17985718273"></a><a name="p17985718273"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p886155020327"><a name="p886155020327"></a><a name="p886155020327"></a>Encryption key alias.</p>
+<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p15422024142319"><a name="p15422024142319"></a><a name="p15422024142319"></a>Encryption key alias used by CCE FlexVolume fuxi driver for clusters v1.13.</p>
 <p id="p103869211384"><a name="p103869211384"></a><a name="p103869211384"></a>This parameter is required only when the storage type is SFS and an encrypted volume needs to be created.</p>
 <p id="p1098581182714"><a name="p1098581182714"></a><a name="p1098581182714"></a>You can obtain the key alias from the Security Console by choosing <strong id="b348044019117"><a name="b348044019117"></a><a name="b348044019117"></a>Data Encryption Workshop</strong> &gt; <strong id="b164811640519"><a name="b164811640519"></a><a name="b164811640519"></a>Key Management Service</strong>.</p>
+</td>
+</tr>
+<tr id="row162321411231"><td class="cellrowborder" valign="top" width="31.683168316831683%" headers="mcps1.2.5.1.1 "><p id="p323311417239"><a name="p323311417239"></a><a name="p323311417239"></a>everest.io/crypt-alias</p>
+</td>
+<td class="cellrowborder" valign="top" width="10.891089108910892%" headers="mcps1.2.5.1.2 "><p id="p182335416235"><a name="p182335416235"></a><a name="p182335416235"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="12.871287128712872%" headers="mcps1.2.5.1.3 "><p id="p6233104119236"><a name="p6233104119236"></a><a name="p6233104119236"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p3952728122418"><a name="p3952728122418"></a><a name="p3952728122418"></a>Encryption key alias used by CCE CSI Everest in clusters of v1.15 or later.</p>
+<p id="p8812258182312"><a name="p8812258182312"></a><a name="p8812258182312"></a>This parameter is required only when the storage type is SFS and an encrypted volume needs to be created.</p>
+<p id="p12812175822313"><a name="p12812175822313"></a><a name="p12812175822313"></a>You can obtain the key alias from the Security Console by choosing <strong id="b1281214588237"><a name="b1281214588237"></a><a name="b1281214588237"></a>Data Encryption Workshop</strong> &gt; <strong id="b6812175852315"><a name="b6812175852315"></a><a name="b6812175852315"></a>Key Management Service</strong>.</p>
 </td>
 </tr>
 <tr id="row1527111241288"><td class="cellrowborder" valign="top" width="31.683168316831683%" headers="mcps1.2.5.1.1 "><p id="p19271924152818"><a name="p19271924152818"></a><a name="p19271924152818"></a>paas.storage.io/cryptDomainId</p>
@@ -860,8 +895,36 @@
 </td>
 <td class="cellrowborder" valign="top" width="12.871287128712872%" headers="mcps1.2.5.1.3 "><p id="p42712246289"><a name="p42712246289"></a><a name="p42712246289"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p1218765918331"><a name="p1218765918331"></a><a name="p1218765918331"></a>Domain ID of a tenant.</p>
+<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p995324482417"><a name="p995324482417"></a><a name="p995324482417"></a>Domain ID of a tenant used by CCE FlexVolume fuxi driver for clusters v1.13.</p>
 <p id="p136704251079"><a name="p136704251079"></a><a name="p136704251079"></a>This parameter is required only when the storage type is SFS and an encrypted volume needs to be created.</p>
+</td>
+</tr>
+<tr id="row1968413179259"><td class="cellrowborder" valign="top" width="31.683168316831683%" headers="mcps1.2.5.1.1 "><p id="p368471772514"><a name="p368471772514"></a><a name="p368471772514"></a>everest.io/crypt-domain-id</p>
+</td>
+<td class="cellrowborder" valign="top" width="10.891089108910892%" headers="mcps1.2.5.1.2 "><p id="p66851717152518"><a name="p66851717152518"></a><a name="p66851717152518"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="12.871287128712872%" headers="mcps1.2.5.1.3 "><p id="p12685121711257"><a name="p12685121711257"></a><a name="p12685121711257"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p1747514329259"><a name="p1747514329259"></a><a name="p1747514329259"></a>Domain ID of a tenant used by CCE CSI Everest in clusters of v1.15 or later.</p>
+<p id="p204751432122512"><a name="p204751432122512"></a><a name="p204751432122512"></a>This parameter is required only when the storage type is SFS and an encrypted volume needs to be created.</p>
+</td>
+</tr>
+<tr id="row132571044074"><td class="cellrowborder" valign="top" width="31.683168316831683%" headers="mcps1.2.5.1.1 "><p id="p625820448713"><a name="p625820448713"></a><a name="p625820448713"></a>pv.kubernetes.io/namespace</p>
+</td>
+<td class="cellrowborder" valign="top" width="10.891089108910892%" headers="mcps1.2.5.1.2 "><p id="p82587446713"><a name="p82587446713"></a><a name="p82587446713"></a>Yes</p>
+</td>
+<td class="cellrowborder" valign="top" width="12.871287128712872%" headers="mcps1.2.5.1.3 "><p id="p2258114417715"><a name="p2258114417715"></a><a name="p2258114417715"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p125816441772"><a name="p125816441772"></a><a name="p125816441772"></a>This annotation is add pv namespace to volume for binding. For private cluster, this value is "default".</p>
+</td>
+</tr>
+<tr id="row67915420710"><td class="cellrowborder" valign="top" width="31.683168316831683%" headers="mcps1.2.5.1.1 "><p id="p18801142574"><a name="p18801142574"></a><a name="p18801142574"></a>pv.kubernetes.io/provisioned-by</p>
+</td>
+<td class="cellrowborder" valign="top" width="10.891089108910892%" headers="mcps1.2.5.1.2 "><p id="p1980184213712"><a name="p1980184213712"></a><a name="p1980184213712"></a>Yes</p>
+</td>
+<td class="cellrowborder" valign="top" width="12.871287128712872%" headers="mcps1.2.5.1.3 "><p id="p158004215712"><a name="p158004215712"></a><a name="p158004215712"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.554455445544555%" headers="mcps1.2.5.1.4 "><p id="p180742379"><a name="p180742379"></a><a name="p180742379"></a>This annotation is added to a PV that has been dynamically provisioned by Kubernetes. Its value is name of volume plugin that created the volume. For Everest, this value is "everest-csi-provisioner".</p>
 </td>
 </tr>
 </tbody>
@@ -1231,7 +1294,32 @@
 </tbody>
 </table>
 
-**Table  20**  Data structure of the spec field
+**Table  20**  Data structure of the finalizers field
+
+<a name="table416911513450"></a>
+<table><thead align="left"><tr id="row71696510454"><th class="cellrowborder" valign="top" width="23.23%" id="mcps1.2.5.1.1"><p id="p317019554512"><a name="p317019554512"></a><a name="p317019554512"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="17.75%" id="mcps1.2.5.1.2"><p id="p91701518453"><a name="p91701518453"></a><a name="p91701518453"></a><span id="ph7170258452"><a name="ph7170258452"></a><a name="ph7170258452"></a>Mandatory</span></p>
+</th>
+<th class="cellrowborder" valign="top" width="19.74%" id="mcps1.2.5.1.3"><p id="p131707594511"><a name="p131707594511"></a><a name="p131707594511"></a>Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="39.28%" id="mcps1.2.5.1.4"><p id="p7170958457"><a name="p7170958457"></a><a name="p7170958457"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1617018510451"><td class="cellrowborder" valign="top" width="23.23%" headers="mcps1.2.5.1.1 "><p id="p132891623174511"><a name="p132891623174511"></a><a name="p132891623174511"></a>everest-csi-attacher/disk-csi-everest-io</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.75%" headers="mcps1.2.5.1.2 "><p id="p928822354515"><a name="p928822354515"></a><a name="p928822354515"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.74%" headers="mcps1.2.5.1.3 "><p id="p19286182344516"><a name="p19286182344516"></a><a name="p19286182344516"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.28%" headers="mcps1.2.5.1.4 "><p id="p928316231459"><a name="p928316231459"></a><a name="p928316231459"></a>This parameter is required when the parameter storageClassName is "csi-disk", once the pv resource is used by pod, the controller will add this finalizer to avoid being deleted.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  21**  Data structure of the spec field
 
 <a name="en-us_topic_0079614925_table27155224"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row61263992"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p63436324"><a name="en-us_topic_0079614925_p63436324"></a><a name="en-us_topic_0079614925_p63436324"></a>Parameter</p>
@@ -1285,7 +1373,7 @@
 </tbody>
 </table>
 
-**Table  21**  Data structure of the status field
+**Table  22**  Data structure of the status field
 
 <a name="en-us_topic_0079614925_table43070429"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row14117289"><th class="cellrowborder" valign="top" width="21%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p2649792"><a name="en-us_topic_0079614925_p2649792"></a><a name="en-us_topic_0079614925_p2649792"></a>Parameter</p>
@@ -1355,7 +1443,7 @@
 </tbody>
 </table>
 
-**Table  22**  Data structure of the template field
+**Table  23**  Data structure of the template field
 
 <a name="en-us_topic_0079614925_table52089545"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row34234904"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p21563865"><a name="en-us_topic_0079614925_p21563865"></a><a name="en-us_topic_0079614925_p21563865"></a>Parameter</p>
@@ -1389,7 +1477,7 @@
 </tbody>
 </table>
 
-**Table  23**  Data structure of the conditions field
+**Table  24**  Data structure of the conditions field
 
 <a name="t98ff3e5ee20d488b9906bd31144724f3"></a>
 <table><thead align="left"><tr id="r82e80a6190d64dc5b21dfb926fc15fe0"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="a67b2c43eeb2141dead9b6d457f96ff3a"><a name="a67b2c43eeb2141dead9b6d457f96ff3a"></a><a name="a67b2c43eeb2141dead9b6d457f96ff3a"></a>Parameter</p>
@@ -1450,7 +1538,7 @@
 </tbody>
 </table>
 
-**Table  24**  Data structure of the spec field
+**Table  25**  Data structure of the spec field
 
 <a name="en-us_topic_0079614925_table66152725"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row27914196"><th class="cellrowborder" valign="top" width="21%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p46457383"><a name="en-us_topic_0079614925_p46457383"></a><a name="en-us_topic_0079614925_p46457383"></a>Parameter</p>
@@ -1686,7 +1774,7 @@
 </tbody>
 </table>
 
-**Table  25**  Data structure of the volumes field
+**Table  26**  Data structure of the volumes field
 
 <a name="en-us_topic_0079614925_table58503618"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row57196722"><th class="cellrowborder" valign="top" width="21%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p2422875"><a name="en-us_topic_0079614925_p2422875"></a><a name="en-us_topic_0079614925_p2422875"></a>Parameter</p>
@@ -1848,7 +1936,7 @@
 </tbody>
 </table>
 
-**Table  26**  Data structure of the containers field
+**Table  27**  Data structure of the containers field
 
 <a name="en-us_topic_0079614925_table56770522"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row44830087"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p7358467"><a name="en-us_topic_0079614925_p7358467"></a><a name="en-us_topic_0079614925_p7358467"></a>Parameter</p>
@@ -2039,7 +2127,7 @@
 </tbody>
 </table>
 
-**Table  27**  Data structure of the securityContext field
+**Table  28**  Data structure of the securityContext field
 
 <a name="en-us_topic_0079614925_table41172652"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row48603320"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p44554846"><a name="en-us_topic_0079614925_p44554846"></a><a name="en-us_topic_0079614925_p44554846"></a>Parameter</p>
@@ -2102,7 +2190,7 @@
 </tbody>
 </table>
 
-**Table  28**  Data structure of the imagePullSecrets field
+**Table  29**  Data structure of the imagePullSecrets field
 
 <a name="en-us_topic_0079614925_table35009555"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row58826021"><th class="cellrowborder" valign="top" width="21%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p178395"><a name="en-us_topic_0079614925_p178395"></a><a name="en-us_topic_0079614925_p178395"></a>Parameter</p>
@@ -2129,7 +2217,7 @@
 </tbody>
 </table>
 
-**Table  29**  Data structure of the hostPath field
+**Table  30**  Data structure of the hostPath field
 
 <a name="en-us_topic_0079614925_table46650543"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row8100078"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p52126542"><a name="en-us_topic_0079614925_p52126542"></a><a name="en-us_topic_0079614925_p52126542"></a>Parameter</p>
@@ -2154,7 +2242,7 @@
 </tbody>
 </table>
 
-**Table  30**  Data structure of the emptyDir field
+**Table  31**  Data structure of the emptyDir field
 
 <a name="en-us_topic_0079614925_table17201705"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row61327951"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p1508097"><a name="en-us_topic_0079614925_p1508097"></a><a name="en-us_topic_0079614925_p1508097"></a>Parameter</p>
@@ -2179,7 +2267,7 @@
 </tbody>
 </table>
 
-**Table  31**  Data structure of the gitRepo field
+**Table  32**  Data structure of the gitRepo field
 
 <a name="en-us_topic_0079614925_table57794333"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row4899555"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p61319646"><a name="en-us_topic_0079614925_p61319646"></a><a name="en-us_topic_0079614925_p61319646"></a>Parameter</p>
@@ -2213,7 +2301,7 @@
 </tbody>
 </table>
 
-**Table  32**  Data structure of the secret field
+**Table  33**  Data structure of the secret field
 
 <a name="en-us_topic_0079614925_table50386953"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row35099489"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p24486356"><a name="en-us_topic_0079614925_p24486356"></a><a name="en-us_topic_0079614925_p24486356"></a>Parameter</p>
@@ -2247,7 +2335,7 @@
 </tbody>
 </table>
 
-**Table  33**  Data structure of the nfs field
+**Table  34**  Data structure of the nfs field
 
 <a name="en-us_topic_0079614925_table50829401"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row12387033"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p63825615"><a name="en-us_topic_0079614925_p63825615"></a><a name="en-us_topic_0079614925_p63825615"></a>Parameter</p>
@@ -2293,7 +2381,7 @@
 </tbody>
 </table>
 
-**Table  34**  Data structure of the iscsi field
+**Table  35**  Data structure of the iscsi field
 
 <a name="en-us_topic_0079614925_table54811429"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row29879508"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p4321123"><a name="en-us_topic_0079614925_p4321123"></a><a name="en-us_topic_0079614925_p4321123"></a>Parameter</p>
@@ -2360,7 +2448,7 @@
 </tbody>
 </table>
 
-**Table  35**  Data structure of the glusterfs field
+**Table  36**  Data structure of the glusterfs field
 
 <a name="en-us_topic_0079614925_table23540813"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row12176400"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p46764328"><a name="en-us_topic_0079614925_p46764328"></a><a name="en-us_topic_0079614925_p46764328"></a>Parameter</p>
@@ -2406,7 +2494,7 @@
 </tbody>
 </table>
 
-**Table  36**  Data structure of the persistentVolumeClaim field
+**Table  37**  Data structure of the persistentVolumeClaim field
 
 <a name="en-us_topic_0079614925_table10540732"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row33095992"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p63529691"><a name="en-us_topic_0079614925_p63529691"></a><a name="en-us_topic_0079614925_p63529691"></a>Parameter</p>
@@ -2443,7 +2531,7 @@
 </tbody>
 </table>
 
-**Table  37**  Data structure of the rbd field
+**Table  38**  Data structure of the rbd field
 
 <a name="en-us_topic_0079614925_table27757730"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row24590590"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p45680779"><a name="en-us_topic_0079614925_p45680779"></a><a name="en-us_topic_0079614925_p45680779"></a>Parameter</p>
@@ -2537,7 +2625,7 @@
 </tbody>
 </table>
 
-**Table  38**  Data structure of the cinder field
+**Table  39**  Data structure of the cinder field
 
 <a name="en-us_topic_0079614925_table48492984"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row55464548"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p63443418"><a name="en-us_topic_0079614925_p63443418"></a><a name="en-us_topic_0079614925_p63443418"></a>Parameter</p>
@@ -2583,7 +2671,7 @@
 </tbody>
 </table>
 
-**Table  39**  Data structure of the cephfs field
+**Table  40**  Data structure of the cephfs field
 
 <a name="en-us_topic_0079614925_table33783680"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row28078335"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p59752688"><a name="en-us_topic_0079614925_p59752688"></a><a name="en-us_topic_0079614925_p59752688"></a>Parameter</p>
@@ -2646,7 +2734,7 @@
 </tbody>
 </table>
 
-**Table  40**  Data structure of the flocker field
+**Table  41**  Data structure of the flocker field
 
 <a name="en-us_topic_0079614925_table35617665"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row35236445"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p35579835"><a name="en-us_topic_0079614925_p35579835"></a><a name="en-us_topic_0079614925_p35579835"></a>Parameter</p>
@@ -2671,7 +2759,7 @@
 </tbody>
 </table>
 
-**Table  41**  Data structure of the downwardAPI field
+**Table  42**  Data structure of the downwardAPI field
 
 <a name="en-us_topic_0079614925_table52123534"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row55405230"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p58638646"><a name="en-us_topic_0079614925_p58638646"></a><a name="en-us_topic_0079614925_p58638646"></a>Parameter</p>
@@ -2696,7 +2784,7 @@
 </tbody>
 </table>
 
-**Table  42**  Data structure of the fc field
+**Table  43**  Data structure of the fc field
 
 <a name="en-us_topic_0079614925_table66458622"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row12630295"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p16420978"><a name="en-us_topic_0079614925_p16420978"></a><a name="en-us_topic_0079614925_p16420978"></a>Parameter</p>
@@ -2750,7 +2838,7 @@
 </tbody>
 </table>
 
-**Table  43**  Data structure of the vsphereVolume field
+**Table  44**  Data structure of the vsphereVolume field
 
 <a name="tc02fbcfb38ff4878840607d26f7fa07f"></a>
 <table><thead align="left"><tr id="r52877c6bc9fe49f7a9f492ac13d0a0aa"><th class="cellrowborder" valign="top" width="22%" id="mcps1.2.5.1.1"><p id="a0160f486d1f44040bd292c423f375e01"><a name="a0160f486d1f44040bd292c423f375e01"></a><a name="a0160f486d1f44040bd292c423f375e01"></a>Parameter</p>
@@ -2785,7 +2873,7 @@
 </tbody>
 </table>
 
-**Table  44**  Data structure of the items\(KeyToPath\) field
+**Table  45**  Data structure of the items\(KeyToPath\) field
 
 <a name="t3bb9f212f8704c9d8a1ba70f22f10b61"></a>
 <table><thead align="left"><tr id="r66ba149c30d44280ac3a7663823a83e1"><th class="cellrowborder" valign="top" width="21%" id="mcps1.2.5.1.1"><p id="a4fa8b98f940d422d81224db294204ea4"><a name="a4fa8b98f940d422d81224db294204ea4"></a><a name="a4fa8b98f940d422d81224db294204ea4"></a>Parameter</p>
@@ -2819,7 +2907,7 @@
 </tbody>
 </table>
 
-**Table  45**  Data structure of the ports field
+**Table  46**  Data structure of the ports field
 
 <a name="en-us_topic_0079614925_table61256692"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row65668446"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p17543884"><a name="en-us_topic_0079614925_p17543884"></a><a name="en-us_topic_0079614925_p17543884"></a>Parameter</p>
@@ -2887,7 +2975,7 @@
 </tbody>
 </table>
 
-**Table  46**  Data structure of the env field
+**Table  47**  Data structure of the env field
 
 <a name="en-us_topic_0079614925_table14439320"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row30424881"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p48496300"><a name="en-us_topic_0079614925_p48496300"></a><a name="en-us_topic_0079614925_p48496300"></a>Parameter</p>
@@ -2930,7 +3018,7 @@
 </tbody>
 </table>
 
-**Table  47**  Data structure of the resources field
+**Table  48**  Data structure of the resources field
 
 <a name="tadcecbe6eebe4b1190e9630dce396f2c"></a>
 <table><thead align="left"><tr id="rca2b205afa944714a2f3079d3a4945f1"><th class="cellrowborder" valign="top" width="21.240000000000002%" id="mcps1.2.5.1.1"><p id="a5aa84a05ae1f45edbfc7df8ec0f4c5f2"><a name="a5aa84a05ae1f45edbfc7df8ec0f4c5f2"></a><a name="a5aa84a05ae1f45edbfc7df8ec0f4c5f2"></a>Parameter</p>
@@ -2964,7 +3052,7 @@
 </tbody>
 </table>
 
-**Table  48**  Data structure of the volumeMounts field
+**Table  49**  Data structure of the volumeMounts field
 
 <a name="en-us_topic_0079614925_table62845019"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row37334299"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p4179377"><a name="en-us_topic_0079614925_p4179377"></a><a name="en-us_topic_0079614925_p4179377"></a>Parameter</p>
@@ -3022,7 +3110,7 @@
 </tbody>
 </table>
 
-**Table  49**  Data structure of the livenessProbe field
+**Table  50**  Data structure of the livenessProbe field
 
 <a name="en-us_topic_0079614925_table1046103"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row37955333"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p54483095"><a name="en-us_topic_0079614925_p54483095"></a><a name="en-us_topic_0079614925_p54483095"></a>Parameter</p>
@@ -3119,7 +3207,7 @@
 </tbody>
 </table>
 
-**Table  50**  Data structure of the lifecycle field
+**Table  51**  Data structure of the lifecycle field
 
 <a name="en-us_topic_0079614925_table28734262"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row1362691"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p43269122"><a name="en-us_topic_0079614925_p43269122"></a><a name="en-us_topic_0079614925_p43269122"></a>Parameter</p>
@@ -3153,7 +3241,7 @@
 </tbody>
 </table>
 
-**Table  51**  Data structure of the securityContext field
+**Table  52**  Data structure of the securityContext field
 
 <a name="en-us_topic_0079614925_table57281770"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row13515039"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p20976384"><a name="en-us_topic_0079614925_p20976384"></a><a name="en-us_topic_0079614925_p20976384"></a>Parameter</p>
@@ -3219,7 +3307,7 @@
 </tbody>
 </table>
 
-**Table  52**  Data structure of the seLinuxOptions field
+**Table  53**  Data structure of the seLinuxOptions field
 
 <a name="en-us_topic_0079614925_table45773889"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row8520399"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p19063717"><a name="en-us_topic_0079614925_p19063717"></a><a name="en-us_topic_0079614925_p19063717"></a>Parameter</p>
@@ -3271,7 +3359,7 @@
 </tbody>
 </table>
 
-**Table  53**  Data structure of the items field
+**Table  54**  Data structure of the items field
 
 <a name="en-us_topic_0079614925_table9311818"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row42299649"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p3719529"><a name="en-us_topic_0079614925_p3719529"></a><a name="en-us_topic_0079614925_p3719529"></a>Parameter</p>
@@ -3314,7 +3402,7 @@
 </tbody>
 </table>
 
-**Table  54**  Data structure of the valueFrom field
+**Table  55**  Data structure of the valueFrom field
 
 <a name="en-us_topic_0079614925_table16697504"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row24765833"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p59875445"><a name="en-us_topic_0079614925_p59875445"></a><a name="en-us_topic_0079614925_p59875445"></a>Parameter</p>
@@ -3348,7 +3436,7 @@
 </tbody>
 </table>
 
-**Table  55**  Data structure of the exec field
+**Table  56**  Data structure of the exec field
 
 <a name="en-us_topic_0079614925_table16059811"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row48992079"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p8935494"><a name="en-us_topic_0079614925_p8935494"></a><a name="en-us_topic_0079614925_p8935494"></a>Parameter</p>
@@ -3373,7 +3461,7 @@
 </tbody>
 </table>
 
-**Table  56**  Data structure of the httpGet field
+**Table  57**  Data structure of the httpGet field
 
 <a name="en-us_topic_0079614925_table10320572"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row4999822"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p2332471"><a name="en-us_topic_0079614925_p2332471"></a><a name="en-us_topic_0079614925_p2332471"></a>Parameter</p>
@@ -3425,7 +3513,7 @@
 </tbody>
 </table>
 
-**Table  57**  Data structure of the tcpSocket field
+**Table  58**  Data structure of the tcpSocket field
 
 <a name="en-us_topic_0079614925_table25776284"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row66859210"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p46886909"><a name="en-us_topic_0079614925_p46886909"></a><a name="en-us_topic_0079614925_p46886909"></a>Parameter</p>
@@ -3450,7 +3538,7 @@
 </tbody>
 </table>
 
-**Table  58**  Data structure of the postStart/preStop field
+**Table  59**  Data structure of the postStart/preStop field
 
 <a name="en-us_topic_0079614925_table30659964"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row10134631"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p15598744"><a name="en-us_topic_0079614925_p15598744"></a><a name="en-us_topic_0079614925_p15598744"></a>Parameter</p>
@@ -3493,7 +3581,7 @@
 </tbody>
 </table>
 
-**Table  59**  Data structure of the capabilities field
+**Table  60**  Data structure of the capabilities field
 
 <a name="en-us_topic_0079614925_table7504221"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row41730377"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p24717373"><a name="en-us_topic_0079614925_p24717373"></a><a name="en-us_topic_0079614925_p24717373"></a>Parameter</p>
@@ -3527,7 +3615,7 @@
 </tbody>
 </table>
 
-**Table  60**  Data structure of the fieldRef field
+**Table  61**  Data structure of the fieldRef field
 
 <a name="en-us_topic_0079614925_table429128"></a>
 <table><thead align="left"><tr id="en-us_topic_0079614925_row11055947"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p23116495"><a name="en-us_topic_0079614925_p23116495"></a><a name="en-us_topic_0079614925_p23116495"></a>Parameter</p>
@@ -3561,7 +3649,7 @@
 </tbody>
 </table>
 
-**Table  61**  Data structure of the resourceFieldRef field
+**Table  62**  Data structure of the resourceFieldRef field
 
 <a name="t38f0ca2ab8d74dd98de023687b5cfcf1"></a>
 <table><thead align="left"><tr id="rb2e2bd06c721439d8dd768d6d908c47b"><th class="cellrowborder" valign="top" width="21%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p11644191375"><a name="en-us_topic_0079614925_p11644191375"></a><a name="en-us_topic_0079614925_p11644191375"></a>Parameter</p>
@@ -3604,7 +3692,7 @@
 </tbody>
 </table>
 
-**Table  62**  Data structure of the add field
+**Table  63**  Data structure of the add field
 
 <a name="t5d748156fbe2402fb321de0cf4f31ebf"></a>
 <table><thead align="left"><tr id="r257593795036407d965d416aa884a7db"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="a8f03184d215d4743ad1d2c3fb15bc4e5"><a name="a8f03184d215d4743ad1d2c3fb15bc4e5"></a><a name="a8f03184d215d4743ad1d2c3fb15bc4e5"></a>Parameter</p>
@@ -3648,7 +3736,7 @@
 </tbody>
 </table>
 
-**Table  63**  Data structure of the affinity field
+**Table  64**  Data structure of the affinity field
 
 <a name="tbfd18f2629c14251a5aa840fec915754"></a>
 <table><thead align="left"><tr id="rb748f91f331140f5b74d222e3f32e099"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p118843313481"><a name="en-us_topic_0079614925_p118843313481"></a><a name="en-us_topic_0079614925_p118843313481"></a>Parameter</p>
@@ -3691,7 +3779,7 @@
 </tbody>
 </table>
 
-**Table  64**  Data structure of the nodeAffinity field
+**Table  65**  Data structure of the nodeAffinity field
 
 <a name="t73c1a2f755cd4c26a308ffde4c9472d6"></a>
 <table><thead align="left"><tr id="ra48bff07e1d942c79061ae39b9777ecd"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="a6e48d82840294508b25ec65847cc6428"><a name="a6e48d82840294508b25ec65847cc6428"></a><a name="a6e48d82840294508b25ec65847cc6428"></a>Parameter</p>
@@ -3725,7 +3813,7 @@
 </tbody>
 </table>
 
-**Table  65**  Data structure of the podAffinity field
+**Table  66**  Data structure of the podAffinity field
 
 <a name="tdaa4038d2198465fbf27b65a84b0e82e"></a>
 <table><thead align="left"><tr id="r9bbcde01c63f41a38ed4a4257f82a713"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="a95dea0c35a4d49d4bd5e4196f1829176"><a name="a95dea0c35a4d49d4bd5e4196f1829176"></a><a name="a95dea0c35a4d49d4bd5e4196f1829176"></a>Parameter</p>
@@ -3759,7 +3847,7 @@
 </tbody>
 </table>
 
-**Table  66**  Data structure of the preferredDuringSchedulingIgnoredDuringExecution field
+**Table  67**  Data structure of the preferredDuringSchedulingIgnoredDuringExecution field
 
 <a name="t006ba8881ab94c2e959daa5be168b8c4"></a>
 <table><thead align="left"><tr id="r4fdeb44fa2c24168980d8cddb7fd15cf"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p175232027204"><a name="en-us_topic_0079614925_p175232027204"></a><a name="en-us_topic_0079614925_p175232027204"></a>Parameter</p>
@@ -3793,7 +3881,7 @@
 </tbody>
 </table>
 
-**Table  67**  Data structure of the requiredDuringSchedulingIgnoredDuringExecution field
+**Table  68**  Data structure of the requiredDuringSchedulingIgnoredDuringExecution field
 
 <a name="tc27eca87ee0b4a819ab6ee20720e2f45"></a>
 <table><thead align="left"><tr id="r17724e63485747e688e35ea015c95c82"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p270393619"><a name="en-us_topic_0079614925_p270393619"></a><a name="en-us_topic_0079614925_p270393619"></a>Parameter</p>
@@ -3818,7 +3906,7 @@
 </tbody>
 </table>
 
-**Table  68**  Data structure of the preference field
+**Table  69**  Data structure of the preference field
 
 <a name="t17a1b90b9b294b4eaa152585792e7617"></a>
 <table><thead align="left"><tr id="r5bbb6a8235f54c68a6ba9db473cc814c"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p74337247419"><a name="en-us_topic_0079614925_p74337247419"></a><a name="en-us_topic_0079614925_p74337247419"></a>Parameter</p>
@@ -3843,7 +3931,7 @@
 </tbody>
 </table>
 
-**Table  69**  Data structure of the matchExpressions field
+**Table  70**  Data structure of the matchExpressions field
 
 <a name="tc4580543ea4b466c8f9c319a6364992e"></a>
 <table><thead align="left"><tr id="rc54bcccbccb54e53ae558670571cabb2"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p174072251450"><a name="en-us_topic_0079614925_p174072251450"></a><a name="en-us_topic_0079614925_p174072251450"></a>Parameter</p>
@@ -3886,7 +3974,7 @@
 </tbody>
 </table>
 
-**Table  70**  Data structure of the preferredDuringSchedulingIgnoredDuringExecution field
+**Table  71**  Data structure of the preferredDuringSchedulingIgnoredDuringExecution field
 
 <a name="ta557c04db47245eea38937a835800ed8"></a>
 <table><thead align="left"><tr id="r8353ce2db34c401ea5a31e7414d67a5d"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="aed75934da88141ca946c9582e60eac60"><a name="aed75934da88141ca946c9582e60eac60"></a><a name="aed75934da88141ca946c9582e60eac60"></a>Parameter</p>
@@ -3920,7 +4008,7 @@
 </tbody>
 </table>
 
-**Table  71**  Data structure of the podAffinityTerm field
+**Table  72**  Data structure of the podAffinityTerm field
 
 <a name="t71c4d466f8914af8b2bdc715f3c17157"></a>
 <table><thead align="left"><tr id="rd47040bcdf6e4aa5b799c680c5941679"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="ace9b8936267c48e0af8dc212532f7023"><a name="ace9b8936267c48e0af8dc212532f7023"></a><a name="ace9b8936267c48e0af8dc212532f7023"></a>Parameter</p>
@@ -3963,7 +4051,7 @@
 </tbody>
 </table>
 
-**Table  72**  Data structure of the labelSelector field
+**Table  73**  Data structure of the labelSelector field
 
 <a name="t9761ecceafe2408fa4ada94298c2557d"></a>
 <table><thead align="left"><tr id="rbcf8d994b90541409134027c6ed59e6c"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p114616612152"><a name="en-us_topic_0079614925_p114616612152"></a><a name="en-us_topic_0079614925_p114616612152"></a>Parameter</p>
@@ -3997,7 +4085,7 @@
 </tbody>
 </table>
 
-**Table  73**  Data structure of the matchExpressions field
+**Table  74**  Data structure of the matchExpressions field
 
 <a name="t9151539b718d4fa8ab6783d827b85620"></a>
 <table><thead align="left"><tr id="r9fe86d14ab414aa4a737903d199b7554"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="abf5ff718b48741e3921e11da35ae4e44"><a name="abf5ff718b48741e3921e11da35ae4e44"></a><a name="abf5ff718b48741e3921e11da35ae4e44"></a>Parameter</p>
@@ -4040,7 +4128,7 @@
 </tbody>
 </table>
 
-**Table  74**  Data structure of the hostAliases field
+**Table  75**  Data structure of the hostAliases field
 
 <a name="t1fd09529895f445989372ccc67d34544"></a>
 <table><thead align="left"><tr id="r319b67fd95a54eeb8765be99ad1a5a94"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p639111718357"><a name="en-us_topic_0079614925_p639111718357"></a><a name="en-us_topic_0079614925_p639111718357"></a>Parameter</p>
@@ -4074,7 +4162,7 @@
 </tbody>
 </table>
 
-**Table  75**  Data structure of the envFrom field
+**Table  76**  Data structure of the envFrom field
 
 <a name="t0da1d4b32d79462a85a53d425612b4fc"></a>
 <table><thead align="left"><tr id="rbd1b7a4561b04d2fbe75fa5e95f3207d"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="a63d7af0719664992bd7f959e50c73cfa"><a name="a63d7af0719664992bd7f959e50c73cfa"></a><a name="a63d7af0719664992bd7f959e50c73cfa"></a>Parameter</p>
@@ -4117,7 +4205,7 @@
 </tbody>
 </table>
 
-**Table  76**  Data structure of the configMapRef field
+**Table  77**  Data structure of the configMapRef field
 
 <a name="tec427515396240f4920a49535b56f6d2"></a>
 <table><thead align="left"><tr id="rbedc7e43f47d4151871e2e6244f2dfd3"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="en-us_topic_0079614925_p046784334415"><a name="en-us_topic_0079614925_p046784334415"></a><a name="en-us_topic_0079614925_p046784334415"></a>Parameter</p>
@@ -4151,7 +4239,7 @@
 </tbody>
 </table>
 
-**Table  77**  Data structure of the secretRef field
+**Table  78**  Data structure of the secretRef field
 
 <a name="t9d5712d0cc1143f296b53218ac2ed2ff"></a>
 <table><thead align="left"><tr id="r9f9f5e09208846a0baa2c17926fcdca9"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="a52f62a1fb1ad4867b04281bd25441b36"><a name="a52f62a1fb1ad4867b04281bd25441b36"></a><a name="a52f62a1fb1ad4867b04281bd25441b36"></a>Parameter</p>
@@ -4185,7 +4273,7 @@
 </tbody>
 </table>
 
-**Table  78**  Data structure of the tolerations field
+**Table  79**  Data structure of the tolerations field
 
 <a name="t9c64dcbb868f45359607f0693e41091c"></a>
 <table><thead align="left"><tr id="re7e4582ac43143c1bf1a92da4a6842af"><th class="cellrowborder" valign="top" width="21.23787621237876%" id="mcps1.2.5.1.1"><p id="af37017d0996b4def89ca7f18adfdb972"><a name="af37017d0996b4def89ca7f18adfdb972"></a><a name="af37017d0996b4def89ca7f18adfdb972"></a>Parameter</p>

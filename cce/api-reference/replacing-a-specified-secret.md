@@ -4,7 +4,7 @@
 
 This API is used to replace the secret in a specified namespace.
 
-The following fields can be updated:
+The following fields can be updated: 
 
 -   metadata.selfLink
 -   metadata.resourceVersion

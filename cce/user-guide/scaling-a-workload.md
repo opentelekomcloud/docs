@@ -10,11 +10,11 @@ After  scaling policies  are defined, instances can be automatically added or de
     >If  **Maximum Number of Unavailable Pods**  is set to  **0**  when there is only one pod in the cluster, services will be interrupted during scaling.  
 
 
-## Auto Scaling<a name="section1656965814562"></a>
+## Auto Scaling-AOM<a name="section1656965814562"></a>
 
-You can define custom auto scaling policies, eliminating the need to repeatedly adjust resources as service load fluctuates.
+You can define auto scaling policies as required, releasing you from the workload of repeatedly adjusting resources in response to service changes and heavy burden during peak hours and saving resource and labor costs.
 
-Currently, CCE supports the following types of auto scaling policies:
+This AS capability is provided by the AOM service. Currently, the following three types of auto scaling policies are supported:
 
 [Metric-based policy](#li16804196913): After a workload is created, pods will be automatically scaled when the workload's CPU or memory usage exceeds or falls below a preset limit.
 
@@ -23,7 +23,7 @@ Currently, CCE supports the following types of auto scaling policies:
 [Periodic policy](#li35861531491): scaling at a specified time on a daily, weekly, or monthly basis. Periodic scheduling is applicable to scenarios where traffic changes periodically.
 
 -   <a name="li16804196913"></a>**Metric-based policy**: Supports automatic scaling of workload based on the setting of the CPU/memory.
-    1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**  or  **StatefulSet**. In the same row as the workload for which you will add a scaling policy, choose  **Operation**  \>  **More**  \>  **Scale**.
+    1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**  or  **StatefulSet**. In the same row as the workload for which you will add a scaling policy, choose  **Operation**  \>  **More**  \>  **Scaling**.
     2.  In the  **Auto Scaling**  area, click  **Add Scaling Policy**.
 
         **Table  1**  Parameters for adding a metric-based policy
@@ -57,10 +57,10 @@ Currently, CCE supports the following types of auto scaling policies:
         <p id="p102871735719"><a name="p102871735719"></a><a name="p102871735719"></a>If you set this parameter to the <strong id="b196183581268"><a name="b196183581268"></a><a name="b196183581268"></a>average physical memory usage &gt; 70%</strong>, the scaling policy will be triggered when the average memory usage exceeds 70%.</p>
         </td>
         </tr>
-        <tr id="row15301217115716"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p631617195718"><a name="p631617195718"></a><a name="p631617195718"></a>Measurement Period</p>
+        <tr id="row093120121869"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p393115121169"><a name="p393115121169"></a><a name="p393115121169"></a>Monitoring window</p>
         </td>
-        <td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p123318179571"><a name="p123318179571"></a><a name="p123318179571"></a>Metric statistics period. Select a value from the drop-down list box.</p>
-        <p id="p1335151715719"><a name="p1335151715719"></a><a name="p1335151715719"></a>If the parameter is set to 20s, metric statistics is collected every 20 seconds.</p>
+        <td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p152221321617"><a name="p152221321617"></a><a name="p152221321617"></a>Metric statistics period. Select a value from the drop-down list box.</p>
+        <p id="p152223321267"><a name="p152223321267"></a><a name="p152223321267"></a>If the parameter is set to 20s, metric statistics is collected every 20 seconds.</p>
         </td>
         </tr>
         <tr id="row1735111705710"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p1936617175719"><a name="p1936617175719"></a><a name="p1936617175719"></a>Threshold Crossings</p>
@@ -82,7 +82,7 @@ Currently, CCE supports the following types of auto scaling policies:
         When the trigger condition is met, the auto scaling policy starts automatically.
 
 
--   <a name="li1595211281895"></a>**Scheduled policy**: scaling at a specified time.
+-   <a name="li1595211281895"></a>**Scheduled**  policy: scaling at a specified time.
     1.  In the  **Auto Scaling**  area, click  **Add Scaling Policy**. Select  **Scheduled policy**.
 
         **Table  2**  Parameters for adding a scheduled policy
@@ -123,7 +123,7 @@ Currently, CCE supports the following types of auto scaling policies:
         When the trigger time is reached, you can see on the  **Pods**  tab page that the auto scaling policy has taken effect.
 
 
--   <a name="li35861531491"></a>**Periodic policy**: scaling at a specified time on a daily, weekly, or monthly basis.
+-   <a name="li35861531491"></a>**Periodic** **policy**: scaling at a specified time on a daily, weekly, or monthly basis.
     1.  In the  **Auto Scaling**  area, click  **Add Scaling Policy**. Select  **Periodic policy**.
 
         **Table  3**  Parameters for adding a periodic policy
@@ -168,13 +168,13 @@ Currently, CCE supports the following types of auto scaling policies:
 ## Manual Scaling<a name="section1050418516503"></a>
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**  or  **StatefulSet**. In the same row as the workload for which you will add a scaling policy, choose  **Operation**  \>  **More**  \>  ****Scaling****.
-2.  In the  **Manual Scaling**  area, click  ![](figures/icon-edit.png)  and change the number of pods to, for example,  **2**. Then, click  **Save**. The scaling takes effect immediately.
+2.  In the  **Manual Scaling**  area, click  ![](figures/icon-edit-0.png)  and change the number of pods to, for example,  **2**. Then, click  **Save**. The scaling takes effect immediately.
 3.  On the  **Pods**  tab page, check that a new pod is being created. When the pod status becomes  **Running**, pod scaling is complete.
 
 ## Modifying Maximum Number of Unavailable Pods<a name="section7507175918309"></a>
 
-1.  On the  **Stateless Workloads**  page or the  **Stateful Workloads**  page, click  **More \> Scale**  in the same row as the application for which you will modify the  **Maximum Number of Unavailable Pods**  parameter.
-2.  Click  ![](figures/icon-edit-0.png)  to modify  **Maximum Number of Unavailable Pods**.
+1.  On the  **Stateless Workloads**  page or the  **Stateful Workloads**  page, click  **More \> Scaling**  in the same row as the application for which you will modify the  **Maximum Number of Unavailable Pods**  parameter.
+2.  Click  ![](figures/icon-edit-0-7.png)  to modify  **Maximum Number of Unavailable Pods**.
     -   If  **percentage**  is not selected,  **Maximum Number of Unavailable Pods**  indicates the maximum quantity of unavailable pods and cannot exceed the total number of pods that the application has.
     -   If  **percentage**  is selected,  **Maximum Number of Unavailable Pods**  indicates the maximum percentage of unavailable pods. The value range is \[0, 100\].
 

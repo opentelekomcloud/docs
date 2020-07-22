@@ -63,7 +63,7 @@ The NetworkPolicy resource selects pods by labels and defines the communication 
 
 -   **VPC**
 
-    A Virtual Private Cloud \(VPC\) is a private network created based on the public cloud. Different private networks are logically isolated. VPC enables you to provision logically isolated, configurable, and manageable virtual networks for Elastic Cloud Servers \(ECSs\), cloud databases, and load balancers, improving cloud service security and simplifying network deployment.
+    A Virtual Private Cloud \(VPC\) is a private network created based on the cloud. Different private networks are logically isolated. VPC enables you to provision logically isolated, configurable, and manageable virtual networks for Elastic Cloud Servers \(ECSs\), cloud databases, and load balancers, improving cloud service security and simplifying network deployment.
 
     You can configure security groups, virtual private networks \(VPNs\), and IP address segments, and allocate bandwidth in a VPC. With a VPC, you can configure and manage the networks within the VPC, making changes to these networks as needed, quickly and securely. You can also customize the ECS access rules within a security group and between security groups to strengthen ECS security protection.
 

@@ -1,4 +1,4 @@
-# Pushing a Private Image from the Internet<a name="cce_01_0210"></a>
+# Pushing a Private Image from the Internet<a name="cce_01_1210"></a>
 
 This section uses the nginx:1.10 image as an example to describe how to push a private image from the Internet to the CCE image repository. Images will be displayed in the image repository after being pushed.
 
@@ -36,7 +36,7 @@ This section uses the nginx:1.10 image as an example to describe how to push a p
         **Figure  1**  Generating a Docker login command<a name="fig24291930172116"></a>  
         ![](figures/generating-a-docker-login-command.png "generating-a-docker-login-command")
 
-    3.  In the displayed Docker login command, click  ![](figures/icon-copy.png)  to copy the command.
+    3.  In the displayed Docker login command, click  ![](figures/icon-copy-01.png)  to copy the command.
 
 4.  Log in to the server where Docker is installed. Then, run the Docker login command copied in the previous step.
 
@@ -48,13 +48,13 @@ This section uses the nginx:1.10 image as an example to describe how to push a p
 
     Example command:
 
-    **docker** **tag** _nginx:1.10 \{__Public_ _image address\}:1.10_
+    **docker tag **_nginx:1.10 \{_Public _image address\}:1.10_
 
     To obtain the  **Public image address**, on the  **Pull/Push Guide**  tab page, find the  **External address**  below  **Step 1. Obtain the image repository address**.
 
 6.  Run the following command to push the image to the image repository:
 
-    **docker push** _\{__Public_ _image address\}:1.10_
+    **docker push** _\{_Public _image address\}:1.10_
 
     If the image has been successfully pushed, the following information is displayed:
 
@@ -65,6 +65,6 @@ This section uses the nginx:1.10 image as an example to describe how to push a p
     1.10: digest: sha256:eb7e3bbd8e3040efa71d9c2cacfa12a8e39c6b2ccd15eac12bdc49e0b66cee63 size: 948
     ```
 
-    On the CCE console, refresh the  **Image** **Repository**  \>  **_imagename_**  page of the image repository. The pushed image is displayed in the list.
+    On the CCE console, refresh the  **Image Repository \> **_**imagename**_**_ _**page of the image repository. The pushed image is displayed in the list.
 
 

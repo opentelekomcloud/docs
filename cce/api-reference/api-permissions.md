@@ -1,18 +1,18 @@
 # API Permissions<a name="cce_02_0272"></a>
 
 <a name="table57616162812"></a>
-<table><tbody><tr id="row676916172812"><td class="cellrowborder" valign="top" width="16.711671167116712%"><p id="p477220110287"><a name="p477220110287"></a><a name="p477220110287"></a><strong id="b361133014304"><a name="b361133014304"></a><a name="b361133014304"></a>Module</strong></p>
+<table><tbody><tr id="row676916172812"><td class="cellrowborder" valign="top" width="10.11101110111011%"><p id="p477220110287"><a name="p477220110287"></a><a name="p477220110287"></a><strong id="b361133014304"><a name="b361133014304"></a><a name="b361133014304"></a>Module</strong></p>
 </td>
-<td class="cellrowborder" valign="top" width="37.90379037903791%"><p id="p477317111282"><a name="p477317111282"></a><a name="p477317111282"></a><strong id="b177561152816"><a name="b177561152816"></a><a name="b177561152816"></a>API</strong></p>
+<td class="cellrowborder" valign="top" width="44.504450445044505%"><p id="p477317111282"><a name="p477317111282"></a><a name="p477317111282"></a><strong id="b177561152816"><a name="b177561152816"></a><a name="b177561152816"></a>API</strong></p>
 </td>
 <td class="cellrowborder" valign="top" width="23.2023202320232%"><p id="p477961192812"><a name="p477961192812"></a><a name="p477961192812"></a><strong id="b9267133512306"><a name="b9267133512306"></a><a name="b9267133512306"></a>Function</strong></p>
 </td>
 <td class="cellrowborder" valign="top" width="22.182218221822183%"><p id="p20781719288"><a name="p20781719288"></a><a name="p20781719288"></a><strong id="b1916093743014"><a name="b1916093743014"></a><a name="b1916093743014"></a>Permission</strong></p>
 </td>
 </tr>
-<tr id="row1878371162815"><td class="cellrowborder" rowspan="13" valign="top" width="16.711671167116712%"><p id="p187841113288"><a name="p187841113288"></a><a name="p187841113288"></a>Cluster management</p>
+<tr id="row1878371162815"><td class="cellrowborder" rowspan="13" valign="top" width="10.11101110111011%"><p id="p187841113288"><a name="p187841113288"></a><a name="p187841113288"></a>Cluster management</p>
 </td>
-<td class="cellrowborder" valign="top" width="37.90379037903791%"><p id="p7785712287"><a name="p7785712287"></a><a name="p7785712287"></a>GET /api/v3/projects/{project_id}/clusters</p>
+<td class="cellrowborder" valign="top" width="44.504450445044505%"><p id="p7785712287"><a name="p7785712287"></a><a name="p7785712287"></a>GET /api/v3/projects/{project_id}/clusters</p>
 </td>
 <td class="cellrowborder" valign="top" width="23.2023202320232%"><p id="p978915119287"><a name="p978915119287"></a><a name="p978915119287"></a>Obtaining information about clusters in a specified project</p>
 </td>
@@ -101,9 +101,9 @@
 <td class="cellrowborder" valign="top"><p id="p1194912142818"><a name="p1194912142818"></a><a name="p1194912142818"></a>cce:nodepool:list</p>
 </td>
 </tr>
-<tr id="row179501315287"><td class="cellrowborder" rowspan="4" valign="top" width="16.711671167116712%"><p id="p195116114285"><a name="p195116114285"></a><a name="p195116114285"></a>Storage management</p>
+<tr id="row179501315287"><td class="cellrowborder" rowspan="4" valign="top" width="10.11101110111011%"><p id="p195116114285"><a name="p195116114285"></a><a name="p195116114285"></a>Storage management</p>
 </td>
-<td class="cellrowborder" valign="top" width="37.90379037903791%"><p id="p1095313162818"><a name="p1095313162818"></a><a name="p1095313162818"></a>POST /api/v1/namespaces/{namespace}/cloudpersistentvolumeclaims</p>
+<td class="cellrowborder" valign="top" width="44.504450445044505%"><p id="p1095313162818"><a name="p1095313162818"></a><a name="p1095313162818"></a>POST /api/v1/namespaces/{namespace}/cloudpersistentvolumeclaims</p>
 </td>
 <td class="cellrowborder" valign="top" width="23.2023202320232%"><p id="p795510118286"><a name="p795510118286"></a><a name="p795510118286"></a>Creating a PersistentVolumeClaim</p>
 </td>
@@ -127,9 +127,9 @@
 <td class="cellrowborder" valign="top"><p id="p1097071152810"><a name="p1097071152810"></a><a name="p1097071152810"></a>Deleting a PersistentVolume</p>
 </td>
 </tr>
-<tr id="row9970191112811"><td class="cellrowborder" rowspan="2" valign="top" width="16.711671167116712%"><p id="p9971101102813"><a name="p9971101102813"></a><a name="p9971101102813"></a>Kubernetes-native APIs</p>
+<tr id="row9970191112811"><td class="cellrowborder" rowspan="2" valign="top" width="10.11101110111011%"><p id="p9971101102813"><a name="p9971101102813"></a><a name="p9971101102813"></a>Kubernetes-native APIs</p>
 </td>
-<td class="cellrowborder" valign="top" width="37.90379037903791%"><p id="p59712132814"><a name="p59712132814"></a><a name="p59712132814"></a>/api/*</p>
+<td class="cellrowborder" valign="top" width="44.504450445044505%"><p id="p59712132814"><a name="p59712132814"></a><a name="p59712132814"></a>/api/*</p>
 </td>
 <td class="cellrowborder" rowspan="2" valign="top" width="23.2023202320232%"><p id="p1897411132811"><a name="p1897411132811"></a><a name="p1897411132811"></a>Operating Kubernetes resources</p>
 </td>

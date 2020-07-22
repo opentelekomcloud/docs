@@ -6,13 +6,13 @@ Generally, you are required to pass authentication using your account and passwo
 
 ## Prerequisites<a name="section14876601632"></a>
 
-The node where the workload is running is accessible from public networks. Public network access can be achieved either through a  [NodePort](nodeport.md)  service.
+The node where the workload is running is accessible from public networks. Public network access can be achieved either through a  [node access \(NodePort\)](nodeport.md)  service.
 
 ## Using the Console<a name="section0402183334411"></a>
 
 1.  <a name="li16481144064414"></a>Create a secret for accessing a third-party image repository.
 
-    In the navigation pane, choose  **Configuration Center**  \>  **Secret**, and click  **Create Secret**.  **Type**  must be set to  **dockerconfigjson**. For details, see  [Creating a Secret](creating-a-secret.md).
+    In the navigation pane, choose  **Configuration Center**  \>  **Secret**, and click  **Create Secret**.  **Type**  must be set to  **kubernetes.io/dockerconfigjson**. For details, see  [Creating a Secret](creating-a-secret.md).
 
     Enter the user name and password used to access the third-party image repository.
 

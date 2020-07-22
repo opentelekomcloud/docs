@@ -3,7 +3,7 @@
 ## Creating a Chart-based Workload<a name="s94388d41fe234fba81844802bc682fb8"></a>
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Charts**  \>  **Uploaded Charts**.
-2.  In the list of uploaded charts, click  **Install**.
+2.  In the list of uploaded charts, click  **Install Chart**.
 3.  Set the installation parameters listed in  [Table 1](#t26bc1c499f114b5185e5edcf61e44d95). The parameters marked with an asterisk \(\*\) are mandatory.
 
     **Table  1**  Installation parameters
@@ -49,7 +49,7 @@
 
 4.  After the configuration is complete, click  **Next**.
 5.  Confirm the configuration and click  **Submit**.
-6.  Click  **Back to Release List**  to view the running status of the chart-based workload, or click  **View Release Details**  to view details about the chart-based workload.
+6.  Click  **Back to Release List**  to view the running status of the chart-based workload, or click  **Go to Release Details**  to view details about the chart-based workload.
 
 ## Upgrading a Chart-based Workload<a name="section5324101171010"></a>
 

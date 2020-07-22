@@ -6,12 +6,15 @@ The access address is in the format of <IP address of the  load balancer\>:<acce
 
 You can configure load balancers of public and private networks to implement layer-7 route forwarding on public networks and private networks \(intra-VPC networks\).
 
+**Figure  1**  Layer-7 load balancing \(ingress\)<a name="fig6439172113112"></a>  
+![](figures/layer-7-load-balancing-(ingress).png "layer-7-load-balancing-(ingress)")
+
 ## Preparation<a name="section2042610683912"></a>
 
 An  elastic load balancer  has been created on the management console.
 
 1.  Log in to the management console and choose  **Network**  \>  **Elastic Load Balancing**  from the service list.
-2.  Click  **Create Enhanced Load Balancer**  in the upper right corner. 
+2.  Click  **Create Enhanced Load Balancer**  in the upper right corner. For details, see  [Creating an Enhanced Load Balancer](https://docs.otc.t-systems.com/en-us/usermanual/elb/en-us_topic_0052569751.html).
 
 >![](public_sys-resources/icon-note.gif) **NOTE:**   
 >The LoadBalancer access type allows workloads to be accessed from public networks through ELB. This access type has the following restrictions:  
@@ -29,7 +32,7 @@ You can set the service access type when creating a workload on the CCE console.
 
 2.  <a name="li248013365354"></a>\(Optional\) Set the access type NodePort.
     1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Network**.
-    2.  On the  **Services**  tab page, click  **Create Service**. In the  **Select Type**  dialog box, select  **Node access \(node port\)**.
+    2.  On the  **Services**  tab page, click  **Create Service**. In the  **Select Type**  dialog box, select  **NodePort**.
         -   **Service Name**: can be the same as the workload name.
         -   **Cluster Name**: Select the cluster for which you want to add a service.
         -   **Namespace**: Select a namespace for which you want to add a service.
@@ -70,14 +73,14 @@ You can set the service access type when creating a workload on the CCE console.
 
         -   **Domain Name**: optional. It indicates the actual domain name. You are expected to buy the domain name and complete ICP filing for it. Ensure that the domain name can resolve the service address of the selected load balancer. If a domain name rule is configured, the domain name must always be used for access.
         -   **Route Configuration**
-            -   **Route Matching Rule**:  **Prefix match**,  **Exact match**, and  **Regular expression**  are available.
+            -   **Route Matching**:  **Prefix match**,  **Exact match**, and  **Regular expression**  are available.
                 -   **Prefix match**: If the URL is set to  **/healthz**, the URL that meets the prefix can be accessed. For example, /healthz/v1 and /healthz/v2.
                 -   **Exact match**: Only the URL that is the same as the specified URL can be accessed. For example, if the URL is set to  **/healthz**, only /healthz can be accessed.
                 -   **Regular expression**: The URL rule can be set, for example,  **/\[A-Za-z0-9\_.-\]+/test**. All URLs that comply with this rule can be accessed, for example,  **/abcA9/test**  and  **/v1-Ab/test**. Two regular expression standards are supported: POSIX and Perl.
 
-            -   **Mapping URL**: Access path to be registered, for example,  **/healthz**.
-            -   **Service Name**: Select the service whose ingress is to be added. The service access type is intra-VPC access.
-            -   **Service Port**: a port on which the container in the container image listens. For example, the defaultbackend application listens on port 8080 \(container port\).
+            -   **URL**: Access path to be registered, for example,  **/healthz**.
+            -   **Target Service**: Select the service whose ingress is to be added. The service access type is intra-VPC access.
+            -   **Service Access Port**: a port on which the container in the container image listens. For example, the defaultbackend application listens on port 8080 \(container port\).
 
 
 4.  Click  **Create**.
@@ -91,16 +94,16 @@ You can set the service access type when creating a workload on the CCE console.
     1.  Obtain the access address of the /healthz interface of defaultbackend. The access address is in the format of <load balancer's IP address\>:<external port\><mapping URL\>. For example, 10.154.73.151:80/healthz.
     2.  Enter the URL of the /healthz interface, for example, http://10.154.73.151:80/healthz, in the address box of the browser to access the workload.
 
-        **Figure  1**  Accessing the /healthz interface of defaultbackend<a name="fig17115192714367"></a>  
+        **Figure  2**  Accessing the /healthz interface of defaultbackend<a name="fig17115192714367"></a>  
         ![](figures/accessing-the-healthz-interface-of-defaultbackend.png "accessing-the-healthz-interface-of-defaultbackend")
 
     Method 2: By using a domain name
 
     The following uses the domain name ingress.com configured in the ingress as an example.
 
-    1.  Obtain the domain name and access address \(IP address and port number\) of the /iamwangbo interface of the ingress-demo.
+    1.  Obtain the domain name and access address \(IP address and port number\) of the /iamtest interface of the ingress-demo.
     2.  Configure the <IP address in the access address\> <domain name\> in the  **C:\\Windows\\System32\\drivers\\etc\\hosts**  file on the local host.
-    3.  Enter the http://<domain name\>:<access port\>/<mapping URL\> in the address box of the browser. For example, http://ingress.com:81/iamwangbo.
+    3.  Enter the http://<domain name\>:<access port\>/<mapping URL\> in the address box of the browser. For example, http://ingress.com:81/iamtest.
 
 
 ## Setting the Access Type Using kubectl<a name="section1944313158364"></a>
@@ -143,11 +146,11 @@ The ECS where the kubectl client runs has been connected to your cluster. For de
         spec:
           containers:
             # Third-party public image. You can obtain the address by referring to the description or use your own image.
-          - image: ingress  
+          - image: nginx 
             imagePullPolicy: Always
-            name: ingress
-            imagePullSecrets:
-            - name: default-secret
+            name: nginx
+          imagePullSecrets:
+          - name: default-secret
     ```
 
     **vi ingress-test-svc.yaml**
@@ -218,257 +221,400 @@ The ECS where the kubectl client runs has been connected to your cluster. For de
 
     **vi ingress-test-ingress.yaml**
 
-    -   Automatically creating load balancer
+    -   For clusters of v1.15 and later, the value of  **apiVersion**  is  **networking.k8s.io/v1beta1**.
+    -   For clusters of v1.13 or earlier, the value of  **apiVersion**  is  **extensions/v1beta1**.
 
-        ```
-        apiVersion: extensions/v1beta1 
-        kind: Ingress 
-        metadata: 
-          annotations: 
-            kubernetes.io/elb.subnet-id: 29a0567e-96f1-4227-91cc-64f54d0b064d
-            kubernetes.io/elb.autocreate: "{\"type\":\"public\",\"bandwidth_name\":\"cce-bandwidth-1551163379627\",\"bandwidth_chargemode\":\"bandwidth\",\"bandwidth_size\":5,\"bandwidth_sharetype\":\"PER\",\"eip_type\":\"5_bgp\",\"name\":\"james\"}"
-            kubernetes.io/elb.port: "80"
-            kubernetes.io/ingress.class: cce
-          name: ingress-test-ingress
-        spec:
-          tls:
-          - secretName: ingress-test-secret
-          rules: 
-          - http: 
-              paths: 
-              - backend: 
-                  serviceName: ingress-test-svc
-                  servicePort: 8888
-                property:
-                  ingress.beta.kubernetes.io/url-match-mode: EQUAL_TO
-                path: "/healthz"
-            host: ingress.com
-        ```
+    **Automatically creating load balancer**
 
-    -   Using existing load balancer
+    ```
+    apiVersion: networking.k8s.io/v1beta1
+    kind: Ingress 
+    metadata: 
+      annotations: 
+        kubernetes.io/elb.subnet-id: 29a0567e-96f1-4227-91cc-64f54d0b064d
+        kubernetes.io/elb.enterpriseID: f6b9fffc-a9b7-4a50-a25e-364f587abe44
+        kubernetes.io/elb.autocreate: '{"type":"public","bandwidth_name":"cce-bandwidth-1551163379627","bandwidth_chargemode":"traffic","bandwidth_size":5,"bandwidth_sharetype":"PER","eip_type":"5_bgp","name":"james"}'
+        kubernetes.io/elb.port: "80"
+        kubernetes.io/ingress.class: cce
+      name: ingress-test-ingress
+    spec:
+      tls:
+      - secretName: ingress-test-secret
+      rules: 
+      - http: 
+          paths: 
+          - backend: 
+              serviceName: ingress-test-svc
+              servicePort: 8888
+            property:
+              ingress.beta.kubernetes.io/url-match-mode: EQUAL_TO
+            path: "/healthz"
+        host: ingress.com
+    ```
 
-        ```
-        apiVersion: extensions/v1beta1 
-        kind: Ingress 
-        metadata: 
-          annotations: 
-            kubernetes.io/elb.id: f7891f9a-49f2-4ee2-b1ae-f019cd84eb4f
-            kubernetes.io/elb.ip: 192.168.0.39
-            kubernetes.io/elb.subnet-id: 29a0567e-96f1-4227-91cc-64f54d0b064d
-            kubernetes.io/elb.port: "80"
-            kubernetes.io/ingress.class: cce
-          name: ingress-test-ingress
-        spec:
-          tls:
-          - secretName: ingress-test-secret
-          rules: 
-          - http: 
-              paths: 
-              - backend: 
-                  serviceName: ingress-test-svc
-                  servicePort: 8888
-                property:
-                  ingress.beta.kubernetes.io/url-match-mode: EQUAL_TO
-                path: "/healthz"
-            host: ingress.com
-        ```
+    **Using existing load balancer**
 
-        **Table  2**  Key parameters
+    ```
+    apiVersion: networking.k8s.io/v1beta1
+    kind: Ingress 
+    metadata: 
+      annotations: 
+        kubernetes.io/elb.id: f7891f9a-49f2-4ee2-b1ae-f019cd84eb4f
+        kubernetes.io/elb.ip: 192.168.0.39
+        kubernetes.io/elb.subnet-id: 29a0567e-96f1-4227-91cc-64f54d0b064d
+        kubernetes.io/elb.port: "80"
+        kubernetes.io/ingress.class: cce
+      name: ingress-test-ingress
+    spec:
+      tls:
+      - secretName: ingress-test-secret
+      rules: 
+      - http: 
+          paths: 
+          - backend: 
+              serviceName: ingress-test-svc
+              servicePort: 8888
+            property:
+              ingress.beta.kubernetes.io/url-match-mode: EQUAL_TO
+            path: "/healthz"
+        host: ingress.com
+    ```
 
-        <a name="table1732315519222"></a>
-        <table><thead align="left"><tr id="row43239510228"><th class="cellrowborder" valign="top" width="29.727027297270276%" id="mcps1.2.4.1.1"><p id="p3323185142214"><a name="p3323185142214"></a><a name="p3323185142214"></a>Parameter</p>
-        </th>
-        <th class="cellrowborder" valign="top" width="18.678132186781323%" id="mcps1.2.4.1.2"><p id="p1632315162219"><a name="p1632315162219"></a><a name="p1632315162219"></a>Type</p>
-        </th>
-        <th class="cellrowborder" valign="top" width="51.594840515948405%" id="mcps1.2.4.1.3"><p id="p2323105202212"><a name="p2323105202212"></a><a name="p2323105202212"></a>Description</p>
-        </th>
-        </tr>
-        </thead>
-        <tbody><tr id="row1932315519221"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p11323551220"><a name="p11323551220"></a><a name="p11323551220"></a>kubernetes.io/elb.id</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p43232502212"><a name="p43232502212"></a><a name="p43232502212"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p1532419502210"><a name="p1532419502210"></a><a name="p1532419502210"></a>Optional. This parameter is mandatory if an existing load balancer is used.</p>
-        <p id="p1832435142216"><a name="p1832435142216"></a><a name="p1832435142216"></a>It indicates the ID of an enhanced load balancer.</p>
-        </td>
-        </tr>
-        <tr id="row19324185132210"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p143241054227"><a name="p143241054227"></a><a name="p143241054227"></a>kubernetes.io/elb.ip</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p63241755223"><a name="p63241755223"></a><a name="p63241755223"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p1232410519221"><a name="p1232410519221"></a><a name="p1232410519221"></a>Optional. Do not specify this parameter if an enhanced load balancer will be automatically created.</p>
-        <p id="p123246513225"><a name="p123246513225"></a><a name="p123246513225"></a>This parameter indicates the service address of an enhanced load balancer. The value can be the public IP address of a public network load balancer or the private IP address of a private network load balancer.</p>
-        </td>
-        </tr>
-        <tr id="row113242512217"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p1332415102211"><a name="p1332415102211"></a><a name="p1332415102211"></a>kubernetes.io/elb.subnet-id</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p16324185192216"><a name="p16324185192216"></a><a name="p16324185192216"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p6324185202213"><a name="p6324185202213"></a><a name="p6324185202213"></a>Optional. This parameter is mandatory only if a load balancer will be automatically created. For clusters of v1.11.7-r2 or later, this parameter can be left unspecified.</p>
-        </td>
-        </tr>
-        <tr id="row14324115112219"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p163241552218"><a name="p163241552218"></a><a name="p163241552218"></a>kubernetes.io/elb.autocreate</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p163247517229"><a name="p163247517229"></a><a name="p163247517229"></a><a href="#table19417184671919">elb.autocreate</a> object</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p03246532210"><a name="p03246532210"></a><a name="p03246532210"></a>Optional. This parameter is mandatory if a public network load balancer will be automatically created. Set this parameter to the EIP of the enhanced load balancer that is automatically created. This parameter is also mandatory if a private network load balancer will be automatically created.</p>
-        <p id="p13324858222"><a name="p13324858222"></a><a name="p13324858222"></a><strong id="b122043194200"><a name="b122043194200"></a><a name="b122043194200"></a>Example:</strong></p>
-        <a name="ul16324853220"></a><a name="ul16324853220"></a><ul id="ul16324853220"><li>Value for a public network load balancer that is automatically created: "{\"type\":\"public\",\"bandwidth_name\":\"cce-bandwidth-1551163379627\",\"bandwidth_chargemode\":\"bandwidth\",\"bandwidth_size\":5,\"bandwidth_sharetype\":\"PER\",\"eip_type\":\"5_bgp\",\"name\":\"james\"}"</li><li>Value for a private network load balancer that is automatically created: "{\"type\":\"inner\"}"</li></ul>
-        </td>
-        </tr>
-        <tr id="row332514515229"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p232519512211"><a name="p232519512211"></a><a name="p232519512211"></a>kubernetes.io/elb.port</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p173251458226"><a name="p173251458226"></a><a name="p173251458226"></a>Integer</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p93251554223"><a name="p93251554223"></a><a name="p93251554223"></a>Mandatory. External port registered with the address of the LoadBalancer service.</p>
-        </td>
-        </tr>
-        <tr id="row1432518511224"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p1432565182214"><a name="p1432565182214"></a><a name="p1432565182214"></a>kubernetes.io/ingress.class</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p1232514542215"><a name="p1232514542215"></a><a name="p1232514542215"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p13251456223"><a name="p13251456223"></a><a name="p13251456223"></a>By default, <strong id="b1435202252315"><a name="b1435202252315"></a><a name="b1435202252315"></a>cce</strong> indicates that an enhanced load balancer will be used, and <strong id="b18131115472313"><a name="b18131115472313"></a><a name="b18131115472313"></a>nginx</strong> indicates that the nginx-ingress add-on will be enabled. This parameter is mandatory when an ingress is created by calling the API.</p>
-        </td>
-        </tr>
-        <tr id="row143251551229"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p18325951228"><a name="p18325951228"></a><a name="p18325951228"></a>tls</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p1832513582216"><a name="p1832513582216"></a><a name="p1832513582216"></a>Array of strings</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p53262562220"><a name="p53262562220"></a><a name="p53262562220"></a>Optional. This parameter is mandatory if the front-end protocol is HTTPS.</p>
-        </td>
-        </tr>
-        <tr id="row6326185152213"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p5326145202219"><a name="p5326145202219"></a><a name="p5326145202219"></a>secretName</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p5326135162216"><a name="p5326135162216"></a><a name="p5326135162216"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p1732645172213"><a name="p1732645172213"></a><a name="p1732645172213"></a>Optional. This parameter is required when HTTPS is used. Set this parameter to the name of the created key certificate.</p>
-        </td>
-        </tr>
-        <tr id="row33265552211"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p1432685102213"><a name="p1432685102213"></a><a name="p1432685102213"></a>serviceName</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p1632617511229"><a name="p1632617511229"></a><a name="p1632617511229"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p17326135102219"><a name="p17326135102219"></a><a name="p17326135102219"></a>Name of the ingress-test-svc.yaml service.</p>
-        </td>
-        </tr>
-        <tr id="row1232616516229"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p16326052225"><a name="p16326052225"></a><a name="p16326052225"></a>servicePort</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p23264582215"><a name="p23264582215"></a><a name="p23264582215"></a>Integer</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p53261152221"><a name="p53261152221"></a><a name="p53261152221"></a>Container port, that is, targetPort in the ingress-test-svc.yaml.</p>
-        </td>
-        </tr>
-        <tr id="row1732620510228"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p12326195152216"><a name="p12326195152216"></a><a name="p12326195152216"></a>ingress.beta.kubernetes.io/url-match-mode</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p1232675172211"><a name="p1232675172211"></a><a name="p1232675172211"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p16327755228"><a name="p16327755228"></a><a name="p16327755228"></a>Route matching policy. The options are <strong id="b349312417285"><a name="b349312417285"></a><a name="b349312417285"></a>EQUAL_TO</strong> (exact matching), <strong id="b1764564632813"><a name="b1764564632813"></a><a name="b1764564632813"></a>STARTS_WITH</strong> (prefix matching), and <strong id="b37813537287"><a name="b37813537287"></a><a name="b37813537287"></a>REGEX</strong> (regular expression matching).</p>
-        </td>
-        </tr>
-        <tr id="row19327205202214"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p83279511221"><a name="p83279511221"></a><a name="p83279511221"></a>path</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p932711582211"><a name="p932711582211"></a><a name="p932711582211"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p173278515229"><a name="p173278515229"></a><a name="p173278515229"></a>User-defined route.</p>
-        </td>
-        </tr>
-        <tr id="row16327451221"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p832714513227"><a name="p832714513227"></a><a name="p832714513227"></a>host</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p1532718517223"><a name="p1532718517223"></a><a name="p1532718517223"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p53272572218"><a name="p53272572218"></a><a name="p53272572218"></a>Optional. This parameter specifies the domain name.</p>
-        </td>
-        </tr>
-        </tbody>
-        </table>
+    **Table  2**  Key parameters
 
-        **Table  3**  elb.autocreate parameters
+    <a name="table1732315519222"></a>
+    <table><thead align="left"><tr id="row43239510228"><th class="cellrowborder" valign="top" width="29.727027297270276%" id="mcps1.2.4.1.1"><p id="p3323185142214"><a name="p3323185142214"></a><a name="p3323185142214"></a>Parameter</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="18.678132186781323%" id="mcps1.2.4.1.2"><p id="p1632315162219"><a name="p1632315162219"></a><a name="p1632315162219"></a>Type</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="51.594840515948405%" id="mcps1.2.4.1.3"><p id="p2323105202212"><a name="p2323105202212"></a><a name="p2323105202212"></a>Description</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row1932315519221"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p11323551220"><a name="p11323551220"></a><a name="p11323551220"></a>kubernetes.io/elb.id</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p43232502212"><a name="p43232502212"></a><a name="p43232502212"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p1532419502210"><a name="p1532419502210"></a><a name="p1532419502210"></a>Optional. This parameter is mandatory if an existing load balancer is used.</p>
+    <p id="p1832435142216"><a name="p1832435142216"></a><a name="p1832435142216"></a>It indicates the ID of an enhanced load balancer.</p>
+    <p id="p1829210582433"><a name="p1829210582433"></a><a name="p1829210582433"></a>The value is a string of 1 to 100 characters.</p>
+    </td>
+    </tr>
+    <tr id="row19324185132210"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p143241054227"><a name="p143241054227"></a><a name="p143241054227"></a>kubernetes.io/elb.ip</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p63241755223"><a name="p63241755223"></a><a name="p63241755223"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p1232410519221"><a name="p1232410519221"></a><a name="p1232410519221"></a>Optional. Do not specify this parameter if an enhanced load balancer will be automatically created.</p>
+    <p id="p123246513225"><a name="p123246513225"></a><a name="p123246513225"></a>This parameter indicates the service address of an enhanced load balancer. The value can be the public IP address of a public network load balancer or the private IP address of a private network load balancer.</p>
+    </td>
+    </tr>
+    <tr id="row113242512217"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p1332415102211"><a name="p1332415102211"></a><a name="p1332415102211"></a>kubernetes.io/elb.subnet-id</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p16324185192216"><a name="p16324185192216"></a><a name="p16324185192216"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p6324185202213"><a name="p6324185202213"></a><a name="p6324185202213"></a>Optional. This parameter is mandatory only if a load balancer will be automatically created. For clusters of v1.11.7-r2 or later, this parameter can be left unspecified.</p>
+    <p id="p15670144512391"><a name="p15670144512391"></a><a name="p15670144512391"></a>The value is a string of 1 to 100 characters.</p>
+    </td>
+    </tr>
+    <tr id="row208207515458"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p1182112514453"><a name="p1182112514453"></a><a name="p1182112514453"></a>kubernetes.io/elb.enterpriseID</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p082165115457"><a name="p082165115457"></a><a name="p082165115457"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p1843954617535"><a name="p1843954617535"></a><a name="p1843954617535"></a>Optional. This parameter is mandatory if a public/private network load balancer will be automatically created.</p>
+    <p id="p439419360561"><a name="p439419360561"></a><a name="p439419360561"></a>This parameter indicates the name of the ELB enterprise project in which the ELB will be created.</p>
+    <p id="p84328529399"><a name="p84328529399"></a><a name="p84328529399"></a>The value is a string of 1 to 100 characters.</p>
+    </td>
+    </tr>
+    <tr id="row2756163013462"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p18244154711811"><a name="p18244154711811"></a><a name="p18244154711811"></a>kubernetes.io/elb.session-affinity-mode</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p16756113014465"><a name="p16756113014465"></a><a name="p16756113014465"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p165858416402"><a name="p165858416402"></a><a name="p165858416402"></a>Optional. This parameter is mandatory if sticky session is required.</p>
+    <p id="p1358544104017"><a name="p1358544104017"></a><a name="p1358544104017"></a>Value options: HTTP_COOKIE or APP_COOKIE</p>
+    </td>
+    </tr>
+    <tr id="row113881655124610"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p12244124711810"><a name="p12244124711810"></a><a name="p12244124711810"></a>kubernetes.io/elb.session-affinity-option</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p838811558463"><a name="p838811558463"></a><a name="p838811558463"></a><a href="#table1920573716128">Table 4</a></p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p587816237406"><a name="p587816237406"></a><a name="p587816237406"></a>Optional. This parameter indicates the configuration items for the Layer-7 ELB sticky session.</p>
+    </td>
+    </tr>
+    <tr id="row14324115112219"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p163241552218"><a name="p163241552218"></a><a name="p163241552218"></a>kubernetes.io/elb.autocreate</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p163247517229"><a name="p163247517229"></a><a name="p163247517229"></a><a href="#table19417184671919">elb.autocreate</a> object</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p03246532210"><a name="p03246532210"></a><a name="p03246532210"></a>Optional. This parameter is mandatory if a public network load balancer will be automatically created. Set this parameter to the EIP of the enhanced load balancer that is automatically created. This parameter is also mandatory if a private network load balancer will be automatically created.</p>
+    <p id="p13324858222"><a name="p13324858222"></a><a name="p13324858222"></a><strong id="b122043194200"><a name="b122043194200"></a><a name="b122043194200"></a>Example:</strong></p>
+    <a name="ul16324853220"></a><a name="ul16324853220"></a><ul id="ul16324853220"><li>Value for a public network load balancer that is automatically created: "{\"type\":\"public\",\"bandwidth_name\":\"cce-bandwidth-1551163379627\",\"bandwidth_chargemode\":\"traffic\",\"bandwidth_size\":5,\"bandwidth_sharetype\":\"PER\",\"eip_type\":\"5_bgp\",\"name\":\"james\"}"</li><li>Value for a private network load balancer that is automatically created: "{\"type\":\"inner\"}"</li></ul>
+    </td>
+    </tr>
+    <tr id="row252319474472"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p7499172101013"><a name="p7499172101013"></a><a name="p7499172101013"></a>kubernetes.io/elb.lb-algorithm</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p2523747174711"><a name="p2523747174711"></a><a name="p2523747174711"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p635254284012"><a name="p635254284012"></a><a name="p635254284012"></a>Optional. This parameter indicates the algorithm used the ELB.</p>
+    <p id="p17352104220407"><a name="p17352104220407"></a><a name="p17352104220407"></a>Default value: <strong id="b3352144254019"><a name="b3352144254019"></a><a name="b3352144254019"></a>ROUND_ROBIN</strong></p>
+    <p id="p1835218426402"><a name="p1835218426402"></a><a name="p1835218426402"></a>Value options: ROUND_ROBIN, LEAST_CONNECTIONS, SOURCE_IP, or left blank</p>
+    </td>
+    </tr>
+    <tr id="row5466204504713"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p44993217106"><a name="p44993217106"></a><a name="p44993217106"></a>kubernetes.io/elb.health-check-flag</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p24661045134716"><a name="p24661045134716"></a><a name="p24661045134716"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p69540108410"><a name="p69540108410"></a><a name="p69540108410"></a>Optional. This parameter indicates that whether the ELB health check function is enabled. The default value is <strong id="b2954181012418"><a name="b2954181012418"></a><a name="b2954181012418"></a>on</strong>.</p>
+    <p id="p295481024119"><a name="p295481024119"></a><a name="p295481024119"></a>Value options: on, off, or left blank</p>
+    </td>
+    </tr>
+    <tr id="row16301143194715"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p15499152161017"><a name="p15499152161017"></a><a name="p15499152161017"></a>kubernetes.io/elb.health-check-option</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p13301144344719"><a name="p13301144344719"></a><a name="p13301144344719"></a><a href="#table329102513130">Table 5</a></p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p183381822144110"><a name="p183381822144110"></a><a name="p183381822144110"></a>Optional. This parameter indicates the ELB health check configuration items.</p>
+    </td>
+    </tr>
+    <tr id="row332514515229"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p232519512211"><a name="p232519512211"></a><a name="p232519512211"></a>kubernetes.io/elb.port</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p173251458226"><a name="p173251458226"></a><a name="p173251458226"></a>Integer</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p93251554223"><a name="p93251554223"></a><a name="p93251554223"></a>Mandatory. External port registered with the address of the LoadBalancer service.</p>
+    </td>
+    </tr>
+    <tr id="row1432518511224"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p1432565182214"><a name="p1432565182214"></a><a name="p1432565182214"></a>kubernetes.io/ingress.class</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p1232514542215"><a name="p1232514542215"></a><a name="p1232514542215"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p13251456223"><a name="p13251456223"></a><a name="p13251456223"></a>By default, <strong id="b1435202252315"><a name="b1435202252315"></a><a name="b1435202252315"></a>cce</strong> indicates that an enhanced load balancer will be used, and <strong id="b18131115472313"><a name="b18131115472313"></a><a name="b18131115472313"></a>nginx</strong> indicates that the nginx-ingress add-on will be enabled. This parameter is mandatory when an ingress is created by calling the API.</p>
+    </td>
+    </tr>
+    <tr id="row143251551229"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p18325951228"><a name="p18325951228"></a><a name="p18325951228"></a>tls</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p1832513582216"><a name="p1832513582216"></a><a name="p1832513582216"></a>Array of strings</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p53262562220"><a name="p53262562220"></a><a name="p53262562220"></a>Optional. This parameter is mandatory if the front-end protocol is HTTPS.</p>
+    </td>
+    </tr>
+    <tr id="row6326185152213"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p5326145202219"><a name="p5326145202219"></a><a name="p5326145202219"></a>secretName</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p5326135162216"><a name="p5326135162216"></a><a name="p5326135162216"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p1732645172213"><a name="p1732645172213"></a><a name="p1732645172213"></a>Optional. This parameter is required when HTTPS is used. Set this parameter to the name of the created key certificate.</p>
+    </td>
+    </tr>
+    <tr id="row33265552211"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p1432685102213"><a name="p1432685102213"></a><a name="p1432685102213"></a>serviceName</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p1632617511229"><a name="p1632617511229"></a><a name="p1632617511229"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p17326135102219"><a name="p17326135102219"></a><a name="p17326135102219"></a>Name of the ingress-test-svc.yaml service.</p>
+    </td>
+    </tr>
+    <tr id="row1232616516229"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p16326052225"><a name="p16326052225"></a><a name="p16326052225"></a>servicePort</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p23264582215"><a name="p23264582215"></a><a name="p23264582215"></a>Integer</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p53261152221"><a name="p53261152221"></a><a name="p53261152221"></a>Container port, that is, targetPort in the ingress-test-svc.yaml.</p>
+    </td>
+    </tr>
+    <tr id="row1732620510228"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p12326195152216"><a name="p12326195152216"></a><a name="p12326195152216"></a>ingress.beta.kubernetes.io/url-match-mode</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p1232675172211"><a name="p1232675172211"></a><a name="p1232675172211"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p16327755228"><a name="p16327755228"></a><a name="p16327755228"></a>Route matching policy. The options are <strong id="b349312417285"><a name="b349312417285"></a><a name="b349312417285"></a>EQUAL_TO</strong> (exact matching), <strong id="b1764564632813"><a name="b1764564632813"></a><a name="b1764564632813"></a>STARTS_WITH</strong> (prefix matching), and <strong id="b37813537287"><a name="b37813537287"></a><a name="b37813537287"></a>REGEX</strong> (regular expression matching).</p>
+    </td>
+    </tr>
+    <tr id="row19327205202214"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p83279511221"><a name="p83279511221"></a><a name="p83279511221"></a>path</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p932711582211"><a name="p932711582211"></a><a name="p932711582211"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p173278515229"><a name="p173278515229"></a><a name="p173278515229"></a>User-defined route.</p>
+    </td>
+    </tr>
+    <tr id="row16327451221"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p832714513227"><a name="p832714513227"></a><a name="p832714513227"></a>host</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p1532718517223"><a name="p1532718517223"></a><a name="p1532718517223"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p53272572218"><a name="p53272572218"></a><a name="p53272572218"></a>Optional. This parameter specifies the domain name.</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 
-        <a name="table19417184671919"></a>
-        <table><thead align="left"><tr id="row14418174611912"><th class="cellrowborder" valign="top" width="29.727027297270276%" id="mcps1.2.4.1.1"><p id="p1141924611199"><a name="p1141924611199"></a><a name="p1141924611199"></a>Parameter</p>
-        </th>
-        <th class="cellrowborder" valign="top" width="18.678132186781323%" id="mcps1.2.4.1.2"><p id="p1641911466191"><a name="p1641911466191"></a><a name="p1641911466191"></a>Type</p>
-        </th>
-        <th class="cellrowborder" valign="top" width="51.594840515948405%" id="mcps1.2.4.1.3"><p id="p1941920463197"><a name="p1941920463197"></a><a name="p1941920463197"></a>Description</p>
-        </th>
-        </tr>
-        </thead>
-        <tbody><tr id="row194191846181915"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p152321411112318"><a name="p152321411112318"></a><a name="p152321411112318"></a>name</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p7419646171920"><a name="p7419646171920"></a><a name="p7419646171920"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p87791494919"><a name="p87791494919"></a><a name="p87791494919"></a>Name of the load balancer that is automatically created.</p>
-        <p id="p9912132016296"><a name="p9912132016296"></a><a name="p9912132016296"></a>The value is a string of 1 to 64 characters that consist of letters, digits, underscores (_), and hyphens (-).</p>
-        </td>
-        </tr>
-        <tr id="row142064681919"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p20862285225"><a name="p20862285225"></a><a name="p20862285225"></a>type</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p8420746101918"><a name="p8420746101918"></a><a name="p8420746101918"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p4703183013491"><a name="p4703183013491"></a><a name="p4703183013491"></a>Network type of the load balancer.</p>
-        <a name="ul152311045124913"></a><a name="ul152311045124913"></a><ul id="ul152311045124913"><li><strong id="b83121327103010"><a name="b83121327103010"></a><a name="b83121327103010"></a>public</strong>: public network load balancer.</li><li><strong id="b9790229123010"><a name="b9790229123010"></a><a name="b9790229123010"></a>inner</strong>: private network load balancer.</li></ul>
-        </td>
-        </tr>
-        <tr id="row194201046151910"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p128042817221"><a name="p128042817221"></a><a name="p128042817221"></a>bandwidth_name</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p1142084619195"><a name="p1142084619195"></a><a name="p1142084619195"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p6964103318220"><a name="p6964103318220"></a><a name="p6964103318220"></a>Bandwidth name. The default value is <strong id="b20740133311301"><a name="b20740133311301"></a><a name="b20740133311301"></a>cce-bandwidth-******</strong>.</p>
-        <p id="p1236952875020"><a name="p1236952875020"></a><a name="p1236952875020"></a>The value is a string of 1 to 64 characters that consist of letters, digits, underscores (_), hyphens (-), and periods (.).</p>
-        </td>
-        </tr>
-        <tr id="row942194619199"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p77502811221"><a name="p77502811221"></a><a name="p77502811221"></a>bandwidth_chargemode</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p11421446191914"><a name="p11421446191914"></a><a name="p11421446191914"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p3178181495216"><a name="p3178181495216"></a><a name="p3178181495216"></a>Bandwidth billing mode.</p>
-        <a name="ul567215235528"></a><a name="ul567215235528"></a><ul id="ul567215235528"><li><strong id="b0118194493018"><a name="b0118194493018"></a><a name="b0118194493018"></a>bandwidth</strong>: billed by bandwidth.</li><li><strong id="b568054619301"><a name="b568054619301"></a><a name="b568054619301"></a>traffic</strong>: billed by traffic.</li></ul>
-        </td>
-        </tr>
-        <tr id="row124211046101910"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p187492819229"><a name="p187492819229"></a><a name="p187492819229"></a>bandwidth_size</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p114229463196"><a name="p114229463196"></a><a name="p114229463196"></a>Integer</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p12958233152218"><a name="p12958233152218"></a><a name="p12958233152218"></a>Bandwidth size. Set this parameter based on the bandwidth range supported by the region. For details, see the <strong id="b65971949163614"><a name="b65971949163614"></a><a name="b65971949163614"></a>size</strong> field in <strong id="b1859764983610"><a name="b1859764983610"></a><a name="b1859764983610"></a>Table 4 Description of the bandwidth field</strong> in <a href="https://docs.otc.t-systems.com/en-us/api/vpc/en-us_topic_0020090596.html" target="_blank" rel="noopener noreferrer">Assigning an EIP</a>.</p>
-        </td>
-        </tr>
-        <tr id="row1942224601917"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p16731228202214"><a name="p16731228202214"></a><a name="p16731228202214"></a>bandwidth_sharetype</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p84221246111913"><a name="p84221246111913"></a><a name="p84221246111913"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p188864421731"><a name="p188864421731"></a><a name="p188864421731"></a>Bandwidth sharing mode.</p>
-        <a name="ul51872412"></a><a name="ul51872412"></a><ul id="ul51872412"><li><strong id="b168441719143117"><a name="b168441719143117"></a><a name="b168441719143117"></a>PER</strong>: dedicated bandwidth.</li><li><strong id="b1669953416312"><a name="b1669953416312"></a><a name="b1669953416312"></a>WHOLE</strong>: shared bandwidth.</li></ul>
-        </td>
-        </tr>
-        <tr id="row1242219461193"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p1972102872220"><a name="p1972102872220"></a><a name="p1972102872220"></a>eip_type</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p132201811174611"><a name="p132201811174611"></a><a name="p132201811174611"></a>String</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p11956103372218"><a name="p11956103372218"></a><a name="p11956103372218"></a>EIP type. Set this parameter based on the EIP types supported by ELB. For details, see the <strong id="b1465120586363"><a name="b1465120586363"></a><a name="b1465120586363"></a>type</strong> field in <strong id="b1565116582363"><a name="b1565116582363"></a><a name="b1565116582363"></a>Table 3 Description of the publicip field</strong> in <a href="https://docs.otc.t-systems.com/en-us/api/vpc/en-us_topic_0020090596.html" target="_blank" rel="noopener noreferrer">Assigning an EIP</a>.</p>
-        </td>
-        </tr>
-        </tbody>
-        </table>
+    **Table  3**  elb.autocreate parameters
 
-        **vi ingress-test-secret.yaml**
+    <a name="table19417184671919"></a>
+    <table><thead align="left"><tr id="row14418174611912"><th class="cellrowborder" valign="top" width="29.727027297270276%" id="mcps1.2.4.1.1"><p id="p1141924611199"><a name="p1141924611199"></a><a name="p1141924611199"></a>Parameter</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="18.678132186781323%" id="mcps1.2.4.1.2"><p id="p1641911466191"><a name="p1641911466191"></a><a name="p1641911466191"></a>Type</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="51.594840515948405%" id="mcps1.2.4.1.3"><p id="p1941920463197"><a name="p1941920463197"></a><a name="p1941920463197"></a>Description</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row194191846181915"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p152321411112318"><a name="p152321411112318"></a><a name="p152321411112318"></a>name</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p7419646171920"><a name="p7419646171920"></a><a name="p7419646171920"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p87791494919"><a name="p87791494919"></a><a name="p87791494919"></a>Name of the load balancer that is automatically created.</p>
+    <p id="p35414634211"><a name="p35414634211"></a><a name="p35414634211"></a>The value is a string of 1 to 64 characters that consist of lowercase letters, digits, and underscores (_). The value must start with a lowercase letter and end with a lowercase letter or digit.</p>
+    </td>
+    </tr>
+    <tr id="row142064681919"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p20862285225"><a name="p20862285225"></a><a name="p20862285225"></a>type</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p8420746101918"><a name="p8420746101918"></a><a name="p8420746101918"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p4703183013491"><a name="p4703183013491"></a><a name="p4703183013491"></a>Network type of the load balancer.</p>
+    <a name="ul152311045124913"></a><a name="ul152311045124913"></a><ul id="ul152311045124913"><li><strong id="b83121327103010"><a name="b83121327103010"></a><a name="b83121327103010"></a>public</strong>: public network load balancer.</li><li><strong id="b9790229123010"><a name="b9790229123010"></a><a name="b9790229123010"></a>inner</strong>: private network load balancer.</li></ul>
+    </td>
+    </tr>
+    <tr id="row194201046151910"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p128042817221"><a name="p128042817221"></a><a name="p128042817221"></a>bandwidth_name</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p1142084619195"><a name="p1142084619195"></a><a name="p1142084619195"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p6964103318220"><a name="p6964103318220"></a><a name="p6964103318220"></a>Bandwidth name. The default value is <strong id="b20740133311301"><a name="b20740133311301"></a><a name="b20740133311301"></a>cce-bandwidth-******</strong>.</p>
+    <p id="p71511111174219"><a name="p71511111174219"></a><a name="p71511111174219"></a>The value is a string of 1 to 64 characters that consist of lowercase letters, digits, and underscores (_). The value must start with a lowercase letter and end with a lowercase letter or digit.</p>
+    </td>
+    </tr>
+    <tr id="row942194619199"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p77502811221"><a name="p77502811221"></a><a name="p77502811221"></a>bandwidth_chargemode</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p11421446191914"><a name="p11421446191914"></a><a name="p11421446191914"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p3178181495216"><a name="p3178181495216"></a><a name="p3178181495216"></a>Bandwidth billing mode.</p>
+    <p id="p17993157195913"><a name="p17993157195913"></a><a name="p17993157195913"></a>The value is <strong id="b267410514014"><a name="b267410514014"></a><a name="b267410514014"></a>traffic</strong>, indicating that the billing is based on traffic.</p>
+    </td>
+    </tr>
+    <tr id="row124211046101910"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p187492819229"><a name="p187492819229"></a><a name="p187492819229"></a>bandwidth_size</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p114229463196"><a name="p114229463196"></a><a name="p114229463196"></a>Integer</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p12958233152218"><a name="p12958233152218"></a><a name="p12958233152218"></a>Bandwidth size. Set this parameter based on the bandwidth range supported by the region. For details, see the <strong id="b65971949163614"><a name="b65971949163614"></a><a name="b65971949163614"></a>size</strong> field in <strong id="b1859764983610"><a name="b1859764983610"></a><a name="b1859764983610"></a>Table 4 Description of the bandwidth field</strong> in <a href="https://docs.otc.t-systems.com/en-us/api/vpc/en-us_topic_0020090596.html" target="_blank" rel="noopener noreferrer">Assigning an EIP</a>.</p>
+    </td>
+    </tr>
+    <tr id="row1942224601917"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p16731228202214"><a name="p16731228202214"></a><a name="p16731228202214"></a>bandwidth_sharetype</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p84221246111913"><a name="p84221246111913"></a><a name="p84221246111913"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p188864421731"><a name="p188864421731"></a><a name="p188864421731"></a>Bandwidth sharing mode.</p>
+    <a name="ul51872412"></a><a name="ul51872412"></a><ul id="ul51872412"><li><strong id="b168441719143117"><a name="b168441719143117"></a><a name="b168441719143117"></a>PER</strong>: dedicated bandwidth.</li><li><strong id="b1669953416312"><a name="b1669953416312"></a><a name="b1669953416312"></a>WHOLE</strong>: shared bandwidth.</li></ul>
+    </td>
+    </tr>
+    <tr id="row1242219461193"><td class="cellrowborder" valign="top" width="29.727027297270276%" headers="mcps1.2.4.1.1 "><p id="p1972102872220"><a name="p1972102872220"></a><a name="p1972102872220"></a>eip_type</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p132201811174611"><a name="p132201811174611"></a><a name="p132201811174611"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p11956103372218"><a name="p11956103372218"></a><a name="p11956103372218"></a>EIP type. Set this parameter based on the EIP types supported by ELB. For details, see the <strong id="b1465120586363"><a name="b1465120586363"></a><a name="b1465120586363"></a>type</strong> field in <strong id="b1565116582363"><a name="b1565116582363"></a><a name="b1565116582363"></a>Table 3 Description of the publicip field</strong> in <a href="https://docs.otc.t-systems.com/en-us/api/vpc/en-us_topic_0020090596.html" target="_blank" rel="noopener noreferrer">Assigning an EIP</a>.</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 
-        ```
-        apiVersion: v1
-        data:
-          tls.crt: LS0******tLS0tCg==
-          tls.key: LS0tL******0tLS0K
-        kind: Secret
-        metadata:
-          annotations:
-            description: test for ingressTLS secrets
-          name: ingress-test-secret
-          namespace: default
-        type: IngressTLS
-        ```
+    **Table  4**  elb.session-affinity-option parameters
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >In the preceding command output,  **tls.crt**  and  **tls.key**  are only examples. Replace them with the actual keys.  
+    <a name="table1920573716128"></a>
+    <table><thead align="left"><tr id="row18242183711210"><th class="cellrowborder" valign="top" width="29.59%" id="mcps1.2.4.1.1"><p id="p151804419526"><a name="p151804419526"></a><a name="p151804419526"></a>Parameter</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="18.37%" id="mcps1.2.4.1.2"><p id="p218004117527"><a name="p218004117527"></a><a name="p218004117527"></a>Type</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="52.04%" id="mcps1.2.4.1.3"><p id="p1718184118521"><a name="p1718184118521"></a><a name="p1718184118521"></a>Description</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row52427371121"><td class="cellrowborder" valign="top" width="29.59%" headers="mcps1.2.4.1.1 "><p id="p12242937101214"><a name="p12242937101214"></a><a name="p12242937101214"></a>persistence_timeout</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.2 "><p id="p20242837141216"><a name="p20242837141216"></a><a name="p20242837141216"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.04%" headers="mcps1.2.4.1.3 "><p id="p18683174013429"><a name="p18683174013429"></a><a name="p18683174013429"></a>Sticky session timeout, in minutes. This parameter is valid only when <strong id="b1968412409423"><a name="b1968412409423"></a><a name="b1968412409423"></a>elb.session-affinity-mode</strong> is set to <strong id="b1368410406425"><a name="b1368410406425"></a><a name="b1368410406425"></a>HTTP_COOKIE</strong>.</p>
+    <p id="p116849405422"><a name="p116849405422"></a><a name="p116849405422"></a>Default value: <strong id="b1268411404428"><a name="b1268411404428"></a><a name="b1268411404428"></a>1440</strong></p>
+    <p id="p9684640194210"><a name="p9684640194210"></a><a name="p9684640194210"></a>Value range: 1 to 1440</p>
+    </td>
+    </tr>
+    <tr id="row15242113720127"><td class="cellrowborder" valign="top" width="29.59%" headers="mcps1.2.4.1.1 "><p id="p13242203711215"><a name="p13242203711215"></a><a name="p13242203711215"></a>app_cookie_name</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.2 "><p id="p1242133731211"><a name="p1242133731211"></a><a name="p1242133731211"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.04%" headers="mcps1.2.4.1.3 "><p id="p250618477425"><a name="p250618477425"></a><a name="p250618477425"></a>Sticky session timeout, in minutes. This parameter is valid only when <strong id="b8506204784212"><a name="b8506204784212"></a><a name="b8506204784212"></a>elb.session-affinity-mode</strong> is set to <strong id="b7506847144213"><a name="b7506847144213"></a><a name="b7506847144213"></a>APP_COOKIE</strong>.</p>
+    <p id="p205061947154211"><a name="p205061947154211"></a><a name="p205061947154211"></a>Value range: 1 to 10000</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 
+    **Table  5**  elb.health-check-option parameters
+
+    <a name="table329102513130"></a>
+    <table><thead align="left"><tr id="row682132520131"><th class="cellrowborder" valign="top" width="29.59%" id="mcps1.2.4.1.1"><p id="p10719144410521"><a name="p10719144410521"></a><a name="p10719144410521"></a>Parameter</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="18.37%" id="mcps1.2.4.1.2"><p id="p207195448526"><a name="p207195448526"></a><a name="p207195448526"></a>Type</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="52.04%" id="mcps1.2.4.1.3"><p id="p4719144455210"><a name="p4719144455210"></a><a name="p4719144455210"></a>Description</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row38212257136"><td class="cellrowborder" valign="top" width="29.59%" headers="mcps1.2.4.1.1 "><p id="p18262501315"><a name="p18262501315"></a><a name="p18262501315"></a>delay</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.2 "><p id="p17821525191319"><a name="p17821525191319"></a><a name="p17821525191319"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.04%" headers="mcps1.2.4.1.3 "><p id="p14629135194318"><a name="p14629135194318"></a><a name="p14629135194318"></a>Optional. Initial wait time (in seconds) for starting the health check.</p>
+    <p id="p156291653438"><a name="p156291653438"></a><a name="p156291653438"></a>Default value: <strong id="b56293574310"><a name="b56293574310"></a><a name="b56293574310"></a>5</strong></p>
+    <p id="p662920513433"><a name="p662920513433"></a><a name="p662920513433"></a>Value range: 1 to 50</p>
+    </td>
+    </tr>
+    <tr id="row118282511139"><td class="cellrowborder" valign="top" width="29.59%" headers="mcps1.2.4.1.1 "><p id="p1582122531317"><a name="p1582122531317"></a><a name="p1582122531317"></a>timeout</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.2 "><p id="p58242515132"><a name="p58242515132"></a><a name="p58242515132"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.04%" headers="mcps1.2.4.1.3 "><p id="p771191220431"><a name="p771191220431"></a><a name="p771191220431"></a>Optional. Health check timeout, in seconds.</p>
+    <p id="p187112012154316"><a name="p187112012154316"></a><a name="p187112012154316"></a>Default value: <strong id="b1711171213439"><a name="b1711171213439"></a><a name="b1711171213439"></a>10</strong></p>
+    <p id="p1971141217439"><a name="p1971141217439"></a><a name="p1971141217439"></a>Value range: 1 to 50</p>
+    </td>
+    </tr>
+    <tr id="row982825181310"><td class="cellrowborder" valign="top" width="29.59%" headers="mcps1.2.4.1.1 "><p id="p382182517136"><a name="p382182517136"></a><a name="p382182517136"></a>max_retries</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.2 "><p id="p1082122541314"><a name="p1082122541314"></a><a name="p1082122541314"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.04%" headers="mcps1.2.4.1.3 "><p id="p157647192430"><a name="p157647192430"></a><a name="p157647192430"></a>ptional. Maximum number of health check retries.</p>
+    <p id="p197644196437"><a name="p197644196437"></a><a name="p197644196437"></a>Default value: <strong id="b176481915432"><a name="b176481915432"></a><a name="b176481915432"></a>3</strong></p>
+    <p id="p57641219164311"><a name="p57641219164311"></a><a name="p57641219164311"></a>Value range: 1 to 10</p>
+    </td>
+    </tr>
+    <tr id="row10821625131313"><td class="cellrowborder" valign="top" width="29.59%" headers="mcps1.2.4.1.1 "><p id="p1182025131315"><a name="p1182025131315"></a><a name="p1182025131315"></a>protocol</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.2 "><p id="p1082192581314"><a name="p1082192581314"></a><a name="p1082192581314"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.04%" headers="mcps1.2.4.1.3 "><p id="p72041282438"><a name="p72041282438"></a><a name="p72041282438"></a>Optional. Protocol used for health check.</p>
+    <p id="p1204628144314"><a name="p1204628144314"></a><a name="p1204628144314"></a>Default value: protocol of the associated service</p>
+    <p id="p9204162824310"><a name="p9204162824310"></a><a name="p9204162824310"></a>Value options: TCP or HTTP</p>
+    </td>
+    </tr>
+    <tr id="row14820253132"><td class="cellrowborder" valign="top" width="29.59%" headers="mcps1.2.4.1.1 "><p id="p4821725161319"><a name="p4821725161319"></a><a name="p4821725161319"></a>path</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.2 "><p id="p1482152517132"><a name="p1482152517132"></a><a name="p1482152517132"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.04%" headers="mcps1.2.4.1.3 "><p id="p1964323513432"><a name="p1964323513432"></a><a name="p1964323513432"></a>Optional. Health check URL. This parameter is optional when <strong id="b1464383515435"><a name="b1464383515435"></a><a name="b1464383515435"></a>protocol</strong> is <strong id="b19643173574311"><a name="b19643173574311"></a><a name="b19643173574311"></a>HTTP</strong>.</p>
+    <p id="p864313517432"><a name="p864313517432"></a><a name="p864313517432"></a>Default value: <strong id="b464333518437"><a name="b464333518437"></a><a name="b464333518437"></a>/</strong></p>
+    <p id="p464333564316"><a name="p464333564316"></a><a name="p464333564316"></a>Value range: 1 to 10000</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+    **vi ingress-test-secret.yaml**
+
+    ```
+    apiVersion: v1
+    data:
+      tls.crt: LS0******tLS0tCg==
+      tls.key: LS0tL******0tLS0K
+    kind: Secret
+    metadata:
+      annotations:
+        description: test for ingressTLS secrets
+      name: ingress-test-secret
+      namespace: default
+    type: IngressTLS
+    ```
+
+    >![](public_sys-resources/icon-note.gif) **NOTE:**   
+    >In the preceding command output,  **tls.crt**  and  **tls.key**  are only examples. Replace them with the actual keys.  
 
 3.  Create a workload.
 
@@ -554,7 +700,7 @@ The ECS where the kubectl client runs has been connected to your cluster. For de
 
     **10.154.76.63**  indicates the IP address of the unified load balancer.
 
-    **Figure  2**  Accessing healthz<a name="fig1526153112115"></a>  
+    **Figure  3**  Accessing healthz<a name="fig1526153112115"></a>  
     ![](figures/accessing-healthz.png "accessing-healthz")
 
 

@@ -1,4 +1,4 @@
-# Creating an Image Repository<a name="cce_01_0208"></a>
+# Creating an Image Repository<a name="cce_01_1208"></a>
 
 An image repository is used to store, deploy, and manage Docker images.
 

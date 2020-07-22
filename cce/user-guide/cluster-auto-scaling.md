@@ -21,13 +21,7 @@ The Cluster Auto Scaling feature allows CCE to automatically  scale out  a clust
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row57131863523"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p37141665524"><a name="p37141665524"></a><a name="p37141665524"></a>Minimum Nodes</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="p1357374610237"><a name="p1357374610237"></a><a name="p1357374610237"></a>Minimum number of nodes in a cluster.</p>
-    <p id="p1553506216271"><a name="p1553506216271"></a><a name="p1553506216271"></a>The value must be <strong id="b1363142145410"><a name="b1363142145410"></a><a name="b1363142145410"></a>1</strong> or greater, and smaller than the maximum number of nodes in a cluster.</p>
-    </td>
-    </tr>
-    <tr id="row264735262215"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p9762105862216"><a name="p9762105862216"></a><a name="p9762105862216"></a><span class="keyword" id="keyword166813866311444"><a name="keyword166813866311444"></a><a name="keyword166813866311444"></a>Cooldown Period</span></p>
+    <tbody><tr id="row264735262215"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p9762105862216"><a name="p9762105862216"></a><a name="p9762105862216"></a><span class="keyword" id="keyword166813866311444"><a name="keyword166813866311444"></a><a name="keyword166813866311444"></a>Cooldown Period</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="p1776217589220"><a name="p1776217589220"></a><a name="p1776217589220"></a>Interval between consecutive scale-up operations, in the unit of second. The cooldown period ensures that a scale-up operation is initiated only when previous scaling operation is finished and the system is running stably.</p>
     <p id="p157621158192219"><a name="p157621158192219"></a><a name="p157621158192219"></a>The value ranges from 60 seconds to 3600 seconds. The default value is 900 seconds. If the value is less than 900 seconds, scale-up may not meet your expectation.</p>
@@ -67,7 +61,7 @@ The Cluster Auto Scaling feature allows CCE to automatically  scale out  a clust
             </thead>
             <tbody><tr id="row29097928191540"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p8121931191540"><a name="p8121931191540"></a><a name="p8121931191540"></a>* Metric</p>
             </td>
-            <td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="p53896712191540"><a name="p53896712191540"></a><a name="p53896712191540"></a>Select <strong id="b842352706105845"><a name="b842352706105845"></a><a name="b842352706105845"></a>Allocated CPU</strong> or <strong id="b842352706105849"><a name="b842352706105849"></a><a name="b842352706105849"></a>Allocated Memory</strong>.</p>
+            <td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="p53896712191540"><a name="p53896712191540"></a><a name="p53896712191540"></a>Select <strong id="b842352706105845"><a name="b842352706105845"></a><a name="b842352706105845"></a>Allocated CPU</strong> or <strong id="b842352706105849"><a name="b842352706105849"></a><a name="b842352706105849"></a>Allocated memory</strong>.</p>
             </td>
             </tr>
             <tr id="row32017871191540"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p43310752191540"><a name="p43310752191540"></a><a name="p43310752191540"></a>* Trigger Condition</p>
@@ -75,13 +69,13 @@ The Cluster Auto Scaling feature allows CCE to automatically  scale out  a clust
             <td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="p18509989191540"><a name="p18509989191540"></a><a name="p18509989191540"></a>Set a condition for triggering a scale-up policy, that is, when the average CPU or memory allocation value is greater than or less than a specified percentage.</p>
             </td>
             </tr>
-            <tr id="row32372174191540"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p4900477191540"><a name="p4900477191540"></a><a name="p4900477191540"></a>* Duration</p>
+            <tr id="row32372174191540"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p4900477191540"><a name="p4900477191540"></a><a name="p4900477191540"></a>* Monitoring window</p>
             </td>
             <td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="p61394389191540"><a name="p61394389191540"></a><a name="p61394389191540"></a>Duration for which the metric is measured. Select a value from the drop-down list.</p>
             <p id="p15678591191540"><a name="p15678591191540"></a><a name="p15678591191540"></a>If you select <strong id="b8423527061147"><a name="b8423527061147"></a><a name="b8423527061147"></a>15min</strong>, the selected metric is measured every 15 minutes.</p>
             </td>
             </tr>
-            <tr id="row6889597191540"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p21186461191540"><a name="p21186461191540"></a><a name="p21186461191540"></a>* Measurement Period</p>
+            <tr id="row6889597191540"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p21186461191540"><a name="p21186461191540"></a><a name="p21186461191540"></a>* <span id="ph4802843152619"><a name="ph4802843152619"></a><a name="ph4802843152619"></a>Threshold Crossings</span></p>
             </td>
             <td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="p38381790191540"><a name="p38381790191540"></a><a name="p38381790191540"></a>If you set this parameter to <strong id="b84235270617847"><a name="b84235270617847"></a><a name="b84235270617847"></a>3</strong>, the action is triggered if the metrics meet the specified threshold for three consecutive times.</p>
             </td>
@@ -107,7 +101,7 @@ The Cluster Auto Scaling feature allows CCE to automatically  scale out  a clust
             </thead>
             <tbody><tr id="row3287219191540"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p64938190191540"><a name="p64938190191540"></a><a name="p64938190191540"></a>* Policy Type</p>
             </td>
-            <td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="p25502013191540"><a name="p25502013191540"></a><a name="p25502013191540"></a>Set this parameter to <strong id="b842352706171841"><a name="b842352706171841"></a><a name="b842352706171841"></a>Scheduled Policy</strong>.</p>
+            <td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="p25502013191540"><a name="p25502013191540"></a><a name="p25502013191540"></a>Set this parameter to <strong id="b842352706171841"><a name="b842352706171841"></a><a name="b842352706171841"></a>Scheduled <span id="ph1086491242715"><a name="ph1086491242715"></a><a name="ph1086491242715"></a>p</span>olicy</strong>.</p>
             </td>
             </tr>
             <tr id="row28191528191540"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p1812401191540"><a name="p1812401191540"></a><a name="p1812401191540"></a>* Trigger Time</p>
@@ -136,10 +130,10 @@ The Cluster Auto Scaling feature allows CCE to automatically  scale out  a clust
             </thead>
             <tbody><tr id="row4159900191540"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p1407635191540"><a name="p1407635191540"></a><a name="p1407635191540"></a>* Policy Type</p>
             </td>
-            <td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="p46909639191540"><a name="p46909639191540"></a><a name="p46909639191540"></a>Set the parameter to <strong id="b1788560206172133"><a name="b1788560206172133"></a><a name="b1788560206172133"></a>Periodic Policy</strong>.</p>
+            <td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="p46909639191540"><a name="p46909639191540"></a><a name="p46909639191540"></a>Set the parameter to <strong id="b1788560206172133"><a name="b1788560206172133"></a><a name="b1788560206172133"></a>Periodic <span id="ph45621166272"><a name="ph45621166272"></a><a name="ph45621166272"></a>p</span>olicy</strong>.</p>
             </td>
             </tr>
-            <tr id="row19533571191540"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p38715420191540"><a name="p38715420191540"></a><a name="p38715420191540"></a>* Select Time</p>
+            <tr id="row19533571191540"><td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.3.1.1 "><p id="p38715420191540"><a name="p38715420191540"></a><a name="p38715420191540"></a>* Time Range</p>
             </td>
             <td class="cellrowborder" valign="top" width="74%" headers="mcps1.2.3.1.2 "><p id="p48941350191540"><a name="p48941350191540"></a><a name="p48941350191540"></a>Specify the time for triggering the policy.</p>
             </td>

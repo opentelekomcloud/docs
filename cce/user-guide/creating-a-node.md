@@ -4,10 +4,10 @@ A  node  is a virtual or physical machine that provides computing resources. Suf
 
 ## Prerequisites<a name="section103205496263"></a>
 
--   At least one cluster is available. For details on how to create a cluster, see  [Creating a VM Cluster](creating-a-vm-cluster.md).
+-   At least one cluster is available. For details on how to create a cluster, see  [Creating a Hybrid Cluster](creating-a-hybrid-cluster.md).
 -   A key pair has been created. The key pair will be used for identity authentication upon remote node login. For details, see  [Creating a Key Pair](https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0014250631.html).
 
-## Precautions for Using a Node<a name="section1230051055915"></a>
+## Precautions for Using a Node<a name="section115398290518"></a>
 
 Some of the resources on the node need to run some necessary Kubernetes system components and resources to make the node as part of your cluster. Therefore, the total number of node resources and the number of assignable node resources in Kubernetes are different. The larger the node specifications, the more the containers deployed on the node. Therefore, Kubernetes needs to reserve more resources.
 
@@ -26,6 +26,10 @@ To ensure node stability, CCE cluster nodes reserve some resources for Kubernete
         To enhance workload availability, create nodes in different AZs.
 
 3.  Configure the node specifications and quantity.
+    -   **Node Type**
+
+        **VM node**: A VM node will be created in the cluster.
+
     -   **Node Name**: Enter a node name.
     -   **DeH**: A Dedicated Host \(DeH\) is a physical server dedicated for your use. You can create nodes on a DeH to physically isolate the nodes from those of other tenants.
 
@@ -47,7 +51,22 @@ To ensure node stability, CCE cluster nodes reserve some resources for Kubernete
     -   **VPC**: This parameter is displayed only for clusters of v1.13.10-r0 and later.
     -   **Subnet**: A subnet improves network security by providing exclusive network resources that are isolated from other networks. You can select any subnet in the cluster VPC. Cluster nodes can belong to different subnets. This parameter is displayed only for clusters of v1.13.10-r0 and later.
 
-4.  **EIP**: An independent public IP address. If the nodes to be created require Internet access, select  **Automatically assign**  or  **Use existing**.
+4.  **System Disk**  and  **Data Disk**: Set the disk space of the nodes.
+
+    -   The system disk capacity ranges from 40 GB to 1,024 GB.
+
+        >![](public_sys-resources/icon-note.gif) **NOTE:**   
+        >When accepting a node into a cluster of v1.15, ensure that the system disk of the node has a capacity larger than 50 GB.  
+
+    -   The data disk capacity is configurable and ranges from 100 to 32678 GB.
+
+    System disks and data disks deliver three levels of I/O performance:
+
+    -   **Common I/O**: uses Serial Advanced Technology Attachment \(SATA\) drives to store data. EVS disks of this level provide reliable block storage and a maximum IOPS of 1,000 per disk. They are suitable for key applications.
+    -   **High I/O**: uses serial attached SCSI \(SAS\) drives to store data. EVS disks of this level provide a maximum IOPS of 3,000 and a minimum read/write latency of 1 ms. They are suitable for Relational Database Service \(RDS\), NoSQL, data warehouse, and file system applications.
+    -   **Ultra-high I/O**: uses solid state disk \(SSD\) drives to store data. EVS disks of this level provide a maximum IOPS of 20,000 and a minimum read/write latency of 1 ms. They are suitable for RDS, NoSQL, and data warehouse applications.
+
+5.  **EIP**: An independent public IP address. If the nodes to be created require Internet access, select  **Automatically assign**  or  **Use existing**.
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >By default, VPC's SNAT feature is disabled for CCE. If SNAT is enabled, you do not need to use EIPs to access external networks.  
@@ -59,22 +78,11 @@ To ensure node stability, CCE cluster nodes reserve some resources for Kubernete
 
     -   **Use existing**: Existing EIPs are assigned to the nodes to be created.
 
-5.  **System Disk**  and  **Data Disk**: Set the disk space of the nodes.
-
-    -   The system disk capacity ranges from 40 GB to 1,024 GB. The default value is 40 GB.
-    -   The data disk capacity is configurable and ranges from 100 to 32678 GB. The default value is 100 GB.
-
-    System disks and data disks deliver three levels of I/O performance:
-
-    -   **Common I/O**: uses Serial Advanced Technology Attachment \(SATA\) drives to store data. EVS disks of this level provide reliable block storage and a maximum IOPS of 1,000 per disk. They are suitable for key applications.
-    -   **High I/O**: uses serial attached SCSI \(SAS\) drives to store data. EVS disks of this level provide a maximum IOPS of 3,000 and a minimum read/write latency of 1 ms. They are suitable for Relational Database Service \(RDS\), NoSQL, data warehouse, and file system applications.
-    -   **Ultra-high I/O**: uses solid state disk \(SSD\) drives to store data. EVS disks of this level provide a maximum IOPS of 20,000 and a minimum read/write latency of 1 ms. They are suitable for RDS, NoSQL, and data warehouse applications.
-
 6.  If the login mode is  **Key pair**, select a key pair for logging to the node.
 
     A key pair is used for identity authentication when you remotely log in to a node. If no key pair is available, click  **Create a key pair**. For details on how to create a key pair, see  [Creating a Key Pair](https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0014250631.html).
 
-7.  **Advanced ECS Settings**  \(optional\): Click  ![](figures/icon-monitoring.png)  to show advanced ECS settings.
+7.  **Advanced ECS Settings**  \(optional\): Click  ![](figures/icon-monitoring-0.png)  to show advanced ECS settings.
     -   **ECS Group**: Select an existing ECS group, or click  **Create ECS Group**  to create a new one. After the ECS group is created, click the refresh icon.
 
         An ECS group allows you to create ECSs on different hosts, thereby improving service reliability.
@@ -94,10 +102,10 @@ To ensure node stability, CCE cluster nodes reserve some resources for Kubernete
 
         The script will be executed after Kubernetes software is installed and will not affect the installation. The script is usually used to modify Docker parameters.
 
-    -   **Add Data Disk**: Click  **Add Data Disk**  to add a data disk and set the capacity of the data disk. To simplify disk formatting, you can enter the disk formatting command in the input box of  **Pre-installation Script**. For details, see  [How Do I Add a Second Data Disk to a CCE Node?](how-do-i-add-a-second-data-disk-to-a-cce-node.md).
+    -   **Add Data Disk**: Click  **Add Data Disk**  to add a data disk and set the capacity of the data disk. To simplify disk formatting, you can enter the disk formatting command in the input box of  **Pre-installation Script**. For details, see  [How Do I Add a Second Data Disk to a Node in a CCE Cluster?](how-do-i-add-a-second-data-disk-to-a-node-in-a-cce-cluster.md).
     -   **Subnet IP Address**: Select  **Automatically assign IP address**  \(recommended\) or  **Manually assigning IP addresses**.
 
-8.  **Advanced Kubernetes Settings**  \(optional\): Click  ![](figures/icon-monitoring.png)  to show advanced Kubernetes settings.
+8.  **Advanced Kubernetes Settings**  \(optional\): Click  ![](figures/icon-monitoring-0.png)  to show advanced Kubernetes settings.
     -   **Max Pods**: The maximum number of pods that can be created on a node, including the system's default pods. Value range: 16 to 250.
 
         This maximum limit prevents the node from being overloaded by managing too many pods.
@@ -108,10 +116,6 @@ To ensure node stability, CCE cluster nodes reserve some resources for Kubernete
 
     -   **Maximum Data Space per Container**: The value ranges from 10 GB to 80 GB. If the value of this field is larger than the data disk space allocated to Docker, the latter will override the value specified here. Typically, 90% of the data disk space is allocated to Docker. This parameter is supported only in v1.13.10-r0 and later versions of clusters. It is not displayed in versions earlier than v1.13.10-r0.
 
-9.  Click  **Next**, confirm the information, and click  **Submit**. It takes 6 to 10 minutes to create a node.
-
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >If the console indicates insufficient EIP quota during node creation, increase the quota by following the instructions provided in  [How Do I Troubleshoot Insufficient EIPs When a Node Is Added?](how-do-i-troubleshoot-insufficient-eips-when-a-node-is-added.md).  
-
+9.  Click  **Next: Confirm**, confirm the information, and click  **Submit**. It takes 6 to 10 minutes to create a node.
 10. Click  **Back to Node List**. The node has been created successfully if it is in the Available state.
 

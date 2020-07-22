@@ -1,6 +1,6 @@
 # Permissions Policies and Supported Actions<a name="cce_02_0327"></a>
 
-This chapter describes fine-grained permissions management for your CCE. If your public cloud account does not need individual IAM users, then you may skip over this chapter.
+This chapter describes fine-grained permissions management for your CCE. If your cloud account does not need individual IAM users, then you may skip over this chapter.
 
 A policy is a set of permissions defined in JSON format. By default, new IAM users do not have any permissions assigned. You need to add a user to one or more groups, and assign permissions policies to these groups. The user then inherits permissions from the groups it is a member of. This process is called authorization. After authorization, the user can perform specified operations on specified cloud services based on the permissions.
 

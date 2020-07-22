@@ -1,6 +1,6 @@
 # DNAT<a name="cce_01_0058"></a>
 
-A  **destination network address translation \(DNAT\) gateway**  is situated between cluster nodes and public networks and assigned an EIP. After receiving inbound requests from public networks, the NAT gateway translates the EIP \(destination address in the inbound requests\) into a cluster-internal address. It appears to workload users as if all nodes running the workload share the same EIP.
+A  **destination network address translation \(DNAT\) gateway**  is situated between  cluster nodes  and public networks and assigned an EIP. After receiving inbound requests from public networks, the NAT gateway translates the EIP \(destination address in the inbound requests\) into a cluster-internal address. It appears to workload users as if all nodes running the workload share the same EIP.
 
 DNAT provides higher reliability than EIP-based NodePort in which the EIP is bound to a single node and once the node is down, all inbound requests to the workload will not be distributed. The access address is in the format of <EIP\>:<access port\>, for example, 10.117.117.117:80.
 
@@ -22,11 +22,11 @@ Observe the following constraints when using the NAT Gateway service:
 -   The custom CIDR block must be a CIDR block of Direct Connect and cannot conflicts with VPC's existing subnet CIDR blocks.
 -   When you perform operations on underlying resources of an ECS, for example, changing its specifications, the configured NAT gateway rules become invalid. You need to delete the rules and reconfigure them.
 
-## Prerequisites<a name="section1392615822420"></a>
+## Prerequisites<a name="section15345195764111"></a>
 
 You have created a NAT Gateway and an elastic IP address. The specific procedure is as follows:
 
-1.  Log in to the management console and choose  **Network**  \>  **NAT Gateway**  from the service list. Click  **Create NAT Gateway**  in the upper right corner of the page.
+1.  Log in to the management console and choose  **Service List \> Network**  \>  **NAT Gateway**  from the service list. Click  **Create NAT Gateway**  in the upper right corner of the page.
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >When creating a NAT gateway, ensure that the NAT gateway belongs to the same VPC and subnet as the CCE cluster where the workload is running.  
@@ -34,7 +34,7 @@ You have created a NAT Gateway and an elastic IP address. The specific procedure
     **Figure  2**  Creating a NAT Gateway<a name="fig65141147164317"></a>  
     ![](figures/creating-a-nat-gateway.png "creating-a-nat-gateway")
 
-2.  On the management console, choose  **Network**  \>  **Elastic IP**  from the service list and click  **Assign EIP**.
+2.  On the management console, choose  **Service List \> Network**  \>  **Elastic IP**  from the service list and click  **Assign EIP**.
 
     **Figure  3**  Assigning an elastic IP address<a name="fig1665717534483"></a>  
     ![](figures/assigning-an-elastic-ip-address.png "assigning-an-elastic-ip-address")
@@ -45,13 +45,13 @@ You have created a NAT Gateway and an elastic IP address. The specific procedure
 You can set the service access type when creating a workload on the CCE console. An Nginx workload is used as an example. The procedure is as follows:
 
 1.  In the  **Set Application Access**  step of  [Creating a Deployment](creating-a-deployment.md)  or  [Creating a StatefulSet](creating-a-statefulset.md), click  **Add Service**  and set the following parameters:
-    -   **Access Type**: set to  **DNAT gateway \(DNAT\)**.
+    -   **Access Type**: set to  **LoadBalancer \(DNAT\)**.
     -   **Service Name**: can be the same as the workload name.
     -   **Service Affinity**
         -   **Cluster level**: External traffic is routed to all nodes in the cluster while masking clients' source IP addresses.
         -   **Node level**: External traffic is routed to the node where the workload targeted by the service is located, without masking clients' source IP addresses.
 
-    -   **NAT Gateway**
+    -   **NAT Gateway**:
         -   Select a NAT gateway. If no NAT gateways are available, click  **Create a NAT gateway**  to create one. The NAT gateway must be in the same VPC as the current cluster.
         -   Select an EIP for the NAT gateway. If no EIPs are available, click  **Create an EIP**  to create one.
         -   Select  **I have read and agree to the NAT Gateway Usage Restrictions**.
@@ -83,7 +83,7 @@ You have configured the kubectl and connected an ECS to the cluster. For details
 1.  Log in to the ECS on which the kubectl has been configured. For details, see  [Logging In to a Linux ECS](https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0013771089.html).
 2.  Create and edit the  **nginx-deployment.yaml**  and  **nginx-nat-svc.yaml**  files.
 
-    The file names are user-defined.  **nginx-deployment.yaml**  and  **nginx-nat-svc.yaml**  are merely example file names.
+    The file names are user-defined.  **nginx-deploym\`ent.yaml**  and  **nginx-nat-svc.yaml**  are merely example file names.
 
     **vi nginx-deployment.yaml**
 
@@ -212,7 +212,7 @@ You have configured the kubectl and connected an ECS to the cluster. For details
     NAME                     READY     STATUS             RESTARTS   AGE
     etcd-0                   0/1       ImagePullBackOff   0          59m
     icagent-m9dkt            0/0       Running            0          3d
-    nginx-2601814895-sf71t 1/1       Running           0          8s
+    nginx-2601814895-sf71t   1/1       Running            0          8s
     ```
 
 4.  Create a service.
@@ -247,7 +247,7 @@ You can set the access type after creating a workload. This has no impact on the
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**. On the workload list, click the name of the workload for which you will create a service.
 2.  On the  **Services**  tab page, click  **Create Service**.
-3.  On the  **Create Service**  page, set  **Access Type**  to  **DNAT gateway \(DNAT\)**.
+3.  On the  **Create Service**  page, set  **Access Type**  to  **LoadBalancer \(DNAT\)**.
 4.  Set DNAT gateway parameters.
     -   **Service Name**: can be the same as the workload name.
     -   **Cluster Name**: name of the cluster where the workload runs. The value is inherited from the workload creation page and cannot be changed.
@@ -269,7 +269,25 @@ You can set the access type after creating a workload. This has no impact on the
 
 5.  Click  **Create**. A DNAT gateway \(DNAT\) service will be added for the workload.
 
-## Updating a Service<a name="section1335271211407"></a>
+## Updating a Service<a name="section66147391556"></a>
 
-The DNAT gateway \(DNAT\) service cannot be updated for the workload.
+After adding a service, you can update the port configuration of the service. The procedure is as follows:
+
+1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Network**. On the  **Services**  tab page, filter services by cluster and namespace, and click  **Update**  for the service to be updated.
+2.  On the  **Update Service**  page, set  **Access Type**  to  **LoadBalancer \(DNAT\)**.
+3.  Update load balancing parameters.
+    -   **Cluster Name**: name of the cluster where the workload runs. The value is inherited from the workload creation page and cannot be changed.
+    -   **Namespace**: namespace where the workload is located. The value is inherited from the workload creation page and cannot be changed.
+    -   **Workload**: a workload for which you want to update the service.
+    -   **Service Affinity**
+        -   **Cluster level**: External traffic is routed to all nodes in the cluster while masking clients' source IP addresses.
+        -   **Node level**: External traffic is routed to the node where the workload targeted by the service is located, without masking clients' source IP addresses.
+
+    -   **NAT Gateway**: The value is inherited from the workload creation page and cannot be changed.
+    -   **Port Settings**
+        -   **Protocol**: a protocol used by the service.
+        -   **Container Port**: a port on which the workload in the container image listens. The Nginx workload listens on port 80.
+        -   **Access Port**: a port mapped to the container port. The port number range is 1–65535.
+
+4.  Click  **Update**. The service will be updated for the workload.
 

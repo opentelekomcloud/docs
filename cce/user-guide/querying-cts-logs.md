@@ -9,7 +9,7 @@ After you enable CTS, the system starts recording operations on CCE resources. O
 ## Procedure<a name="section208814582456"></a>
 
 1.  Log in to the management console.
-2.  Click  ![](figures/icon-region.gif)  in the upper left corner and select a region.
+2.  Click  ![](figures/icon-region-8.gif)  in the upper left corner and select a region.
 3.  Choose  **Service List**  from the main menu. Choose  **Management & Deployment**  \>  **Cloud Trace Service**.
 4.  In the navigation pane of the CTS console, choose  **Cloud Trace Service**  \>  **Trace List**.
 5.  On the  **Trace List**  page, query operation records based on the search criteria. Currently, the trace list supports trace query based on the combination of the following search criteria:

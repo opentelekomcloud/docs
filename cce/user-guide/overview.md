@@ -8,6 +8,7 @@ CCE provides Kubernetes-native container deployment and management and supports 
 
 -   **Deployment**: Pods are completely independent of each other and functionally identical. They feature auto scaling and rolling upgrade. Typical examples include Nginx and WordPress. For details on how to create a deployment, see  [Creating a Deployment](creating-a-deployment.md).
 -   **StatefulSet**: Pods are not completely independent of each other. They have stable persistent storage, and feature orderly deployment and deletion. Typical examples include MySQL-HA and etcd. For details on how to create a StatefulSet, see  [Creating a StatefulSet](creating-a-statefulset.md).
+-   **DaemonSet**:  A DaemonSet ensures that all or some nodes run a pod. It is applicable to pods running on every node. Typical examples include Ceph, Fluentd, and Prometheus Node Exporter. For details about how to create a DaemonSet, see  [Creating a DaemonSet](creating-a-daemonset.md).
 -   **Job**: A job is a resource object that Kubernetes uses to control tasks in batches.
 
     A job is different from a long-term servo workload \(such as Deployment and StatefulSet\). The former is started and terminated at specific times, while the latter runs unceasingly unless being terminated. The pods managed by a job automatically exit after successfully completing the job based on user configurations. The success flag varies according to the spec.completions policy.

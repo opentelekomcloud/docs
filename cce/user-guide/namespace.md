@@ -6,7 +6,7 @@ For example, you can deploy workloads in a development environment into one name
 
 ## Prerequisites<a name="section812825881312"></a>
 
-At least one cluster is created. For details, see  [Creating a VM Cluster](creating-a-vm-cluster.md).
+At least one cluster is created. For details, see  [Creating a Hybrid Cluster](creating-a-hybrid-cluster.md).
 
 ## Constraints<a name="section21791218165310"></a>
 
@@ -31,36 +31,35 @@ Namespaces can be created automatically or manually.
     **Table  1**  Parameters for creating a namespace
 
     <a name="table5523151617575"></a>
-    <table><thead align="left"><tr id="row145240162572"><th class="cellrowborder" valign="top" width="28.000000000000004%" id="mcps1.2.3.1.1"><p id="p105244162578"><a name="p105244162578"></a><a name="p105244162578"></a>Parameter</p>
+    <table><thead align="left"><tr id="row145240162572"><th class="cellrowborder" valign="top" width="27.99%" id="mcps1.2.3.1.1"><p id="p105244162578"><a name="p105244162578"></a><a name="p105244162578"></a>Parameter</p>
     </th>
-    <th class="cellrowborder" valign="top" width="72%" id="mcps1.2.3.1.2"><p id="p14525016155719"><a name="p14525016155719"></a><a name="p14525016155719"></a>Description</p>
+    <th class="cellrowborder" valign="top" width="72.00999999999999%" id="mcps1.2.3.1.2"><p id="p14525016155719"><a name="p14525016155719"></a><a name="p14525016155719"></a>Description</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row835519426223"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p1964374702211"><a name="p1964374702211"></a><a name="p1964374702211"></a>* Namespace</p>
+    <tbody><tr id="row835519426223"><td class="cellrowborder" valign="top" width="27.99%" headers="mcps1.2.3.1.1 "><p id="p1964374702211"><a name="p1964374702211"></a><a name="p1964374702211"></a>* Namespace</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p14644047132219"><a name="p14644047132219"></a><a name="p14644047132219"></a>Name of the namespace, which must be unique in a cluster.</p>
-    </td>
-    </tr>
-    <tr id="row1326175714265"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p102613574265"><a name="p102613574265"></a><a name="p102613574265"></a>* Cluster</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p1226957152615"><a name="p1226957152615"></a><a name="p1226957152615"></a>Cluster to which the namespace belongs.</p>
+    <td class="cellrowborder" valign="top" width="72.00999999999999%" headers="mcps1.2.3.1.2 "><p id="p14644047132219"><a name="p14644047132219"></a><a name="p14644047132219"></a>Name of the namespace, which must be unique in a cluster.</p>
     </td>
     </tr>
-    <tr id="row16199155910240"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p320005972414"><a name="p320005972414"></a><a name="p320005972414"></a>Pod NodeSelector</p>
+    <tr id="row1326175714265"><td class="cellrowborder" valign="top" width="27.99%" headers="mcps1.2.3.1.1 "><p id="p102613574265"><a name="p102613574265"></a><a name="p102613574265"></a>* Cluster</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p9200105914249"><a name="p9200105914249"></a><a name="p9200105914249"></a>If this parameter is set to on, workloads in the current namespace will be scheduled only to nodes with specified labels. To add labels to a node, choose <strong id="b1436514381806"><a name="b1436514381806"></a><a name="b1436514381806"></a>Resource Management</strong> &gt; <strong id="b12667124114010"><a name="b12667124114010"></a><a name="b12667124114010"></a>Nodes</strong> &gt; <strong id="b1050324410016"><a name="b1050324410016"></a><a name="b1050324410016"></a>Manage Labels</strong>.</p>
-    <p id="p18886183710257"><a name="p18886183710257"></a><a name="p18886183710257"></a>This parameter is displayed only for clusters of v1.13.10-r0 and later.</p>
-    </td>
-    </tr>
-    <tr id="row75251516185711"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p19525016125713"><a name="p19525016125713"></a><a name="p19525016125713"></a>Description</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p1452519163573"><a name="p1452519163573"></a><a name="p1452519163573"></a>Description of the namespace.</p>
+    <td class="cellrowborder" valign="top" width="72.00999999999999%" headers="mcps1.2.3.1.2 "><p id="p1226957152615"><a name="p1226957152615"></a><a name="p1226957152615"></a>Cluster to which the namespace belongs.</p>
     </td>
     </tr>
-    <tr id="row18506114684111"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p7506164613417"><a name="p7506164613417"></a><a name="p7506164613417"></a>Set Resource Quotas</p>
+    <tr id="row62811035135114"><td class="cellrowborder" valign="top" width="27.99%" headers="mcps1.2.3.1.1 "><p id="p828263519510"><a name="p828263519510"></a><a name="p828263519510"></a>Node Affinity</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p10506204644111"><a name="p10506204644111"></a><a name="p10506204644111"></a>Set resource quotas to limit resource usage in the namespace, thereby organizing resources into different namespaces.</p>
+    <td class="cellrowborder" valign="top" width="72.00999999999999%" headers="mcps1.2.3.1.2 "><p id="p6726725115313"><a name="p6726725115313"></a><a name="p6726725115313"></a>If this parameter is set to on, workloads in the current namespace will be scheduled only to nodes with specified labels. To add labels to a node, choose <strong id="b37268259533"><a name="b37268259533"></a><a name="b37268259533"></a>Resource Management</strong> &gt; <strong id="b172612595316"><a name="b172612595316"></a><a name="b172612595316"></a>Nodes</strong> &gt; <strong id="b0726225185311"><a name="b0726225185311"></a><a name="b0726225185311"></a>Manage Labels</strong>.</p>
+    </td>
+    </tr>
+    <tr id="row75251516185711"><td class="cellrowborder" valign="top" width="27.99%" headers="mcps1.2.3.1.1 "><p id="p19525016125713"><a name="p19525016125713"></a><a name="p19525016125713"></a>Description</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="72.00999999999999%" headers="mcps1.2.3.1.2 "><p id="p1452519163573"><a name="p1452519163573"></a><a name="p1452519163573"></a>Description of the namespace.</p>
+    </td>
+    </tr>
+    <tr id="row18506114684111"><td class="cellrowborder" valign="top" width="27.99%" headers="mcps1.2.3.1.1 "><p id="p7506164613417"><a name="p7506164613417"></a><a name="p7506164613417"></a>Set Resource Quotas</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="72.00999999999999%" headers="mcps1.2.3.1.2 "><p id="p10506204644111"><a name="p10506204644111"></a><a name="p10506204644111"></a>Set resource quotas to limit resource usage in the namespace, thereby organizing resources into different namespaces.</p>
     <div class="notice" id="note9166152113399"><a name="note9166152113399"></a><a name="note9166152113399"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p2167521123914"><a name="p2167521123914"></a><a name="p2167521123914"></a>It is recommended to assign a pod quota to each namespace. Without a pod quota, clusters or nodes may soon run out of system resources and exhibit unexpected behavior when too many pods are created. The pod quotas of all namespaces in a cluster must not exceed 110 (maximum pods per node) multiplied by the quantity of nodes in a cluster. For example, in a cluster of 50 nodes, a maximum of 5,500 (110 * 50) pods can be created. This means that pod quotas of all namespaces in the cluster should not exceed 5,500.</p>
     </div></div>
     </td>
@@ -89,9 +88,9 @@ Namespaces can be created automatically or manually.
 
         Workloads in the same namespace access each other using service names, while workloads in different namespaces access each other using service names and namespace names.
 
-        [Figure 1](#fig12452122215312)  shows namespaces respectively created for the development, joint debugging, and testing environments.
+        [Figure 1](#fig741584216524)  shows namespaces respectively created for the development, joint debugging, and testing environments.
 
-        **Figure  1**  Dividing workloads into namespaces by environment types<a name="fig12452122215312"></a>  
+        **Figure  1**  Dividing workloads into namespaces by environment types<a name="fig741584216524"></a>  
         ![](figures/dividing-workloads-into-namespaces-by-environment-types.png "dividing-workloads-into-namespaces-by-environment-types")
 
 
@@ -99,7 +98,7 @@ Namespaces can be created automatically or manually.
 
     You are advised to use this method if a large number of workloads are deployed in the same environment. As shown in the following figure, different namespaces are created for App 1 and App 2. Workloads in a namespace are managed as a workload group. Workloads in the same namespace access each other using service names, while workloads in different namespaces access each other using service names and namespace names.
 
-    **Figure  2**  Dividing workloads into namespaces by workload type<a name="fig5133636125519"></a>  
+    **Figure  2**  Dividing workloads into namespaces by workload type<a name="fig11187114614422"></a>  
     ![](figures/dividing-workloads-into-namespaces-by-workload-type.png "dividing-workloads-into-namespaces-by-workload-type")
 
 
@@ -107,12 +106,12 @@ Namespaces can be created automatically or manually.
 
 You can configure a namespace-level network policy by enabling network isolation.
 
-By default,  **Network Isolation**  is disabled for  namespaces. For example, if network isolation is off for namespace  **default**,  **all pods in the current cluster**  can access the  **pods in namespace default**.
+By default,  **Network Isolation**  is disabled for  namespaces. For example, if network isolation is off for namespace  **default**,  **all pods in the current cluster**  can access the  **pods** **in** **namespace** **default**.
 
 To prevent other pods from accessing the pods in namespace  **default**, perform the following steps:
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Namespaces**.
-2.  In the same row as the namespace \(for example,  **default**\) for which you will create a network policy, enable network isolation.
+2.  In the same row as the namespace \(for example,  **default**\) for which you will create a network policy, enable network isolation
 
     After network isolation is enabled, pods in namespace  **default**  can access each other but they cannot be accessed by pods in other namespaces.
 

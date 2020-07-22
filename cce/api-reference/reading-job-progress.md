@@ -15,24 +15,24 @@ GET /api/v3/projects/\{project\_id\}/jobs/\{job\_id\}
 <a name="table2027961241820"></a>
 <table><thead align="left"><tr id="row122809120186"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="p91421758131813"><a name="p91421758131813"></a><a name="p91421758131813"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.89%" id="mcps1.2.4.1.2"><p id="p101421758131816"><a name="p101421758131816"></a><a name="p101421758131816"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.4.1.2"><p id="p101421758131816"><a name="p101421758131816"></a><a name="p101421758131816"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="62.11%" id="mcps1.2.4.1.3"><p id="p19143115818187"><a name="p19143115818187"></a><a name="p19143115818187"></a>Description</p>
+<th class="cellrowborder" valign="top" width="68%" id="mcps1.2.4.1.3"><p id="p19143115818187"><a name="p19143115818187"></a><a name="p19143115818187"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="row32801312121810"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p1714415589184"><a name="p1714415589184"></a><a name="p1714415589184"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.89%" headers="mcps1.2.4.1.2 "><p id="p814518580186"><a name="p814518580186"></a><a name="p814518580186"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p814518580186"><a name="p814518580186"></a><a name="p814518580186"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="62.11%" headers="mcps1.2.4.1.3 "><p id="p5145175891811"><a name="p5145175891811"></a><a name="p5145175891811"></a>Project ID. For details about how to obtain the project ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.4.1.3 "><p id="p5145175891811"><a name="p5145175891811"></a><a name="p5145175891811"></a>Project ID. For details about how to obtain the project ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
 </td>
 </tr>
 <tr id="row1649094164612"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p749015414462"><a name="p749015414462"></a><a name="p749015414462"></a>job_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.89%" headers="mcps1.2.4.1.2 "><p id="p1849084134615"><a name="p1849084134615"></a><a name="p1849084134615"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p1849084134615"><a name="p1849084134615"></a><a name="p1849084134615"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="62.11%" headers="mcps1.2.4.1.3 "><p id="p8491141114617"><a name="p8491141114617"></a><a name="p8491141114617"></a>Job ID. For details about how to obtain the job ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.4.1.3 "><p id="p8491141114617"><a name="p8491141114617"></a><a name="p8491141114617"></a>Job ID. For details about how to obtain the job ID, see <a href="how-to-obtain-parameters-in-the-api-uri.md">How to Obtain Parameters in the API URI</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -49,25 +49,25 @@ GET /api/v3/projects/\{project\_id\}/jobs/\{job\_id\}
 <a name="table189325395020"></a>
 <table><thead align="left"><tr id="en-us_topic_0102499074_row55001954122614"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.4.1.1"><p id="en-us_topic_0102499074_p115009545264"><a name="en-us_topic_0102499074_p115009545264"></a><a name="en-us_topic_0102499074_p115009545264"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="22.37%" id="mcps1.2.4.1.2"><p id="en-us_topic_0102499074_p175001547265"><a name="en-us_topic_0102499074_p175001547265"></a><a name="en-us_topic_0102499074_p175001547265"></a>Mandatory</p>
+<th class="cellrowborder" valign="top" width="18.95%" id="mcps1.2.4.1.2"><p id="en-us_topic_0102499074_p175001547265"><a name="en-us_topic_0102499074_p175001547265"></a><a name="en-us_topic_0102499074_p175001547265"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="57.63%" id="mcps1.2.4.1.3"><p id="en-us_topic_0102499074_p16500154162611"><a name="en-us_topic_0102499074_p16500154162611"></a><a name="en-us_topic_0102499074_p16500154162611"></a>Description</p>
+<th class="cellrowborder" valign="top" width="61.050000000000004%" id="mcps1.2.4.1.3"><p id="en-us_topic_0102499074_p16500154162611"><a name="en-us_topic_0102499074_p16500154162611"></a><a name="en-us_topic_0102499074_p16500154162611"></a>Description</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="en-us_topic_0102499074_row199801811203412"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0102499074_p69808112344"><a name="en-us_topic_0102499074_p69808112344"></a><a name="en-us_topic_0102499074_p69808112344"></a>Content-Type</p>
 </td>
-<td class="cellrowborder" valign="top" width="22.37%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0102499074_p3980111103414"><a name="en-us_topic_0102499074_p3980111103414"></a><a name="en-us_topic_0102499074_p3980111103414"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="18.95%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0102499074_p3980111103414"><a name="en-us_topic_0102499074_p3980111103414"></a><a name="en-us_topic_0102499074_p3980111103414"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.63%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0102499074_p169801011203416"><a name="en-us_topic_0102499074_p169801011203416"></a><a name="en-us_topic_0102499074_p169801011203416"></a>Message body type (format). Possible values:</p>
+<td class="cellrowborder" valign="top" width="61.050000000000004%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0102499074_p169801011203416"><a name="en-us_topic_0102499074_p169801011203416"></a><a name="en-us_topic_0102499074_p169801011203416"></a>Message body type (format). Possible values:</p>
 <a name="en-us_topic_0102499074_ul7385444163617"></a><a name="en-us_topic_0102499074_ul7385444163617"></a><ul id="en-us_topic_0102499074_ul7385444163617"><li>application/json;charset=utf-8</li><li>application/json</li></ul>
 </td>
 </tr>
 <tr id="en-us_topic_0102499074_row3500125412260"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0102499074_p105001654202618"><a name="en-us_topic_0102499074_p105001654202618"></a><a name="en-us_topic_0102499074_p105001654202618"></a>X-Auth-Token</p>
 </td>
-<td class="cellrowborder" valign="top" width="22.37%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0102499074_p20500954182618"><a name="en-us_topic_0102499074_p20500954182618"></a><a name="en-us_topic_0102499074_p20500954182618"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="18.95%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0102499074_p20500954182618"><a name="en-us_topic_0102499074_p20500954182618"></a><a name="en-us_topic_0102499074_p20500954182618"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.63%" headers="mcps1.2.4.1.3 "><p id="p18824197845"><a name="p18824197845"></a><a name="p18824197845"></a>Requests for calling an API can be authenticated using either a token or AK/SK. If token-based authentication is used, this parameter is mandatory and must be set to a user token. For details on how to obtain a user token, see <a href="api-usage-guidelines.md">API Usage Guidelines</a>.</p>
+<td class="cellrowborder" valign="top" width="61.050000000000004%" headers="mcps1.2.4.1.3 "><p id="p18824197845"><a name="p18824197845"></a><a name="p18824197845"></a>Requests for calling an API can be authenticated using either a token or AK/SK. If token-based authentication is used, this parameter is mandatory and must be set to a user token. For details on how to obtain a user token, see <a href="api-usage-guidelines.md">API Usage Guidelines</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -227,25 +227,25 @@ N/A
 **Table  6**  Data structure of the  **status**  field
 
 <a name="table5445161610255"></a>
-<table><thead align="left"><tr id="row184611916162519"><th class="cellrowborder" valign="top" width="25.742574257425744%" id="mcps1.2.4.1.1"><p id="p19320122372514"><a name="p19320122372514"></a><a name="p19320122372514"></a>Parameter</p>
+<table><thead align="left"><tr id="row184611916162519"><th class="cellrowborder" valign="top" width="25.47524752475247%" id="mcps1.2.4.1.1"><p id="p19320122372514"><a name="p19320122372514"></a><a name="p19320122372514"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="25.742574257425744%" id="mcps1.2.4.1.2"><p id="p103201823182517"><a name="p103201823182517"></a><a name="p103201823182517"></a>Type</p>
+<th class="cellrowborder" valign="top" width="26.009900990099013%" id="mcps1.2.4.1.2"><p id="p103201823182517"><a name="p103201823182517"></a><a name="p103201823182517"></a>Type</p>
 </th>
 <th class="cellrowborder" valign="top" width="48.51485148514851%" id="mcps1.2.4.1.3"><p id="p12336122362513"><a name="p12336122362513"></a><a name="p12336122362513"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row6461141613257"><td class="cellrowborder" valign="top" width="25.742574257425744%" headers="mcps1.2.4.1.1 "><p id="p6461916102517"><a name="p6461916102517"></a><a name="p6461916102517"></a>phase</p>
+<tbody><tr id="row6461141613257"><td class="cellrowborder" valign="top" width="25.47524752475247%" headers="mcps1.2.4.1.1 "><p id="p6461916102517"><a name="p6461916102517"></a><a name="p6461916102517"></a>phase</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.742574257425744%" headers="mcps1.2.4.1.2 "><p id="p11461131692514"><a name="p11461131692514"></a><a name="p11461131692514"></a>String</p>
+<td class="cellrowborder" valign="top" width="26.009900990099013%" headers="mcps1.2.4.1.2 "><p id="p11461131692514"><a name="p11461131692514"></a><a name="p11461131692514"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="48.51485148514851%" headers="mcps1.2.4.1.3 "><p id="p1346114167250"><a name="p1346114167250"></a><a name="p1346114167250"></a>Job status. The options are as follows:</p>
 <a name="ul51301755102811"></a><a name="ul51301755102811"></a><ul id="ul51301755102811"><li>JobPhaseInitializing JobPhase = "Initializing"</li><li>JobPhaseRunning JobPhase = "Running"</li><li>JobPhaseFailed JobPhase = "Failed"</li><li>JobPhaseSuccess JobPhase = "Success"</li></ul>
 </td>
 </tr>
-<tr id="row1646161615257"><td class="cellrowborder" valign="top" width="25.742574257425744%" headers="mcps1.2.4.1.1 "><p id="p946118163258"><a name="p946118163258"></a><a name="p946118163258"></a>reason</p>
+<tr id="row1646161615257"><td class="cellrowborder" valign="top" width="25.47524752475247%" headers="mcps1.2.4.1.1 "><p id="p946118163258"><a name="p946118163258"></a><a name="p946118163258"></a>reason</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.742574257425744%" headers="mcps1.2.4.1.2 "><p id="p1446161618259"><a name="p1446161618259"></a><a name="p1446161618259"></a>String</p>
+<td class="cellrowborder" valign="top" width="26.009900990099013%" headers="mcps1.2.4.1.2 "><p id="p1446161618259"><a name="p1446161618259"></a><a name="p1446161618259"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="48.51485148514851%" headers="mcps1.2.4.1.3 "><p id="p15461171652519"><a name="p15461171652519"></a><a name="p15461171652519"></a>Reason why the job is in the current state.</p>
 </td>
@@ -261,8 +261,8 @@ N/A
     "apiVersion": "v3",
     "metadata": {
         "uid": "354331b2c-229a-11e8-9c75-0255ac100ceb",
-        "creationTimestamp": "2018-08-02 08:12:40.672772389 +0000 UTC",
-        "updateTimestamp": "2018-08-02 08:21:50.478108569 +0000 UTC"
+        "creationTimestamp": "2020-02-02 08:12:40.672772389 +0000 UTC",
+        "updateTimestamp": "2020-02-02 08:21:50.478108569 +0000 UTC"
     },
     "spec": {
         "type": "CreateCluster",
@@ -278,8 +278,8 @@ N/A
                 "apiVersion": "v3",
                 "metadata": {
                     "uid": "fd474fab-9606-11e8-baa9-0255ac10215d",
-                    "creationTimestamp": "2018-08-02 03:52:34.615819618 +0000 UTC",
-                    "updateTimestamp": "2018-08-02 04:05:29.196243031 +0000 UTC"
+                    "creationTimestamp": "2020-02-02 03:52:34.615819618 +0000 UTC",
+                    "updateTimestamp": "2020-02-02 04:05:29.196243031 +0000 UTC"
                 },
                 "spec": {
                     "type": "InstallMaster",
@@ -298,8 +298,8 @@ N/A
                 "apiVersion": "v3",
                 "metadata": {
                     "uid": "fd474f82-9606-11e8-baa8-0255ac10215d",
-                    "creationTimestamp": "2018-08-02 03:52:33.859150791 +0000 UTC",
-                    "updateTimestamp": "2018-08-02 03:52:34.615655429 +0000 UTC"
+                    "creationTimestamp": "2020-02-02 03:52:33.859150791 +0000 UTC",
+                    "updateTimestamp": "2020-02-02 03:52:34.615655429 +0000 UTC"
                 },
                 "spec": {
                     "type": "CreatePSMCert",

@@ -12,7 +12,7 @@ Benefits of ConfigMaps:
 
 ## Prerequisites<a name="section19209149103913"></a>
 
-Cluster  and  node  resources have been created. For more information, see  [Creating a VM Cluster](creating-a-vm-cluster.md). If you have available clusters and node resources, skip this operation.
+Cluster  and  node  resources have been created. For more information, see  [Creating a Hybrid Cluster](creating-a-hybrid-cluster.md). If you have available clusters and node resources, skip this operation.
 
 ## Creating a ConfigMap<a name="section18512531861"></a>
 
@@ -72,7 +72,7 @@ Cluster  and  node  resources have been created. For more information, see  [Cre
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
     >To create configuration items by uploading a file, ensure that the resource description file has been created. CCE supports files in JSON or yaml format. For more information, see  [ConfigMap Requirements for ConfigMap](#section66903416102).  
 
-    Click  **Create** **YAML**  on the right of the page.
+    Click  **Create** **YAML **on the right of the page.
 
     -   Method 1: Import the orchestration file.
 

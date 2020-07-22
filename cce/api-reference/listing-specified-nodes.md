@@ -110,7 +110,7 @@ For the description about response parameters, see  [Table 4](data-structure-of-
                     "kubernetes.io/availablezone": "eu-de-01",
                     "kubernetes.io/hostname": "192.168.0.123",
                     "os.architecture": "amd64",
-                    "os.name": "EulerOS_2.0_SP5",
+                    "os.name": "EulerOS_2.5_SP5",
                     "os.version": "3.10.0-327.59.59.46.h38.x86_64",
                     "supportContainer": "true"
                 },
@@ -205,7 +205,7 @@ For the description about response parameters, see  [Table 4](data-structure-of-
                     "systemUUID": "7D7F913C-6E32-44C4-BDAE-782D859E7A0B",
                     "bootID": "1b89eab6-92f3-4352-9613-61c2edf6ee4b",
                     "kernelVersion": "3.10.0-327.59.59.46.h38.x86_64",
-                    "osImage": "EulerOS 2.0 (SP5)",
+                    "osImage": "EulerOS 2.5 (SP5)",
                     "containerRuntimeVersion": "docker://1.11.2",
                     "kubeletVersion": "v1.13.10-r0-CCE2.0.7-B003",
                     "kubeProxyVersion": "v1.13.10-r0-CCE2.0.7-B003",

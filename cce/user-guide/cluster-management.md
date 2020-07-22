@@ -4,8 +4,8 @@
 The clustering technology improves performance, reliability, and flexibility at an affordable cost. Task scheduling is essential to clusters.
 -   **[Cluster Lifecycle](cluster-lifecycle.md)**  
 This section describes the status of each cluster lifecycle, helping you understand the running status of the cluster in different phases.
--   **[Creating a VM Cluster](creating-a-vm-cluster.md)**  
-On the CCE console, you can easily create Kubernetes clusters. Kubernetes can manage container clusters at scale. A cluster manages a group of node resources.
+-   **[Creating a Hybrid Cluster](creating-a-hybrid-cluster.md)**  
+
 -   **[Creating a BMS Cluster](creating-a-bms-cluster.md)**  
 Bare metal server \(BMS\) clusters  are Kubernetes container clusters with high computing and high network performance. To use a BMS cluster, enable the  BMS service  first.
 -   **[Upgrading a Cluster](upgrading-a-cluster.md)**  
@@ -16,6 +16,8 @@ Kubernetes versions are expressed as x.y.z, where x is the major version, y is t
 The Cluster Auto Scaling feature allows CCE to automatically  scale out  a cluster \(add nodes to a cluster\) according to custom scale-up policies when workloads cannot be scheduled into the cluster due to insufficient cluster resources.
 -   **[Deleting, Hibernating, and Waking Up a Cluster](deleting-hibernating-and-waking-up-a-cluster.md)**  
 After a cluster is created, you can delete, hibernate, or wake up the cluster.
+-   **[Configuration Management](configuration-management.md)**  
+
 -   **[Obtaining a Cluster Certificate](obtaining-a-cluster-certificate.md)**  
 
 -   **[Namespace](namespace.md)**  

@@ -6,7 +6,7 @@ This section describes how to create a node pool for a running CCE cluster and h
 
 To create a node pool in a cluster, perform the following steps:
 
-1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Node Pool**.
+1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Node Pools**.
 2.  In the upper right corner of the page, click  **Create Node Pool**.
 3.  On the  **Create Node Pool**  page, configure node pool parameters \(see  [Table 1](#table8638121213265)\). Parameters with an asterisk \(\*\) are mandatory.
 
@@ -43,14 +43,15 @@ To create a node pool in a cluster, perform the following steps:
     <tr id="row1763991215268"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="p15639181282617"><a name="p15639181282617"></a><a name="p15639181282617"></a>Autoscaler</p>
     </td>
     <td class="cellrowborder" valign="top" width="79.97999999999999%" headers="mcps1.2.3.1.2 "><p id="p20736112217461"><a name="p20736112217461"></a><a name="p20736112217461"></a>By default, autoscaler is disabled.</p>
-    <p id="p1063941211266"><a name="p1063941211266"></a><a name="p1063941211266"></a>After you click <a name="en-us_topic_0107283640_image17351426631"></a><a name="en-us_topic_0107283640_image17351426631"></a><span><img id="en-us_topic_0107283640_image17351426631" src="figures/icon-autoscalerenable.png"></span> to enable autoscaler, nodes in the node pool will be automatically created or deleted to match the changeable cluster load. You can set <strong id="b83671426202514"><a name="b83671426202514"></a><a name="b83671426202514"></a>Maximum Nodes</strong> and <strong id="b1082992932515"><a name="b1082992932515"></a><a name="b1082992932515"></a>Minimum Nodes</strong> to ensure that the number of nodes will always fall within a specified range.</p>
+    <p id="p9680175204915"><a name="p9680175204915"></a><a name="p9680175204915"></a>After you enable autoscaler by clicking <a name="image2271132994219"></a><a name="image2271132994219"></a><span><img id="image2271132994219" src="figures/icon-autoscaler-disabled.png"></span>, nodes in the node pool are automatically created or deleted based on service requirements.</p>
+    <a name="ul15733045165119"></a><a name="ul15733045165119"></a><ul id="ul15733045165119"><li><strong id="b98562832611"><a name="b98562832611"></a><a name="b98562832611"></a>Maximum Nodes</strong> and <strong id="b4541113102617"><a name="b4541113102617"></a><a name="b4541113102617"></a>Minimum Nodes</strong>: You can set the maximum and minimum number of nodes to ensure that the number of nodes to be scaled is within a proper range.</li><li><strong id="b43101796335"><a name="b43101796335"></a><a name="b43101796335"></a>Priority</strong>: You can set the priority of auto scaling between node pools based on service requirements. If the value is set to <strong id="b1231049103312"><a name="b1231049103312"></a><a name="b1231049103312"></a>0</strong>, scaling is performed based on the minimum resource waste principle.</li><li><strong id="b931011933318"><a name="b931011933318"></a><a name="b931011933318"></a>Scale-In Cooling Interval</strong>: Set this parameter in the unit of minute. This field indicates the period during which the nodes added in the current node pool cannot be scaled in.</li></ul>
     <p id="p12614171015488"><a name="p12614171015488"></a><a name="p12614171015488"></a>If the <strong id="b139093213282"><a name="b139093213282"></a><a name="b139093213282"></a>Autoscaler</strong> field is set to on, install the <a href="autoscaler.md">autoscaler add-on</a> to use the autoscaler feature.</p>
     </td>
     </tr>
     <tr id="row75241899266"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="p11786989141"><a name="p11786989141"></a><a name="p11786989141"></a>* AZ</p>
     </td>
     <td class="cellrowborder" valign="top" width="79.97999999999999%" headers="mcps1.2.3.1.2 "><p id="p10360153524719"><a name="p10360153524719"></a><a name="p10360153524719"></a>An AZ is a physical region where resources use independent power supply and networks. AZs are physically isolated but interconnected through an internal network.</p>
-    <p id="p111211029184020"><a name="p111211029184020"></a><a name="p111211029184020"></a>Set an AZ based on your requirements. To enhance workload reliability, you are advised to select <strong id="b71591621113113"><a name="b71591621113113"></a><a name="b71591621113113"></a>randomAZ</strong>, allowing nodes to be randomly and evenly distributed among different AZs.</p>
+    <p id="p111211029184020"><a name="p111211029184020"></a><a name="p111211029184020"></a>Set an AZ based on your requirements. To enhance workload reliability, you are advised to select <strong id="b71591621113113"><a name="b71591621113113"></a><a name="b71591621113113"></a>RandomAZ</strong>, allowing nodes to be randomly and evenly distributed among different AZs.</p>
     </td>
     </tr>
     <tr id="row15639412132615"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="p36391812172618"><a name="p36391812172618"></a><a name="p36391812172618"></a>* Specifications</p>
@@ -82,8 +83,10 @@ To create a node pool in a cluster, perform the following steps:
     <tr id="row13689105720916"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="p16902571497"><a name="p16902571497"></a><a name="p16902571497"></a>* System Disk and Data Disk</p>
     </td>
     <td class="cellrowborder" valign="top" width="79.97999999999999%" headers="mcps1.2.3.1.2 "><p id="p11859211151015"><a name="p11859211151015"></a><a name="p11859211151015"></a>Configure the disk space of each node in the node pool.</p>
-    <p id="p168599112103"><a name="p168599112103"></a><a name="p168599112103"></a>The system disk capacity ranges from 40 to 1,024 GB. The default value is 40 GB.</p>
-    <p id="p1485931114104"><a name="p1485931114104"></a><a name="p1485931114104"></a>The data disk capacity ranges from 100 to 32,678 GB. The default value is 100 GB.</p>
+    <p id="p168599112103"><a name="p168599112103"></a><a name="p168599112103"></a>The system disk capacity ranges from 40 to 1,024 GB.</p>
+    <div class="note" id="note65228221572"><a name="note65228221572"></a><a name="note65228221572"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p83021523204219"><a name="p83021523204219"></a><a name="p83021523204219"></a>When accepting a node into a cluster of v1.15, ensure that the system disk of the node has a capacity larger than 50 GB.</p>
+    </div></div>
+    <p id="p1485931114104"><a name="p1485931114104"></a><a name="p1485931114104"></a>The data disk capacity ranges from 100 to 32,678 GB.</p>
     <div class="p" id="p155112561112"><a name="p155112561112"></a><a name="p155112561112"></a>System disks and data disks are EVS disks and deliver three levels of I/O performance:<a name="ul17511135201117"></a><a name="ul17511135201117"></a><ul id="ul17511135201117"><li><strong id="b651220571120"><a name="b651220571120"></a><a name="b651220571120"></a>Common I/O</strong>: uses SATA drives to store data. EVS disks of this level provide reliable block storage and a maximum IOPS of 1,000 per disk. They are suitable for key applications.</li><li><strong id="b35126571111"><a name="b35126571111"></a><a name="b35126571111"></a>High I/O</strong>: uses SAS drives to store data. EVS disks of this level provide a maximum IOPS of 3,000 and a minimum read/write latency of 1 ms. They are suitable for RDS, NoSQL, data warehouse, and file system applications.</li><li><strong id="b251210531111"><a name="b251210531111"></a><a name="b251210531111"></a>Ultra-high I/O</strong>: uses SSD drives to store data. EVS disks of this level provide a maximum IOPS of 20,000 and a minimum read/write latency of 1 ms. They are suitable for RDS, NoSQL, and data warehouse applications.</li></ul>
     </div>
     </td>
@@ -96,7 +99,7 @@ To create a node pool in a cluster, perform the following steps:
     </tbody>
     </table>
 
-4.  **Advanced ECS Settings**  \(optional\): Click  ![](figures/icon-monitoring.png)  to show advanced ECS settings.
+4.  **Advanced ECS Settings**  \(optional\): Click  ![](figures/icon-monitoring-1.png)  to show advanced ECS settings.
     -   **ECS Group**: Select an existing ECS group, or click  **Create ECS Group**  to create a new one. After the ECS group is created, click the refresh icon.
 
         >![](public_sys-resources/icon-note.gif) **NOTE:**   
@@ -126,7 +129,7 @@ To create a node pool in a cluster, perform the following steps:
 
     -   **Add Data Disk**: Click  **Add Data Disk**  to add a data disk and set the capacity of the data disk. To simplify disk formatting, you can enter the disk formatting command in the input box of  [Pre-installation Script](#li484421635920).
 
-5.  **Advanced Kubernetes Settings**  \(optional\): Click  ![](figures/icon-ecssettings.png)  to show advanced Kubernetes settings.
+5.  **Advanced Kubernetes Settings**  \(optional\): Click  ![](figures/icon-monitoring-2.png)  to show advanced Kubernetes settings.
     -   **Max Pods**: The maximum number of pods that can be created on a node, including the system's default pods. Value range: 16 to 250.
 
         >![](public_sys-resources/icon-note.gif) **NOTE:**   
@@ -149,14 +152,14 @@ To create a node pool in a cluster, perform the following steps:
     -   **K8S Labels**: Labels are key/value pairs that are attached to objects, such as pods. Labels are intended to be used to specify identifying attributes of objects that are meaningful and relevant to users, but do not directly imply semantics to the core system. For more information, see  [Labels and Selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/).
     -   **Maximum Data Space per Container**: The value ranges from 10 GB to 80 GB. If the value of this field is larger than the data disk space allocated to Docker, the latter will override the value specified here. Typically, 90% of the data disk space is allocated to Docker. This parameter is supported only in v1.13.10-r0 and later versions of clusters. It is not displayed in versions earlier than v1.13.10-r0.
 
-6.  After the configuration is complete, click  **Next**. Confirm the node pool configuration and click  **Create Now**.
+6.  After the configuration is complete, click  **Next: Confirm**. Confirm the node pool configuration and click  **Create Now**.
 
     It takes about 6 to 10 minutes to create a node pool. You can click  **Back to Node Pool List**  to perform other operations on the node pool.
 
 
 ## Viewing Node Pools in a Cluster<a name="section1147314023811"></a>
 
-1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Node Pool**.
+1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Node Pools**.
 2.  In the upper right corner of the node pool list, select a cluster. All node pools in the cluster will be displayed. You can view the node type, node specifications, autoscaler status, and OS of each node pool.
 
     >![](public_sys-resources/icon-note.gif) **NOTE:**   
