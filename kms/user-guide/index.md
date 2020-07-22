@@ -44,6 +44,7 @@
     -   [Rotating CMKs]
         -   [Context](context.md)
         -   [Enabling Key Rotation](enabling-key-rotation.md)
+        -   [Disabling Key Rotation](disabling-key-rotation.md)
 
     -   [Managing CMKs]
         -   [Querying a CMK](querying-a-cmk.md)
