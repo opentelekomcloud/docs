@@ -28,3 +28,15 @@ After creating an organization and pushing images into it, you can view the imag
     ![](figures/viewing-the-images-of-an-organization.png "viewing-the-images-of-an-organization")
 
 
+## Deleting an Organization<a name="section212632405120"></a>
+
+Before deleting an organization, delete all the images in it.
+
+1.  Log in to the SWR console.
+2.  In the navigation pane, choose  **Organization Management**. On the page displayed, click the name of the organization to delete.
+3.  Click  **Delete**  in the upper right corner. Enter  **DELETE**  as prompted to confirm the deletion, and click  **Yes**.
+
+    **Figure  4**  Deleting an organization<a name="fig1012652415117"></a>  
+    ![](figures/deleting-an-organization.png "deleting-an-organization")
+
+

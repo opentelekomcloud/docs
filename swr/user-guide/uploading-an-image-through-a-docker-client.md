@@ -10,16 +10,30 @@ This section walks you through the steps of uploading an image to SWR, namely, r
 
 -   You have created an organization in SWR. For details, see  [Creating an Organization](organization-management.md#section12921632181415).
 -   The  **2048-demo:v1**  image has been pulled to your device where Docker is installed.
--   If the Internet is required in image pull, configure  **insecure-registries**  first as follows:
+-   If you are using ECSs that are not created through CCE and want to access SWR image repositories using intranet addresses, configure  **insecure-registries**  first as follows:
     1.  Edit the  **daemon.json**  file, which is in the  **/etc/docker/daemon.json**  directory by default. If the file does not exist, create it. If the file does not contain any configurations, add the following lines to it.
 
         ```
         {
             "insecure-registries": [
-                "80.158.24.86"
+                "{Intranet address}"
             ]
         }
         ```
+
+        To obtain image intranet addresses, log in to the SWR console and enter the target image details page. On the  **Pull/Push**  tab page, you can find the image intranet address in  **Step 3: Pull** **or push an image**.
+
+        **Figure  1**  Viewing an image intranet address<a name="fig63442497214"></a>  
+        ![](figures/viewing-an-image-intranet-address.png "viewing-an-image-intranet-address")
+
+        >![](public_sys-resources/icon-note.gif) **NOTE:**   
+        >If the  **insecure-registry**  of  **DOCKER\_OPTS**  in the  **/etc/default/docker**  directory has been configured, you do not need to modify the  **daemon.json**  file in the  **/etc/docker/daemon.json**  directory.  
+        >Run the following command to add the image intranet address to the end of the DOCKER\_OPTS="--insecure-registry=\{existing configurations\}" line:  
+        >**vi /etc/default/docker**  
+        >Expected settings:  
+        >```  
+        ># Use DOCKER_OPTS to modify the daemon startup options. DOCKER_OPTS="--insecure-registry={existing configurations} --insecure-registry={Intranet address}"  
+        >```  
 
     2.  Restart the Docker to let the modification take effect.
 
@@ -36,7 +50,7 @@ This section walks you through the steps of uploading an image to SWR, namely, r
     1.  Log in to the SWR console.
     2.  In the navigation pane, choose  **My Images**  and then click  **Upload Through Docker Client**. On the page displayed, click  **Generate a temporary Docker login command**  and click  ![](figures/swr-copy2.png)  to copy the command. Then, record the domain name at the end of the  **docker login**  command. This is the address of the current image repository.
 
-        **Figure  1**  Obtaining a  **docker login**  command<a name="en-us_topic_0112596104_fig157815441716"></a>  
+        **Figure  2**  Obtaining a  **docker login**  command<a name="en-us_topic_0112596104_fig157815441716"></a>  
         ![](figures/obtaining-a-docker-login-command.png "obtaining-a-docker-login-command")
 
         >![](public_sys-resources/icon-note.gif) **NOTE:**   
@@ -46,7 +60,7 @@ This section walks you through the steps of uploading an image to SWR, namely, r
 
         The message "login succeeded" will be displayed upon a successful login.
 
-2.  Tag the  **2048-demo:v1**  image by running the following command:
+2.  Tag the  **2048-demo**  image by running the following command:
 
     **docker tag** **_\[_**_I__mage name_:_tag_**_\]_ _\[_**_Image repository address_**_\]_/_\[_**_Organization name_**_\]_/_\[_**_Image name_:_tag_**_\]_**
 
@@ -88,7 +102,7 @@ When an image is pushed successfully, you can obtain its  address, and run the  
 2.  In the navigation pane, choose  **My Images**  and click the desired image.
 3.  In the same row as the desired image tag, click  ![](figures/swr-copy2.png)  in the column of  **Image Pull Command**  to copy its docker pull command.
 
-    **Figure  2**  Obtaining the image pull command<a name="fig11734135815"></a>  
+    **Figure  3**  Obtaining the image pull command<a name="fig11734135815"></a>  
     ![](figures/obtaining-the-image-pull-command.png "obtaining-the-image-pull-command")
 
 

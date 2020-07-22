@@ -6,7 +6,7 @@ Docker is an open-source engine which allows you to create a lightweight, portab
 
 Before installing Docker, get a basic understanding of what Docker is and how it works. For more information, see  [Docker Documentation](https://docs.docker.com).
 
-Docker is compatible with almost all operating systems. Select a Docker version that best suits your needs. If you are not sure which Docker community edition to use, see  [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/).
+Docker is compatible with almost all operating systems. Select a Docker version that best suits your needs. If you are not sure which Docker community edition to use, see  [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/).
 
 >![](public_sys-resources/icon-note.gif) **NOTE:**   
 >-   Before using SWR to store Docker images, ensure that the Docker client used to push images to SWR is updated to 1.11.2 or later.  
