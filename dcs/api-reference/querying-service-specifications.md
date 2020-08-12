@@ -1,51 +1,45 @@
-# Querying Service Specifications<a name="EN-US_TOPIC_0237964379"></a>
+# Querying Service Specifications<a name="dcs-api-0312040"></a>
 
-## Function<a name="section35039337"></a>
+## Function<a name="section164151825713"></a>
 
-This API is used to query the specifications of the DCS service to which you can subscribe.
+This API is used to query the product ID \(parameter  **product\_id**\) which indicates the specifications of the DCS service you created. 
 
-## URI<a name="section46918583"></a>
+## URI<a name="section16452102542018"></a>
 
--   URI format:
+GET /v1.0/products
 
-    GET /v1.0/products
+## Request<a name="section6514194713209"></a>
 
--   Parameter description:
-
-    None.
-
-
-## Request<a name="section19614067"></a>
+**Request parameters**
 
 None.
 
-## Response<a name="section42308878"></a>
+**Example request**
 
--   Status code:
+None.
 
-    If status code "200 OK" is returned, this request is fulfilled. For description of other status codes, see  [API Usage Guidelines](api-usage-guidelines.md).
+## Response<a name="section11526162120234"></a>
 
--   Response parameter:
+**Response parameters**
 
-    [Table 1](#table11231275217)  describes the response parameters.
-
+[Table 1](#table18437193323916)  describes the response parameters.
 
 **Table  1**  Parameter description
 
-<a name="table11231275217"></a>
-<table><thead align="left"><tr id="row44696736"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.1"><p id="p63665841"><a name="p63665841"></a><a name="p63665841"></a>Name</p>
+<a name="table18437193323916"></a>
+<table><thead align="left"><tr id="row184378330394"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.1"><p id="p943663310393"><a name="p943663310393"></a><a name="p943663310393"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.2"><p id="p56659528"><a name="p56659528"></a><a name="p56659528"></a>Type</p>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.2"><p id="p543683363919"><a name="p543683363919"></a><a name="p543683363919"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.3"><p id="p26019018"><a name="p26019018"></a><a name="p26019018"></a>Description</p>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.3"><p id="p184371733193920"><a name="p184371733193920"></a><a name="p184371733193920"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row27165729"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p52940469"><a name="p52940469"></a><a name="p52940469"></a>products</p>
+<tbody><tr id="row14378335398"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1643712333399"><a name="p1643712333399"></a><a name="p1643712333399"></a>products</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p60319597"><a name="p60319597"></a><a name="p60319597"></a>Array</p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p4437193343911"><a name="p4437193343911"></a><a name="p4437193343911"></a>Array</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p54049202"><a name="p54049202"></a><a name="p54049202"></a>List of specifications of the DCS service to which you can subscribe.</p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p1843773353916"><a name="p1843773353916"></a><a name="p1843773353916"></a>List of specifications of the DCS service to which you can subscribe.</p>
 </td>
 </tr>
 </tbody>
@@ -53,149 +47,142 @@ None.
 
 **Table  2**  products parameter description
 
-<a name="table16680772"></a>
-<table><thead align="left"><tr id="row38416353"><th class="cellrowborder" valign="top" width="23.232323232323232%" id="mcps1.2.4.1.1"><p id="p24716925"><a name="p24716925"></a><a name="p24716925"></a>Name</p>
+<a name="table18238145151512"></a>
+<table><thead align="left"><tr id="row8238951171516"><th class="cellrowborder" valign="top" width="23.330000000000002%" id="mcps1.2.4.1.1"><p id="p723895120156"><a name="p723895120156"></a><a name="p723895120156"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="16.161616161616163%" id="mcps1.2.4.1.2"><p id="p55913876"><a name="p55913876"></a><a name="p55913876"></a>Type</p>
+<th class="cellrowborder" valign="top" width="16.669999999999998%" id="mcps1.2.4.1.2"><p id="p1238951131512"><a name="p1238951131512"></a><a name="p1238951131512"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="60.60606060606061%" id="mcps1.2.4.1.3"><p id="p32730128"><a name="p32730128"></a><a name="p32730128"></a>Description</p>
+<th class="cellrowborder" valign="top" width="60%" id="mcps1.2.4.1.3"><p id="p22385511154"><a name="p22385511154"></a><a name="p22385511154"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row33894745"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p61119830"><a name="p61119830"></a><a name="p61119830"></a>details</p>
+<tbody><tr id="row389654918549"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p62384514152"><a name="p62384514152"></a><a name="p62384514152"></a>product_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p51759216"><a name="p51759216"></a><a name="p51759216"></a>Array</p>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p7238105116152"><a name="p7238105116152"></a><a name="p7238105116152"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p31746958"><a name="p31746958"></a><a name="p31746958"></a>Details of the chosen DCS specification.</p>
-</td>
-</tr>
-<tr id="row17287170"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p58083554"><a name="p58083554"></a><a name="p58083554"></a>engine</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p7147451"><a name="p7147451"></a><a name="p7147451"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p42072628"><a name="p42072628"></a><a name="p42072628"></a>Cache engine.</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p2238151191518"><a name="p2238151191518"></a><a name="p2238151191518"></a>Product ID used to differentiate DCS specifications.</p>
 </td>
 </tr>
-<tr id="row43109332"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p2194976"><a name="p2194976"></a><a name="p2194976"></a>price</p>
+<tr id="row20491126105513"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p323975119159"><a name="p323975119159"></a><a name="p323975119159"></a>spec_code</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p43575393"><a name="p43575393"></a><a name="p43575393"></a>doubule</p>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p132391951151516"><a name="p132391951151516"></a><a name="p132391951151516"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p39945983"><a name="p39945983"></a><a name="p39945983"></a>Price of the DCS service to which you can subscribe. (This parameter has been abandoned.)</p>
-</td>
-</tr>
-<tr id="row23969532"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p62483952"><a name="p62483952"></a><a name="p62483952"></a>currency</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p28035315"><a name="p28035315"></a><a name="p28035315"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p56268080"><a name="p56268080"></a><a name="p56268080"></a>Currency.</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p546716557277"><a name="p546716557277"></a><a name="p546716557277"></a>DCS instance specification code.</p>
+<a name="ul181289335104"></a><a name="ul181289335104"></a><ul id="ul181289335104"><li><strong id="b6471192914419"><a name="b6471192914419"></a><a name="b6471192914419"></a>dcs.single_node</strong></li><li><strong id="b17521051861"><a name="b17521051861"></a><a name="b17521051861"></a>dcs.master_standby</strong></li><li><strong id="b3404123613412"><a name="b3404123613412"></a><a name="b3404123613412"></a>dcs.cluster</strong></li></ul>
 </td>
 </tr>
-<tr id="row36650675"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p15914679"><a name="p15914679"></a><a name="p15914679"></a>flavors</p>
+<tr id="row163113595519"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p198111983417"><a name="p198111983417"></a><a name="p198111983417"></a>cache_mode</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p14020616"><a name="p14020616"></a><a name="p14020616"></a>Array</p>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p7981161915341"><a name="p7981161915341"></a><a name="p7981161915341"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p61928077"><a name="p61928077"></a><a name="p61928077"></a>AZs with available resources.</p>
-</td>
-</tr>
-<tr id="row20481782"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p48411685"><a name="p48411685"></a><a name="p48411685"></a>product_id</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p29032445"><a name="p29032445"></a><a name="p29032445"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p2817829"><a name="p2817829"></a><a name="p2817829"></a>Product ID of DCS.</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p9981161933414"><a name="p9981161933414"></a><a name="p9981161933414"></a>DCS instance type. Options:</p>
+<a name="ul710514217427"></a><a name="ul710514217427"></a><ul id="ul710514217427"><li><strong id="b380093713710"><a name="b380093713710"></a><a name="b380093713710"></a>single</strong>: single-node</li><li><strong id="b33395398720"><a name="b33395398720"></a><a name="b33395398720"></a>ha</strong>: master/standby</li><li><strong id="b71446401576"><a name="b71446401576"></a><a name="b71446401576"></a>cluster</strong>: Redis Cluster</li></ul>
 </td>
 </tr>
-<tr id="row25360462"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p40931570"><a name="p40931570"></a><a name="p40931570"></a>spec_code</p>
+<tr id="row1099540155611"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p1598151983414"><a name="p1598151983414"></a><a name="p1598151983414"></a>product_type</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p27122874"><a name="p27122874"></a><a name="p27122874"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p119811190343"><a name="p119811190343"></a><a name="p119811190343"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p49469199"><a name="p49469199"></a><a name="p49469199"></a>DCS specification ID.</p>
-<p id="p42569609"><a name="p42569609"></a><a name="p42569609"></a>Options:</p>
-<a name="ul47582168"></a><a name="ul47582168"></a><ul id="ul47582168"><li><strong id="b28950398"><a name="b28950398"></a><a name="b28950398"></a>dcs.single_node</strong></li><li><strong id="b63280872"><a name="b63280872"></a><a name="b63280872"></a>dcs.master_standby</strong></li><li><strong id="b25476990"><a name="b25476990"></a><a name="b25476990"></a>dcs.cluster</strong></li></ul>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1898112198347"><a name="p1898112198347"></a><a name="p1898112198347"></a>Edition of DCS for Redis.</p>
 </td>
 </tr>
-<tr id="row27966326"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p50679930"><a name="p50679930"></a><a name="p50679930"></a>cache_mode</p>
+<tr id="row1458210115619"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p19981181973410"><a name="p19981181973410"></a><a name="p19981181973410"></a>cpu_type</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p11433695"><a name="p11433695"></a><a name="p11433695"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p49811719103414"><a name="p49811719103414"></a><a name="p49811719103414"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p53714125"><a name="p53714125"></a><a name="p53714125"></a>DCS instance type. Options:</p>
-<a name="ul13665078"></a><a name="ul13665078"></a><ul id="ul13665078"><li><strong id="b33129539"><a name="b33129539"></a><a name="b33129539"></a>single</strong>: single-node</li><li><strong id="b66247021"><a name="b66247021"></a><a name="b66247021"></a>ha</strong>: master/standby</li><li><strong id="b64408475"><a name="b64408475"></a><a name="b64408475"></a>cluster</strong>: Redis Cluster</li></ul>
-</td>
-</tr>
-<tr id="row42805367"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p44682727"><a name="p44682727"></a><a name="p44682727"></a>product_type</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p62531152"><a name="p62531152"></a><a name="p62531152"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p31858521"><a name="p31858521"></a><a name="p31858521"></a>Product type.</p>
-<p id="p18291233"><a name="p18291233"></a><a name="p18291233"></a>Options: <strong id="b30403370"><a name="b30403370"></a><a name="b30403370"></a>generic</strong></p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p109817194340"><a name="p109817194340"></a><a name="p109817194340"></a>CPU architecture.</p>
 </td>
 </tr>
-<tr id="row5194877"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p18131918"><a name="p18131918"></a><a name="p18131918"></a>cpu_type</p>
+<tr id="row747092905615"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p924775611344"><a name="p924775611344"></a><a name="p924775611344"></a>storage_type</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p59399292"><a name="p59399292"></a><a name="p59399292"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p10247256193411"><a name="p10247256193411"></a><a name="p10247256193411"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p46613358"><a name="p46613358"></a><a name="p46613358"></a>CPU architecture.</p>
-<p id="p16867045"><a name="p16867045"></a><a name="p16867045"></a>Options: <strong id="b17585677"><a name="b17585677"></a><a name="b17585677"></a>x86_64</strong></p>
-</td>
-</tr>
-<tr id="row24053368"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p2165829"><a name="p2165829"></a><a name="p2165829"></a>storage_type</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p41214450"><a name="p41214450"></a><a name="p41214450"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p50036135"><a name="p50036135"></a><a name="p50036135"></a>Memory type.</p>
-<p id="p47672037"><a name="p47672037"></a><a name="p47672037"></a>Options: <strong id="b26395149"><a name="b26395149"></a><a name="b26395149"></a>DRAM</strong></p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1024735612348"><a name="p1024735612348"></a><a name="p1024735612348"></a>Storage type.</p>
 </td>
 </tr>
-<tr id="row36229754"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p48928939"><a name="p48928939"></a><a name="p48928939"></a>engine_versions</p>
+<tr id="row3719113919263"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p147201739172613"><a name="p147201739172613"></a><a name="p147201739172613"></a>details</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p3821154"><a name="p3821154"></a><a name="p3821154"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p1720113918263"><a name="p1720113918263"></a><a name="p1720113918263"></a>Array</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p41078020"><a name="p41078020"></a><a name="p41078020"></a>Supported cache engine versions.</p>
-</td>
-</tr>
-<tr id="row34157866"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p15323738"><a name="p15323738"></a><a name="p15323738"></a>spec_details</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p33263275"><a name="p33263275"></a><a name="p33263275"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p9970756"><a name="p9970756"></a><a name="p9970756"></a>Details of DCS specification information, which is a character string in the JSON format.</p>
-<a name="ul22627948"></a><a name="ul22627948"></a><ul id="ul22627948"><li>When <strong id="b20924485"><a name="b20924485"></a><a name="b20924485"></a>spec_code</strong> is <strong id="b54102641"><a name="b54102641"></a><a name="b54102641"></a>dcs.single_node</strong>, the value of <strong id="b17161723"><a name="b17161723"></a><a name="b17161723"></a>spec_details</strong> is <strong id="b20237780"><a name="b20237780"></a><a name="b20237780"></a>2,4,8,16,32,64</strong>.</li><li>When <strong id="b28647455"><a name="b28647455"></a><a name="b28647455"></a>spec_code</strong> is <strong id="b56500507"><a name="b56500507"></a><a name="b56500507"></a>dcs.master_standby</strong>, the value of <strong id="b38742523"><a name="b38742523"></a><a name="b38742523"></a>spec_details</strong> is <strong id="b13138391"><a name="b13138391"></a><a name="b13138391"></a>2,4,8,16,32,64</strong>.</li><li>When <strong id="b57576718"><a name="b57576718"></a><a name="b57576718"></a>spec_code</strong> is <strong id="b48428420"><a name="b48428420"></a><a name="b48428420"></a>dcs.cluster</strong>, the value of <strong id="b33202602"><a name="b33202602"></a><a name="b33202602"></a>spec_details</strong> is <strong id="b30387970"><a name="b30387970"></a><a name="b30387970"></a>64,128,256,512</strong>.</li></ul>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p272023912260"><a name="p272023912260"></a><a name="p272023912260"></a>Details of the specifications. <a href="#table830249172716">Table 3</a> describes the parameters in this array.</p>
 </td>
 </tr>
-<tr id="row5056275"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p6905136"><a name="p6905136"></a><a name="p6905136"></a>spec_details2</p>
+<tr id="row16887753113017"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p588718535303"><a name="p588718535303"></a><a name="p588718535303"></a>engine</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p22445162"><a name="p22445162"></a><a name="p22445162"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p2887135363012"><a name="p2887135363012"></a><a name="p2887135363012"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p6118824"><a name="p6118824"></a><a name="p6118824"></a>Details of DCS specifications, including the maximum number of connections and maximum memory size.</p>
-</td>
-</tr>
-<tr id="row55069420"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p31438060"><a name="p31438060"></a><a name="p31438060"></a>charging_type</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p63454949"><a name="p63454949"></a><a name="p63454949"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p39577214"><a name="p39577214"></a><a name="p39577214"></a>Billing mode.</p>
-<p id="p20650606"><a name="p20650606"></a><a name="p20650606"></a>Value: <strong id="b51637727"><a name="b51637727"></a><a name="b51637727"></a>Hourly</strong>.</p>
-<p id="p62086362"><a name="p62086362"></a><a name="p62086362"></a>Charging mode.</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p208889533306"><a name="p208889533306"></a><a name="p208889533306"></a>Cache engine.</p>
 </td>
 </tr>
-<tr id="row21906353"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p29584155"><a name="p29584155"></a><a name="p29584155"></a>prod_type</p>
+<tr id="row859165010568"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p1524714568340"><a name="p1524714568340"></a><a name="p1524714568340"></a>engine_versions</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p47506374"><a name="p47506374"></a><a name="p47506374"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p1524720567349"><a name="p1524720567349"></a><a name="p1524720567349"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p22811098"><a name="p22811098"></a><a name="p22811098"></a>Product type.</p>
-<p id="p3973290"><a name="p3973290"></a><a name="p3973290"></a>Options: <strong id="b35759613"><a name="b35759613"></a><a name="b35759613"></a>instance</strong> and <strong id="b53401069"><a name="b53401069"></a><a name="b53401069"></a>obs_space</strong>.</p>
-</td>
-</tr>
-<tr id="row10847578"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p6238615"><a name="p6238615"></a><a name="p6238615"></a>cloud_service_type_code</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p35565788"><a name="p35565788"></a><a name="p35565788"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p62256594"><a name="p62256594"></a><a name="p62256594"></a>Cloud service type code.</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p3247155613420"><a name="p3247155613420"></a><a name="p3247155613420"></a>Cache engine version.</p>
 </td>
 </tr>
-<tr id="row23438439"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.4.1.1 "><p id="p19465384"><a name="p19465384"></a><a name="p19465384"></a>cloud_resource_type_code</p>
+<tr id="row35312151710"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p17239195171517"><a name="p17239195171517"></a><a name="p17239195171517"></a>spec_details</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.4.1.2 "><p id="p33192303"><a name="p33192303"></a><a name="p33192303"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p1923915117155"><a name="p1923915117155"></a><a name="p1923915117155"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.60606060606061%" headers="mcps1.2.4.1.3 "><p id="p4221985"><a name="p4221985"></a><a name="p4221985"></a>Cloud resource type code.</p>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p217316221173"><a name="p217316221173"></a><a name="p217316221173"></a>DCS specifications. The value subjects to the returned specifications.</p>
+</td>
+</tr>
+<tr id="row1825012201673"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p945220933816"><a name="p945220933816"></a><a name="p945220933816"></a>spec_details2</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p94527923814"><a name="p94527923814"></a><a name="p94527923814"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p174523923819"><a name="p174523923819"></a><a name="p174523923819"></a>Detailed DCS specifications, including the maximum number of connections and maximum memory size.</p>
+</td>
+</tr>
+<tr id="row272131212317"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p323975111510"><a name="p323975111510"></a><a name="p323975111510"></a>charging_type</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p523995151511"><a name="p523995151511"></a><a name="p523995151511"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p7327171013210"><a name="p7327171013210"></a><a name="p7327171013210"></a>Billing mode. Value: <strong id="b12306352165"><a name="b12306352165"></a><a name="b12306352165"></a>Hourly</strong>.</p>
+</td>
+</tr>
+<tr id="row1223815161515"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p0181153116713"><a name="p0181153116713"></a><a name="p0181153116713"></a>price</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p81811311975"><a name="p81811311975"></a><a name="p81811311975"></a>doubule</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p018110312712"><a name="p018110312712"></a><a name="p018110312712"></a>Price of the DCS service to which you can subscribe. (This parameter has been abandoned.)</p>
+</td>
+</tr>
+<tr id="row122398512158"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p71813311718"><a name="p71813311718"></a><a name="p71813311718"></a>currency</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p818213314719"><a name="p818213314719"></a><a name="p818213314719"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p12182331877"><a name="p12182331877"></a><a name="p12182331877"></a>Currency.</p>
+</td>
+</tr>
+<tr id="row49808195344"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p1858424318014"><a name="p1858424318014"></a><a name="p1858424318014"></a>prod_type</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p12584144316012"><a name="p12584144316012"></a><a name="p12584144316012"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1234224715319"><a name="p1234224715319"></a><a name="p1234224715319"></a>Product type.</p>
+<p id="p723634511240"><a name="p723634511240"></a><a name="p723634511240"></a>Options: <strong id="b19994144711310"><a name="b19994144711310"></a><a name="b19994144711310"></a>instance</strong> and <strong id="b64912501311"><a name="b64912501311"></a><a name="b64912501311"></a>obs_space</strong>.</p>
+</td>
+</tr>
+<tr id="row4981519103410"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p328196163612"><a name="p328196163612"></a><a name="p328196163612"></a>cloud_service_type_code</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p82801867362"><a name="p82801867362"></a><a name="p82801867362"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p12278864360"><a name="p12278864360"></a><a name="p12278864360"></a>Cloud service type code.</p>
+</td>
+</tr>
+<tr id="row16981719143412"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p1323514115365"><a name="p1323514115365"></a><a name="p1323514115365"></a>cloud_resource_type_code</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p152351411163611"><a name="p152351411163611"></a><a name="p152351411163611"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p1023511133614"><a name="p1023511133614"></a><a name="p1023511133614"></a>Cloud resource type code.</p>
+</td>
+</tr>
+<tr id="row142461756103416"><td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.4.1.1 "><p id="p1473512163111"><a name="p1473512163111"></a><a name="p1473512163111"></a>flavors</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.669999999999998%" headers="mcps1.2.4.1.2 "><p id="p173112153111"><a name="p173112153111"></a><a name="p173112153111"></a>Array</p>
+</td>
+<td class="cellrowborder" valign="top" width="60%" headers="mcps1.2.4.1.3 "><p id="p127301213118"><a name="p127301213118"></a><a name="p127301213118"></a>AZs with available resources. <a href="#table1979512328317">Table 4</a> describes the parameters in this array.</p>
 </td>
 </tr>
 </tbody>
@@ -203,55 +190,83 @@ None.
 
 **Table  3**  details parameter description
 
-<a name="table37997871"></a>
-<table><thead align="left"><tr id="row25167817"><th class="cellrowborder" valign="top" width="23.46938775510204%" id="mcps1.2.4.1.1"><p id="p25327282"><a name="p25327282"></a><a name="p25327282"></a>Name</p>
+<a name="table830249172716"></a>
+<table><thead align="left"><tr id="row193113491271"><th class="cellrowborder" valign="top" width="23.392339233923394%" id="mcps1.2.4.1.1"><p id="p552710118284"><a name="p552710118284"></a><a name="p552710118284"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="16.3265306122449%" id="mcps1.2.4.1.2"><p id="p38243960"><a name="p38243960"></a><a name="p38243960"></a>Type</p>
+<th class="cellrowborder" valign="top" width="16.65166516651665%" id="mcps1.2.4.1.2"><p id="p1852741102813"><a name="p1852741102813"></a><a name="p1852741102813"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="60.204081632653065%" id="mcps1.2.4.1.3"><p id="p10753026"><a name="p10753026"></a><a name="p10753026"></a>Description</p>
+<th class="cellrowborder" valign="top" width="59.95599559955996%" id="mcps1.2.4.1.3"><p id="p452719113284"><a name="p452719113284"></a><a name="p452719113284"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row65688760"><td class="cellrowborder" valign="top" width="23.46938775510204%" headers="mcps1.2.4.1.1 "><p id="p19189380"><a name="p19189380"></a><a name="p19189380"></a>capacity</p>
+<tbody><tr id="row832949192715"><td class="cellrowborder" valign="top" width="23.392339233923394%" headers="mcps1.2.4.1.1 "><p id="p183284919278"><a name="p183284919278"></a><a name="p183284919278"></a>capacity</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.3265306122449%" headers="mcps1.2.4.1.2 "><p id="p10835915"><a name="p10835915"></a><a name="p10835915"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.65166516651665%" headers="mcps1.2.4.1.2 "><p id="p1132204913271"><a name="p1132204913271"></a><a name="p1132204913271"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.204081632653065%" headers="mcps1.2.4.1.3 "><p id="p5293943"><a name="p5293943"></a><a name="p5293943"></a>Specification (total memory) of the DCS instance.</p>
-</td>
-</tr>
-<tr id="row47645495"><td class="cellrowborder" valign="top" width="23.46938775510204%" headers="mcps1.2.4.1.1 "><p id="p34079861"><a name="p34079861"></a><a name="p34079861"></a>max_bandwidth</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.3265306122449%" headers="mcps1.2.4.1.2 "><p id="p9005323"><a name="p9005323"></a><a name="p9005323"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60.204081632653065%" headers="mcps1.2.4.1.3 "><p id="p58342562"><a name="p58342562"></a><a name="p58342562"></a>Maximum bandwidth supported by the specification.</p>
+<td class="cellrowborder" valign="top" width="59.95599559955996%" headers="mcps1.2.4.1.3 "><p id="p183217499276"><a name="p183217499276"></a><a name="p183217499276"></a>Specification (total memory) of the DCS instance.</p>
 </td>
 </tr>
-<tr id="row55321013"><td class="cellrowborder" valign="top" width="23.46938775510204%" headers="mcps1.2.4.1.1 "><p id="p51817072"><a name="p51817072"></a><a name="p51817072"></a>max_clients</p>
+<tr id="row632749192720"><td class="cellrowborder" valign="top" width="23.392339233923394%" headers="mcps1.2.4.1.1 "><p id="p2321049152718"><a name="p2321049152718"></a><a name="p2321049152718"></a>max_bandwidth</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.3265306122449%" headers="mcps1.2.4.1.2 "><p id="p36433279"><a name="p36433279"></a><a name="p36433279"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.65166516651665%" headers="mcps1.2.4.1.2 "><p id="p183224913273"><a name="p183224913273"></a><a name="p183224913273"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.204081632653065%" headers="mcps1.2.4.1.3 "><p id="p65414475"><a name="p65414475"></a><a name="p65414475"></a>Maximum number of clients supported by the specification, which is usually equal to the maximum number of connections.</p>
-</td>
-</tr>
-<tr id="row51859363"><td class="cellrowborder" valign="top" width="23.46938775510204%" headers="mcps1.2.4.1.1 "><p id="p39858836"><a name="p39858836"></a><a name="p39858836"></a>max_connections</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.3265306122449%" headers="mcps1.2.4.1.2 "><p id="p7340278"><a name="p7340278"></a><a name="p7340278"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60.204081632653065%" headers="mcps1.2.4.1.3 "><p id="p57691632"><a name="p57691632"></a><a name="p57691632"></a>Maximum number of connections supported by the specification.</p>
+<td class="cellrowborder" valign="top" width="59.95599559955996%" headers="mcps1.2.4.1.3 "><p id="p1632184918277"><a name="p1632184918277"></a><a name="p1632184918277"></a>Maximum bandwidth supported by the specification.</p>
 </td>
 </tr>
-<tr id="row49462646"><td class="cellrowborder" valign="top" width="23.46938775510204%" headers="mcps1.2.4.1.1 "><p id="p47051400"><a name="p47051400"></a><a name="p47051400"></a>max_in_bandwidth</p>
+<tr id="row232114922711"><td class="cellrowborder" valign="top" width="23.392339233923394%" headers="mcps1.2.4.1.1 "><p id="p7321249162716"><a name="p7321249162716"></a><a name="p7321249162716"></a>max_clients</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.3265306122449%" headers="mcps1.2.4.1.2 "><p id="p53067079"><a name="p53067079"></a><a name="p53067079"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.65166516651665%" headers="mcps1.2.4.1.2 "><p id="p232114912273"><a name="p232114912273"></a><a name="p232114912273"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.204081632653065%" headers="mcps1.2.4.1.3 "><p id="p3466138"><a name="p3466138"></a><a name="p3466138"></a>Maximum inbound bandwidth supported by the specification, which is usually equal to the maximum bandwidth.</p>
+<td class="cellrowborder" valign="top" width="59.95599559955996%" headers="mcps1.2.4.1.3 "><p id="p1932149142714"><a name="p1932149142714"></a><a name="p1932149142714"></a>Maximum number of clients supported by the specification, which is usually equal to the maximum number of connections.</p>
 </td>
 </tr>
-<tr id="row31195247"><td class="cellrowborder" valign="top" width="23.46938775510204%" headers="mcps1.2.4.1.1 "><p id="p43787068"><a name="p43787068"></a><a name="p43787068"></a>max_memory</p>
+<tr id="row1032194912278"><td class="cellrowborder" valign="top" width="23.392339233923394%" headers="mcps1.2.4.1.1 "><p id="p8321749172712"><a name="p8321749172712"></a><a name="p8321749172712"></a>max_connections</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.3265306122449%" headers="mcps1.2.4.1.2 "><p id="p57091601"><a name="p57091601"></a><a name="p57091601"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.65166516651665%" headers="mcps1.2.4.1.2 "><p id="p17321549112710"><a name="p17321549112710"></a><a name="p17321549112710"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.204081632653065%" headers="mcps1.2.4.1.3 "><p id="p61016983"><a name="p61016983"></a><a name="p61016983"></a>Maximum available memory.</p>
+<td class="cellrowborder" valign="top" width="59.95599559955996%" headers="mcps1.2.4.1.3 "><p id="p532749152716"><a name="p532749152716"></a><a name="p532749152716"></a>Maximum number of connections supported by the specification.</p>
+</td>
+</tr>
+<tr id="row2032114918277"><td class="cellrowborder" valign="top" width="23.392339233923394%" headers="mcps1.2.4.1.1 "><p id="p13327493271"><a name="p13327493271"></a><a name="p13327493271"></a>max_in_bandwidth</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.65166516651665%" headers="mcps1.2.4.1.2 "><p id="p1232749152717"><a name="p1232749152717"></a><a name="p1232749152717"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="59.95599559955996%" headers="mcps1.2.4.1.3 "><p id="p7331349112717"><a name="p7331349112717"></a><a name="p7331349112717"></a>Maximum inbound bandwidth supported by the specification, which is usually equal to the maximum bandwidth.</p>
+</td>
+</tr>
+<tr id="row1933194912719"><td class="cellrowborder" valign="top" width="23.392339233923394%" headers="mcps1.2.4.1.1 "><p id="p133318498272"><a name="p133318498272"></a><a name="p133318498272"></a>max_memory</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.65166516651665%" headers="mcps1.2.4.1.2 "><p id="p8336491274"><a name="p8336491274"></a><a name="p8336491274"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="59.95599559955996%" headers="mcps1.2.4.1.3 "><p id="p1433124972718"><a name="p1433124972718"></a><a name="p1433124972718"></a>Maximum available memory.</p>
+</td>
+</tr>
+<tr id="row3391144205314"><td class="cellrowborder" valign="top" width="23.392339233923394%" headers="mcps1.2.4.1.1 "><p id="p173921443533"><a name="p173921443533"></a><a name="p173921443533"></a>tenant_ip_count</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.65166516651665%" headers="mcps1.2.4.1.2 "><p id="p9392124425311"><a name="p9392124425311"></a><a name="p9392124425311"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="59.95599559955996%" headers="mcps1.2.4.1.3 "><p id="p17392104485318"><a name="p17392104485318"></a><a name="p17392104485318"></a>Number of tenant IP addresses corresponding to the specifications.</p>
+</td>
+</tr>
+<tr id="row103921244175315"><td class="cellrowborder" valign="top" width="23.392339233923394%" headers="mcps1.2.4.1.1 "><p id="p1039214475315"><a name="p1039214475315"></a><a name="p1039214475315"></a>sharding_num</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.65166516651665%" headers="mcps1.2.4.1.2 "><p id="p83931344145320"><a name="p83931344145320"></a><a name="p83931344145320"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="59.95599559955996%" headers="mcps1.2.4.1.3 "><p id="p639324410537"><a name="p639324410537"></a><a name="p639324410537"></a>Number of shards supported by the specifications.</p>
+</td>
+</tr>
+<tr id="row1139314495311"><td class="cellrowborder" valign="top" width="23.392339233923394%" headers="mcps1.2.4.1.1 "><p id="p17393144485319"><a name="p17393144485319"></a><a name="p17393144485319"></a>proxy_num</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.65166516651665%" headers="mcps1.2.4.1.2 "><p id="p1739312440539"><a name="p1739312440539"></a><a name="p1739312440539"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="59.95599559955996%" headers="mcps1.2.4.1.3 "><p id="p239394417532"><a name="p239394417532"></a><a name="p239394417532"></a>Number of proxies supported by Proxy Cluster instances of the specified specifications. If the instance is not a Proxy Cluster instance, the value of this parameter is <strong id="b685903718444"><a name="b685903718444"></a><a name="b685903718444"></a>0</strong>.</p>
+</td>
+</tr>
+<tr id="row137791713125416"><td class="cellrowborder" valign="top" width="23.392339233923394%" headers="mcps1.2.4.1.1 "><p id="p777981315541"><a name="p777981315541"></a><a name="p777981315541"></a>db_number</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.65166516651665%" headers="mcps1.2.4.1.2 "><p id="p077991375415"><a name="p077991375415"></a><a name="p077991375415"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="59.95599559955996%" headers="mcps1.2.4.1.3 "><p id="p577931317541"><a name="p577931317541"></a><a name="p577931317541"></a>Number of DBs of the specifications.</p>
 </td>
 </tr>
 </tbody>
@@ -259,262 +274,118 @@ None.
 
 **Table  4**  flavors parameter description
 
-<a name="table12281940"></a>
-<table><thead align="left"><tr id="row59688756"><th class="cellrowborder" valign="top" width="23.46938775510204%" id="mcps1.2.4.1.1"><p id="p2951044"><a name="p2951044"></a><a name="p2951044"></a>Name</p>
+<a name="table1979512328317"></a>
+<table><thead align="left"><tr id="row1879611326319"><th class="cellrowborder" valign="top" width="23.292329232923294%" id="mcps1.2.4.1.1"><p id="p1179619321315"><a name="p1179619321315"></a><a name="p1179619321315"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="16.3265306122449%" id="mcps1.2.4.1.2"><p id="p37708021"><a name="p37708021"></a><a name="p37708021"></a>Type</p>
+<th class="cellrowborder" valign="top" width="16.761676167616763%" id="mcps1.2.4.1.2"><p id="p7796143273112"><a name="p7796143273112"></a><a name="p7796143273112"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="60.204081632653065%" id="mcps1.2.4.1.3"><p id="p34450862"><a name="p34450862"></a><a name="p34450862"></a>Description</p>
+<th class="cellrowborder" valign="top" width="59.94599459945995%" id="mcps1.2.4.1.3"><p id="p17966325311"><a name="p17966325311"></a><a name="p17966325311"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row39056472"><td class="cellrowborder" valign="top" width="23.46938775510204%" headers="mcps1.2.4.1.1 "><p id="p9457691"><a name="p9457691"></a><a name="p9457691"></a>capacity</p>
+<tbody><tr id="row279616329313"><td class="cellrowborder" valign="top" width="23.292329232923294%" headers="mcps1.2.4.1.1 "><p id="p11796432123117"><a name="p11796432123117"></a><a name="p11796432123117"></a>capacity</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.3265306122449%" headers="mcps1.2.4.1.2 "><p id="p27875486"><a name="p27875486"></a><a name="p27875486"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.761676167616763%" headers="mcps1.2.4.1.2 "><p id="p1779643210313"><a name="p1779643210313"></a><a name="p1779643210313"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.204081632653065%" headers="mcps1.2.4.1.3 "><p id="p43321865"><a name="p43321865"></a><a name="p43321865"></a>Specification (total memory) of the DCS instance.</p>
-</td>
-</tr>
-<tr id="row54352469"><td class="cellrowborder" valign="top" width="23.46938775510204%" headers="mcps1.2.4.1.1 "><p id="p40473905"><a name="p40473905"></a><a name="p40473905"></a>unit</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.3265306122449%" headers="mcps1.2.4.1.2 "><p id="p57160840"><a name="p57160840"></a><a name="p57160840"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="60.204081632653065%" headers="mcps1.2.4.1.3 "><p id="p66625348"><a name="p66625348"></a><a name="p66625348"></a>Capacity unit.</p>
+<td class="cellrowborder" valign="top" width="59.94599459945995%" headers="mcps1.2.4.1.3 "><p id="p499239145"><a name="p499239145"></a><a name="p499239145"></a>Specification (total memory) of the DCS instance.</p>
 </td>
 </tr>
-<tr id="row62757228"><td class="cellrowborder" valign="top" width="23.46938775510204%" headers="mcps1.2.4.1.1 "><p id="p50170682"><a name="p50170682"></a><a name="p50170682"></a>available_zones</p>
+<tr id="row8796173215312"><td class="cellrowborder" valign="top" width="23.292329232923294%" headers="mcps1.2.4.1.1 "><p id="p1079610325315"><a name="p1079610325315"></a><a name="p1079610325315"></a>unit</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.3265306122449%" headers="mcps1.2.4.1.2 "><p id="p37293408"><a name="p37293408"></a><a name="p37293408"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.761676167616763%" headers="mcps1.2.4.1.2 "><p id="p779603243111"><a name="p779603243111"></a><a name="p779603243111"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.204081632653065%" headers="mcps1.2.4.1.3 "><p id="p867207"><a name="p867207"></a><a name="p867207"></a>AZ ID.</p>
+<td class="cellrowborder" valign="top" width="59.94599459945995%" headers="mcps1.2.4.1.3 "><p id="p479619326314"><a name="p479619326314"></a><a name="p479619326314"></a>Memory unit.</p>
+</td>
+</tr>
+<tr id="row167967329318"><td class="cellrowborder" valign="top" width="23.292329232923294%" headers="mcps1.2.4.1.1 "><p id="p1679618326317"><a name="p1679618326317"></a><a name="p1679618326317"></a>available_zones</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.761676167616763%" headers="mcps1.2.4.1.2 "><p id="p1679753215316"><a name="p1679753215316"></a><a name="p1679753215316"></a>Array</p>
+</td>
+<td class="cellrowborder" valign="top" width="59.94599459945995%" headers="mcps1.2.4.1.3 "><p id="p1579733233116"><a name="p1579733233116"></a><a name="p1579733233116"></a>AZ ID.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-Example response:
+**Example response**
 
 ```
-{ 
-```
-
-```
- "products": [ 
-```
-
-```
-       { 
-```
-
-```
-            "details": { 
-```
-
-```
-                "capacity": 64, 
-```
-
-```
-                "max_memory": 64, 
-```
-
-```
-                "max_connections": 20000, 
-```
-
-```
-                "max_clients": 80000, 
-```
-
-```
-                "max_bandwidth": 2000, 
-```
-
-```
-                "max_in_bandwidth": 600, 
-```
-
-```
-                "proc_num": 8 
-```
-
-```
-            }, 
-```
-
-```
-            "engine": "redis", 
-```
-
-```
-            "price": 0.04, 
-```
-
-```
-            "currency": "1", 
-```
-
-```
-            "flavors": [ 
-```
-
-```
-                { 
-```
-
-```
-                    "capacity": "64", 
-```
-
-```
-                    "unit": "GB", 
-```
-
-```
-                    "available_zones": [ 
-```
-
-```
-                        "ae04cf9d61544df3806a3feeb401b204", 
-```
-
-```
-                        "882f6e449e3245dbb8c1c0fafa494c89" 
-```
-
-```
-                    ] 
-```
-
-```
-                }, 
-```
-
-```
-                { 
-```
-
-```
-                    "capacity": "128", 
-```
-
-```
-                    "unit": "GB", 
-```
-
-```
-                    "available_zones": [ 
-```
-
-```
-                        "ae04cf9d61544df3806a3feeb401b204", 
-```
-
-```
-                        "882f6e449e3245dbb8c1c0fafa494c89" 
-```
-
-```
-                    ] 
-```
-
-```
-                }, 
-```
-
-```
-                { 
-```
-
-```
-                    "capacity": "256", 
-```
-
-```
-                    "unit": "GB", 
-```
-
-```
-                    "available_zones": [ 
-```
-
-```
-                        "ae04cf9d61544df3806a3feeb401b204", 
-```
-
-```
-                        "882f6e449e3245dbb8c1c0fafa494c89" 
-```
-
-```
-                    ] 
-```
-
-```
-                } 
-```
-
-```
-            ], 
-```
-
-```
-            "product_id": "00301-30112-0--0", 
-```
-
-```
-            "spec_code": "dcs.cluster", 
-```
-
-```
-            "cache_mode": "cluster", 
-```
-
-```
-            "product_type": "generic", 
-```
-
-```
-            "cpu_type": "x86_64", 
-```
-
-```
-            "storage_type": "DRAM", 
-```
-
-```
-            "engine_versions": "3.0.7", 
-```
-
-```
-            "spec_details": "[{\"mem\":\"64,128,256\"}]", 
-```
-
-```
-            "spec_details2": "[{\"capacity\": 64,\"max_memory\": 64,\"max_connections\": 20000,\"max_clients\":80000,\"max_bandwidth\": 2000,\"max_in_bandwidth\": 600,\"proc_num\":8},{\"capacity\": 128,\"max_memory\": 128,\"max_connections\": 20000,\"max_clients\":160000,\"max_bandwidth\": 2000,\"max_in_bandwidth\": 600,\"proc_num\":16},{\"capacity\": 256,\"max_memory\": 256,\"max_connections\": 20000,\"max_clients\":160000,\"max_bandwidth\": 2000,\"max_in_bandwidth\": 600,\"proc_num\":32},{\"capacity\": 512,\"max_memory\": 512,\"max_connections\": 20000,\"max_clients\":160000,\"max_bandwidth\": 2000,\"max_in_bandwidth\": 600,\"proc_num\":64},{\"capacity\": 1024,\"max_memory\": 1024,\"max_connections\": 20000,\"max_clients\":160000,\"max_bandwidth\": 2000,\"max_in_bandwidth\": 600,\"proc_num\":128}]", 
-```
-
-```
-            "charging_type": "Hourly", 
-```
-
-```
-            "prod_type": "instance", 
-```
-
-```
-            "cloud_service_type_code": "otc.service.type.dcs", 
-```
-
-```
-            "cloud_resource_type_code": "otc.resource.type.dcs" 
-```
-
-```
-      }, 
-```
-
-```
+{
+    "products": [
+       {
+            "details": {
+                "capacity": 64,
+                "max_memory": 64,
+                "max_connections": 20000,
+                "max_clients": 80000,
+                "max_bandwidth": 2000,
+                "max_in_bandwidth": 600,
+                "proc_num": 8
+            },
+            "engine": "redis",
+            "price": 0.04,
+            "currency": "1",
+            "flavors": [
+                {
+                    "capacity": "64",
+                    "unit": "GB",
+                    "available_zones": [
+                        "ae04cf9d61544df3806a3feeb401b204",
+                        "882f6e449e3245dbb8c1c0fafa494c89"
+                    ]
+                },
+                {
+                    "capacity": "128",
+                    "unit": "GB",
+                    "available_zones": [
+                        "ae04cf9d61544df3806a3feeb401b204",
+                        "882f6e449e3245dbb8c1c0fafa494c89"
+                    ]
+                },
+                {
+                    "capacity": "256",
+                    "unit": "GB",
+                    "available_zones": [
+                        "ae04cf9d61544df3806a3feeb401b204",
+                        "882f6e449e3245dbb8c1c0fafa494c89"
+                    ]
+                }
+            ],
+            "product_id": "00301-30112-0--0",
+            "spec_code": "dcs.cluster",
+            "cache_mode": "cluster",
+            "product_type": "generic",
+            "cpu_type": "x86_64",
+            "storage_type": "DRAM",
+            "engine_versions": "3.0",
+            "spec_details": "[{\"mem\":\"64,128,256\"}]",
+            "spec_details2": "[{\"capacity\": 64,\"max_memory\": 64,\"max_connections\": 20000,\"max_clients\":80000,\"max_bandwidth\": 2000,\"max_in_bandwidth\": 600,\"proc_num\":8},{\"capacity\": 128,\"max_memory\": 128,\"max_connections\": 20000,\"max_clients\":160000,\"max_bandwidth\": 2000,\"max_in_bandwidth\": 600,\"proc_num\":16},{\"capacity\": 256,\"max_memory\": 256,\"max_connections\": 20000,\"max_clients\":160000,\"max_bandwidth\": 2000,\"max_in_bandwidth\": 600,\"proc_num\":32},{\"capacity\": 512,\"max_memory\": 512,\"max_connections\": 20000,\"max_clients\":160000,\"max_bandwidth\": 2000,\"max_in_bandwidth\": 600,\"proc_num\":64},{\"capacity\": 1024,\"max_memory\": 1024,\"max_connections\": 20000,\"max_clients\":160000,\"max_bandwidth\": 2000,\"max_in_bandwidth\": 600,\"proc_num\":128}]",
+            "charging_type": "Hourly",
+            "prod_type": "instance",
+            "cloud_service_type_code": "XXXX",
+            "cloud_resource_type_code": "XXXX"
+        },
 }
 ```
+
+## Status Code<a name="section108740485137"></a>
+
+[Table 5](#table11875348101316)  describes the status code of successful operations. For details about other status codes, see  [Table 1](status-codes.md#table5210141351517).
+
+**Table  5**  Status code
+
+<a name="table11875348101316"></a>
+<table><thead align="left"><tr id="row187524831319"><th class="cellrowborder" valign="top" width="15.98%" id="mcps1.2.3.1.1"><p id="p138751048141314"><a name="p138751048141314"></a><a name="p138751048141314"></a>Status Code</p>
+</th>
+<th class="cellrowborder" valign="top" width="84.02%" id="mcps1.2.3.1.2"><p id="p087514488136"><a name="p087514488136"></a><a name="p087514488136"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row48751148101320"><td class="cellrowborder" valign="top" width="15.98%" headers="mcps1.2.3.1.1 "><p id="p48755482133"><a name="p48755482133"></a><a name="p48755482133"></a>200</p>
+</td>
+<td class="cellrowborder" valign="top" width="84.02%" headers="mcps1.2.3.1.2 "><p id="p5875194821319"><a name="p5875194821319"></a><a name="p5875194821319"></a>Service specifications queried successfully.</p>
+</td>
+</tr>
+</tbody>
+</table>
 

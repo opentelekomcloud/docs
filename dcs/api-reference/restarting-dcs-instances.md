@@ -1,172 +1,181 @@
-# Restarting DCS Instances<a name="EN-US_TOPIC_0237964365"></a>
+# Restarting DCS Instances<a name="dcs-api-0312018"></a>
 
-## Function<a name="section29579387"></a>
+## Function<a name="section7884115112419"></a>
 
-This API is used to restart DCS instances.
+This API is used to restart a running DCS instance.
 
-## URI<a name="section64887899"></a>
+## URI<a name="section135003281596"></a>
 
--   URI format:
+PUT /v1.0/\{project\_id\}/instances/status
 
-    PUT /v1.0/\{project\_id\}/instances/status
-
--   Parameter description:
-
-    [Table 1](#table50009058)  describes the parameter of this API.
-
+[Table 1](#table344154216371)  describes the parameter.
 
 **Table  1**  Parameter description
 
-<a name="table50009058"></a>
-<table><thead align="left"><tr id="row19077772"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p1795723"><a name="p1795723"></a><a name="p1795723"></a>Name</p>
+<a name="table344154216371"></a>
+<table><thead align="left"><tr id="row44454293719"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p143542153710"><a name="p143542153710"></a><a name="p143542153710"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p11235870"><a name="p11235870"></a><a name="p11235870"></a>Type</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p243942133712"><a name="p243942133712"></a><a name="p243942133712"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p37690286"><a name="p37690286"></a><a name="p37690286"></a>Mandatory or Not</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p15431742143710"><a name="p15431742143710"></a><a name="p15431742143710"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p33014306"><a name="p33014306"></a><a name="p33014306"></a>Description</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p1843204253716"><a name="p1843204253716"></a><a name="p1843204253716"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row56913123"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p46560216"><a name="p46560216"></a><a name="p46560216"></a>project_id</p>
+<tbody><tr id="row54444263714"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1144042133712"><a name="p1144042133712"></a><a name="p1144042133712"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p13281129"><a name="p13281129"></a><a name="p13281129"></a>String</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p15449424377"><a name="p15449424377"></a><a name="p15449424377"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p2029696"><a name="p2029696"></a><a name="p2029696"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p4441242153712"><a name="p4441242153712"></a><a name="p4441242153712"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p30187650"><a name="p30187650"></a><a name="p30187650"></a>Project ID.</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p14441242143712"><a name="p14441242143712"></a><a name="p14441242143712"></a>Project ID.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Request<a name="section47120180"></a>
+## Request<a name="section8844175611106"></a>
 
--   Request parameter:
+**Request parameters**
 
-    [Table 2](#table47428342)  describes request parameters.
-
+[Table 2](#table103786452372)  describes the request parameters.
 
 **Table  2**  Parameter description
 
-<a name="table47428342"></a>
-<table><thead align="left"><tr id="row30161299"><th class="cellrowborder" valign="top" width="25.252525252525253%" id="mcps1.2.5.1.1"><p id="p27146137"><a name="p27146137"></a><a name="p27146137"></a>Name</p>
+<a name="table103786452372"></a>
+<table><thead align="left"><tr id="row1377114516376"><th class="cellrowborder" valign="top" width="17%" id="mcps1.2.5.1.1"><p id="p537711457375"><a name="p537711457375"></a><a name="p537711457375"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.17171717171717%" id="mcps1.2.5.1.2"><p id="p51353525"><a name="p51353525"></a><a name="p51353525"></a>Type</p>
+<th class="cellrowborder" valign="top" width="18%" id="mcps1.2.5.1.2"><p id="p1737754583715"><a name="p1737754583715"></a><a name="p1737754583715"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="25.252525252525253%" id="mcps1.2.5.1.3"><p id="p65994828"><a name="p65994828"></a><a name="p65994828"></a>Mandatory or Not</p>
+<th class="cellrowborder" valign="top" width="17%" id="mcps1.2.5.1.3"><p id="p5377345123713"><a name="p5377345123713"></a><a name="p5377345123713"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="32.323232323232325%" id="mcps1.2.5.1.4"><p id="p43980872"><a name="p43980872"></a><a name="p43980872"></a>Description</p>
+<th class="cellrowborder" valign="top" width="48%" id="mcps1.2.5.1.4"><p id="p43771145143711"><a name="p43771145143711"></a><a name="p43771145143711"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row5680913"><td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.1 "><p id="p57500814"><a name="p57500814"></a><a name="p57500814"></a>action</p>
+<tbody><tr id="row1437724511376"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.1 "><p id="p183771145173718"><a name="p183771145173718"></a><a name="p183771145173718"></a>action</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.17171717171717%" headers="mcps1.2.5.1.2 "><p id="p27054376"><a name="p27054376"></a><a name="p27054376"></a>String</p>
+<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.2 "><p id="p537712456375"><a name="p537712456375"></a><a name="p537712456375"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.3 "><p id="p43920838"><a name="p43920838"></a><a name="p43920838"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p17377124563715"><a name="p17377124563715"></a><a name="p17377124563715"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.2.5.1.4 "><p id="p818129"><a name="p818129"></a><a name="p818129"></a>Action performed on DCS instances.</p>
-<p id="p7363162"><a name="p7363162"></a><a name="p7363162"></a>Options: restart.</p>
+<td class="cellrowborder" valign="top" width="48%" headers="mcps1.2.5.1.4 "><p id="p13451321125615"><a name="p13451321125615"></a><a name="p13451321125615"></a>Action performed on DCS instances. Value: <strong id="b653782918610"><a name="b653782918610"></a><a name="b653782918610"></a>restart</strong>.</p>
 </td>
 </tr>
-<tr id="row66268464"><td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.1 "><p id="p66145356"><a name="p66145356"></a><a name="p66145356"></a>instances</p>
+<tr id="row03781645173719"><td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.1 "><p id="p11377945183718"><a name="p11377945183718"></a><a name="p11377945183718"></a>instances</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.17171717171717%" headers="mcps1.2.5.1.2 "><p id="p56173580"><a name="p56173580"></a><a name="p56173580"></a>Array</p>
+<td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.5.1.2 "><p id="p103774453372"><a name="p103774453372"></a><a name="p103774453372"></a>Array</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.3 "><p id="p53766104"><a name="p53766104"></a><a name="p53766104"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p163771745133715"><a name="p163771745133715"></a><a name="p163771745133715"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.2.5.1.4 "><p id="p60087193"><a name="p60087193"></a><a name="p60087193"></a>List of DCS instance IDs.</p>
+<td class="cellrowborder" valign="top" width="48%" headers="mcps1.2.5.1.4 "><p id="p93774453376"><a name="p93774453376"></a><a name="p93774453376"></a>List of DCS instance IDs.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
--   Example request:
+**Example request**
 
-    ```
-    { 
-     "action": "restart", 
-     "instances": [ 
-            "2e803f66-fbb0-47ad-b6cb-fb87f5bed4ef" 
-     ] 
-    }
-    ```
+```
+PUT https://{dcs_endpoint}/v1.0/{project_id}/instances/status
+```
 
+```
+{
+    "action": "restart",
+    "instances": [
+        "2e803f66-fbb0-47ad-b6cb-fb87f5bed4ef"
+    ]
+}
+```
 
-## Response<a name="section21428441"></a>
+## Response<a name="section1526810536111"></a>
 
--   Status code:
+**Response parameters**
 
-    If status code "200 OK" is returned, this request is fulfilled. For description of other status codes, see  [API Usage Guidelines](api-usage-guidelines.md).
-
--   Response parameter:
-
-    [Table 3](#table24201902)  describes the response parameter.
-
+[Table 3](#table52851943388)  describes the response parameter.
 
 **Table  3**  Parameter description
 
-<a name="table24201902"></a>
-<table><thead align="left"><tr id="row27302557"><th class="cellrowborder" valign="top" width="19.19191919191919%" id="mcps1.2.4.1.1"><p id="p64023541"><a name="p64023541"></a><a name="p64023541"></a>Name</p>
+<a name="table52851943388"></a>
+<table><thead align="left"><tr id="row172851641381"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.1"><p id="p92851944388"><a name="p92851944388"></a><a name="p92851944388"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.2"><p id="p18524317"><a name="p18524317"></a><a name="p18524317"></a>Type</p>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.2"><p id="p628534163813"><a name="p628534163813"></a><a name="p628534163813"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="47.474747474747474%" id="mcps1.2.4.1.3"><p id="p24074685"><a name="p24074685"></a><a name="p24074685"></a>Description</p>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.3"><p id="p228511417382"><a name="p228511417382"></a><a name="p228511417382"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row3892478"><td class="cellrowborder" valign="top" width="19.19191919191919%" headers="mcps1.2.4.1.1 "><p id="p46855303"><a name="p46855303"></a><a name="p46855303"></a>results</p>
+<tbody><tr id="row1828514413815"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p6285184153819"><a name="p6285184153819"></a><a name="p6285184153819"></a>results</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p37183233"><a name="p37183233"></a><a name="p37183233"></a>Array.</p>
-<p id="p66213648"><a name="p66213648"></a><a name="p66213648"></a>For details, see <a href="#ref478571394">Table 4</a>.</p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p5285154123811"><a name="p5285154123811"></a><a name="p5285154123811"></a>Array</p>
 </td>
-<td class="cellrowborder" valign="top" width="47.474747474747474%" headers="mcps1.2.4.1.3 "><p id="p18476519"><a name="p18476519"></a><a name="p18476519"></a>An indicator of whether the action is performed successfully.</p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p15285644384"><a name="p15285644384"></a><a name="p15285644384"></a>Indicates the result of instance modification.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-**Table  4**  Parameter description of the results array
+**Table  4**  results parameter description
 
-<a name="ref478571394"></a>
-<table><thead align="left"><tr id="row45092695"><th class="cellrowborder" valign="top" width="18%" id="mcps1.2.4.1.1"><p id="p28629701"><a name="p28629701"></a><a name="p28629701"></a>Name</p>
+<a name="table2070112173318"></a>
+<table><thead align="left"><tr id="row4701171710315"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.1"><p id="p107011517838"><a name="p107011517838"></a><a name="p107011517838"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="19%" id="mcps1.2.4.1.2"><p id="p37304419"><a name="p37304419"></a><a name="p37304419"></a>Type</p>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.2"><p id="p47012172037"><a name="p47012172037"></a><a name="p47012172037"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="63%" id="mcps1.2.4.1.3"><p id="p1759065"><a name="p1759065"></a><a name="p1759065"></a>Description</p>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.3"><p id="p16702817236"><a name="p16702817236"></a><a name="p16702817236"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row8266576"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p65612911"><a name="p65612911"></a><a name="p65612911"></a>instance</p>
+<tbody><tr id="row127025171316"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p15702101711317"><a name="p15702101711317"></a><a name="p15702101711317"></a>instance</p>
 </td>
-<td class="cellrowborder" valign="top" width="19%" headers="mcps1.2.4.1.2 "><p id="p13045599"><a name="p13045599"></a><a name="p13045599"></a>String</p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p157020171730"><a name="p157020171730"></a><a name="p157020171730"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p50060616"><a name="p50060616"></a><a name="p50060616"></a>DCS instance ID.</p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p1070213176311"><a name="p1070213176311"></a><a name="p1070213176311"></a>DCS instance ID.</p>
 </td>
 </tr>
-<tr id="row47892361"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p54075993"><a name="p54075993"></a><a name="p54075993"></a>result</p>
+<tr id="row1702617833"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p10702417734"><a name="p10702417734"></a><a name="p10702417734"></a>result</p>
 </td>
-<td class="cellrowborder" valign="top" width="19%" headers="mcps1.2.4.1.2 "><p id="p18079285"><a name="p18079285"></a><a name="p18079285"></a>String</p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p1170214171930"><a name="p1170214171930"></a><a name="p1170214171930"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p55136006"><a name="p55136006"></a><a name="p55136006"></a>An indicator of whether the action is performed successfully for the DCS instance.</p>
-<p id="p26462014"><a name="p26462014"></a><a name="p26462014"></a>Options: success and failed.</p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p1770221712311"><a name="p1770221712311"></a><a name="p1770221712311"></a>Instance modification result. Options: <strong id="b18540144242919"><a name="b18540144242919"></a><a name="b18540144242919"></a>success</strong> or <strong id="b455518428294"><a name="b455518428294"></a><a name="b455518428294"></a>failed</strong></p>
 </td>
 </tr>
 </tbody>
 </table>
 
--   Example response:
+**Example response**
 
-    ```
-    { 
-     "results": [ 
-            { 
-                "result": "success", 
-                "instance": "2e803f66-fbb0-47ad-b6cb-fb87f5bed4ef" 
-            } 
-     ] 
-    }
-    ```
+```
+{
+    "results": [
+        {
+            "result": "success",
+            "instance": "2e803f66-fbb0-47ad-b6cb-fb87f5bed4ef"
+        }
+    ]
+}
+```
 
+## Status Code<a name="section1257075711211"></a>
+
+[Table 5](#table1357115714126)  describes the status code of successful operations. For details about other status codes, see  [Table 1](status-codes.md#table5210141351517).
+
+**Table  5**  Status code
+
+<a name="table1357115714126"></a>
+<table><thead align="left"><tr id="row3571145711215"><th class="cellrowborder" valign="top" width="15.98%" id="mcps1.2.3.1.1"><p id="p17572125771218"><a name="p17572125771218"></a><a name="p17572125771218"></a>Status Code</p>
+</th>
+<th class="cellrowborder" valign="top" width="84.02%" id="mcps1.2.3.1.2"><p id="p1572185781216"><a name="p1572185781216"></a><a name="p1572185781216"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row155722572121"><td class="cellrowborder" valign="top" width="15.98%" headers="mcps1.2.3.1.1 "><p id="p1757265761210"><a name="p1757265761210"></a><a name="p1757265761210"></a>200</p>
+</td>
+<td class="cellrowborder" valign="top" width="84.02%" headers="mcps1.2.3.1.2 "><p id="p175205075613"><a name="p175205075613"></a><a name="p175205075613"></a>Successfully restarted the DCS instance.</p>
+</td>
+</tr>
+</tbody>
+</table>
 

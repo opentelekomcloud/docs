@@ -1,143 +1,158 @@
-# Restoring a DCS Instance<a name="EN-US_TOPIC_0237964370"></a>
+# Restoring a DCS Instance<a name="dcs-api-0312021"></a>
 
-## Function<a name="section25670449"></a>
+## Function<a name="section17787161851016"></a>
 
 This API is used to restore a specified DCS instance.
 
-## URI<a name="section29707457"></a>
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>Only master/standby and cluster DCS instances can be backed up and restored, while single-node instances cannot.
 
--   URI format:
+## URI<a name="section10627123311133"></a>
 
-    POST /v1.0/\{project\_id\}/instances/\{instance\_id\}/restores
+POST /v1.0/\{project\_id\}/instances/\{instance\_id\}/restores
 
--   Parameter description:
-
-    [Table 1](#d0e5974)  describes the parameters of this API.
-
+[Table 1](#table1899262913382)  describes the parameters.
 
 **Table  1**  Parameter description
 
-<a name="d0e5974"></a>
-<table><thead align="left"><tr id="row11549419"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p63087769"><a name="p63087769"></a><a name="p63087769"></a>Name</p>
+<a name="table1899262913382"></a>
+<table><thead align="left"><tr id="row1599115293389"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p15991152913819"><a name="p15991152913819"></a><a name="p15991152913819"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p9835639"><a name="p9835639"></a><a name="p9835639"></a>Type</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p129916298387"><a name="p129916298387"></a><a name="p129916298387"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p58489261"><a name="p58489261"></a><a name="p58489261"></a>Mandatory or Not</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p13991142913384"><a name="p13991142913384"></a><a name="p13991142913384"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p40009700"><a name="p40009700"></a><a name="p40009700"></a>Description</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p1991329193814"><a name="p1991329193814"></a><a name="p1991329193814"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row19560259"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p40877171"><a name="p40877171"></a><a name="p40877171"></a>project_id</p>
+<tbody><tr id="row11992929163813"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p159911329153817"><a name="p159911329153817"></a><a name="p159911329153817"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p22716572"><a name="p22716572"></a><a name="p22716572"></a>String</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p18992192943819"><a name="p18992192943819"></a><a name="p18992192943819"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p28103013"><a name="p28103013"></a><a name="p28103013"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p9992172933814"><a name="p9992172933814"></a><a name="p9992172933814"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p61751542"><a name="p61751542"></a><a name="p61751542"></a>Project ID.</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p20992829103811"><a name="p20992829103811"></a><a name="p20992829103811"></a>Project ID.</p>
 </td>
 </tr>
-<tr id="row18892969"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p53935546"><a name="p53935546"></a><a name="p53935546"></a>instance_id</p>
+<tr id="row17992929193810"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1899282919384"><a name="p1899282919384"></a><a name="p1899282919384"></a>instance_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p6703144"><a name="p6703144"></a><a name="p6703144"></a>String</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p15992229153810"><a name="p15992229153810"></a><a name="p15992229153810"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p6083802"><a name="p6083802"></a><a name="p6083802"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p199921129133818"><a name="p199921129133818"></a><a name="p199921129133818"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p23025977"><a name="p23025977"></a><a name="p23025977"></a>DCS instance ID.</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p199212910384"><a name="p199212910384"></a><a name="p199212910384"></a>DCS instance ID.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Request<a name="section66040521"></a>
+## Request<a name="section17412144620133"></a>
 
--   Request parameter:
+**Request parameters**
 
-    [Table 2](#d0e6034)  describes request parameters.
-
+[Table 2](#table153111335113816)  describes the request parameters.
 
 **Table  2**  Parameter description
 
-<a name="d0e6034"></a>
-<table><thead align="left"><tr id="row7912910"><th class="cellrowborder" valign="top" width="20.2020202020202%" id="mcps1.2.5.1.1"><p id="p36965936"><a name="p36965936"></a><a name="p36965936"></a>Name</p>
+<a name="table153111335113816"></a>
+<table><thead align="left"><tr id="row73117359383"><th class="cellrowborder" valign="top" width="20.202020202020204%" id="mcps1.2.5.1.1"><p id="p1031043517387"><a name="p1031043517387"></a><a name="p1031043517387"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="16.161616161616163%" id="mcps1.2.5.1.2"><p id="p41450855"><a name="p41450855"></a><a name="p41450855"></a>Type</p>
+<th class="cellrowborder" valign="top" width="16.16161616161616%" id="mcps1.2.5.1.2"><p id="p19310113593814"><a name="p19310113593814"></a><a name="p19310113593814"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="18.181818181818183%" id="mcps1.2.5.1.3"><p id="p2076123"><a name="p2076123"></a><a name="p2076123"></a>Mandatory or Not</p>
+<th class="cellrowborder" valign="top" width="18.18181818181818%" id="mcps1.2.5.1.3"><p id="p93101035183813"><a name="p93101035183813"></a><a name="p93101035183813"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="45.45454545454545%" id="mcps1.2.5.1.4"><p id="p33948275"><a name="p33948275"></a><a name="p33948275"></a>Description</p>
+<th class="cellrowborder" valign="top" width="45.45454545454545%" id="mcps1.2.5.1.4"><p id="p173101235153817"><a name="p173101235153817"></a><a name="p173101235153817"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row65455768"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.5.1.1 "><p id="p316977"><a name="p316977"></a><a name="p316977"></a>remark</p>
+<tbody><tr id="row1631133513386"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p1476162018711"><a name="p1476162018711"></a><a name="p1476162018711"></a>remark</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.5.1.2 "><p id="p25675175"><a name="p25675175"></a><a name="p25675175"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.16161616161616%" headers="mcps1.2.5.1.2 "><p id="p44761620072"><a name="p44761620072"></a><a name="p44761620072"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.181818181818183%" headers="mcps1.2.5.1.3 "><p id="p66423265"><a name="p66423265"></a><a name="p66423265"></a>No</p>
+<td class="cellrowborder" valign="top" width="18.18181818181818%" headers="mcps1.2.5.1.3 "><p id="p194761220279"><a name="p194761220279"></a><a name="p194761220279"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="45.45454545454545%" headers="mcps1.2.5.1.4 "><p id="p11575367"><a name="p11575367"></a><a name="p11575367"></a>Description of DCS instance restoration.</p>
+<td class="cellrowborder" valign="top" width="45.45454545454545%" headers="mcps1.2.5.1.4 "><p id="p047619201376"><a name="p047619201376"></a><a name="p047619201376"></a>Description of DCS instance restoration</p>
 </td>
 </tr>
-<tr id="row37069447"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.5.1.1 "><p id="p49835227"><a name="p49835227"></a><a name="p49835227"></a>backup_id</p>
+<tr id="row1231173523817"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.5.1.1 "><p id="p1047692020713"><a name="p1047692020713"></a><a name="p1047692020713"></a>backup_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.5.1.2 "><p id="p10121616"><a name="p10121616"></a><a name="p10121616"></a>String</p>
+<td class="cellrowborder" valign="top" width="16.16161616161616%" headers="mcps1.2.5.1.2 "><p id="p54767201077"><a name="p54767201077"></a><a name="p54767201077"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.181818181818183%" headers="mcps1.2.5.1.3 "><p id="p14544590"><a name="p14544590"></a><a name="p14544590"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="18.18181818181818%" headers="mcps1.2.5.1.3 "><p id="p3476132013716"><a name="p3476132013716"></a><a name="p3476132013716"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="45.45454545454545%" headers="mcps1.2.5.1.4 "><p id="p37261116"><a name="p37261116"></a><a name="p37261116"></a>ID of the backup record.</p>
+<td class="cellrowborder" valign="top" width="45.45454545454545%" headers="mcps1.2.5.1.4 "><p id="p04761220579"><a name="p04761220579"></a><a name="p04761220579"></a>ID of the backup record</p>
 </td>
 </tr>
 </tbody>
 </table>
 
--   Example request:
+**Example request**
 
-    ```
-    { 
-     "remark":"restore instance", 
-     "backup_id":"8ba256cb-e5ac-44f6-a3da-c03d8f0e5029" 
-    }
-    ```
+```
+POST https://{dcs_endpoint}/v1.0/{project_id}/instances/{instance_id}/restores
+```
 
+```
+{
+    "remark":"restore instance",
+    "backup_id":"8ba256cb-e5ac-44f6-a3da-c03d8f0e5029"
+}
+```
 
-## Response<a name="section57493779"></a>
+## Response<a name="section1417213312142"></a>
 
--   Status code:
+**Response parameters**
 
-    If status code "200 OK" is returned, this request is fulfilled. For description of other status codes, see  [API Usage Guidelines](api-usage-guidelines.md).
-
--   Response parameter:
-
-    [Table 3](#d0e6104)  describes the response parameter.
-
+[Table 3](#table1861319576383)  describes the response parameter.
 
 **Table  3**  Parameter description
 
-<a name="d0e6104"></a>
-<table><thead align="left"><tr id="row51554213"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p15141735"><a name="p15141735"></a><a name="p15141735"></a>Name</p>
+<a name="table1861319576383"></a>
+<table><thead align="left"><tr id="row1961225712388"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p136126577389"><a name="p136126577389"></a><a name="p136126577389"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.4.1.2"><p id="p18521046"><a name="p18521046"></a><a name="p18521046"></a>Type</p>
+<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.4.1.2"><p id="p76121757113816"><a name="p76121757113816"></a><a name="p76121757113816"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="63%" id="mcps1.2.4.1.3"><p id="p23809753"><a name="p23809753"></a><a name="p23809753"></a>Description</p>
+<th class="cellrowborder" valign="top" width="63%" id="mcps1.2.4.1.3"><p id="p26121157123820"><a name="p26121157123820"></a><a name="p26121157123820"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row49541849"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p53466813"><a name="p53466813"></a><a name="p53466813"></a>restore_id</p>
+<tbody><tr id="row166121557203812"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p2679426285"><a name="p2679426285"></a><a name="p2679426285"></a>restore_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p35844590"><a name="p35844590"></a><a name="p35844590"></a>String</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p12679192617817"><a name="p12679192617817"></a><a name="p12679192617817"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p17730643"><a name="p17730643"></a><a name="p17730643"></a>ID of the restoration record.</p>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p1767952618810"><a name="p1767952618810"></a><a name="p1767952618810"></a>ID of the restoration record</p>
 </td>
 </tr>
 </tbody>
 </table>
 
--   Example response:
+**Example response**
 
-    ```
-    { 
-     "restore_id": "a6155972-800c-4170-a479-3231e907d2f6" 
-    }
-    ```
+```
+{
+    "restore_id": "a6155972-800c-4170-a479-3231e907d2f6"
+}
+```
 
+## Status Code<a name="section4860101417132"></a>
+
+[Table 4](#table486141410130)  describes the status code of successful operations. For details about other status codes, see  [Table 1](status-codes.md#table5210141351517).
+
+**Table  4**  Status code
+
+<a name="table486141410130"></a>
+<table><thead align="left"><tr id="row18616141139"><th class="cellrowborder" valign="top" width="15.98%" id="mcps1.2.3.1.1"><p id="p1986191418133"><a name="p1986191418133"></a><a name="p1986191418133"></a>Status Code</p>
+</th>
+<th class="cellrowborder" valign="top" width="84.02%" id="mcps1.2.3.1.2"><p id="p18861111415138"><a name="p18861111415138"></a><a name="p18861111415138"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row786131451312"><td class="cellrowborder" valign="top" width="15.98%" headers="mcps1.2.3.1.1 "><p id="p6861114181311"><a name="p6861114181311"></a><a name="p6861114181311"></a>200</p>
+</td>
+<td class="cellrowborder" valign="top" width="84.02%" headers="mcps1.2.3.1.2 "><p id="p48619143136"><a name="p48619143136"></a><a name="p48619143136"></a>DCS instance restored successfully.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
