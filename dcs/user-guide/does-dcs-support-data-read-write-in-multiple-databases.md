@@ -1,6 +1,6 @@
-# Does DCS Support Data Read/Write in Multiple Databases?<a name="EN-US_TOPIC_0237964747"></a>
+# Does DCS Support Data Read/Write in Multiple Databases?<a name="en-us_topic_0071964265"></a>
 
-Both single-node and master/standby DCS instances support data read/write in multiple databases. By default, single-node and master/standby DCS instances can read and write data in 16 databases \(databases 0–15\).
+Both single-node and master/standby DCS instances support data read/write in multiple databases. By default, single-node and master/standby DCS instances can read and write data in 256 databases \(databases 0–255\).
 
-DCS instances in cluster mode do not support data read/write in multiple databases.
+DCS instances in Proxy Cluster mode do not support data read/write in multiple databases.
 

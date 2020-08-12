@@ -1,4 +1,4 @@
-# Application Scenarios<a name="EN-US_TOPIC_0237964738"></a>
+# Application Scenarios<a name="en-us_topic_0054235832"></a>
 
 For e-commerce, video sharing, gaming, and other data-intensive applications, it is essential to retrieve data fast. The primary purpose of DCS is to provide fast yet inexpensive data retrieval. With DCS, you can retrieve data from in-memory data stores instead of relying entirely on slower disk-based databases.
 

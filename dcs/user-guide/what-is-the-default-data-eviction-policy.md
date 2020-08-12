@@ -1,4 +1,4 @@
-# What Is the Default Data Eviction Policy?<a name="EN-US_TOPIC_0237964744"></a>
+# What Is the Default Data Eviction Policy?<a name="en-us_topic_0054235830"></a>
 
 Data is evicted from the cache based on the user-defined space limit in order to make space for new data.
 
@@ -31,6 +31,6 @@ When maxmemory is reached, you can select one of the following six eviction poli
     DCS instances evict keys with an expire set, and try to evict keys with a shorter time to live \(TTL\) first, in order to make space for new data.
 
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->If the configured policy is volatile-lru, volatile-random, or volatile-ttl, and no keys match the configured policy, the eviction behavior will match noeviction.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>If the configured policy is volatile-lru, volatile-random, or volatile-ttl, and no keys match the configured policy, the eviction behavior will match noeviction.
 

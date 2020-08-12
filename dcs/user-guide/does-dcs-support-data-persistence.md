@@ -1,4 +1,4 @@
-# Does DCS Support Data Persistence?<a name="EN-US_TOPIC_0237964740"></a>
+# Does DCS Support Data Persistence?<a name="en-us_topic_0054235825"></a>
 
-Only master/standby and cluster DCS instances support data persistence.
+Only master/standby and Proxy Cluster DCS instances support data persistence.
 

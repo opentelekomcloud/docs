@@ -1,4 +1,4 @@
-# Advantages<a name="EN-US_TOPIC_0237964749"></a>
+# Advantages<a name="en-us_topic_0054235833"></a>
 
 The advantages of DCS include:
 
@@ -8,14 +8,14 @@ The advantages of DCS include:
 
 -   Customizable specifications
 
-    DCS instance specifications range from 2 GB to 512 GB, increasing the flexibility of DCS.
+    DCS instance specifications range from 2 GB to 512 GB, increasing the flexibility of DCS.
 
 -   Reliability
 
-    Data persistence, support for master/standby and cluster modes, and automatic failover between cache nodes ensure data reliability and service availability.
+    Data persistence, support for master/standby and Proxy Cluster modes, and automatic failover between cache nodes ensure data reliability and service availability.
 
 -   Ease of maintenance
 
-    You can create, start, stop, restart, and delete DCS instances with just a few clicks on the DCS console. DCS continuously monitors and maintains DCS instances so that you can focus on application development. Service monitoring metrics include keys, the number of client connections, and processed commands. System monitoring metrics include memory, CPU, and network usage.
+    You can create, restart, and delete DCS instances with just a few clicks on the DCS console. DCS continuously monitors and maintains DCS instances so that you can focus on application development. Service monitoring metrics include keys, the number of client connections, and processed commands. System monitoring metrics include memory, CPU, and network usage.
 
 
