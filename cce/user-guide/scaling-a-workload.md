@@ -6,8 +6,8 @@ After  scaling policies  are defined, instances can be automatically added or de
 -   **Manual Scaling**: Manually scale in or out instances on a workload immediately after the workload is created.
 -   **Maximum Number of Unavailable Pods**: maximum number of unavailable pods allowed in a rolling upgrade. If the number is equal to the total number of pods, services may be interrupted. Minimum number of alive pods = Total pods – Maximum number of unavailable pods.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >If  **Maximum Number of Unavailable Pods**  is set to  **0**  when there is only one pod in the cluster, services will be interrupted during scaling.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >If  **Maximum Number of Unavailable Pods**  is set to  **0**  when there is only one pod in the cluster, services will be interrupted during scaling.
 
 
 ## Auto Scaling-AOM<a name="section1656965814562"></a>

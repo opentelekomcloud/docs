@@ -2,8 +2,8 @@
 
 Container storage  is a component that provides storage for container workloads. It supports multiple types of storage. A  pod  can use any amount of storage.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->In CCE clusters earlier than Kubernetes 1.13, end-to-end capacity expansion of container storage is not supported, and the PVC capacity is inconsistent with the storage capacity.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>In CCE clusters earlier than Kubernetes 1.13, end-to-end capacity expansion of container storage is not supported, and the PVC capacity is inconsistent with the storage capacity.
 
 ## Selecting a Storage Type<a name="section13374182011418"></a>
 

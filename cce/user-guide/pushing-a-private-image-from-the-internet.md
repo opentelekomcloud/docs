@@ -2,8 +2,8 @@
 
 This section uses the nginx:1.10 image as an example to describe how to push a private image from the Internet to the CCE image repository. Images will be displayed in the image repository after being pushed.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->If the network becomes unavailable or the image repository is restarted unexpectedly when you push an image from a Docker client, the Docker client will not continue to send the image push request to the image repository and will fail to respond. In this case, you can restart the Docker daemon.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>If the network becomes unavailable or the image repository is restarted unexpectedly when you push an image from a Docker client, the Docker client will not continue to send the image push request to the image repository and will fail to respond. In this case, you can restart the Docker daemon.
 
 ## Prerequisites<a name="s6974aee92cff45cab8102170ab01700d"></a>
 

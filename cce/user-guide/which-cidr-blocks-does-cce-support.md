@@ -31,8 +31,6 @@ When creating a cluster on CCE, you can specify the pod \(container\) CIDR block
 
 Service is also a Kubernetes concept. Each Service has an address. When creating a cluster on CCE, you can specify the Service CIDR block. Similarly, the Service CIDR block cannot overlap with the subnet CIDR block or the container CIDR block. The Service CIDR block can be used only within a cluster.
 
-For a BMS cluster, the Service CIDR block is fixed at 10.247.0.0/16.
-
 For details about the relationship between these CIDR blocks, see  [Figure 2](#en-us_topic_0242566246_fig15791152874920).
 
 ## How Do I Select a CIDR Block?<a name="en-us_topic_0242566246_section176413381249"></a>

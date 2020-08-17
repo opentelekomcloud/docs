@@ -14,8 +14,8 @@ Some of the resources on the node need to run some necessary Kubernetes system c
 
 To ensure node stability, CCE cluster nodes reserve some resources for Kubernetes components \(such as kubelet, kube-proxy, and docker\) based on node specifications.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->You are advised not to install software or modify the operating system \(OS\) configuration on a cluster node. This may cause exceptions on Kubernetes components installed on the node, and make the node unavailable.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>You are advised not to install software or modify the operating system \(OS\) configuration on a cluster node. This may cause exceptions on Kubernetes components installed on the node, and make the node unavailable.
 
 ## Risky Operations on Nodes<a name="section1688214368495"></a>
 

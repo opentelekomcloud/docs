@@ -11,9 +11,9 @@ By default, the image runs the default command. To run a specific command or rew
 -   **Command**: Controls the running of an image.
 -   **Args**: Parameters transferred to the running command.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->After a container is started, do not modify configurations in the container. If configurations in the container are modified \(for example, passwords, certificates, and environment variables of a containerized application are added to the container\), the configurations will be lost after the container restarts and container services will become abnormal. An example scenario of container restart is pod rescheduling due to node anomalies.  
->Configurations must be imported to a container as arguments. Otherwise, configurations will be lost after the container restarts.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>After a container is started, do not modify configurations in the container. If configurations in the container are modified \(for example, passwords, certificates, and environment variables of a containerized application are added to the container\), the configurations will be lost after the container restarts and container services will become abnormal. An example scenario of container restart is pod rescheduling due to node anomalies.
+>Configurations must be imported to a container as arguments. Otherwise, configurations will be lost after the container restarts.
 
 ## Commands and Arguments Used to Run a Container<a name="section913591582414"></a>
 
@@ -88,9 +88,9 @@ If the commands and parameters used to run a container are set during workload c
 1.  Log in to the CCE console. When creating a workload or job, expand  **Lifecycle**.
 2.  Enter the running command and parameters, as shown in  [Table 2](#table15533234825).
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   The current startup command is provided as a string array and corresponds to the Entrypoint startup command of Docker. The format is as follows: \["executable", "param1", "param2",..\]. For details about how to start Kubernetes containers, click  [here](https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell).  
-    >-   The lifecycle of a container is the same as that of the startup command. That is, the lifecycle of the container ends after the command is executed.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   The current startup command is provided as a string array and corresponds to the Entrypoint startup command of Docker. The format is as follows: \["executable", "param1", "param2",..\]. For details about how to start Kubernetes containers, click  [here](https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell).
+    >-   The lifecycle of a container is the same as that of the startup command. That is, the lifecycle of the container ends after the command is executed.
 
     **Table  2**  Container startup command
 
@@ -146,8 +146,8 @@ If the commands and parameters used to run a container are set during workload c
         **Figure  2**  Setting the startup command<a name="fig882815173820"></a>  
         ![](figures/setting-the-startup-command.png "setting-the-startup-command")
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >A command must be enclosed in double quotes. If no double quotes are added, the command is split into multiple commands based on space character.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >A command must be enclosed in double quotes. If no double quotes are added, the command is split into multiple commands based on space character.
 
         Example YAML file:
 
@@ -162,8 +162,8 @@ If the commands and parameters used to run a container are set during workload c
         **Figure  3**  Setting startup arguments<a name="fig24041027134510"></a>  
         ![](figures/setting-startup-arguments.png "setting-startup-arguments")
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >If the container startup command is not added to the system path, run the  **/bin/sh**  command to execute the container startup command. The container startup command must be enclosed in double quotes.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >If the container startup command is not added to the system path, run the  **/bin/sh**  command to execute the container startup command. The container startup command must be enclosed in double quotes.
 
         Example YAML file:
 

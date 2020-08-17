@@ -32,9 +32,9 @@ CCE provides the following health check probes:
 
         Check the return code of the response. If the return code is within 200–399, the script returns 0. Otherwise, the script returns –1.
 
-        >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
-        >-   Put the program to be executed in the container image so that the program can be executed.  
-        >-   If the command to be executed is a shell script, do not directly specify the script as the command, but add a script interpreter. For example, if the script is  **/data/scripts/health\_check.sh**, you must specify  **sh/data/scripts/health\_check.sh**  for command execution. The reason is that the cluster is not in the terminal environment when executing programs in a container.  
+        >![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+        >-   Put the program to be executed in the container image so that the program can be executed.
+        >-   If the command to be executed is a shell script, do not directly specify the script as the command, but add a script interpreter. For example, if the script is  **/data/scripts/health\_check.sh**, you must specify  **sh/data/scripts/health\_check.sh**  for command execution. The reason is that the cluster is not in the terminal environment when executing programs in a container.
 
 
 

@@ -6,9 +6,9 @@ The function of setting environment variables on CCE is the same as that of spec
 
 CCE provides three ways to add environment variables:  Manually add environment variables,  import environment variables from a secret, and  import environment variables from a configMap.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->After a container is started, do not modify configurations in the container. If configurations in the container are modified \(for example, passwords, certificates, and environment variables of a containerized application are added to the container\), the configurations will be lost after the container restarts and container services will become abnormal. An example scenario of container restart is pod rescheduling due to node anomalies.  
->Configurations must be imported to a container as arguments. Otherwise, configurations will be lost after the container restarts.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>After a container is started, do not modify configurations in the container. If configurations in the container are modified \(for example, passwords, certificates, and environment variables of a containerized application are added to the container\), the configurations will be lost after the container restarts and container services will become abnormal. An example scenario of container restart is pod rescheduling due to node anomalies.
+>Configurations must be imported to a container as arguments. Otherwise, configurations will be lost after the container restarts.
 
 ## Manually Adding Environment Variables<a name="section183878514214"></a>
 
