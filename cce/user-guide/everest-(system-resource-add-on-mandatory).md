@@ -25,9 +25,9 @@ This add-on has been installed by default. If it is uninstalled due to some reas
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Add-ons**. On the  **Add-on Instance**  tab page, select the cluster and click  **Upgrade**  under  **everest**.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   If the  **Upgrade**  button is unavailable, the current add-on is already up-to-date and no upgrade is required.  
-    >-   When the upgrade is complete, the original everest version on cluster nodes will be replaced by the latest version.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   If the  **Upgrade**  button is unavailable, the current add-on is already up-to-date and no upgrade is required.
+    >-   When the upgrade is complete, the original everest version on cluster nodes will be replaced by the latest version.
 
 2.  On the  **Basic Information**  page, select the add-on version and click  **Next**.
 3.  Select  **Single**  or  **HA**  for  **Add-on Specifications**, and click  **Upgrade**.

@@ -8,8 +8,8 @@ The  **get**  command displays one or many resources of a cluster.
 
 This command prints a table of the most important information about all resources, including cluster nodes, running pods, replication controllers, and services.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->A cluster can have multiple namespaces. If no namespace is specified, this command will run with the  **--namespace=default**  flag.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>A cluster can have multiple namespaces. If no namespace is specified, this command will run with the  **--namespace=default**  flag.
 
 Examples:
 
@@ -37,8 +37,8 @@ To list all namespaces of the node:
 kubectl get namespace
 ```
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->To list information of other nodes, run this command with the  **-s**  flag. To list a specified type of resources, add the resource type to this command, for example,  **kubectl get rc**,  **kubectl get svc**,  **kubectl get nodes**, and  **kubectl get deploy**.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>To list information of other nodes, run this command with the  **-s**  flag. To list a specified type of resources, add the resource type to this command, for example,  **kubectl get rc**,  **kubectl get svc**,  **kubectl get nodes**, and  **kubectl get deploy**.
 
 To list a pod with a specified name in YAML output format:
 
@@ -56,8 +56,8 @@ kubectl get po <podname> -o json
 kubectl get po rc-nginx-2-btv4j -o=custom-columns=LABELS:.metadata.labels.app
 ```
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->**LABELS**  indicates a comma separated list of user-defined column titles.  **metadata.labels.app**  indicates the data to be listed in either YAML or JSON output format.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>**LABELS**  indicates a comma separated list of user-defined column titles.  **metadata.labels.app**  indicates the data to be listed in either YAML or JSON output format.
 
 **create**
 
@@ -77,8 +77,8 @@ The  **expose**  command exposes a resource as a new Kubernetes service. Possibl
 kubectl expose deployment deployname --port=81 --type=NodePort --target-port=80 --name=service-name
 ```
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->The example command creates a service of NodePort type for the deployment with the name specified in  **deployname**. The service will serve on port 81 specified in  **-port**  and connect to the containers on port 80 specified in  **-target-port**. More specifically, the service is reachable at <cluster-internal IP address\>:<port\>, and containers are reachable at <node IP address\>:<target-port\>.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>The example command creates a service of NodePort type for the deployment with the name specified in  **deployname**. The service will serve on port 81 specified in  **-port**  and connect to the containers on port 80 specified in  **-target-port**. More specifically, the service is reachable at <cluster-internal IP address\>:<port\>, and containers are reachable at <node IP address\>:<target-port\>.
 
 **run**
 
@@ -273,11 +273,11 @@ The  **certificate**  command modifies the certificate resources.
 
 The  **describe**  command is similar to the  **get**  command. The difference is that the  **describe**  command shows details of a specific resource or group of resources, whereas the  **get**  command lists one or more resources in a cluster. The  **describe**  command does not support the  **-o**  flag. For resources of the same type, resource details are printed out in the same format.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->If the information about a resource is queried, you can use the get command to obtain more detailed information. If you want to check the status of a specific resource, for example, to check if a pod is in the running state, run the  **describe**  command to show more detailed status information.  
->```  
->kubectl describe po <podname>  
->```  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>If the information about a resource is queried, you can use the get command to obtain more detailed information. If you want to check the status of a specific resource, for example, to check if a pod is in the running state, run the  **describe**  command to show more detailed status information.
+>```
+>kubectl describe po <podname>
+>```
 
 **logs**
 
@@ -350,8 +350,8 @@ The  **replace**  command updates or replaces an existing resource by attributes
 kubectl replace -f filename
 ```
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->Resource names cannot be updated. After a pod label is updated, pods with the original label will fall out of the scope of the replication controller using the new label selector. The replication controller notices that some pods no longer match its new label selector and spun up a specified number of new pod replicas to replace original pods. By default, original pods with the original label are not deleted. In this case, if you run the  **get po**  command, you will find that the number of pods is doubled. The original pods are no longer controlled by the replication controller using the new label selector.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>Resource names cannot be updated. After a pod label is updated, pods with the original label will fall out of the scope of the replication controller using the new label selector. The replication controller notices that some pods no longer match its new label selector and spun up a specified number of new pod replicas to replace original pods. By default, original pods with the original label are not deleted. In this case, if you run the  **get po**  command, you will find that the number of pods is doubled. The original pods are no longer controlled by the replication controller using the new label selector.
 
 **apply\***
 

@@ -12,8 +12,8 @@ If a workload uses UDP for both load balancing and health checking, enable  ICMP
 
 3.  On the  **Inbound Rules**  tag page, click  **Add Rule**  to add an inbound rule for the ECS. For details, see  [Figure 2](#fig11855954171611). Click  **OK**.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >You only need to add security group rules to any node where the workload runs.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >You only need to add security group rules to any node where the workload runs.
 
     **Figure  2**  Adding security group rules<a name="fig11855954171611"></a>  
     ![](figures/adding-security-group-rules.png "adding-security-group-rules")

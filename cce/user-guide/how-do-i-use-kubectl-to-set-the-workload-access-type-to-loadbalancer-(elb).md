@@ -43,10 +43,10 @@ This section uses the Nginx workload as an example to describe how to set the wo
 
     **vi nginx-elb-svc.yaml**
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >Before enabling session stickness, ensure that the following conditions are met:  
-    >-   The workload protocol is TCP.  
-    >-   Anti-affinity has been configured between pods of the workload. That is, all pods of the workload are deployed on different nodes.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >Before enabling session stickness, ensure that the following conditions are met:
+    >-   The workload protocol is TCP.
+    >-   Anti-affinity has been configured between pods of the workload. That is, all pods of the workload are deployed on different nodes.
 
     -   Automatically creating load balancer
 

@@ -9,11 +9,11 @@ gpu-beta is a device management add-on that supports GPUs in containers. It supp
 -   The cluster where the gpu-beta add-on is installed must contain GPU nodes.
 -   The driver to be downloaded must be a  **.run**  file.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->-   If the download link is a public network address, for example, NVIDIA official website, bind an EIP to each GPU node.  
->-   If the download link is an OBS URL, you do not need to bind an EIP to GPU nodes.  
->-   The latest version of the NVIDIA driver supported by the gpu-beta add-on is 396.37. You are not advised to install a driver of a later version.  
->-   After the driver version is changed, restart the node for the change to take effect.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>-   If the download link is a public network address, for example, NVIDIA official website, bind an EIP to each GPU node.
+>-   If the download link is an OBS URL, you do not need to bind an EIP to GPU nodes.
+>-   The latest version of the NVIDIA driver supported by the gpu-beta add-on is 396.37. You are not advised to install a driver of a later version.
+>-   After the driver version is changed, restart the node for the change to take effect.
 
 ## Obtaining the Driver Link<a name="section95451728192112"></a>
 

@@ -2,8 +2,8 @@
 
 After a Deployment is created, you can scale, upgrade, monitor, roll back, or delete the Deployment, as well as edit its YAML file.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->This section uses a Deployment as an example to describe the workload management functions supported by CCE. If any of the following functions is not available on the CCE console, it is not supported yet.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>This section uses a Deployment as an example to describe the workload management functions supported by CCE. If any of the following functions is not available on the CCE console, it is not supported yet.
 
 ## Viewing Deployment Logs<a name="section51511928173817"></a>
 
@@ -107,16 +107,16 @@ To view CPU and memory usage of a Deployment on the CCE console, do as follows:
 
         The horizontal axis indicates time while the vertical axis indicates the CPU usage. The green line indicates the CPU usage while the red line indicates the CPU usage limit.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >It takes some time to calculate CPU usage. Therefore, when CPU and memory usage are displayed for the first time, CPU usage is displayed about one minute later than memory usage.  
-        >CPU and memory usage are displayed only for pods in the running state.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >It takes some time to calculate CPU usage. Therefore, when CPU and memory usage are displayed for the first time, CPU usage is displayed about one minute later than memory usage.
+        >CPU and memory usage are displayed only for pods in the running state.
 
     -   Memory usage
 
         The horizontal axis indicates time while the vertical axis indicates the memory usage. The green line indicates the memory usage while the red line indicates the memory usage limit.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >Memory usage is displayed only for a running pod.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >Memory usage is displayed only for a running pod.
 
 
 
@@ -139,8 +139,8 @@ If you are performing a rolling upgrade, the rolling upgrade stops after the pau
 3.  In the displayed  **Pause Workload**  dialog box, click  **OK**.
 4.  Click  **OK**.
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
-    >Deployments in the paused state cannot be rolled back.  
+    >![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+    >Deployments in the paused state cannot be rolled back.
 
 
 ## Resuming a Deployment<a name="section12087915401"></a>
@@ -170,8 +170,8 @@ If you set  **key**  to  **role**  and  **value**  to  **frontend**  when using 
 2.  Click the name of the Deployment whose labels will be managed.
 3.  On the Deployment details page, click  **Manage Label**. In the displayed dialog box, click  **Add Label**. Enter the label key and value, and click  **OK**.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >A key-value pair must contain 1 to 63 characters starting and ending with a letter or digit. Only letters, digits, hyphens \(-\), underscores \(\_\), and periods \(.\) are allowed.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >A key-value pair must contain 1 to 63 characters starting and ending with a letter or digit. Only letters, digits, hyphens \(-\), underscores \(\_\), and periods \(.\) are allowed.
 
 
 ## Deleting a Deployment<a name="section14423721191418"></a>

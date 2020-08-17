@@ -2,10 +2,10 @@
 
 The Cluster Auto Scaling feature allows CCE to automatically  scale out  a cluster \(add nodes to a cluster\) according to custom scale-up policies when workloads cannot be scheduled into the cluster due to insufficient cluster resources.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->-   Currently, master nodes cannot be automatically added to or removed from clusters.  
->-   The Cluster Auto Scaling feature does not provide auto scale-down. You have to manually downsize a cluster based on resource usage.  
->-   If both auto scale-up and auto scale-down are required, use the autoscaler add-on. For details, see  [autoscaler](autoscaler.md).  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>-   Currently, master nodes cannot be automatically added to or removed from clusters.
+>-   The Cluster Auto Scaling feature does not provide auto scale-down. You have to manually downsize a cluster based on resource usage.
+>-   If both auto scale-up and auto scale-down are required, use the autoscaler add-on. For details, see  [autoscaler](autoscaler.md).
 
 ## Automatic Cluster Scaling-up<a name="section203712516160"></a>
 

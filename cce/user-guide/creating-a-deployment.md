@@ -6,8 +6,8 @@ Deployments are workloads \(for example, Nginx\) that do not store any data or s
 
 -   Before creating a containerized workload, you must have an available cluster. For details on how to create a cluster, see  [Creating a Hybrid Cluster](creating-a-hybrid-cluster.md).
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >When creating multiple containerized workloads, ensure that each container has a unique port. Otherwise, workload creation will fail.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >When creating multiple containerized workloads, ensure that each container has a unique port. Otherwise, workload creation will fail.
 
 -   To enable access to a workload from a public network, ensure that an elastic IP address \(EIP\) has been bound to or a load balancer has been configured for at least one node in the cluster.
 
@@ -19,8 +19,8 @@ Deployments are workloads \(for example, Nginx\) that do not store any data or s
     -   Use a shared image to create a workload. Specifically, other tenants share an image with you by using the SWR service.
     -   Use a YAML file to create a workload. You can click  **Create YAML**  on the right of the  **Create Deployment**  page. For details about YAML, see  [Using kubectl](#section155246177178). After the YAML file is written, click  **Create**  to create a workload.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >Settings in the YAML file are synchronized with settings on the console. You can also interact with the YAML to create a workload. For example, if you enter a workload name on the console, the name will automatically appear in the YAML file. Similarly, if you add an image on the console, the image will be automatically added to the YAML file.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >Settings in the YAML file are synchronized with settings on the console. You can also interact with the YAML to create a workload. For example, if you enter a workload name on the console, the name will automatically appear in the YAML file. Similarly, if you add an image on the console, the image will be automatically added to the YAML file.
 
 
 2.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**. On the displayed page, click  **Create Deployment**. Set basic workload parameters as described in  [Table 1](#table12741447488). The parameters marked with an asterisk \(\*\) are mandatory.
@@ -190,9 +190,9 @@ Deployments are workloads \(for example, Nginx\) that do not store any data or s
 
 7.  To access the workload in a browser, go to the workload list on the  **Workload**  page. Copy the corresponding  **External Access Address**  and paste it into the address box in the browser.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   External access addresses are available only if the deployment access type is set to  **Node access \(node port\)**  and an EIP is assigned to any node in the cluster, or if the deployment access type is set to  **Load balancing \(load balancer\)**.  
-    >-   If the workload list contains more than 500 records, the Kubernetes pagination mechanism will be used. Specifically, you can only go to the first page or the next page, but cannot go to the previous page. In addition, if resources are divided into discrete pages, the total number of resources displayed is the maximum number of resources that can be queried at a time, not the actual total number of resources.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   External access addresses are available only if the deployment access type is set to  **Node access \(node port\)**  and an EIP is assigned to any node in the cluster, or if the deployment access type is set to  **Load balancing \(load balancer\)**.
+    >-   If the workload list contains more than 500 records, the Kubernetes pagination mechanism will be used. Specifically, you can only go to the first page or the next page, but cannot go to the previous page. In addition, if resources are divided into discrete pages, the total number of resources displayed is the maximum number of resources that can be queried at a time, not the actual total number of resources.
 
 
 ## Using kubectl<a name="section155246177178"></a>

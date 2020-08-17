@@ -112,10 +112,10 @@ In this step, the IAM user James001 and user group Developers will be granted pe
     **Figure  6**  Namespace permissions list<a name="fig172791058192119"></a>  
     ![](figures/namespace-permissions-list.png "namespace-permissions-list")
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >To sum up, the Kubernetes RBAC authorization result is as follows:  
-    >-   The user group Developers has  **admin**  access to the namespace  **default**. This  **admin**  access also applies to the IAM user James001 in the user group Developers.  
-    >-   The IAM user James001 has  **view**  access to the namespace  **dev-test**.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >To sum up, the Kubernetes RBAC authorization result is as follows:
+    >-   The user group Developers has  **admin**  access to the namespace  **default**. This  **admin**  access also applies to the IAM user James001 in the user group Developers.
+    >-   The IAM user James001 has  **view**  access to the namespace  **dev-test**.
 
 
 ## Step 2: Log In and Verify Permissions<a name="section191001533766"></a>

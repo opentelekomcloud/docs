@@ -47,8 +47,8 @@ To perform  permission control  on resources in a cluster \(for example, user A 
 
     If  **200**  is returned, user  **jane**  is authorized to read pods in the cluster's default namespace. If  **403**  is returned, user  **jane**  is not authorized to read pods in the cluster's default namespace.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >To prevent the command execution failure, upload the certificate to the  **/root**  directory in advance.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >To prevent the command execution failure, upload the certificate to the  **/root**  directory in advance.
 
     The parameter descriptions are as follows:
 

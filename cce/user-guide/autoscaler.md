@@ -10,10 +10,10 @@ The autoscaler is applied in the following two scenarios:
 
 -   Automatic scale-up is triggered if there are pods that failed to be scheduled onto any nodes in a cluster due to insufficient node resources. The add-on follows the "No Less, No More" policy. If three cores are required for creating a pod and there are four-core and eight-core nodes, a four-core node is preferentially created.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >An auto scale-up will be performed only when either of the following conditions has been met:  
-    >-   Node resources are insufficient.  
-    >-   No node affinity settings are included in other scheduling configurations. For more information about node affinity configuration, see  [Configuring Affinity and Anti-Affinity Scheduling](configuring-affinity-and-anti-affinity-scheduling.md).  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >An auto scale-up will be performed only when either of the following conditions has been met:
+    >-   Node resources are insufficient.
+    >-   No node affinity settings are included in other scheduling configurations. For more information about node affinity configuration, see  [Configuring Affinity and Anti-Affinity Scheduling](configuring-affinity-and-anti-affinity-scheduling.md).
 
 -   If a node in a cluster is not fully used for a period of time and the pods on the node can be scheduled to other nodes, a scale-down is automatically performed to remove the node.
 

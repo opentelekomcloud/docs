@@ -7,10 +7,10 @@ The access address is in the format of <IP address of public network  load balan
 **Figure  1**  LoadBalancer<a name="fig1454926316508"></a>  
 ![](figures/loadbalancer.png "loadbalancer")
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->The LoadBalancer access type allows workloads to be accessed from public networks through ELB. This access type has the following restrictions:  
->-   It is recommended that automatically created load balancers not be used by other resources. Otherwise, these load balancers cannot be completely deleted, causing residual resources.  
->-   Do not change the listener name for the load balancer in use. Otherwise, the load balancer cannot be accessed.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>The LoadBalancer access type allows workloads to be accessed from public networks through ELB. This access type has the following restrictions:
+>-   It is recommended that automatically created load balancers not be used by other resources. Otherwise, these load balancers cannot be completely deleted, causing residual resources.
+>-   Do not change the listener name for the load balancer in use. Otherwise, the load balancer cannot be accessed.
 
 ## Setting the Access Type on the Console<a name="section744117150366"></a>
 
@@ -98,10 +98,10 @@ You have configured the kubectl and connected an ECS to the cluster. For details
 
     **vi nginx-elb-svc.yaml**
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >Before enabling session stickness, ensure that the following conditions are met:  
-    >-   The workload protocol is TCP.  
-    >-   Anti-affinity has been configured between pods of the workload. That is, all pods of the workload are deployed on different nodes.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >Before enabling session stickness, ensure that the following conditions are met:
+    >-   The workload protocol is TCP.
+    >-   Anti-affinity has been configured between pods of the workload. That is, all pods of the workload are deployed on different nodes.
 
     -   Automatically creating load balancer
 
@@ -113,7 +113,8 @@ You have configured the kubectl and connected an ECS to the cluster. For details
             kubernetes.io/elb.class: union
             kubernetes.io/session-affinity-mode: SOURCE_IP
             kubernetes.io/elb.subnet-id: 5083f225-9bf8-48fa-9c8b-67bd9693c4c0
-            kubernetes.io/elb.autocreate: "{\"type\":\"public\",\"bandwidth_name\":\"cce-bandwidth-1551163379627\",\"bandwidth_chargemode\":\"traffic\",\"bandwidth_size\":5,\"bandwidth_sharetype\":\"PER\",\"eip_type\":\"5_bgp\",\"name\":\"james\"}"
+            kubernetes.io/elb.enterpriseID: debb7ae2-6d2f-4e6c-a0aa-1ccafd92b8eb
+            kubernetes.io/elb.autocreate: '{"type":"public","bandwidth_name":"cce-bandwidth-1551163379627","bandwidth_chargemode":"traffic","bandwidth_size":5,"bandwidth_sharetype":"PER","eip_type":"5_bgp","name":"james"}'
           labels: 
             app: nginx 
           name: nginx 
@@ -182,12 +183,20 @@ You have configured the kubectl and connected an ECS to the cluster. For details
     <p id="p16904132104710"><a name="p16904132104710"></a><a name="p16904132104710"></a>The value <strong id="b685316914111"><a name="b685316914111"></a><a name="b685316914111"></a>SOURCE_IP</strong> indicates that listeners ensure session stickiness based on source IP addresses.</p>
     </td>
     </tr>
+    <tr id="row1344715307219"><td class="cellrowborder" valign="top" width="34.28657134286571%" headers="mcps1.2.4.1.1 "><p id="p15350191634913"><a name="p15350191634913"></a><a name="p15350191634913"></a>kubernetes.io/elb.session-affinity-option</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.118588141185882%" headers="mcps1.2.4.1.2 "><p id="p244814306210"><a name="p244814306210"></a><a name="p244814306210"></a><a href="#table1920573716128">elb.session-affinity-option</a> Object</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p587816237406"><a name="p587816237406"></a><a name="p587816237406"></a>Optional. This parameter indicates the configuration items for the ELB sticky session.</p>
+    </td>
+    </tr>
     <tr id="row81941516153513"><td class="cellrowborder" valign="top" width="34.28657134286571%" headers="mcps1.2.4.1.1 "><p id="p4764162894719"><a name="p4764162894719"></a><a name="p4764162894719"></a>kubernetes.io/elb.id</p>
     </td>
     <td class="cellrowborder" valign="top" width="14.118588141185882%" headers="mcps1.2.4.1.2 "><p id="p77621528184710"><a name="p77621528184710"></a><a name="p77621528184710"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p59344376579"><a name="p59344376579"></a><a name="p59344376579"></a>Optional. This parameter is mandatory if an existing load balancer is used.</p>
     <p id="p416573016509"><a name="p416573016509"></a><a name="p416573016509"></a>It indicates the ID of an enhanced load balancer.</p>
+    <p id="p22711213162219"><a name="p22711213162219"></a><a name="p22711213162219"></a>The value is a string of 1 to 100 characters.</p>
     </td>
     </tr>
     <tr id="row201957167350"><td class="cellrowborder" valign="top" width="34.28657134286571%" headers="mcps1.2.4.1.1 "><p id="p18758202864719"><a name="p18758202864719"></a><a name="p18758202864719"></a>kubernetes.io/elb.subnet-id</p>
@@ -195,6 +204,40 @@ You have configured the kubectl and connected an ECS to the cluster. For details
     <td class="cellrowborder" valign="top" width="14.118588141185882%" headers="mcps1.2.4.1.2 "><p id="p336744055219"><a name="p336744055219"></a><a name="p336744055219"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p2075662814474"><a name="p2075662814474"></a><a name="p2075662814474"></a>Optional. This parameter is mandatory only if a load balancer will be automatically created. For clusters of v1.11.7-r2 or later, this parameter can be left unspecified.</p>
+    <p id="p10141026202214"><a name="p10141026202214"></a><a name="p10141026202214"></a>The value is a string of 1 to 100 characters.</p>
+    </td>
+    </tr>
+    <tr id="row10571051633"><td class="cellrowborder" valign="top" width="34.28657134286571%" headers="mcps1.2.4.1.1 "><p id="p443916465535"><a name="p443916465535"></a><a name="p443916465535"></a>kubernetes.io/elb.enterpriseID</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.118588141185882%" headers="mcps1.2.4.1.2 "><p id="p35719516319"><a name="p35719516319"></a><a name="p35719516319"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p1289195831211"><a name="p1289195831211"></a><a name="p1289195831211"></a>Optional. This parameter is mandatory if a public/private network load balancer will be automatically created.</p>
+    <p id="p32891458151220"><a name="p32891458151220"></a><a name="p32891458151220"></a>This parameter indicates the name of the ELB enterprise project in which the ELB will be created.</p>
+    <p id="p10289175881211"><a name="p10289175881211"></a><a name="p10289175881211"></a>The value is a string of 1 to 100 characters.</p>
+    </td>
+    </tr>
+    <tr id="row96344411319"><td class="cellrowborder" valign="top" width="34.28657134286571%" headers="mcps1.2.4.1.1 "><p id="p18720112215522"><a name="p18720112215522"></a><a name="p18720112215522"></a>kubernetes.io/elb.lb-algorithm</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.118588141185882%" headers="mcps1.2.4.1.2 "><p id="p196412449318"><a name="p196412449318"></a><a name="p196412449318"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p201837486115"><a name="p201837486115"></a><a name="p201837486115"></a>Optional. This parameter indicates the algorithm used the ELB.</p>
+    <p id="p21831489111"><a name="p21831489111"></a><a name="p21831489111"></a>Default value: <strong id="b151832048121119"><a name="b151832048121119"></a><a name="b151832048121119"></a>ROUND_ROBIN</strong></p>
+    <p id="p101831948201115"><a name="p101831948201115"></a><a name="p101831948201115"></a>Value options: ROUND_ROBIN, LEAST_CONNECTIONS, SOURCE_IP, or left blank</p>
+    </td>
+    </tr>
+    <tr id="row1873934814310"><td class="cellrowborder" valign="top" width="34.28657134286571%" headers="mcps1.2.4.1.1 "><p id="p17720112205215"><a name="p17720112205215"></a><a name="p17720112205215"></a>kubernetes.io/elb.health-check-flag</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.118588141185882%" headers="mcps1.2.4.1.2 "><p id="p1771591681020"><a name="p1771591681020"></a><a name="p1771591681020"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p1192611418122"><a name="p1192611418122"></a><a name="p1192611418122"></a>Optional. This parameter indicates that whether the ELB health check function is enabled. The default value is <strong id="b29261451218"><a name="b29261451218"></a><a name="b29261451218"></a>on</strong>.</p>
+    <p id="p1792619471213"><a name="p1792619471213"></a><a name="p1792619471213"></a>Value options: on, off, or left blank</p>
+    </td>
+    </tr>
+    <tr id="row10498194616317"><td class="cellrowborder" valign="top" width="34.28657134286571%" headers="mcps1.2.4.1.1 "><p id="p107206227525"><a name="p107206227525"></a><a name="p107206227525"></a>kubernetes.io/elb.health-check-option</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="14.118588141185882%" headers="mcps1.2.4.1.2 "><p id="p1773916481539"><a name="p1773916481539"></a><a name="p1773916481539"></a><a href="#table329102513130">elb.health-check-option</a> object</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p1149813469314"><a name="p1149813469314"></a><a name="p1149813469314"></a>Optional. This parameter indicates the ELB health check configuration items.</p>
     </td>
     </tr>
     <tr id="row1719518169356"><td class="cellrowborder" valign="top" width="34.28657134286571%" headers="mcps1.2.4.1.1 "><p id="p9754162844712"><a name="p9754162844712"></a><a name="p9754162844712"></a>kubernetes.io/elb.autocreate</p>
@@ -300,6 +343,88 @@ You have configured the kubectl and connected an ECS to the cluster. For details
     <td class="cellrowborder" valign="top" width="18.678132186781323%" headers="mcps1.2.4.1.2 "><p id="p132201811174611"><a name="p132201811174611"></a><a name="p132201811174611"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="51.594840515948405%" headers="mcps1.2.4.1.3 "><p id="p11956103372218"><a name="p11956103372218"></a><a name="p11956103372218"></a>EIP type. Set this parameter based on the EIP types supported by ELB. For details, see the <strong id="b1626952962613"><a name="b1626952962613"></a><a name="b1626952962613"></a>type</strong> field in <strong id="b1626952952619"><a name="b1626952952619"></a><a name="b1626952952619"></a>Table 3 Description of the publicip field</strong> in <a href="https://docs.otc.t-systems.com/en-us/api/vpc/en-us_topic_0020090596.html" target="_blank" rel="noopener noreferrer">Assigning an EIP</a>.</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+    **Table  3**  elb.session-affinity-option parameters
+
+    <a name="table1920573716128"></a>
+    <table><thead align="left"><tr id="row18242183711210"><th class="cellrowborder" valign="top" width="29.59%" id="mcps1.2.4.1.1"><p id="p151804419526"><a name="p151804419526"></a><a name="p151804419526"></a>Parameter</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="18.37%" id="mcps1.2.4.1.2"><p id="p218004117527"><a name="p218004117527"></a><a name="p218004117527"></a>Type</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="52.04%" id="mcps1.2.4.1.3"><p id="p1718184118521"><a name="p1718184118521"></a><a name="p1718184118521"></a>Description</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row52427371121"><td class="cellrowborder" valign="top" width="29.59%" headers="mcps1.2.4.1.1 "><p id="p12242937101214"><a name="p12242937101214"></a><a name="p12242937101214"></a>persistence_timeout</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.2 "><p id="p20242837141216"><a name="p20242837141216"></a><a name="p20242837141216"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.04%" headers="mcps1.2.4.1.3 "><p id="p18683174013429"><a name="p18683174013429"></a><a name="p18683174013429"></a>Sticky session timeout, in seconds. This parameter is valid only when <strong id="b1968412409423"><a name="b1968412409423"></a><a name="b1968412409423"></a>elb.session-affinity-mode</strong> is set to <strong id="b13278143417180"><a name="b13278143417180"></a><a name="b13278143417180"></a>SOURCE_IP</strong>.</p>
+    <p id="p116849405422"><a name="p116849405422"></a><a name="p116849405422"></a>Default value: <strong id="b544213422184"><a name="b544213422184"></a><a name="b544213422184"></a>60</strong></p>
+    <p id="p9684640194210"><a name="p9684640194210"></a><a name="p9684640194210"></a>Value range: 1 to 60</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+    **Table  4**  elb.health-check-option parameters
+
+    <a name="table329102513130"></a>
+    <table><thead align="left"><tr id="row682132520131"><th class="cellrowborder" valign="top" width="29.59%" id="mcps1.2.4.1.1"><p id="p10719144410521"><a name="p10719144410521"></a><a name="p10719144410521"></a>Parameter</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="18.37%" id="mcps1.2.4.1.2"><p id="p207195448526"><a name="p207195448526"></a><a name="p207195448526"></a>Type</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="52.04%" id="mcps1.2.4.1.3"><p id="p4719144455210"><a name="p4719144455210"></a><a name="p4719144455210"></a>Description</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row38212257136"><td class="cellrowborder" valign="top" width="29.59%" headers="mcps1.2.4.1.1 "><p id="p18262501315"><a name="p18262501315"></a><a name="p18262501315"></a>delay</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.2 "><p id="p17821525191319"><a name="p17821525191319"></a><a name="p17821525191319"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.04%" headers="mcps1.2.4.1.3 "><p id="p14629135194318"><a name="p14629135194318"></a><a name="p14629135194318"></a>Optional. Initial wait time (in seconds) for starting the health check.</p>
+    <p id="p156291653438"><a name="p156291653438"></a><a name="p156291653438"></a>Default value: <strong id="b56293574310"><a name="b56293574310"></a><a name="b56293574310"></a>5</strong></p>
+    <p id="p662920513433"><a name="p662920513433"></a><a name="p662920513433"></a>Value range: 1 to 50</p>
+    </td>
+    </tr>
+    <tr id="row118282511139"><td class="cellrowborder" valign="top" width="29.59%" headers="mcps1.2.4.1.1 "><p id="p1582122531317"><a name="p1582122531317"></a><a name="p1582122531317"></a>timeout</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.2 "><p id="p58242515132"><a name="p58242515132"></a><a name="p58242515132"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.04%" headers="mcps1.2.4.1.3 "><p id="p771191220431"><a name="p771191220431"></a><a name="p771191220431"></a>Optional. Health check timeout, in seconds.</p>
+    <p id="p187112012154316"><a name="p187112012154316"></a><a name="p187112012154316"></a>Default value: <strong id="b1711171213439"><a name="b1711171213439"></a><a name="b1711171213439"></a>10</strong></p>
+    <p id="p1971141217439"><a name="p1971141217439"></a><a name="p1971141217439"></a>Value range: 1 to 50</p>
+    </td>
+    </tr>
+    <tr id="row982825181310"><td class="cellrowborder" valign="top" width="29.59%" headers="mcps1.2.4.1.1 "><p id="p382182517136"><a name="p382182517136"></a><a name="p382182517136"></a>max_retries</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.2 "><p id="p1082122541314"><a name="p1082122541314"></a><a name="p1082122541314"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.04%" headers="mcps1.2.4.1.3 "><p id="p157647192430"><a name="p157647192430"></a><a name="p157647192430"></a>ptional. Maximum number of health check retries.</p>
+    <p id="p197644196437"><a name="p197644196437"></a><a name="p197644196437"></a>Default value: <strong id="b176481915432"><a name="b176481915432"></a><a name="b176481915432"></a>3</strong></p>
+    <p id="p57641219164311"><a name="p57641219164311"></a><a name="p57641219164311"></a>Value range: 1 to 10</p>
+    </td>
+    </tr>
+    <tr id="row10821625131313"><td class="cellrowborder" valign="top" width="29.59%" headers="mcps1.2.4.1.1 "><p id="p1182025131315"><a name="p1182025131315"></a><a name="p1182025131315"></a>protocol</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.2 "><p id="p1082192581314"><a name="p1082192581314"></a><a name="p1082192581314"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.04%" headers="mcps1.2.4.1.3 "><p id="p72041282438"><a name="p72041282438"></a><a name="p72041282438"></a>Optional. Protocol used for health check.</p>
+    <p id="p1204628144314"><a name="p1204628144314"></a><a name="p1204628144314"></a>Default value: protocol of the associated service</p>
+    <p id="p9204162824310"><a name="p9204162824310"></a><a name="p9204162824310"></a>Value options: TCP, UDP_CONNECT or HTTP</p>
+    </td>
+    </tr>
+    <tr id="row14820253132"><td class="cellrowborder" valign="top" width="29.59%" headers="mcps1.2.4.1.1 "><p id="p4821725161319"><a name="p4821725161319"></a><a name="p4821725161319"></a>path</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="18.37%" headers="mcps1.2.4.1.2 "><p id="p1482152517132"><a name="p1482152517132"></a><a name="p1482152517132"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="52.04%" headers="mcps1.2.4.1.3 "><p id="p1964323513432"><a name="p1964323513432"></a><a name="p1964323513432"></a>Optional. Health check URL. This parameter is optional when <strong id="b1464383515435"><a name="b1464383515435"></a><a name="b1464383515435"></a>protocol</strong> is <strong id="b19643173574311"><a name="b19643173574311"></a><a name="b19643173574311"></a>HTTP</strong>.</p>
+    <p id="p864313517432"><a name="p864313517432"></a><a name="p864313517432"></a>Default value: <strong id="b464333518437"><a name="b464333518437"></a><a name="b464333518437"></a>/</strong></p>
+    <p id="p464333564316"><a name="p464333564316"></a><a name="p464333564316"></a>Value range: 1 to 10000</p>
     </td>
     </tr>
     </tbody>

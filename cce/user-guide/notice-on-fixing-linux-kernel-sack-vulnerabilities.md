@@ -67,20 +67,20 @@ Linux 2.6.29 and later versions \(CVE-2019-11477\)
 
 ## Solution<a name="section37521058125620"></a>
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->-   EulerOS 2.2 supports an upgrade to the kernel version 3.10.0-327.62.59.83.h162.x86\_64.  
->-   The node must be accessible to external networks. After the kernel is upgraded, restart the system.  
->-   The following errors may be encountered during the upgrade. However, they do not affect system functions and can be ignored.  
->    ```  
->    depmod: ERROR: fstatat(9, vport-gre.ko): No such file or directory  
->    depmod: ERROR: fstatat(9, vport-vxlan.ko): No such file or directory  
->    depmod: ERROR: fstatat(9, vport-geneve.ko): No such file or directory  
->    depmod: ERROR: fstatat(9, openvswitch.ko): No such file or directory  
->    depmod: ERROR: fstatat(5, vport-gre.ko): No such file or directory  
->    depmod: ERROR: fstatat(5, vport-vxlan.ko): No such file or directory  
->    depmod: ERROR: fstatat(5, vport-geneve.ko): No such file or directory  
->    depmod: ERROR: fstatat(5, openvswitch.ko): No such file or directory  
->    ```  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>-   EulerOS 2.2 supports an upgrade to the kernel version 3.10.0-327.62.59.83.h162.x86\_64.
+>-   The node must be accessible to external networks. After the kernel is upgraded, restart the system.
+>-   The following errors may be encountered during the upgrade. However, they do not affect system functions and can be ignored.
+>    ```
+>    depmod: ERROR: fstatat(9, vport-gre.ko): No such file or directory
+>    depmod: ERROR: fstatat(9, vport-vxlan.ko): No such file or directory
+>    depmod: ERROR: fstatat(9, vport-geneve.ko): No such file or directory
+>    depmod: ERROR: fstatat(9, openvswitch.ko): No such file or directory
+>    depmod: ERROR: fstatat(5, vport-gre.ko): No such file or directory
+>    depmod: ERROR: fstatat(5, vport-vxlan.ko): No such file or directory
+>    depmod: ERROR: fstatat(5, vport-geneve.ko): No such file or directory
+>    depmod: ERROR: fstatat(5, openvswitch.ko): No such file or directory
+>    ```
 
 1.  Log in to the node as the root user and run the following command to update the kernel:
 

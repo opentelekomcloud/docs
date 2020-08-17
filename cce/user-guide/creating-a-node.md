@@ -13,8 +13,8 @@ Some of the resources on the node need to run some necessary Kubernetes system c
 
 To ensure node stability, CCE cluster nodes reserve some resources for Kubernetes components \(such as kubelet, kube-proxy, and docker\) based on node specifications.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->You are advised not to install software or modify the operating system \(OS\) configuration on a cluster node. This may cause exceptions on Kubernetes components installed on the node, and make the node unavailable.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>You are advised not to install software or modify the operating system \(OS\) configuration on a cluster node. This may cause exceptions on Kubernetes components installed on the node, and make the node unavailable.
 
 ## Creating a Node<a name="section19320144922620"></a>
 
@@ -35,14 +35,14 @@ To ensure node stability, CCE cluster nodes reserve some resources for Kubernete
 
         You can select a DeH from the drop-down list box to create a node. If DeH is not required, you can skip the configuration of this parameter.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >This parameter is available only when DeHs exist.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >This parameter is available only when DeHs exist.
 
     -   **Specifications**: Select node specifications that best fit your business needs.
 
         -   **General-purpose**: provides general computing, storage, and network configurations that can meet a majority of scenarios. General-purpose nodes can be used for web servers, workload development, workload testing, and small databases.
         -   **Memory-optimized**: provides higher memory capacity than general-purpose nodes and is suitable for relational databases, NoSQL, and other workloads that are both memory-intensive and data-intensive.
-        -   **GPU-accelerated**: provides powerful floating-point computing and is suitable for real-time, highly concurrent massive computing. Graphical processing units \(GPUs\) of P series are suitable for deep learning, scientific computing, and CAE. GPUs of G series are suitable for 3D animation rendering and CAD. Currently, only clusters of v1.11 support GPU-accelerated nodes. If the cluster version is v1.13 or later,  **GPU-accelerated**  is not displayed on the page.
+        -   **GPU-accelerated**: provides powerful floating-point computing and is suitable for real-time, highly concurrent massive computing. Graphical processing units \(GPUs\) of P series are suitable for deep learning, scientific computing, and CAE. GPUs of G series are suitable for 3D animation rendering and CAD.
         -   **General computing-plus**: provides stable performance and exclusive resources to enterprise-level workloads with high and stable computing performance.
 
         To ensure node stability, the system automatically reserves some resources for running necessary system components. For details, see the  [formula for calculating reserved node resources](formula-for-calculating-the-reserved-resources-of-a-node.md).
@@ -55,8 +55,8 @@ To ensure node stability, CCE cluster nodes reserve some resources for Kubernete
 
     -   The system disk capacity ranges from 40 GB to 1,024 GB.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >When accepting a node into a cluster of v1.15, ensure that the system disk of the node has a capacity larger than 50 GB.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >When accepting a node into a cluster of v1.15, ensure that the system disk of the node has a capacity larger than 50 GB.
 
     -   The data disk capacity is configurable and ranges from 100 to 32678 GB.
 
@@ -68,8 +68,8 @@ To ensure node stability, CCE cluster nodes reserve some resources for Kubernete
 
 5.  **EIP**: An independent public IP address. If the nodes to be created require Internet access, select  **Automatically assign**  or  **Use existing**.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >By default, VPC's SNAT feature is disabled for CCE. If SNAT is enabled, you do not need to use EIPs to access external networks.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >By default, VPC's SNAT feature is disabled for CCE. If SNAT is enabled, you do not need to use EIPs to access external networks.
 
     -   **Do not use**: A node without an EIP cannot access the Internet. It can be used only as a cloud server for deploying services or clusters on a private network.
     -   **Automatically assign**: An EIP with specified configurations is automatically assigned to each node. If the number of EIPs is less than the number of nodes, the EIPs are randomly bound to the nodes.

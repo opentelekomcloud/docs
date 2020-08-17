@@ -28,8 +28,8 @@ You have created a NAT Gateway and an elastic IP address. The specific procedure
 
 1.  Log in to the management console and choose  **Service List \> Network**  \>  **NAT Gateway**  from the service list. Click  **Create NAT Gateway**  in the upper right corner of the page.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >When creating a NAT gateway, ensure that the NAT gateway belongs to the same VPC and subnet as the CCE cluster where the workload is running.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >When creating a NAT gateway, ensure that the NAT gateway belongs to the same VPC and subnet as the CCE cluster where the workload is running.
 
     **Figure  2**  Creating a NAT Gateway<a name="fig65141147164317"></a>  
     ![](figures/creating-a-nat-gateway.png "creating-a-nat-gateway")

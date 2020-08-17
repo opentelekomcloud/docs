@@ -10,8 +10,8 @@ A  cluster  is a collection of cloud resources required for container running. A
 -   A subnet is a subset of a VPC. A VPC can be divided into one or more subnets. Security groups are configured to determine whether these subnets can communicate with each other. This ensures that subnets can be isolated from each other, so that you can deploy different services on different subnets.
 -   A cluster consists of one or more ECSs or BMSs \(also known as nodes\) in one or multiple subnets. It provides a computing resource pool for running containers.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >Nodes in a cluster can belong to one or multiple subnets.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >Nodes in a cluster can belong to one or multiple subnets.
 
 
 As shown in the following figure, multiple VPCs are configured in a region. A VPC consists of one or more subnets. The subnets communicate with each other through the subnet gateway. A cluster is created in a subnet. Therefore, there are three scenarios:

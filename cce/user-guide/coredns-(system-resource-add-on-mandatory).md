@@ -6,10 +6,10 @@ The CoreDNS add-on is a DNS server that provides domain name resolution services
 
 CoreDNS is an open-source software and has been a part of CNCF. coredns provides a means for cloud services to discover each other in cloud-native deployments. CoreDNS chains plug-ins. Each plug-in provides a particular DNS function. You can integrate CoreDNS with only the plug-ins you need to make CoreDNS fast, efficient, and flexible. When used in a Kubernetes cluster, CoreDNS can automatically discover services in the cluster and provide domain name resolution for these services. By working with DNS server, CoreDNS can resolve external domain names for workloads in a cluster. Kubernetes v1.11 and later back CoreDNS as the official default DNS for all clusters going forward.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->-   By default, CoreDNS is installed in clusters of Kubernetes v1.11 and later.  
->-   Whenever there is an update or bug fix to CoreDNS, you only need to install or upgrade CoreDNS instead of upgrading or creating the cluster.  
->    For details, see  [Using Kubernetes In-Cluster DNS](using-kubernetes-in-cluster-dns.md)  or  [Configuring High Availability of kube-dns/CoreDNS Using kubectl](configuring-high-availability-of-kube-dns-coredns-using-kubectl.md).  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>-   By default, CoreDNS is installed in clusters of Kubernetes v1.11 and later.
+>-   Whenever there is an update or bug fix to CoreDNS, you only need to install or upgrade CoreDNS instead of upgrading or creating the cluster.
+>    For details, see  [Using Kubernetes In-Cluster DNS](using-kubernetes-in-cluster-dns.md)  or  [Configuring High Availability of kube-dns/CoreDNS Using kubectl](configuring-high-availability-of-kube-dns-coredns-using-kubectl.md).
 
 ## Installing the Add-on<a name="section776571919194"></a>
 
@@ -118,9 +118,9 @@ DNS policies can be set on a per-pod basis. Currently, Kubernetes supports four 
 -   **ClusterFirstWithHostNet**: For pods running with hostNetwork, set its DNS policy  **ClusterFirstWithHostNet**.
 -   **None**: It allows a pod to ignore DNS settings from the Kubernetes environment. All DNS settings are supposed to be provided using the  **dnsPolicy**  field in the pod-specific.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->-   Clusters of Kubernetes v1.10 and later support  **Default**,  **ClusterFirst**,  **ClusterFirstWithHostNet**, and  **None**. Clusters earlier than Kubernetes v1.10 support only  **Default**,  **ClusterFirst**, and  **ClusterFirstWithHostNet**.  
->-   **Default**  is not the default DNS policy. If  **dnsPolicy**  is not explicitly specified,  **ClusterFirst**  is used.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>-   Clusters of Kubernetes v1.10 and later support  **Default**,  **ClusterFirst**,  **ClusterFirstWithHostNet**, and  **None**. Clusters earlier than Kubernetes v1.10 support only  **Default**,  **ClusterFirst**, and  **ClusterFirstWithHostNet**.
+>-   **Default**  is not the default DNS policy. If  **dnsPolicy**  is not explicitly specified,  **ClusterFirst**  is used.
 
 **Routing**
 
@@ -143,9 +143,9 @@ DNS policies can be set on a per-pod basis. Currently, Kubernetes supports four 
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Add-ons**. On the  **Add-on Instance**  tab page, select the cluster and click  **Upgrade**  under  **coredns**.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   If the  **Upgrade**  button is unavailable, the current add-on is already up-to-date and no upgrade is required.  
-    >-   When the upgrade is complete, the original coredns version on cluster nodes will be replaced by the latest version.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   If the  **Upgrade**  button is unavailable, the current add-on is already up-to-date and no upgrade is required.
+    >-   When the upgrade is complete, the original coredns version on cluster nodes will be replaced by the latest version.
 
 2.  On the  **Basic Information**  page, select the add-on version and click  **Next: Configuration**.
 3.  Configure the parameters listed in  [Table 2](#table1410658238). After the configuration is complete, click  **Upgrade**  to upgrade the coredns add-on.

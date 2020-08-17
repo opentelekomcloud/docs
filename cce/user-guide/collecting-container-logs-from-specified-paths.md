@@ -76,8 +76,8 @@ This section describes how to collect container logs from specified paths. If yo
 
     -   **Container Path**: Logs are exported only to the container path. You do not need to mount the host path. Set the log policy parameters as follows:
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >This function requires that the ICAgent be upgraded to 5.10.79 or a later version.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >This function requires that the ICAgent be upgraded to 5.10.79 or a later version.
 
         **Table  2**  Parameters for adding log policies \(Container Path\)
 
