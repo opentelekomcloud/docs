@@ -202,6 +202,76 @@ By default, clusters and tags are sorted in descending order of creation time.
 
 **Table  5**  Response parameter description
 
+<a name="table95690185369"></a>
+<table><thead align="left"><tr id="row8575818193612"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p4575181853612"><a name="p4575181853612"></a><a name="p4575181853612"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="24.91%" id="mcps1.2.4.1.2"><p id="p145751818123617"><a name="p145751818123617"></a><a name="p145751818123617"></a>Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="50.09%" id="mcps1.2.4.1.3"><p id="p25761518193614"><a name="p25761518193614"></a><a name="p25761518193614"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1057791893611"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1414612262381"><a name="p1414612262381"></a><a name="p1414612262381"></a>resources</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.91%" headers="mcps1.2.4.1.2 "><p id="p16204192543610"><a name="p16204192543610"></a><a name="p16204192543610"></a>Array of objects</p>
+</td>
+<td class="cellrowborder" valign="top" width="50.09%" headers="mcps1.2.4.1.3 "><p id="p1620522520368"><a name="p1620522520368"></a><a name="p1620522520368"></a>Resource details. For details, see <a href="#table5936005416">Table 6</a>.</p>
+</td>
+</tr>
+<tr id="row1628917719528"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p192903775218"><a name="p192903775218"></a><a name="p192903775218"></a>total_count</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.91%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0172486173_a3ecf064ee466445781aeb1a335395cba"><a name="en-us_topic_0172486173_a3ecf064ee466445781aeb1a335395cba"></a><a name="en-us_topic_0172486173_a3ecf064ee466445781aeb1a335395cba"></a>Integer</p>
+</td>
+<td class="cellrowborder" valign="top" width="50.09%" headers="mcps1.2.4.1.3 "><p id="p829016714520"><a name="p829016714520"></a><a name="p829016714520"></a>Total number of resources.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  6** **resources**  parameters
+
+<a name="table5936005416"></a>
+<table><thead align="left"><tr id="row99312025417"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p69312085417"><a name="p69312085417"></a><a name="p69312085417"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.2"><p id="p39310115412"><a name="p39310115412"></a><a name="p39310115412"></a>Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="50%" id="mcps1.2.4.1.3"><p id="p693606542"><a name="p693606542"></a><a name="p693606542"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row11931707545"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1444162175613"><a name="p1444162175613"></a><a name="p1444162175613"></a>resource_detail</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p1693190195410"><a name="p1693190195410"></a><a name="p1693190195410"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p11938075412"><a name="p11938075412"></a><a name="p11938075412"></a>Resource details.</p>
+</td>
+</tr>
+<tr id="row1393100115418"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1669702885619"><a name="p1669702885619"></a><a name="p1669702885619"></a>resource_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p2094170125410"><a name="p2094170125410"></a><a name="p2094170125410"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p14942013541"><a name="p14942013541"></a><a name="p14942013541"></a>Resource ID.</p>
+</td>
+</tr>
+<tr id="row19456158125415"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p566313345565"><a name="p566313345565"></a><a name="p566313345565"></a>resource_name</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p13457138135415"><a name="p13457138135415"></a><a name="p13457138135415"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p124574814540"><a name="p124574814540"></a><a name="p124574814540"></a>Resource name.</p>
+</td>
+</tr>
+<tr id="row2626182548"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p19219041105619"><a name="p19219041105619"></a><a name="p19219041105619"></a>tags</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p10627148195412"><a name="p10627148195412"></a><a name="p10627148195412"></a>objects</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p36279865413"><a name="p36279865413"></a><a name="p36279865413"></a>Tag list. For details, see <a href="#table1897413881916">Table 7</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  7** **tags**  parameter description
+
 <a name="table1897413881916"></a>
 <table><thead align="left"><tr id="row119761638141911"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p12976163881914"><a name="p12976163881914"></a><a name="p12976163881914"></a><strong id="b10495131214258"><a name="b10495131214258"></a><a name="b10495131214258"></a>Parameter</strong></p>
 </th>
@@ -352,19 +422,9 @@ By default, clusters and tags are sorted in descending order of creation time.
              {
                 "resource_detail": null, 
                 "resource_id": "cdfs_cefs_wesas_12_dsad", 
-                "resource_name": "clusterA", 
-                "tags": [
-                    {
-                       "key": "key1",
-                       "value": "value1"
-                    },
-                    {
-                       "key": "key2",
-                       "value": "value1"
-                    }
-                 ]
+                "resource_name": "clusterA"
              }
-           ], 
+           ]
           "total_count": 1000
     }
     ```
@@ -380,14 +440,14 @@ By default, clusters and tags are sorted in descending order of creation time.
 
 ## Status Code<a name="s48bb8c114a1e4e77b89ba12806974365"></a>
 
-[Table 6](#t31bfd33136f84cd88b311dc479046586)  describes the status code of this API.
+[Table 8](#t31bfd33136f84cd88b311dc479046586)  describes the status code of this API.
 
-**Table  6**  Status code
+**Table  8**  Status code
 
 <a name="t31bfd33136f84cd88b311dc479046586"></a>
 <table><thead align="left"><tr id="ra0a28b8e4bfb49cb90d4029a28a701a3"><th class="cellrowborder" valign="top" width="30%" id="mcps1.2.3.1.1"><p id="a077251d86ed84b13b556d282dc52fdea"><a name="a077251d86ed84b13b556d282dc52fdea"></a><a name="a077251d86ed84b13b556d282dc52fdea"></a><strong id="b107830476819"><a name="b107830476819"></a><a name="b107830476819"></a>Status Code</strong></p>
 </th>
-<th class="cellrowborder" valign="top" width="70%" id="mcps1.2.3.1.2"><p id="ac2051ec31a884ffd9508519c0b28911e"><a name="ac2051ec31a884ffd9508519c0b28911e"></a><a name="ac2051ec31a884ffd9508519c0b28911e"></a><strong id="b1568695087"><a name="b1568695087"></a><a name="b1568695087"></a>Description</strong></p>
+<th class="cellrowborder" valign="top" width="70%" id="mcps1.2.3.1.2"><p id="ac2051ec31a884ffd9508519c0b28911e"><a name="ac2051ec31a884ffd9508519c0b28911e"></a><a name="ac2051ec31a884ffd9508519c0b28911e"></a><strong id="b638113224"><a name="b638113224"></a><a name="b638113224"></a>Description</strong></p>
 </th>
 </tr>
 </thead>

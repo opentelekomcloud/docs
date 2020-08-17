@@ -96,7 +96,7 @@ Only clusters in the  **Running**  state can be scaled out or in.
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p6611238420155"><a name="p6611238420155"></a><a name="p6611238420155"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><a name="ul5350290520155"></a><a name="ul5350290520155"></a><ul id="ul5350290520155"><li>scale_in: cluster scale-in</li><li>scale_out: cluster scale-out</li></ul>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><a name="ul5350290520155"></a><a name="ul5350290520155"></a><ul id="ul5350290520155"><li><strong id="b758512561470"><a name="b758512561470"></a><a name="b758512561470"></a>scale_in</strong>: cluster scale-in</li><li><strong id="b5809259977"><a name="b5809259977"></a><a name="b5809259977"></a>scale_out</strong>: cluster scale-out</li></ul>
 </td>
 </tr>
 <tr id="row4709391120059"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p905339020155"><a name="p905339020155"></a><a name="p905339020155"></a>node_id</p>
@@ -156,7 +156,7 @@ Only clusters in the  **Running**  state can be scaled out or in.
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p13864202412515"><a name="p13864202412515"></a><a name="p13864202412515"></a>boolean</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p1676101093516"><a name="p1676101093516"></a><a name="p1676101093516"></a>Whether to start components on the added nodes after cluster scale-out</p>
-<a name="ul156684552518"></a><a name="ul156684552518"></a><ul id="ul156684552518"><li>true: Do not start components after scale-out</li><li>false: Start components after scale-out</li></ul>
+<a name="ul156684552518"></a><a name="ul156684552518"></a><ul id="ul156684552518"><li><strong id="b1984919146812"><a name="b1984919146812"></a><a name="b1984919146812"></a>true</strong>: Do not start components after scale-out.</li><li><strong id="b12884151712819"><a name="b12884151712819"></a><a name="b12884151712819"></a>false</strong>: Start components after scale-out.</li></ul>
 <p id="p13228122014356"><a name="p13228122014356"></a><a name="p13228122014356"></a>This parameter is valid only in MRS 1.7.2 or later.</p>
 </td>
 </tr>
@@ -205,7 +205,7 @@ Only clusters in the  **Running**  state can be scaled out or in.
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p3133131244910"><a name="p3133131244910"></a><a name="p3133131244910"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p1229610391215"><a name="p1229610391215"></a><a name="p1229610391215"></a>Instance specifications of a Task node, for example, c2.2xlarge.linux.mrs</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p1229610391215"><a name="p1229610391215"></a><a name="p1229610391215"></a>Instance specifications of a Task node, for example, <strong id="b11521223494"><a name="b11521223494"></a><a name="b11521223494"></a>c2.2xlarge.linux.mrs</strong></p>
 <p id="ad01e9ad191694f6aa53b3afd86badcf4"><a name="ad01e9ad191694f6aa53b3afd86badcf4"></a><a name="ad01e9ad191694f6aa53b3afd86badcf4"></a>For details about instance specifications, see <a href="ecs-specifications-used-by-mrs.md">ECS Specifications Used by MRS</a>.</p>
 </td>
 </tr>
@@ -264,7 +264,7 @@ Only clusters in the  **Running**  state can be scaled out or in.
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p44067044114112"><a name="p44067044114112"></a><a name="p44067044114112"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p12660774114112"><a name="p12660774114112"></a><a name="p12660774114112"></a>Operation result</p>
-<a name="ul46838108114112"></a><a name="ul46838108114112"></a><ul id="ul46838108114112"><li>succeeded: The operation is successful.</li><li><a href="#table5548695114444">Table 6</a> describes the error codes returned upon operation failures.</li></ul>
+<a name="ul46838108114112"></a><a name="ul46838108114112"></a><ul id="ul46838108114112"><li><strong id="b493051517254"><a name="b493051517254"></a><a name="b493051517254"></a>succeeded</strong>: The operation is successful.</li><li><a href="#table101661350414">Table 6</a> describes the error codes returned upon operation failures.</li></ul>
 </td>
 </tr>
 </tbody>
@@ -438,160 +438,160 @@ Only clusters in the  **Running**  state can be scaled out or in.
     </table>
 
 
--   [Table 6](#table5548695114444)  describes the error codes returned upon operation failures.
+-   [Table 6](#table101661350414)  describes the error codes returned upon operation failures.
 
-    **Table  6**  Error code
+    **Table  6**  Error codes
 
-    <a name="table5548695114444"></a>
-    <table><thead align="left"><tr id="row354818814444"><th class="cellrowborder" valign="top" width="30%" id="mcps1.2.3.1.1"><p id="p20367198144415"><a name="p20367198144415"></a><a name="p20367198144415"></a>Error Code</p>
+    <a name="table101661350414"></a>
+    <table><thead align="left"><tr id="row915923519414"><th class="cellrowborder" valign="top" width="30%" id="mcps1.2.3.1.1"><p id="p151591735184113"><a name="p151591735184113"></a><a name="p151591735184113"></a>Error Code</p>
     </th>
-    <th class="cellrowborder" valign="top" width="70%" id="mcps1.2.3.1.2"><p id="p10278616144415"><a name="p10278616144415"></a><a name="p10278616144415"></a>Message</p>
+    <th class="cellrowborder" valign="top" width="70%" id="mcps1.2.3.1.2"><p id="p14159435134111"><a name="p14159435134111"></a><a name="p14159435134111"></a>Message</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row338920616126"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p1039014661217"><a name="p1039014661217"></a><a name="p1039014661217"></a>12000001</p>
+    <tbody><tr id="row81611135194113"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p4160143516413"><a name="p4160143516413"></a><a name="p4160143516413"></a>12000001</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p113903641211"><a name="p113903641211"></a><a name="p113903641211"></a>Identity verification is invalid</p>
-    </td>
-    </tr>
-    <tr id="row2775248914444"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p31629184144415"><a name="p31629184144415"></a><a name="p31629184144415"></a>12000002</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p2566243615843"><a name="p2566243615843"></a><a name="p2566243615843"></a>The parameter is invalid.</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p2160143554113"><a name="p2160143554113"></a><a name="p2160143554113"></a>Identity verification is invalid</p>
     </td>
     </tr>
-    <tr id="row455618081518"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p666277931518"><a name="p666277931518"></a><a name="p666277931518"></a>12000003</p>
+    <tr id="row71613355411"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p1416120352413"><a name="p1416120352413"></a><a name="p1416120352413"></a>12000002</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p4386421515843"><a name="p4386421515843"></a><a name="p4386421515843"></a>The cluster does not exist.</p>
-    </td>
-    </tr>
-    <tr id="row50558415112"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p4095231915112"><a name="p4095231915112"></a><a name="p4095231915112"></a>12000009</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p1951166515843"><a name="p1951166515843"></a><a name="p1951166515843"></a>The method parameter is invalid.</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p15161113512416"><a name="p15161113512416"></a><a name="p15161113512416"></a>The parameter is invalid.</p>
     </td>
     </tr>
-    <tr id="row24029515153"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p1946391215153"><a name="p1946391215153"></a><a name="p1946391215153"></a>12000013</p>
+    <tr id="row1016183518412"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p16161835174116"><a name="p16161835174116"></a><a name="p16161835174116"></a>12000003</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p3564219515843"><a name="p3564219515843"></a><a name="p3564219515843"></a>Scale-in of cluster <i><span class="varname" id="varname6518406615933"><a name="varname6518406615933"></a><a name="varname6518406615933"></a>XX</span></i> failed.</p>
-    </td>
-    </tr>
-    <tr id="row3081635115117"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p1309648715117"><a name="p1309648715117"></a><a name="p1309648715117"></a>12000014</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p5734685115843"><a name="p5734685115843"></a><a name="p5734685115843"></a>Scale-out of cluster <i><span class="varname" id="varname2951684115939"><a name="varname2951684115939"></a><a name="varname2951684115939"></a>XX</span></i> failed.</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p216143514114"><a name="p216143514114"></a><a name="p216143514114"></a>The cluster does not exist.</p>
     </td>
     </tr>
-    <tr id="row2422751815149"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p1627192815149"><a name="p1627192815149"></a><a name="p1627192815149"></a>12000017</p>
+    <tr id="row141613354414"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p516113517411"><a name="p516113517411"></a><a name="p516113517411"></a>12000009</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p5283368015843"><a name="p5283368015843"></a><a name="p5283368015843"></a>Scale-out or scale-in is not allowed for clusters that are not in the <strong id="b9681114661011"><a name="b9681114661011"></a><a name="b9681114661011"></a>Running</strong> state.</p>
-    </td>
-    </tr>
-    <tr id="row6474546915121"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p989163215121"><a name="p989163215121"></a><a name="p989163215121"></a>12000018</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p553800115843"><a name="p553800115843"></a><a name="p553800115843"></a>Scale-out or scale-in cannot be performed again because it is in progress.</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p21617358418"><a name="p21617358418"></a><a name="p21617358418"></a>The method parameter is invalid.</p>
     </td>
     </tr>
-    <tr id="row894492811213"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p109441528191215"><a name="p109441528191215"></a><a name="p109441528191215"></a>12000019</p>
+    <tr id="row716133513417"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p191616356417"><a name="p191616356417"></a><a name="p191616356417"></a>12000013</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p494411282126"><a name="p494411282126"></a><a name="p494411282126"></a>Failed to obtain hosts of the cluster.</p>
-    </td>
-    </tr>
-    <tr id="row2031112315126"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p3458829815126"><a name="p3458829815126"></a><a name="p3458829815126"></a>12000028</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p4940400515843"><a name="p4940400515843"></a><a name="p4940400515843"></a>The maximum number of Core nodes in a cluster is <i><span class="varname" id="varname49786155151054"><a name="varname49786155151054"></a><a name="varname49786155151054"></a>N</span></i>.</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p5161163574110"><a name="p5161163574110"></a><a name="p5161163574110"></a>Scale-in of cluster <i><span class="varname" id="varname6518406615933"><a name="varname6518406615933"></a><a name="varname6518406615933"></a>XX</span></i> failed.</p>
     </td>
     </tr>
-    <tr id="row3626742915135"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p5198063515135"><a name="p5198063515135"></a><a name="p5198063515135"></a>12000029</p>
+    <tr id="row1616293517414"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p716111352416"><a name="p716111352416"></a><a name="p716111352416"></a>12000014</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p2416507615843"><a name="p2416507615843"></a><a name="p2416507615843"></a>Failed to obtain the quota.</p>
-    </td>
-    </tr>
-    <tr id="row2120380015144"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p3978626015144"><a name="p3978626015144"></a><a name="p3978626015144"></a>12000030</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p795069915843"><a name="p795069915843"></a><a name="p795069915843"></a>The requested number of nodes in the cluster exceeds the available quota.</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p12162203544110"><a name="p12162203544110"></a><a name="p12162203544110"></a>Scale-out of cluster <i><span class="varname" id="varname2951684115939"><a name="varname2951684115939"></a><a name="varname2951684115939"></a>XX</span></i> failed.</p>
     </td>
     </tr>
-    <tr id="row4882755215140"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p6271760115140"><a name="p6271760115140"></a><a name="p6271760115140"></a>12000031</p>
+    <tr id="row11162163504117"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p16162113515413"><a name="p16162113515413"></a><a name="p16162113515413"></a>12000017</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p5168179515843"><a name="p5168179515843"></a><a name="p5168179515843"></a>The requested number of vCPUs in the cluster exceeds the available quota.</p>
-    </td>
-    </tr>
-    <tr id="row2789653215442"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p4502659115442"><a name="p4502659115442"></a><a name="p4502659115442"></a>12000032</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p863711315843"><a name="p863711315843"></a><a name="p863711315843"></a>The requested memory of the cluster exceeds the available quota.</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p121621435144114"><a name="p121621435144114"></a><a name="p121621435144114"></a>Scale-out or scale-in is not allowed for clusters that are not in the <strong id="b9681114661011"><a name="b9681114661011"></a><a name="b9681114661011"></a>Running</strong> state.</p>
     </td>
     </tr>
-    <tr id="row3294536315447"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p5132878315447"><a name="p5132878315447"></a><a name="p5132878315447"></a>12000033</p>
+    <tr id="row816213554117"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p11162113519411"><a name="p11162113519411"></a><a name="p11162113519411"></a>12000018</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p6634488615843"><a name="p6634488615843"></a><a name="p6634488615843"></a>The requested number of disks in the cluster exceeds the available quota.</p>
-    </td>
-    </tr>
-    <tr id="row33930181550"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p63990741550"><a name="p63990741550"></a><a name="p63990741550"></a>12000034</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p3653911215843"><a name="p3653911215843"></a><a name="p3653911215843"></a>The requested disk capacity of the cluster exceeds the available quota.</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p116211357415"><a name="p116211357415"></a><a name="p116211357415"></a>Scale-out or scale-in cannot be performed again because it is in progress.</p>
     </td>
     </tr>
-    <tr id="row439500831553"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p31869531553"><a name="p31869531553"></a><a name="p31869531553"></a>12000054</p>
+    <tr id="row5162113544113"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p1116243511412"><a name="p1116243511412"></a><a name="p1116243511412"></a>12000019</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p3965690215843"><a name="p3965690215843"></a><a name="p3965690215843"></a>The operation is not supported.</p>
-    </td>
-    </tr>
-    <tr id="row19723174915129"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p07235494127"><a name="p07235494127"></a><a name="p07235494127"></a>12000067</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p3723149181219"><a name="p3723149181219"></a><a name="p3723149181219"></a>The cluster cannot be scaled out because its version is too early. Upgrade the cluster to the latest version.</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p616283534118"><a name="p616283534118"></a><a name="p616283534118"></a>Failed to obtain hosts of the cluster.</p>
     </td>
     </tr>
-    <tr id="row10629505122"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p36312508121"><a name="p36312508121"></a><a name="p36312508121"></a>12000068</p>
+    <tr id="row12162435104110"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p151621635204111"><a name="p151621635204111"></a><a name="p151621635204111"></a>12000028</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p8639501123"><a name="p8639501123"></a><a name="p8639501123"></a>The status of some nodes is not running in the cluster. Try again later.</p>
-    </td>
-    </tr>
-    <tr id="row16344539181213"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p16593202110202"><a name="p16593202110202"></a><a name="p16593202110202"></a>12000121</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p1259313215206"><a name="p1259313215206"></a><a name="p1259313215206"></a>Scale-out is not allowed because the cluster has an unpaid order. Scale out the cluster again after you pay the order.</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p13162103519414"><a name="p13162103519414"></a><a name="p13162103519414"></a>The maximum number of Core nodes in a cluster is <i><span class="varname" id="varname49786155151054"><a name="varname49786155151054"></a><a name="varname49786155151054"></a>N</span></i>.</p>
     </td>
     </tr>
-    <tr id="row4665542592215"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p652559869269"><a name="p652559869269"></a><a name="p652559869269"></a>MRS.101</p>
+    <tr id="row816223519416"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p151625351418"><a name="p151625351418"></a><a name="p151625351418"></a>12000029</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p6302598892543"><a name="p6302598892543"></a><a name="p6302598892543"></a>Your request could not be fulfilled because your quota is insufficient. Contact technical support to increase the quota.</p>
-    </td>
-    </tr>
-    <tr id="row273178692215"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p585383229269"><a name="p585383229269"></a><a name="p585383229269"></a>MRS.102</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p4348230092543"><a name="p4348230092543"></a><a name="p4348230092543"></a>The token cannot be null or invalid. Try again later or contact customer service.</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p161621935134111"><a name="p161621935134111"></a><a name="p161621935134111"></a>Failed to obtain the quota.</p>
     </td>
     </tr>
-    <tr id="row4059790292215"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p603085559269"><a name="p603085559269"></a><a name="p603085559269"></a>MRS.103</p>
+    <tr id="row15163835184118"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p12162133554113"><a name="p12162133554113"></a><a name="p12162133554113"></a>12000030</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p2321304192543"><a name="p2321304192543"></a><a name="p2321304192543"></a>Invalid request. Try again later or contact customer service.</p>
-    </td>
-    </tr>
-    <tr id="row122128292215"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p86307109269"><a name="p86307109269"></a><a name="p86307109269"></a>MRS.104</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p1087352692543"><a name="p1087352692543"></a><a name="p1087352692543"></a>Insufficient resources. Try again later or contact customer service.</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p1916215352414"><a name="p1916215352414"></a><a name="p1916215352414"></a>The requested number of nodes in the cluster exceeds the available quota.</p>
     </td>
     </tr>
-    <tr id="row6095817692215"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p506636729269"><a name="p506636729269"></a><a name="p506636729269"></a>MRS.105</p>
+    <tr id="row216311359411"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p18163173534110"><a name="p18163173534110"></a><a name="p18163173534110"></a>12000031</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p795517592543"><a name="p795517592543"></a><a name="p795517592543"></a>Insufficient IP addresses in the existing subnet. Try again later or contact customer service.</p>
-    </td>
-    </tr>
-    <tr id="row5045911592215"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p239418839269"><a name="p239418839269"></a><a name="p239418839269"></a>MRS.201</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p2796061492543"><a name="p2796061492543"></a><a name="p2796061492543"></a>Failed due to an ECS error. Try again later or contact customer service. (ECS: <em id="i143527504193"><a name="i143527504193"></a><a name="i143527504193"></a>xxxx</em>, ECS error information)</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p81631535164116"><a name="p81631535164116"></a><a name="p81631535164116"></a>The requested number of vCPUs in the cluster exceeds the available quota.</p>
     </td>
     </tr>
-    <tr id="row623339092215"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p53281139269"><a name="p53281139269"></a><a name="p53281139269"></a>MRS.202</p>
+    <tr id="row4163123512418"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p216303512413"><a name="p216303512413"></a><a name="p216303512413"></a>12000032</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p4930191792543"><a name="p4930191792543"></a><a name="p4930191792543"></a>Failed due to an IAM error. Try again later or contact customer service. (IAM: <em id="i12866909201"><a name="i12866909201"></a><a name="i12866909201"></a>xxxx</em>, IAM error information)</p>
-    </td>
-    </tr>
-    <tr id="row724554392228"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p589898489269"><a name="p589898489269"></a><a name="p589898489269"></a>MRS.203</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p3785593792543"><a name="p3785593792543"></a><a name="p3785593792543"></a>Failed due to a VPC error. Try again later or contact customer service. (VPC: <em id="i5729224132017"><a name="i5729224132017"></a><a name="i5729224132017"></a>xxxx</em>, VPC error information)</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p416310355412"><a name="p416310355412"></a><a name="p416310355412"></a>The requested memory of the cluster exceeds the available quota.</p>
     </td>
     </tr>
-    <tr id="row4869322992228"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p539262569269"><a name="p539262569269"></a><a name="p539262569269"></a>MRS.300</p>
+    <tr id="row116343524117"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p1316303594110"><a name="p1316303594110"></a><a name="p1316303594110"></a>12000033</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p1523559692543"><a name="p1523559692543"></a><a name="p1523559692543"></a>MRS system error. Try again later or contact customer service.</p>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p1716373554119"><a name="p1716373554119"></a><a name="p1716373554119"></a>The requested number of disks in the cluster exceeds the available quota.</p>
+    </td>
+    </tr>
+    <tr id="row916353534116"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p161631735144112"><a name="p161631735144112"></a><a name="p161631735144112"></a>12000034</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p151632352415"><a name="p151632352415"></a><a name="p151632352415"></a>The requested disk capacity of the cluster exceeds the available quota.</p>
+    </td>
+    </tr>
+    <tr id="row2163535164112"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p11163113594117"><a name="p11163113594117"></a><a name="p11163113594117"></a>12000054</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p3163123518414"><a name="p3163123518414"></a><a name="p3163123518414"></a>The operation is not supported.</p>
+    </td>
+    </tr>
+    <tr id="row1516313359412"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p1016333504112"><a name="p1016333504112"></a><a name="p1016333504112"></a>12000067</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p31633355417"><a name="p31633355417"></a><a name="p31633355417"></a>The cluster cannot be scaled out because its version is too early. Upgrade the cluster to the latest version.</p>
+    </td>
+    </tr>
+    <tr id="row1416443510410"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p20163535154112"><a name="p20163535154112"></a><a name="p20163535154112"></a>12000068</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p18164203564113"><a name="p18164203564113"></a><a name="p18164203564113"></a>The status of some nodes is not running in the cluster. Try again later.</p>
+    </td>
+    </tr>
+    <tr id="row1316410357419"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p1316413352414"><a name="p1316413352414"></a><a name="p1316413352414"></a>12000121</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p81644351412"><a name="p81644351412"></a><a name="p81644351412"></a>Scale-out is not allowed because the cluster has an unpaid order. Scale out the cluster again after you pay the order.</p>
+    </td>
+    </tr>
+    <tr id="row1216433534115"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p11641635174116"><a name="p11641635174116"></a><a name="p11641635174116"></a>MRS.101</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p91641935164118"><a name="p91641935164118"></a><a name="p91641935164118"></a>Your request could not be fulfilled because your quota is insufficient. Contact technical support to increase the quota.</p>
+    </td>
+    </tr>
+    <tr id="row201641635184111"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p1616412359412"><a name="p1616412359412"></a><a name="p1616412359412"></a>MRS.102</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p161649353419"><a name="p161649353419"></a><a name="p161649353419"></a>The token cannot be null or invalid. Try again later or contact customer service.</p>
+    </td>
+    </tr>
+    <tr id="row31642351413"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p17164153574118"><a name="p17164153574118"></a><a name="p17164153574118"></a>MRS.103</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p116473554110"><a name="p116473554110"></a><a name="p116473554110"></a>Invalid request. Try again later or contact customer service.</p>
+    </td>
+    </tr>
+    <tr id="row1716510358412"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p516553517416"><a name="p516553517416"></a><a name="p516553517416"></a>MRS.104</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p81659351418"><a name="p81659351418"></a><a name="p81659351418"></a>Insufficient resources. Try again later or contact customer service.</p>
+    </td>
+    </tr>
+    <tr id="row1216515357410"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p5165935184112"><a name="p5165935184112"></a><a name="p5165935184112"></a>MRS.105</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p1216563516419"><a name="p1216563516419"></a><a name="p1216563516419"></a>Insufficient IP addresses in the existing subnet. Try again later or contact customer service.</p>
+    </td>
+    </tr>
+    <tr id="row131651935184115"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p1116553512417"><a name="p1116553512417"></a><a name="p1116553512417"></a>MRS.201</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p16165535194114"><a name="p16165535194114"></a><a name="p16165535194114"></a>Failed due to an ECS error. Try again later or contact customer service. (ECS: <em id="i143527504193"><a name="i143527504193"></a><a name="i143527504193"></a>xxxx</em>, ECS error information)</p>
+    </td>
+    </tr>
+    <tr id="row516520355419"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p916510352415"><a name="p916510352415"></a><a name="p916510352415"></a>MRS.202</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p8165153516411"><a name="p8165153516411"></a><a name="p8165153516411"></a>Failed due to an IAM error. Try again later or contact customer service. (IAM: <em id="i12866909201"><a name="i12866909201"></a><a name="i12866909201"></a>xxxx</em>, IAM error information)</p>
+    </td>
+    </tr>
+    <tr id="row10165935144115"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p6165173515413"><a name="p6165173515413"></a><a name="p6165173515413"></a>MRS.203</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p11652353412"><a name="p11652353412"></a><a name="p11652353412"></a>Failed due to a VPC error. Try again later or contact customer service. (VPC: <em id="i5729224132017"><a name="i5729224132017"></a><a name="i5729224132017"></a>xxxx</em>, VPC error information)</p>
+    </td>
+    </tr>
+    <tr id="row16166193594116"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p5166133518415"><a name="p5166133518415"></a><a name="p5166133518415"></a>MRS.300</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p4166193514413"><a name="p4166193514413"></a><a name="p4166193514413"></a>MRS system error. Try again later or contact customer service.</p>
     </td>
     </tr>
     </tbody>

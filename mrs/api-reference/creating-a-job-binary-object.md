@@ -66,7 +66,7 @@ This API is used to create a job binary object. This API is compatible with Saha
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p5338853410469"><a name="p5338853410469"></a><a name="p5338853410469"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p2950402010469"><a name="p2950402010469"></a><a name="p2950402010469"></a>Binary object URL, which contains of 1 to 255 characters.</p>
-<p id="p4805152516398"><a name="p4805152516398"></a><a name="p4805152516398"></a>The URL must start with <strong id="b1932717215405"><a name="b1932717215405"></a><a name="b1932717215405"></a>s3a://</strong> or <strong id="b1066213397426"><a name="b1066213397426"></a><a name="b1066213397426"></a>/</strong>.</p>
+<p id="p4805152516398"><a name="p4805152516398"></a><a name="p4805152516398"></a>The URL must start with <span class="parmvalue" id="parmvalue154622174212"><a name="parmvalue154622174212"></a><a name="parmvalue154622174212"></a><b>s3a://</b></span> or <span class="parmvalue" id="parmvalue8371024194218"><a name="parmvalue8371024194218"></a><a name="parmvalue8371024194218"></a><b>/</b></span>.</p>
 </td>
 </tr>
 <tr id="row60274821103112"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p16682465103121"><a name="p16682465103121"></a><a name="p16682465103121"></a>is_protected</p>

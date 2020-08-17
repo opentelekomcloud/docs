@@ -38,11 +38,32 @@ This API is used to query all tag sets of a specified region.
 
 **Request parameters**
 
-None
+None.
 
 ## Response<a name="sa3b67fdf174846b687d4d5029329b305"></a>
 
 **Table  2**  Response parameter description
+
+<a name="table95690185369"></a>
+<table><thead align="left"><tr id="row8575818193612"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p4575181853612"><a name="p4575181853612"></a><a name="p4575181853612"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.2"><p id="p145751818123617"><a name="p145751818123617"></a><a name="p145751818123617"></a>Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="50%" id="mcps1.2.4.1.3"><p id="p25761518193614"><a name="p25761518193614"></a><a name="p25761518193614"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1057791893611"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1414612262381"><a name="p1414612262381"></a><a name="p1414612262381"></a>tags</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p16204192543610"><a name="p16204192543610"></a><a name="p16204192543610"></a>Array of objects</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p1620522520368"><a name="p1620522520368"></a><a name="p1620522520368"></a>Tag list. For details, see <a href="#table45211674182">Table 3</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  3** **tags**  parameter description
 
 <a name="table45211674182"></a>
 <table><thead align="left"><tr id="row252312741816"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p452316771818"><a name="p452316771818"></a><a name="p452316771818"></a><strong id="b2288811132113"><a name="b2288811132113"></a><a name="b2288811132113"></a>Parameter</strong></p>
@@ -57,7 +78,7 @@ None
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p15528675188"><a name="p15528675188"></a><a name="p15528675188"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p752897201817"><a name="p752897201817"></a><a name="p752897201817"></a>Key. A tag key can contain only uppercase letters, lowercase letters, digits, hyphens (-), and underscores (_).</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p752897201817"><a name="p752897201817"></a><a name="p752897201817"></a>Tag key. A tag key can contain only uppercase letters, lowercase letters, digits, hyphens (-), and underscores (_).</p>
 </td>
 </tr>
 <tr id="row1853018771810"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1153016731813"><a name="p1153016731813"></a><a name="p1153016731813"></a>value</p>
@@ -74,7 +95,7 @@ None
 
 -   Example request
 
-None
+None.
 
 -   Example response
 
@@ -102,14 +123,14 @@ None
 
 ## Status Code<a name="s2cffe92837ac4e14a9afda7d5eb8e64e"></a>
 
-[Table 3](#tb472a78155014ba18b372672dd8358e7)  describes the status code of this API.
+[Table 4](#tb472a78155014ba18b372672dd8358e7)  describes the status code of this API.
 
-**Table  3**  Status code
+**Table  4**  Status code
 
 <a name="tb472a78155014ba18b372672dd8358e7"></a>
 <table><thead align="left"><tr id="r201b1aef028b40ef962c83fd95b4861f"><th class="cellrowborder" valign="top" width="30%" id="mcps1.2.3.1.1"><p id="a76d01c2d730241b6811241045aa51c7e"><a name="a76d01c2d730241b6811241045aa51c7e"></a><a name="a76d01c2d730241b6811241045aa51c7e"></a><strong id="b171387571898"><a name="b171387571898"></a><a name="b171387571898"></a>Status Code</strong></p>
 </th>
-<th class="cellrowborder" valign="top" width="70%" id="mcps1.2.3.1.2"><p id="ad8353c4c972e4361a19786b6b50cac52"><a name="ad8353c4c972e4361a19786b6b50cac52"></a><a name="ad8353c4c972e4361a19786b6b50cac52"></a><strong id="b307563499"><a name="b307563499"></a><a name="b307563499"></a>Description</strong></p>
+<th class="cellrowborder" valign="top" width="70%" id="mcps1.2.3.1.2"><p id="ad8353c4c972e4361a19786b6b50cac52"><a name="ad8353c4c972e4361a19786b6b50cac52"></a><a name="ad8353c4c972e4361a19786b6b50cac52"></a><strong id="b1765430536"><a name="b1765430536"></a><a name="b1765430536"></a>Description</strong></p>
 </th>
 </tr>
 </thead>

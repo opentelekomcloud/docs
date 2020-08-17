@@ -63,7 +63,7 @@ This API is used to update a job object. This API is compatible with Sahara.
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p6794872141414"><a name="p6794872141414"></a><a name="p6794872141414"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p13513721141414"><a name="p13513721141414"></a><a name="p13513721141414"></a>Job object name</p>
-<p id="p1603959314432"><a name="p1603959314432"></a><a name="p1603959314432"></a>Contains 1 to 80 characters and consists of letters, digits, hyphens (-), and underscores (_) only.</p>
+<p id="p1603959314432"><a name="p1603959314432"></a><a name="p1603959314432"></a>Contains 1 to 64 characters and consists of letters, digits, hyphens (-), and underscores (_) only.</p>
 </td>
 </tr>
 <tr id="row54514628141414"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p53608773141414"><a name="p53608773141414"></a><a name="p53608773141414"></a>mains</p>

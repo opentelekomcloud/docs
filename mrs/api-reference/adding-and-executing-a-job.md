@@ -4,8 +4,8 @@
 
 This API is used to add and submit a job in an MRS cluster.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->-   If Kerberos authentication is enabled for a cluster, on the  **Dashboard**  tab page of the cluster details page, click  ![](figures/icon_mrs_iamsy-dt.png)  on the right side of  **IAM User Sync**  to synchronize IAM users, and then submit a job through this API.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>-   If Kerberos authentication is enabled for a cluster, on the  **Dashboard**  tab page of the cluster details page, click  **Click to synchronize**  on the right side of  **IAM User Sync**  to synchronize IAM users, and then submit a job through this API.
 
 ## URI<a name="section10186656193217"></a>
 
@@ -140,7 +140,7 @@ This API is used to add and submit a job in an MRS cluster.
 <td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.4.1.2 "><p id="p181801744152419"><a name="p181801744152419"></a><a name="p181801744152419"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p01803442249"><a name="p01803442249"></a><a name="p01803442249"></a>Job submission status.</p>
-<a name="ul667222419913"></a><a name="ul667222419913"></a><ul id="ul667222419913"><li>COMPLETE: The job is submitted.</li><li>JOBSTAT_SUBMIT_FAILED: Failed to submit the job.</li></ul>
+<a name="ul667222419913"></a><a name="ul667222419913"></a><ul id="ul667222419913"><li><strong id="b157095118182"><a name="b157095118182"></a><a name="b157095118182"></a>COMPLETE</strong>: The job is submitted.</li><li><strong id="b14376255161817"><a name="b14376255161817"></a><a name="b14376255161817"></a>JOBSTAT_SUBMIT_FAILED</strong>: Failed to submit the job.</li></ul>
 </td>
 </tr>
 <tr id="row9408105472718"><td class="cellrowborder" valign="top" width="25.06%" headers="mcps1.2.4.1.1 "><p id="p19212192513289"><a name="p19212192513289"></a><a name="p19212192513289"></a>error_msg</p>
@@ -188,7 +188,7 @@ This API is used to add and submit a job in an MRS cluster.
 
     ```
     {
-        "job_name":"SparkJobTest",
+        "job_name":"SparkSubmitTest",
         "job_type":"SparkSubmit",
         "arguments":[
             "--master",
@@ -271,8 +271,8 @@ This API is used to add and submit a job in an MRS cluster.
 
     ```
     {
-        "job_type":"SparkSql",
         "job_name":"SparkScriptTest",
+        "job_type":"SparkScript",
         "arguments":[
             "op-key1",
             "op-value1",
@@ -291,8 +291,8 @@ This API is used to add and submit a job in an MRS cluster.
 
     ```
     {
-        "job_type":"SparkSql",
         "job_name":"SparkSqlTest",
+        "job_type":"SparkSql",
         "arguments":[
             "op-key1",
             "op-value1",
@@ -311,7 +311,7 @@ This API is used to add and submit a job in an MRS cluster.
 
     ```
     {
-        "job_name":"flinkTest",
+        "job_name":"FlinkTest",
         "job_type":"Flink",
         "arguments":[
             "run",

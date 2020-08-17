@@ -4,7 +4,7 @@
 
 This API is used to configure an auto scaling rule.
 
-The API used for cluster creation and job execution can also be used to creation an auto scaling rule.
+The API used for cluster creation and job execution can also be used to create an auto scaling rule.
 
 ## URI<a name="section161439810524"></a>
 
@@ -47,7 +47,7 @@ The API used for cluster creation and job execution can also be used to creation
 
 **Request parameters**
 
-[Table 2](#table27243156151210)  and  [Table 3](#table50379282141720)  describes the request parameters.
+[Table 2](#table27243156151210)  and  [Table 3](#table50379282141720)  describe the request parameters.
 
 **Table  2** **node\_group**  parameter description
 
@@ -68,7 +68,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p57261711151210"><a name="p57261711151210"></a><a name="p57261711151210"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p7687005151210"><a name="p7687005151210"></a><a name="p7687005151210"></a>Type of the node to which an auto scaling rule applies. Currently, only Task nodes are supported, that is, the request value is <strong id="b2058614615174"><a name="b2058614615174"></a><a name="b2058614615174"></a>task_node_default_group</strong>.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p7687005151210"><a name="p7687005151210"></a><a name="p7687005151210"></a>Type of the node to which an auto scaling rule applies. Currently, only Task nodes support auto scaling rules, that is, the request value is <strong id="b2058614615174"><a name="b2058614615174"></a><a name="b2058614615174"></a>task_node_default_group</strong>.</p>
 </td>
 </tr>
 </tbody>
@@ -93,7 +93,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a2c10267f0ea74faba0b9fb771d478e67"><a name="en-us_topic_0172486173_a2c10267f0ea74faba0b9fb771d478e67"></a><a name="en-us_topic_0172486173_a2c10267f0ea74faba0b9fb771d478e67"></a>Boolean</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a8b16bd6c0885436e8051b80f0aea7c8d"><a name="en-us_topic_0172486173_a8b16bd6c0885436e8051b80f0aea7c8d"></a><a name="en-us_topic_0172486173_a8b16bd6c0885436e8051b80f0aea7c8d"></a>Whether to enable the auto scaling rule</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a8b16bd6c0885436e8051b80f0aea7c8d"><a name="en-us_topic_0172486173_a8b16bd6c0885436e8051b80f0aea7c8d"></a><a name="en-us_topic_0172486173_a8b16bd6c0885436e8051b80f0aea7c8d"></a>Whether to enable the auto scaling rule.</p>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_r1fe6b7d60f7345d3b8d1c1d8cb8806bd"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_a379d490f2095437fad3072496b931b39"><a name="en-us_topic_0172486173_a379d490f2095437fad3072496b931b39"></a><a name="en-us_topic_0172486173_a379d490f2095437fad3072496b931b39"></a>min_capacity</p>
@@ -102,7 +102,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_en-us_topic_0110581924_p230787112654"><a name="en-us_topic_0172486173_en-us_topic_0110581924_p230787112654"></a><a name="en-us_topic_0172486173_en-us_topic_0110581924_p230787112654"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a6339dac619fd4e838c5285c78f3162f9"><a name="en-us_topic_0172486173_a6339dac619fd4e838c5285c78f3162f9"></a><a name="en-us_topic_0172486173_a6339dac619fd4e838c5285c78f3162f9"></a>Minimum number of nodes left in the node group</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a6339dac619fd4e838c5285c78f3162f9"><a name="en-us_topic_0172486173_a6339dac619fd4e838c5285c78f3162f9"></a><a name="en-us_topic_0172486173_a6339dac619fd4e838c5285c78f3162f9"></a>Minimum number of nodes left in the node group.</p>
 <p id="en-us_topic_0172486173_ac2a776ad7e134fadb625996c4d1d83d6"><a name="en-us_topic_0172486173_ac2a776ad7e134fadb625996c4d1d83d6"></a><a name="en-us_topic_0172486173_ac2a776ad7e134fadb625996c4d1d83d6"></a>Value range: 0 to 500</p>
 </td>
 </tr>
@@ -112,7 +112,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a3ecf064ee466445781aeb1a335395cba"><a name="en-us_topic_0172486173_a3ecf064ee466445781aeb1a335395cba"></a><a name="en-us_topic_0172486173_a3ecf064ee466445781aeb1a335395cba"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a27bf42b5a44f47378f54aad66fef804f"><a name="en-us_topic_0172486173_a27bf42b5a44f47378f54aad66fef804f"></a><a name="en-us_topic_0172486173_a27bf42b5a44f47378f54aad66fef804f"></a>Maximum number of nodes in the node group</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a27bf42b5a44f47378f54aad66fef804f"><a name="en-us_topic_0172486173_a27bf42b5a44f47378f54aad66fef804f"></a><a name="en-us_topic_0172486173_a27bf42b5a44f47378f54aad66fef804f"></a>Maximum number of nodes in the node group.</p>
 <p id="en-us_topic_0172486173_a480eee70830e4129964adad7def22b88"><a name="en-us_topic_0172486173_a480eee70830e4129964adad7def22b88"></a><a name="en-us_topic_0172486173_a480eee70830e4129964adad7def22b88"></a>Value range: 0 to 500</p>
 </td>
 </tr>
@@ -122,7 +122,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p59886442157"><a name="en-us_topic_0172486173_p59886442157"></a><a name="en-us_topic_0172486173_p59886442157"></a>List</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p189881644171514"><a name="en-us_topic_0172486173_p189881644171514"></a><a name="en-us_topic_0172486173_p189881644171514"></a>Resource plan list. For details, see <a href="creating-a-cluster-and-running-a-job.md#table10281451162111">Table 8</a>. If this parameter is left blank, the resource plan is disabled.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p189881644171514"><a name="en-us_topic_0172486173_p189881644171514"></a><a name="en-us_topic_0172486173_p189881644171514"></a>Resource plan list. For details, see <a href="creating-a-cluster-and-running-a-job.md#table10281451162111">Table 10</a>. If this parameter is left blank, the resource plan is disabled.</p>
 <p id="en-us_topic_0172486173_p9402141913220"><a name="en-us_topic_0172486173_p9402141913220"></a><a name="en-us_topic_0172486173_p9402141913220"></a>When auto scaling is enabled, either a resource plan or an auto scaling rule must be configured.</p>
 <p id="en-us_topic_0172486173_p332510443181"><a name="en-us_topic_0172486173_p332510443181"></a><a name="en-us_topic_0172486173_p332510443181"></a>MRS 1.6.3 or later supports this parameter.</p>
 </td>
@@ -133,7 +133,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p11372152341713"><a name="en-us_topic_0172486173_p11372152341713"></a><a name="en-us_topic_0172486173_p11372152341713"></a>List</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p93729233178"><a name="en-us_topic_0172486173_p93729233178"></a><a name="en-us_topic_0172486173_p93729233178"></a>List of custom scaling automation scripts. For details, see <a href="creating-a-cluster-and-running-a-job.md#table1921110172216">Table 9</a>. If this parameter is left blank, a hook script is disabled.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p93729233178"><a name="en-us_topic_0172486173_p93729233178"></a><a name="en-us_topic_0172486173_p93729233178"></a>List of custom scaling automation scripts. For details, see <a href="creating-a-cluster-and-running-a-job.md#table1921110172216">Table 11</a>. If this parameter is left blank, a hook script is disabled.</p>
 <p id="en-us_topic_0172486173_p03726234173"><a name="en-us_topic_0172486173_p03726234173"></a><a name="en-us_topic_0172486173_p03726234173"></a>MRS 1.7.2 or later supports this parameter.</p>
 </td>
 </tr>
@@ -143,7 +143,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_ae314628f2d8a4766924313079bbabe68"><a name="en-us_topic_0172486173_ae314628f2d8a4766924313079bbabe68"></a><a name="en-us_topic_0172486173_ae314628f2d8a4766924313079bbabe68"></a>List</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_ac2e02b36ba1e434fb0df7479bd8acd50"><a name="en-us_topic_0172486173_ac2e02b36ba1e434fb0df7479bd8acd50"></a><a name="en-us_topic_0172486173_ac2e02b36ba1e434fb0df7479bd8acd50"></a>List of auto scaling rules. For details, see <a href="creating-a-cluster-and-running-a-job.md#t4c9e3e169631470d81d260543affb7e1">Table 10</a>.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_ac2e02b36ba1e434fb0df7479bd8acd50"><a name="en-us_topic_0172486173_ac2e02b36ba1e434fb0df7479bd8acd50"></a><a name="en-us_topic_0172486173_ac2e02b36ba1e434fb0df7479bd8acd50"></a>List of auto scaling rules. For details, see <a href="creating-a-cluster-and-running-a-job.md#t4c9e3e169631470d81d260543affb7e1">Table 12</a>.</p>
 <p id="en-us_topic_0172486173_p6516143522217"><a name="en-us_topic_0172486173_p6516143522217"></a><a name="en-us_topic_0172486173_p6516143522217"></a>When auto scaling is enabled, either a resource plan or an auto scaling rule must be configured.</p>
 </td>
 </tr>
@@ -170,7 +170,7 @@ The API used for cluster creation and job execution can also be used to creation
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p166321418282"><a name="en-us_topic_0172486173_p166321418282"></a><a name="en-us_topic_0172486173_p166321418282"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p963214419289"><a name="en-us_topic_0172486173_p963214419289"></a><a name="en-us_topic_0172486173_p963214419289"></a>Cycle type of a resource plan. Currently, only the following cycle type is supported:</p>
-<a name="en-us_topic_0172486173_ul363284116288"></a><a name="en-us_topic_0172486173_ul363284116288"></a><ul id="en-us_topic_0172486173_ul363284116288"><li>daily</li></ul>
+<a name="en-us_topic_0172486173_ul363284116288"></a><a name="en-us_topic_0172486173_ul363284116288"></a><ul id="en-us_topic_0172486173_ul363284116288"><li><strong id="en-us_topic_0172486173_b1429315401761"><a name="en-us_topic_0172486173_b1429315401761"></a><a name="en-us_topic_0172486173_b1429315401761"></a>daily</strong></li></ul>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_row1531855116213"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_p11633174182818"><a name="en-us_topic_0172486173_p11633174182818"></a><a name="en-us_topic_0172486173_p11633174182818"></a>start_time</p>
@@ -179,7 +179,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p19633114122816"><a name="en-us_topic_0172486173_p19633114122816"></a><a name="en-us_topic_0172486173_p19633114122816"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p13633154112816"><a name="en-us_topic_0172486173_p13633154112816"></a><a name="en-us_topic_0172486173_p13633154112816"></a>Start time of a resources plan. The value is in the format of <strong id="en-us_topic_0172486173_b972495515249"><a name="en-us_topic_0172486173_b972495515249"></a><a name="en-us_topic_0172486173_b972495515249"></a>hour:minute</strong>, indicating that the time ranges from 0:00 to 23:59.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p13633154112816"><a name="en-us_topic_0172486173_p13633154112816"></a><a name="en-us_topic_0172486173_p13633154112816"></a>Start time of a resource plan. The value is in the format of <strong id="en-us_topic_0172486173_b972495515249"><a name="en-us_topic_0172486173_b972495515249"></a><a name="en-us_topic_0172486173_b972495515249"></a>hour:minute</strong>, indicating that the time ranges from 0:00 to 23:59.</p>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_row7405105118211"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_p126333415281"><a name="en-us_topic_0172486173_p126333415281"></a><a name="en-us_topic_0172486173_p126333415281"></a>end_time</p>
@@ -188,7 +188,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p863364112819"><a name="en-us_topic_0172486173_p863364112819"></a><a name="en-us_topic_0172486173_p863364112819"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p2633174117282"><a name="en-us_topic_0172486173_p2633174117282"></a><a name="en-us_topic_0172486173_p2633174117282"></a>End time of a resources plan. The value is in the same format as that of <span class="parmname" id="en-us_topic_0172486173_parmname108341828162917"><a name="en-us_topic_0172486173_parmname108341828162917"></a><a name="en-us_topic_0172486173_parmname108341828162917"></a><b>start_time</b></span>. The interval between <strong id="en-us_topic_0172486173_b1917973215256"><a name="en-us_topic_0172486173_b1917973215256"></a><a name="en-us_topic_0172486173_b1917973215256"></a>end_time</strong> and <strong id="en-us_topic_0172486173_b149161137152511"><a name="en-us_topic_0172486173_b149161137152511"></a><a name="en-us_topic_0172486173_b149161137152511"></a>start_time</strong> must be greater than or equal to 30 minutes.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p2633174117282"><a name="en-us_topic_0172486173_p2633174117282"></a><a name="en-us_topic_0172486173_p2633174117282"></a>End time of a resource plan. The value is in the same format as that of <span class="parmname" id="en-us_topic_0172486173_parmname108341828162917"><a name="en-us_topic_0172486173_parmname108341828162917"></a><a name="en-us_topic_0172486173_parmname108341828162917"></a><b>start_time</b></span>. The interval between <strong id="en-us_topic_0172486173_b1917973215256"><a name="en-us_topic_0172486173_b1917973215256"></a><a name="en-us_topic_0172486173_b1917973215256"></a>end_time</strong> and <strong id="en-us_topic_0172486173_b149161137152511"><a name="en-us_topic_0172486173_b149161137152511"></a><a name="en-us_topic_0172486173_b149161137152511"></a>start_time</strong> must be greater than or equal to 30 minutes.</p>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_row19532851132116"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_p206334415288"><a name="en-us_topic_0172486173_p206334415288"></a><a name="en-us_topic_0172486173_p206334415288"></a>min_capacity</p>
@@ -245,7 +245,7 @@ The API used for cluster creation and job execution can also be used to creation
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p37169268302"><a name="en-us_topic_0172486173_p37169268302"></a><a name="en-us_topic_0172486173_p37169268302"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p15716132603020"><a name="en-us_topic_0172486173_p15716132603020"></a><a name="en-us_topic_0172486173_p15716132603020"></a>Path of a custom automation script. Set this parameter to an OBS bucket path or a local VM path.</p>
-<a name="en-us_topic_0172486173_ul2716122616303"></a><a name="en-us_topic_0172486173_ul2716122616303"></a><ul id="en-us_topic_0172486173_ul2716122616303"><li>OBS bucket path: Enter a script path manually, for example, <strong id="en-us_topic_0172486173_b862319216300"><a name="en-us_topic_0172486173_b862319216300"></a><a name="en-us_topic_0172486173_b862319216300"></a>s3a://<em id="en-us_topic_0172486173_i17361161133015"><a name="en-us_topic_0172486173_i17361161133015"></a><a name="en-us_topic_0172486173_i17361161133015"></a>XXX</em>/scale.sh</strong>.</li><li>Local VM path: Enter a script path. The script path must start with a slash (/) and end with <strong id="en-us_topic_0172486173_b2635103117309"><a name="en-us_topic_0172486173_b2635103117309"></a><a name="en-us_topic_0172486173_b2635103117309"></a>.sh</strong>.</li></ul>
+<a name="en-us_topic_0172486173_ul2716122616303"></a><a name="en-us_topic_0172486173_ul2716122616303"></a><ul id="en-us_topic_0172486173_ul2716122616303"><li>OBS bucket path: Enter a script path manually, for example, <strong id="en-us_topic_0172486173_b0322910101"><a name="en-us_topic_0172486173_b0322910101"></a><a name="en-us_topic_0172486173_b0322910101"></a>s3a://</strong><em id="en-us_topic_0172486173_i449293102"><a name="en-us_topic_0172486173_i449293102"></a><a name="en-us_topic_0172486173_i449293102"></a>XXX</em><strong id="en-us_topic_0172486173_b1645290107"><a name="en-us_topic_0172486173_b1645290107"></a><a name="en-us_topic_0172486173_b1645290107"></a>/scale.sh</strong>.</li><li>Local VM path: Enter a script path. The script path must start with a slash (/) and end with <strong id="en-us_topic_0172486173_b2635103117309"><a name="en-us_topic_0172486173_b2635103117309"></a><a name="en-us_topic_0172486173_b2635103117309"></a>.sh</strong>.</li></ul>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_row25607102210"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_p361414413374"><a name="en-us_topic_0172486173_p361414413374"></a><a name="en-us_topic_0172486173_p361414413374"></a>parameters</p>
@@ -254,8 +254,8 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p146149414371"><a name="en-us_topic_0172486173_p146149414371"></a><a name="en-us_topic_0172486173_p146149414371"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p8614746374"><a name="en-us_topic_0172486173_p8614746374"></a><a name="en-us_topic_0172486173_p8614746374"></a>Parameters of a custom automation script</p>
-<a name="en-us_topic_0172486173_ul19405172713813"></a><a name="en-us_topic_0172486173_ul19405172713813"></a><ul id="en-us_topic_0172486173_ul19405172713813"><li>Multiple parameters are separated by space.</li><li>The following predefined system parameters can be transferred:<a name="en-us_topic_0172486173_ul740512275389"></a><a name="en-us_topic_0172486173_ul740512275389"></a><ul id="en-us_topic_0172486173_ul740512275389"><li>${mrs_scale_node_num}: Number of the nodes to be added or removed</li><li>${mrs_scale_type}: Scaling type. The value can be <strong id="en-us_topic_0172486173_b209806114324"><a name="en-us_topic_0172486173_b209806114324"></a><a name="en-us_topic_0172486173_b209806114324"></a>scale_out</strong> or <strong id="en-us_topic_0172486173_b16355132010329"><a name="en-us_topic_0172486173_b16355132010329"></a><a name="en-us_topic_0172486173_b16355132010329"></a>scale_in</strong>.</li><li>${mrs_scale_node_hostnames}: Host names of the nodes to be added or removed</li><li>${mrs_scale_node_ips}: IP addresses of the nodes to be added or removed</li><li>${mrs_scale_rule_name}: Name of the rule that triggers auto scaling</li></ul>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p8614746374"><a name="en-us_topic_0172486173_p8614746374"></a><a name="en-us_topic_0172486173_p8614746374"></a>Parameters of a custom automation script.</p>
+<a name="en-us_topic_0172486173_ul19405172713813"></a><a name="en-us_topic_0172486173_ul19405172713813"></a><ul id="en-us_topic_0172486173_ul19405172713813"><li>Multiple parameters are separated by space.</li><li>The following predefined system parameters can be transferred:<a name="en-us_topic_0172486173_ul740512275389"></a><a name="en-us_topic_0172486173_ul740512275389"></a><ul id="en-us_topic_0172486173_ul740512275389"><li><em id="en-us_topic_0172486173_i1775514120161"><a name="en-us_topic_0172486173_i1775514120161"></a><a name="en-us_topic_0172486173_i1775514120161"></a>${mrs_scale_node_num}</em>: Number of the nodes to be added or removed</li><li><em id="en-us_topic_0172486173_i11570546161617"><a name="en-us_topic_0172486173_i11570546161617"></a><a name="en-us_topic_0172486173_i11570546161617"></a>${mrs_scale_type}</em>: Scaling type. The value can be <strong id="en-us_topic_0172486173_b209806114324"><a name="en-us_topic_0172486173_b209806114324"></a><a name="en-us_topic_0172486173_b209806114324"></a>scale_out</strong> or <strong id="en-us_topic_0172486173_b16355132010329"><a name="en-us_topic_0172486173_b16355132010329"></a><a name="en-us_topic_0172486173_b16355132010329"></a>scale_in</strong>.</li><li><em id="en-us_topic_0172486173_i185932506163"><a name="en-us_topic_0172486173_i185932506163"></a><a name="en-us_topic_0172486173_i185932506163"></a>${mrs_scale_node_hostnames}</em>: Host names of the nodes to be added or removed</li><li><em id="en-us_topic_0172486173_i1173835416165"><a name="en-us_topic_0172486173_i1173835416165"></a><a name="en-us_topic_0172486173_i1173835416165"></a>${mrs_scale_node_ips}</em>: IP addresses of the nodes to be added or removed</li><li><em id="en-us_topic_0172486173_i2343185981616"><a name="en-us_topic_0172486173_i2343185981616"></a><a name="en-us_topic_0172486173_i2343185981616"></a>${mrs_scale_rule_name}</em>: Name of the rule that triggers auto scaling</li></ul>
 </li><li>Other user-defined parameters are used in the same way as those of common shell scripts. Parameters are separated by space.</li></ul>
 </td>
 </tr>
@@ -286,7 +286,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p5595438133717"><a name="en-us_topic_0172486173_p5595438133717"></a><a name="en-us_topic_0172486173_p5595438133717"></a>Time when a script is executed.</p>
 <p id="en-us_topic_0172486173_p175951038193717"><a name="en-us_topic_0172486173_p175951038193717"></a><a name="en-us_topic_0172486173_p175951038193717"></a>The following four options are supported:</p>
-<a name="en-us_topic_0172486173_ul959511385379"></a><a name="en-us_topic_0172486173_ul959511385379"></a><ul id="en-us_topic_0172486173_ul959511385379"><li>before_scale_out: before scale-out</li><li>before_scale_in: before scale-in</li><li>after_scale_out: after scale-out</li><li>after_scale_in: after scale-in</li></ul>
+<a name="en-us_topic_0172486173_ul959511385379"></a><a name="en-us_topic_0172486173_ul959511385379"></a><ul id="en-us_topic_0172486173_ul959511385379"><li><strong id="en-us_topic_0172486173_b1797820530815"><a name="en-us_topic_0172486173_b1797820530815"></a><a name="en-us_topic_0172486173_b1797820530815"></a>before_scale_out</strong>: before scale-out</li><li><strong id="en-us_topic_0172486173_b695615717811"><a name="en-us_topic_0172486173_b695615717811"></a><a name="en-us_topic_0172486173_b695615717811"></a>before_scale_in</strong>: before scale-in</li><li><strong id="en-us_topic_0172486173_b53821541396"><a name="en-us_topic_0172486173_b53821541396"></a><a name="en-us_topic_0172486173_b53821541396"></a>after_scale_out</strong>: after scale-out</li><li><strong id="en-us_topic_0172486173_b10866167091"><a name="en-us_topic_0172486173_b10866167091"></a><a name="en-us_topic_0172486173_b10866167091"></a>after_scale_in</strong>: after scale-in</li></ul>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_row173493683712"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_p1595838193720"><a name="en-us_topic_0172486173_p1595838193720"></a><a name="en-us_topic_0172486173_p1595838193720"></a>fail_action</p>
@@ -296,7 +296,7 @@ The API used for cluster creation and job execution can also be used to creation
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p159611387376"><a name="en-us_topic_0172486173_p159611387376"></a><a name="en-us_topic_0172486173_p159611387376"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_p959633833712"><a name="en-us_topic_0172486173_p959633833712"></a><a name="en-us_topic_0172486173_p959633833712"></a>Whether to continue to execute subsequent scripts and create a cluster after the custom automation script fails to be executed.</p>
-<a name="en-us_topic_0172486173_ul1859673813372"></a><a name="en-us_topic_0172486173_ul1859673813372"></a><ul id="en-us_topic_0172486173_ul1859673813372"><li>continue: Continue to execute subsequent scripts.</li><li>errorout: Stop the action.<div class="note" id="en-us_topic_0172486173_note1637813387373"><a name="en-us_topic_0172486173_note1637813387373"></a><a name="en-us_topic_0172486173_note1637813387373"></a><span class="notetitle"> NOTE: </span><div class="notebody"><a name="en-us_topic_0172486173_ul117517425369"></a><a name="en-us_topic_0172486173_ul117517425369"></a><ul id="en-us_topic_0172486173_ul117517425369"><li>You are advised to set this parameter to <strong id="en-us_topic_0172486173_b842352706114220"><a name="en-us_topic_0172486173_b842352706114220"></a><a name="en-us_topic_0172486173_b842352706114220"></a>continue</strong> in the commissioning phase so that the cluster can continue to be installed and started no matter whether the custom automation script is executed successfully.</li><li>The scale-in operation cannot be undone. Therefore <span class="parmname" id="en-us_topic_0172486173_parmname47251253810"><a name="en-us_topic_0172486173_parmname47251253810"></a><a name="en-us_topic_0172486173_parmname47251253810"></a><b>fail_action</b></span> must be set to <span class="parmvalue" id="en-us_topic_0172486173_parmvalue7529192612381"><a name="en-us_topic_0172486173_parmvalue7529192612381"></a><a name="en-us_topic_0172486173_parmvalue7529192612381"></a><b>continue</b></span> for the scripts that are executed after scale-in.</li></ul>
+<a name="en-us_topic_0172486173_ul1859673813372"></a><a name="en-us_topic_0172486173_ul1859673813372"></a><ul id="en-us_topic_0172486173_ul1859673813372"><li><strong id="en-us_topic_0172486173_b59971031880"><a name="en-us_topic_0172486173_b59971031880"></a><a name="en-us_topic_0172486173_b59971031880"></a>continue</strong>: Continue to execute subsequent scripts.</li><li><strong id="en-us_topic_0172486173_b148529362082"><a name="en-us_topic_0172486173_b148529362082"></a><a name="en-us_topic_0172486173_b148529362082"></a>errorout</strong>: Stop the action.<div class="note" id="en-us_topic_0172486173_note1637813387373"><a name="en-us_topic_0172486173_note1637813387373"></a><a name="en-us_topic_0172486173_note1637813387373"></a><span class="notetitle"> NOTE: </span><div class="notebody"><a name="en-us_topic_0172486173_ul117517425369"></a><a name="en-us_topic_0172486173_ul117517425369"></a><ul id="en-us_topic_0172486173_ul117517425369"><li>You are advised to set this parameter to <strong id="en-us_topic_0172486173_b842352706114220"><a name="en-us_topic_0172486173_b842352706114220"></a><a name="en-us_topic_0172486173_b842352706114220"></a>continue</strong> in the commissioning phase so that the cluster can continue to be installed and started no matter whether the custom automation script is executed successfully.</li><li>The scale-in operation cannot be undone. Therefore, <span class="parmname" id="en-us_topic_0172486173_parmname47251253810"><a name="en-us_topic_0172486173_parmname47251253810"></a><a name="en-us_topic_0172486173_parmname47251253810"></a><b>fail_action</b></span> must be set to <span class="parmvalue" id="en-us_topic_0172486173_parmvalue7529192612381"><a name="en-us_topic_0172486173_parmvalue7529192612381"></a><a name="en-us_topic_0172486173_parmvalue7529192612381"></a><b>continue</b></span> for the scripts that are executed after scale-in.</li></ul>
 </div></div>
 </li></ul>
 </td>
@@ -323,7 +323,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a79be49bbaf734f838a223ef00e505777"><a name="en-us_topic_0172486173_a79be49bbaf734f838a223ef00e505777"></a><a name="en-us_topic_0172486173_a79be49bbaf734f838a223ef00e505777"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_aba48112f6b6643379185e9024b158818"><a name="en-us_topic_0172486173_aba48112f6b6643379185e9024b158818"></a><a name="en-us_topic_0172486173_aba48112f6b6643379185e9024b158818"></a>Name of an auto scaling rule</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_aba48112f6b6643379185e9024b158818"><a name="en-us_topic_0172486173_aba48112f6b6643379185e9024b158818"></a><a name="en-us_topic_0172486173_aba48112f6b6643379185e9024b158818"></a>Name of an auto scaling rule.</p>
 <p id="en-us_topic_0172486173_ad2dfd75a61e449daba07a8aec95b70af"><a name="en-us_topic_0172486173_ad2dfd75a61e449daba07a8aec95b70af"></a><a name="en-us_topic_0172486173_ad2dfd75a61e449daba07a8aec95b70af"></a>It contains only 1 to 64 characters. Only letters, digits, hyphens (-), and underscores (_) are allowed.</p>
 <p id="en-us_topic_0172486173_a4fb8ccd95fd84f4e9167a742ea119278"><a name="en-us_topic_0172486173_a4fb8ccd95fd84f4e9167a742ea119278"></a><a name="en-us_topic_0172486173_a4fb8ccd95fd84f4e9167a742ea119278"></a>Rule names must be unique in a node group.</p>
 </td>
@@ -335,7 +335,7 @@ The API used for cluster creation and job execution can also be used to creation
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a5229ef45bcb04550a546ed9ef4541966"><a name="en-us_topic_0172486173_a5229ef45bcb04550a546ed9ef4541966"></a><a name="en-us_topic_0172486173_a5229ef45bcb04550a546ed9ef4541966"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a54e73e7a5fe84ea68e0c68c676c69078"><a name="en-us_topic_0172486173_a54e73e7a5fe84ea68e0c68c676c69078"></a><a name="en-us_topic_0172486173_a54e73e7a5fe84ea68e0c68c676c69078"></a>Description about an auto scaling rule.</p>
-<p id="en-us_topic_0172486173_a3913d07fc617486c800f3e34ebc28224"><a name="en-us_topic_0172486173_a3913d07fc617486c800f3e34ebc28224"></a><a name="en-us_topic_0172486173_a3913d07fc617486c800f3e34ebc28224"></a>It contains a maximum of 1024 characters.</p>
+<p id="en-us_topic_0172486173_a3913d07fc617486c800f3e34ebc28224"><a name="en-us_topic_0172486173_a3913d07fc617486c800f3e34ebc28224"></a><a name="en-us_topic_0172486173_a3913d07fc617486c800f3e34ebc28224"></a>It contains a maximum of 1,024 characters.</p>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_r63d765b129664dad957626f380819572"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_a44f544e08b0a41de95dabf9bf4e1434a"><a name="en-us_topic_0172486173_a44f544e08b0a41de95dabf9bf4e1434a"></a><a name="en-us_topic_0172486173_a44f544e08b0a41de95dabf9bf4e1434a"></a>adjustment_type</p>
@@ -345,7 +345,7 @@ The API used for cluster creation and job execution can also be used to creation
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a433b89c3fb244d7e954a41597d978cf8"><a name="en-us_topic_0172486173_a433b89c3fb244d7e954a41597d978cf8"></a><a name="en-us_topic_0172486173_a433b89c3fb244d7e954a41597d978cf8"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_afb3bb8888f944246b9b844cf271c4ab2"><a name="en-us_topic_0172486173_afb3bb8888f944246b9b844cf271c4ab2"></a><a name="en-us_topic_0172486173_afb3bb8888f944246b9b844cf271c4ab2"></a>Auto scaling rule adjustment type. The options are as follows:</p>
-<a name="en-us_topic_0172486173_u18ec9abfa0234393b376df8ff616d19b"></a><a name="en-us_topic_0172486173_u18ec9abfa0234393b376df8ff616d19b"></a><ul id="en-us_topic_0172486173_u18ec9abfa0234393b376df8ff616d19b"><li>scale_out: cluster scale-out</li><li>scale_in: cluster scale-in</li></ul>
+<a name="en-us_topic_0172486173_u18ec9abfa0234393b376df8ff616d19b"></a><a name="en-us_topic_0172486173_u18ec9abfa0234393b376df8ff616d19b"></a><ul id="en-us_topic_0172486173_u18ec9abfa0234393b376df8ff616d19b"><li><strong id="en-us_topic_0172486173_b183151315782"><a name="en-us_topic_0172486173_b183151315782"></a><a name="en-us_topic_0172486173_b183151315782"></a>scale_out</strong>: cluster scale-out</li><li><strong id="en-us_topic_0172486173_b658210174816"><a name="en-us_topic_0172486173_b658210174816"></a><a name="en-us_topic_0172486173_b658210174816"></a>scale_in</strong>: cluster scale-in</li></ul>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_r6f9ebcd76459417a908a73ec838efe7c"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_a8f20410dbaee433abb560ec4458140af"><a name="en-us_topic_0172486173_a8f20410dbaee433abb560ec4458140af"></a><a name="en-us_topic_0172486173_a8f20410dbaee433abb560ec4458140af"></a>cool_down_minutes</p>
@@ -355,7 +355,7 @@ The API used for cluster creation and job execution can also be used to creation
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a125498882f804fa99362663be962a9ec"><a name="en-us_topic_0172486173_a125498882f804fa99362663be962a9ec"></a><a name="en-us_topic_0172486173_a125498882f804fa99362663be962a9ec"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a962e8faec9684b4b9388ddaae5f20f25"><a name="en-us_topic_0172486173_a962e8faec9684b4b9388ddaae5f20f25"></a><a name="en-us_topic_0172486173_a962e8faec9684b4b9388ddaae5f20f25"></a>Cluster cooling time after an auto scaling rule is triggered, when no auto scaling operation is performed. The unit is minute.</p>
-<p id="en-us_topic_0172486173_a934200a982984f90a54b157715b28542"><a name="en-us_topic_0172486173_a934200a982984f90a54b157715b28542"></a><a name="en-us_topic_0172486173_a934200a982984f90a54b157715b28542"></a>Value range: 0 to 10080. One week is equal to 10,080 minutes.</p>
+<p id="en-us_topic_0172486173_a934200a982984f90a54b157715b28542"><a name="en-us_topic_0172486173_a934200a982984f90a54b157715b28542"></a><a name="en-us_topic_0172486173_a934200a982984f90a54b157715b28542"></a>Value range: 0 to 10,080. One week is equal to 10,080 minutes.</p>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_r83dc95f88c514f349fe399e2daec1acf"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_a1bf156eb290c4eacac485c8e69bb9b8a"><a name="en-us_topic_0172486173_a1bf156eb290c4eacac485c8e69bb9b8a"></a><a name="en-us_topic_0172486173_a1bf156eb290c4eacac485c8e69bb9b8a"></a>scaling_adjustment</p>
@@ -364,7 +364,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a8ed38e14158144d1a1feee5d0c6672f9"><a name="en-us_topic_0172486173_a8ed38e14158144d1a1feee5d0c6672f9"></a><a name="en-us_topic_0172486173_a8ed38e14158144d1a1feee5d0c6672f9"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_acf6914ca275e493ba883ebb8a607a1ad"><a name="en-us_topic_0172486173_acf6914ca275e493ba883ebb8a607a1ad"></a><a name="en-us_topic_0172486173_acf6914ca275e493ba883ebb8a607a1ad"></a>Number of nodes that can be adjusted once</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_acf6914ca275e493ba883ebb8a607a1ad"><a name="en-us_topic_0172486173_acf6914ca275e493ba883ebb8a607a1ad"></a><a name="en-us_topic_0172486173_acf6914ca275e493ba883ebb8a607a1ad"></a>Number of nodes that can be adjusted once.</p>
 <p id="en-us_topic_0172486173_a665de6492d5f41e183c5fdfa2a65629a"><a name="en-us_topic_0172486173_a665de6492d5f41e183c5fdfa2a65629a"></a><a name="en-us_topic_0172486173_a665de6492d5f41e183c5fdfa2a65629a"></a>Value range: 1 to 100</p>
 </td>
 </tr>
@@ -374,7 +374,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_afd9beb4a2ace493390bc25ced1fecf8d"><a name="en-us_topic_0172486173_afd9beb4a2ace493390bc25ced1fecf8d"></a><a name="en-us_topic_0172486173_afd9beb4a2ace493390bc25ced1fecf8d"></a>Trigger</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a2c60fdaa8e8b434d91a9aaf1e369eff6"><a name="en-us_topic_0172486173_a2c60fdaa8e8b434d91a9aaf1e369eff6"></a><a name="en-us_topic_0172486173_a2c60fdaa8e8b434d91a9aaf1e369eff6"></a>Condition for triggering a rule. For details, see <a href="creating-a-cluster-and-running-a-job.md#t03bd10dc0ec94a3babc71b2d5d57c3fe">Table 11</a>.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a2c60fdaa8e8b434d91a9aaf1e369eff6"><a name="en-us_topic_0172486173_a2c60fdaa8e8b434d91a9aaf1e369eff6"></a><a name="en-us_topic_0172486173_a2c60fdaa8e8b434d91a9aaf1e369eff6"></a>Condition for triggering a rule. For details, see <a href="creating-a-cluster-and-running-a-job.md#t03bd10dc0ec94a3babc71b2d5d57c3fe">Table 13</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -399,10 +399,10 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_af5d60c6023c64eb3af69213451e45a08"><a name="en-us_topic_0172486173_af5d60c6023c64eb3af69213451e45a08"></a><a name="en-us_topic_0172486173_af5d60c6023c64eb3af69213451e45a08"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a67c5bbe2340144a0ac4ae630da919fdb"><a name="en-us_topic_0172486173_a67c5bbe2340144a0ac4ae630da919fdb"></a><a name="en-us_topic_0172486173_a67c5bbe2340144a0ac4ae630da919fdb"></a>Metric name</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a67c5bbe2340144a0ac4ae630da919fdb"><a name="en-us_topic_0172486173_a67c5bbe2340144a0ac4ae630da919fdb"></a><a name="en-us_topic_0172486173_a67c5bbe2340144a0ac4ae630da919fdb"></a>Metric name.</p>
 <p id="en-us_topic_0172486173_ad6898742fd8c4b3d90f62a110092174a"><a name="en-us_topic_0172486173_ad6898742fd8c4b3d90f62a110092174a"></a><a name="en-us_topic_0172486173_ad6898742fd8c4b3d90f62a110092174a"></a>This triggering condition makes a judgment according to the value of the metric.</p>
 <p id="en-us_topic_0172486173_adb15d44ef9cd49719e1558f955af8fe0"><a name="en-us_topic_0172486173_adb15d44ef9cd49719e1558f955af8fe0"></a><a name="en-us_topic_0172486173_adb15d44ef9cd49719e1558f955af8fe0"></a>A metric name contains a maximum of 64 characters.</p>
-<p id="en-us_topic_0172486173_a249e5e0f422a474eb818f01e56c3c6e2"><a name="en-us_topic_0172486173_a249e5e0f422a474eb818f01e56c3c6e2"></a><a name="en-us_topic_0172486173_a249e5e0f422a474eb818f01e56c3c6e2"></a><a href="creating-a-cluster-and-running-a-job.md#t27de3279a99a48968dacb015c498d9cb">Table 12</a> lists the supported metric names.</p>
+<p id="en-us_topic_0172486173_a249e5e0f422a474eb818f01e56c3c6e2"><a name="en-us_topic_0172486173_a249e5e0f422a474eb818f01e56c3c6e2"></a><a name="en-us_topic_0172486173_a249e5e0f422a474eb818f01e56c3c6e2"></a><a href="creating-a-cluster-and-running-a-job.md#t27de3279a99a48968dacb015c498d9cb">Table 14</a> lists the supported metric names.</p>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_rdf8d159ee61f4397920756d6db18f225"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_aaefe5f406be947a9bc590420af9fa60a"><a name="en-us_topic_0172486173_aaefe5f406be947a9bc590420af9fa60a"></a><a name="en-us_topic_0172486173_aaefe5f406be947a9bc590420af9fa60a"></a>metric_value</p>
@@ -412,7 +412,7 @@ The API used for cluster creation and job execution can also be used to creation
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_ae5eed36b433c4a778931e35c51c255c0"><a name="en-us_topic_0172486173_ae5eed36b433c4a778931e35c51c255c0"></a><a name="en-us_topic_0172486173_ae5eed36b433c4a778931e35c51c255c0"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_af6f48d7468d64a0394a3a4213d2a2268"><a name="en-us_topic_0172486173_af6f48d7468d64a0394a3a4213d2a2268"></a><a name="en-us_topic_0172486173_af6f48d7468d64a0394a3a4213d2a2268"></a>Metric threshold to trigger a rule</p>
-<p id="en-us_topic_0172486173_a9cb6280b4c514776b95dd786fe3b71b9"><a name="en-us_topic_0172486173_a9cb6280b4c514776b95dd786fe3b71b9"></a><a name="en-us_topic_0172486173_a9cb6280b4c514776b95dd786fe3b71b9"></a>The parameter value must be an integer or number with two decimal places only. <a href="creating-a-cluster-and-running-a-job.md#t27de3279a99a48968dacb015c498d9cb">Table 12</a> provides values types and ranges corresponding to <strong id="en-us_topic_0172486173_b1161104445418"><a name="en-us_topic_0172486173_b1161104445418"></a><a name="en-us_topic_0172486173_b1161104445418"></a>metric_name</strong>.</p>
+<p id="en-us_topic_0172486173_a9cb6280b4c514776b95dd786fe3b71b9"><a name="en-us_topic_0172486173_a9cb6280b4c514776b95dd786fe3b71b9"></a><a name="en-us_topic_0172486173_a9cb6280b4c514776b95dd786fe3b71b9"></a>The parameter value must be an integer or number with two decimal places only. <a href="creating-a-cluster-and-running-a-job.md#t27de3279a99a48968dacb015c498d9cb">Table 14</a> provides value types and ranges corresponding to <strong id="en-us_topic_0172486173_b1161104445418"><a name="en-us_topic_0172486173_b1161104445418"></a><a name="en-us_topic_0172486173_b1161104445418"></a>metric_name</strong>.</p>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_re4671e894e4448eb87e9d7ff852aecb5"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_af47cf271b63941ac96944f24e87910b2"><a name="en-us_topic_0172486173_af47cf271b63941ac96944f24e87910b2"></a><a name="en-us_topic_0172486173_af47cf271b63941ac96944f24e87910b2"></a>comparison_operator</p>
@@ -422,7 +422,7 @@ The API used for cluster creation and job execution can also be used to creation
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a933e80262e8c483dbfbf38aa2ec35333"><a name="en-us_topic_0172486173_a933e80262e8c483dbfbf38aa2ec35333"></a><a name="en-us_topic_0172486173_a933e80262e8c483dbfbf38aa2ec35333"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_adf4bb9d515db4212bee56e7a4389a892"><a name="en-us_topic_0172486173_adf4bb9d515db4212bee56e7a4389a892"></a><a name="en-us_topic_0172486173_adf4bb9d515db4212bee56e7a4389a892"></a>Metric judgment logic operator. The options are as follows:</p>
-<a name="en-us_topic_0172486173_u7169b3049e9342e185a5074148528db2"></a><a name="en-us_topic_0172486173_u7169b3049e9342e185a5074148528db2"></a><ul id="en-us_topic_0172486173_u7169b3049e9342e185a5074148528db2"><li>LT: less than</li><li>GT: greater than</li><li>LTOE: less than or equal to</li><li>GTOE: greater than or equal to</li></ul>
+<a name="en-us_topic_0172486173_u7169b3049e9342e185a5074148528db2"></a><a name="en-us_topic_0172486173_u7169b3049e9342e185a5074148528db2"></a><ul id="en-us_topic_0172486173_u7169b3049e9342e185a5074148528db2"><li><strong id="en-us_topic_0172486173_b2621194719713"><a name="en-us_topic_0172486173_b2621194719713"></a><a name="en-us_topic_0172486173_b2621194719713"></a>LT</strong>: less than</li><li><strong id="en-us_topic_0172486173_b4198541711"><a name="en-us_topic_0172486173_b4198541711"></a><a name="en-us_topic_0172486173_b4198541711"></a>GT</strong>: greater than</li><li><strong id="en-us_topic_0172486173_b11432135816714"><a name="en-us_topic_0172486173_b11432135816714"></a><a name="en-us_topic_0172486173_b11432135816714"></a>LTOE</strong>: less than or equal to</li><li><strong id="en-us_topic_0172486173_b4952162287"><a name="en-us_topic_0172486173_b4952162287"></a><a name="en-us_topic_0172486173_b4952162287"></a>GTOE</strong>: greater than or equal to</li></ul>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_rf50d0c4b959f434f956a9cd587368b68"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_a03c9f551658b4130989f42292477ab3a"><a name="en-us_topic_0172486173_a03c9f551658b4130989f42292477ab3a"></a><a name="en-us_topic_0172486173_a03c9f551658b4130989f42292477ab3a"></a>evaluation_periods</p>
@@ -457,7 +457,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15.22847715228477%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a335961e130ae43bbad38525916ff3c50"><a name="en-us_topic_0172486173_a335961e130ae43bbad38525916ff3c50"></a><a name="en-us_topic_0172486173_a335961e130ae43bbad38525916ff3c50"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="44.73552644735527%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a6798fd17f81446d7bc23b65c206e62df"><a name="en-us_topic_0172486173_a6798fd17f81446d7bc23b65c206e62df"></a><a name="en-us_topic_0172486173_a6798fd17f81446d7bc23b65c206e62df"></a>Number of available Storm slots</p>
+<td class="cellrowborder" valign="top" width="44.73552644735527%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_a6798fd17f81446d7bc23b65c206e62df"><a name="en-us_topic_0172486173_a6798fd17f81446d7bc23b65c206e62df"></a><a name="en-us_topic_0172486173_a6798fd17f81446d7bc23b65c206e62df"></a>Number of available Storm slots.</p>
 <p id="en-us_topic_0172486173_af8a8f569acf143b1b0641749d9a8958c"><a name="en-us_topic_0172486173_af8a8f569acf143b1b0641749d9a8958c"></a><a name="en-us_topic_0172486173_af8a8f569acf143b1b0641749d9a8958c"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -473,7 +473,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_abe031b1f053a4e3ead22c147dcafa3aa"><a name="en-us_topic_0172486173_abe031b1f053a4e3ead22c147dcafa3aa"></a><a name="en-us_topic_0172486173_abe031b1f053a4e3ead22c147dcafa3aa"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a277ae72eb6754de2bf11608cd9e6e12e"><a name="en-us_topic_0172486173_a277ae72eb6754de2bf11608cd9e6e12e"></a><a name="en-us_topic_0172486173_a277ae72eb6754de2bf11608cd9e6e12e"></a>Number of the used Storm slots</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a277ae72eb6754de2bf11608cd9e6e12e"><a name="en-us_topic_0172486173_a277ae72eb6754de2bf11608cd9e6e12e"></a><a name="en-us_topic_0172486173_a277ae72eb6754de2bf11608cd9e6e12e"></a>Number of the used Storm slots.</p>
 <p id="en-us_topic_0172486173_ae765f078f7354dacb24c79349c9a5e6c"><a name="en-us_topic_0172486173_ae765f078f7354dacb24c79349c9a5e6c"></a><a name="en-us_topic_0172486173_ae765f078f7354dacb24c79349c9a5e6c"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -481,7 +481,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_a880db12e66534c39810fd1d0bd16093a"><a name="en-us_topic_0172486173_a880db12e66534c39810fd1d0bd16093a"></a><a name="en-us_topic_0172486173_a880db12e66534c39810fd1d0bd16093a"></a>Percentage</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_ad49e3d813f2d4239a469338f348c3077"><a name="en-us_topic_0172486173_ad49e3d813f2d4239a469338f348c3077"></a><a name="en-us_topic_0172486173_ad49e3d813f2d4239a469338f348c3077"></a>Percentage of the used Storm slots, that is, the proportion of the used slots to total slots</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_ad49e3d813f2d4239a469338f348c3077"><a name="en-us_topic_0172486173_ad49e3d813f2d4239a469338f348c3077"></a><a name="en-us_topic_0172486173_ad49e3d813f2d4239a469338f348c3077"></a>Percentage of the used Storm slots, that is, the proportion of the used slots to total slots.</p>
 <p id="en-us_topic_0172486173_ada4c81170b0d4b93b744a65a698d5174"><a name="en-us_topic_0172486173_ada4c81170b0d4b93b744a65a698d5174"></a><a name="en-us_topic_0172486173_ada4c81170b0d4b93b744a65a698d5174"></a>Value range: 0 to 100</p>
 </td>
 </tr>
@@ -489,7 +489,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_p1950845719217"><a name="en-us_topic_0172486173_p1950845719217"></a><a name="en-us_topic_0172486173_p1950845719217"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p165082571219"><a name="en-us_topic_0172486173_p165082571219"></a><a name="en-us_topic_0172486173_p165082571219"></a>Average memory usage of the Supervisor process of Storm</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p165082571219"><a name="en-us_topic_0172486173_p165082571219"></a><a name="en-us_topic_0172486173_p165082571219"></a>Average memory usage of the Supervisor process of Storm.</p>
 <p id="en-us_topic_0172486173_p165194141793"><a name="en-us_topic_0172486173_p165194141793"></a><a name="en-us_topic_0172486173_p165194141793"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -497,7 +497,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_p6821801732"><a name="en-us_topic_0172486173_p6821801732"></a><a name="en-us_topic_0172486173_p6821801732"></a>Percentage</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p88213018314"><a name="en-us_topic_0172486173_p88213018314"></a><a name="en-us_topic_0172486173_p88213018314"></a>Average percentage of the used memory of the Supervisor process of Storm to the total memory of the system</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p88213018314"><a name="en-us_topic_0172486173_p88213018314"></a><a name="en-us_topic_0172486173_p88213018314"></a>Average percentage of the used memory of the Supervisor process of Storm to the total memory of the system.</p>
 <p id="en-us_topic_0172486173_p3227151918108"><a name="en-us_topic_0172486173_p3227151918108"></a><a name="en-us_topic_0172486173_p3227151918108"></a>Value range: 0 to 100</p>
 </td>
 </tr>
@@ -505,8 +505,8 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_p1494842533"><a name="en-us_topic_0172486173_p1494842533"></a><a name="en-us_topic_0172486173_p1494842533"></a>Percentage</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p1948121837"><a name="en-us_topic_0172486173_p1948121837"></a><a name="en-us_topic_0172486173_p1948121837"></a>Average percentage of the used CPUs of the Supervisor process of Storm to the total CPUs</p>
-<p id="en-us_topic_0172486173_p1690164451113"><a name="en-us_topic_0172486173_p1690164451113"></a><a name="en-us_topic_0172486173_p1690164451113"></a>Value range: 0 to 6000</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_p1948121837"><a name="en-us_topic_0172486173_p1948121837"></a><a name="en-us_topic_0172486173_p1948121837"></a>Average percentage of the used CPUs of the Supervisor process of Storm to the total CPUs.</p>
+<p id="en-us_topic_0172486173_p1690164451113"><a name="en-us_topic_0172486173_p1690164451113"></a><a name="en-us_topic_0172486173_p1690164451113"></a>Value range: 0 to 6,000</p>
 </td>
 </tr>
 <tr id="en-us_topic_0172486173_ra430378d169b44c29d0139187c0f4a11"><td class="cellrowborder" rowspan="14" valign="top" width="15.598440155984402%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0172486173_af2c3361bef3e4acda820a0b5349dab94"><a name="en-us_topic_0172486173_af2c3361bef3e4acda820a0b5349dab94"></a><a name="en-us_topic_0172486173_af2c3361bef3e4acda820a0b5349dab94"></a>Analysis cluster</p>
@@ -515,7 +515,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" width="15.22847715228477%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a49aea79e2e884b39906752aeb50f6a38"><a name="en-us_topic_0172486173_a49aea79e2e884b39906752aeb50f6a38"></a><a name="en-us_topic_0172486173_a49aea79e2e884b39906752aeb50f6a38"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="44.73552644735527%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_ad5b596886c494b288346f643daa764e9"><a name="en-us_topic_0172486173_ad5b596886c494b288346f643daa764e9"></a><a name="en-us_topic_0172486173_ad5b596886c494b288346f643daa764e9"></a>Number of pending tasks on YARN</p>
+<td class="cellrowborder" valign="top" width="44.73552644735527%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0172486173_ad5b596886c494b288346f643daa764e9"><a name="en-us_topic_0172486173_ad5b596886c494b288346f643daa764e9"></a><a name="en-us_topic_0172486173_ad5b596886c494b288346f643daa764e9"></a>Number of pending tasks on Yarn.</p>
 <p id="en-us_topic_0172486173_a35def1222c304e88a59b86583ce0130d"><a name="en-us_topic_0172486173_a35def1222c304e88a59b86583ce0130d"></a><a name="en-us_topic_0172486173_a35def1222c304e88a59b86583ce0130d"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -523,7 +523,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_a8867793be2584544838efdc864b1b199"><a name="en-us_topic_0172486173_a8867793be2584544838efdc864b1b199"></a><a name="en-us_topic_0172486173_a8867793be2584544838efdc864b1b199"></a>Ratio</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a16e41ae39c3542cea4823cc61c96a5d3"><a name="en-us_topic_0172486173_a16e41ae39c3542cea4823cc61c96a5d3"></a><a name="en-us_topic_0172486173_a16e41ae39c3542cea4823cc61c96a5d3"></a>Ratio of pending tasks on YARN, that is, the ratio of pending tasks to running tasks on YARN</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a16e41ae39c3542cea4823cc61c96a5d3"><a name="en-us_topic_0172486173_a16e41ae39c3542cea4823cc61c96a5d3"></a><a name="en-us_topic_0172486173_a16e41ae39c3542cea4823cc61c96a5d3"></a>Ratio of pending tasks on Yarn, that is, the ratio of pending tasks to running tasks on Yarn.</p>
 <p id="en-us_topic_0172486173_a2d50ce28b3f445d49825f72dd917624d"><a name="en-us_topic_0172486173_a2d50ce28b3f445d49825f72dd917624d"></a><a name="en-us_topic_0172486173_a2d50ce28b3f445d49825f72dd917624d"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -531,7 +531,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_a985a37b47e8541daa74672ec40190b2d"><a name="en-us_topic_0172486173_a985a37b47e8541daa74672ec40190b2d"></a><a name="en-us_topic_0172486173_a985a37b47e8541daa74672ec40190b2d"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_ab56444e8f8054590a8eb9776184ee285"><a name="en-us_topic_0172486173_ab56444e8f8054590a8eb9776184ee285"></a><a name="en-us_topic_0172486173_ab56444e8f8054590a8eb9776184ee285"></a>Number of running tasks on YARN</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_ab56444e8f8054590a8eb9776184ee285"><a name="en-us_topic_0172486173_ab56444e8f8054590a8eb9776184ee285"></a><a name="en-us_topic_0172486173_ab56444e8f8054590a8eb9776184ee285"></a>Number of running tasks on Yarn.</p>
 <p id="en-us_topic_0172486173_a6bb7fc15c9cc497b9befea371482ee14"><a name="en-us_topic_0172486173_a6bb7fc15c9cc497b9befea371482ee14"></a><a name="en-us_topic_0172486173_a6bb7fc15c9cc497b9befea371482ee14"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -539,7 +539,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_a4582c276628b40d69800e7c2f0f3e496"><a name="en-us_topic_0172486173_a4582c276628b40d69800e7c2f0f3e496"></a><a name="en-us_topic_0172486173_a4582c276628b40d69800e7c2f0f3e496"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a8dd055b550404e3586a2d008b49cb4aa"><a name="en-us_topic_0172486173_a8dd055b550404e3586a2d008b49cb4aa"></a><a name="en-us_topic_0172486173_a8dd055b550404e3586a2d008b49cb4aa"></a>Number of containers allocated to YARN </p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a8dd055b550404e3586a2d008b49cb4aa"><a name="en-us_topic_0172486173_a8dd055b550404e3586a2d008b49cb4aa"></a><a name="en-us_topic_0172486173_a8dd055b550404e3586a2d008b49cb4aa"></a>Number of containers allocated to Yarn.</p>
 <p id="en-us_topic_0172486173_a0af753d126374689b243d324b8b62643"><a name="en-us_topic_0172486173_a0af753d126374689b243d324b8b62643"></a><a name="en-us_topic_0172486173_a0af753d126374689b243d324b8b62643"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -547,7 +547,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_a9a4b0bf584494168ad484b62945df5ab"><a name="en-us_topic_0172486173_a9a4b0bf584494168ad484b62945df5ab"></a><a name="en-us_topic_0172486173_a9a4b0bf584494168ad484b62945df5ab"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_abd01e06bb70544e38882c07fdf1e5fbe"><a name="en-us_topic_0172486173_abd01e06bb70544e38882c07fdf1e5fbe"></a><a name="en-us_topic_0172486173_abd01e06bb70544e38882c07fdf1e5fbe"></a>Number of pending containers on YARN</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_abd01e06bb70544e38882c07fdf1e5fbe"><a name="en-us_topic_0172486173_abd01e06bb70544e38882c07fdf1e5fbe"></a><a name="en-us_topic_0172486173_abd01e06bb70544e38882c07fdf1e5fbe"></a>Number of pending containers on Yarn.</p>
 <p id="en-us_topic_0172486173_a93d072fada4a4322bb38029de44e1ea2"><a name="en-us_topic_0172486173_a93d072fada4a4322bb38029de44e1ea2"></a><a name="en-us_topic_0172486173_a93d072fada4a4322bb38029de44e1ea2"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -555,7 +555,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_a2f421b01c38b4dacab515d5013a94ec6"><a name="en-us_topic_0172486173_a2f421b01c38b4dacab515d5013a94ec6"></a><a name="en-us_topic_0172486173_a2f421b01c38b4dacab515d5013a94ec6"></a>Ratio</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a3ff2b486a44e4a079f2893a62ebe1057"><a name="en-us_topic_0172486173_a3ff2b486a44e4a079f2893a62ebe1057"></a><a name="en-us_topic_0172486173_a3ff2b486a44e4a079f2893a62ebe1057"></a>Ratio of pending containers on YARN, that is, the ratio of pending containers to running containers on YARN.</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a3ff2b486a44e4a079f2893a62ebe1057"><a name="en-us_topic_0172486173_a3ff2b486a44e4a079f2893a62ebe1057"></a><a name="en-us_topic_0172486173_a3ff2b486a44e4a079f2893a62ebe1057"></a>Ratio of pending containers on Yarn, that is, the ratio of pending containers to running containers on Yarn.</p>
 <p id="en-us_topic_0172486173_afbecb57893244882aa592c19c2c6d4ca"><a name="en-us_topic_0172486173_afbecb57893244882aa592c19c2c6d4ca"></a><a name="en-us_topic_0172486173_afbecb57893244882aa592c19c2c6d4ca"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -563,7 +563,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_ae9db170af0a74db097a4118d3c6acbd5"><a name="en-us_topic_0172486173_ae9db170af0a74db097a4118d3c6acbd5"></a><a name="en-us_topic_0172486173_ae9db170af0a74db097a4118d3c6acbd5"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a83a9e1639ef541398ad1326edfbe5652"><a name="en-us_topic_0172486173_a83a9e1639ef541398ad1326edfbe5652"></a><a name="en-us_topic_0172486173_a83a9e1639ef541398ad1326edfbe5652"></a>Number of virtual CPUs (vCPUs) allocated to YARN</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a83a9e1639ef541398ad1326edfbe5652"><a name="en-us_topic_0172486173_a83a9e1639ef541398ad1326edfbe5652"></a><a name="en-us_topic_0172486173_a83a9e1639ef541398ad1326edfbe5652"></a>Number of virtual CPUs (vCPUs) allocated to Yarn</p>
 <p id="en-us_topic_0172486173_a647834b124bd4911a4e811ad0d5fab4e"><a name="en-us_topic_0172486173_a647834b124bd4911a4e811ad0d5fab4e"></a><a name="en-us_topic_0172486173_a647834b124bd4911a4e811ad0d5fab4e"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -571,7 +571,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_a1879208a01884bc3bd21a4d2c696aad8"><a name="en-us_topic_0172486173_a1879208a01884bc3bd21a4d2c696aad8"></a><a name="en-us_topic_0172486173_a1879208a01884bc3bd21a4d2c696aad8"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a0ae5d086156342deba2460f41206c148"><a name="en-us_topic_0172486173_a0ae5d086156342deba2460f41206c148"></a><a name="en-us_topic_0172486173_a0ae5d086156342deba2460f41206c148"></a>Number of available vCPUs on YARN</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a0ae5d086156342deba2460f41206c148"><a name="en-us_topic_0172486173_a0ae5d086156342deba2460f41206c148"></a><a name="en-us_topic_0172486173_a0ae5d086156342deba2460f41206c148"></a>Number of available vCPUs on Yarn.</p>
 <p id="en-us_topic_0172486173_aee8087bc3ad8436fa0f8ef040ba673ab"><a name="en-us_topic_0172486173_aee8087bc3ad8436fa0f8ef040ba673ab"></a><a name="en-us_topic_0172486173_aee8087bc3ad8436fa0f8ef040ba673ab"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -579,7 +579,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_a4ba6a334b5624002aea5c16ec2bef623"><a name="en-us_topic_0172486173_a4ba6a334b5624002aea5c16ec2bef623"></a><a name="en-us_topic_0172486173_a4ba6a334b5624002aea5c16ec2bef623"></a>Percentage</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a7f11c0314e0d4bcba94eaf62b670b6f1"><a name="en-us_topic_0172486173_a7f11c0314e0d4bcba94eaf62b670b6f1"></a><a name="en-us_topic_0172486173_a7f11c0314e0d4bcba94eaf62b670b6f1"></a>Percentage of available vCPUs on YARN, that is, the proportion of available vCPUs to total vCPUs</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a7f11c0314e0d4bcba94eaf62b670b6f1"><a name="en-us_topic_0172486173_a7f11c0314e0d4bcba94eaf62b670b6f1"></a><a name="en-us_topic_0172486173_a7f11c0314e0d4bcba94eaf62b670b6f1"></a>Percentage of available vCPUs on Yarn, that is, the proportion of available vCPUs to total vCPUs.</p>
 <p id="en-us_topic_0172486173_a50104756cbae4a11afe22dfe9b28fd26"><a name="en-us_topic_0172486173_a50104756cbae4a11afe22dfe9b28fd26"></a><a name="en-us_topic_0172486173_a50104756cbae4a11afe22dfe9b28fd26"></a>Value range: 0 to 100</p>
 </td>
 </tr>
@@ -588,7 +588,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_a182e236f3a6547c1b0c9ddeedc1cb812"><a name="en-us_topic_0172486173_a182e236f3a6547c1b0c9ddeedc1cb812"></a><a name="en-us_topic_0172486173_a182e236f3a6547c1b0c9ddeedc1cb812"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a091982b0354948558a83a2972fc10d78"><a name="en-us_topic_0172486173_a091982b0354948558a83a2972fc10d78"></a><a name="en-us_topic_0172486173_a091982b0354948558a83a2972fc10d78"></a>Number of pending vCPUs on YARN</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a091982b0354948558a83a2972fc10d78"><a name="en-us_topic_0172486173_a091982b0354948558a83a2972fc10d78"></a><a name="en-us_topic_0172486173_a091982b0354948558a83a2972fc10d78"></a>Number of pending vCPUs on Yarn.</p>
 <p id="en-us_topic_0172486173_a28c518ff6e6f4720a9f248b1785b1a2b"><a name="en-us_topic_0172486173_a28c518ff6e6f4720a9f248b1785b1a2b"></a><a name="en-us_topic_0172486173_a28c518ff6e6f4720a9f248b1785b1a2b"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -596,7 +596,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_ab2771fecf43a4a048713d458958feac6"><a name="en-us_topic_0172486173_ab2771fecf43a4a048713d458958feac6"></a><a name="en-us_topic_0172486173_ab2771fecf43a4a048713d458958feac6"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_ab22cfcbebf544c61b8dc9284e58cf92a"><a name="en-us_topic_0172486173_ab22cfcbebf544c61b8dc9284e58cf92a"></a><a name="en-us_topic_0172486173_ab22cfcbebf544c61b8dc9284e58cf92a"></a>Memory allocated to YARN. The unit is MB.</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_ab22cfcbebf544c61b8dc9284e58cf92a"><a name="en-us_topic_0172486173_ab22cfcbebf544c61b8dc9284e58cf92a"></a><a name="en-us_topic_0172486173_ab22cfcbebf544c61b8dc9284e58cf92a"></a>Memory allocated to Yarn. The unit is MB.</p>
 <p id="en-us_topic_0172486173_a482cb09ec7f146e997111e48c2165fad"><a name="en-us_topic_0172486173_a482cb09ec7f146e997111e48c2165fad"></a><a name="en-us_topic_0172486173_a482cb09ec7f146e997111e48c2165fad"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -604,7 +604,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_ab709decebd9e4b69a20482fd11472034"><a name="en-us_topic_0172486173_ab709decebd9e4b69a20482fd11472034"></a><a name="en-us_topic_0172486173_ab709decebd9e4b69a20482fd11472034"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a561342c4dfc44654a5ea5ebfcb97c989"><a name="en-us_topic_0172486173_a561342c4dfc44654a5ea5ebfcb97c989"></a><a name="en-us_topic_0172486173_a561342c4dfc44654a5ea5ebfcb97c989"></a>Available memory on YARN. The unit is MB.</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a561342c4dfc44654a5ea5ebfcb97c989"><a name="en-us_topic_0172486173_a561342c4dfc44654a5ea5ebfcb97c989"></a><a name="en-us_topic_0172486173_a561342c4dfc44654a5ea5ebfcb97c989"></a>Available memory on Yarn. The unit is MB.</p>
 <p id="en-us_topic_0172486173_abfa4f9cfe2094a23b33bdd2f66070f57"><a name="en-us_topic_0172486173_abfa4f9cfe2094a23b33bdd2f66070f57"></a><a name="en-us_topic_0172486173_abfa4f9cfe2094a23b33bdd2f66070f57"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
@@ -612,7 +612,7 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_a67ac734ecc7b4b018a960953697740ed"><a name="en-us_topic_0172486173_a67ac734ecc7b4b018a960953697740ed"></a><a name="en-us_topic_0172486173_a67ac734ecc7b4b018a960953697740ed"></a>Percentage</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_ac111dffe2233485382eab7979f3b65b3"><a name="en-us_topic_0172486173_ac111dffe2233485382eab7979f3b65b3"></a><a name="en-us_topic_0172486173_ac111dffe2233485382eab7979f3b65b3"></a>Percentage of available memory on YARN, that is, the proportion of available memory to total memory on YARN</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_ac111dffe2233485382eab7979f3b65b3"><a name="en-us_topic_0172486173_ac111dffe2233485382eab7979f3b65b3"></a><a name="en-us_topic_0172486173_ac111dffe2233485382eab7979f3b65b3"></a>Percentage of available memory on Yarn, that is, the proportion of available memory to total memory on Yarn.</p>
 <p id="en-us_topic_0172486173_ae0f790dfccb9435484818f104234f1ea"><a name="en-us_topic_0172486173_ae0f790dfccb9435484818f104234f1ea"></a><a name="en-us_topic_0172486173_ae0f790dfccb9435484818f104234f1ea"></a>Value range: 0 to 100</p>
 </td>
 </tr>
@@ -620,15 +620,15 @@ The API used for cluster creation and job execution can also be used to creation
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0172486173_a462b3630c14b4fdcb4fbeabe4d5767cb"><a name="en-us_topic_0172486173_a462b3630c14b4fdcb4fbeabe4d5767cb"></a><a name="en-us_topic_0172486173_a462b3630c14b4fdcb4fbeabe4d5767cb"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a4a7656ef0e7d41e994bb809330d24e1f"><a name="en-us_topic_0172486173_a4a7656ef0e7d41e994bb809330d24e1f"></a><a name="en-us_topic_0172486173_a4a7656ef0e7d41e994bb809330d24e1f"></a>Pending memory on YARN</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0172486173_a4a7656ef0e7d41e994bb809330d24e1f"><a name="en-us_topic_0172486173_a4a7656ef0e7d41e994bb809330d24e1f"></a><a name="en-us_topic_0172486173_a4a7656ef0e7d41e994bb809330d24e1f"></a>Pending memory on Yarn.</p>
 <p id="en-us_topic_0172486173_a5a450cbc34414ab599f331078b5f7d88"><a name="en-us_topic_0172486173_a5a450cbc34414ab599f331078b5f7d88"></a><a name="en-us_topic_0172486173_a5a450cbc34414ab599f331078b5f7d88"></a>Value range: 0 to 2147483646</p>
 </td>
 </tr>
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->When the value type is percentage or ratio in  [Table 12](creating-a-cluster-and-running-a-job.md#t27de3279a99a48968dacb015c498d9cb), the valid value can be accurate to percentile. The percentage metric value is a decimal value with a percent sign \(%\) removed. For example, 16.80 represents 16.80%.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>When the value type is percentage or ratio in  [Table 14](creating-a-cluster-and-running-a-job.md#t27de3279a99a48968dacb015c498d9cb), the valid value can be accurate to percentile. The percentage metric value is a decimal value with a percent sign \(%\) removed. For example, 16.80 represents 16.80%.
 
 ## Response<a name="section38599577193858"></a>
 
@@ -639,7 +639,7 @@ The API used for cluster creation and job execution can also be used to creation
 </th>
 <th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.2"><p id="p34804503114112"><a name="p34804503114112"></a><a name="p34804503114112"></a><strong id="b12817153744911"><a name="b12817153744911"></a><a name="b12817153744911"></a>Type</strong></p>
 </th>
-<th class="cellrowborder" valign="top" width="50%" id="mcps1.2.4.1.3"><p id="p592484114112"><a name="p592484114112"></a><a name="p592484114112"></a><strong id="b221992140"><a name="b221992140"></a><a name="b221992140"></a>Description</strong></p>
+<th class="cellrowborder" valign="top" width="50%" id="mcps1.2.4.1.3"><p id="p592484114112"><a name="p592484114112"></a><a name="p592484114112"></a><strong id="b688706156"><a name="b688706156"></a><a name="b688706156"></a>Description</strong></p>
 </th>
 </tr>
 </thead>
@@ -731,8 +731,8 @@ The API used for cluster creation and job execution can also be used to creation
     }
     ```
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >A new auto scaling rule will overwrite the auto scaling rule saved in the original database. If you want to modify the original rule, query the original rule first, modify the rule, and submit a modification task. For details, see  [Querying Cluster Details](querying-cluster-details.md).  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >A new auto scaling rule will overwrite the auto scaling rule saved in the original database. If you want to modify the original rule, query the original rule first, modify the rule, and submit a modification task. For details, see  [Querying Cluster Details](querying-cluster-details.md).
 
 -   Example response
 

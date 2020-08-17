@@ -45,7 +45,7 @@ This API is used to query details about a specified cluster. This API is incompa
 
 **Request parameters**
 
-None
+None.
 
 ## Response<a name="s31ca7c3d28464888b7f77d3a2da053d3"></a>
 
@@ -99,7 +99,7 @@ None
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a4927886d6676430a8779b7c274df2428"><a name="a4927886d6676430a8779b7c274df2428"></a><a name="a4927886d6676430a8779b7c274df2428"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><div class="p" id="a2eaba0f58bd9429aadfa792a1916d377"><a name="a2eaba0f58bd9429aadfa792a1916d377"></a><a name="a2eaba0f58bd9429aadfa792a1916d377"></a>Cluster status. Valid values include:<a name="u1ed2f3245f86457aa9c63b6da1cc146a"></a><a name="u1ed2f3245f86457aa9c63b6da1cc146a"></a><ul id="u1ed2f3245f86457aa9c63b6da1cc146a"><li>starting: The cluster is being started.</li><li>running: The cluster is running.</li><li>terminated: The cluster has been terminated.</li><li>failed: The cluster fails.</li><li>abnormal: The cluster is abnormal.</li><li>terminating: The cluster is being terminated.</li><li>frozen: The cluster has been frozen.</li><li>scaling-out: The cluster is being scaled out.</li><li>scaling-in: The cluster is being scaled in.</li></ul>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><div class="p" id="a2eaba0f58bd9429aadfa792a1916d377"><a name="a2eaba0f58bd9429aadfa792a1916d377"></a><a name="a2eaba0f58bd9429aadfa792a1916d377"></a>Cluster status. Valid values include:<a name="u1ed2f3245f86457aa9c63b6da1cc146a"></a><a name="u1ed2f3245f86457aa9c63b6da1cc146a"></a><ul id="u1ed2f3245f86457aa9c63b6da1cc146a"><li><strong id="b12881132018155"><a name="b12881132018155"></a><a name="b12881132018155"></a>starting</strong>: The cluster is being started.</li><li><strong id="b12419152341516"><a name="b12419152341516"></a><a name="b12419152341516"></a>running</strong>: The cluster is running.</li><li><strong id="b1317972751514"><a name="b1317972751514"></a><a name="b1317972751514"></a>terminated</strong>: The cluster has been terminated.</li><li><strong id="b1029515301157"><a name="b1029515301157"></a><a name="b1029515301157"></a>failed</strong>: The cluster fails.</li><li><strong id="b1235534121514"><a name="b1235534121514"></a><a name="b1235534121514"></a>abnormal</strong>: The cluster is abnormal.</li><li><strong id="b10329143719158"><a name="b10329143719158"></a><a name="b10329143719158"></a>terminating</strong>: The cluster is being terminated.</li><li><strong id="b1168619464153"><a name="b1168619464153"></a><a name="b1168619464153"></a>frozen</strong>: The cluster has been frozen.</li><li><strong id="b24465071516"><a name="b24465071516"></a><a name="b24465071516"></a>scaling-out</strong>: The cluster is being scaled out.</li><li><strong id="b9899175321520"><a name="b9899175321520"></a><a name="b9899175321520"></a>scaling-in</strong>: The cluster is being scaled in.</li></ul>
 </div>
 </td>
 </tr>
@@ -325,22 +325,22 @@ None
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a82537f9fb6bd4725b3546474a581c4f6"><a name="a82537f9fb6bd4725b3546474a581c4f6"></a><a name="a82537f9fb6bd4725b3546474a581c4f6"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="acf4e438fc5ca4bb5a7fe7dc73393331d"><a name="acf4e438fc5ca4bb5a7fe7dc73393331d"></a><a name="acf4e438fc5ca4bb5a7fe7dc73393331d"></a>Cluster operation progress description</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="acf4e438fc5ca4bb5a7fe7dc73393331d"><a name="acf4e438fc5ca4bb5a7fe7dc73393331d"></a><a name="acf4e438fc5ca4bb5a7fe7dc73393331d"></a>Cluster operation progress description.</p>
 <div class="p" id="a818d39a3292948508ce11cc2678ff7f4"><a name="a818d39a3292948508ce11cc2678ff7f4"></a><a name="a818d39a3292948508ce11cc2678ff7f4"></a>The cluster installation progress includes:<a name="ub1cafa16e10d4a0981f5f722a4b30147"></a><a name="ub1cafa16e10d4a0981f5f722a4b30147"></a><ul id="ub1cafa16e10d4a0981f5f722a4b30147"><li>Verifying cluster parameters: Cluster parameters are being verified.</li><li>Applying for cluster resources: Cluster resources are being applied for.</li><li>Creating VMs: The VMs are being created.</li><li>Initializing VMs: The VMs are being initialized.</li><li>Installing MRS Manager: MRS Manager is being installed.</li><li>Deploying the cluster: The cluster is being deployed.</li><li>Cluster installation failed: Failed to install the cluster.</li></ul>
 </div>
 <div class="p" id="a2cfa8e32e44c441ba23de0b460f9f4e4"><a name="a2cfa8e32e44c441ba23de0b460f9f4e4"></a><a name="a2cfa8e32e44c441ba23de0b460f9f4e4"></a>The cluster scale-out progress includes:<a name="ufe258da9ad3a48d4942791399c0ccf86"></a><a name="ufe258da9ad3a48d4942791399c0ccf86"></a><ul id="ufe258da9ad3a48d4942791399c0ccf86"><li>Preparing for scale-out: Cluster scale-out is being prepared.</li><li>Creating VMs: The VMs are being created.</li><li>Initializing VMs: The VMs are being initialized.</li><li>Adding nodes to the cluster: The nodes are being added to the cluster.</li><li>Scale-out failed: Failed to scale out the cluster.</li></ul>
 </div>
 <div class="p" id="a0de8520663024d38874448ff1b548357"><a name="a0de8520663024d38874448ff1b548357"></a><a name="a0de8520663024d38874448ff1b548357"></a>The cluster scale-in progress includes:<a name="ue6c02feb34da4acd8371c66455699885"></a><a name="ue6c02feb34da4acd8371c66455699885"></a><ul id="ue6c02feb34da4acd8371c66455699885"><li>Preparing for scale-in: Cluster scale-in is being prepared.</li><li>Decommissioning instance: The instance is being decommissioned.</li><li>Deleting VMs: The VMs are being deleted.</li><li>Deleting nodes from the cluster: The nodes are being deleted from the cluster.</li><li>Scale-in failed: Failed to scale in the cluster.</li></ul>
 </div>
-<p id="a09e704768abc4dec9abdff3449e3e38a"><a name="a09e704768abc4dec9abdff3449e3e38a"></a><a name="a09e704768abc4dec9abdff3449e3e38a"></a>If the cluster installation, scale-out, or scale-in fails, <strong id="b1572620134619"><a name="b1572620134619"></a><a name="b1572620134619"></a>stageDesc</strong> will display the failure cause. For details, see <a href="resizing-a-cluster.md#table5548695114444">Table 6</a>.</p>
+<p id="a09e704768abc4dec9abdff3449e3e38a"><a name="a09e704768abc4dec9abdff3449e3e38a"></a><a name="a09e704768abc4dec9abdff3449e3e38a"></a>If the cluster installation, scale-out, or scale-in fails, <strong id="b1572620134619"><a name="b1572620134619"></a><a name="b1572620134619"></a>stageDesc</strong> will display the failure cause. For details, see <a href="resizing-a-cluster.md#table101661350414">Table 6</a>.</p>
 </td>
 </tr>
 <tr id="rcbe6465f55224482bb4d3d1ff83dca7b"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0110581853_p323403095641"><a name="en-us_topic_0110581853_p323403095641"></a><a name="en-us_topic_0110581853_p323403095641"></a>mrsManagerFinish</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a6fa38020fdb0448cadf21ca3a4fb69e4"><a name="a6fa38020fdb0448cadf21ca3a4fb69e4"></a><a name="a6fa38020fdb0448cadf21ca3a4fb69e4"></a>boolean</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a8178f77fe0b54ef288d2ea36b33b70f3"><a name="a8178f77fe0b54ef288d2ea36b33b70f3"></a><a name="a8178f77fe0b54ef288d2ea36b33b70f3"></a>Whether MRS Manager installation is finished during cluster creation</p>
-<a name="ue62bf4e186224b7192b3a2e73f97e14e"></a><a name="ue62bf4e186224b7192b3a2e73f97e14e"></a><ul id="ue62bf4e186224b7192b3a2e73f97e14e"><li>true: MRS Manager installation is finished.</li><li>false: MRS Manager installation is not finished.</li></ul>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a8178f77fe0b54ef288d2ea36b33b70f3"><a name="a8178f77fe0b54ef288d2ea36b33b70f3"></a><a name="a8178f77fe0b54ef288d2ea36b33b70f3"></a>Whether MRS Manager installation is finished during cluster creation.</p>
+<a name="ue62bf4e186224b7192b3a2e73f97e14e"></a><a name="ue62bf4e186224b7192b3a2e73f97e14e"></a><ul id="ue62bf4e186224b7192b3a2e73f97e14e"><li><strong id="b1194328161613"><a name="b1194328161613"></a><a name="b1194328161613"></a>true</strong>: MRS Manager installation is finished.</li><li><strong id="b203481111191612"><a name="b203481111191612"></a><a name="b203481111191612"></a>false</strong>: MRS Manager installation is not finished.</li></ul>
 </td>
 </tr>
 <tr id="r40988b13f4f548a3983578f8e03f3f62"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="af4b0d84df98042f68275cf832c802d77"><a name="af4b0d84df98042f68275cf832c802d77"></a><a name="af4b0d84df98042f68275cf832c802d77"></a>safeMode</p>
@@ -348,7 +348,7 @@ None
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a78cfbe87380a4db9b27b125b549cf8d6"><a name="a78cfbe87380a4db9b27b125b549cf8d6"></a><a name="a78cfbe87380a4db9b27b125b549cf8d6"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a8abdffe887b641f1932f73e277c323fd"><a name="a8abdffe887b641f1932f73e277c323fd"></a><a name="a8abdffe887b641f1932f73e277c323fd"></a>Running mode of an MRS cluster</p>
-<a name="ubd370c44676647059633eea4b757b10a"></a><a name="ubd370c44676647059633eea4b757b10a"></a><ul id="ubd370c44676647059633eea4b757b10a"><li>0: normal cluster</li><li>1: security cluster</li></ul>
+<a name="ubd370c44676647059633eea4b757b10a"></a><a name="ubd370c44676647059633eea4b757b10a"></a><ul id="ubd370c44676647059633eea4b757b10a"><li><strong id="b2771111618168"><a name="b2771111618168"></a><a name="b2771111618168"></a>0</strong>: Normal cluster</li><li><strong id="b6919269168"><a name="b6919269168"></a><a name="b6919269168"></a>1</strong>: Security cluster</li></ul>
 </td>
 </tr>
 <tr id="rfb8116715b5d4def9f3968d50bbe47f4"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0110581853_p348827911742"><a name="en-us_topic_0110581853_p348827911742"></a><a name="en-us_topic_0110581853_p348827911742"></a>clusterVersion</p>
@@ -412,21 +412,21 @@ None
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="aeb231e3f17c643f3bdf77fac1d1da1b1"><a name="aeb231e3f17c643f3bdf77fac1d1da1b1"></a><a name="aeb231e3f17c643f3bdf77fac1d1da1b1"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a98c0af5c94244b5a87f0bd309cd5433b"><a name="a98c0af5c94244b5a87f0bd309cd5433b"></a><a name="a98c0af5c94244b5a87f0bd309cd5433b"></a>Whether to collect logs when cluster installation fails</p>
-<a name="uc5ff600ee21e4af98acce88059e8e2f1"></a><a name="uc5ff600ee21e4af98acce88059e8e2f1"></a><ul id="uc5ff600ee21e4af98acce88059e8e2f1"><li>0: Do not collect</li><li>1: Collect</li></ul>
+<a name="uc5ff600ee21e4af98acce88059e8e2f1"></a><a name="uc5ff600ee21e4af98acce88059e8e2f1"></a><ul id="uc5ff600ee21e4af98acce88059e8e2f1"><li><strong id="b12428939171615"><a name="b12428939171615"></a><a name="b12428939171615"></a>0</strong>: Do not collect.</li><li><strong id="b1228054212167"><a name="b1228054212167"></a><a name="b1228054212167"></a>1</strong>: Collect.</li></ul>
 </td>
 </tr>
 <tr id="r5f2faae6eb954649a6871b86fb156cbc"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0110581853_p277116811651"><a name="en-us_topic_0110581853_p277116811651"></a><a name="en-us_topic_0110581853_p277116811651"></a>taskNodeGroups</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p1271014583511"><a name="p1271014583511"></a><a name="p1271014583511"></a>List&lt;NodeGroup&gt;</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="aed14af3415d14d8c8e4493ee144f165a"><a name="aed14af3415d14d8c8e4493ee144f165a"></a><a name="aed14af3415d14d8c8e4493ee144f165a"></a>List of Task nodes For more parameter description, see <a href="#t985f9eb1ce0c4e0186e16ed2a6c7e731">Table 4</a>.</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="aed14af3415d14d8c8e4493ee144f165a"><a name="aed14af3415d14d8c8e4493ee144f165a"></a><a name="aed14af3415d14d8c8e4493ee144f165a"></a>List of Task nodes. For more parameter description, see <a href="#t985f9eb1ce0c4e0186e16ed2a6c7e731">Table 4</a>.</p>
 </td>
 </tr>
 <tr id="row1994189113517"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1799416963519"><a name="p1799416963519"></a><a name="p1799416963519"></a>nodeGroups</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p599412915359"><a name="p599412915359"></a><a name="p599412915359"></a>List&lt;NodeGroup&gt;</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p999419915356"><a name="p999419915356"></a><a name="p999419915356"></a>List of Master, Core and Task nodes For more parameter description, </p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p999419915356"><a name="p999419915356"></a><a name="p999419915356"></a>List of Master, Core and Task nodes. For more parameter description, </p>
 <p id="p7652181263617"><a name="p7652181263617"></a><a name="p7652181263617"></a>see <a href="#t985f9eb1ce0c4e0186e16ed2a6c7e731">Table 4</a>.</p>
 </td>
 </tr>
@@ -441,7 +441,7 @@ None
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="acf3a345c5fbd4090b854311772592ad5"><a name="acf3a345c5fbd4090b854311772592ad5"></a><a name="acf3a345c5fbd4090b854311772592ad5"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="aedb1d96fee394755903c6602b5422b00"><a name="aedb1d96fee394755903c6602b5422b00"></a><a name="aedb1d96fee394755903c6602b5422b00"></a>Data disk storage space of the Master node To increase data storage capacity, you can add disks at the same time when creating a cluster.</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="aedb1d96fee394755903c6602b5422b00"><a name="aedb1d96fee394755903c6602b5422b00"></a><a name="aedb1d96fee394755903c6602b5422b00"></a>Data disk storage space of the Master node. To increase data storage capacity, you can add disks at the same time when creating a cluster.</p>
 <p id="acad9924248be44b584fec6f03babed24"><a name="acad9924248be44b584fec6f03babed24"></a><a name="acad9924248be44b584fec6f03babed24"></a>Value range: 100 GB to 32,000 GB</p>
 </td>
 </tr>
@@ -449,7 +449,7 @@ None
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="ab036d51adb8343dca43bee91ad9cf125"><a name="ab036d51adb8343dca43bee91ad9cf125"></a><a name="ab036d51adb8343dca43bee91ad9cf125"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="aa0844421037c4286b6f845bb608e46f8"><a name="aa0844421037c4286b6f845bb608e46f8"></a><a name="aa0844421037c4286b6f845bb608e46f8"></a>Number of data disks of the Master node</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="aa0844421037c4286b6f845bb608e46f8"><a name="aa0844421037c4286b6f845bb608e46f8"></a><a name="aa0844421037c4286b6f845bb608e46f8"></a>Number of data disks of the Master node.</p>
 <p id="a269dbeb8a2a644e089e61b7961da9635"><a name="a269dbeb8a2a644e089e61b7961da9635"></a><a name="a269dbeb8a2a644e089e61b7961da9635"></a>The value can be set to <strong id="b1529331311498"><a name="b1529331311498"></a><a name="b1529331311498"></a>1</strong> only.</p>
 </td>
 </tr>
@@ -472,7 +472,7 @@ None
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="afc4acf9f9abb40aebd96745e3212b3bf"><a name="afc4acf9f9abb40aebd96745e3212b3bf"></a><a name="afc4acf9f9abb40aebd96745e3212b3bf"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a4cb5dab822fa46cb8c7d2cd966cded81"><a name="a4cb5dab822fa46cb8c7d2cd966cded81"></a><a name="a4cb5dab822fa46cb8c7d2cd966cded81"></a>Number of data disks of the Core node</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a4cb5dab822fa46cb8c7d2cd966cded81"><a name="a4cb5dab822fa46cb8c7d2cd966cded81"></a><a name="a4cb5dab822fa46cb8c7d2cd966cded81"></a>Number of data disks of the Core node.</p>
 <p id="ad9da3f1a22b3400d821e2247ac002a57"><a name="ad9da3f1a22b3400d821e2247ac002a57"></a><a name="ad9da3f1a22b3400d821e2247ac002a57"></a>Value range: 1 to 10</p>
 </td>
 </tr>
@@ -482,7 +482,7 @@ None
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p147511482293"><a name="p147511482293"></a><a name="p147511482293"></a>Node change status. If this parameter is left blank, the cluster nodes are not changed.</p>
 <p id="p17246183715315"><a name="p17246183715315"></a><a name="p17246183715315"></a>Possible values are as follows:</p>
-<a name="ul15504745113118"></a><a name="ul15504745113118"></a><ul id="ul15504745113118"><li>scaling-out: The cluster is being scaled out.</li><li>scaling-in: The cluster is being scaled in.</li><li>scaling-error: The cluster is in the running state and fails to be scaled in or out or the specifications fail to be scaled up for the last time.</li><li>scaling-up: The Master node specifications are being scaled up.</li><li>scaling_up_first: The standby Master node specifications are being scaled up.</li><li>scaled_up_first: The standby Master node specifications have been scaled up successfully.</li><li>scaled-up-success: The Master node specifications have been scaled up successfully.</li></ul>
+<a name="ul15504745113118"></a><a name="ul15504745113118"></a><ul id="ul15504745113118"><li><strong id="b914776191715"><a name="b914776191715"></a><a name="b914776191715"></a>scaling-out</strong>: The cluster is being scaled out.</li><li><strong id="b1360359161720"><a name="b1360359161720"></a><a name="b1360359161720"></a>scaling-in</strong>: The cluster is being scaled in.</li><li><strong id="b1023018139179"><a name="b1023018139179"></a><a name="b1023018139179"></a>scaling-error</strong>: The cluster is in the running state and fails to be scaled in or out or the specifications fail to be scaled up for the last time.</li><li><strong id="b20621181761714"><a name="b20621181761714"></a><a name="b20621181761714"></a>scaling-up</strong>: The Master node specifications are being scaled up.</li><li><strong id="b530213229170"><a name="b530213229170"></a><a name="b530213229170"></a>scaling_up_first</strong>: The standby Master node specifications are being scaled up.</li><li><strong id="b52887255171"><a name="b52887255171"></a><a name="b52887255171"></a>scaled_up_first</strong>: The standby Master node specifications have been scaled up successfully.</li><li><strong id="b013432831716"><a name="b013432831716"></a><a name="b013432831716"></a>scaled-up-success</strong>: The Master node specifications have been scaled up successfully.</li></ul>
 </td>
 </tr>
 </tbody>
@@ -531,9 +531,9 @@ None
 </div>
 </li><li>MRS 1.9.2 supports the following component versions:<div class="p" id="en-us_topic_0172486178_p3990164033612"><a name="en-us_topic_0172486178_p3990164033612"></a><a name="en-us_topic_0172486178_p3990164033612"></a>Component versions of an analysis cluster:<a name="en-us_topic_0172486178_ul2099020407363"></a><a name="en-us_topic_0172486178_ul2099020407363"></a><ul id="en-us_topic_0172486178_ul2099020407363"><li>Presto: 0.216</li><li>Hadoop: 2.8.3</li><li>Spark: 2.2.2</li><li>HBase: 1.3.1</li><li>OpenTSDB: 2.3.0</li><li>Hive: 2.3.3</li><li>Hue: <span id="en-us_topic_0172486178_text2796102174115"><a name="en-us_topic_0172486178_text2796102174115"></a><a name="en-us_topic_0172486178_text2796102174115"></a>3.11.0</span></li><li>Loader: <span id="en-us_topic_0172486178_text1181562310410"><a name="en-us_topic_0172486178_text1181562310410"></a><a name="en-us_topic_0172486178_text1181562310410"></a>2.0.0</span></li><li>Tez: 0.9.1</li><li>Flink: 1.7.0</li><li>Alluxio: 2.0.1</li><li>Ranger: 1.0.1</li></ul>
 </div>
-<div class="p" id="en-us_topic_0172486178_p19991174063615"><a name="en-us_topic_0172486178_p19991174063615"></a><a name="en-us_topic_0172486178_p19991174063615"></a>Component versions of a streaming cluster:<a name="en-us_topic_0172486178_ul39911540123610"></a><a name="en-us_topic_0172486178_ul39911540123610"></a><ul id="en-us_topic_0172486178_ul39911540123610"><li>Kafka: 1.1.0</li><li>KafkaManager: 1.3.3.1</li><li>Storm: 1.2.1</li><li>Flume: <span id="en-us_topic_0172486178_text1415216261"><a name="en-us_topic_0172486178_text1415216261"></a><a name="en-us_topic_0172486178_text1415216261"></a>1.6.0</span></li></ul>
+<div class="p" id="en-us_topic_0172486178_p19991174063615"><a name="en-us_topic_0172486178_p19991174063615"></a><a name="en-us_topic_0172486178_p19991174063615"></a>Component versions of a streaming cluster:<a name="en-us_topic_0172486178_ul39911540123610"></a><a name="en-us_topic_0172486178_ul39911540123610"></a><ul id="en-us_topic_0172486178_ul39911540123610"><li>Kafka: 1.1.0</li><li>KafkaManager: 1.3.3.1</li><li>Storm: 1.2.1</li><li>Flume: <span id="en-us_topic_0172486178_text859319741"><a name="en-us_topic_0172486178_text859319741"></a><a name="en-us_topic_0172486178_text859319741"></a>1.6.0</span></li></ul>
 </div>
-</li><li>MRS 1.7.2 supports the following component versions:<div class="p" id="en-us_topic_0172486178_p31541581173"><a name="en-us_topic_0172486178_p31541581173"></a><a name="en-us_topic_0172486178_p31541581173"></a>Component versions of an analysis cluster:<a name="en-us_topic_0172486178_ul17160158111712"></a><a name="en-us_topic_0172486178_ul17160158111712"></a><ul id="en-us_topic_0172486178_ul17160158111712"><li>Hadoop: 2.8.3</li><li>Spark: 2.2.1</li><li>HBase: <span id="en-us_topic_0172486178_text682075583020"><a name="en-us_topic_0172486178_text682075583020"></a><a name="en-us_topic_0172486178_text682075583020"></a>1.3.1</span></li><li>Hive: <span id="en-us_topic_0172486178_text16419155793011"><a name="en-us_topic_0172486178_text16419155793011"></a><a name="en-us_topic_0172486178_text16419155793011"></a>1.2.1</span></li><li>Hue: <span id="en-us_topic_0172486178_text1416119361586"><a name="en-us_topic_0172486178_text1416119361586"></a><a name="en-us_topic_0172486178_text1416119361586"></a>3.11.0</span></li><li>Loader: <span id="en-us_topic_0172486178_text644277441"><a name="en-us_topic_0172486178_text644277441"></a><a name="en-us_topic_0172486178_text644277441"></a>2.0.0</span></li></ul>
+</li><li>MRS 1.7.2 supports the following component versions:<div class="p" id="en-us_topic_0172486178_p31541581173"><a name="en-us_topic_0172486178_p31541581173"></a><a name="en-us_topic_0172486178_p31541581173"></a>Component versions of an analysis cluster:<a name="en-us_topic_0172486178_ul17160158111712"></a><a name="en-us_topic_0172486178_ul17160158111712"></a><ul id="en-us_topic_0172486178_ul17160158111712"><li>Hadoop: 2.8.3</li><li>Spark: 2.2.1</li><li>HBase: <span id="en-us_topic_0172486178_text682075583020"><a name="en-us_topic_0172486178_text682075583020"></a><a name="en-us_topic_0172486178_text682075583020"></a>1.3.1</span></li><li>Hive: <span id="en-us_topic_0172486178_text16419155793011"><a name="en-us_topic_0172486178_text16419155793011"></a><a name="en-us_topic_0172486178_text16419155793011"></a>1.2.1</span></li><li>Hue: <span id="en-us_topic_0172486178_text1416119361586"><a name="en-us_topic_0172486178_text1416119361586"></a><a name="en-us_topic_0172486178_text1416119361586"></a>3.11.0</span></li><li>Loader: <span id="en-us_topic_0172486178_text1438898961"><a name="en-us_topic_0172486178_text1438898961"></a><a name="en-us_topic_0172486178_text1438898961"></a>2.0.0</span></li></ul>
 </div>
 <div class="p" id="en-us_topic_0172486178_p132551058131720"><a name="en-us_topic_0172486178_p132551058131720"></a><a name="en-us_topic_0172486178_p132551058131720"></a>Component versions of a streaming cluster:<a name="en-us_topic_0172486178_ul1226119585179"></a><a name="en-us_topic_0172486178_ul1226119585179"></a><ul id="en-us_topic_0172486178_ul1226119585179"><li>Kafka: 0.10.2.0</li><li>Storm: <span id="en-us_topic_0172486178_text02971058101711"><a name="en-us_topic_0172486178_text02971058101711"></a><a name="en-us_topic_0172486178_text02971058101711"></a>1.0.2</span></li><li>Flume: <span id="en-us_topic_0172486178_text999318377582"><a name="en-us_topic_0172486178_text999318377582"></a><a name="en-us_topic_0172486178_text999318377582"></a>1.6.0</span></li></ul>
 </div>
@@ -759,7 +759,7 @@ None
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p3224113655314"><a name="p3224113655314"></a><a name="p3224113655314"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p4700154617299"><a name="p4700154617299"></a><a name="p4700154617299"></a>Whether to continue executing subsequent scripts and creating a cluster after the bootstrap action script fails to be executed.</p>
-<a name="ul18391113413191"></a><a name="ul18391113413191"></a><ul id="ul18391113413191"><li>continue: Continue to execute subsequent scripts.</li><li>errorout: Stop the action.</li></ul>
+<a name="ul18391113413191"></a><a name="ul18391113413191"></a><ul id="ul18391113413191"><li><strong id="b1543720171819"><a name="b1543720171819"></a><a name="b1543720171819"></a>continue</strong>: Continue to execute subsequent scripts.</li><li><strong id="b13979629181"><a name="b13979629181"></a><a name="b13979629181"></a>errorout</strong>: Stop the action.</li></ul>
 <div class="p" id="p1190163315446"><a name="p1190163315446"></a><a name="p1190163315446"></a>The default value is <strong id="b458704811244"><a name="b458704811244"></a><a name="b458704811244"></a>errorout</strong>, indicating that the action is stopped.<div class="note" id="note796819345579"><a name="note796819345579"></a><a name="note796819345579"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p6994625143710"><a name="p6994625143710"></a><a name="p6994625143710"></a>You are advised to set this parameter to <strong id="b3691195952413"><a name="b3691195952413"></a><a name="b3691195952413"></a>continue</strong> in the commissioning phase so that the cluster can continue to be installed and started no matter whether the bootstrap action is successful.</p>
 </div></div>
 </div>
@@ -777,7 +777,7 @@ None
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p545746588"><a name="p545746588"></a><a name="p545746588"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p8535122494514"><a name="p8535122494514"></a><a name="p8535122494514"></a>Running state of one bootstrap action script</p>
-<a name="ul5571711145820"></a><a name="ul5571711145820"></a><ul id="ul5571711145820"><li>PENDING</li><li>IN_PROGRESS</li><li>SUCCESS</li><li>FAILURE</li></ul>
+<a name="ul5571711145820"></a><a name="ul5571711145820"></a><ul id="ul5571711145820"><li><strong id="b81041118191814"><a name="b81041118191814"></a><a name="b81041118191814"></a>PENDING</strong></li><li><strong id="b9479142318189"><a name="b9479142318189"></a><a name="b9479142318189"></a>IN_PROGRESS</strong></li><li><strong id="b1791811279187"><a name="b1791811279187"></a><a name="b1791811279187"></a>SUCCESS</strong></li><li><strong id="b1125113212188"><a name="b1125113212188"></a><a name="b1125113212188"></a>FAILURE</strong></li></ul>
 </td>
 </tr>
 </tbody>
@@ -787,7 +787,7 @@ None
 
 -   Example request
 
-    None
+    None.
 
 -   Example response
 

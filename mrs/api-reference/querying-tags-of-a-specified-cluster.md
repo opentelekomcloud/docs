@@ -49,7 +49,28 @@ None.
 
 ## Response<a name="s7761860ece7c49d0b77a9177c2ccbc06"></a>
 
-**Table  2**  Parameter description
+**Table  2**  Response parameter description
+
+<a name="table95690185369"></a>
+<table><thead align="left"><tr id="row8575818193612"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p4575181853612"><a name="p4575181853612"></a><a name="p4575181853612"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.2"><p id="p145751818123617"><a name="p145751818123617"></a><a name="p145751818123617"></a>Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="50%" id="mcps1.2.4.1.3"><p id="p25761518193614"><a name="p25761518193614"></a><a name="p25761518193614"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1057791893611"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1414612262381"><a name="p1414612262381"></a><a name="p1414612262381"></a>tags</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p16204192543610"><a name="p16204192543610"></a><a name="p16204192543610"></a>Array of objects</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p1620522520368"><a name="p1620522520368"></a><a name="p1620522520368"></a>Tag list. For details, see <a href="#table16429741613">Table 3</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  3** **tags**  parameter description
 
 <a name="table16429741613"></a>
 <table><thead align="left"><tr id="row6447741616"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p144437171619"><a name="p144437171619"></a><a name="p144437171619"></a><strong id="b13466107133"><a name="b13466107133"></a><a name="b13466107133"></a>Parameter</strong></p>
@@ -103,14 +124,14 @@ None.
 
 ## Status Code<a name="s90bcfddb775445708aada537153df78f"></a>
 
-[Table 3](#t8879ab801c3841179c9f683931ddb28e)  describes the status code of this API.
+[Table 4](#t8879ab801c3841179c9f683931ddb28e)  describes the status code of this API.
 
-**Table  3**  Status code
+**Table  4**  Status code
 
 <a name="t8879ab801c3841179c9f683931ddb28e"></a>
 <table><thead align="left"><tr id="r36d47cc57e1642c4b85707586a41e0eb"><th class="cellrowborder" valign="top" width="30%" id="mcps1.2.3.1.1"><p id="a75d57993e25f418f98e400b75d8c69f0"><a name="a75d57993e25f418f98e400b75d8c69f0"></a><a name="a75d57993e25f418f98e400b75d8c69f0"></a><strong id="b136541145578"><a name="b136541145578"></a><a name="b136541145578"></a>Status Code</strong></p>
 </th>
-<th class="cellrowborder" valign="top" width="70%" id="mcps1.2.3.1.2"><p id="adb28f2a54c104798b44f849c0c35cc7c"><a name="adb28f2a54c104798b44f849c0c35cc7c"></a><a name="adb28f2a54c104798b44f849c0c35cc7c"></a><strong id="b1874746292"><a name="b1874746292"></a><a name="b1874746292"></a>Description</strong></p>
+<th class="cellrowborder" valign="top" width="70%" id="mcps1.2.3.1.2"><p id="adb28f2a54c104798b44f849c0c35cc7c"><a name="adb28f2a54c104798b44f849c0c35cc7c"></a><a name="adb28f2a54c104798b44f849c0c35cc7c"></a><strong id="b508791067"><a name="b508791067"></a><a name="b508791067"></a>Description</strong></p>
 </th>
 </tr>
 </thead>

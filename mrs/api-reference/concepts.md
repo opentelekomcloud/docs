@@ -2,7 +2,7 @@
 
 -   Domain
 
-    A domain is created upon successful registration with the cloud platform. The domain has full access permissions for all of its cloud services and resources. It can be used to reset user passwords and grant user permissions. The domain is a payment entity and should not be used directly to perform routine management. For security purposes, create IAM users and grant them permissions for routine management.
+    A domain is created upon successful registration with the cloud platform. The domain has full access permissions for all of its cloud services and resources. It can be used to reset user passwords and grant user permissions. The domain should not be used directly to perform routine management. For security purposes, create IAM users and grant them permissions for routine management.
 
 -   User
 
@@ -16,7 +16,7 @@
 
 -   AZ
 
-    AZs are physically isolated locations in a region, but are interconnected through an internal network for enhanced application availability.
+    An AZ contains one or more physical data centers. Each AZ has independent cooling, fire extinguishing, moisture-proof, and electricity facilities. Within an AZ, computing, network, storage, and other resources are logically divided into multiple clusters. AZs within a region are interconnected using high-speed optical fibers to support cross-AZ high-availability systems.
 
 -   Project
 

@@ -101,7 +101,7 @@ This API is used to query the job list in an MRS cluster.
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p351964633713"><a name="p351964633713"></a><a name="p351964633713"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p125191146113712"><a name="p125191146113712"></a><a name="p125191146113712"></a>Number of records displayed on each page in the returned result. The default value is <strong id="b1297328164313"><a name="b1297328164313"></a><a name="b1297328164313"></a>10</strong>.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p18408134471714"><a name="p18408134471714"></a><a name="p18408134471714"></a>Number of records displayed on each page in the returned result. The default value is <strong id="b1297328164313"><a name="b1297328164313"></a><a name="b1297328164313"></a>10</strong>.</p>
 </td>
 </tr>
 <tr id="row1688911377259"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p651934617378"><a name="p651934617378"></a><a name="p651934617378"></a>offset</p>
@@ -110,7 +110,8 @@ This API is used to query the job list in an MRS cluster.
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p14519144612377"><a name="p14519144612377"></a><a name="p14519144612377"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p1451934616372"><a name="p1451934616372"></a><a name="p1451934616372"></a>Offset. The default value is <strong id="b84235270615612"><a name="b84235270615612"></a><a name="b84235270615612"></a>1</strong>.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p11238166414"><a name="p11238166414"></a><a name="p11238166414"></a>Offset.</p>
+<p id="p463219421175"><a name="p463219421175"></a><a name="p463219421175"></a>The default offset from which the job list starts to be queried is <strong id="b26642615332"><a name="b26642615332"></a><a name="b26642615332"></a>1</strong>.</p>
 </td>
 </tr>
 <tr id="row4788257010284"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p17519144620374"><a name="p17519144620374"></a><a name="p17519144620374"></a>sort_by</p>
@@ -283,7 +284,7 @@ This API is used to query the job list in an MRS cluster.
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0176790808_p139311522020"><a name="en-us_topic_0176790808_p139311522020"></a><a name="en-us_topic_0176790808_p139311522020"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0176790808_p20244195418212"><a name="en-us_topic_0176790808_p20244195418212"></a><a name="en-us_topic_0176790808_p20244195418212"></a>Launcher job ID</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0176790808_p20244195418212"><a name="en-us_topic_0176790808_p20244195418212"></a><a name="en-us_topic_0176790808_p20244195418212"></a>Launcher job ID.</p>
 </td>
 </tr>
 <tr id="en-us_topic_0176790808_row1687919461120"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0176790808_p031334815212"><a name="en-us_topic_0176790808_p031334815212"></a><a name="en-us_topic_0176790808_p031334815212"></a>app_id</p>
@@ -300,7 +301,7 @@ This API is used to query the job list in an MRS cluster.
 
 -   Example request
 
-    None
+    None.
 
 -   Example response
     -   Example of a successful response
