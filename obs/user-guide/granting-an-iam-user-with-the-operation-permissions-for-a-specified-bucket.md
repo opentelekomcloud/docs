@@ -1,16 +1,16 @@
-# Bucket Owner Authorizing Bucket Permissions to IAM Users<a name="obs_03_0080"></a>
+# Granting an IAM User with the Operation Permissions for a Specified Bucket<a name="obs_03_0080"></a>
 
-Create an IAM user under in an account. The IAM user has no permission to any resource before it is added to any user group. The bucket owner \(the account\) can authorize bucket permissions to the IAM user by configuring a bucket policy.
+Create an IAM user under in an account. The IAM user has no permission to any resource before it is added to any user group. The bucket owner \(root account\) or other accounts and IAM users, who have the permission to set bucket policies, can configure bucket policies to grant the bucket operation permissions to IAM users.
 
-In the following example, the account authorizes the IAM user with the permission to access the bucket and upload objects to the bucket.
+The following is an example about how to authorize an IAM user with the bucket access and object upload permissions.
 
 ## Procedure<a name="section13279211683"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Permissions**  to go to the permission management page.
 3.  Choose  **Bucket Policies**  \>  **Custom Bucket Policies**.
 4.  Click  **Create Bucket Policy**. The  **Create Bucket Policy**  dialog box is displayed.
-5.  Set the following parameters to authorize the IAM user with the permission to access the bucket.
+5.  Set the following parameters to authorize the IAM user with the permission to access the bucket \(listing objects in the bucket\).
 
     **Table  1**  Parameters for authorizing the permission to access a specified bucket
 
@@ -53,8 +53,8 @@ In the following example, the account authorizes the IAM user with the permissio
 7.  Click  **Create Bucket Policy**. The  **Create Bucket Policy**  dialog box is displayed.
 8.  Set the following parameters to authorize the IAM user with the permission to upload objects to the bucket.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >Before authorizing the IAM user with the permission to operate objects, ensure that the user has the permission to access the bucket.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >Before authorizing the IAM user with the permission to operate objects, ensure that the user has the permission to access the bucket.
 
     **Table  2**  Parameters for authorizing the permission to upload objects
 
@@ -88,6 +88,9 @@ In the following example, the account authorizes the IAM user with the permissio
     <tr id="row167522618569"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1367692611568"><a name="p1367692611568"></a><a name="p1367692611568"></a>Actions</p>
     </td>
     <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><a name="ul176761226135619"></a><a name="ul176761226135619"></a><ul id="ul176761226135619"><li><strong id="b26261435184318"><a name="b26261435184318"></a><a name="b26261435184318"></a>Include</strong></li><li>PutObject</li></ul>
+    <div class="note" id="note1250310062911"><a name="note1250310062911"></a><a name="note1250310062911"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p550314042918"><a name="p550314042918"></a><a name="p550314042918"></a>In this example, only the permission to upload objects is granted. You can select multiple actions and granting other operation permissions to the IAM user The asterisk (*) indicates all operations.</p>
+    <p id="p131981634163011"><a name="p131981634163011"></a><a name="p131981634163011"></a>For details about the supported actions, see <a href="actions.md">Actions</a>.</p>
+    </div></div>
     </td>
     </tr>
     </tbody>

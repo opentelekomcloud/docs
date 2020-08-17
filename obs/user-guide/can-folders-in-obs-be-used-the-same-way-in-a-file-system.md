@@ -1,4 +1,4 @@
-# Can Folders in OBS Be Used the Same Way As Those in a File System?<a name="obs_faq_0016"></a>
+# Can Folders in OBS Be Used the Same Way in a File System?<a name="obs_faq_0016"></a>
 
 No.
 

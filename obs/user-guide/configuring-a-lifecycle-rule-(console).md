@@ -4,7 +4,7 @@ You can configure the lifecycle rule for a bucket or an object. You can transiti
 
 ## Procedure<a name="section4422459618019"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the  **Basic Configurations**  area, click the  **Lifecycle Rules**  label. The  **Lifecycle Rules**  page is displayed.
 
     Alternatively, you can choose  **Basic Configurations**  \>  **Lifecycle Rules**  in the navigation pane on the left.
@@ -16,7 +16,7 @@ You can configure the lifecycle rule for a bucket or an object. You can transiti
 
 4.  Configure a lifecycle rule.
 
-    Configure the basic information.
+    **Basic Information**:
 
     -   **Status**: 
 
@@ -30,21 +30,20 @@ You can configure the lifecycle rule for a bucket or an object. You can transiti
         -   **Object name prefix**: Objects that have the specified prefix will be managed by the lifecycle rule. The prefix cannot start with a slash \(/\), cannot have consecutive slashes \(/\), and cannot contain the following special characters:  **\\:\*?"<\>|**
         -   **Bucket**: All objects in the bucket will be managed by the lifecycle rule.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   When  **Object name prefix**  is selected and the specified prefix and the prefix of an existing lifecycle rule overlap, OBS regards the two rules as one and disables the one to be configured. For example, if a rule with prefix  **abc**  exists in the system, another rule whose prefix starts with  **abc**  cannot be configured.  
-    >-   If a lifecycle rule whose  **Applies To**  is set to  **Object name prefix**  has been configured, you cannot configure a lifecycle rule whose  **Applies To**  is set to  **Bucket**.  
-    >-   If a lifecycle rule has been configured for the entire bucket, no more rules apply to object name prefix can be added.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   When  **Object name prefix**  is selected and the specified prefix and the prefix of an existing lifecycle rule overlap, OBS regards the two rules as one and disables the one to be configured. For example, if a rule with prefix  **abc**  exists in the system, another rule whose prefix starts with  **abc**  cannot be configured.
+    >-   If a lifecycle rule whose  **Applies To**  is set to  **Object name prefix**  has been configured, you cannot configure a lifecycle rule whose  **Applies To**  is set to  **Bucket**.
+    >-   If a lifecycle rule has been configured for the entire bucket, no more rules that apply to object name prefix can be added.
 
     **Current Version**  or  **Historical Version**:
+
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   **Current Version**  and  **Historical Version**  are two concepts for  **Versioning**. If  **Versioning**  is enabled, uploading objects with the same name to the same path generates different versions. The object uploaded lastly is called  **Current Version**, and the object uploaded earlier is called  **Historical Version**.
+    >-   You can configure either, both, or neither of the versions.
 
     -   **Transition to Warm**: You can specify the number of days after which objects that have been last updated and meet specified conditions are automatically transitioned to  **Warm**. This number must be at least 30.
     -   **Transition to Cold**: You can specify the number of days after which objects that have been last updated and meet specified conditions are automatically transitioned to  **Cold**. If objects are configured to be transitioned to both  **Warm**  and  **Cold**, the number of days for transition to  **Cold**  must be at least 30 days later than that for transition to  **Warm**. If only transition to Cold is enabled and transition to  **Warm**  is disabled, there is no limit on the number of days for transition.
     -   Deleted upon expiration: You can specify the number of days after which objects that have been last updated and meet the specified conditions are automatically deleted. The expiration time must be greater than the two transition times.
-
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >-   **Current Version**  and  **Historical Version**  are two concepts for  **Versioning**. If  **Versioning**  is enabled, uploading objects with the same name to the same path generates different versions. The object uploaded lastly is called  **Current Version**, and the object uploaded earlier is called  **Historical Version**.  
-        >-   You can configure either, both, or neither of the versions.  
-
 
     For example, the following files are stored in OBS on January 7, 2015:
 
@@ -64,8 +63,8 @@ You can configure the lifecycle rule for a bucket or an object. You can transiti
 
         On the current day, if you set the objects with the name prefix  **log**  to be transitioned to  **Warm**  30 days later, transitioned to  **Cold**  60 days later, and deleted 100 days later, then OBS will transition  **log/clientlog.log**,  **log/serverlog.log**,  **log/test1.log**, and  **log/test2.log**  to  **Warm**  on the 31st day, transition them to  **Cold**  the 61st day, and delete them on the 101st day.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >The storage class transition and deletion of an object may be delayed after the time condition is met. Generally, the delay does not exceed 48 hours.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >The storage class transition and deletion of an object may be delayed after the time condition is met. Generally, the delay does not exceed 48 hours. If you change the configurations of an existing lifecycle rule, the effective time of the lifecycle rule will change according to the new configurations.
 
 5.  Click  **OK**  to complete the lifecycle rule configuration.
 
@@ -73,5 +72,5 @@ You can configure the lifecycle rule for a bucket or an object. You can transiti
 
 You can click  **Edit**  under the  **Operation**  column of a lifecycle rule, to edit the rule. Also you can click  **Disable**  or  **Enable**  to disable or enable it.
 
-If you want to delete more than one lifecycle rules at a time, select them and click  **Delete**  above the list.
+If you want to delete more than one lifecycle rule at a time, select them and click  **Delete**  above the list.
 

@@ -4,5 +4,5 @@ Object Storage Service \(OBS\) is a cloud storage service optimized for storing 
 
 OBS provides users with unlimited storage capacity, stores files in any format, and caters to the needs of common users, websites, enterprises, and developers. Neither the entire OBS system nor any single bucket has limitations on storage capacity or the number of objects/files that can be stored. As a web service, OBS supports APIs over Hypertext Transfer Protocol \(HTTP\) and Hypertext Transfer Protocol Secure \(HTTPS\). You can use OBS Console or OBS clients to access and manage data stored in OBS anytime, anywhere. OBS is compatible with the REST APIs of Amazon S3, and supports SDKs. You can easily manage data stored in OBS and develop upper-layer service applications. OBS Console and OBS Browser are only compatible with the Amazon S3 APIs.
 
-Cloud services allow infrastructures to be deployed in multiple regions and deliver flexible expansion and enhanced reliability. You can deploy OBS in specific regions for faster access speeds at an affordable price.
+Cloud service infrastructures can be deployed in multiple regions, delivering flexible expansion and enhanced reliability. You can deploy OBS in specific regions for faster access at an affordable price.
 

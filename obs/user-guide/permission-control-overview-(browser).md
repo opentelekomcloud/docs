@@ -2,7 +2,7 @@
 
 OBS Browser supports permission control based on bucket policies, bucket ACLs, and object ACLs.
 
--   Bucket policy: A bucket policy applies to the configured OBS bucket and objects in the bucket. An OBS bucket owner can use a bucket policy to grant permissions of buckets and objects in the buckets to IAM users or other accounts.
+-   Bucket policy: A bucket policy is attached to a bucket and takes effect on the bucket and objects in the bucket. By leveraging bucket policies, the owner of a bucket can authorize IAM users or other accounts the permissions to operate the bucket and objects in the bucket.
 -   Access Control List \(ACL\): OBS provides ACL settings at bucket and object levels. Bucket and object ACLs are attached to accounts.
 
 ## Bucket Policy<a name="section1898792812813"></a>
@@ -135,7 +135,7 @@ A bucket or object ACL can assign the following users the read and write permiss
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->Every time you change the bucket or object access permission setting in an ACL, it overwrites the existing setting instead of adding a new access permission to the bucket or object.  
->Fragment management refers to the deletion of fragments. For the bucket owner and users who have the permission to initiate multipart tasks, deleting fragments is not restricted by bucket ACL settings. If a user has the permission to write, the user also has the permission to initiate multipart tasks.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>Every time you change the bucket or object access permission setting in an ACL, it overwrites the existing setting instead of adding a new access permission to the bucket or object.
+>Fragment management refers to the deletion of fragments. For the bucket owner and users who have the permission to initiate multipart tasks, deleting fragments is not restricted by bucket ACL settings. If a user has the permission to write, the user also has the permission to initiate multipart tasks.
 

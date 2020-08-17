@@ -4,7 +4,7 @@ The object uniform resource locator \(URL\) \(object sharing\) function allows a
 
 ## Prerequisites<a name="s4ecf44968672497286abe0738d6b2171"></a>
 
-An anonymous user has been assigned with the permission to read the specified object. For details, see  [Configuring Object ACL](configuring-object-acl.md).
+An anonymous user has been assigned with the permission to read the specified object. For details, see  [Configuring an Object ACL](configuring-an-object-acl.md).
 
 ## Procedure<a name="sd8bcdd98f0554dc48154e4f9625aa3c7"></a>
 
@@ -18,9 +18,9 @@ An anonymous user has been assigned with the permission to read the specified ob
     -   If you select  **Other object storage services**  when logging in to OBS Browser, the object URL is in the format of https://_storage server IP address_  or  _domain name_/_bucket name_/_directory level_/_object name_. If the object is in the root directory of the bucket, the URL does not contain a  _directory level_.
     -   If you select  **OBS**  when logging in to OBS Browser, the object URL is in the format of https://_bucket name.domain name_/_directory level_/_object name._  If the object is in the root directory of the bucket, the URL does not contain a  _directory level_.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >To allow anonymous users to access objects stored in a bucket of Cold storage class using the URL, ensure that the objects are in the  **Restored**  state.  
-    >The method of using a browser to access objects varies depending on the object type. You can directly open  **.txt**  and  **.html**  files using a browser. However, when you open  **.exe**  and  **.dat**  files using a browser, the files are automatically downloaded to your local computer.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >To allow anonymous users to access objects stored in a bucket of Cold storage class using the URL, ensure that the objects are in the  **Restored**  state.
+    >The method of using a browser to access objects varies depending on the object type. You can directly open  **.txt**  and  **.html**  files using a browser. However, when you open  **.exe**  and  **.dat**  files using a browser, the files are automatically downloaded to your local computer.
 
 4.  Click  **Copy**  to copy the URL of the object.
 5.  In the displayed dialog box, click  **Close**  to close the dialog box.

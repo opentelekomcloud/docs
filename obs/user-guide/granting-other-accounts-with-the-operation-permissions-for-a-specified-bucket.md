@@ -1,12 +1,12 @@
-# Bucket Owner Authorizing Bucket Permissions to Other Accounts<a name="obs_03_0081"></a>
+# Granting Other Accounts with the Operation Permissions for a Specified Bucket<a name="obs_03_0081"></a>
 
-The bucket owner can authorize bucket permissions to another account or IAM users in that account.
+The bucket owner \(root account\) or other accounts and IAM users, who have the permission to set bucket policies, can configure bucket policies to grant the bucket operation permissions to other accounts or IAM users under other accounts.
 
-In the following example, the account authorizes another account with the permission to access the bucket and upload objects to the bucket.
+The following is an example about how to authorize other accounts with the bucket access and object upload permissions.
 
 ## Procedure<a name="section435994418812"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Permissions**  to go to the permission management page.
 3.  Choose  **Bucket Policies**  \>  **Custom Bucket Policies**.
 4.  Click  **Create Bucket Policy**. The  **Create Bucket Policy**  dialog box is displayed.
@@ -54,8 +54,8 @@ In the following example, the account authorizes another account with the permis
 7.  Click  **Create Bucket Policy**. The  **Create Bucket Policy**  dialog box is displayed.
 8.  Set the following parameters to authorize another account with the permission to upload objects:
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >Before authorizing the user with the permission to operate objects, ensure that the user has the permission to access the bucket.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >Before authorizing the user with the permission to operate objects, ensure that the user has the permission to access the bucket.
 
     **Table  2**  Parameters for authorizing the permission to upload objects
 

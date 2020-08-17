@@ -4,7 +4,7 @@
 
 **Bucket domain name**: Each bucket in OBS has a domain name. A domain name is the Internet address of a bucket and can be used to access the bucket over the Internet. It is applicable to cloud application development and data sharing scenarios.
 
-An OBS bucket domain name is in the format  **_BucketName.Endpoint_**, where  **BucketName**  indicates the name of the bucket, and  **Endpoint**  indicates the domain name of the region where the bucket is located.
+An OBS bucket domain name is in the format of  _BucketName.Endpoint_, where  _BucketName_  indicates the name of the bucket, and  _Endpoint_  indicates the domain name of the region where the bucket is located.
 
 [Table 1](#table94332031121816)  lists the bucket domain name and other domain names in OBS, including their formats and protocols.
 
@@ -36,7 +36,7 @@ An OBS bucket domain name is in the format  **_BucketName.Endpoint_**, where  **
 </td>
 <td class="cellrowborder" valign="top" width="39.489999999999995%" headers="mcps1.2.5.1.2 "><p id="p6434131131813"><a name="p6434131131813"></a><a name="p6434131131813"></a><strong id="b129431695318"><a name="b129431695318"></a><a name="b129431695318"></a>BucketName.Endpoint</strong></p>
 </td>
-<td class="cellrowborder" valign="top" width="40.56%" headers="mcps1.2.5.1.3 "><p id="p5434331191817"><a name="p5434331191817"></a><a name="p5434331191817"></a>After a bucket is created, you can use the domain name to access the bucket. You can compose the domain name according to the structure of bucket domain names, or you can obtain it from basic information of the bucket on OBS Console, OBS Browser.</p>
+<td class="cellrowborder" valign="top" width="40.56%" headers="mcps1.2.5.1.3 "><p id="p5434331191817"><a name="p5434331191817"></a><a name="p5434331191817"></a>After a bucket is created, you can use the domain name to access the bucket. You can compose the domain name according to the structure of bucket domain names, or you can obtain it from basic information of the bucket on OBS Console or OBS Browser.</p>
 </td>
 <td class="cellrowborder" valign="top" width="8.01%" headers="mcps1.2.5.1.4 "><p id="p166078569551"><a name="p166078569551"></a><a name="p166078569551"></a>HTTPS</p>
 <p id="p134675352019"><a name="p134675352019"></a><a name="p134675352019"></a>HTTP</p>
@@ -46,7 +46,7 @@ An OBS bucket domain name is in the format  **_BucketName.Endpoint_**, where  **
 </td>
 <td class="cellrowborder" valign="top" width="39.489999999999995%" headers="mcps1.2.5.1.2 "><p id="p443473113188"><a name="p443473113188"></a><a name="p443473113188"></a><strong id="b11401337205418"><a name="b11401337205418"></a><a name="b11401337205418"></a>BucketName.Endpoint/ObjectName</strong></p>
 </td>
-<td class="cellrowborder" valign="top" width="40.56%" headers="mcps1.2.5.1.3 "><p id="p1443403115186"><a name="p1443403115186"></a><a name="p1443403115186"></a>After an object is uploaded to a bucket, you can use the object domain name to access the object. You can compose the domain name according to the structure of object domain names, or you can obtain it from the object details on OBS Console, OBS Browser. Alternatively, you can call the GetObjectUrl API through the SDK to obtain the object domain name.</p>
+<td class="cellrowborder" valign="top" width="40.56%" headers="mcps1.2.5.1.3 "><p id="p1443403115186"><a name="p1443403115186"></a><a name="p1443403115186"></a>After an object is uploaded to a bucket, you can use the object domain name to access the object. You can compose the domain name according to the structure of object domain names, or you can obtain it from the object details on OBS Console or OBS Browser. Alternatively, you can call the <strong id="b15993172819245"><a name="b15993172819245"></a><a name="b15993172819245"></a>GetObjectUrl</strong> API through the SDK to obtain the object domain name.</p>
 </td>
 <td class="cellrowborder" valign="top" width="8.01%" headers="mcps1.2.5.1.4 "><p id="p132801859105519"><a name="p132801859105519"></a><a name="p132801859105519"></a>HTTPS</p>
 <p id="p13462053122016"><a name="p13462053122016"></a><a name="p13462053122016"></a>HTTP</p>
@@ -56,7 +56,7 @@ An OBS bucket domain name is in the format  **_BucketName.Endpoint_**, where  **
 </td>
 <td class="cellrowborder" valign="top" width="39.489999999999995%" headers="mcps1.2.5.1.2 "><p id="p13434631111815"><a name="p13434631111815"></a><a name="p13434631111815"></a><strong id="b1514554345410"><a name="b1514554345410"></a><a name="b1514554345410"></a>BucketName.obs-website.Enpoint</strong></p>
 </td>
-<td class="cellrowborder" valign="top" width="40.56%" headers="mcps1.2.5.1.3 "><p id="p443423181814"><a name="p443423181814"></a><a name="p443423181814"></a>Static website domain name is a bucket domain name when the bucket is configured to host a static website.</p>
+<td class="cellrowborder" valign="top" width="40.56%" headers="mcps1.2.5.1.3 "><p id="p443423181814"><a name="p443423181814"></a><a name="p443423181814"></a>A static website domain name is a bucket domain name when the bucket is configured to host a static website.</p>
 </td>
 <td class="cellrowborder" valign="top" width="8.01%" headers="mcps1.2.5.1.4 "><p id="p1019528565"><a name="p1019528565"></a><a name="p1019528565"></a>HTTPS</p>
 <p id="p10346155302015"><a name="p10346155302015"></a><a name="p10346155302015"></a>HTTP</p>

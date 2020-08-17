@@ -21,8 +21,8 @@ OBS Browser supports resumable transfer. If the upload task is suspended or fail
 
     You can upload a maximum of 500 files or folders at a time.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >If the files to be uploaded to OBS are stored in Microsoft OneDrive, it is recommended that the names of these files contain a maximum of 32 characters.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >If the files that you want to upload to OBS are stored in Microsoft OneDrive, it is recommended that the names of these files contain a maximum of 32 characters.
 
 5.  <a name="obs_03_0024_li018223074620"></a>Click  **Select Folder**, select a folder, and click  **OK**.
 6.  Select a storage class. If no storage class is selected, the object inherits the bucket storage class by default.
@@ -38,8 +38,8 @@ You can modify the storage class of the object after uploading the file or folde
 4.  Select the desired storage class and click  **OK**.
 5.  In the displayed dialog box, click  **Close**  to close the dialog box.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->-   Objects can be changed from the  **Standard**  storage class to  **Warm**  or  **Cold**  storage class. Objects can be changed from the  **Warm**  storage class to  **Standard**  or  **Cold**  storage class. Objects of the  **Cold**  storage class must be restored before being changed to  **Standard**  or  **Warm**  storage class. The latter two changes incur penalty and restoration fees. Determine an appropriate change path based on your actual needs.  
->-   When the storage class is changed to Cold, the object restoration status changes to  **Unrestored**.  
->-   You can also configure a lifecycle rule to change the storage class of an object. For details, see  [Lifecycle Management Overview](lifecycle-management-overview-(browser).md).  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>-   Objects can be changed from  **Standard**  to  **Warm**  or  **Cold**  storage class, or from  **Warm**  to  **Standard**  or  **Cold**  storage class, but objects in  **Cold**  storage class must be restored before being changed to  **Standard**  or  **Warm**  storage class. Changing from  **Warm**  or  **Cold**  to other storage classes incurs restoration fees. Select an appropriate change option based on your actual needs.
+>-   When the storage class is changed to  **Cold**, the object restoration status changes to  **Unrestored**.
+>-   You can also configure a lifecycle rule to change the storage class of an object. For details, see  [Lifecycle Management Overview](lifecycle-management-overview-(browser).md).
 

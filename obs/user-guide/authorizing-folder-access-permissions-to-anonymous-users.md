@@ -4,7 +4,7 @@ If all objects in a folder need to be accessible to anonymous users, you can con
 
 ## Procedure<a name="section17557163019204"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Permissions**  to go to the permission management page.
 3.  Choose  **Bucket Policies**  \>  **Custom Bucket Policies**.
 4.  Click  **Create Bucket Policy**. The  **Create Bucket Policy**  dialog box is displayed.

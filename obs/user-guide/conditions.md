@@ -1,6 +1,8 @@
 # Conditions<a name="obs_03_0120"></a>
 
-In addition to the effect, principal, resources, and actions, you can also specify the conditions under which the bucket policy takes effect. A bucket policy takes effect only when its condition expressions match values contained in the request.  **Conditions**  is an optional parameter. You can determine whether to use this parameter based on service requirements. For example, if account  **A**  needs to be granted with full control permissions for an object uploaded by account  **B**  in bucket  **example**, you can specify that the upload request must contain the  **acl**  key and set the policy effect to  **Allow**  for account  **A**. The complete condition expression is as follows:
+In addition to the effect, principal, resources, and actions, you can also specify the conditions under which the bucket policy takes effect. A bucket policy takes effect only when its condition expressions match values contained in the request.  **Conditions**  is an optional parameter. You can determine whether to use this parameter based on service requirements.
+
+For example, if account  **A**  needs to be granted with full control permissions for an object uploaded by account  **B**  in bucket  **example**, you can specify that the upload request must contain the  **acl**  key and set the policy effect to  **Allow**  for account  **A**. The complete condition expression is as follows:
 
 <a name="table4665122635716"></a>
 <table><thead align="left"><tr id="row18929192605713"><th class="cellrowborder" valign="top" width="26.529999999999998%" id="mcps1.1.4.1.1"><p id="p1692982625718"><a name="p1692982625718"></a><a name="p1692982625718"></a>Condition Operator</p>
@@ -146,12 +148,12 @@ A condition consists of three parts: condition operator, key, and value. Conditi
 </td>
 <td class="cellrowborder" valign="top" width="34.69%" headers="mcps1.2.4.1.2 "><p id="p39351726205718"><a name="p39351726205718"></a><a name="p39351726205718"></a>IpAddress</p>
 </td>
-<td class="cellrowborder" valign="top" width="47.96%" headers="mcps1.2.4.1.3 "><p id="p13935426185714"><a name="p13935426185714"></a><a name="p13935426185714"></a>Takes effect only on specified IP address or IP address range. Example: <strong id="b173971220179"><a name="b173971220179"></a><a name="b173971220179"></a>x.x.x.x/24</strong></p>
+<td class="cellrowborder" valign="top" width="47.96%" headers="mcps1.2.4.1.3 "><p id="p13935426185714"><a name="p13935426185714"></a><a name="p13935426185714"></a>Takes effect only on a specified IP address or IP address range. Example: <strong id="b173971220179"><a name="b173971220179"></a><a name="b173971220179"></a>x.x.x.x/24</strong></p>
 </td>
 </tr>
 <tr id="row1193542665711"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p9935142635716"><a name="p9935142635716"></a><a name="p9935142635716"></a>NotIpAddress</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p15935826105715"><a name="p15935826105715"></a><a name="p15935826105715"></a>Take effect only on all except specified IP address or IP address range. Example: <strong id="b117663565187"><a name="b117663565187"></a><a name="b117663565187"></a>x.x.x.x/24</strong></p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p15935826105715"><a name="p15935826105715"></a><a name="p15935826105715"></a>Takes effect only on all except the specified IP address or IP address range. Example: <strong id="b117663565187"><a name="b117663565187"></a><a name="b117663565187"></a>x.x.x.x/24</strong></p>
 </td>
 </tr>
 </tbody>
@@ -252,7 +254,7 @@ A condition can contain any of the three types of keys: general keys, keys relat
 </tr>
 <tr id="row993715262572"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p119371326175713"><a name="p119371326175713"></a><a name="p119371326175713"></a>delimiter</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p6937162615576"><a name="p6937162615576"></a><a name="p6937162615576"></a>Type: String. String used to group multi-version objects in a bucket.</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p6937162615576"><a name="p6937162615576"></a><a name="p6937162615576"></a>Type: String. String used to group multi-version objects in a bucket</p>
 </td>
 </tr>
 <tr id="row693722612571"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p15937326155717"><a name="p15937326155717"></a><a name="p15937326155717"></a>max-keys</p>

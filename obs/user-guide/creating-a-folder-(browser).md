@@ -16,7 +16,7 @@ Unlike the file system, OBS does not involve the concepts of file and folder. Fo
     -   The name cannot start or end with a period \(.\) or slash \(/\).
     -   The absolute path of the folder cannot exceed 1023 characters.
     -   Any single slash \(/\) separates and creates multiple levels of folders at once.
-    -   Cannot contain two or more adjacent slashes \(/\).
+    -   The name cannot contain two or more consecutive slashes \(/\).
 
 4.  In the dialog box that is displayed, click  **OK**.
 

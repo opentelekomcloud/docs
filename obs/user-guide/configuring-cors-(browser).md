@@ -8,8 +8,8 @@ This section describes how to use CORS in HTML5 to implement cross-origin access
 2.  Select the bucket to be configured and click  **More**  \>  **Configure CORS Rule**.
 3.  Click  **Add**.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >You can set a maximum of 100 CORS rules for one bucket.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >You can set a maximum of 100 CORS rules for one bucket.
 
 4.  In the  **Add CORS Rule**  dialog box that is displayed, enter CORS rules.
 
@@ -43,7 +43,7 @@ This section describes how to use CORS in HTML5 to implement cross-origin access
     <tr id="r467a5c6a833f4015bb22f4087de6b74c"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="a6dc9a4d89e134b2aa83df07975ff13fe"><a name="a6dc9a4d89e134b2aa83df07975ff13fe"></a><a name="a6dc9a4d89e134b2aa83df07975ff13fe"></a>Allowed Header</p>
     </td>
     <td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="adea4598de03143f2a8e47195d17341d1"><a name="adea4598de03143f2a8e47195d17341d1"></a><a name="adea4598de03143f2a8e47195d17341d1"></a>Specifies the allowed header of cross-origin requests. This parameter is optional. Only CORS requests matching the allowed header are valid.</p>
-    <p id="a055e9cbebabc4c85ad34a31b69b5ada3"><a name="a055e9cbebabc4c85ad34a31b69b5ada3"></a><a name="a055e9cbebabc4c85ad34a31b69b5ada3"></a>You can enter multiple allowed headers (one per line) and each line can contain one wildcard character (*) at most. Spaces and special characters including &amp;:&lt; are not allowed.</p>
+    <p id="a055e9cbebabc4c85ad34a31b69b5ada3"><a name="a055e9cbebabc4c85ad34a31b69b5ada3"></a><a name="a055e9cbebabc4c85ad34a31b69b5ada3"></a>You can enter multiple allowed headers (one per line) and each line can contain one wildcard character (*) at most. Spaces and special characters including <strong id="b56257227210"><a name="b56257227210"></a><a name="b56257227210"></a>&amp;:&lt;</strong> are not allowed.</p>
     </td>
     </tr>
     <tr id="r64d7889221344540a64115505d5e1e72"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="a910e77b75bbd4c2986a23ce2aab35e6f"><a name="a910e77b75bbd4c2986a23ce2aab35e6f"></a><a name="a910e77b75bbd4c2986a23ce2aab35e6f"></a>Exposed Header</p>
@@ -54,7 +54,7 @@ This section describes how to use CORS in HTML5 to implement cross-origin access
     </tr>
     <tr id="r878b4e4c1aa9415ebabb6923463b8153"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="a69c5c5a0268b4a33a275a5109847d94c"><a name="a69c5c5a0268b4a33a275a5109847d94c"></a><a name="a69c5c5a0268b4a33a275a5109847d94c"></a>Cache Duration (s)</p>
     </td>
-    <td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="ab09e25a0b9b74b6a978e809ab22ba139"><a name="ab09e25a0b9b74b6a978e809ab22ba139"></a><a name="ab09e25a0b9b74b6a978e809ab22ba139"></a>Mandatory; specifies the duration that your browser can cache CORS responses, expressed in seconds. The default value is 100.</p>
+    <td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="ab09e25a0b9b74b6a978e809ab22ba139"><a name="ab09e25a0b9b74b6a978e809ab22ba139"></a><a name="ab09e25a0b9b74b6a978e809ab22ba139"></a>Mandatory. Specifies the duration that your browser can cache CORS responses, expressed in seconds. The default value is 100.</p>
     </td>
     </tr>
     </tbody>
@@ -63,7 +63,7 @@ This section describes how to use CORS in HTML5 to implement cross-origin access
 5.  Click  **OK**.
 6.  Click  **OK**  to save the rules.
 
-    After CORS is successfully configured, only the addresses specified in  **Allowed Origin**  can access a bucket on OBS using the method specified in  **Allowed Method**. For example, you configure CORS parameters of bucket  **testbucket**  as follows:  **Allowed Origin: www.example.com**;  **Allowed Method: GET**;  **Allowed Header**: left blank;  **Exposed Header**: left blank;  **Cache Duration \(s\): 100**
+    After CORS is successfully configured, only the addresses specified in  **Allowed Origin**  can access a bucket in OBS using the method specified in  **Allowed Method**. For example, you configure CORS parameters of bucket  **testbucket**  as follows:  **Allowed Origin: www.example.com**;  **Allowed Method: GET**;  **Allowed Header**: left blank;  **Exposed Header**: left blank;  **Cache Duration \(s\): 100**. Then OBS only allows GET requests from  **www.example.com**  to access the  **testbucket**, without restrictions on request headers. The client can cache the CORS response for 100 seconds. 
 
 7.  In the displayed dialog box, click  **Close**  to close the dialog box.
 

@@ -2,11 +2,11 @@
 
 When you delete or change the storage class of an object, the  **Task Management**  is displayed in the lower part of the console. You can manage tasks through  **Task Management**.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->When the web page is reloaded, the task records in the task management list will get lost.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>When the web page is reloaded, the task records in the task management list will get lost.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->Reloading the website discard task records without user requests, and delete operations delete task records without user requests.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>Reloading the website discard task records without user requests, and delete operations delete task records without user requests.
 
 ## Procedure<a name="section101970222819"></a>
 

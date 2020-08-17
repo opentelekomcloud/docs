@@ -26,8 +26,8 @@
 
     You can upload a maximum of 500 files or folders at a time.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >If the files to be uploaded to OBS are stored in Microsoft OneDrive, it is recommended that the names of these files contain a maximum of 32 characters.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >If the files that you want to upload to OBS are stored in Microsoft OneDrive, it is recommended that the names of these files contain a maximum of 32 characters.
 
 5.  <a name="li018223074620"></a>Click  **Select Folder**, select a folder, and click  **OK**.
 6.  Select a storage class. If no storage class is selected, the object inherits the bucket storage class by default.
