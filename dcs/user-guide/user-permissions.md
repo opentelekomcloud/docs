@@ -1,4 +1,4 @@
-# User Permissions<a name="EN-US_TOPIC_0237964711"></a>
+# User Permissions<a name="en-us_topic_0054247786"></a>
 
 The public cloud system provides two types of user permissions by default: user management and resource management.
 

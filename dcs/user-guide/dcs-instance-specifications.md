@@ -1,147 +1,209 @@
-# DCS Instance Specifications<a name="EN-US_TOPIC_0237964758"></a>
+# DCS Instance Specifications<a name="en-us_topic_0054235835"></a>
 
-For each single-node DCS Redis instance, the available memory is less than the total memory because some memory is reserved for system overhead.
+For each single-node DCS Redis instance, the available memory is less than the total memory because some memory is reserved for system overhead, as shown in  [Table 1](#table2399016819).
 
-For each master/standby DCS Redis instance, the available memory is less than the total memory because some memory is reserved for data persistence. If DCS Redis instances are deployed in master/standby mode, only the master cache node contributes to the available memory.
+**Table  1**  Specifications of single-node DCS Redis 3.0 instances
 
-**Table  1**  Specifications of single-node and master/standby DCS Redis instances
-
-<a name="table2822601515717"></a>
-<table><tbody><tr id="row45170224"><td class="cellrowborder" colspan="3" valign="top"><p id="p34909498"><a name="p34909498"></a><a name="p34909498"></a><strong id="b45750028"><a name="b45750028"></a><a name="b45750028"></a>Memory (GB)</strong></p>
-</td>
-<td class="cellrowborder" rowspan="2" valign="top"><p id="p14764792"><a name="p14764792"></a><a name="p14764792"></a><strong id="b65774268"><a name="b65774268"></a><a name="b65774268"></a>Maximum Number of Connections Allowed</strong></p>
-</td>
-<td class="cellrowborder" rowspan="2" valign="top"><p id="p26115459"><a name="p26115459"></a><a name="p26115459"></a><strong id="b33712545"><a name="b33712545"></a><a name="b33712545"></a>Maximum Intranet Bandwidth (Mbit/s)</strong></p>
-</td>
-</tr>
-<tr id="row34977455"><td class="cellrowborder" valign="top"><p id="p14601640"><a name="p14601640"></a><a name="p14601640"></a><strong id="b64305901"><a name="b64305901"></a><a name="b64305901"></a>Total</strong></p>
-</td>
-<td class="cellrowborder" valign="top"><p id="p41395459"><a name="p41395459"></a><a name="p41395459"></a><strong id="b37014815"><a name="b37014815"></a><a name="b37014815"></a>Available (Single Node)</strong></p>
-</td>
-<td class="cellrowborder" valign="top"><p id="p45410029"><a name="p45410029"></a><a name="p45410029"></a><strong id="b6037081"><a name="b6037081"></a><a name="b6037081"></a>Available (Master/Standby)</strong></p>
-</td>
-</tr>
-<tr id="row54333736"><td class="cellrowborder" valign="top" width="9.47617794156357%"><p id="p38956471"><a name="p38956471"></a><a name="p38956471"></a>2</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.49662191804861%"><p id="p1357571"><a name="p1357571"></a><a name="p1357571"></a>1.5</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.007370360621213%"><p id="p42854387"><a name="p42854387"></a><a name="p42854387"></a>1.5</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.18074931999649%"><p id="p48653295"><a name="p48653295"></a><a name="p48653295"></a>10,000</p>
-</td>
-<td class="cellrowborder" valign="top" width="21.839080459770116%"><p id="p48602848"><a name="p48602848"></a><a name="p48602848"></a>128</p>
-</td>
-</tr>
-<tr id="row34772456"><td class="cellrowborder" valign="top" width="9.47617794156357%"><p id="p65105571"><a name="p65105571"></a><a name="p65105571"></a>4</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.49662191804861%"><p id="p39059911"><a name="p39059911"></a><a name="p39059911"></a>3.2</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.007370360621213%"><p id="p9736186"><a name="p9736186"></a><a name="p9736186"></a>3.2</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.18074931999649%"><p id="p50433639"><a name="p50433639"></a><a name="p50433639"></a>10,000</p>
-</td>
-<td class="cellrowborder" valign="top" width="21.839080459770116%"><p id="p58592948"><a name="p58592948"></a><a name="p58592948"></a>192</p>
-</td>
-</tr>
-<tr id="row57574486"><td class="cellrowborder" valign="top" width="9.47617794156357%"><p id="p33021783"><a name="p33021783"></a><a name="p33021783"></a>8</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.49662191804861%"><p id="p57518732"><a name="p57518732"></a><a name="p57518732"></a>6.8</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.007370360621213%"><p id="p28505693"><a name="p28505693"></a><a name="p28505693"></a>6.4</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.18074931999649%"><p id="p27259828"><a name="p27259828"></a><a name="p27259828"></a>10,000</p>
-</td>
-<td class="cellrowborder" valign="top" width="21.839080459770116%"><p id="p60562422"><a name="p60562422"></a><a name="p60562422"></a>192</p>
-</td>
-</tr>
-<tr id="row8190892"><td class="cellrowborder" valign="top" width="9.47617794156357%"><p id="p59482492"><a name="p59482492"></a><a name="p59482492"></a>16</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.49662191804861%"><p id="p53352557"><a name="p53352557"></a><a name="p53352557"></a>13.6</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.007370360621213%"><p id="p26589862"><a name="p26589862"></a><a name="p26589862"></a>12.8</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.18074931999649%"><p id="p6295248"><a name="p6295248"></a><a name="p6295248"></a>10,000</p>
-</td>
-<td class="cellrowborder" valign="top" width="21.839080459770116%"><p id="p40153107"><a name="p40153107"></a><a name="p40153107"></a>256</p>
-</td>
-</tr>
-<tr id="row25833645"><td class="cellrowborder" valign="top" width="9.47617794156357%"><p id="p12150471"><a name="p12150471"></a><a name="p12150471"></a>32</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.49662191804861%"><p id="p44664077"><a name="p44664077"></a><a name="p44664077"></a>27.2</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.007370360621213%"><p id="p61020521"><a name="p61020521"></a><a name="p61020521"></a>25.6</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.18074931999649%"><p id="p43715136"><a name="p43715136"></a><a name="p43715136"></a>10,000</p>
-</td>
-<td class="cellrowborder" valign="top" width="21.839080459770116%"><p id="p51265148"><a name="p51265148"></a><a name="p51265148"></a>256</p>
-</td>
-</tr>
-<tr id="row58733156"><td class="cellrowborder" valign="top" width="9.47617794156357%"><p id="p59765170"><a name="p59765170"></a><a name="p59765170"></a>64</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.49662191804861%"><p id="p9140568"><a name="p9140568"></a><a name="p9140568"></a>58.2</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.007370360621213%"><p id="p2188543"><a name="p2188543"></a><a name="p2188543"></a>51.2</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.18074931999649%"><p id="p43054286"><a name="p43054286"></a><a name="p43054286"></a>12,000</p>
-</td>
-<td class="cellrowborder" valign="top" width="21.839080459770116%"><p id="p64845166"><a name="p64845166"></a><a name="p64845166"></a>384</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-**Table  2**  Specifications of cluster DCS Redis instances
-
-<a name="table45620191"></a>
-<table><thead align="left"><tr id="row8999603"><th class="cellrowborder" valign="top" width="23.232323232323232%" id="mcps1.2.5.1.1"><p id="p57879229"><a name="p57879229"></a><a name="p57879229"></a><strong id="b123611619183513"><a name="b123611619183513"></a><a name="b123611619183513"></a>Total Memory (GB)</strong></p>
+<a name="table2399016819"></a>
+<table><thead align="left"><tr id="row9399911884"><th class="cellrowborder" valign="top" width="20.96%" id="mcps1.2.5.1.1"><p id="p84005115815"><a name="p84005115815"></a><a name="p84005115815"></a>Total Memory</p>
+<p id="p1640071784"><a name="p1640071784"></a><a name="p1640071784"></a>(GB)</p>
 </th>
-<th class="cellrowborder" valign="top" width="25.252525252525253%" id="mcps1.2.5.1.2"><p id="p57705992"><a name="p57705992"></a><a name="p57705992"></a><strong id="b83708199358"><a name="b83708199358"></a><a name="b83708199358"></a>Available Memory (GB)</strong></p>
+<th class="cellrowborder" valign="top" width="22.45%" id="mcps1.2.5.1.2"><p id="p1940051989"><a name="p1940051989"></a><a name="p1940051989"></a>Available Memory</p>
+<p id="p1340081283"><a name="p1340081283"></a><a name="p1340081283"></a>(GB)</p>
 </th>
-<th class="cellrowborder" valign="top" width="23.232323232323232%" id="mcps1.2.5.1.3"><p id="p43673788"><a name="p43673788"></a><a name="p43673788"></a><strong id="b1937215191357"><a name="b1937215191357"></a><a name="b1937215191357"></a>Maximum Number of Connections Allowed</strong></p>
+<th class="cellrowborder" valign="top" width="27.85%" id="mcps1.2.5.1.3"><p id="p194001219814"><a name="p194001219814"></a><a name="p194001219814"></a>Maximum Connections Allowed</p>
 </th>
-<th class="cellrowborder" valign="top" width="28.28282828282828%" id="mcps1.2.5.1.4"><p id="p47915903"><a name="p47915903"></a><a name="p47915903"></a><strong id="b337415197357"><a name="b337415197357"></a><a name="b337415197357"></a>Maximum Intranet Bandwidth (Mbit/s)</strong></p>
+<th class="cellrowborder" valign="top" width="28.74%" id="mcps1.2.5.1.4"><p id="p5400161689"><a name="p5400161689"></a><a name="p5400161689"></a>Assured/Maximum Bandwidth</p>
+<p id="p440081986"><a name="p440081986"></a><a name="p440081986"></a>(Mbit/s)</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row55982972"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.5.1.1 "><p id="p38326873"><a name="p38326873"></a><a name="p38326873"></a>64</p>
+<tbody><tr id="row8400511818"><td class="cellrowborder" valign="top" width="20.96%" headers="mcps1.2.5.1.1 "><p id="p6400151189"><a name="p6400151189"></a><a name="p6400151189"></a>2</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.2 "><p id="p17468990"><a name="p17468990"></a><a name="p17468990"></a>64</p>
+<td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.2 "><p id="p14400171283"><a name="p14400171283"></a><a name="p14400171283"></a>1.5</p>
 </td>
-<td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.5.1.3 "><p id="p5702100"><a name="p5702100"></a><a name="p5702100"></a>20,000</p>
+<td class="cellrowborder" valign="top" width="27.85%" headers="mcps1.2.5.1.3 "><p id="p16400311682"><a name="p16400311682"></a><a name="p16400311682"></a>10,000</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.28282828282828%" headers="mcps1.2.5.1.4 "><p id="p59216962"><a name="p59216962"></a><a name="p59216962"></a>2000</p>
-</td>
-</tr>
-<tr id="row63190618"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.5.1.1 "><p id="p18166465"><a name="p18166465"></a><a name="p18166465"></a>128</p>
-</td>
-<td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.2 "><p id="p62197523"><a name="p62197523"></a><a name="p62197523"></a>128</p>
-</td>
-<td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.5.1.3 "><p id="p4834618"><a name="p4834618"></a><a name="p4834618"></a>20,000</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.28282828282828%" headers="mcps1.2.5.1.4 "><p id="p56059806"><a name="p56059806"></a><a name="p56059806"></a>2000</p>
+<td class="cellrowborder" valign="top" width="28.74%" headers="mcps1.2.5.1.4 "><p id="p81531543133217"><a name="p81531543133217"></a><a name="p81531543133217"></a><span>42/512</span></p>
 </td>
 </tr>
-<tr id="row34776210"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.5.1.1 "><p id="p65409627"><a name="p65409627"></a><a name="p65409627"></a>256</p>
+<tr id="row94001211882"><td class="cellrowborder" valign="top" width="20.96%" headers="mcps1.2.5.1.1 "><p id="p154005118817"><a name="p154005118817"></a><a name="p154005118817"></a>4</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.2 "><p id="p63688469"><a name="p63688469"></a><a name="p63688469"></a>256</p>
+<td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.2 "><p id="p34001013811"><a name="p34001013811"></a><a name="p34001013811"></a>3.2</p>
 </td>
-<td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.5.1.3 "><p id="p58492392"><a name="p58492392"></a><a name="p58492392"></a>20,000</p>
+<td class="cellrowborder" valign="top" width="27.85%" headers="mcps1.2.5.1.3 "><p id="p174007111815"><a name="p174007111815"></a><a name="p174007111815"></a>10,000</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.28282828282828%" headers="mcps1.2.5.1.4 "><p id="p40263291"><a name="p40263291"></a><a name="p40263291"></a>2000</p>
+<td class="cellrowborder" valign="top" width="28.74%" headers="mcps1.2.5.1.4 "><p id="p9401511189"><a name="p9401511189"></a><a name="p9401511189"></a>64/1,536</p>
 </td>
 </tr>
-<tr id="row26825300"><td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.5.1.1 "><p id="p25365674"><a name="p25365674"></a><a name="p25365674"></a>512</p>
+<tr id="row17401813813"><td class="cellrowborder" valign="top" width="20.96%" headers="mcps1.2.5.1.1 "><p id="p0401511282"><a name="p0401511282"></a><a name="p0401511282"></a>8</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.2 "><p id="p41353750"><a name="p41353750"></a><a name="p41353750"></a>512</p>
+<td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.2 "><p id="p9401811689"><a name="p9401811689"></a><a name="p9401811689"></a>6.8</p>
 </td>
-<td class="cellrowborder" valign="top" width="23.232323232323232%" headers="mcps1.2.5.1.3 "><p id="p61319421"><a name="p61319421"></a><a name="p61319421"></a>20,000</p>
+<td class="cellrowborder" valign="top" width="27.85%" headers="mcps1.2.5.1.3 "><p id="p204011011983"><a name="p204011011983"></a><a name="p204011011983"></a>10,000</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.28282828282828%" headers="mcps1.2.5.1.4 "><p id="p817225"><a name="p817225"></a><a name="p817225"></a>2000</p>
+<td class="cellrowborder" valign="top" width="28.74%" headers="mcps1.2.5.1.4 "><p id="p679633919338"><a name="p679633919338"></a><a name="p679633919338"></a>64/1,536</p>
+</td>
+</tr>
+<tr id="row1401811289"><td class="cellrowborder" valign="top" width="20.96%" headers="mcps1.2.5.1.1 "><p id="p104011511285"><a name="p104011511285"></a><a name="p104011511285"></a>16</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.2 "><p id="p44011712811"><a name="p44011712811"></a><a name="p44011712811"></a>13.6</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.85%" headers="mcps1.2.5.1.3 "><p id="p184011611088"><a name="p184011611088"></a><a name="p184011611088"></a>10,000</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.74%" headers="mcps1.2.5.1.4 "><p id="p74011311782"><a name="p74011311782"></a><a name="p74011311782"></a>85/3,072</p>
+</td>
+</tr>
+<tr id="row24012113811"><td class="cellrowborder" valign="top" width="20.96%" headers="mcps1.2.5.1.1 "><p id="p11401411985"><a name="p11401411985"></a><a name="p11401411985"></a>32</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.2 "><p id="p16401101983"><a name="p16401101983"></a><a name="p16401101983"></a>27.2</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.85%" headers="mcps1.2.5.1.3 "><p id="p16401110813"><a name="p16401110813"></a><a name="p16401110813"></a>10,000</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.74%" headers="mcps1.2.5.1.4 "><p id="p1344448341"><a name="p1344448341"></a><a name="p1344448341"></a>85/3,072</p>
+</td>
+</tr>
+<tr id="row34011713817"><td class="cellrowborder" valign="top" width="20.96%" headers="mcps1.2.5.1.1 "><p id="p54011213818"><a name="p54011213818"></a><a name="p54011213818"></a>64</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.45%" headers="mcps1.2.5.1.2 "><p id="p104011011181"><a name="p104011011181"></a><a name="p104011011181"></a>58.2</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.85%" headers="mcps1.2.5.1.3 "><p id="p0401215820"><a name="p0401215820"></a><a name="p0401215820"></a>12,000</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.74%" headers="mcps1.2.5.1.4 "><p id="p194021011088"><a name="p194021011088"></a><a name="p194021011088"></a>128/5,120</p>
 </td>
 </tr>
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->The maximum intranet bandwidth is the sum of maximum inbound and outbound intranet bandwidths. Usually, DCS instances are read more frequently than they are written. Therefore, it is recommended that the maximum inbound intranet bandwidth be one third of the maximum intranet bandwidth and the maximum outbound intranet bandwidth be two thirds of the maximum intranet bandwidth.  
+For each master/standby DCS Redis instance, the available memory is less than that of a single-node DCS Redis instance because some memory is reserved for data persistence, as shown in  [Table 3](#table1940616118815). The available memory of a master/standby instance can be adjusted to support background tasks such as data persistence and master/standby synchronization.
+
+**Table  2**  Specifications of master/standby DCS Redis 3.0 instances
+
+<a name="table1540218117813"></a>
+<table><thead align="left"><tr id="row14402011989"><th class="cellrowborder" valign="top" width="22.29%" id="mcps1.2.5.1.1"><p id="p1540213113819"><a name="p1540213113819"></a><a name="p1540213113819"></a>Total Memory</p>
+<p id="p04022010816"><a name="p04022010816"></a><a name="p04022010816"></a>(GB)</p>
+</th>
+<th class="cellrowborder" valign="top" width="23.330000000000002%" id="mcps1.2.5.1.2"><p id="p240216118811"><a name="p240216118811"></a><a name="p240216118811"></a>Available Memory</p>
+<p id="p9402511981"><a name="p9402511981"></a><a name="p9402511981"></a>(GB)</p>
+</th>
+<th class="cellrowborder" valign="top" width="27.189999999999998%" id="mcps1.2.5.1.3"><p id="p144021211685"><a name="p144021211685"></a><a name="p144021211685"></a>Maximum Connections Allowed</p>
+</th>
+<th class="cellrowborder" valign="top" width="27.189999999999998%" id="mcps1.2.5.1.4"><p id="p117911940132119"><a name="p117911940132119"></a><a name="p117911940132119"></a>Assured/Maximum Bandwidth</p>
+<p id="p1179119402215"><a name="p1179119402215"></a><a name="p1179119402215"></a>(Mbit/s)</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row164031715818"><td class="cellrowborder" valign="top" width="22.29%" headers="mcps1.2.5.1.1 "><p id="p1340317119814"><a name="p1340317119814"></a><a name="p1340317119814"></a>2</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.5.1.2 "><p id="p17403214820"><a name="p17403214820"></a><a name="p17403214820"></a>1.5</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.189999999999998%" headers="mcps1.2.5.1.3 "><p id="p8403191184"><a name="p8403191184"></a><a name="p8403191184"></a>10,000</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.189999999999998%" headers="mcps1.2.5.1.4 "><p id="p108411423347"><a name="p108411423347"></a><a name="p108411423347"></a><span>42/512</span></p>
+</td>
+</tr>
+<tr id="row114031114811"><td class="cellrowborder" valign="top" width="22.29%" headers="mcps1.2.5.1.1 "><p id="p040312111815"><a name="p040312111815"></a><a name="p040312111815"></a>4</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.5.1.2 "><p id="p4403111185"><a name="p4403111185"></a><a name="p4403111185"></a>3.2</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.189999999999998%" headers="mcps1.2.5.1.3 "><p id="p184034117810"><a name="p184034117810"></a><a name="p184034117810"></a>10,000</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.189999999999998%" headers="mcps1.2.5.1.4 "><p id="p1784842103417"><a name="p1784842103417"></a><a name="p1784842103417"></a>64/1,536</p>
+</td>
+</tr>
+<tr id="row64041018816"><td class="cellrowborder" valign="top" width="22.29%" headers="mcps1.2.5.1.1 "><p id="p1240451689"><a name="p1240451689"></a><a name="p1240451689"></a>8</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.5.1.2 "><p id="p84041813811"><a name="p84041813811"></a><a name="p84041813811"></a>6.4</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.189999999999998%" headers="mcps1.2.5.1.3 "><p id="p440414118813"><a name="p440414118813"></a><a name="p440414118813"></a>10,000</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.189999999999998%" headers="mcps1.2.5.1.4 "><p id="p18419428340"><a name="p18419428340"></a><a name="p18419428340"></a>64/1,536</p>
+</td>
+</tr>
+<tr id="row1340414115810"><td class="cellrowborder" valign="top" width="22.29%" headers="mcps1.2.5.1.1 "><p id="p11404112084"><a name="p11404112084"></a><a name="p11404112084"></a>16</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.5.1.2 "><p id="p1040412117810"><a name="p1040412117810"></a><a name="p1040412117810"></a>12.8</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.189999999999998%" headers="mcps1.2.5.1.3 "><p id="p64055118812"><a name="p64055118812"></a><a name="p64055118812"></a>10,000</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.189999999999998%" headers="mcps1.2.5.1.4 "><p id="p48424293412"><a name="p48424293412"></a><a name="p48424293412"></a>85/3,072</p>
+</td>
+</tr>
+<tr id="row144051513812"><td class="cellrowborder" valign="top" width="22.29%" headers="mcps1.2.5.1.1 "><p id="p2040551184"><a name="p2040551184"></a><a name="p2040551184"></a>32</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.5.1.2 "><p id="p174051311817"><a name="p174051311817"></a><a name="p174051311817"></a>25.6</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.189999999999998%" headers="mcps1.2.5.1.3 "><p id="p5405511985"><a name="p5405511985"></a><a name="p5405511985"></a>10,000</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.189999999999998%" headers="mcps1.2.5.1.4 "><p id="p1584114217348"><a name="p1584114217348"></a><a name="p1584114217348"></a>85/3,072</p>
+</td>
+</tr>
+<tr id="row15405019820"><td class="cellrowborder" valign="top" width="22.29%" headers="mcps1.2.5.1.1 "><p id="p74057114820"><a name="p74057114820"></a><a name="p74057114820"></a>64</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.330000000000002%" headers="mcps1.2.5.1.2 "><p id="p104051515814"><a name="p104051515814"></a><a name="p104051515814"></a>51.2</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.189999999999998%" headers="mcps1.2.5.1.3 "><p id="p64051611385"><a name="p64051611385"></a><a name="p64051611385"></a>12,000</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.189999999999998%" headers="mcps1.2.5.1.4 "><p id="p1384242193416"><a name="p1384242193416"></a><a name="p1384242193416"></a>128/5,120</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+In addition to larger memory, Proxy Cluster instances feature more connections allowed and higher bandwidth allowed than single-node and master/standby instances.
+
+**Table  3**  Specifications of Proxy Cluster DCS Redis 3.0 instances
+
+<a name="table1940616118815"></a>
+<table><thead align="left"><tr id="row94061511881"><th class="cellrowborder" valign="top" width="22.23777622237776%" id="mcps1.2.5.1.1"><p id="p15406511384"><a name="p15406511384"></a><a name="p15406511384"></a>Total Memory</p>
+<p id="p19406411814"><a name="p19406411814"></a><a name="p19406411814"></a>(GB)</p>
+</th>
+<th class="cellrowborder" valign="top" width="22.667733226677335%" id="mcps1.2.5.1.2"><p id="p34062114817"><a name="p34062114817"></a><a name="p34062114817"></a>Available Memory</p>
+<p id="p1940618112811"><a name="p1940618112811"></a><a name="p1940618112811"></a>(GB)</p>
+</th>
+<th class="cellrowborder" valign="top" width="27.637236276372363%" id="mcps1.2.5.1.3"><p id="p164061518811"><a name="p164061518811"></a><a name="p164061518811"></a>Maximum Connections Allowed</p>
+</th>
+<th class="cellrowborder" valign="top" width="27.457254274572545%" id="mcps1.2.5.1.4"><p id="p9155124592120"><a name="p9155124592120"></a><a name="p9155124592120"></a>Assured/Maximum Bandwidth</p>
+<p id="p12155194592117"><a name="p12155194592117"></a><a name="p12155194592117"></a>(Mbit/s)</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row204061611684"><td class="cellrowborder" valign="top" width="22.23777622237776%" headers="mcps1.2.5.1.1 "><p id="p16406811687"><a name="p16406811687"></a><a name="p16406811687"></a>64</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.667733226677335%" headers="mcps1.2.5.1.2 "><p id="p144061611684"><a name="p144061611684"></a><a name="p144061611684"></a>64</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.637236276372363%" headers="mcps1.2.5.1.3 "><p id="p19406919815"><a name="p19406919815"></a><a name="p19406919815"></a>90,000</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.457254274572545%" headers="mcps1.2.5.1.4 "><p id="p612184871414"><a name="p612184871414"></a><a name="p612184871414"></a>600/5,120</p>
+</td>
+</tr>
+<tr id="row84061812084"><td class="cellrowborder" valign="top" width="22.23777622237776%" headers="mcps1.2.5.1.1 "><p id="p114061818815"><a name="p114061818815"></a><a name="p114061818815"></a>128</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.667733226677335%" headers="mcps1.2.5.1.2 "><p id="p24071411819"><a name="p24071411819"></a><a name="p24071411819"></a>128</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.637236276372363%" headers="mcps1.2.5.1.3 "><p id="p1840712110815"><a name="p1840712110815"></a><a name="p1840712110815"></a>180,000</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.457254274572545%" headers="mcps1.2.5.1.4 "><p id="p17128174881419"><a name="p17128174881419"></a><a name="p17128174881419"></a>600/5,120</p>
+</td>
+</tr>
+<tr id="row94071716816"><td class="cellrowborder" valign="top" width="22.23777622237776%" headers="mcps1.2.5.1.1 "><p id="p540781688"><a name="p540781688"></a><a name="p540781688"></a>256</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.667733226677335%" headers="mcps1.2.5.1.2 "><p id="p12407011485"><a name="p12407011485"></a><a name="p12407011485"></a>256</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.637236276372363%" headers="mcps1.2.5.1.3 "><p id="p20407611481"><a name="p20407611481"></a><a name="p20407611481"></a>240,000</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.457254274572545%" headers="mcps1.2.5.1.4 "><p id="p10134194831414"><a name="p10134194831414"></a><a name="p10134194831414"></a>600/5,120</p>
+</td>
+</tr>
+<tr id="row1340712116813"><td class="cellrowborder" valign="top" width="22.23777622237776%" headers="mcps1.2.5.1.1 "><p id="p240781786"><a name="p240781786"></a><a name="p240781786"></a>512</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.667733226677335%" headers="mcps1.2.5.1.2 "><p id="p940713114818"><a name="p940713114818"></a><a name="p940713114818"></a>512</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.637236276372363%" headers="mcps1.2.5.1.3 "><p id="p1340712115820"><a name="p1340712115820"></a><a name="p1340712115820"></a>480,000</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.457254274572545%" headers="mcps1.2.5.1.4 "><p id="p2140248111410"><a name="p2140248111410"></a><a name="p2140248111410"></a>600/5,120</p>
+</td>
+</tr>
+</tbody>
+</table>
 

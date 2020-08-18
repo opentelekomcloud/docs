@@ -1,16 +1,16 @@
-# Viewing Details of a DCS Instance<a name="EN-US_TOPIC_0237964715"></a>
+# Viewing Details of a DCS Instance<a name="en-us_topic_0054235812"></a>
 
-## Scenario<a name="section1590600"></a>
+## Scenario<a name="section36446461"></a>
 
 On the DCS console, you can view details about a DCS instance.
 
-## Procedure<a name="section14315403"></a>
+## Procedure<a name="section66482253"></a>
 
 1.  Log in to the management console.
-2.  Click![](figures/icon-region.png)  in the upper left corner of the management console and select a region and a project.
-3.  Click  **Service List**, and choose  **Database**  \>  **Distributed Cache Service**  to launch the DCS console.
+2.  Click  ![](figures/project.png) in the upper left corner of the management console and select a region and a project.
+3.  Click  **Service List**, and choose **Database** \> **Distributed Cache Service**  to launch the DCS console.
 4.  In the navigation pane, choose  **Cache Manager**.
-5.  On the  **Cache Manager**  page,  Search for DCS instances using any of the following methods:
+5.  On the  **Cache Manager**  page, search for DCS instances using any of the following methods:
 
     -   Search by keyword.
 
@@ -24,106 +24,133 @@ On the DCS console, you can view details about a DCS instance.
 
 6.  On the DCS instance list, click the name of the chosen DCS instance to display more details about it.
 
-    **Table  1**  Parameters on the DCS instance details page
+    **Table  1**  Parameters on the Basic Information page of a DCS instance
 
-    <a name="table44346036"></a>
-    <table><thead align="left"><tr id="row31746690"><th class="cellrowborder" valign="top" width="15.308469153084694%" id="mcps1.2.4.1.1"><p id="p21345065"><a name="p21345065"></a><a name="p21345065"></a>Category</p>
+    <a name="table76493131315"></a>
+    <table><thead align="left"><tr id="row166322137116"><th class="cellrowborder" valign="top" width="15.841584158415841%" id="mcps1.2.4.1.1"><p id="p16321313414"><a name="p16321313414"></a><a name="p16321313414"></a>Section</p>
     </th>
-    <th class="cellrowborder" valign="top" width="20.407959204079592%" id="mcps1.2.4.1.2"><p id="p51228725"><a name="p51228725"></a><a name="p51228725"></a>Parameter</p>
+    <th class="cellrowborder" valign="top" width="17.82178217821782%" id="mcps1.2.4.1.2"><p id="p86321513815"><a name="p86321513815"></a><a name="p86321513815"></a>Parameter</p>
     </th>
-    <th class="cellrowborder" valign="top" width="64.28357164283572%" id="mcps1.2.4.1.3"><p id="p55886094"><a name="p55886094"></a><a name="p55886094"></a>Description</p>
+    <th class="cellrowborder" valign="top" width="66.33663366336634%" id="mcps1.2.4.1.3"><p id="p163261313116"><a name="p163261313116"></a><a name="p163261313116"></a>Description</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row30479771"><td class="cellrowborder" rowspan="13" valign="top" width="15.308469153084694%" headers="mcps1.2.4.1.1 "><p id="p52942405"><a name="p52942405"></a><a name="p52942405"></a>Instance Information</p>
+    <tbody><tr id="row663413137116"><td class="cellrowborder" rowspan="11" valign="top" width="15.841584158415841%" headers="mcps1.2.4.1.1 "><p id="p16324131717"><a name="p16324131717"></a><a name="p16324131717"></a>Instance Details</p>
+    <p id="p263217131716"><a name="p263217131716"></a><a name="p263217131716"></a></p>
+    <p id="p3632513714"><a name="p3632513714"></a><a name="p3632513714"></a></p>
+    <p id="p763331315110"><a name="p763331315110"></a><a name="p763331315110"></a></p>
+    <p id="p46338131419"><a name="p46338131419"></a><a name="p46338131419"></a></p>
+    <p id="p46331613011"><a name="p46331613011"></a><a name="p46331613011"></a></p>
+    <p id="p26331013618"><a name="p26331013618"></a><a name="p26331013618"></a></p>
+    <p id="p1463391317117"><a name="p1463391317117"></a><a name="p1463391317117"></a></p>
+    <p id="p106331113111"><a name="p106331113111"></a><a name="p106331113111"></a></p>
+    <p id="p19633171316118"><a name="p19633171316118"></a><a name="p19633171316118"></a></p>
+    <p id="p126336133110"><a name="p126336133110"></a><a name="p126336133110"></a></p>
+    <p id="p106331135110"><a name="p106331135110"></a><a name="p106331135110"></a></p>
+    <p id="p163320135113"><a name="p163320135113"></a><a name="p163320135113"></a></p>
+    <p id="p9633013816"><a name="p9633013816"></a><a name="p9633013816"></a></p>
+    <p id="p763317138117"><a name="p763317138117"></a><a name="p763317138117"></a></p>
+    <p id="p06336131712"><a name="p06336131712"></a><a name="p06336131712"></a></p>
+    <p id="p96336139116"><a name="p96336139116"></a><a name="p96336139116"></a></p>
+    <p id="p1163316136117"><a name="p1163316136117"></a><a name="p1163316136117"></a></p>
+    <p id="p186331613114"><a name="p186331613114"></a><a name="p186331613114"></a></p>
+    <p id="p186347134114"><a name="p186347134114"></a><a name="p186347134114"></a></p>
+    <p id="p1563419133113"><a name="p1563419133113"></a><a name="p1563419133113"></a></p>
+    <p id="p19634181320114"><a name="p19634181320114"></a><a name="p19634181320114"></a></p>
+    <p id="p206345131319"><a name="p206345131319"></a><a name="p206345131319"></a></p>
+    <p id="p12634171318113"><a name="p12634171318113"></a><a name="p12634171318113"></a></p>
+    <p id="p1317915456184"><a name="p1317915456184"></a><a name="p1317915456184"></a></p>
+    <p id="p15112840112316"><a name="p15112840112316"></a><a name="p15112840112316"></a></p>
     </td>
-    <td class="cellrowborder" valign="top" width="20.407959204079592%" headers="mcps1.2.4.1.2 "><p id="p60476403"><a name="p60476403"></a><a name="p60476403"></a>Name</p>
+    <td class="cellrowborder" valign="top" width="17.82178217821782%" headers="mcps1.2.4.1.2 "><p id="p16341213610"><a name="p16341213610"></a><a name="p16341213610"></a>Name</p>
     </td>
-    <td class="cellrowborder" valign="top" width="64.28357164283572%" headers="mcps1.2.4.1.3 "><p id="p66750478"><a name="p66750478"></a><a name="p66750478"></a>Name of the chosen instance. To modify the instance name, click the<a name="image158791713115915"></a><a name="image158791713115915"></a><span><img id="image158791713115915" src="figures/icon-edit.png"></span> icon.</p>
-    </td>
-    </tr>
-    <tr id="row38079613"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p64549801"><a name="p64549801"></a><a name="p64549801"></a>Status</p>
-    </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p61151353"><a name="p61151353"></a><a name="p61151353"></a>Status of the chosen DCS instance.</p>
-    </td>
-    </tr>
-    <tr id="row13491266"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p19050756"><a name="p19050756"></a><a name="p19050756"></a>Cache Engine</p>
-    </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p66716254"><a name="p66716254"></a><a name="p66716254"></a>Cache engine used by the chosen instance. Currently, only Redis 3.0 is supported.</p>
-    </td>
-    </tr>
-    <tr id="row63575380"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p49332166"><a name="p49332166"></a><a name="p49332166"></a>Instance Type</p>
-    </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p36482533"><a name="p36482533"></a><a name="p36482533"></a>Type of the chosen instance. Currently, three types are supported: single-node, master/standby, and cluster.</p>
-    </td>
-    </tr>
-    <tr id="row59907344"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p20656733"><a name="p20656733"></a><a name="p20656733"></a>Specification (GB)</p>
-    </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p62582666"><a name="p62582666"></a><a name="p62582666"></a>Specification of the chosen instance.</p>
-    </td>
-    </tr>
-    <tr id="row26373084"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p55845053"><a name="p55845053"></a><a name="p55845053"></a>Used/Available Memory (MB)</p>
-    </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p27155410"><a name="p27155410"></a><a name="p27155410"></a>The used memory space and maximum allowed memory space of the chosen instance.</p>
-    <p id="p43072099"><a name="p43072099"></a><a name="p43072099"></a>The used memory space includes:</p>
-    <a name="ul52104579"></a><a name="ul52104579"></a><ul id="ul52104579"><li>Size of data stored on the DCS instance</li><li>Size of Redis-server buffers (including client buffer and repli-backlog) and internal data structures</li></ul>
+    <td class="cellrowborder" valign="top" width="66.33663366336634%" headers="mcps1.2.4.1.3 "><p id="p1563410131715"><a name="p1563410131715"></a><a name="p1563410131715"></a>Name of the chosen instance. To modify the instance name, click the <a name="image1994121324012"></a><a name="image1994121324012"></a><span><img id="image1994121324012" src="figures/icon-edit.png"></span> icon.</p>
     </td>
     </tr>
-    <tr id="row621706"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p50358210"><a name="p50358210"></a><a name="p50358210"></a>Time Window</p>
+    <tr id="row13645819132018"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p19637151311112"><a name="p19637151311112"></a><a name="p19637151311112"></a>Status</p>
     </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p52483186"><a name="p52483186"></a><a name="p52483186"></a>Time range for any scheduled maintenance activities to occur for cache nodes of this DCS instance. To modify the maintenance time window, click the<a name="image1145514502013"></a><a name="image1145514502013"></a><span><img id="image1145514502013" src="figures/icon-edit.png"></span> icon next to <strong id="b23279683"><a name="b23279683"></a><a name="b23279683"></a>Time Window</strong>.</p>
-    </td>
-    </tr>
-    <tr id="row8190559"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p59455556"><a name="p59455556"></a><a name="p59455556"></a>ID</p>
-    </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p51170717"><a name="p51170717"></a><a name="p51170717"></a>ID of the chosen instance.</p>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p6637913219"><a name="p6637913219"></a><a name="p6637913219"></a>State of the chosen instance.</p>
     </td>
     </tr>
-    <tr id="row57883273"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p58033516"><a name="p58033516"></a><a name="p58033516"></a>Connection Address</p>
+    <tr id="row185314136564"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p863810131118"><a name="p863810131118"></a><a name="p863810131118"></a>ID</p>
     </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p3094327"><a name="p3094327"></a><a name="p3094327"></a>IP address and port number of the chosen instance.</p>
-    </td>
-    </tr>
-    <tr id="row27848947"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p41172271"><a name="p41172271"></a><a name="p41172271"></a>Created</p>
-    </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p46619622"><a name="p46619622"></a><a name="p46619622"></a>Time at which the chosen instance was created.</p>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p36382132116"><a name="p36382132116"></a><a name="p36382132116"></a>ID of the chosen instance.</p>
     </td>
     </tr>
-    <tr id="row16923420"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p28619802"><a name="p28619802"></a><a name="p28619802"></a>Run</p>
+    <tr id="row16254203913208"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p02545395204"><a name="p02545395204"></a><a name="p02545395204"></a>Cache Engine</p>
     </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p36502600"><a name="p36502600"></a><a name="p36502600"></a>Time at which the chosen instance entered the <strong id="b60087944"><a name="b60087944"></a><a name="b60087944"></a>Running</strong> state.</p>
-    </td>
-    </tr>
-    <tr id="row3920590"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p49132373"><a name="p49132373"></a><a name="p49132373"></a>Description</p>
-    </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p20299268"><a name="p20299268"></a><a name="p20299268"></a>Description of the selected instance. To modify the description, click the<a name="image74776414219"></a><a name="image74776414219"></a><span><img id="image74776414219" src="figures/icon-edit.png"></span> icon.</p>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p6247816338"><a name="p6247816338"></a><a name="p6247816338"></a>Cache engine used by the chosen instance. Currently, only Redis 3.0 is supported.</p>
     </td>
     </tr>
-    <tr id="row33628036"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p39516413"><a name="p39516413"></a><a name="p39516413"></a>Monitoring metrics</p>
+    <tr id="row563511320113"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p13635213119"><a name="p13635213119"></a><a name="p13635213119"></a>Instance Type</p>
     </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p46712854"><a name="p46712854"></a><a name="p46712854"></a>Monitoring metrics of the chosen instance. Click the <strong id="b17203154910172"><a name="b17203154910172"></a><a name="b17203154910172"></a>View Metrics</strong> icon to switch to the Cloud Eye console on which monitoring metrics of the selected DCS instance are displayed.</p>
-    </td>
-    </tr>
-    <tr id="row25644791"><td class="cellrowborder" rowspan="4" valign="top" width="15.308469153084694%" headers="mcps1.2.4.1.1 "><p id="p63962185"><a name="p63962185"></a><a name="p63962185"></a>Network</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="20.407959204079592%" headers="mcps1.2.4.1.2 "><p id="p13554483"><a name="p13554483"></a><a name="p13554483"></a>AZ</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="64.28357164283572%" headers="mcps1.2.4.1.3 "><p id="p24171358"><a name="p24171358"></a><a name="p24171358"></a>Availability zone in which the cache node running the chosen instance resides.</p>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p1063520131411"><a name="p1063520131411"></a><a name="p1063520131411"></a>Type of the selected instance. Currently, supported types include single-node, master/standby, Proxy Cluster.</p>
     </td>
     </tr>
-    <tr id="row16215635"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p38398082"><a name="p38398082"></a><a name="p38398082"></a>Security Group</p>
+    <tr id="row1863518136113"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p66358133113"><a name="p66358133113"></a><a name="p66358133113"></a>Cache Size (GB)</p>
     </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p23236933"><a name="p23236933"></a><a name="p23236933"></a>Security group that controls access to the chosen instance. To modify the security group, click the<a name="image147501537838"></a><a name="image147501537838"></a><span><img id="image147501537838" src="figures/icon-edit.png"></span> icon next to <strong id="b3143429"><a name="b3143429"></a><a name="b3143429"></a>Security Group</strong>.</p>
-    </td>
-    </tr>
-    <tr id="row28290863"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p9858548"><a name="p9858548"></a><a name="p9858548"></a>VPC</p>
-    </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p60344938"><a name="p60344938"></a><a name="p60344938"></a>VPC in which the chosen instance resides.</p>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p1763518131616"><a name="p1763518131616"></a><a name="p1763518131616"></a>Specification of the chosen instance.</p>
     </td>
     </tr>
-    <tr id="row6233535"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p35154304"><a name="p35154304"></a><a name="p35154304"></a>Subnet</p>
+    <tr id="row9637101316114"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p11817621142117"><a name="p11817621142117"></a><a name="p11817621142117"></a>Used/Available Memory (MB)</p>
     </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p28926407"><a name="p28926407"></a><a name="p28926407"></a>Subnet in which the chosen instance resides.</p>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p14636121316112"><a name="p14636121316112"></a><a name="p14636121316112"></a>The used memory space and maximum available memory space of the chosen instance.</p>
+    <p id="p563610132017"><a name="p563610132017"></a><a name="p563610132017"></a>The used memory space includes:</p>
+    <a name="ul663611317119"></a><a name="ul663611317119"></a><ul id="ul663611317119"><li>Size of data stored on the DCS instance</li><li>Size of Redis-server buffers (including client buffer and repl-backlog) and internal data structures</li></ul>
+    </td>
+    </tr>
+    <tr id="row5932418577"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p7177236123214"><a name="p7177236123214"></a><a name="p7177236123214"></a>Created</p>
+    </td>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p1820941317337"><a name="p1820941317337"></a><a name="p1820941317337"></a>Time at which the chosen instance started to be created.</p>
+    </td>
+    </tr>
+    <tr id="row92213432219"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p813164553217"><a name="p813164553217"></a><a name="p813164553217"></a>Run</p>
+    </td>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p020914130337"><a name="p020914130337"></a><a name="p020914130337"></a>Time at which the instance was created.</p>
+    </td>
+    </tr>
+    <tr id="row563851310114"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p1563731319115"><a name="p1563731319115"></a><a name="p1563731319115"></a>Maintenance</p>
+    </td>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p26376131816"><a name="p26376131816"></a><a name="p26376131816"></a>Time range for any scheduled maintenance activities on cache nodes of this DCS instance. To modify the time window, click the <a name="image774917532438"></a><a name="image774917532438"></a><span><img id="image774917532438" src="figures/icon-edit.png"></span> icon.</p>
+    </td>
+    </tr>
+    <tr id="row1736317255413"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p133428550237"><a name="p133428550237"></a><a name="p133428550237"></a>Description</p>
+    </td>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p12342185502318"><a name="p12342185502318"></a><a name="p12342185502318"></a>Description of the chosen DCS instance. To modify the description, click the <a name="image1650510784512"></a><a name="image1650510784512"></a><span><img id="image1650510784512" src="figures/icon-edit.png"></span> icon.</p>
+    </td>
+    </tr>
+    <tr id="row18394114319216"><td class="cellrowborder" rowspan="2" valign="top" width="15.841584158415841%" headers="mcps1.2.4.1.1 "><p id="p1280920422310"><a name="p1280920422310"></a><a name="p1280920422310"></a>Connection</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="17.82178217821782%" headers="mcps1.2.4.1.2 "><p id="p73944438217"><a name="p73944438217"></a><a name="p73944438217"></a>Password Protected</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="66.33663366336634%" headers="mcps1.2.4.1.3 "><p id="p0394243829"><a name="p0394243829"></a><a name="p0394243829"></a>Currently, you must enable password-protected access.</p>
+    </td>
+    </tr>
+    <tr id="row14394743923"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p1363811316115"><a name="p1363811316115"></a><a name="p1363811316115"></a>Connection Address</p>
+    </td>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p19638141317116"><a name="p19638141317116"></a><a name="p19638141317116"></a>IP address and port number of the chosen instance.</p>
+    </td>
+    </tr>
+    <tr id="row146491131711"><td class="cellrowborder" rowspan="4" valign="top" width="15.841584158415841%" headers="mcps1.2.4.1.1 "><p id="p196481113315"><a name="p196481113315"></a><a name="p196481113315"></a>Network</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="17.82178217821782%" headers="mcps1.2.4.1.2 "><p id="p56481132113"><a name="p56481132113"></a><a name="p56481132113"></a>AZ</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="66.33663366336634%" headers="mcps1.2.4.1.3 "><p id="p10648141316112"><a name="p10648141316112"></a><a name="p10648141316112"></a>Availability zone in which the node running the selected DCS instance resides.</p>
+    </td>
+    </tr>
+    <tr id="row162431041204"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p564914131812"><a name="p564914131812"></a><a name="p564914131812"></a>VPC</p>
+    </td>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p8649213217"><a name="p8649213217"></a><a name="p8649213217"></a>VPC in which the chosen instance resides.</p>
+    </td>
+    </tr>
+    <tr id="row1072598018"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p126496132119"><a name="p126496132119"></a><a name="p126496132119"></a>Subnet</p>
+    </td>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p664913138113"><a name="p664913138113"></a><a name="p664913138113"></a>Subnet in which the chosen instance resides.</p>
+    </td>
+    </tr>
+    <tr id="row564920139118"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p1364915132013"><a name="p1364915132013"></a><a name="p1364915132013"></a>Security Group</p>
+    </td>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p1164920132119"><a name="p1164920132119"></a><a name="p1164920132119"></a>Security group that controls access to the chosen instance. To modify the security group, click the <a name="image1130713914617"></a><a name="image1130713914617"></a><span><img id="image1130713914617" src="figures/icon-edit.png"></span> icon.</p>
     </td>
     </tr>
     </tbody>

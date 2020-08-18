@@ -1,4 +1,4 @@
-# Accessing a DCS Redis Instance<a name="EN-US_TOPIC_0237970590"></a>
+# Accessing a DCS Redis Instance<a name="en-us_topic_0054235811"></a>
 
 You can access the created DCS instances through your Redis client.
 
@@ -13,18 +13,18 @@ DCS works with multiple types of Redis clients. This section describes how to us
 
 -   The GNU Compiler Collection \(GCC\) has been installed on the ECS serving as your Redis client.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->The ECS serving as your Redis client and the DCS instance to be accessed must belong to the same VPC and can communicate with each other.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>The ECS serving as your Redis client and the DCS instance to be accessed must belong to the same VPC and can communicate with each other.
 
 ## Procedure<a name="section45797138"></a>
 
 1.  Log in to the management console.
-2.  Click![](figures/icon-region.png)  in the upper left corner of the management console and select a region and a project.
+2.  Click  ![](figures/project.png) in the upper left corner of the management console and select a region and a project.
 3.  Click  **Service List**, and choose **Database** \> **Distributed Cache Service**  to launch the DCS console.
 4.  In the navigation pane, choose  **Cache Manager**.
 5.  <a name="li5978963511441"></a>Obtain the IP address:port number of the DCS instance.
     1.  On the  **Cache Manager**  page, click the name of the DCS instance you want to access.
-    2.  On the  **Summary** tab page of the instance details page, view the **Connection Address**  \(IP address:port number\) of the DCS instance.
+    2.  On the  **Basic Information**  tab page of the instance, view the  **Connection Address**  in the  **Connection**  section.
 
 6.  Access the chosen DCS instance.
     -   By using redis-cli
@@ -88,6 +88,9 @@ DCS works with multiple types of Redis clients. This section describes how to us
                  String value = client.get("key-string"); 
                  System.out.println( String.format("get command result:%s", value) );
                 ```
+
+                >![](public_sys-resources/icon-note.gif) **NOTE:** 
+                >In actual scenarios, replace  **passwd**  with the actual ciphertext password of the Redis instance. Do not hard-code the plaintext password in the code. This advice also applies to  **passwd**  configurations in other steps.
 
             2.  Example code for a Jedis connection pool
 

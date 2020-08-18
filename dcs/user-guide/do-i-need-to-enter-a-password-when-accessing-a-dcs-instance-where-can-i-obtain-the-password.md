@@ -1,4 +1,4 @@
-# Do I Need to Enter a Password When Accessing a DCS Instance? Where Can I Obtain the Password?<a name="EN-US_TOPIC_0237964737"></a>
+# Do I Need to Enter a Password When Accessing a DCS Instance? Where Can I Obtain the Password?<a name="en-us_topic_0066854411"></a>
 
 Redis allows clients to access cache service directly without any password.
 

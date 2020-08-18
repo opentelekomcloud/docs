@@ -1,4 +1,4 @@
-# What Should I Do If the Connection Between My Redis Client and the DCS Instance Times Out?<a name="EN-US_TOPIC_0237964745"></a>
+# What Should I Do If the Connection Between My Redis Client and the DCS Instance Times Out?<a name="en-us_topic_0054235831"></a>
 
 Reconnect your client to the DCS instance.
 

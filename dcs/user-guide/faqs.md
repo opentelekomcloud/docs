@@ -1,4 +1,4 @@
-# FAQs<a name="EN-US_TOPIC_0237964734"></a>
+# FAQs<a name="en-us_topic_0054235821"></a>
 
 -   **[Does DCS Support Common Redis Clients Such as Jedis?](does-dcs-support-common-redis-clients-such-as-jedis.md)**  
 
@@ -6,7 +6,7 @@
 
 -   **[Do I Need to Enter a Password When Accessing a DCS Instance? Where Can I Obtain the Password?](do-i-need-to-enter-a-password-when-accessing-a-dcs-instance-where-can-i-obtain-the-password.md)**  
 
--   **[Does Standby Cache Node Remain Synchronized With Master Cache Node?](does-standby-cache-node-remain-synchronized-with-master-cache-node.md)**  
+-   **[Does Standby Cache Node Remain Synchronized with Master Cache Node?](does-standby-cache-node-remain-synchronized-with-master-cache-node.md)**  
 
 -   **[Does DCS Support Data Persistence?](does-dcs-support-data-persistence.md)**  
 
@@ -20,7 +20,7 @@
 
 -   **[What Should I Do If the Connection Between My Redis Client and the DCS Instance Times Out?](what-should-i-do-if-the-connection-between-my-redis-client-and-the-dcs-instance-times-out.md)**  
 
--   **[Why Is Available Memory of Unused DCS Instances Less Than Total Memory and Why Is Memory Usage of Unused DCS Instances Greater Than Zero?](why-is-available-memory-of-unused-dcs-instances-less-than-total-memory-and-why-is-memory-usage-of-un.md)**  
+-   **[Why Is Available Memory of Unused DCS Instances Less Than Total Memory? Why Is Memory Usage of Unused DCS Instances Greater Than Zero?](why-is-available-memory-of-unused-dcs-instances-less-than-total-memory-why-is-memory-usage-of-unused.md)**  
 
 -   **[Does DCS Support Data Read/Write in Multiple Databases?](does-dcs-support-data-read-write-in-multiple-databases.md)**  
 
@@ -30,7 +30,7 @@
 
 -   **[Why Do My DCS Instances Sometimes Become Unavailable While They Are in Running State?](why-do-my-dcs-instances-sometimes-become-unavailable-while-they-are-in-running-state.md)**  
 
--   **[Why Is the Used Instance Memory Displayed on Cloud Eye Console Slightly Higher than the Available Instance Memory?](why-is-the-used-instance-memory-displayed-on-cloud-eye-console-slightly-higher-than-the-available-in.md)**  
+-   **[Why Is the Used Instance Memory Displayed on Cloud Eye Console Slightly Higher than the Instance Available Memory?](why-is-the-used-instance-memory-displayed-on-cloud-eye-console-slightly-higher-than-the-instance-ava.md)**  
 
 -   **[How to Select and Configure a Security Group?](how-to-select-and-configure-a-security-group.md)**  
 

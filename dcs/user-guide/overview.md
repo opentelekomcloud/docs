@@ -1,12 +1,12 @@
-# Overview<a name="EN-US_TOPIC_0237964729"></a>
+# Overview<a name="en-us_topic_0079835992"></a>
 
-## Need for DCS Instance Backup<a name="section11170862"></a>
+## Need for DCS Instance Backup<a name="section456145517195"></a>
 
 There is a small chance that dirty data could exist in a DCS instance owing to service system exceptions or problems in loading data from persistence files. In addition, some systems demand not only high reliability but also data security, data restoration, and even permanent data storage.
 
 Currently, data in DCS instances can be backed up to OBS. If a DCS instance becomes faulty, data in the instance can be restored from backup so that service continuity is not affected.
 
-## Backup Modes<a name="section33428900"></a>
+## Backup Modes<a name="section944618010201"></a>
 
 DCS instances support the following backup modes:
 
@@ -25,11 +25,11 @@ DCS instances support the following backup modes:
     Before performing high-risk operations, such as system maintenance or upgrade, DCS instance data needs to be backed up.
 
 
-## Additional Information About Data Backup<a name="section32424647"></a>
+## Additional Information About Data Backup<a name="section17292763209"></a>
 
 -   Instance type
 
-    Currently, only master/standby and cluster DCS instances can be backed up and restored. Single-node DCS instances do not support backup or restoration.
+    Currently, only master/standby and Proxy Cluster DCS instances can be backed up and restored. Single-node DCS instances do not support backup or restoration.
 
 -   Working principle
 
@@ -70,7 +70,7 @@ DCS instances support the following backup modes:
     Manual backup files are retained permanently and need to be manually deleted.
 
 
-## Data Restoration<a name="section23386368"></a>
+## Data Restoration<a name="section124161411192019"></a>
 
 -   Data restoration process
     1.  A user initiates a data restoration request using the DCS console.
@@ -86,6 +86,6 @@ DCS instances support the following backup modes:
 
 -   Handling data restoration exceptions
 
-    If a backup file is corrupted, DCS will try to fix the backup file while restoring instance data. If the backup file is successfully fixed, DCS proceeds to restore instance data. If the backup file cannot be fixed, the DCS instance \(if the instance type is master/standby\) or the cache node with an unrepairable backup file \(if the instance type is cluster\) will be restored to the state in which it was before data restoration.
+    If a backup file is corrupted, DCS will try to fix the backup file while restoring instance data. If the backup file is successfully fixed, DCS proceeds to restore instance data. If the backup file cannot be fixed, the DCS instance \(if the instance type is master/standby\) or the cache node with an unrepairable backup file \(if the instance type is Proxy Cluster\) will be restored to the state in which it was before data restoration.
 
 

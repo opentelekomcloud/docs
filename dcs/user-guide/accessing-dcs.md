@@ -1,4 +1,4 @@
-# Accessing DCS<a name="EN-US_TOPIC_0237964759"></a>
+# Accessing DCS<a name="en-us_topic_0054235836"></a>
 
 -   **[How to Access DCS](how-to-access-dcs.md)**  
 

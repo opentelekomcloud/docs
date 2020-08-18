@@ -1,4 +1,4 @@
-# Can I Recover Data from Deleted DCS Instances?<a name="EN-US_TOPIC_0237964743"></a>
+# Can I Recover Data from Deleted DCS Instances?<a name="en-us_topic_0054235829"></a>
 
 Data that is automatically deleted by DCS instances or manually deleted by users using Redis clients cannot be recovered. By default, data is not evicted from DCS instances. However, you can modify the value of the  **maxmemory-policy**  parameter to adjust the eviction policy, and then DCS instances evict keys according to the eviction policy.
 

@@ -1,4 +1,4 @@
-# How to Access DCS<a name="EN-US_TOPIC_0237964760"></a>
+# How to Access DCS<a name="en-us_topic_0054235837"></a>
 
 There are two ways to access DCS:
 

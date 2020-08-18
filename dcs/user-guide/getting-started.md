@@ -1,4 +1,4 @@
-# Getting Started<a name="EN-US_TOPIC_0237964712"></a>
+# Getting Started<a name="en-us_topic_0054235809"></a>
 
 -   **[Setting Up Environments](setting-up-environments.md)**  
 
