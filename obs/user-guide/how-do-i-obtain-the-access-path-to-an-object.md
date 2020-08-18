@@ -36,6 +36,6 @@ You can combine path manually or use the following tools to obtain the path:
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->If the object access path is user-assembled, you need to escape the object name by referring to the URL encoding rules.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>If the object access path is user-assembled, you need to escape the object name by referring to the URL encoding rules.
 

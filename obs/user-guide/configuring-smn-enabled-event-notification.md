@@ -8,7 +8,7 @@ For details, see  [SMN-Enabled Event Notification](smn-enabled-event-notificatio
 
 ## Procedure<a name="section4422459618019"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the  **Basic Configurations**  area, click the  **Event Notification**  label. The  **Event Notification**  page is displayed.
 
     Alternatively, you can choose  **Basic Configurations**  \>  **Event Notification**  in the navigation pane on the left.

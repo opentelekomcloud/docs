@@ -4,7 +4,7 @@ You can add tags to a bucket when creating the bucket. For details, see  [Creati
 
 ## Procedure<a name="section5638611211102"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the  **Basic Configurations**  area, click the  **Tags**  label. The  **Tags**  page is displayed.
 
     Alternatively, you can choose  **Basic Configurations**  \>  **Tags**  in the navigation pane on the left.
@@ -50,4 +50,6 @@ You can add tags to a bucket when creating the bucket. For details, see  [Creati
 ## Related Operations<a name="section917818283464"></a>
 
 To modify the tag configuration, edit  **Value**  of the tag. You can also click  **Delete**  next to a tag to delete the tag.
+
+Searching for buckets by tag is not supported by OBS. However, you can use Tag Management Service \(TMS\) to search for buckets by tag. For details, see  [Searching for Cloud Resources](https://docs.otc.t-systems.com/usermanual/tms/en-us_topic_0056266264.html). Select  **OBS-Bucket**  for  **Resource Type**.
 

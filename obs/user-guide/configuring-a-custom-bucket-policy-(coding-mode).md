@@ -4,7 +4,7 @@ You can configure a custom bucket policy by coding. The size of a custom bucket 
 
 ## Procedure<a name="section19588639165015"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Permissions**  to go to the permission management page.
 3.  On the  **Bucket Policies**  tab page, configure a custom bucket policy according to your needs.
 

@@ -2,8 +2,8 @@
 
 A bucket is a container that stores objects in OBS. Before you store data in OBS, you need to create a bucket first.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->On OBS Console, an account can have 100 buckets.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>On OBS Console, an account can have 100 buckets. There is no such upper limit if you use the API or other methods to create buckets. However, these buckets also take up the bucket quota on OBS Console.
 
 ## Procedure<a name="section166665169537"></a>
 

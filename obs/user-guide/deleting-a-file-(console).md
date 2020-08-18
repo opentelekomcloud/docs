@@ -10,9 +10,9 @@ OBS also provides the lifecycle management function to meet your requirements fo
 
 ## Background Information<a name="section4474995017112"></a>
 
-**Object deletion philosophy when versioning is enabled**
+**Object deletion mechanism when versioning is enabled**
 
-OBS adopts different deletion methods for different objects when versioning is enabled.
+When versioning is enabled, OBS uses different deletion methods for different objects.
 
 -   Deleting a file or folder does not delete it permanently. The deleted file or folder will be retained in the  **Deleted Objects**  list and marked with the  **Delete Marker**.
     -   If you want to delete the file or folder permanently, you need to delete it from the  **Deleted Objects**  list. For details, see  [Procedure](#section56466209)  in this section.
@@ -22,14 +22,14 @@ OBS adopts different deletion methods for different objects when versioning is e
 
 ## Procedure<a name="section56466209"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Objects**.
 3.  Select the file or folder you want to delete, and choose  **More**  \>  **Delete**  on the right.
 
     You can select multiple files or folders and click  **Delete**  above the object list to batch delete them.
 
 4.  Click  **Yes**  to confirm the deletion.
-5.  If versioning is enabled for the bucket, you need to further delete files or folders in the  **Deleted Objects**  list in order to permanently delete them.
+5.  If versioning is enabled for the bucket, you need to delete files or folders from the  **Deleted Objects**  list in order to permanently delete them.
     1.  Click  **Deleted Objects**.
     2.  In the  **Operation**  column of the file or folder to be deleted, click  **Delete**.
 

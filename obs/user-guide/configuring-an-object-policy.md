@@ -4,7 +4,7 @@ An object policy applies to a specific object, which is also part of a bucket po
 
 ## Procedure<a name="section1427668152517"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Objects**.
 3.  On the right of the object to be operated, choose  **More**  \>  **Configure Object Policy**. The  **Configure Object Policy**  dialog box is displayed.
 4.  Select a proper policy mode as required. Valid options are as follows:
@@ -13,8 +13,8 @@ An object policy applies to a specific object, which is also part of a bucket po
     -   Read and write mode: The authorized user has the read and write permissions to the object. For follow-up procedure, see  [5](#li3552175452220).
     -   Customized: The authorized user will be granted with customized permissions to the object. For detailed configuration, see  [6](#li588503161565).
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >You can configure only one object policy at a time.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >You can configure only one object policy at a time.
 
 5.  <a name="li3552175452220"></a>For read-only and read and write modes, enter information about the authorized user in the following format and click  **OK**.
 

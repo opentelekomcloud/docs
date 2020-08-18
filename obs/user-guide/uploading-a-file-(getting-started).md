@@ -2,10 +2,10 @@
 
 This section describes how to upload local files to OBS over the Internet. These files can be texts, images, videos, or any other type of files.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->You can upload a file of up to 50 MB using OBS Console.  
->If versioning is disabled and the name of a newly uploaded file is the same as that of a file in the bucket, the newly uploaded file automatically overwrites the existing file and does not retain the ACL information of the existing file. If the name of the newly uploaded folder is the same as that of a folder in the bucket, the two folders will be merged, and files in the new folder will overwrite namesake files in the old folder.  
->If versioning is enabled and the name of a newly uploaded file is the same as that of a file in the bucket, a new version is added to the existing file. For details about versioning, see  [Versioning Overview](versioning-overview.md).  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>You can upload a file of up to 50 MB using OBS Console.
+>If versioning is disabled and the name of a newly uploaded file is the same as that of a file in the bucket, the newly uploaded file automatically overwrites the existing file and does not retain the ACL information of the existing file. If the name of the newly uploaded folder is the same as that of a folder in the bucket, the two folders will be merged, and files in the new folder will overwrite namesake files in the old folder.
+>If versioning is enabled and the name of a newly uploaded file is the same as that of a file in the bucket, a new version is added to the existing file. For details about versioning, see  [Versioning Overview](versioning-overview.md).
 
 ## Prerequisites<a name="sd7d65d851f1c4a2d8a507d1689a5d358"></a>
 
@@ -14,12 +14,12 @@ This section describes how to upload local files to OBS over the Internet. These
 
 ## Procedure<a name="section1567551415194"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Objects**.
 3.  Go to the folder to which objects are uploaded. Click  **Upload Object**. The  **Upload Object**  dialog box is displayed.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >If the files to be uploaded to OBS are stored in Microsoft OneDrive, it is recommended that the names of these files contain a maximum of 32 characters.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >If the files that you want to upload to OBS are stored in Microsoft OneDrive, it is recommended that the names of these files contain a maximum of 32 characters.
 
     **Figure  1**  Uploading objects<a name="fig188654349118"></a>  
     ![](figures/uploading-objects.png "uploading-objects")

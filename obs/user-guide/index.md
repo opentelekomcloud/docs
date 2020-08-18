@@ -40,7 +40,7 @@
         -   [Downloading a File](downloading-a-file.md)
         -   [Searching for a File or Folder](searching-for-a-file-or-folder.md)
         -   [Accessing an Object Using Its URL](accessing-an-object-using-its-url.md)
-        -   [Restoring a Cold File on OBS](restoring-a-cold-file-on-obs.md)
+        -   [Restoring a Cold File Stored in OBS](restoring-a-cold-file-stored-in-obs.md)
         -   [Deleting a File or Folder](deleting-a-file-(console).md)
         -   [Undeleting a File](undeleting-a-file.md)
         -   [Managing Fragments](managing-fragments-(console).md)
@@ -55,10 +55,10 @@
 
     -   [Permission Control]
         -   [Overview](permission-control-overview-(console).md)
-        -   [Permission Control Mechanisms](permission-control-mechanisms.md)
+        -   [Permission Control Mechanisms]
             -   [IAM Policies](iam-policies.md)
-            -   [Bucket Policy and Object Policy](bucket-policy-and-object-policy.md)
-            -   [Bucket ACL and Object ACL](bucket-acl-and-object-acl.md)
+            -   [Bucket Policies and Object Policies](bucket-policies-and-object-policies.md)
+            -   [Bucket ACLs and Object ACLs](bucket-acls-and-object-acls.md)
             -   [Relationship Between a Bucket ACL and a Bucket Policy](relationship-between-a-bucket-acl-and-a-bucket-policy.md)
             -   [How Does Authorization Work When Multiple Access Control Mechanisms Co-Exist?](how-does-authorization-work-when-multiple-access-control-mechanisms-co-exist.md)
 
@@ -79,10 +79,10 @@
 
         -   [Configuring an Object Policy](configuring-an-object-policy.md)
         -   [Configuring a Bucket ACL](configuring-a-bucket-acl-(console).md)
-        -   [Configuring Object ACL](configuring-object-acl.md)
+        -   [Configuring an Object ACL](configuring-an-object-acl.md)
         -   [Application Cases]
-            -   [Bucket Owner Authorizing Bucket Permissions to IAM Users](bucket-owner-authorizing-bucket-permissions-to-iam-users.md)
-            -   [Bucket Owner Authorizing Bucket Permissions to Other Accounts](bucket-owner-authorizing-bucket-permissions-to-other-accounts.md)
+            -   [Granting an IAM User with the Operation Permissions for a Specified Bucket](granting-an-iam-user-with-the-operation-permissions-for-a-specified-bucket.md)
+            -   [Granting Other Accounts with the Operation Permissions for a Specified Bucket](granting-other-accounts-with-the-operation-permissions-for-a-specified-bucket.md)
             -   [Restricting Bucket Access to a Specified Address ](restricting-bucket-access-to-a-specified-address.md)
             -   [Configuring the Start Time and End Time of Access to Objects in a Bucket](configuring-the-start-time-and-end-time-of-access-to-objects-in-a-bucket.md)
             -   [Authorizing Access Permissions to Anonymous Users](authorizing-access-permissions-to-anonymous-users.md)
@@ -223,10 +223,10 @@
         -   [What Are the Advantages of Object Storage When Compared with SAN and NAS Storage?](what-are-the-advantages-of-object-storage-when-compared-with-san-and-nas-storage.md)
         -   [Which Types of Data Can Be Stored in OBS?](which-types-of-data-can-be-stored-in-obs.md)
         -   [What Is the Data Volume That I Can Store in OBS?](what-is-the-data-volume-that-i-can-store-in-obs.md)
-        -   [Can Folders in OBS Be Used the Same Way As Those in a File System?](can-folders-in-obs-be-used-the-same-way-as-those-in-a-file-system.md)
+        -   [Can Folders in OBS Be Used the Same Way in a File System?](can-folders-in-obs-be-used-the-same-way-in-a-file-system.md)
         -   [Where Is Data Stored in OBS?](where-is-data-stored-in-obs.md)
         -   [What Is the Relationship Between OBS Bucket Names and OBS Domain Names?](what-is-the-relationship-between-obs-bucket-names-and-obs-domain-names.md)
-        -   [Does OBS Support Access Over HTTPS?](does-obs-support-access-over-https.md)
+        -   [Does OBS Support Access over HTTPS?](does-obs-support-access-over-https.md)
         -   [Can Other Users Access My Data Stored in OBS?](can-other-users-access-my-data-stored-in-obs.md)
         -   [Does OBS Support Resumable Data Transfer?](does-obs-support-resumable-data-transfer.md)
         -   [Does OBS Support Batch Upload?](does-obs-support-batch-upload.md)
@@ -235,39 +235,40 @@
         -   [What Are the Factors that Affect the Upload and Download Speed of OBS?](what-are-the-factors-that-affect-the-upload-and-download-speed-of-obs.md)
         -   [Why Does Data Stored on OBS Get Lost?](why-does-data-stored-on-obs-get-lost.md)
         -   [Can Deleted Data Be Recovered?](can-deleted-data-be-recovered.md)
-        -   [Will Data Residuals Exist in OBS After I Delete Data?](will-data-residuals-exist-in-obs-after-i-delete-data.md)
+        -   [Will Data Remanence Exist in OBS After I Delete Data?](will-data-remanence-exist-in-obs-after-i-delete-data.md)
+        -   [Does OBS Provide Multi-AZ Reliability?](does-obs-provide-multi-az-reliability.md)
+
+    -   [Access Control]
+        -   [How Can I Control Access Permissions for OBS?](how-can-i-control-access-permissions-for-obs.md)
+        -   [What Are the Differences Between an IAM Policy and a Bucket Policy in Access Control?](what-are-the-differences-between-an-iam-policy-and-a-bucket-policy-in-access-control.md)
+        -   [What Is the Relationship Between a Bucket Policy and an Object Policy?](what-is-the-relationship-between-a-bucket-policy-and-an-object-policy.md)
+
+    -   [Buckets and Objects]
+        -   [Failed to Create a Bucket](failed-to-create-a-bucket.md)
+        -   [Failed to Upload an Object](failed-to-upload-an-object.md)
+        -   [Failed to Download an Object](failed-to-download-an-object.md)
+        -   [Failure in Deleting a Bucket](failure-in-deleting-a-bucket.md)
+        -   [Bucket Storage Class vs. Object Storage Class](bucket-storage-class-vs-object-storage-class.md)
+        -   [Can I Modify the Region of a Bucket?](can-i-modify-the-region-of-a-bucket.md)
+        -   [How Do I Obtain the Access Path to an Object?](how-do-i-obtain-the-access-path-to-an-object.md)
+        -   [Objects in a Bucket Cannot Be Searched For](objects-in-a-bucket-cannot-be-searched-for.md)
+		-   [What Are the Differences Between PUT and POST Upload Methods?](what-are-the-differences-between-put-and-post-upload-methods.md)
 
     -   [Security]
         -   [How Is Data Security Ensured in OBS?](how-is-data-security-ensured-in-obs.md)
-        -   [Does OBS Scan for My Data for Other Purposes?](does-obs-scan-for-my-data-for-other-purposes.md)
+        -   [Does OBS Scan My Data for Other Purposes?](does-obs-scan-my-data-for-other-purposes.md)
         -   [Can Background Management Personnel Export My Data from OBS?](can-background-management-personnel-export-my-data-from-obs.md)
         -   [How Does OBS Prevent My Data from Being Stolen?](how-does-obs-prevent-my-data-from-being-stolen.md)
         -   [Can a Pair of AK and SK Be Replaced When They Are Being Used to Access OBS?](can-a-pair-of-ak-and-sk-be-replaced-when-they-are-being-used-to-access-obs.md)
         -   [Can a Pair of AK and SK Be Used by Multiple Users to Access OBS?](can-a-pair-of-ak-and-sk-be-used-by-multiple-users-to-access-obs.md)
         -   [Which Encryption Technologies Are Supported by OBS?](which-encryption-technologies-are-supported-by-obs.md)
 
-    -   [Buckets and Objects]
-        -   [Bucket Storage Class vs. Object Storage Class](bucket-storage-class-vs-object-storage-class.md)
-        -   [Can I Modify the Region of a Bucket?](can-i-modify-the-region-of-a-bucket.md)
-        -   [How Do I Obtain the Access Path to an Object?](how-do-i-obtain-the-access-path-to-an-object.md)
-        -   [Failed to Create a Bucket](failed-to-create-a-bucket.md)
-        -   [Failure in Deleting a Bucket](failure-in-deleting-a-bucket.md)
-        -   [Failed to Upload an Object](failed-to-upload-an-object.md)
-        -   [Failed to Download an Object](failed-to-download-an-object.md)
-        -   [Objects in a Bucket Cannot Be Searched For](objects-in-a-bucket-cannot-be-searched-for.md)
-        -   [What Are the Differences Between PUT and POST Upload Methods?](what-are-the-differences-between-put-and-post-upload-methods.md)
-
-    -   [Access Control]
-        -   [How Can I Control Access to OBS?](how-can-i-control-access-to-obs.md)
-        -   [What Are the Differences Between an IAM Policy and Bucket Policy in Access Control?](what-are-the-differences-between-an-iam-policy-and-bucket-policy-in-access-control.md)
-        -   [What Is the Relationship Between a Bucket Policy and an Object Policy?](what-is-the-relationship-between-a-bucket-policy-and-an-object-policy.md)
-
     -   [How Do I Use Fragment Management?]
         -   [Why Are Fragments Generated?](why-are-fragments-generated.md)
         -   [How Do I Manage Fragments?](how-do-i-manage-fragments.md)
 
     -   [How Do I Use Versioning?]
-        -   [Can I Upload an Object to a Folder Where a Namesake Object Already Exist?](can-i-upload-an-object-to-a-folder-where-a-namesake-object-already-exist.md)
+        -   [Can I Upload an Object to a Folder Where a Namesake Object Already Exists?](can-i-upload-an-object-to-a-folder-where-a-namesake-object-already-exists.md)
         -   [Can I Recover a Deleted Object?](can-i-recover-a-deleted-object.md)
 
     -   [How Do I Use Tags?]
@@ -277,14 +278,13 @@
     -   [Event Notification]
         -   [Which Events Can Trigger Event Notifications?](which-events-can-trigger-event-notifications.md)
 
-    -   [How Do I Use Lifecycle Mangement?]
+    -   [How Do I Use Lifecycle Management?]
         -   [What Are the Application Scenarios of Lifecycle Management?](what-are-the-application-scenarios-of-lifecycle-management.md)
 
     -   [How Do I Use Static Website Hosting?]
         -   [Can OBS Host My Static Websites?](can-obs-host-my-static-websites.md)
         -   [Which Types of Websites Are Suitable for Static Website Hosting in OBS?](which-types-of-websites-are-suitable-for-static-website-hosting-in-obs.md)
         -   [How Do I Obtain the Static Website Hosting Address of a Bucket?](how-do-i-obtain-the-static-website-hosting-address-of-a-bucket.md)
-
 
 -   [Glossary](glossary.md)
 

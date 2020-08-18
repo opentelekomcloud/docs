@@ -21,7 +21,7 @@ An enterprise has a large number of files to archive but it does not want to cos
     **Figure  2**  Creating a folder<a name="fig28070790193136"></a>  
     ![](figures/creating-a-folder.png "creating-a-folder")
 
-4.  On the top navigation menu, click  **Service List**  \>  **Simple Message Notification**  to go to the SMN console and create an SMN topic. In the following example,  **TestTopic**  is the SMN topic and the notification method is email.
+4.  On the top navigation menu, click  **Service List**  \>  **Simple Message Notification**  to go to the SMN console and create an SMN topic. In the following example,  **TestTopic**  is the SMN topic and the notifications are sent by email.
 
     Use SMN to create a notification topic for OBS as follows:
 
@@ -38,9 +38,9 @@ An enterprise has a large number of files to archive but it does not want to cos
     3.  Click  **Create**. The  **Create Event Notification**  dialog box is displayed.
     4.  Configure the parameters. See  [Figure 3](#fig377201314360)  for details. For an enterprise account, the specified user in the account will be notified about all specified operations on the  **SMN**  folder in the  **testbucket**  bucket. For details about parameters, see  [Table 1](configuring-smn-enabled-event-notification.md#aobs_console_0039_mmccppss_table01).
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >-   A folder path ends with a slash \(/\). Therefore, if you want to configure the event notification for operations on folders and you need to filter folders by suffix, the suffix must also end with a slash \(/\).  
-        >-   If neither the  **Prefix**  nor the  **Suffix**  is configured, the event notification rule applies to all objects in the bucket.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >-   A folder path ends with a slash \(/\). Therefore, if you want to configure the event notification for operations on folders and you need to filter folders by suffix, the suffix must also end with a slash \(/\).
+        >-   If neither the  **Prefix**  nor the  **Suffix**  is configured, the event notification rule applies to all objects in the bucket.
 
         **Figure  3**  Adding an event notification rule<a name="fig377201314360"></a>  
         ![](figures/adding-an-event-notification-rule.png "adding-an-event-notification-rule")
@@ -59,7 +59,7 @@ An enterprise has a large number of files to archive but it does not want to cos
 
 3.  Delete the  **test.txt**  file uploaded in  [Step 2](#li38214839153354).
 
-    After the file is successfully deleted, an employee receives an email similar to the one shown in  [Figure 5](#fig36929030152112). Keyword  **ObjectRemoved:Delete**  in the email indicates that the object is successfully deleted.
+    After the file is successfully deleted, an employee will receive an email similar to the one shown in  [Figure 5](#fig36929030152112). Keyword  **ObjectRemoved:Delete**  in the email indicates that the object is successfully deleted.
 
     **Figure  5**  Email details about the object deleting<a name="fig36929030152112"></a>  
     ![](figures/email-details-about-the-object-deleting.png "email-details-about-the-object-deleting")

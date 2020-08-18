@@ -13,8 +13,8 @@ If a file fails to be uploaded or the upload task is suspended, fragments are ge
 
 You can also use the fragment management function to clear fragments. If you resume an upload task after clearing the fragments, the upload progress will be lost and the task needs to be re-uploaded.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->The fragment storage in OBS is billed.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>The fragment storage in OBS is billed.
 
 ## Procedure<a name="s19685a34959d4e409918327070cd8f12"></a>
 

@@ -1,10 +1,10 @@
-# Bucket ACL and Object ACL<a name="en-us_topic_0066088967"></a>
+# Bucket ACLs and Object ACLs<a name="en-us_topic_0066088967"></a>
 
-An access control list \(ACL\) is a list that defines grantees and their granted permissions.
+An ACL is a list that defines grantees and their granted permissions.
 
 Bucket and object ACLs are attached to accounts. By default, an ACL is created when a bucket or object is created, authorizing the owner the full control over the bucket or object.
 
-ACLs are write and read access rules attached to accounts, whose permission granularity is not as fine as bucket policies and  IAM policies. Generally, it is recommended that you use  IAM policies  and bucket policies for access control.
+ACLs control the read and write permissions for accounts. ACL permission granularity is not as fine as bucket policies and  IAM policies. Generally, it is recommended that you use  IAM policies  and bucket policies for access control.
 
 [Table 1](#table177445813209)  lists users to whom you can grant bucket access permissions by configuring an ACL.
 
@@ -20,13 +20,13 @@ ACLs are write and read access rules attached to accounts, whose permission gran
 <tbody><tr id="row122361958192016"><td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.3.1.1 "><p id="p1223615586209"><a name="p1223615586209"></a><a name="p1223615586209"></a>Specific User</p>
 </td>
 <td class="cellrowborder" valign="top" width="73%" headers="mcps1.2.3.1.2 "><p id="p1377083924318"><a name="p1377083924318"></a><a name="p1377083924318"></a>ACLs can be used to grant accounts with bucket/object access permissions. Once a specific account is granted with certain bucket/object access permissions, all IAM users who have OBS resource permissions under this account can have the same access permissions to operate the bucket or object.</p>
-<p id="p223612587202"><a name="p223612587202"></a><a name="p223612587202"></a>If you need to grant different access permissions to different IAM users, configure bucket policies. For details, see <a href="bucket-owner-authorizing-bucket-permissions-to-iam-users.md">Bucket Owner Authorizing Bucket Permissions to IAM Users</a>.</p>
+<p id="p223612587202"><a name="p223612587202"></a><a name="p223612587202"></a>If you need to grant different access permissions to different IAM users, configure bucket policies. For details, see <a href="granting-an-iam-user-with-the-operation-permissions-for-a-specified-bucket.md">Granting an IAM User with the Operation Permissions for a Specified Bucket</a>.</p>
 </td>
 </tr>
 <tr id="row14236115815207"><td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.3.1.1 "><p id="p4237195812018"><a name="p4237195812018"></a><a name="p4237195812018"></a>Owner</p>
 </td>
 <td class="cellrowborder" valign="top" width="73%" headers="mcps1.2.3.1.2 "><p id="p82371758102019"><a name="p82371758102019"></a><a name="p82371758102019"></a>The owner of a bucket is the account that created the bucket. The bucket owner has all bucket access permissions by default. The read and write permissions for the bucket ACL are permanently available to the bucket owner, and cannot be modified.</p>
-<p id="p108801457143318"><a name="p108801457143318"></a><a name="p108801457143318"></a>The owner of an object is the account that uploads the object, who may not be the owner of the bucket to which the object belongs. The object owner has the read access to the object, as well as the read and write access to the object ACL, and such access permissions cannot be modified.</p>
+<p id="p108801457143318"><a name="p108801457143318"></a><a name="p108801457143318"></a>The owner of an object is the account that uploaded the object, who may not be the owner of the bucket to which the object belongs. The object owner has the read access to the object, as well as the read and write access to the object ACL, and such access permissions cannot be modified.</p>
 <div class="notice" id="note16704211185110"><a name="note16704211185110"></a><a name="note16704211185110"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p11704131114517"><a name="p11704131114517"></a><a name="p11704131114517"></a>Do not modify the bucket owner's read and write access permissions for the bucket.</p>
 </div></div>
 </td>
@@ -116,7 +116,7 @@ ACLs are write and read access rules attached to accounts, whose permission gran
 </td>
 <td class="cellrowborder" valign="top" width="14.97%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0071293615_p27006329"><a name="en-us_topic_0071293615_p27006329"></a><a name="en-us_topic_0071293615_p27006329"></a>Read</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.48%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0071293615_p40029077"><a name="en-us_topic_0071293615_p40029077"></a><a name="en-us_topic_0071293615_p40029077"></a>A grantee with the read access to an object can obtain the content of the object and the metadata of the object.</p>
+<td class="cellrowborder" valign="top" width="65.48%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0071293615_p40029077"><a name="en-us_topic_0071293615_p40029077"></a><a name="en-us_topic_0071293615_p40029077"></a>A grantee with the read access to an object can obtain the content and the metadata of the object.</p>
 </td>
 </tr>
 <tr id="en-us_topic_0071293615_row35565678"><td class="cellrowborder" rowspan="2" valign="top" width="19.55%" headers="mcps1.2.4.1.1 "><p id="p3315846717261"><a name="p3315846717261"></a><a name="p3315846717261"></a>Access to ACL</p>
@@ -136,9 +136,9 @@ ACLs are write and read access rules attached to accounts, whose permission gran
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->Everytime you change the bucket or object access permission setting in an ACL, it overwrites the existing setting instead of adding a new access permission to the bucket or object.  
->Fragment management refers to the deletion of fragments. For the bucket owner and users who have the permission to initiate multipart tasks, deleting fragments is not restricted by bucket ACL settings. If a user has the permission to write, the user also has the permission to initiate multipart tasks.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>Every time you change the bucket or object access permission setting in an ACL, it overwrites the existing setting instead of adding a new access permission to the bucket or object.
+>Fragment management refers to the deletion of fragments. For the bucket owner and users who have the permission to initiate multipart tasks, deleting fragments is not restricted by bucket ACL settings. If a user has the permission to write, the user also has the permission to initiate multipart tasks.
 
 ## Bucket ACL Application Scenarios<a name="section7479813113513"></a>
 
@@ -152,5 +152,5 @@ It is recommended that you use bucket ACLs in the following scenarios:
 It is recommended that you use object ACLs in the following scenarios:
 
 -   Object-level access control is required. A bucket policy can control access permissions for an object or a set of objects. If you want to further specify an access permission for an object in the set of objects for which a bucket policy has been configured, then the object ACL is recommended for easier access control over single objects.
--   Object is accessed through a URL. Generally, if you want to grant anonymous users the permission to read an object through a URL, use object ACL.
+-   An object is accessed through a URL. Generally, if you want to grant anonymous users the permission to read an object through a URL, use the object ACL.
 

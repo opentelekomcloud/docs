@@ -13,7 +13,7 @@ In the region where OBS is deployed, the  **KMS Administrator**  permission has 
 
 ## Procedure<a name="section16043441174915"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Objects**.
 3.  Click  **Upload Object**. The  **Upload Object**  dialog box is displayed.
 4.  Select the file that you want to upload and click  **Open**.

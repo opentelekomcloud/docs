@@ -3,11 +3,11 @@
 OBS supports the following permission control mechanisms:
 
 -   IAM policies:  IAM policies  define the actions that can be performed on your cloud resources. In other words,  IAM policies  specify what actions are allowed or denied.
--   Bucket policy and object policy:
+-   Bucket policies and object policies:
 
-    A bucket policy applies to the configured OBS bucket and objects in the bucket. An OBS bucket owner can use a bucket policy to grant permissions of buckets and objects in the buckets to IAM users or other accounts.
+    A bucket policy is attached to a bucket and objects in the bucket. By leveraging bucket policies, the owner of a bucket can authorize IAM users or other accounts the permissions to operate the bucket and objects in the bucket.
 
     An object policy applies to specified objects in a bucket.
 
--   Access Control List \(ACL\): OBS provides ACL settings at bucket and object levels. Bucket and object ACLs are attached to accounts.
+-   Access control lists \(ACLs\): Control the read and write permissions for accounts. You can set ACLs for buckets and objects.
 

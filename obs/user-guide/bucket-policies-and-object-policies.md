@@ -1,4 +1,4 @@
-# Bucket Policy and Object Policy<a name="en-us_topic_0045853745"></a>
+# Bucket Policies and Object Policies<a name="en-us_topic_0045853745"></a>
 
 ## Bucket Owner and Object Owner<a name="section4574154145010"></a>
 
@@ -12,9 +12,9 @@ A bucket policy is attached to a bucket and objects in the bucket. By leveraging
 
 **Bucket Policy Application Scenarios**:
 
--   If no  IAM policies  is used for access permission control and you want to authorize other accounts the permission to access your OBS resources, you can use bucket policies to authorize such permissions.
--   If you want to authorize IAM users different access permissions to different buckets, you can configure different bucket policies for buckets.
--   If you want to authorize other accounts the permission to access your buckets, you can use bucket policies to authorize such permissions.
+-   If no  IAM policies  are used for access permission control and you want to authorize other accounts the permission to access your OBS resources, you can use bucket policies to authorize such permissions.
+-   You can configure different bucket policies to grant IAM users different access permissions to different buckets..
+-   You can also use bucket policies to grant other accounts the permissions to access your buckets.
 
 **Standard Bucket Policies**:
 
@@ -87,11 +87,11 @@ After a bucket is created, the default bucket policy is  **Private**. Only the b
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->For buckets whose version is 3.0, the default permissions of  **Public Read**  and  **Public Read and Write**  are updated to solve the problem that buckets fail to be added to OBS Browser due to permission limitations.  
->-   Added the ListBucket permission to the  **Public Read**  policy.  
->-   Added the ListBucket permission to the  **Public Read and Write**  policy.  
->-   If you want to add an external bucket to OBS Browser, manually update the configuration of standard bucket policies.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>For buckets whose version is 3.0, the default permissions of  **Public Read**  and  **Public Read and Write**  are updated to solve the problem that buckets fail to be added to OBS Browser due to permission limitations.
+>-   Added the ListBucket permission to the  **Public Read**  policy.
+>-   Added the ListBucket permission to the  **Public Read and Write**  policy.
+>-   If you want to add an external bucket to OBS Browser, manually update the configuration of standard bucket policies.
 
 **Custom Bucket Policy**:
 
@@ -101,10 +101,10 @@ The following three modes are provided to facilitate quick configuration:
 -   **Read and write**: With the  **Read and write**  mode, you only need to specify the  **Principal**  \(authorized users\). Then the authorized users have the full control permissions for the bucket and objects in the bucket, and can perform any operation on these resources.
 -   **Customized**: With the  **Customized**  mode, you can define the specific operation permissions that you want to authorize to users and accounts by configuring the parameters of  **Effect**,  **Principal**,  **Resources**,  **Actions**, and  **Conditions**. 
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->On OBS Console, when you use the custom bucket policy to authorize other users with resource operation permissions, you also need to authorize the users with the bucket read permission  **ListBucket**  \(leave the resource name blank to indicate that the policy takes effect on the entire bucket\). Otherwise, the users have no permission to access the bucket.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>On OBS Console, when you use the custom bucket policy to authorize other users with resource operation permissions, you also need to authorize the users with the bucket read permission  **ListBucket**  \(leave the resource name blank to indicate that the policy takes effect on the entire bucket\). Otherwise, the users have no permission to access the bucket.
 
 ## Object Policy<a name="section0354920819"></a>
 
-An object policy is a policy that applies to objects in a bucket. In a bucket policy, you can specify a set of objects as the resources to which the bucket policy applies, or you can use asterisk symbol \(\*\) to indicate all objects in the bucket. To configure an object policy, select an object, and then configure the object policy directly for the object.
+An object policy applies to a specific object in a bucket, which can be a part of a bucket policy. A bucket policy implements such permission control over objects by configuring resources to which the bucket policy applies. The resources can be all objects in the bucket \(represented by an asterisk \*\) or objects with a shared name prefix. An object policy is directly configured for the selected object.
 

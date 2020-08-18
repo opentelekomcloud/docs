@@ -6,14 +6,14 @@ This section describes how to configure static website hosting for buckets and u
 
 Web page files of the static website have been uploaded to a bucket.
 
-If the web page files are in the Cold storage class, restored them first. For more information, see  [Restoring a Cold File on OBS](restoring-a-cold-file-on-obs.md).
+If the web page files are in the Cold storage class, restore them first. For more information, see  [Restoring a Cold File Stored in OBS](restoring-a-cold-file-stored-in-obs.md).
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->If the hosted static website needs to be accessed by anyone, authorize anonymous users the permission to access static website files in the bucket. The configuration of static website hosting takes effect within two minutes after the configuration.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>If the hosted static website needs to be accessed by anyone, authorize anonymous users the permission to access static website files in the bucket. The configuration of static website hosting takes effect within two minutes after the configuration.
 
 ## Procedure<a name="section11587693153957"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  **Optional**: To ensure that a hosted static website can be accessed by all users, configure the object ACL or bucket policy as follows, so that all static website files in the bucket can be accessed publicly.
 
     Authorize anonymous users the permission to read files on the static website. For details, see  [Authorizing Access Permissions to Anonymous Users](authorizing-access-permissions-to-anonymous-users.md).
@@ -65,7 +65,7 @@ If the web page files are in the Cold storage class, restored them first. For mo
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p16916101534416"><a name="p16916101534416"></a><a name="p16916101534416"></a>KeyPrefixEquals</p>
     </td>
-    <td class="cellrowborder" valign="top" width="55.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p591681519441"><a name="p591681519441"></a><a name="p591681519441"></a>Object name prefix on which the redirection rule takes effect When a request is sent for accessing an object, the redirection rule takes effect if the object name prefix matches the value specified for this parameter.</p>
+    <td class="cellrowborder" valign="top" width="55.00000000000001%" headers="mcps1.2.4.1.3 "><p id="p591681519441"><a name="p591681519441"></a><a name="p591681519441"></a>Object name prefix on which the redirection rule takes effect. When a request is sent for accessing an object, the redirection rule takes effect if the object name prefix matches the value specified for this parameter.</p>
     <p id="p58120199"><a name="p58120199"></a><a name="p58120199"></a>For example, to redirect the request for object <strong id="b4757156775"><a name="b4757156775"></a><a name="b4757156775"></a>ExamplePage.html</strong>, set the <strong id="b6131444151815"><a name="b6131444151815"></a><a name="b6131444151815"></a>KeyPrefixEquals</strong> to <strong id="b6763656177"><a name="b6763656177"></a><a name="b6763656177"></a>ExamplePage.html</strong>.</p>
     </td>
     </tr>
@@ -84,7 +84,7 @@ If the web page files are in the Cold storage class, restored them first. For mo
     </tr>
     <tr id="row1091651554417"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p1491691513447"><a name="p1491691513447"></a><a name="p1491691513447"></a>HostName</p>
     </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p1691619151449"><a name="p1691619151449"></a><a name="p1691619151449"></a>Host name to which the redirection is pointed If this parameter is not specified, the request is redirected to the host from which the original request is initiated.</p>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p1691619151449"><a name="p1691619151449"></a><a name="p1691619151449"></a>Host name to which the redirection is pointed. If this parameter is not specified, the request is redirected to the host from which the original request is initiated.</p>
     </td>
     </tr>
     <tr id="row149161015184410"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p109167156447"><a name="p109167156447"></a><a name="p109167156447"></a>ReplaceKeyPrefixWith</p>
@@ -99,7 +99,7 @@ If the web page files are in the Cold storage class, restored them first. For mo
     </tr>
     <tr id="row191651510442"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p391619155443"><a name="p391619155443"></a><a name="p391619155443"></a>HttpRedirectCode</p>
     </td>
-    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p2916131554417"><a name="p2916131554417"></a><a name="p2916131554417"></a>HTTP status code returned to the redirection request The default value is <strong id="b495710404329"><a name="b495710404329"></a><a name="b495710404329"></a>301</strong>, indicating that requests are permanently redirected to the location specified by <strong id="b1032182516334"><a name="b1032182516334"></a><a name="b1032182516334"></a>Redirect</strong>. You can also set this parameter based on your service needs.</p>
+    <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p2916131554417"><a name="p2916131554417"></a><a name="p2916131554417"></a>HTTP status code returned to the redirection request. The default value is <strong id="b495710404329"><a name="b495710404329"></a><a name="b495710404329"></a>301</strong>, indicating that requests are permanently redirected to the location specified by <strong id="b1032182516334"><a name="b1032182516334"></a><a name="b1032182516334"></a>Redirect</strong>. You can also set this parameter based on your service needs.</p>
     </td>
     </tr>
     </tbody>
@@ -155,7 +155,7 @@ If the web page files are in the Cold storage class, restored them first. For mo
 
     -   Example 4: If the HTTP status code 404 is returned, the request is automatically redirected to the page prefixed with  **report-404/**  on host  **www.example.com**.
 
-        For example, if you request the page  **ExamplePage.html**  but the HTTP 404 error is returned, the request will be redirected to the  **report-404/ExamplePage.html**  page on the  **www.example.com**. If the 404 redirection rule is not sepcified, the default 404 error page configured in the previous step is returned when the HTTP 404 error occurs.
+        For example, if you request the page  **ExamplePage.html**  but the HTTP 404 error is returned, the request will be redirected to the  **report-404/ExamplePage.html**  page on the  **www.example.com**. If the 404 redirection rule is not specified, the default 404 error page configured in the previous step is returned when the HTTP 404 error occurs.
 
         ```
         [
@@ -174,7 +174,7 @@ If the web page files are in the Cold storage class, restored them first. For mo
 
     After the static website hosting is effective in OBS, you can access the static website by using the URL provided by OBS.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >In some conditions, you may need to clear the browser cache before the expected results are displayed.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >In some conditions, you may need to clear the browser cache before the expected results are displayed.
 
 

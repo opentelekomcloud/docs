@@ -54,7 +54,7 @@ A standard bucket policy can be used to grant the read and write access to a buc
 ## Procedure<a name="section9799102151917"></a>
 
 1.  Log in to OBS Console.
-2.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+2.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 3.  In the navigation pane on the left, click  **Permissions**  to go to the permission management page.
 4.  Select the  **Public Read and Write**  policy from the standard bucket policies that are pre-defined.
 5.  In the dialog box that is displayed, click  **Yes**.

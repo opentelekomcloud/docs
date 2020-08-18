@@ -4,7 +4,7 @@ For standard bucket policy, OBS offers three options, namely the Private, Public
 
 ## Procedure<a name="section11176714193111"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Permissions**  to go to the permission management page.
 3.  On the  **Bucket Policies**  tab page, select a policy from the  **Standard Bucket Policies**  area.
 
@@ -12,8 +12,8 @@ For standard bucket policy, OBS offers three options, namely the Private, Public
     -   **Public Read**: Any user can read objects in the bucket.
     -   **Public Read and Write**: Any user can read, write, and delete objects in the bucket.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >For your data security, the  **Public Read**  and  **Public Read and Write**  policies are not recommended.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >For your data security, the  **Public Read**  and  **Public Read and Write**  policies are not recommended.
 
     **Figure  1**  Standard bucket policies<a name="fig1077518154818"></a>  
     ![](figures/standard-bucket-policies.png "standard-bucket-policies")

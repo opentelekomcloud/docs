@@ -12,7 +12,7 @@
 </tr>
 </thead>
 <tbody><tr id="row6290124042610"><td class="cellrowborder" valign="top" width="37%" headers="mcps1.2.4.1.1 "><p id="p11365182815416"><a name="p11365182815416"></a><a name="p11365182815416"></a>IAM provides the following functions:</p>
-<a name="ul123665288419"></a><a name="ul123665288419"></a><ul id="ul123665288419"><li>User identity authentication</li><li>IAM user permission control</li><li>IAM agency configuration</li></ul>
+<a name="ul123665288419"></a><a name="ul123665288419"></a><ul id="ul123665288419"><li>User identity authentication</li><li>IAM user permission management</li><li>IAM agency configuration</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="42%" headers="mcps1.2.4.1.2 "><p id="p229334072618"><a name="p229334072618"></a><a name="p229334072618"></a>Identity and Access Management (IAM)</p>
 </td>

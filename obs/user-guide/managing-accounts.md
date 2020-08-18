@@ -2,7 +2,7 @@
 
 Account names on OBS Browser are used to distinguish one from another, which are irrelevant to the registered cloud service account. An OBS Browser account has one pair of AK and SK, but a pair of AK and SK can be used by multiple OBS Browser accounts. A maximum of 10 accounts can be added to OBS Browser.
 
-OBS Browser uses the AK and SK for identity authentication. AKs and SKs are the access keys created by on the management console \(on  **My Credential**  page\) by cloud service accounts and IAM users . For details, see  [Creating Access Keys \(AK and SK\)](creating-access-keys-(ak-and-sk).md).
+OBS Browser uses the AK and SK for identity authentication. AKs and SKs are the access keys created by on the management console \(on  **My Credential**  page\) by cloud service accounts and IAM users. For details, see  [Creating Access Keys \(AK and SK\)](creating-access-keys-(ak-and-sk).md).
 
 1.  AKs and SKs are required for logging in to OBS Browser to access OBS resources.
 2.  Once an AK and SK are entered, IAM receives the AK and SK, finds the cloud service account or IAM user that own the pair of AK and SK, and checks which OBS permissions the account or IAM user has.

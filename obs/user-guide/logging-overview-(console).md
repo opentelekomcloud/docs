@@ -4,8 +4,8 @@ You can enable logging to facilitate analysis or audit as required. Access logs 
 
 The logging function itself is offered for free, only the space occupied by log files is charged.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->After logging is enabled, the log delivery user will be automatically granted the permission to read the bucket ACL and write the bucket where logs are saved. If you manually disable such permissions, bucket logging fails.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>After logging is enabled, the log delivery user will be automatically granted the permission to read the bucket ACL and write the bucket where logs are saved. If you manually disable such permissions, bucket logging fails.
 
 OBS can record bucket access requests in logs for request analysis and log audit.
 
@@ -81,7 +81,7 @@ The access log of each bucket contains the following information.
 </td>
 <td class="cellrowborder" valign="top" width="44%" headers="mcps1.2.4.1.2 "><p id="p217121618311"><a name="p217121618311"></a><a name="p217121618311"></a>REST.GET.BUCKET.LOCATION</p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.4.1.3 "><p id="p917112161834"><a name="p917112161834"></a><a name="p917112161834"></a>Name of the Operation</p>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.4.1.3 "><p id="p917112161834"><a name="p917112161834"></a><a name="p917112161834"></a>Name of the operation</p>
 </td>
 </tr>
 <tr id="row0997173031516"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.4.1.1 "><p id="p159971730131518"><a name="p159971730131518"></a><a name="p159971730131518"></a>Key</p>
