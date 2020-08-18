@@ -52,7 +52,7 @@ This API is used to query information about a specified job in an MRS cluster.
 
 **Request parameters**
 
-None
+None.
 
 ## Response<a name="section775516131425"></a>
 
@@ -186,7 +186,7 @@ None
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p139311522020"><a name="p139311522020"></a><a name="p139311522020"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p20244195418212"><a name="p20244195418212"></a><a name="p20244195418212"></a>Launcher job ID</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p20244195418212"><a name="p20244195418212"></a><a name="p20244195418212"></a>Launcher job ID.</p>
 </td>
 </tr>
 <tr id="row1687919461120"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p031334815212"><a name="p031334815212"></a><a name="p031334815212"></a>app_id</p>
@@ -203,7 +203,7 @@ None
 
 -   Example request
 
-    None
+    None.
 
 -   Example response
     -   Example of a successful response
@@ -235,7 +235,7 @@ None
 
         ```
         {
-        "error_msg": Failed to query the job.
+        "error_msg": "Failed to query the job."
         "error_code":"0162"
         }
         ```

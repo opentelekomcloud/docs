@@ -6,7 +6,7 @@
 
 -   **[Obtaining a Project ID](obtaining-a-project-id.md)**  
 
--   **[Obtaining an Account ID](obtaining-an-account-id.md)**  
+-   **[Obtaining Account ID](obtaining-account-id.md)**  
 
 -   **[Obtain MRS Cluster Information](obtain-mrs-cluster-information.md)**  
 

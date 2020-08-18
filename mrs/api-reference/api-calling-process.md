@@ -138,6 +138,6 @@ private HttpResponse webLoginCheck(String webUrl, HttpClient httpclient)
 ...
 ```
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->For a non-security cluster, you can skip CAS authentication in step 1 and step 2 and directly send the "GET https://_Floating_ _IP address of MRS Manager_:28443/web/v1/access/login\_check" web login authentication request. And then, you can obtain the  **FISessionId**  of the web request from the cookie of the response header of the response object.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>For a non-security cluster, you can skip CAS authentication in step 1 and step 2 and directly send the "GET https://_Floating_ _IP address of MRS Manager_:28443/web/v1/access/login\_check" web login authentication request. And then, you can obtain the  **FISessionId**  of the web request from the cookie of the response header of the response object.
 

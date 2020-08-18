@@ -211,7 +211,7 @@
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p24026536103435"><a name="p24026536103435"></a><a name="p24026536103435"></a>POST /v1.1/{project_id}/autoscaling-policy/{cluster_id}</p>
 </td>
 </tr>
-<tr id="row4997174174913"><td class="cellrowborder" rowspan="6" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p10417204611498"><a name="p10417204611498"></a><a name="p10417204611498"></a>Tag Management APIs</p>
+<tr id="row4997174174913"><td class="cellrowborder" rowspan="6" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p10417204611498"><a name="p10417204611498"></a><a name="p10417204611498"></a>Tag management APIs</p>
 <p id="p104291846174918"><a name="p104291846174918"></a><a name="p104291846174918"></a></p>
 <p id="p1942814468497"><a name="p1942814468497"></a><a name="p1942814468497"></a></p>
 <p id="p44281546114915"><a name="p44281546114915"></a><a name="p44281546114915"></a></p>

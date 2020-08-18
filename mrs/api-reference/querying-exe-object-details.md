@@ -45,11 +45,32 @@ This API is used to query detailed information about the exe object of a job. Th
 
 **Request parameters**
 
-None
+None.
 
 ## Response<a name="section38599577193858"></a>
 
 **Table  2**  Response parameter description
+
+<a name="table95690185369"></a>
+<table><thead align="left"><tr id="row8575818193612"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p4575181853612"><a name="p4575181853612"></a><a name="p4575181853612"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.2"><p id="p145751818123617"><a name="p145751818123617"></a><a name="p145751818123617"></a>Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="50%" id="mcps1.2.4.1.3"><p id="p25761518193614"><a name="p25761518193614"></a><a name="p25761518193614"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1057791893611"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1414612262381"><a name="p1414612262381"></a><a name="p1414612262381"></a>job_execution</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p16204192543610"><a name="p16204192543610"></a><a name="p16204192543610"></a>Object</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p1620522520368"><a name="p1620522520368"></a><a name="p1620522520368"></a>For details, see <a href="#table3315199519550">Table 3</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  3** **job\_execution**  parameter description
 
 <a name="table3315199519550"></a>
 <table><thead align="left"><tr id="row578377519550"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p38420820195833"><a name="p38420820195833"></a><a name="p38420820195833"></a>Parameter</p>
@@ -301,7 +322,7 @@ None
 
 -   Example request
 
-    None
+    None.
 
 -   Example response
 
@@ -348,9 +369,9 @@ None
 
 ## Status Code<a name="section7365446163631"></a>
 
-[Table 3](#table1584477916050)  describes the status code of this API.
+[Table 4](#table1584477916050)  describes the status code of this API.
 
-**Table  3**  Status code
+**Table  4**  Status code
 
 <a name="table1584477916050"></a>
 <table><thead align="left"><tr id="row1339492016050"><th class="cellrowborder" valign="top" width="30%" id="mcps1.2.3.1.1"><p id="p3411176516050"><a name="p3411176516050"></a><a name="p3411176516050"></a>Status code</p>

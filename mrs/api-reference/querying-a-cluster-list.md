@@ -50,7 +50,7 @@ This API is used to query a list of clusters created by a user. This API is inco
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p1232463611229"><a name="p1232463611229"></a><a name="p1232463611229"></a>No</p>
     </td>
     <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p643954919229"><a name="p643954919229"></a><a name="p643954919229"></a>You can query a cluster list by cluster status.</p>
-    <a name="ul7439124914227"></a><a name="ul7439124914227"></a><ul id="ul7439124914227"><li>starting: Query a list of clusters that are being started.</li><li>running: Query a list of running clusters.</li><li>terminated: Query a list of terminated clusters.</li><li>failed: Query a list of failed clusters.</li><li>abnormal: Query a list of abnormal clusters.</li><li>terminating: Query a list of clusters that are being terminated.</li><li>frozen: Query a list of frozen clusters.</li><li>scaling-out: Query a list of clusters that are being scaled out.</li><li>scaling-in: Query a list of clusters that are being scaled in.</li></ul>
+    <a name="ul7439124914227"></a><a name="ul7439124914227"></a><ul id="ul7439124914227"><li><strong id="b10536260109"><a name="b10536260109"></a><a name="b10536260109"></a>starting</strong>: Query a list of clusters that are being started.</li><li><strong id="b14640122921016"><a name="b14640122921016"></a><a name="b14640122921016"></a>running</strong>: Query a list of running clusters.</li><li><strong id="b12849133191012"><a name="b12849133191012"></a><a name="b12849133191012"></a>terminated</strong>: Query a list of terminated clusters.</li><li><strong id="b6476143717108"><a name="b6476143717108"></a><a name="b6476143717108"></a>failed</strong>: Query a list of failed clusters.</li><li><strong id="b1346534081016"><a name="b1346534081016"></a><a name="b1346534081016"></a>abnormal</strong>: Query a list of abnormal clusters.</li><li><strong id="b399234417105"><a name="b399234417105"></a><a name="b399234417105"></a>terminating</strong>: Query a list of clusters that are being terminated.</li><li><strong id="b192831157131018"><a name="b192831157131018"></a><a name="b192831157131018"></a>frozen</strong>: Query a list of frozen clusters.</li><li><strong id="b123691911117"><a name="b123691911117"></a><a name="b123691911117"></a>scaling-out</strong>: Query a list of clusters that are being scaled out.</li><li><strong id="b9746194161113"><a name="b9746194161113"></a><a name="b9746194161113"></a>scaling-in</strong>: Query a list of clusters that are being scaled in.</li></ul>
     </td>
     </tr>
     <tr id="row82511740192020"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p77281825152216"><a name="p77281825152216"></a><a name="p77281825152216"></a>tags</p>
@@ -67,7 +67,7 @@ This API is used to query a list of clusters created by a user. This API is inco
 
 ## Request<a name="s2b7c5edf256248ba9ea7540792fb5391"></a>
 
-None
+None.
 
 ## Response<a name="s2d7ef5f47cdd410894126452fe31b313"></a>
 
@@ -114,42 +114,42 @@ None
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="ab5ad448d1761497bbc3d7316f595d623"><a name="ab5ad448d1761497bbc3d7316f595d623"></a><a name="ab5ad448d1761497bbc3d7316f595d623"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="ab57aa81b1f8948f489da1e8da6829b35"><a name="ab57aa81b1f8948f489da1e8da6829b35"></a><a name="ab57aa81b1f8948f489da1e8da6829b35"></a>Cluster ID</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="ab57aa81b1f8948f489da1e8da6829b35"><a name="ab57aa81b1f8948f489da1e8da6829b35"></a><a name="ab57aa81b1f8948f489da1e8da6829b35"></a>Cluster ID.</p>
 </td>
 </tr>
 <tr id="r3b52cf27f6574e88b91818cf72896303"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a6580f76ca77d48db9744138ab40ca1db"><a name="a6580f76ca77d48db9744138ab40ca1db"></a><a name="a6580f76ca77d48db9744138ab40ca1db"></a>clusterName</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0110581913_p346145215818"><a name="en-us_topic_0110581913_p346145215818"></a><a name="en-us_topic_0110581913_p346145215818"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a04a6de6c77d84a9a97f0ec5ff5fa4786"><a name="a04a6de6c77d84a9a97f0ec5ff5fa4786"></a><a name="a04a6de6c77d84a9a97f0ec5ff5fa4786"></a>Cluster name</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a04a6de6c77d84a9a97f0ec5ff5fa4786"><a name="a04a6de6c77d84a9a97f0ec5ff5fa4786"></a><a name="a04a6de6c77d84a9a97f0ec5ff5fa4786"></a>Cluster name.</p>
 </td>
 </tr>
 <tr id="r77a19550cc11494392ccdcdb7ef46655"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="adfc178faa2814266813bbcad58f5abfd"><a name="adfc178faa2814266813bbcad58f5abfd"></a><a name="adfc178faa2814266813bbcad58f5abfd"></a>masterNodeNum</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a88b52b3ee4314db4aafa90e2dbca7ab0"><a name="a88b52b3ee4314db4aafa90e2dbca7ab0"></a><a name="a88b52b3ee4314db4aafa90e2dbca7ab0"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="ad309959c548c428684d69a6f26707ea2"><a name="ad309959c548c428684d69a6f26707ea2"></a><a name="ad309959c548c428684d69a6f26707ea2"></a>Number of Master nodes deployed in a cluster</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="ad309959c548c428684d69a6f26707ea2"><a name="ad309959c548c428684d69a6f26707ea2"></a><a name="ad309959c548c428684d69a6f26707ea2"></a>Number of Master nodes deployed in a cluster.</p>
 </td>
 </tr>
 <tr id="r98b8168bb13247e08b2aac3a062628ea"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0110581913_p515909414533"><a name="en-us_topic_0110581913_p515909414533"></a><a name="en-us_topic_0110581913_p515909414533"></a>coreNodeNum</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="aa22fbe8c185841d2ad2a22266fba4b11"><a name="aa22fbe8c185841d2ad2a22266fba4b11"></a><a name="aa22fbe8c185841d2ad2a22266fba4b11"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a8e2ef1f9ce5d4367a10f14ba2d41a25a"><a name="a8e2ef1f9ce5d4367a10f14ba2d41a25a"></a><a name="a8e2ef1f9ce5d4367a10f14ba2d41a25a"></a>Number of Core nodes deployed in a cluster</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a8e2ef1f9ce5d4367a10f14ba2d41a25a"><a name="a8e2ef1f9ce5d4367a10f14ba2d41a25a"></a><a name="a8e2ef1f9ce5d4367a10f14ba2d41a25a"></a>Number of Core nodes deployed in a cluster.</p>
 </td>
 </tr>
 <tr id="row1718814371713"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p518813438179"><a name="p518813438179"></a><a name="p518813438179"></a>totalNodeNum</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p1636321171817"><a name="p1636321171817"></a><a name="p1636321171817"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p43634121819"><a name="p43634121819"></a><a name="p43634121819"></a>Total number of nodes deployed in a cluster</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p43634121819"><a name="p43634121819"></a><a name="p43634121819"></a>Total number of nodes deployed in a cluster.</p>
 </td>
 </tr>
 <tr id="r0c2287d77308466f9f396f01694520bc"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="ae0783d944cd44261b67fef58299e7037"><a name="ae0783d944cd44261b67fef58299e7037"></a><a name="ae0783d944cd44261b67fef58299e7037"></a>clusterState</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0110581913_p740379615818"><a name="en-us_topic_0110581913_p740379615818"></a><a name="en-us_topic_0110581913_p740379615818"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><div class="p" id="a223c0b7f640443f784ad474d90a8143c"><a name="a223c0b7f640443f784ad474d90a8143c"></a><a name="a223c0b7f640443f784ad474d90a8143c"></a>Cluster status. Valid values include:<a name="u042ceaf297394c92b183c4d7f8f5a8f6"></a><a name="u042ceaf297394c92b183c4d7f8f5a8f6"></a><ul id="u042ceaf297394c92b183c4d7f8f5a8f6"><li>starting: The cluster is being started.</li><li>running: The cluster is running.</li><li>terminated: The cluster has been terminated.</li><li>failed: The cluster fails.</li><li>abnormal: The cluster is abnormal.</li><li>terminating: The cluster is being terminated.</li><li>frozen: The cluster has been frozen.</li><li>scaling-out: The cluster is being scaled out.</li><li>scaling-in: The cluster is being scaled in.</li></ul>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><div class="p" id="a223c0b7f640443f784ad474d90a8143c"><a name="a223c0b7f640443f784ad474d90a8143c"></a><a name="a223c0b7f640443f784ad474d90a8143c"></a>Cluster status. Valid values include:<a name="u042ceaf297394c92b183c4d7f8f5a8f6"></a><a name="u042ceaf297394c92b183c4d7f8f5a8f6"></a><ul id="u042ceaf297394c92b183c4d7f8f5a8f6"><li><strong id="b13837152415119"><a name="b13837152415119"></a><a name="b13837152415119"></a>starting</strong>: The cluster is being started.</li><li><strong id="b62092801119"><a name="b62092801119"></a><a name="b62092801119"></a>running</strong>: The cluster is running.</li><li><strong id="b16440193191118"><a name="b16440193191118"></a><a name="b16440193191118"></a>terminated</strong>: The cluster has been terminated.</li><li><strong id="b3747113471120"><a name="b3747113471120"></a><a name="b3747113471120"></a>failed</strong>: The cluster fails.</li><li><strong id="b2010123918115"><a name="b2010123918115"></a><a name="b2010123918115"></a>abnormal</strong>: The cluster is abnormal.</li><li><strong id="b114481942101118"><a name="b114481942101118"></a><a name="b114481942101118"></a>terminating</strong>: The cluster is being terminated.</li><li><strong id="b203811951151119"><a name="b203811951151119"></a><a name="b203811951151119"></a>frozen</strong>: The cluster has been frozen.</li><li><strong id="b1116285411111"><a name="b1116285411111"></a><a name="b1116285411111"></a>scaling-out</strong>: The cluster is being scaled out.</li><li><strong id="b146713571111"><a name="b146713571111"></a><a name="b146713571111"></a>scaling-in</strong>: The cluster is being scaled in.</li></ul>
 </div>
 </td>
 </tr>
@@ -157,63 +157,63 @@ None
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="ae2f361b335de4a9ebd8657bffafab637"><a name="ae2f361b335de4a9ebd8657bffafab637"></a><a name="ae2f361b335de4a9ebd8657bffafab637"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a472bbc80cc6442d19865aef1212dbffd"><a name="a472bbc80cc6442d19865aef1212dbffd"></a><a name="a472bbc80cc6442d19865aef1212dbffd"></a>Cluster creation time, which is a 10-bit timestamp</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a472bbc80cc6442d19865aef1212dbffd"><a name="a472bbc80cc6442d19865aef1212dbffd"></a><a name="a472bbc80cc6442d19865aef1212dbffd"></a>Cluster creation time, which is a 10-bit timestamp.</p>
 </td>
 </tr>
 <tr id="r996897e26f8547a5b48f9747adee4fd3"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="afec076188fe6446dad1c4a5c7b7d62a8"><a name="afec076188fe6446dad1c4a5c7b7d62a8"></a><a name="afec076188fe6446dad1c4a5c7b7d62a8"></a>updateAt</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a6aa0280b4cf149dfa954e495d1554eda"><a name="a6aa0280b4cf149dfa954e495d1554eda"></a><a name="a6aa0280b4cf149dfa954e495d1554eda"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a57790f48a87941e7aec19eec4e702fdc"><a name="a57790f48a87941e7aec19eec4e702fdc"></a><a name="a57790f48a87941e7aec19eec4e702fdc"></a>Cluster update time, which is a 10-bit timestamp</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a57790f48a87941e7aec19eec4e702fdc"><a name="a57790f48a87941e7aec19eec4e702fdc"></a><a name="a57790f48a87941e7aec19eec4e702fdc"></a>Cluster update time, which is a 10-bit timestamp.</p>
 </td>
 </tr>
 <tr id="rfc458d4bd6b64e2e9049f324ee026e7c"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="ac03430959964424aa08cae11bdaa5d71"><a name="ac03430959964424aa08cae11bdaa5d71"></a><a name="ac03430959964424aa08cae11bdaa5d71"></a>billingType</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a6451ed910f8649a193dcb66304558acb"><a name="a6451ed910f8649a193dcb66304558acb"></a><a name="a6451ed910f8649a193dcb66304558acb"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a530c6b4c02be4e4b9cffc97681278d3a"><a name="a530c6b4c02be4e4b9cffc97681278d3a"></a><a name="a530c6b4c02be4e4b9cffc97681278d3a"></a>Cluster billing mode</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a530c6b4c02be4e4b9cffc97681278d3a"><a name="a530c6b4c02be4e4b9cffc97681278d3a"></a><a name="a530c6b4c02be4e4b9cffc97681278d3a"></a>Cluster billing mode.</p>
 </td>
 </tr>
 <tr id="rcdd45dcfa0dc441e96d6458efb401d8a"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a811da5e5dff644b0b8711bd3c6941315"><a name="a811da5e5dff644b0b8711bd3c6941315"></a><a name="a811da5e5dff644b0b8711bd3c6941315"></a>dataCenter</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a09aa2e2429404f2d9a33a24037785148"><a name="a09aa2e2429404f2d9a33a24037785148"></a><a name="a09aa2e2429404f2d9a33a24037785148"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="afbf19bcde3394cfeb9c3cec84ed768f2"><a name="afbf19bcde3394cfeb9c3cec84ed768f2"></a><a name="afbf19bcde3394cfeb9c3cec84ed768f2"></a>Cluster work region</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="afbf19bcde3394cfeb9c3cec84ed768f2"><a name="afbf19bcde3394cfeb9c3cec84ed768f2"></a><a name="afbf19bcde3394cfeb9c3cec84ed768f2"></a>Cluster work region.</p>
 </td>
 </tr>
 <tr id="r806be8a4d61041a48f773e470b8430be"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a174fb6437a214b1d955c9712cb6d3586"><a name="a174fb6437a214b1d955c9712cb6d3586"></a><a name="a174fb6437a214b1d955c9712cb6d3586"></a>vpc</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a498f167b670a46cd9ebabc30f81f2cf2"><a name="a498f167b670a46cd9ebabc30f81f2cf2"></a><a name="a498f167b670a46cd9ebabc30f81f2cf2"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a735c95fa42b34be0a98c3275c678846c"><a name="a735c95fa42b34be0a98c3275c678846c"></a><a name="a735c95fa42b34be0a98c3275c678846c"></a>VPC name</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a735c95fa42b34be0a98c3275c678846c"><a name="a735c95fa42b34be0a98c3275c678846c"></a><a name="a735c95fa42b34be0a98c3275c678846c"></a>VPC name.</p>
 </td>
 </tr>
 <tr id="r2506a47b261246c7b9717a40e29d8e39"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a5e0a0aa004df45e8872b87588765a71a"><a name="a5e0a0aa004df45e8872b87588765a71a"></a><a name="a5e0a0aa004df45e8872b87588765a71a"></a>fee</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a23ddcb5894904fd6a856057e4b39079f"><a name="a23ddcb5894904fd6a856057e4b39079f"></a><a name="a23ddcb5894904fd6a856057e4b39079f"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a9f4564f1b0f04eb695f35256648390a4"><a name="a9f4564f1b0f04eb695f35256648390a4"></a><a name="a9f4564f1b0f04eb695f35256648390a4"></a>Cluster creation fee, which is automatically calculated</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a9f4564f1b0f04eb695f35256648390a4"><a name="a9f4564f1b0f04eb695f35256648390a4"></a><a name="a9f4564f1b0f04eb695f35256648390a4"></a>Cluster creation fee, which is automatically calculated.</p>
 </td>
 </tr>
 <tr id="rc2bb1033a81d4eefa8bed28eb88e2cde"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0110581913_p685107915313"><a name="en-us_topic_0110581913_p685107915313"></a><a name="en-us_topic_0110581913_p685107915313"></a>hadoopVersion</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a28bf87170a4f4e7f82ae07f5bd34e99b"><a name="a28bf87170a4f4e7f82ae07f5bd34e99b"></a><a name="a28bf87170a4f4e7f82ae07f5bd34e99b"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a46c1f8c48df54e63be3d7a9bc0c81c42"><a name="a46c1f8c48df54e63be3d7a9bc0c81c42"></a><a name="a46c1f8c48df54e63be3d7a9bc0c81c42"></a>Hadoop version</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a46c1f8c48df54e63be3d7a9bc0c81c42"><a name="a46c1f8c48df54e63be3d7a9bc0c81c42"></a><a name="a46c1f8c48df54e63be3d7a9bc0c81c42"></a>Hadoop version.</p>
 </td>
 </tr>
 <tr id="r19a9d028587a4b51b0c8c4e2810b892b"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a933b18ebd0cd43ee88a7275a9769c6b9"><a name="a933b18ebd0cd43ee88a7275a9769c6b9"></a><a name="a933b18ebd0cd43ee88a7275a9769c6b9"></a>masterNodeSize</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="ab85dea4d975b4ac88456d975082f2792"><a name="ab85dea4d975b4ac88456d975082f2792"></a><a name="ab85dea4d975b4ac88456d975082f2792"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="ab059544a106845ac9f20977b6b5648d1"><a name="ab059544a106845ac9f20977b6b5648d1"></a><a name="ab059544a106845ac9f20977b6b5648d1"></a>Instance specifications of a Master node </p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="ab059544a106845ac9f20977b6b5648d1"><a name="ab059544a106845ac9f20977b6b5648d1"></a><a name="ab059544a106845ac9f20977b6b5648d1"></a>Instance specifications of a Master node.</p>
 </td>
 </tr>
 <tr id="r43f1c0b3b1014929aaf8d5d2e5d5c847"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a16e80e6b671447b09f2abdb5aa6d41c4"><a name="a16e80e6b671447b09f2abdb5aa6d41c4"></a><a name="a16e80e6b671447b09f2abdb5aa6d41c4"></a>coreNodeSize</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a046b1ef2861f40d18ecf63c58ba7d364"><a name="a046b1ef2861f40d18ecf63c58ba7d364"></a><a name="a046b1ef2861f40d18ecf63c58ba7d364"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a98351f1daca34fc7a812972a2079b755"><a name="a98351f1daca34fc7a812972a2079b755"></a><a name="a98351f1daca34fc7a812972a2079b755"></a>Instance specifications of a Core node </p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a98351f1daca34fc7a812972a2079b755"><a name="a98351f1daca34fc7a812972a2079b755"></a><a name="a98351f1daca34fc7a812972a2079b755"></a>Instance specifications of a Core node.</p>
 </td>
 </tr>
 <tr id="r25cc638379e74ef996650fc7a23ea281"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="ab5e2f08e0dd84cd190f840772177973c"><a name="ab5e2f08e0dd84cd190f840772177973c"></a><a name="ab5e2f08e0dd84cd190f840772177973c"></a>componentList</p>
@@ -227,147 +227,147 @@ None
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a48f42532d04045d4ad2bf39c18d25ee1"><a name="a48f42532d04045d4ad2bf39c18d25ee1"></a><a name="a48f42532d04045d4ad2bf39c18d25ee1"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a42d7deb5457f4b87ae028061458b1543"><a name="a42d7deb5457f4b87ae028061458b1543"></a><a name="a42d7deb5457f4b87ae028061458b1543"></a>External IP address</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a42d7deb5457f4b87ae028061458b1543"><a name="a42d7deb5457f4b87ae028061458b1543"></a><a name="a42d7deb5457f4b87ae028061458b1543"></a>External IP address.</p>
 </td>
 </tr>
 <tr id="r489b2da1b1ce484e880510cc66b8f11d"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a32e4d567645d42779af568514080ffb6"><a name="a32e4d567645d42779af568514080ffb6"></a><a name="a32e4d567645d42779af568514080ffb6"></a>externalAlternateIp</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a48b6c18cf75b40e39bcfeb6db940c79d"><a name="a48b6c18cf75b40e39bcfeb6db940c79d"></a><a name="a48b6c18cf75b40e39bcfeb6db940c79d"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a180df81bdff448a798fbdfac00aa0439"><a name="a180df81bdff448a798fbdfac00aa0439"></a><a name="a180df81bdff448a798fbdfac00aa0439"></a>Backup external IP address</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a180df81bdff448a798fbdfac00aa0439"><a name="a180df81bdff448a798fbdfac00aa0439"></a><a name="a180df81bdff448a798fbdfac00aa0439"></a>Backup external IP address.</p>
 </td>
 </tr>
 <tr id="r7febf00c6df34dbc9949ade0d616ecd9"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a3341680efae549a0b38ea8988f0332e0"><a name="a3341680efae549a0b38ea8988f0332e0"></a><a name="a3341680efae549a0b38ea8988f0332e0"></a>internalIp</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="ac2d4729cec47455db8aacd06535bcce5"><a name="ac2d4729cec47455db8aacd06535bcce5"></a><a name="ac2d4729cec47455db8aacd06535bcce5"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a3a94a1a2ed2c442f9224dd59bad9bae1"><a name="a3a94a1a2ed2c442f9224dd59bad9bae1"></a><a name="a3a94a1a2ed2c442f9224dd59bad9bae1"></a>Internal IP address</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a3a94a1a2ed2c442f9224dd59bad9bae1"><a name="a3a94a1a2ed2c442f9224dd59bad9bae1"></a><a name="a3a94a1a2ed2c442f9224dd59bad9bae1"></a>Internal IP address.</p>
 </td>
 </tr>
 <tr id="r88b199831b464409b39cec1f0181738c"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="af2de7dea9b3b46a9914d25395494a2e1"><a name="af2de7dea9b3b46a9914d25395494a2e1"></a><a name="af2de7dea9b3b46a9914d25395494a2e1"></a>deploymentId</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="ada9ff11421ea4ac389a5f4e0b8f87e97"><a name="ada9ff11421ea4ac389a5f4e0b8f87e97"></a><a name="ada9ff11421ea4ac389a5f4e0b8f87e97"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a812fbea211da4029b49cb8a252e62f02"><a name="a812fbea211da4029b49cb8a252e62f02"></a><a name="a812fbea211da4029b49cb8a252e62f02"></a>Cluster deployment ID</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a812fbea211da4029b49cb8a252e62f02"><a name="a812fbea211da4029b49cb8a252e62f02"></a><a name="a812fbea211da4029b49cb8a252e62f02"></a>Cluster deployment ID.</p>
 </td>
 </tr>
 <tr id="raee1d1dd8ea5493085e26fcb2c55b686"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="af163dd44edb849f1a1e324ace1678c95"><a name="af163dd44edb849f1a1e324ace1678c95"></a><a name="af163dd44edb849f1a1e324ace1678c95"></a>remark</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="ac505f9599e5946f4ae79c99619803217"><a name="ac505f9599e5946f4ae79c99619803217"></a><a name="ac505f9599e5946f4ae79c99619803217"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a2723d8cb336741629429a7bb471b7fda"><a name="a2723d8cb336741629429a7bb471b7fda"></a><a name="a2723d8cb336741629429a7bb471b7fda"></a>Cluster remarks</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a2723d8cb336741629429a7bb471b7fda"><a name="a2723d8cb336741629429a7bb471b7fda"></a><a name="a2723d8cb336741629429a7bb471b7fda"></a>Cluster remarks.</p>
 </td>
 </tr>
 <tr id="r8175a338db8647c9be3a4049e0c4b0cf"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0110581913_p67821615426"><a name="en-us_topic_0110581913_p67821615426"></a><a name="en-us_topic_0110581913_p67821615426"></a>orderId</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a0f5289c1691143faa01b9f0b2599598c"><a name="a0f5289c1691143faa01b9f0b2599598c"></a><a name="a0f5289c1691143faa01b9f0b2599598c"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="afa7402e6e5644953a74756c85bcaf8ab"><a name="afa7402e6e5644953a74756c85bcaf8ab"></a><a name="afa7402e6e5644953a74756c85bcaf8ab"></a>Cluster creation order ID</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="afa7402e6e5644953a74756c85bcaf8ab"><a name="afa7402e6e5644953a74756c85bcaf8ab"></a><a name="afa7402e6e5644953a74756c85bcaf8ab"></a>Cluster creation order ID.</p>
 </td>
 </tr>
 <tr id="rd2a271efb3444a3c973c2c8eb0cd236d"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="ac3ceaa2c06ba4c2f803043904e4b7f69"><a name="ac3ceaa2c06ba4c2f803043904e4b7f69"></a><a name="ac3ceaa2c06ba4c2f803043904e4b7f69"></a>azId</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a2e115e3b36574f45a2c6f6447b272345"><a name="a2e115e3b36574f45a2c6f6447b272345"></a><a name="a2e115e3b36574f45a2c6f6447b272345"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="af6c65067fc23440b91b567cc210fedd5"><a name="af6c65067fc23440b91b567cc210fedd5"></a><a name="af6c65067fc23440b91b567cc210fedd5"></a>AZ ID</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="af6c65067fc23440b91b567cc210fedd5"><a name="af6c65067fc23440b91b567cc210fedd5"></a><a name="af6c65067fc23440b91b567cc210fedd5"></a>AZ ID.</p>
 </td>
 </tr>
 <tr id="r0cad9be84e4a4984b61d73eba43431dc"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="ae65c11e43bfc42f797554088975921dd"><a name="ae65c11e43bfc42f797554088975921dd"></a><a name="ae65c11e43bfc42f797554088975921dd"></a>masterNodeProductId</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a29180b491638472ebc25174507033906"><a name="a29180b491638472ebc25174507033906"></a><a name="a29180b491638472ebc25174507033906"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="ad1df1119b23f4a1982fa0322faffebb8"><a name="ad1df1119b23f4a1982fa0322faffebb8"></a><a name="ad1df1119b23f4a1982fa0322faffebb8"></a>Product ID of a Master node</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="ad1df1119b23f4a1982fa0322faffebb8"><a name="ad1df1119b23f4a1982fa0322faffebb8"></a><a name="ad1df1119b23f4a1982fa0322faffebb8"></a>Product ID of a Master node.</p>
 </td>
 </tr>
 <tr id="r1f29de2d879945419160b62d43761815"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a9c1a37a760284d0d82d12542962f692c"><a name="a9c1a37a760284d0d82d12542962f692c"></a><a name="a9c1a37a760284d0d82d12542962f692c"></a>masterNodeSpecId</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a830082c006f648339fb32ad91c9ab4e5"><a name="a830082c006f648339fb32ad91c9ab4e5"></a><a name="a830082c006f648339fb32ad91c9ab4e5"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a34e1e9e36d1945759125732545d36204"><a name="a34e1e9e36d1945759125732545d36204"></a><a name="a34e1e9e36d1945759125732545d36204"></a>Specification ID of a Master node</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a34e1e9e36d1945759125732545d36204"><a name="a34e1e9e36d1945759125732545d36204"></a><a name="a34e1e9e36d1945759125732545d36204"></a>Specification ID of a Master node.</p>
 </td>
 </tr>
 <tr id="rd4fe029568d54cfdb03c68c5b8e0975c"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a2e65010710f54cb8a8bf3ede666ac7db"><a name="a2e65010710f54cb8a8bf3ede666ac7db"></a><a name="a2e65010710f54cb8a8bf3ede666ac7db"></a>coreNodeProductId</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="af650b02421ea4996a4c3dd18426ac35a"><a name="af650b02421ea4996a4c3dd18426ac35a"></a><a name="af650b02421ea4996a4c3dd18426ac35a"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="aa7499f07b4cd4eb1b696fb07637937df"><a name="aa7499f07b4cd4eb1b696fb07637937df"></a><a name="aa7499f07b4cd4eb1b696fb07637937df"></a>Product ID of a Core node</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="aa7499f07b4cd4eb1b696fb07637937df"><a name="aa7499f07b4cd4eb1b696fb07637937df"></a><a name="aa7499f07b4cd4eb1b696fb07637937df"></a>Product ID of a Core node.</p>
 </td>
 </tr>
 <tr id="rdbee90a2d07145b8a9b9fe27af32b29c"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="acb2f12bb03c342c1a3937090d3e664fc"><a name="acb2f12bb03c342c1a3937090d3e664fc"></a><a name="acb2f12bb03c342c1a3937090d3e664fc"></a>coreNodeSpecId</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a40d90f0817fd4221ac6c533a50f4985a"><a name="a40d90f0817fd4221ac6c533a50f4985a"></a><a name="a40d90f0817fd4221ac6c533a50f4985a"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a547bca118bf54942b3957f2d4895c857"><a name="a547bca118bf54942b3957f2d4895c857"></a><a name="a547bca118bf54942b3957f2d4895c857"></a>Specification ID of a Core node</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a547bca118bf54942b3957f2d4895c857"><a name="a547bca118bf54942b3957f2d4895c857"></a><a name="a547bca118bf54942b3957f2d4895c857"></a>Specification ID of a Core node.</p>
 </td>
 </tr>
 <tr id="r93411bd5da6d4ff6bce357191b6cd3e5"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="aeea73aeac7aa42ebaf15d2b41669e44d"><a name="aeea73aeac7aa42ebaf15d2b41669e44d"></a><a name="aeea73aeac7aa42ebaf15d2b41669e44d"></a>azName</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a4d0660d64b314a35bd4a80d130265735"><a name="a4d0660d64b314a35bd4a80d130265735"></a><a name="a4d0660d64b314a35bd4a80d130265735"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a73ff6a78be854ad0b3ec076e6454437a"><a name="a73ff6a78be854ad0b3ec076e6454437a"></a><a name="a73ff6a78be854ad0b3ec076e6454437a"></a>AZ name</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a73ff6a78be854ad0b3ec076e6454437a"><a name="a73ff6a78be854ad0b3ec076e6454437a"></a><a name="a73ff6a78be854ad0b3ec076e6454437a"></a>AZ name.</p>
 </td>
 </tr>
 <tr id="rf92d002984c24a78a57b33dc2e62eb7c"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="aa484db932bed45489bbdaa697876de0e"><a name="aa484db932bed45489bbdaa697876de0e"></a><a name="aa484db932bed45489bbdaa697876de0e"></a>instanceId</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a0f8d98581eb0476c8aad0ac5969b14ae"><a name="a0f8d98581eb0476c8aad0ac5969b14ae"></a><a name="a0f8d98581eb0476c8aad0ac5969b14ae"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a44e00139633a48a6ba64a941400c7d63"><a name="a44e00139633a48a6ba64a941400c7d63"></a><a name="a44e00139633a48a6ba64a941400c7d63"></a>Instance ID</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a44e00139633a48a6ba64a941400c7d63"><a name="a44e00139633a48a6ba64a941400c7d63"></a><a name="a44e00139633a48a6ba64a941400c7d63"></a>Instance ID.</p>
 </td>
 </tr>
 <tr id="r26e86364bac54a7bbaf768a07d0d4ab5"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="affae8991e4844f32a2ad8f1fca0dd453"><a name="affae8991e4844f32a2ad8f1fca0dd453"></a><a name="affae8991e4844f32a2ad8f1fca0dd453"></a>vnc</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="abbfeaf105a5147c7b43fc3ade0d76d46"><a name="abbfeaf105a5147c7b43fc3ade0d76d46"></a><a name="abbfeaf105a5147c7b43fc3ade0d76d46"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="ae0be2badb4db45f7b383dad6d153e465"><a name="ae0be2badb4db45f7b383dad6d153e465"></a><a name="ae0be2badb4db45f7b383dad6d153e465"></a>URI for remotely logging in to an ECS</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="ae0be2badb4db45f7b383dad6d153e465"><a name="ae0be2badb4db45f7b383dad6d153e465"></a><a name="ae0be2badb4db45f7b383dad6d153e465"></a>URI for remotely logging in to an ECS.</p>
 </td>
 </tr>
 <tr id="rcf9a3834c9c24805a8cd01c63bc94984"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a61487a81861b4961b154340d21a11250"><a name="a61487a81861b4961b154340d21a11250"></a><a name="a61487a81861b4961b154340d21a11250"></a>tenantId</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a0711a7dbc5514e81834d38e9b08aa433"><a name="a0711a7dbc5514e81834d38e9b08aa433"></a><a name="a0711a7dbc5514e81834d38e9b08aa433"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0110581913_p93786111019"><a name="en-us_topic_0110581913_p93786111019"></a><a name="en-us_topic_0110581913_p93786111019"></a>Project ID</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0110581913_p93786111019"><a name="en-us_topic_0110581913_p93786111019"></a><a name="en-us_topic_0110581913_p93786111019"></a>Project ID.</p>
 </td>
 </tr>
 <tr id="r18ed6bea18c1494da28e44db70c57c11"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a4e5826e5d1814c31bb5b70915316d4b9"><a name="a4e5826e5d1814c31bb5b70915316d4b9"></a><a name="a4e5826e5d1814c31bb5b70915316d4b9"></a>volumeSize</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a882533b337f04f4696b0f2a819a25310"><a name="a882533b337f04f4696b0f2a819a25310"></a><a name="a882533b337f04f4696b0f2a819a25310"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a21219a1de55a47bbad02821472e6ef6c"><a name="a21219a1de55a47bbad02821472e6ef6c"></a><a name="a21219a1de55a47bbad02821472e6ef6c"></a>Disk storage space</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a21219a1de55a47bbad02821472e6ef6c"><a name="a21219a1de55a47bbad02821472e6ef6c"></a><a name="a21219a1de55a47bbad02821472e6ef6c"></a>Disk storage space.</p>
 </td>
 </tr>
 <tr id="r423ae048fac44a0c80d9c865d2a6f28c"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a8d13d4e406574354888da66e3931c3ed"><a name="a8d13d4e406574354888da66e3931c3ed"></a><a name="a8d13d4e406574354888da66e3931c3ed"></a>volumeType</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a38443a303ac34df4acc2885c8f56a189"><a name="a38443a303ac34df4acc2885c8f56a189"></a><a name="a38443a303ac34df4acc2885c8f56a189"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a4eeeeeda939a4917b45d7dde0b401e4a"><a name="a4eeeeeda939a4917b45d7dde0b401e4a"></a><a name="a4eeeeeda939a4917b45d7dde0b401e4a"></a>Disk type</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a4eeeeeda939a4917b45d7dde0b401e4a"><a name="a4eeeeeda939a4917b45d7dde0b401e4a"></a><a name="a4eeeeeda939a4917b45d7dde0b401e4a"></a>Disk type.</p>
 </td>
 </tr>
 <tr id="rd72d3f36d4234410b19c61f9a94f77d7"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="ad4f1b24079fc4ef8a20fcf0e8ebdd205"><a name="ad4f1b24079fc4ef8a20fcf0e8ebdd205"></a><a name="ad4f1b24079fc4ef8a20fcf0e8ebdd205"></a>subnetId</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a991b29fb04ee453ca36b2e4a295308f6"><a name="a991b29fb04ee453ca36b2e4a295308f6"></a><a name="a991b29fb04ee453ca36b2e4a295308f6"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0110581913_p662768111214"><a name="en-us_topic_0110581913_p662768111214"></a><a name="en-us_topic_0110581913_p662768111214"></a>Subnet ID</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0110581913_p662768111214"><a name="en-us_topic_0110581913_p662768111214"></a><a name="en-us_topic_0110581913_p662768111214"></a>Subnet ID.</p>
 </td>
 </tr>
 <tr id="r82f8fee0a317411f853cb7539ec5e370"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0110581913_p437573616274"><a name="en-us_topic_0110581913_p437573616274"></a><a name="en-us_topic_0110581913_p437573616274"></a>clusterType</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="ab4aad63c16c34ff7b707bac1afab05f8"><a name="ab4aad63c16c34ff7b707bac1afab05f8"></a><a name="ab4aad63c16c34ff7b707bac1afab05f8"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a8359234403964a4892193ecf64d3e17c"><a name="a8359234403964a4892193ecf64d3e17c"></a><a name="a8359234403964a4892193ecf64d3e17c"></a>Cluster type</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a8359234403964a4892193ecf64d3e17c"><a name="a8359234403964a4892193ecf64d3e17c"></a><a name="a8359234403964a4892193ecf64d3e17c"></a>Cluster type.</p>
 </td>
 </tr>
 <tr id="r9df0ce113c0b4a05953d9b92cab48642"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a089c116f70b14b04924b8e6e5d44675e"><a name="a089c116f70b14b04924b8e6e5d44675e"></a><a name="a089c116f70b14b04924b8e6e5d44675e"></a>subnetName</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0110581913_p856954216274"><a name="en-us_topic_0110581913_p856954216274"></a><a name="en-us_topic_0110581913_p856954216274"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a803a71410f9749bea2a17239904e01e3"><a name="a803a71410f9749bea2a17239904e01e3"></a><a name="a803a71410f9749bea2a17239904e01e3"></a>Subnet name</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a803a71410f9749bea2a17239904e01e3"><a name="a803a71410f9749bea2a17239904e01e3"></a><a name="a803a71410f9749bea2a17239904e01e3"></a>Subnet name.</p>
 </td>
 </tr>
 <tr id="r43a604234cd4424c98fb349ef0db8757"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a08c73591f78e401fac62d0f02ef93199"><a name="a08c73591f78e401fac62d0f02ef93199"></a><a name="a08c73591f78e401fac62d0f02ef93199"></a>securityGroupsId</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a81bb2e908afd4f2192fc813ff16ed122"><a name="a81bb2e908afd4f2192fc813ff16ed122"></a><a name="a81bb2e908afd4f2192fc813ff16ed122"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a11f63406b963425bbf2c928158e44ca4"><a name="a11f63406b963425bbf2c928158e44ca4"></a><a name="a11f63406b963425bbf2c928158e44ca4"></a>Security group ID</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a11f63406b963425bbf2c928158e44ca4"><a name="a11f63406b963425bbf2c928158e44ca4"></a><a name="a11f63406b963425bbf2c928158e44ca4"></a>Security group ID.</p>
 </td>
 </tr>
 <tr id="r75716ff264b143bdb1c747829fde1d08"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a42af07eff7ad462bb508c763a9fd800e"><a name="a42af07eff7ad462bb508c763a9fd800e"></a><a name="a42af07eff7ad462bb508c763a9fd800e"></a>slaveSecurityGroupsId</p>
@@ -381,94 +381,94 @@ None
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a819e20ff9367457ea952563e0e5fd585"><a name="a819e20ff9367457ea952563e0e5fd585"></a><a name="a819e20ff9367457ea952563e0e5fd585"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a3570ebeb1f2648d18eb2fb2b8b9966ff"><a name="a3570ebeb1f2648d18eb2fb2b8b9966ff"></a><a name="a3570ebeb1f2648d18eb2fb2b8b9966ff"></a>Cluster operation progress description</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a3570ebeb1f2648d18eb2fb2b8b9966ff"><a name="a3570ebeb1f2648d18eb2fb2b8b9966ff"></a><a name="a3570ebeb1f2648d18eb2fb2b8b9966ff"></a>Cluster operation progress description.</p>
 <div class="p" id="a16b05e2c057646c49d5972aacbb62b97"><a name="a16b05e2c057646c49d5972aacbb62b97"></a><a name="a16b05e2c057646c49d5972aacbb62b97"></a>The cluster installation progress includes:<a name="ue74d13dece3147ef838b2d7ac22f1369"></a><a name="ue74d13dece3147ef838b2d7ac22f1369"></a><ul id="ue74d13dece3147ef838b2d7ac22f1369"><li>Verifying cluster parameters: Cluster parameters are being verified.</li><li>Applying for cluster resources: Cluster resources are being applied for.</li><li>Creating VMs: The VMs are being created.</li><li>Initializing VMs: The VMs are being initialized.</li><li>Installing MRS Manager: MRS Manager is being installed.</li><li>Deploying the cluster: The cluster is being deployed.</li><li>Cluster installation failed: Failed to install the cluster.</li></ul>
 </div>
 <div class="p" id="acf692a12a1c143528b5818c8127f6686"><a name="acf692a12a1c143528b5818c8127f6686"></a><a name="acf692a12a1c143528b5818c8127f6686"></a>The cluster scale-out progress includes:<a name="u91f4c5595c6a46ac8ac6f948c18cbff1"></a><a name="u91f4c5595c6a46ac8ac6f948c18cbff1"></a><ul id="u91f4c5595c6a46ac8ac6f948c18cbff1"><li>Preparing for scale-out: Cluster scale-out is being prepared.</li><li>Creating VMs: The VMs are being created.</li><li>Initializing VMs: The VMs are being initialized.</li><li>Adding nodes to the cluster: The nodes are being added to the cluster.</li><li>Scale-out failed: Failed to scale out the cluster.</li></ul>
 </div>
 <div class="p" id="af5e822f0cc1c498d9acd6e6589f8c434"><a name="af5e822f0cc1c498d9acd6e6589f8c434"></a><a name="af5e822f0cc1c498d9acd6e6589f8c434"></a>The cluster scale-in progress includes:<a name="u7d2ccc73258c434da1819ece1f35d318"></a><a name="u7d2ccc73258c434da1819ece1f35d318"></a><ul id="u7d2ccc73258c434da1819ece1f35d318"><li>Preparing for scale-in: Cluster scale-in is being prepared.</li><li>Decommissioning instance: The instance is being decommissioned.</li><li>Deleting VMs: The VMs are being deleted.</li><li>Deleting nodes from the cluster: The nodes are being deleted from the cluster.</li><li>Scale-in failed: Failed to scale in the cluster.</li></ul>
 </div>
-<p id="a243a943d17cc4f9798fb008422540fb1"><a name="a243a943d17cc4f9798fb008422540fb1"></a><a name="a243a943d17cc4f9798fb008422540fb1"></a>If the cluster installation, scale-out, or scale-in fails, <strong id="b84235270619322"><a name="b84235270619322"></a><a name="b84235270619322"></a>stageDesc</strong> will display the failure cause. For details, see <a href="resizing-a-cluster.md#table5548695114444">Table 6</a>.</p>
+<p id="a243a943d17cc4f9798fb008422540fb1"><a name="a243a943d17cc4f9798fb008422540fb1"></a><a name="a243a943d17cc4f9798fb008422540fb1"></a>If the cluster installation, scale-out, or scale-in fails, <strong id="b84235270619322"><a name="b84235270619322"></a><a name="b84235270619322"></a>stageDesc</strong> will display the failure cause. For details, see <a href="resizing-a-cluster.md#table101661350414">Table 6</a>.</p>
 </td>
 </tr>
 <tr id="r4bb0d14a6e7545b5bbfaf51c738f2a1d"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a8bb043be751a482eb767b6090d72eda0"><a name="a8bb043be751a482eb767b6090d72eda0"></a><a name="a8bb043be751a482eb767b6090d72eda0"></a>mrsManagerFinish</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="ac5923002e94e43559763ac5b5962d9ff"><a name="ac5923002e94e43559763ac5b5962d9ff"></a><a name="ac5923002e94e43559763ac5b5962d9ff"></a>boolean</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a7603bccf23574b7e81a389d95f98bf83"><a name="a7603bccf23574b7e81a389d95f98bf83"></a><a name="a7603bccf23574b7e81a389d95f98bf83"></a>Whether MRS Manager installation is finished during cluster creation</p>
-<a name="u48b2d769e6b54c1881357cba6123a789"></a><a name="u48b2d769e6b54c1881357cba6123a789"></a><ul id="u48b2d769e6b54c1881357cba6123a789"><li>true: MRS Manager installation is finished.</li><li>false: MRS Manager installation is not finished.</li></ul>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a7603bccf23574b7e81a389d95f98bf83"><a name="a7603bccf23574b7e81a389d95f98bf83"></a><a name="a7603bccf23574b7e81a389d95f98bf83"></a>Whether MRS Manager installation is finished during cluster creation.</p>
+<a name="u48b2d769e6b54c1881357cba6123a789"></a><a name="u48b2d769e6b54c1881357cba6123a789"></a><ul id="u48b2d769e6b54c1881357cba6123a789"><li><strong id="b107884228128"><a name="b107884228128"></a><a name="b107884228128"></a>true</strong>: MRS Manager installation is finished.</li><li><strong id="b353202631214"><a name="b353202631214"></a><a name="b353202631214"></a>false</strong>: MRS Manager installation is not finished.</li></ul>
 </td>
 </tr>
 <tr id="re97b216b845447fa9b711456e4708d74"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="aedfcb28940584313aea8567938cc7ad6"><a name="aedfcb28940584313aea8567938cc7ad6"></a><a name="aedfcb28940584313aea8567938cc7ad6"></a>safeMode</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0110581913_p665372211214"><a name="en-us_topic_0110581913_p665372211214"></a><a name="en-us_topic_0110581913_p665372211214"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0110581913_p208064211214"><a name="en-us_topic_0110581913_p208064211214"></a><a name="en-us_topic_0110581913_p208064211214"></a>Running mode of an MRS cluster</p>
-<a name="ud4b3a41b5dde4ff98fbcc8bfc4fbb0c2"></a><a name="ud4b3a41b5dde4ff98fbcc8bfc4fbb0c2"></a><ul id="ud4b3a41b5dde4ff98fbcc8bfc4fbb0c2"><li>0: normal cluster</li><li>1: security cluster</li></ul>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0110581913_p208064211214"><a name="en-us_topic_0110581913_p208064211214"></a><a name="en-us_topic_0110581913_p208064211214"></a>Running mode of an MRS cluster.</p>
+<a name="ud4b3a41b5dde4ff98fbcc8bfc4fbb0c2"></a><a name="ud4b3a41b5dde4ff98fbcc8bfc4fbb0c2"></a><ul id="ud4b3a41b5dde4ff98fbcc8bfc4fbb0c2"><li><strong id="b17201731201216"><a name="b17201731201216"></a><a name="b17201731201216"></a>0</strong>: Normal cluster</li><li><strong id="b31441334101213"><a name="b31441334101213"></a><a name="b31441334101213"></a>1</strong>: Security cluster</li></ul>
 </td>
 </tr>
 <tr id="r5f5e7fe25e854055b542fee9c42f90a3"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a68e087f6e38c41c0a942814c9ef9b935"><a name="a68e087f6e38c41c0a942814c9ef9b935"></a><a name="a68e087f6e38c41c0a942814c9ef9b935"></a>clusterVersion</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a9bb71a7635d246af9dfab653889a1d5f"><a name="a9bb71a7635d246af9dfab653889a1d5f"></a><a name="a9bb71a7635d246af9dfab653889a1d5f"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a970fc2d287534450afb3368eb5dc4e22"><a name="a970fc2d287534450afb3368eb5dc4e22"></a><a name="a970fc2d287534450afb3368eb5dc4e22"></a>Cluster version</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a970fc2d287534450afb3368eb5dc4e22"><a name="a970fc2d287534450afb3368eb5dc4e22"></a><a name="a970fc2d287534450afb3368eb5dc4e22"></a>Cluster version.</p>
 </td>
 </tr>
 <tr id="r844af456b7ae4ece9ad657908fd675ed"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0110581913_p428413211214"><a name="en-us_topic_0110581913_p428413211214"></a><a name="en-us_topic_0110581913_p428413211214"></a>nodePublicCertName</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="afd9a60aca7dd490f84bc942540779336"><a name="afd9a60aca7dd490f84bc942540779336"></a><a name="afd9a60aca7dd490f84bc942540779336"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a0548a5f95fea45258d214f4b54f731fd"><a name="a0548a5f95fea45258d214f4b54f731fd"></a><a name="a0548a5f95fea45258d214f4b54f731fd"></a>Name of the key file</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a0548a5f95fea45258d214f4b54f731fd"><a name="a0548a5f95fea45258d214f4b54f731fd"></a><a name="a0548a5f95fea45258d214f4b54f731fd"></a>Name of the key file.</p>
 </td>
 </tr>
 <tr id="r4b50a6d872514a049a1a91b290a89ce5"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="af7a1c77a46824a35ab16ae98c10b3dea"><a name="af7a1c77a46824a35ab16ae98c10b3dea"></a><a name="af7a1c77a46824a35ab16ae98c10b3dea"></a>masterNodeIp</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a888773b7f43544f68706a93787447dda"><a name="a888773b7f43544f68706a93787447dda"></a><a name="a888773b7f43544f68706a93787447dda"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0110581913_p70885811214"><a name="en-us_topic_0110581913_p70885811214"></a><a name="en-us_topic_0110581913_p70885811214"></a>IP address of a Master node</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0110581913_p70885811214"><a name="en-us_topic_0110581913_p70885811214"></a><a name="en-us_topic_0110581913_p70885811214"></a>IP address of a Master node.</p>
 </td>
 </tr>
 <tr id="r59426445e326481fb5b65a617eefad1e"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="aa210721845244eee95122c4684988ed4"><a name="aa210721845244eee95122c4684988ed4"></a><a name="aa210721845244eee95122c4684988ed4"></a>privateIpFirst</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a052007f87d4a4487a9d71d1631f640cd"><a name="a052007f87d4a4487a9d71d1631f640cd"></a><a name="a052007f87d4a4487a9d71d1631f640cd"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a5a5d0c9ff30e4f8f93451fe0faf3af0e"><a name="a5a5d0c9ff30e4f8f93451fe0faf3af0e"></a><a name="a5a5d0c9ff30e4f8f93451fe0faf3af0e"></a>Preferred private IP address</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a5a5d0c9ff30e4f8f93451fe0faf3af0e"><a name="a5a5d0c9ff30e4f8f93451fe0faf3af0e"></a><a name="a5a5d0c9ff30e4f8f93451fe0faf3af0e"></a>Preferred private IP address.</p>
 </td>
 </tr>
 <tr id="rd7f7d659d77a440d858d0ed29a6c8fb1"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="ac3432e3ddc024ce6b05b66f3fe202daf"><a name="ac3432e3ddc024ce6b05b66f3fe202daf"></a><a name="ac3432e3ddc024ce6b05b66f3fe202daf"></a>errorInfo</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="ade9c6dca6e71490bb3676ae8bc272a7b"><a name="ade9c6dca6e71490bb3676ae8bc272a7b"></a><a name="ade9c6dca6e71490bb3676ae8bc272a7b"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a454a54af97c44b9491abe66caf87a652"><a name="a454a54af97c44b9491abe66caf87a652"></a><a name="a454a54af97c44b9491abe66caf87a652"></a>Error message</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a454a54af97c44b9491abe66caf87a652"><a name="a454a54af97c44b9491abe66caf87a652"></a><a name="a454a54af97c44b9491abe66caf87a652"></a>Error message.</p>
 </td>
 </tr>
 <tr id="r9aa84084fb9746d09a6a1089882a633c"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a4c061b5b747d4e61bc510282a91f0a33"><a name="a4c061b5b747d4e61bc510282a91f0a33"></a><a name="a4c061b5b747d4e61bc510282a91f0a33"></a>chargingStartTime</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a9d8cbb73ce01413ab97bfe1a9972985d"><a name="a9d8cbb73ce01413ab97bfe1a9972985d"></a><a name="a9d8cbb73ce01413ab97bfe1a9972985d"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a4312b91de5fe4f929274da0f289789d3"><a name="a4312b91de5fe4f929274da0f289789d3"></a><a name="a4312b91de5fe4f929274da0f289789d3"></a>Start time of billing</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a4312b91de5fe4f929274da0f289789d3"><a name="a4312b91de5fe4f929274da0f289789d3"></a><a name="a4312b91de5fe4f929274da0f289789d3"></a>Start time of billing.</p>
 </td>
 </tr>
 <tr id="r91d1969782a84e4d9e1d5a029bcf367b"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a1caa7c0a5b09413689d1f94bd39ec06f"><a name="a1caa7c0a5b09413689d1f94bd39ec06f"></a><a name="a1caa7c0a5b09413689d1f94bd39ec06f"></a>logCollection</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="a4bbab8f9d5614608add5ed3f5155b385"><a name="a4bbab8f9d5614608add5ed3f5155b385"></a><a name="a4bbab8f9d5614608add5ed3f5155b385"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a743fb829700c4d0d84f482ff60b7898a"><a name="a743fb829700c4d0d84f482ff60b7898a"></a><a name="a743fb829700c4d0d84f482ff60b7898a"></a>Whether to collect logs when cluster installation fails</p>
-<a name="u131b9eca681f439387fd675dc04041ac"></a><a name="u131b9eca681f439387fd675dc04041ac"></a><ul id="u131b9eca681f439387fd675dc04041ac"><li>0: Do not collect</li><li>1: Collect</li></ul>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a743fb829700c4d0d84f482ff60b7898a"><a name="a743fb829700c4d0d84f482ff60b7898a"></a><a name="a743fb829700c4d0d84f482ff60b7898a"></a>Whether to collect logs when cluster installation fails.</p>
+<a name="u131b9eca681f439387fd675dc04041ac"></a><a name="u131b9eca681f439387fd675dc04041ac"></a><ul id="u131b9eca681f439387fd675dc04041ac"><li><strong id="b11212145510121"><a name="b11212145510121"></a><a name="b11212145510121"></a>0</strong>: Do not collect.</li><li><strong id="b18401157141213"><a name="b18401157141213"></a><a name="b18401157141213"></a>1</strong>: Collect.</li></ul>
 </td>
 </tr>
 <tr id="r31d596980e6c4b66af97b3a1be93cb9f"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="adb071e0d669d46e9b1d510fe2e59dbd9"><a name="adb071e0d669d46e9b1d510fe2e59dbd9"></a><a name="adb071e0d669d46e9b1d510fe2e59dbd9"></a>taskNodeGroups</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p152220981413"><a name="p152220981413"></a><a name="p152220981413"></a>List&lt;NodeGroup&gt;</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a494d753a893647929e4d29561697e62a"><a name="a494d753a893647929e4d29561697e62a"></a><a name="a494d753a893647929e4d29561697e62a"></a>List of Task nodes For more parameter description, see <a href="#t8c0e29f53f5d4b5da5cba38419aac352">Table 5</a>.</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="a494d753a893647929e4d29561697e62a"><a name="a494d753a893647929e4d29561697e62a"></a><a name="a494d753a893647929e4d29561697e62a"></a>List of Task nodes. For more parameter description, see <a href="#t8c0e29f53f5d4b5da5cba38419aac352">Table 5</a>.</p>
 </td>
 </tr>
 <tr id="row164542381215"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1946152361218"><a name="p1946152361218"></a><a name="p1946152361218"></a>nodeGroups</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p132453481216"><a name="p132453481216"></a><a name="p132453481216"></a>List&lt;NodeGroup&gt;</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p8324113411215"><a name="p8324113411215"></a><a name="p8324113411215"></a>List of Master, Core and Task nodes For more parameter description, see <a href="#t8c0e29f53f5d4b5da5cba38419aac352">Table 5</a>.</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p8324113411215"><a name="p8324113411215"></a><a name="p8324113411215"></a>List of Master, Core and Task nodes. For more parameter description, see <a href="#t8c0e29f53f5d4b5da5cba38419aac352">Table 5</a>.</p>
 </td>
 </tr>
 <tr id="r10d1ac7d13ac4bbcbca2163c4dd6d1f4"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="a8f4558640d5148b996c1084dfae5b6fd"><a name="a8f4558640d5148b996c1084dfae5b6fd"></a><a name="a8f4558640d5148b996c1084dfae5b6fd"></a>masterDataVolumeType</p>
@@ -563,9 +563,9 @@ None
 </div>
 </li><li>MRS 1.9.2 supports the following component versions:<div class="p" id="p3990164033612"><a name="p3990164033612"></a><a name="p3990164033612"></a>Component versions of an analysis cluster:<a name="ul2099020407363"></a><a name="ul2099020407363"></a><ul id="ul2099020407363"><li>Presto: 0.216</li><li>Hadoop: 2.8.3</li><li>Spark: 2.2.2</li><li>HBase: 1.3.1</li><li>OpenTSDB: 2.3.0</li><li>Hive: 2.3.3</li><li>Hue: <span id="text2796102174115"><a name="text2796102174115"></a><a name="text2796102174115"></a>3.11.0</span></li><li>Loader: <span id="text1181562310410"><a name="text1181562310410"></a><a name="text1181562310410"></a>2.0.0</span></li><li>Tez: 0.9.1</li><li>Flink: 1.7.0</li><li>Alluxio: 2.0.1</li><li>Ranger: 1.0.1</li></ul>
 </div>
-<div class="p" id="p19991174063615"><a name="p19991174063615"></a><a name="p19991174063615"></a>Component versions of a streaming cluster:<a name="ul39911540123610"></a><a name="ul39911540123610"></a><ul id="ul39911540123610"><li>Kafka: 1.1.0</li><li>KafkaManager: 1.3.3.1</li><li>Storm: 1.2.1</li><li>Flume: <span id="text1415216261"><a name="text1415216261"></a><a name="text1415216261"></a>1.6.0</span></li></ul>
+<div class="p" id="p19991174063615"><a name="p19991174063615"></a><a name="p19991174063615"></a>Component versions of a streaming cluster:<a name="ul39911540123610"></a><a name="ul39911540123610"></a><ul id="ul39911540123610"><li>Kafka: 1.1.0</li><li>KafkaManager: 1.3.3.1</li><li>Storm: 1.2.1</li><li>Flume: <span id="text859319741"><a name="text859319741"></a><a name="text859319741"></a>1.6.0</span></li></ul>
 </div>
-</li><li>MRS 1.7.2 supports the following component versions:<div class="p" id="p31541581173"><a name="p31541581173"></a><a name="p31541581173"></a>Component versions of an analysis cluster:<a name="ul17160158111712"></a><a name="ul17160158111712"></a><ul id="ul17160158111712"><li>Hadoop: 2.8.3</li><li>Spark: 2.2.1</li><li>HBase: <span id="text682075583020"><a name="text682075583020"></a><a name="text682075583020"></a>1.3.1</span></li><li>Hive: <span id="text16419155793011"><a name="text16419155793011"></a><a name="text16419155793011"></a>1.2.1</span></li><li>Hue: <span id="text1416119361586"><a name="text1416119361586"></a><a name="text1416119361586"></a>3.11.0</span></li><li>Loader: <span id="text644277441"><a name="text644277441"></a><a name="text644277441"></a>2.0.0</span></li></ul>
+</li><li>MRS 1.7.2 supports the following component versions:<div class="p" id="p31541581173"><a name="p31541581173"></a><a name="p31541581173"></a>Component versions of an analysis cluster:<a name="ul17160158111712"></a><a name="ul17160158111712"></a><ul id="ul17160158111712"><li>Hadoop: 2.8.3</li><li>Spark: 2.2.1</li><li>HBase: <span id="text682075583020"><a name="text682075583020"></a><a name="text682075583020"></a>1.3.1</span></li><li>Hive: <span id="text16419155793011"><a name="text16419155793011"></a><a name="text16419155793011"></a>1.2.1</span></li><li>Hue: <span id="text1416119361586"><a name="text1416119361586"></a><a name="text1416119361586"></a>3.11.0</span></li><li>Loader: <span id="text1438898961"><a name="text1438898961"></a><a name="text1438898961"></a>2.0.0</span></li></ul>
 </div>
 <div class="p" id="p132551058131720"><a name="p132551058131720"></a><a name="p132551058131720"></a>Component versions of a streaming cluster:<a name="ul1226119585179"></a><a name="ul1226119585179"></a><ul id="ul1226119585179"><li>Kafka: 0.10.2.0</li><li>Storm: <span id="text02971058101711"><a name="text02971058101711"></a><a name="text02971058101711"></a>1.0.2</span></li><li>Flume: <span id="text999318377582"><a name="text999318377582"></a><a name="text999318377582"></a>1.6.0</span></li></ul>
 </div>
@@ -732,7 +732,7 @@ None
 
 -   Example request
 
-    None
+    None.
 
 -   Example response
 

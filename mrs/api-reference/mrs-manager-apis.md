@@ -161,8 +161,8 @@ You can also add additional fields to the request header, for example, the field
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->For details about other parameters in the header, see the HTTP protocol documentation.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>For details about other parameters in the header, see the HTTP protocol documentation.
 
 ## Request Body<a name="en-us_topic_0125376273_section1692615591277"></a>
 

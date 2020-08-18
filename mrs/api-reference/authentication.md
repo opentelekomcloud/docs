@@ -7,8 +7,8 @@ Requests for calling an API can be authenticated using either of the following m
 
 ## Token-based Authentication<a name="en-us_topic_0121671869_section2417768214391"></a>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->The validity period of a token is 24 hours. When using a token for authentication, cache it to prevent frequently calling the IAM API used to obtain a user token.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>The validity period of a token is 24 hours. When using a token for authentication, cache it to prevent frequently calling the IAM API used to obtain a user token.
 
 A token specifies temporary permissions in a computer system. During API authentication using a token, the token is added to requests to get permissions for calling the API.
 
@@ -23,13 +23,22 @@ X-Auth-Token: ABCDEFJ....
 
 An AK/SK is used to verify the identity of a request sender. In AK/SK-based authentication, a signature needs to be obtained and then added to requests.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->AK: access key ID, which is a unique identifier used in conjunction with a secret access key to sign requests cryptographically.  
->SK: secret access key used in conjunction with an AK to sign requests cryptographically. It identifies a request sender and prevents the request from being modified.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>AK: access key ID, which is a unique identifier used in conjunction with a secret access key to sign requests cryptographically.
+>SK: secret access key used in conjunction with an AK to sign requests cryptographically. It identifies a request sender and prevents the request from being modified.
 
 The following uses a demo project to show how to sign a request and use an HTTP client to send an HTTPS request.
 
 Download the demo project at  [https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328008.html](https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328008.html).
+
+If you do not need the demo project, visit the following URL to download the API Gateway signing SDK:
+
+[https://apig-demo.obs.eu-de.otc.t-systems.com/java/java-sdk-core.zip](https://apig-demo.obs.eu-de.otc.t-systems.com/java/java-sdk-core.zip)
+
+Decompress the downloaded package and reference the obtained JAR files as dependencies. See the following figure.
+
+**Figure  1**  Adding the API Gateway signing SDK<a name="en-us_topic_0121671869_fig919329144115"></a>  
+![](figures/adding-the-api-gateway-signing-sdk.png "adding-the-api-gateway-signing-sdk")
 
 1.  Generate an AK/SK. \(If an AK/SK file has already been obtained, skip this step and locate the downloaded AK/SK file. Generally, the file name will be  **credentials.csv**.\)
     1.  Log in to the management console.
@@ -41,20 +50,20 @@ Download the demo project at  [https://docs.otc.t-systems.com/en-us/api/apiug/ap
     4.  Enter the verification code received by email.
     5.  Click  **OK**  to download the access key.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >Keep the access key secure.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >Keep the access key secure.
 
 
 2.  Download and decompress the demo project.
 3.  <a name="en-us_topic_0121671869_li19564155663214"></a>Import the demo project to Eclipse.
 
-    **Figure  1**  Selecting Existing Projects into Workspace<a name="en-us_topic_0121671869_fig16546145205014"></a>  
+    **Figure  2**  Selecting Existing Projects into Workspace<a name="en-us_topic_0121671869_fig16546145205014"></a>  
     ![](figures/selecting-existing-projects-into-workspace.png "selecting-existing-projects-into-workspace")
 
-    **Figure  2**  Selecting the demo project<a name="en-us_topic_0121671869_fig767232218519"></a>  
+    **Figure  3**  Selecting the demo project<a name="en-us_topic_0121671869_fig767232218519"></a>  
     ![](figures/selecting-the-demo-project.png "selecting-the-demo-project")
 
-    **Figure  3**  Structure of the demo project<a name="en-us_topic_0121671869_fig159778103242"></a>  
+    **Figure  4**  Structure of the demo project<a name="en-us_topic_0121671869_fig159778103242"></a>  
     ![](figures/structure-of-the-demo-project.png "structure-of-the-demo-project")
 
 4.  Sign the request.

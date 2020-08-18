@@ -56,7 +56,7 @@ This API is used to create a job object. This API is compatible with Sahara.
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p22710132103051"><a name="p22710132103051"></a><a name="p22710132103051"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p27581435103051"><a name="p27581435103051"></a><a name="p27581435103051"></a>Job object name</p>
-<p id="p24316035143322"><a name="p24316035143322"></a><a name="p24316035143322"></a>Contains 1 to 80 characters and consists of letters, digits, hyphens (-), and underscores (_) only.</p>
+<p id="p24316035143322"><a name="p24316035143322"></a><a name="p24316035143322"></a>Contains 1 to 64 characters and consists of letters, digits, hyphens (-), and underscores (_) only.</p>
 </td>
 </tr>
 <tr id="row22681519104555"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p62177253104629"><a name="p62177253104629"></a><a name="p62177253104629"></a>mains</p>

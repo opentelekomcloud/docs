@@ -89,11 +89,11 @@ This API is idempotent.
 <a name="table102451749203418"></a>
 <table><thead align="left"><tr id="row11245134983416"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p11245549153412"><a name="p11245549153412"></a><a name="p11245549153412"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="15%" id="mcps1.2.5.1.2"><p id="p15245164911342"><a name="p15245164911342"></a><a name="p15245164911342"></a><strong id="b1200513765"><a name="b1200513765"></a><a name="b1200513765"></a>Mandatory</strong></p>
+<th class="cellrowborder" valign="top" width="15%" id="mcps1.2.5.1.2"><p id="p15245164911342"><a name="p15245164911342"></a><a name="p15245164911342"></a><strong id="b1440201916"><a name="b1440201916"></a><a name="b1440201916"></a>Mandatory</strong></p>
 </th>
-<th class="cellrowborder" valign="top" width="15%" id="mcps1.2.5.1.3"><p id="p02452491347"><a name="p02452491347"></a><a name="p02452491347"></a><strong id="b1233666015"><a name="b1233666015"></a><a name="b1233666015"></a>Type</strong></p>
+<th class="cellrowborder" valign="top" width="15%" id="mcps1.2.5.1.3"><p id="p02452491347"><a name="p02452491347"></a><a name="p02452491347"></a><strong id="b1388784780"><a name="b1388784780"></a><a name="b1388784780"></a>Type</strong></p>
 </th>
-<th class="cellrowborder" valign="top" width="45%" id="mcps1.2.5.1.4"><p id="p4245104914346"><a name="p4245104914346"></a><a name="p4245104914346"></a><strong id="b919313266"><a name="b919313266"></a><a name="b919313266"></a>Description</strong></p>
+<th class="cellrowborder" valign="top" width="45%" id="mcps1.2.5.1.4"><p id="p4245104914346"><a name="p4245104914346"></a><a name="p4245104914346"></a><strong id="b1269291241"><a name="b1269291241"></a><a name="b1269291241"></a>Description</strong></p>
 </th>
 </tr>
 </thead>
@@ -148,7 +148,7 @@ None.
 
 -   Example response
 
-    None
+    None.
 
 
 ## Status Code<a name="se40bddf775334160bff30d5c6259c3f3"></a>

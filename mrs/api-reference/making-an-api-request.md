@@ -42,8 +42,8 @@ Although a request URI is included in the request header, most programming langu
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->To simplify the URI display in this document, each API is provided only with a  **resource-path**  and a request method. The  **URI-scheme**  of all APIs is  **HTTPS**, and the endpoints of all APIs in the same region are identical.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>To simplify the URI display in this document, each API is provided only with a  **resource-path**  and a request method. The  **URI-scheme**  of all APIs is  **HTTPS**, and the endpoints of all APIs in the same region are identical.
 
 ## Request Methods<a name="en-us_topic_0121682347_en-us_topic_0113746487_section5296154118345"></a>
 
@@ -199,9 +199,9 @@ You can also add additional header fields to a request, such as the fields requi
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->In addition to supporting token-based authentication,  APIs also support authentication using access key ID/secret access key \(AK/SK\). During AK/SK-based authentication, an SDK is used to sign the request, and the  **Authorization**  \(signature authentication\) and  **X-Sdk-Date**  \(time when the request is sent\) header fields are automatically added to the request.  
->For more information, see  **AK/SK-based Authentication**  in  [Authentication](authentication.md).  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>In addition to supporting token-based authentication, APIs also support authentication using access key ID/secret access key \(AK/SK\). During AK/SK-based authentication, an SDK is used to sign the request, and the  **Authorization**  \(signature authentication\) and  **X-Sdk-Date**  \(time when the request is sent\) header fields are automatically added to the request.
+>For more information, see  **AK/SK-based Authentication**  in  [Authentication](authentication.md).
 
 The API used to  [obtain a user token](https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0057845583.html)  does not require authentication. Therefore, only the  **Content-Type**  field needs to be added to requests for calling the API. An example of such requests is as follows:
 
@@ -218,8 +218,8 @@ The request body varies between APIs. Some APIs do not require the request body,
 
 In the case of the API used to  [obtain a user token](https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0057845583.html), the request parameters and parameter description can be obtained from the API request. The following provides an example request with a body included. Replace  _username_,  _domainname_,  _\*\*\*\*\*\*\*\*_  \(login password\), and  _xxxxxxxxxxxxxxxxxx_ _\(project ID\)_  with the actual values. To learn how to obtain a project ID, see  [Obtaining a Project ID](obtaining-a-project-id.md).
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->The  **scope**  parameter specifies where a token takes effect. You can set  **scope**  to an account or a project under an account. In the following example, the token takes effect only for the resources in a specified project. For more information about this API, see   [Obtaining a User Token](https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0057845583.html).  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>The  **scope**  parameter specifies where a token takes effect. You can set  **scope**  to an account or a project under an account. In the following example, the token takes effect only for the resources in a specified project. For more information about this API, see  [Obtaining a User Token](https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0057845583.html)  of the IAM service.
 
 ```
 
