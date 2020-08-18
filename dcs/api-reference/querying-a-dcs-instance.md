@@ -1,454 +1,486 @@
-# Querying a DCS Instance<a name="EN-US_TOPIC_0237964386"></a>
+# Querying a DCS Instance<a name="dcs-api-0312005"></a>
 
-## Function<a name="section13385627"></a>
+## Function<a name="section159181355213"></a>
 
 This API is used to query the details about a specified DCS instance.
 
-## URI<a name="section53361782"></a>
+## URI<a name="section1522918159341"></a>
 
--   URI format:
+GET /v1.0/\{project\_id\}/instances/\{instance\_id\}
 
-    GET /v1.0/\{project\_id\}/instances/\{instance\_id\}
-
--   Parameter description:
-
-    [Table 1](#table43643771)  describes the parameters of this API.
-
+[Table 1](#table374812348341)  describes the parameters.
 
 **Table  1**  Parameter description
 
-<a name="table43643771"></a>
-<table><thead align="left"><tr id="row18091079"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p56091274"><a name="p56091274"></a><a name="p56091274"></a>Name</p>
+<a name="table374812348341"></a>
+<table><thead align="left"><tr id="row474713417340"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p6747173433414"><a name="p6747173433414"></a><a name="p6747173433414"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p47099317"><a name="p47099317"></a><a name="p47099317"></a>Type</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p274718343343"><a name="p274718343343"></a><a name="p274718343343"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p56948337"><a name="p56948337"></a><a name="p56948337"></a>Mandatory or Not</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p19747183419347"><a name="p19747183419347"></a><a name="p19747183419347"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p49412581"><a name="p49412581"></a><a name="p49412581"></a>Description</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p1674783493418"><a name="p1674783493418"></a><a name="p1674783493418"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row42996154"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p60136472"><a name="p60136472"></a><a name="p60136472"></a>project_id</p>
+<tbody><tr id="row27471534143414"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p147471934113411"><a name="p147471934113411"></a><a name="p147471934113411"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p39216038"><a name="p39216038"></a><a name="p39216038"></a>String</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p074763423420"><a name="p074763423420"></a><a name="p074763423420"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p22382476"><a name="p22382476"></a><a name="p22382476"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p67471934133414"><a name="p67471934133414"></a><a name="p67471934133414"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p1041267"><a name="p1041267"></a><a name="p1041267"></a>Project ID.</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p9747934143417"><a name="p9747934143417"></a><a name="p9747934143417"></a>For details on how to obtain the value of this parameter, see <a href="obtaining-a-project-id.md">Obtaining a Project ID</a>.</p>
 </td>
 </tr>
-<tr id="row9371406"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p20886425"><a name="p20886425"></a><a name="p20886425"></a>instance_id</p>
+<tr id="row97485345347"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p6747734133415"><a name="p6747734133415"></a><a name="p6747734133415"></a>instance_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p14078840"><a name="p14078840"></a><a name="p14078840"></a>String</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p2074783418343"><a name="p2074783418343"></a><a name="p2074783418343"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p66644244"><a name="p66644244"></a><a name="p66644244"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p37471234153412"><a name="p37471234153412"></a><a name="p37471234153412"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p29474644"><a name="p29474644"></a><a name="p29474644"></a>DCS instance ID.</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p97482340341"><a name="p97482340341"></a><a name="p97482340341"></a>ID of the instance to be queried</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Request<a name="section10493992"></a>
+## Request<a name="section229211578341"></a>
+
+**Request parameters**
 
 None.
 
-## Response<a name="section27337066"></a>
+**Example request**
 
--   Status code:
+Request URL:
 
-    If status code "200 OK" is returned, this request is fulfilled. For description of other status codes, see  [API Usage Guidelines](api-usage-guidelines.md).
+```
+GET https://{dcs_endpoint}/v1.0/{project_id}/instances/{instance_id}
+```
 
--   Response parameter:
+## Response<a name="section9961121793517"></a>
 
-    [Table 2](#ref478561811)  describes the response parameters.
+**Response parameters**
 
+[Table 2](#table1257921310816)  describes the response parameters.
 
 **Table  2**  Parameter description
 
-<a name="ref478561811"></a>
-<table><thead align="left"><tr id="row13679496"><th class="cellrowborder" valign="top" width="21%" id="mcps1.2.4.1.1"><p id="p34297357"><a name="p34297357"></a><a name="p34297357"></a>Name</p>
+<a name="table1257921310816"></a>
+<table><thead align="left"><tr id="row1257912134819"><th class="cellrowborder" valign="top" width="22.484848484848484%" id="mcps1.2.4.1.1"><p id="p145791113689"><a name="p145791113689"></a><a name="p145791113689"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="17%" id="mcps1.2.4.1.2"><p id="p26622510"><a name="p26622510"></a><a name="p26622510"></a>Type</p>
+<th class="cellrowborder" valign="top" width="20.080808080808083%" id="mcps1.2.4.1.2"><p id="p95791013283"><a name="p95791013283"></a><a name="p95791013283"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="62%" id="mcps1.2.4.1.3"><p id="p8939733"><a name="p8939733"></a><a name="p8939733"></a>Description</p>
+<th class="cellrowborder" valign="top" width="57.43434343434344%" id="mcps1.2.4.1.3"><p id="p105797137811"><a name="p105797137811"></a><a name="p105797137811"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row53029735"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p441294"><a name="p441294"></a><a name="p441294"></a>name</p>
+<tbody><tr id="row454214964417"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p96664013456"><a name="p96664013456"></a><a name="p96664013456"></a>name</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p35744882"><a name="p35744882"></a><a name="p35744882"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p1866616064514"><a name="p1866616064514"></a><a name="p1866616064514"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p9654330"><a name="p9654330"></a><a name="p9654330"></a>DCS instance name.</p>
-</td>
-</tr>
-<tr id="row19780111"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p58685193"><a name="p58685193"></a><a name="p58685193"></a>engine</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p55880220"><a name="p55880220"></a><a name="p55880220"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p30003951"><a name="p30003951"></a><a name="p30003951"></a>Cache engine.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p146661905459"><a name="p146661905459"></a><a name="p146661905459"></a>DCS instance name.</p>
 </td>
 </tr>
-<tr id="row1600104"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p62499582"><a name="p62499582"></a><a name="p62499582"></a>capacity</p>
+<tr id="row16661191012456"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p31401820194511"><a name="p31401820194511"></a><a name="p31401820194511"></a>engine</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p29301418"><a name="p29301418"></a><a name="p29301418"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p14140120144512"><a name="p14140120144512"></a><a name="p14140120144512"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p24604625"><a name="p24604625"></a><a name="p24604625"></a>Cache capacity.</p>
-<p id="p20115039"><a name="p20115039"></a><a name="p20115039"></a>Unit: GB.</p>
-</td>
-</tr>
-<tr id="row46817629"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p34131638"><a name="p34131638"></a><a name="p34131638"></a>ip</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p13199299"><a name="p13199299"></a><a name="p13199299"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p62510317"><a name="p62510317"></a><a name="p62510317"></a>Cache node's IP address in tenant's VPC.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p2140720144511"><a name="p2140720144511"></a><a name="p2140720144511"></a>DCS instance engine.</p>
 </td>
 </tr>
-<tr id="row25721944"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p3102711"><a name="p3102711"></a><a name="p3102711"></a>port</p>
+<tr id="row515034414458"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p4738115815451"><a name="p4738115815451"></a><a name="p4738115815451"></a>capacity</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p49993063"><a name="p49993063"></a><a name="p49993063"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p2083117322329"><a name="p2083117322329"></a><a name="p2083117322329"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p22906320"><a name="p22906320"></a><a name="p22906320"></a>Port of the cache node.</p>
-</td>
-</tr>
-<tr id="row4830289"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p55709089"><a name="p55709089"></a><a name="p55709089"></a>status</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p16142333"><a name="p16142333"></a><a name="p16142333"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p32460622"><a name="p32460622"></a><a name="p32460622"></a>Cache instance status. For details about status, see <a href="dcs-instance-statuses.md">DCS Instance Statuses</a>.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p1973914586454"><a name="p1973914586454"></a><a name="p1973914586454"></a>DCS instance cache capacity. Unit: GB.</p>
 </td>
 </tr>
-<tr id="row12064764"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p37721838"><a name="p37721838"></a><a name="p37721838"></a>description</p>
+<tr id="row1319329466"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p1492572218460"><a name="p1492572218460"></a><a name="p1492572218460"></a>ip</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p35570061"><a name="p35570061"></a><a name="p35570061"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p492517223465"><a name="p492517223465"></a><a name="p492517223465"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p62602688"><a name="p62602688"></a><a name="p62602688"></a>Brief description of the DCS instance.</p>
-</td>
-</tr>
-<tr id="row26553285"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p3332466"><a name="p3332466"></a><a name="p3332466"></a>instance_id</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p1494311"><a name="p1494311"></a><a name="p1494311"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p53930381"><a name="p53930381"></a><a name="p53930381"></a>DCS instance ID.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p489187165218"><a name="p489187165218"></a><a name="p489187165218"></a>IP address for connecting to the DCS instance For a cluster instance, multiple IP addresses are returned and separated by commas (,). For example, 192.168.0.1,192.168.0.2.</p>
 </td>
 </tr>
-<tr id="row15611386"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p56562731"><a name="p56562731"></a><a name="p56562731"></a>resource_spec_code</p>
+<tr id="row12545654103410"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p18925182216466"><a name="p18925182216466"></a><a name="p18925182216466"></a>port</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p18178530"><a name="p18178530"></a><a name="p18178530"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p20925522184612"><a name="p20925522184612"></a><a name="p20925522184612"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p63174788"><a name="p63174788"></a><a name="p63174788"></a>Resource specifications.</p>
-<a name="ul31702186"></a><a name="ul31702186"></a><ul id="ul31702186"><li><strong id="b17740250"><a name="b17740250"></a><a name="b17740250"></a>dcs.single_node</strong>: indicates a DCS instance in single-node mode.</li><li><strong id="b27674155"><a name="b27674155"></a><a name="b27674155"></a>dcs.master_standby</strong>: indicates a DCS instance in master/standby mode.</li><li><strong id="b27014084"><a name="b27014084"></a><a name="b27014084"></a>dcs.cluster</strong>: indicates a DCS instance in cluster mode.</li></ul>
-</td>
-</tr>
-<tr id="row41800172"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p30370757"><a name="p30370757"></a><a name="p30370757"></a>engine_version</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p44112251"><a name="p44112251"></a><a name="p44112251"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p16322549"><a name="p16322549"></a><a name="p16322549"></a>Cache engine version.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p17925522144612"><a name="p17925522144612"></a><a name="p17925522144612"></a>Port number of the cache node.</p>
 </td>
 </tr>
-<tr id="row12685215"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p20869499"><a name="p20869499"></a><a name="p20869499"></a>internal_version</p>
+<tr id="row11545854183410"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p105235444610"><a name="p105235444610"></a><a name="p105235444610"></a>status</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p12707855"><a name="p12707855"></a><a name="p12707855"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p8521754104614"><a name="p8521754104614"></a><a name="p8521754104614"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p22703364"><a name="p22703364"></a><a name="p22703364"></a>Internal DCS version.</p>
-</td>
-</tr>
-<tr id="row3003690"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p41972371"><a name="p41972371"></a><a name="p41972371"></a>charging_mode</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p44318896"><a name="p44318896"></a><a name="p44318896"></a>Integer</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p33060842"><a name="p33060842"></a><a name="p33060842"></a>Billing mode.</p>
-<p id="p29112125"><a name="p29112125"></a><a name="p29112125"></a><strong id="b60682536"><a name="b60682536"></a><a name="b60682536"></a>0</strong> indicates that users pay only for what they use.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p7521754164619"><a name="p7521754164619"></a><a name="p7521754164619"></a>Cache instance status. For details about status, see <a href="dcs-instance-statuses.md">DCS Instance Statuses</a>.</p>
 </td>
 </tr>
-<tr id="row9271916"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p12827756"><a name="p12827756"></a><a name="p12827756"></a>vpc_id</p>
+<tr id="row1960517295472"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p16216144064712"><a name="p16216144064712"></a><a name="p16216144064712"></a>description</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p32415333"><a name="p32415333"></a><a name="p32415333"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p121634094714"><a name="p121634094714"></a><a name="p121634094714"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p8396286"><a name="p8396286"></a><a name="p8396286"></a>VPC ID.</p>
-</td>
-</tr>
-<tr id="row8457710"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p13985882"><a name="p13985882"></a><a name="p13985882"></a>vpc_name</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p59114683"><a name="p59114683"></a><a name="p59114683"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p23560057"><a name="p23560057"></a><a name="p23560057"></a>VPC name.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p221612408473"><a name="p221612408473"></a><a name="p221612408473"></a>Brief description of the DCS instance.</p>
 </td>
 </tr>
-<tr id="row10713926"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p62521690"><a name="p62521690"></a><a name="p62521690"></a>created_at</p>
+<tr id="row20965121211366"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p3583191317818"><a name="p3583191317818"></a><a name="p3583191317818"></a>max_memory</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p31092093"><a name="p31092093"></a><a name="p31092093"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p35844135810"><a name="p35844135810"></a><a name="p35844135810"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p35431642"><a name="p35431642"></a><a name="p35431642"></a>Time at which the DCS instance is created.</p>
-<p id="p50449325"><a name="p50449325"></a><a name="p50449325"></a>For example, 2017-03-31<strong id="b51390743"><a name="b51390743"></a><a name="b51390743"></a>T</strong>12:24:46.297<strong id="b59863505"><a name="b59863505"></a><a name="b59863505"></a>Z</strong>.</p>
-</td>
-</tr>
-<tr id="row1900636"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p19733842"><a name="p19733842"></a><a name="p19733842"></a>error_code</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p54937376"><a name="p54937376"></a><a name="p54937376"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p20742511"><a name="p20742511"></a><a name="p20742511"></a>Error code returned when the DCS instance fails to be created or is in abnormal status.</p>
-<p id="p52464879"><a name="p52464879"></a><a name="p52464879"></a>For details about error codes, see <a href="#table45484537">Table 3</a>.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p43202563142827"><a name="p43202563142827"></a><a name="p43202563142827"></a>Total memory size.</p>
+<p id="p56041229105916"><a name="p56041229105916"></a><a name="p56041229105916"></a>Unit: MB.</p>
 </td>
 </tr>
-<tr id="row21796769"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p20707880"><a name="p20707880"></a><a name="p20707880"></a>product_id</p>
+<tr id="row59651212143618"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p1258418132082"><a name="p1258418132082"></a><a name="p1258418132082"></a>used_memory</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p66725612"><a name="p66725612"></a><a name="p66725612"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p2584613482"><a name="p2584613482"></a><a name="p2584613482"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p36065492"><a name="p36065492"></a><a name="p36065492"></a>Product ID used to differentiate DCS instance types.</p>
-<a name="ul56153977"></a><a name="ul56153977"></a><ul id="ul56153977"><li>OTC_DCS_SINGLE: indicates a single-node DCS instance.</li><li>OTC_DCS_MS: indicates a master/standby DCS instance.</li><li>OTC_DCS_CL: indicates a DCS instance in cluster mode.</li></ul>
-</td>
-</tr>
-<tr id="row65694662"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p19667385"><a name="p19667385"></a><a name="p19667385"></a>security_group_id</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p49554324"><a name="p49554324"></a><a name="p49554324"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p54477312"><a name="p54477312"></a><a name="p54477312"></a>Security group ID.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p64428528142829"><a name="p64428528142829"></a><a name="p64428528142829"></a>Size of the used memory.</p>
+<p id="p19605229135918"><a name="p19605229135918"></a><a name="p19605229135918"></a>Unit: MB.</p>
 </td>
 </tr>
-<tr id="row20533764"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p52622155"><a name="p52622155"></a><a name="p52622155"></a>security_group_name</p>
+<tr id="row2057920131686"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p757915131680"><a name="p757915131680"></a><a name="p757915131680"></a>instance_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p34536183"><a name="p34536183"></a><a name="p34536183"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p165796132817"><a name="p165796132817"></a><a name="p165796132817"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p45967472"><a name="p45967472"></a><a name="p45967472"></a>Security group name.</p>
-</td>
-</tr>
-<tr id="row11054069"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p22964363"><a name="p22964363"></a><a name="p22964363"></a>subnet_id</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p48174114"><a name="p48174114"></a><a name="p48174114"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p9789153"><a name="p9789153"></a><a name="p9789153"></a>Subnet ID.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p2057913134814"><a name="p2057913134814"></a><a name="p2057913134814"></a>DCS instance ID.</p>
 </td>
 </tr>
-<tr id="row20993520"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p22753535"><a name="p22753535"></a><a name="p22753535"></a>subnet_name</p>
+<tr id="row357971310814"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p1945118112497"><a name="p1945118112497"></a><a name="p1945118112497"></a>resource_spec_code</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p31097035"><a name="p31097035"></a><a name="p31097035"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p19451191111493"><a name="p19451191111493"></a><a name="p19451191111493"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p35831867"><a name="p35831867"></a><a name="p35831867"></a>Subnet name.</p>
-</td>
-</tr>
-<tr id="row54051348"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p16083062"><a name="p16083062"></a><a name="p16083062"></a>subnet_cidr</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p27659632"><a name="p27659632"></a><a name="p27659632"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p25837739"><a name="p25837739"></a><a name="p25837739"></a>Subnet segment.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p154521311174912"><a name="p154521311174912"></a><a name="p154521311174912"></a>Resource specifications.</p>
+<a name="ul15897813419"></a><a name="ul15897813419"></a><ul id="ul15897813419"><li><strong id="b3157833622"><a name="b3157833622"></a><a name="b3157833622"></a>dcs.single_node</strong>: indicates a DCS instance in single-node mode.</li><li><strong id="b13392536624"><a name="b13392536624"></a><a name="b13392536624"></a>dcs.master_standby</strong>: indicates a DCS instance in master/standby mode.</li><li><strong id="b71349391523"><a name="b71349391523"></a><a name="b71349391523"></a>dcs.cluster</strong>: indicates a DCS instance in cluster mode.</li></ul>
 </td>
 </tr>
-<tr id="row31213064"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p45230279"><a name="p45230279"></a><a name="p45230279"></a>available_zones</p>
+<tr id="row135804131482"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p3953113011492"><a name="p3953113011492"></a><a name="p3953113011492"></a>engine_version</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p39773978"><a name="p39773978"></a><a name="p39773978"></a>Array</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p149531930194915"><a name="p149531930194915"></a><a name="p149531930194915"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p466794"><a name="p466794"></a><a name="p466794"></a>AZ where a cache node resides.</p>
-<p id="p4201148"><a name="p4201148"></a><a name="p4201148"></a>The value of this parameter in the response contains an AZ ID.</p>
-</td>
-</tr>
-<tr id="row37810334"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p42738207"><a name="p42738207"></a><a name="p42738207"></a>max_memory</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p39242708"><a name="p39242708"></a><a name="p39242708"></a>Integer</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p24542757"><a name="p24542757"></a><a name="p24542757"></a>Overall memory size.</p>
-<p id="p19558228"><a name="p19558228"></a><a name="p19558228"></a>Unit: MB.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p1695333094918"><a name="p1695333094918"></a><a name="p1695333094918"></a>Cache engine version.</p>
 </td>
 </tr>
-<tr id="row41806332"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p30869694"><a name="p30869694"></a><a name="p30869694"></a>used_memory</p>
+<tr id="row19580101316810"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p1895313303498"><a name="p1895313303498"></a><a name="p1895313303498"></a>internal_version</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p17417301"><a name="p17417301"></a><a name="p17417301"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p1595373054910"><a name="p1595373054910"></a><a name="p1595373054910"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p1515305"><a name="p1515305"></a><a name="p1515305"></a>Size of the used memory.</p>
-<p id="p13637749"><a name="p13637749"></a><a name="p13637749"></a>Unit: MB.</p>
-</td>
-</tr>
-<tr id="row55630881"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p9807526"><a name="p9807526"></a><a name="p9807526"></a>instance_backup_policy</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p56212127"><a name="p56212127"></a><a name="p56212127"></a>JSON</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p56888437"><a name="p56888437"></a><a name="p56888437"></a>Backup policy.</p>
-<p id="p42233886"><a name="p42233886"></a><a name="p42233886"></a>This parameter is available for master/standby DCS instances. For details, see <a href="creating-a-dcs-instance.md#table17319656205111">Table 3</a> and <a href="creating-a-dcs-instance.md#table1322175615513">Table 4</a>.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p10954183034917"><a name="p10954183034917"></a><a name="p10954183034917"></a>Internal DCS version.</p>
 </td>
 </tr>
-<tr id="row52643285"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p36247729"><a name="p36247729"></a><a name="p36247729"></a>user_id</p>
+<tr id="row165801713282"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p69547300496"><a name="p69547300496"></a><a name="p69547300496"></a>charging_mode</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p50384904"><a name="p50384904"></a><a name="p50384904"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p17954173012494"><a name="p17954173012494"></a><a name="p17954173012494"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p54645444"><a name="p54645444"></a><a name="p54645444"></a>User ID.</p>
-</td>
-</tr>
-<tr id="row22046956"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p40972986"><a name="p40972986"></a><a name="p40972986"></a>user_name</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p30477536"><a name="p30477536"></a><a name="p30477536"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p52761351"><a name="p52761351"></a><a name="p52761351"></a>Username.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p39546309494"><a name="p39546309494"></a><a name="p39546309494"></a>Billing mode. <strong id="b1693649608141417"><a name="b1693649608141417"></a><a name="b1693649608141417"></a>0</strong>: pay-per-use.</p>
 </td>
 </tr>
-<tr id="row5090114"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p9646093"><a name="p9646093"></a><a name="p9646093"></a>order_id</p>
+<tr id="row2058020131089"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p152971744104917"><a name="p152971744104917"></a><a name="p152971744104917"></a>vpc_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p43136044"><a name="p43136044"></a><a name="p43136044"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p1129874410491"><a name="p1129874410491"></a><a name="p1129874410491"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p4358664"><a name="p4358664"></a><a name="p4358664"></a>Order ID.</p>
-<p id="p39227976"><a name="p39227976"></a><a name="p39227976"></a>An order ID is generated only in the monthly or yearly billing mode. In other billing modes, no value is returned for this parameter.</p>
-</td>
-</tr>
-<tr id="row17507464"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p8818452"><a name="p8818452"></a><a name="p8818452"></a>maintain_begin</p>
-</td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p43206037"><a name="p43206037"></a><a name="p43206037"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p10028147"><a name="p10028147"></a><a name="p10028147"></a>Time at which the maintenance time window starts.</p>
-<p id="p23144464"><a name="p23144464"></a><a name="p23144464"></a>Format: HH:mm:ss.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p629894418498"><a name="p629894418498"></a><a name="p629894418498"></a>VPC ID.</p>
 </td>
 </tr>
-<tr id="row6973589"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p27989860"><a name="p27989860"></a><a name="p27989860"></a>maintain_end</p>
+<tr id="row1758171317816"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p172982440497"><a name="p172982440497"></a><a name="p172982440497"></a>vpc_name</p>
 </td>
-<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p52586183"><a name="p52586183"></a><a name="p52586183"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p229864413499"><a name="p229864413499"></a><a name="p229864413499"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="62%" headers="mcps1.2.4.1.3 "><p id="p31622439"><a name="p31622439"></a><a name="p31622439"></a>Time at which the maintenance time window ends.</p>
-<p id="p16166497"><a name="p16166497"></a><a name="p16166497"></a>Format: HH:mm:ss.</p>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p19299344184918"><a name="p19299344184918"></a><a name="p19299344184918"></a>VPC name.</p>
+</td>
+</tr>
+<tr id="row88105517491"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p1549357195017"><a name="p1549357195017"></a><a name="p1549357195017"></a>created_at</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p949414713501"><a name="p949414713501"></a><a name="p949414713501"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p5420602914282"><a name="p5420602914282"></a><a name="p5420602914282"></a>Time at which the DCS instance is created.</p>
+<p id="p46051629195914"><a name="p46051629195914"></a><a name="p46051629195914"></a>For example, 2017-03-31<strong id="b84850841164"><a name="b84850841164"></a><a name="b84850841164"></a>T</strong>12:24:46.297<strong id="b92569001164"><a name="b92569001164"></a><a name="b92569001164"></a>Z</strong>.</p>
+</td>
+</tr>
+<tr id="row557215250506"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p879125715508"><a name="p879125715508"></a><a name="p879125715508"></a>error_code</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p1379105735016"><a name="p1379105735016"></a><a name="p1379105735016"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p37271648142755"><a name="p37271648142755"></a><a name="p37271648142755"></a>Error code returned when the DCS instance fails to be created or is in abnormal status.</p>
+<p id="p1605182919594"><a name="p1605182919594"></a><a name="p1605182919594"></a>For details about error codes, see <a href="#table691509456">Table 3</a>.</p>
+</td>
+</tr>
+<tr id="row327374913711"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p45920101386"><a name="p45920101386"></a><a name="p45920101386"></a>user_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p115913108389"><a name="p115913108389"></a><a name="p115913108389"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p35931013389"><a name="p35931013389"></a><a name="p35931013389"></a>User ID.</p>
+</td>
+</tr>
+<tr id="row32741349183713"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p612717160389"><a name="p612717160389"></a><a name="p612717160389"></a>user_name</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p191275169385"><a name="p191275169385"></a><a name="p191275169385"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p1412731683814"><a name="p1412731683814"></a><a name="p1412731683814"></a>Username.</p>
+</td>
+</tr>
+<tr id="row67495272384"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p13545101053910"><a name="p13545101053910"></a><a name="p13545101053910"></a>maintain_begin</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p354520108395"><a name="p354520108395"></a><a name="p354520108395"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p28444466142849"><a name="p28444466142849"></a><a name="p28444466142849"></a>Time at which the maintenance time window starts.</p>
+<p id="p4605182945911"><a name="p4605182945911"></a><a name="p4605182945911"></a>Format: HH:mm:ss.</p>
+</td>
+</tr>
+<tr id="row107502272383"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p654621033913"><a name="p654621033913"></a><a name="p654621033913"></a>maintain_end</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p125461810203910"><a name="p125461810203910"></a><a name="p125461810203910"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p66913287142854"><a name="p66913287142854"></a><a name="p66913287142854"></a>Time at which the maintenance time window ends.</p>
+<p id="p760542917593"><a name="p760542917593"></a><a name="p760542917593"></a>Format: HH:mm:ss.</p>
+</td>
+</tr>
+<tr id="row2123192024114"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p4583181319816"><a name="p4583181319816"></a><a name="p4583181319816"></a>available_zones</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p1583161314820"><a name="p1583161314820"></a><a name="p1583161314820"></a>Array</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p11583161312820"><a name="p11583161312820"></a><a name="p11583161312820"></a>AZ where a cache node resides. The value of this parameter in the response contains an AZ ID.</p>
+</td>
+</tr>
+<tr id="row312317204414"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p205821013680"><a name="p205821013680"></a><a name="p205821013680"></a>subnet_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p135827139811"><a name="p135827139811"></a><a name="p135827139811"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p358212136818"><a name="p358212136818"></a><a name="p358212136818"></a>Subnet ID.</p>
+</td>
+</tr>
+<tr id="row1912472014414"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p2582913185"><a name="p2582913185"></a><a name="p2582913185"></a>security_group_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p185823135811"><a name="p185823135811"></a><a name="p185823135811"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p35821513888"><a name="p35821513888"></a><a name="p35821513888"></a>Security group ID.</p>
+</td>
+</tr>
+<tr id="row1612492064110"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p694551810489"><a name="p694551810489"></a><a name="p694551810489"></a>backend_addrs</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p199451518134816"><a name="p199451518134816"></a><a name="p199451518134816"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p15945201816484"><a name="p15945201816484"></a><a name="p15945201816484"></a>Backend address of a cluster instance.</p>
+</td>
+</tr>
+<tr id="row135816131388"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p958121319811"><a name="p958121319811"></a><a name="p958121319811"></a>product_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p358111310810"><a name="p358111310810"></a><a name="p358111310810"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p1758114130820"><a name="p1758114130820"></a><a name="p1758114130820"></a>Product ID.</p>
+</td>
+</tr>
+<tr id="row55821713384"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p11582151310813"><a name="p11582151310813"></a><a name="p11582151310813"></a>security_group_name</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p25821513486"><a name="p25821513486"></a><a name="p25821513486"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p1458214131886"><a name="p1458214131886"></a><a name="p1458214131886"></a>Security group name.</p>
+</td>
+</tr>
+<tr id="row1758218135812"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p165829131586"><a name="p165829131586"></a><a name="p165829131586"></a>subnet_name</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p458215131587"><a name="p458215131587"></a><a name="p458215131587"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p175823131280"><a name="p175823131280"></a><a name="p175823131280"></a>Subnet name.</p>
+</td>
+</tr>
+<tr id="row206871758182115"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p170935112019"><a name="p170935112019"></a><a name="p170935112019"></a>subnet_cidr</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p1070915513017"><a name="p1070915513017"></a><a name="p1070915513017"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p37106513011"><a name="p37106513011"></a><a name="p37106513011"></a>Subnet segment.</p>
+</td>
+</tr>
+<tr id="row11582513288"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p1189611221388"><a name="p1189611221388"></a><a name="p1189611221388"></a>order_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p6896102212381"><a name="p6896102212381"></a><a name="p6896102212381"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p16896162233813"><a name="p16896162233813"></a><a name="p16896162233813"></a>Order ID.</p>
+</td>
+</tr>
+<tr id="row1374145316544"><td class="cellrowborder" valign="top" width="22.484848484848484%" headers="mcps1.2.4.1.1 "><p id="p10126119554"><a name="p10126119554"></a><a name="p10126119554"></a>instance_backup_policy</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.080808080808083%" headers="mcps1.2.4.1.2 "><p id="p1612517556"><a name="p1612517556"></a><a name="p1612517556"></a>JSON</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.43434343434344%" headers="mcps1.2.4.1.3 "><p id="p22014154142838"><a name="p22014154142838"></a><a name="p22014154142838"></a>Backup policy.</p>
+<p id="p160592914596"><a name="p160592914596"></a><a name="p160592914596"></a>This parameter is available for master/standby and cluster DCS instances. For details, see <a href="creating-a-dcs-instance.md#table12803218151513">Table 3</a> and <a href="creating-a-dcs-instance.md#table187492037201518">Table 4</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-**Table  3**  Error code description
+**Table  3**  Error codes
 
-<a name="table45484537"></a>
-<table><thead align="left"><tr id="row15535650"><th class="cellrowborder" valign="top" width="18%" id="mcps1.2.3.1.1"><p id="p50428169"><a name="p50428169"></a><a name="p50428169"></a>Error Code</p>
+<a name="table691509456"></a>
+<table><thead align="left"><tr id="row0913014455"><th class="cellrowborder" valign="top" width="23%" id="mcps1.2.3.1.1"><p id="p169303452"><a name="p169303452"></a><a name="p169303452"></a>Error Code</p>
 </th>
-<th class="cellrowborder" valign="top" width="82%" id="mcps1.2.3.1.2"><p id="p58149851"><a name="p58149851"></a><a name="p58149851"></a>Description</p>
+<th class="cellrowborder" valign="top" width="77%" id="mcps1.2.3.1.2"><p id="p99140174518"><a name="p99140174518"></a><a name="p99140174518"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row12517506"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p7285094"><a name="p7285094"></a><a name="p7285094"></a>dcs.01.0001</p>
+<tbody><tr id="row21851341115313"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p161877413539"><a name="p161877413539"></a><a name="p161877413539"></a>dcs.00.0007</p>
 </td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p53221742"><a name="p53221742"></a><a name="p53221742"></a>Internal service error.</p>
-</td>
-</tr>
-<tr id="row9233635"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p9727005"><a name="p9727005"></a><a name="p9727005"></a>dcs.01.0002</p>
-</td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p49689968"><a name="p49689968"></a><a name="p49689968"></a>Internal service error.</p>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p118718411533"><a name="p118718411533"></a><a name="p118718411533"></a>System error.</p>
 </td>
 </tr>
-<tr id="row44556530"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p52309148"><a name="p52309148"></a><a name="p52309148"></a>dcs.01.0003</p>
+<tr id="row149709458"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p390763445011"><a name="p390763445011"></a><a name="p390763445011"></a>dcs.01.0001</p>
 </td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p9182578"><a name="p9182578"></a><a name="p9182578"></a>Internal service error.</p>
-</td>
-</tr>
-<tr id="row15534346"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p50322510"><a name="p50322510"></a><a name="p50322510"></a>dcs.02.0001</p>
-</td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p49591539"><a name="p49591539"></a><a name="p49591539"></a>Failed to create VPC.</p>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p139071834135011"><a name="p139071834135011"></a><a name="p139071834135011"></a>Internal service error.</p>
 </td>
 </tr>
-<tr id="row43670673"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p47663658"><a name="p47663658"></a><a name="p47663658"></a>dcs.02.0002</p>
+<tr id="row164910416477"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p15907133412502"><a name="p15907133412502"></a><a name="p15907133412502"></a>dcs.01.0002</p>
 </td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p35551095"><a name="p35551095"></a><a name="p35551095"></a>Failed to create VPC.</p>
-</td>
-</tr>
-<tr id="row51524405"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p12727276"><a name="p12727276"></a><a name="p12727276"></a>dcs.02.0003</p>
-</td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p24276427"><a name="p24276427"></a><a name="p24276427"></a>Failed to create security group.</p>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p11908134125018"><a name="p11908134125018"></a><a name="p11908134125018"></a>Internal service error.</p>
 </td>
 </tr>
-<tr id="row17161258"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p47884633"><a name="p47884633"></a><a name="p47884633"></a>dcs.02.0004</p>
+<tr id="row981115404719"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p17908153445010"><a name="p17908153445010"></a><a name="p17908153445010"></a>dcs.01.0003</p>
 </td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p53450053"><a name="p53450053"></a><a name="p53450053"></a>Failed to create subnet.</p>
-</td>
-</tr>
-<tr id="row11288429"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p41947518"><a name="p41947518"></a><a name="p41947518"></a>dcs.02.0005</p>
-</td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p42305792"><a name="p42305792"></a><a name="p42305792"></a>Subnet status abnormal.</p>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p79084346504"><a name="p79084346504"></a><a name="p79084346504"></a>Internal service error.</p>
 </td>
 </tr>
-<tr id="row45207810"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p37954032"><a name="p37954032"></a><a name="p37954032"></a>dcs.03.0001</p>
+<tr id="row1897714411473"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p990893416502"><a name="p990893416502"></a><a name="p990893416502"></a>dcs.02.0001</p>
 </td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p54377762"><a name="p54377762"></a><a name="p54377762"></a>Failed to create ECS.</p>
-</td>
-</tr>
-<tr id="row19637817"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p47159308"><a name="p47159308"></a><a name="p47159308"></a>dcs.03.0002</p>
-</td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p61807641"><a name="p61807641"></a><a name="p61807641"></a>Failed to create ECS.</p>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p1890816346503"><a name="p1890816346503"></a><a name="p1890816346503"></a>Failed to create VPC.</p>
 </td>
 </tr>
-<tr id="row19397860"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p27722808"><a name="p27722808"></a><a name="p27722808"></a>dcs.03.0003</p>
+<tr id="row1214214515473"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p1590853416508"><a name="p1590853416508"></a><a name="p1590853416508"></a>dcs.02.0002</p>
 </td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p30954969"><a name="p30954969"></a><a name="p30954969"></a>Failed to create ECS.</p>
-</td>
-</tr>
-<tr id="row10159265"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p17594143"><a name="p17594143"></a><a name="p17594143"></a>dcs.03.0004</p>
-</td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p15839518"><a name="p15839518"></a><a name="p15839518"></a>Failed to create ECS.</p>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p590893412506"><a name="p590893412506"></a><a name="p590893412506"></a>Failed to create VPC.</p>
 </td>
 </tr>
-<tr id="row8337942"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p4284664"><a name="p4284664"></a><a name="p4284664"></a>dcs.03.0005</p>
+<tr id="row1131318513473"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p1090814349506"><a name="p1090814349506"></a><a name="p1090814349506"></a>dcs.02.0003</p>
 </td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p11513519"><a name="p11513519"></a><a name="p11513519"></a>Failed to bind NIC to the ECS.</p>
-</td>
-</tr>
-<tr id="row36512814"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p4747967"><a name="p4747967"></a><a name="p4747967"></a>dcs.03.0007</p>
-</td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p49041048"><a name="p49041048"></a><a name="p49041048"></a>Failed to start ECS.</p>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p99081534115013"><a name="p99081534115013"></a><a name="p99081534115013"></a>Failed to create security group.</p>
 </td>
 </tr>
-<tr id="row38716256"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p49009017"><a name="p49009017"></a><a name="p49009017"></a>dcs.03.0008</p>
+<tr id="row1992012455"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p1490812340507"><a name="p1490812340507"></a><a name="p1490812340507"></a>dcs.02.0004</p>
 </td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p10307439"><a name="p10307439"></a><a name="p10307439"></a>Failed to start ECS.</p>
-</td>
-</tr>
-<tr id="row25658088"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p65039219"><a name="p65039219"></a><a name="p65039219"></a>dcs.03.0009</p>
-</td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p33685391"><a name="p33685391"></a><a name="p33685391"></a>Failed to stop ECS.</p>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p149089342500"><a name="p149089342500"></a><a name="p149089342500"></a>Failed to create subnet.</p>
 </td>
 </tr>
-<tr id="row34733067"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p61915010"><a name="p61915010"></a><a name="p61915010"></a>dcs.04.0002</p>
+<tr id="row191806453"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p490813495019"><a name="p490813495019"></a><a name="p490813495019"></a>dcs.02.0005</p>
 </td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p49059934"><a name="p49059934"></a><a name="p49059934"></a>Failed to deploy instance.</p>
-</td>
-</tr>
-<tr id="row38886230"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p62776900"><a name="p62776900"></a><a name="p62776900"></a>dcs.04.0003</p>
-</td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p51764106"><a name="p51764106"></a><a name="p51764106"></a>Failed to connect to the instance.</p>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p1790818341509"><a name="p1790818341509"></a><a name="p1790818341509"></a>Subnet status abnormal.</p>
 </td>
 </tr>
-<tr id="row63223774"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p20852060"><a name="p20852060"></a><a name="p20852060"></a>dcs.04.0004</p>
+<tr id="row11461444174613"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p1690820349503"><a name="p1690820349503"></a><a name="p1690820349503"></a>dcs.03.0001</p>
 </td>
-<td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p11295303"><a name="p11295303"></a><a name="p11295303"></a>Both cache nodes are in the master state. A network connection error may occur between the master and standby nodes.</p>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p4908434165019"><a name="p4908434165019"></a><a name="p4908434165019"></a>Failed to create ECS.</p>
+</td>
+</tr>
+<tr id="row76851748124616"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p790823410504"><a name="p790823410504"></a><a name="p790823410504"></a>dcs.03.0002</p>
+</td>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p890873415012"><a name="p890873415012"></a><a name="p890873415012"></a>Failed to create ECS.</p>
+</td>
+</tr>
+<tr id="row1758749124615"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p139081334165018"><a name="p139081334165018"></a><a name="p139081334165018"></a>dcs.03.0003</p>
+</td>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p4908534155013"><a name="p4908534155013"></a><a name="p4908534155013"></a>Failed to create ECS.</p>
+</td>
+</tr>
+<tr id="row1424814974616"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p16908103413502"><a name="p16908103413502"></a><a name="p16908103413502"></a>dcs.03.0004</p>
+</td>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p490813346506"><a name="p490813346506"></a><a name="p490813346506"></a>Failed to create ECS.</p>
+</td>
+</tr>
+<tr id="row19419164984618"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p2908173417504"><a name="p2908173417504"></a><a name="p2908173417504"></a>dcs.03.0005</p>
+</td>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p1909123416501"><a name="p1909123416501"></a><a name="p1909123416501"></a>Failed to bind NIC to the ECS.</p>
+</td>
+</tr>
+<tr id="row559264954617"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p17909183445014"><a name="p17909183445014"></a><a name="p17909183445014"></a>dcs.03.0007</p>
+</td>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p1590973419501"><a name="p1590973419501"></a><a name="p1590973419501"></a>Failed to start ECS.</p>
+</td>
+</tr>
+<tr id="row574814912467"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p7909334115018"><a name="p7909334115018"></a><a name="p7909334115018"></a>dcs.03.0008</p>
+</td>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p1390919345503"><a name="p1390919345503"></a><a name="p1390919345503"></a>Failed to start ECS.</p>
+</td>
+</tr>
+<tr id="row19897249144616"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p5909234205013"><a name="p5909234205013"></a><a name="p5909234205013"></a>dcs.03.0009</p>
+</td>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p14909434205016"><a name="p14909434205016"></a><a name="p14909434205016"></a>Failed to stop ECS.</p>
+</td>
+</tr>
+<tr id="row7707105616595"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p76511659018"><a name="p76511659018"></a><a name="p76511659018"></a>dcs.03.0017</p>
+</td>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p765110512013"><a name="p765110512013"></a><a name="p765110512013"></a>Some nodes of the instance are faulty.</p>
+</td>
+</tr>
+<tr id="row1258125064618"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p2909153495010"><a name="p2909153495010"></a><a name="p2909153495010"></a>dcs.04.0002</p>
+</td>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p2090917345501"><a name="p2090917345501"></a><a name="p2090917345501"></a>Failed to deploy the instance.</p>
+</td>
+</tr>
+<tr id="row1337510501466"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p2090916347503"><a name="p2090916347503"></a><a name="p2090916347503"></a>dcs.04.0003</p>
+</td>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p13909163414502"><a name="p13909163414502"></a><a name="p13909163414502"></a>Failed to connect to the instance.</p>
+</td>
+</tr>
+<tr id="row14539155011464"><td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.3.1.1 "><p id="p10909734195012"><a name="p10909734195012"></a><a name="p10909734195012"></a>dcs.04.0004</p>
+</td>
+<td class="cellrowborder" valign="top" width="77%" headers="mcps1.2.3.1.2 "><p id="p4909123435016"><a name="p4909123435016"></a><a name="p4909123435016"></a>Both cache nodes are in the master state. A network connection error may occur between the master and standby nodes.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
--   Example response:
+**Example response**
 
-    ```
-    { 
-     "name" : "dcs-a11e", 
-     "engine" : "Redis", 
-     "capacity" : 2, 
-     "ip" : "192.168.3.100", 
-     "port" : 6379, 
-     "status" : "RUNNING", 
-     "description" : "Create a instance", 
-     "instance_id" : "68d5745e-6af2-40e4-945d-fe449be00148", 
-     "resource_spec_code" : "dcs.single_node", 
-     "engine_version" : "3.0.7", 
-     "internal_version" : null, 
-     "charging_mode" : 0, 
-     "vpc_id" : "27d99e17-42f2-4751-818f-5c8c6c03ff15", 
-     "vpc_name" : "vpc_4944a40e-ac57-4f08-9d38-9786e2759458_192", 
-     "created_at" : "2017-03-31T12:24:46.297Z", 
-     "error_code" : null, 
-     "product_id" : "XXXXXX", 
-     "security_group_id" : "60ea2db8-1a51-4ab6-9e11-65b418c24583", 
-     "security_group_name" : "sg_6379_4944a40e-ac57-4f08-9d38-9786e2759458", 
-     "subnet_id" : "ec2f34b9-20eb-4872-85bd-bea9fc943128", 
-      "subnet_name" : "subnet_az_7f336767-10ec-48a5-9ae8-9cacde119318", 
-     "available_zones" : "XXXXXX", 
-     "max_memory" : 460, 
-     "used_memory" : 56, 
-     "user_id": "6d0977e4c9b74ae7b5a083a8d0d8fafa", 
-     "user_name": "liutao02", 
-     "order_id": "XXXXXXXXX", 
-     "maintain_begin" : "22:00:00", 
-     "maintain_end" : "02:00:00" 
-    }
-    ```
+```
+{
+    "name" : "dcs-a11e",
+    "engine" : "Redis",
+    "capacity" : 2,
+    "ip" : "192.168.3.100",
+    "port" : 6379,
+    "status" : "RUNNING",
+    "description" : "Create a instance",
+    "instance_id" : "68d5745e-6af2-40e4-945d-fe449be00148",
+    "resource_spec_code" : "dcs.single_node",
+    "engine_version" : "3.0",
+    "internal_version" : null,
+    "charging_mode" : 0,
+    "vpc_id" : "27d99e17-42f2-4751-818f-5c8c6c03ff15",
+    "vpc_name" : "vpc_4944a40e-ac57-4f08-9d38-9786e2759458_192",
+    "created_at" : "2017-03-31T12:24:46.297Z",
+    "error_code" : null,
+    "product_id" : "XXXXXX",
+    "security_group_id" : "60ea2db8-1a51-4ab6-9e11-65b418c24583",
+    "security_group_name" : "sg_6379_4944a40e-ac57-4f08-9d38-9786e2759458",
+    "subnet_id" : "ec2f34b9-20eb-4872-85bd-bea9fc943128",
+    "subnet_name" : "subnet_az_7f336767-10ec-48a5-9ae8-9cacde119318",
+    "available_zones" : "XXXXXX",
+    "max_memory" : 460,
+    "used_memory" : 56,
+    "user_id": "6d0977e4c9b74ae7b5a083a8d0d8fafa",
+    "user_name": "liutao02",
+    "order_id": "XXXXXXXXX",
+    "maintain_begin" : "22:00:00",
+    "maintain_end" : "02:00:00"
+}
+```
 
+## Status Code<a name="section18373103889"></a>
+
+[Table 4](#table183731131183)  describes the status code of successful operations. For details about other status codes, see  [Table 1](status-codes.md#table5210141351517).
+
+**Table  4**  Status code
+
+<a name="table183731131183"></a>
+<table><thead align="left"><tr id="row23747312814"><th class="cellrowborder" valign="top" width="15.98%" id="mcps1.2.3.1.1"><p id="p123741732818"><a name="p123741732818"></a><a name="p123741732818"></a>Status Code</p>
+</th>
+<th class="cellrowborder" valign="top" width="84.02%" id="mcps1.2.3.1.2"><p id="p133741337815"><a name="p133741337815"></a><a name="p133741337815"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row14374732815"><td class="cellrowborder" valign="top" width="15.98%" headers="mcps1.2.3.1.1 "><p id="p4374537817"><a name="p4374537817"></a><a name="p4374537817"></a>200</p>
+</td>
+<td class="cellrowborder" valign="top" width="84.02%" headers="mcps1.2.3.1.2 "><p id="p12374834813"><a name="p12374834813"></a><a name="p12374834813"></a>Specified instance queried successfully.</p>
+</td>
+</tr>
+</tbody>
+</table>
 

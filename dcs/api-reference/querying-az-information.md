@@ -1,59 +1,52 @@
-# Querying AZ Information<a name="EN-US_TOPIC_0237964378"></a>
+# Querying AZ Information<a name="dcs-api-0312039"></a>
 
-## Function<a name="section7882981"></a>
+## Function<a name="section164151825713"></a>
 
-This API is used to query information about AZs.
+This API is used to query the ID of the AZ where a DCS instance resides. 
 
-## URI<a name="section3837973"></a>
+## URI<a name="section11589173274"></a>
 
--   URI format:
+GET /v1.0/availableZones
 
-    GET /v1.0/availableZones
+## Request<a name="section1271822314281"></a>
 
--   Parameter description:
-
-    None.
-
-
-## Request<a name="section34541762"></a>
+**Request parameters**
 
 None.
 
-## Response<a name="section42440405"></a>
+**Example request**
 
--   Status code:
+None.
 
-    If status code "200 OK" is returned, this request is fulfilled. For description of other status codes, see  [API Usage Guidelines](api-usage-guidelines.md).
+## Response<a name="section1745154162813"></a>
 
--   Response parameter:
+**Response parameters**
 
-    [Table 1](#table7422478)  describes response parameters.
-
+[Table 1](#table5725353918)  describes the response parameters.
 
 **Table  1**  Parameter description
 
-<a name="table7422478"></a>
-<table><thead align="left"><tr id="row34137448"><th class="cellrowborder" valign="top" width="24.489795918367346%" id="mcps1.2.4.1.1"><p id="p13669900"><a name="p13669900"></a><a name="p13669900"></a>Name</p>
+<a name="table5725353918"></a>
+<table><thead align="left"><tr id="row1862534399"><th class="cellrowborder" valign="top" width="20.41%" id="mcps1.2.4.1.1"><p id="p2615536391"><a name="p2615536391"></a><a name="p2615536391"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="41.83673469387755%" id="mcps1.2.4.1.2"><p id="p33520145"><a name="p33520145"></a><a name="p33520145"></a>Type</p>
+<th class="cellrowborder" valign="top" width="24.490000000000002%" id="mcps1.2.4.1.2"><p id="p86453163917"><a name="p86453163917"></a><a name="p86453163917"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="33.6734693877551%" id="mcps1.2.4.1.3"><p id="p30777247"><a name="p30777247"></a><a name="p30777247"></a>Description</p>
+<th class="cellrowborder" valign="top" width="55.1%" id="mcps1.2.4.1.3"><p id="p196135383919"><a name="p196135383919"></a><a name="p196135383919"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row9929053"><td class="cellrowborder" valign="top" width="24.489795918367346%" headers="mcps1.2.4.1.1 "><p id="p66055795"><a name="p66055795"></a><a name="p66055795"></a>regionId</p>
+<tbody><tr id="row137195353920"><td class="cellrowborder" valign="top" width="20.41%" headers="mcps1.2.4.1.1 "><p id="p126953173914"><a name="p126953173914"></a><a name="p126953173914"></a>regionId</p>
 </td>
-<td class="cellrowborder" valign="top" width="41.83673469387755%" headers="mcps1.2.4.1.2 "><p id="p48919178"><a name="p48919178"></a><a name="p48919178"></a>String</p>
+<td class="cellrowborder" valign="top" width="24.490000000000002%" headers="mcps1.2.4.1.2 "><p id="p197135314392"><a name="p197135314392"></a><a name="p197135314392"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.6734693877551%" headers="mcps1.2.4.1.3 "><p id="p3030473"><a name="p3030473"></a><a name="p3030473"></a>Region ID.</p>
+<td class="cellrowborder" valign="top" width="55.1%" headers="mcps1.2.4.1.3 "><p id="p18755363917"><a name="p18755363917"></a><a name="p18755363917"></a>Region ID.</p>
 </td>
 </tr>
-<tr id="row27274264"><td class="cellrowborder" valign="top" width="24.489795918367346%" headers="mcps1.2.4.1.1 "><p id="p61731751"><a name="p61731751"></a><a name="p61731751"></a>available_zones</p>
+<tr id="row075534392"><td class="cellrowborder" valign="top" width="20.41%" headers="mcps1.2.4.1.1 "><p id="p6715311397"><a name="p6715311397"></a><a name="p6715311397"></a>available_zones</p>
 </td>
-<td class="cellrowborder" valign="top" width="41.83673469387755%" headers="mcps1.2.4.1.2 "><p id="p34215923"><a name="p34215923"></a><a name="p34215923"></a>Array</p>
-<p id="p39507851"><a name="p39507851"></a><a name="p39507851"></a>For details, see <a href="#ref478638127">Table 2</a>.</p>
+<td class="cellrowborder" valign="top" width="24.490000000000002%" headers="mcps1.2.4.1.2 "><p id="p7755373913"><a name="p7755373913"></a><a name="p7755373913"></a>Array</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.6734693877551%" headers="mcps1.2.4.1.3 "><p id="p11520735"><a name="p11520735"></a><a name="p11520735"></a>Array of AZs.</p>
+<td class="cellrowborder" valign="top" width="55.1%" headers="mcps1.2.4.1.3 "><p id="p3775313395"><a name="p3775313395"></a><a name="p3775313395"></a>Array of AZs. For details, see <a href="#table20901104905614">Table 2</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -61,83 +54,103 @@ None.
 
 **Table  2**  Parameter description of the available\_zones array
 
-<a name="ref478638127"></a>
-<table><thead align="left"><tr id="row25871087"><th class="cellrowborder" valign="top" width="22%" id="mcps1.2.4.1.1"><p id="p15183298"><a name="p15183298"></a><a name="p15183298"></a>Name</p>
+<a name="table20901104905614"></a>
+<table><thead align="left"><tr id="row12901249155618"><th class="cellrowborder" valign="top" width="21.21212121212121%" id="mcps1.2.4.1.1"><p id="p6686654192615"><a name="p6686654192615"></a><a name="p6686654192615"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="24%" id="mcps1.2.4.1.2"><p id="p21887634"><a name="p21887634"></a><a name="p21887634"></a>Type</p>
+<th class="cellrowborder" valign="top" width="20.202020202020204%" id="mcps1.2.4.1.2"><p id="p129029492566"><a name="p129029492566"></a><a name="p129029492566"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="54%" id="mcps1.2.4.1.3"><p id="p28067910"><a name="p28067910"></a><a name="p28067910"></a>Description</p>
+<th class="cellrowborder" valign="top" width="58.58585858585859%" id="mcps1.2.4.1.3"><p id="p690217494561"><a name="p690217494561"></a><a name="p690217494561"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row58908231"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.4.1.1 "><p id="p6837372"><a name="p6837372"></a><a name="p6837372"></a>id</p>
+<tbody><tr id="row139022491568"><td class="cellrowborder" valign="top" width="21.21212121212121%" headers="mcps1.2.4.1.1 "><p id="p1290214497560"><a name="p1290214497560"></a><a name="p1290214497560"></a>id</p>
 </td>
-<td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.2 "><p id="p16956237"><a name="p16956237"></a><a name="p16956237"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.4.1.2 "><p id="p29021492564"><a name="p29021492564"></a><a name="p29021492564"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="54%" headers="mcps1.2.4.1.3 "><p id="p31277988"><a name="p31277988"></a><a name="p31277988"></a>AZ ID.</p>
-</td>
-</tr>
-<tr id="row13066436"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.4.1.1 "><p id="p51748380"><a name="p51748380"></a><a name="p51748380"></a>code</p>
-</td>
-<td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.2 "><p id="p30869228"><a name="p30869228"></a><a name="p30869228"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="54%" headers="mcps1.2.4.1.3 "><p id="p17379549"><a name="p17379549"></a><a name="p17379549"></a>AZ code.</p>
+<td class="cellrowborder" valign="top" width="58.58585858585859%" headers="mcps1.2.4.1.3 "><p id="p1990217498567"><a name="p1990217498567"></a><a name="p1990217498567"></a>AZ ID.</p>
 </td>
 </tr>
-<tr id="row22198217"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.4.1.1 "><p id="p53225166"><a name="p53225166"></a><a name="p53225166"></a>name</p>
+<tr id="row490216496566"><td class="cellrowborder" valign="top" width="21.21212121212121%" headers="mcps1.2.4.1.1 "><p id="p2902164995619"><a name="p2902164995619"></a><a name="p2902164995619"></a>code</p>
 </td>
-<td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.2 "><p id="p16271175"><a name="p16271175"></a><a name="p16271175"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.4.1.2 "><p id="p1902124917569"><a name="p1902124917569"></a><a name="p1902124917569"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="54%" headers="mcps1.2.4.1.3 "><p id="p42896797"><a name="p42896797"></a><a name="p42896797"></a>AZ name.</p>
-</td>
-</tr>
-<tr id="row50526854"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.4.1.1 "><p id="p66143345"><a name="p66143345"></a><a name="p66143345"></a>port</p>
-</td>
-<td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.2 "><p id="p56010733"><a name="p56010733"></a><a name="p56010733"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="54%" headers="mcps1.2.4.1.3 "><p id="p40575521"><a name="p40575521"></a><a name="p40575521"></a>Port of the AZ.</p>
+<td class="cellrowborder" valign="top" width="58.58585858585859%" headers="mcps1.2.4.1.3 "><p id="p1490212498563"><a name="p1490212498563"></a><a name="p1490212498563"></a>AZ code.</p>
 </td>
 </tr>
-<tr id="row29635376"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.4.1.1 "><p id="p51655276"><a name="p51655276"></a><a name="p51655276"></a>resource_availability</p>
+<tr id="row119023498565"><td class="cellrowborder" valign="top" width="21.21212121212121%" headers="mcps1.2.4.1.1 "><p id="p15902649165614"><a name="p15902649165614"></a><a name="p15902649165614"></a>name</p>
 </td>
-<td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.4.1.2 "><p id="p23327861"><a name="p23327861"></a><a name="p23327861"></a>String</p>
+<td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.4.1.2 "><p id="p119022492561"><a name="p119022492561"></a><a name="p119022492561"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="54%" headers="mcps1.2.4.1.3 "><p id="p10508594"><a name="p10508594"></a><a name="p10508594"></a>An indicator of whether there are available resources in the AZ.</p>
-<a name="ul27468488"></a><a name="ul27468488"></a><ul id="ul27468488"><li><strong id="b10355055"><a name="b10355055"></a><a name="b10355055"></a>true</strong>: There are available resources in the AZ.</li><li><strong id="b33453118"><a name="b33453118"></a><a name="b33453118"></a>false</strong>: All resources have been used up in the AZ.</li></ul>
+<td class="cellrowborder" valign="top" width="58.58585858585859%" headers="mcps1.2.4.1.3 "><p id="p2902204935616"><a name="p2902204935616"></a><a name="p2902204935616"></a>AZ name.</p>
+</td>
+</tr>
+<tr id="row890204912564"><td class="cellrowborder" valign="top" width="21.21212121212121%" headers="mcps1.2.4.1.1 "><p id="p79021549175610"><a name="p79021549175610"></a><a name="p79021549175610"></a>port</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.4.1.2 "><p id="p10902949165614"><a name="p10902949165614"></a><a name="p10902949165614"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="58.58585858585859%" headers="mcps1.2.4.1.3 "><p id="p17902154925615"><a name="p17902154925615"></a><a name="p17902154925615"></a>Port number of the AZ.</p>
+</td>
+</tr>
+<tr id="row1285718223542"><td class="cellrowborder" valign="top" width="21.21212121212121%" headers="mcps1.2.4.1.1 "><p id="p28591422145411"><a name="p28591422145411"></a><a name="p28591422145411"></a>resource_availability</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.4.1.2 "><p id="p11859172215541"><a name="p11859172215541"></a><a name="p11859172215541"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="58.58585858585859%" headers="mcps1.2.4.1.3 "><p id="p1219863831719"><a name="p1219863831719"></a><a name="p1219863831719"></a>An indicator of whether there are available resources in the AZ.</p>
+<a name="ul17198113812171"></a><a name="ul17198113812171"></a><ul id="ul17198113812171"><li><strong id="b137424216583"><a name="b137424216583"></a><a name="b137424216583"></a>true</strong>: There are available resources in the AZ.</li><li><strong id="b149921347175818"><a name="b149921347175818"></a><a name="b149921347175818"></a>false</strong>: All resources have been used up in the AZ.</li></ul>
 </td>
 </tr>
 </tbody>
 </table>
 
--   Example response:
+**Example response**
 
-    ```
-    { 
-     "regionId": "XXXXXX", 
-     "available_zones": [ 
-            { 
-                "id": "f84448fd537f46078dd8bd776747f573", 
-                "code": "XXXXXX", 
-                "name": "XXXXXX", 
-                "port": "8003", 
-                "resource_availability": "true" 
-            }, 
-            { 
-                "id": "12c47a78666b4e438cd0c692b9860387", 
-                "code": "XXXXXX", 
-                "name": "XXXXXX", 
-                "port": "8002", 
-                "resource_availability": "true" 
-            }, 
-            { 
-                "id": "0725858e0d26434f9aa3dc5fc40d5697", 
-                "code": "XXXXXX", 
-                "name": "XXXXXX", 
-                "port": "8009", 
-                "resource_availability": "true" 
-            } 
-     ] 
-    }
-    ```
+```
+{
+    "regionId": "XXXXXX",
+    "available_zones": [
+        {
+            "id": "f84448fd537f46078dd8bd776747f573",
+            "code": "XXXXXX",
+            "name": "XXXXXX",
+            "port": "8003",
+            "resource_availability": "true"
+        },
+        {
+            "id": "12c47a78666b4e438cd0c692b9860387",
+            "code": "XXXXXX",
+            "name": "XXXXXX",
+            "port": "8002",
+            "resource_availability": "true"
+        },
+        {
+            "id": "0725858e0d26434f9aa3dc5fc40d5697",
+            "code": "XXXXXX",
+            "name": "XXXXXX",
+            "port": "8009",
+            "resource_availability": "true"
+        }
+    ]
+} 
+```
 
+## Status Code<a name="section9114171291417"></a>
+
+[Table 3](#table201151124142)  describes the status code of successful operations. For details about other status codes, see  [Table 1](status-codes.md#table5210141351517).
+
+**Table  3**  Status code
+
+<a name="table201151124142"></a>
+<table><thead align="left"><tr id="row61151912141410"><th class="cellrowborder" valign="top" width="15.98%" id="mcps1.2.3.1.1"><p id="p18115512151411"><a name="p18115512151411"></a><a name="p18115512151411"></a>Status Code</p>
+</th>
+<th class="cellrowborder" valign="top" width="84.02%" id="mcps1.2.3.1.2"><p id="p41151712151419"><a name="p41151712151419"></a><a name="p41151712151419"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row811551251417"><td class="cellrowborder" valign="top" width="15.98%" headers="mcps1.2.3.1.1 "><p id="p17115201211417"><a name="p17115201211417"></a><a name="p17115201211417"></a>200</p>
+</td>
+<td class="cellrowborder" valign="top" width="84.02%" headers="mcps1.2.3.1.2 "><p id="p16116151214148"><a name="p16116151214148"></a><a name="p16116151214148"></a>AZ information queried successfully.</p>
+</td>
+</tr>
+</tbody>
+</table>
 

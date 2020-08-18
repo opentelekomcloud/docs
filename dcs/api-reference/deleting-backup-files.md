@@ -1,112 +1,127 @@
-# Deleting Backup Files<a name="EN-US_TOPIC_0237964373"></a>
+# Deleting Backup Files<a name="dcs-api-0312024"></a>
 
-## Function<a name="section10488826"></a>
+## Function<a name="section10680121316113"></a>
 
 This API is used to delete the files backed up by a DCS instance.
 
-## URI<a name="section27290576"></a>
+## URI<a name="section2310177194512"></a>
 
--   URI format:
+DELETE /v1.0/\{project\_id\}/instances/\{instance\_id\}/backups/\{backup\_id\}
 
-    DELETE /v1.0/\{project\_id\}/instances/\{instance\_id\}/backups/\{backup\_id\}
-
--   Parameter description:
-
-    [Table 1](#d0e5777)  describes the parameters of this API.
-
+[Table 1](#table4154121820350)  describes the parameters.
 
 **Table  1**  Parameter description
 
-<a name="d0e5777"></a>
-<table><thead align="left"><tr id="row45170876"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p34962352"><a name="p34962352"></a><a name="p34962352"></a>Name</p>
+<a name="table4154121820350"></a>
+<table><thead align="left"><tr id="row17153191817358"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p993885712414"><a name="p993885712414"></a><a name="p993885712414"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p13378227"><a name="p13378227"></a><a name="p13378227"></a>Type</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p215314189354"><a name="p215314189354"></a><a name="p215314189354"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p9894640"><a name="p9894640"></a><a name="p9894640"></a>Mandatory or Not</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p1715320185352"><a name="p1715320185352"></a><a name="p1715320185352"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p63268365"><a name="p63268365"></a><a name="p63268365"></a>Description</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p215351873519"><a name="p215351873519"></a><a name="p215351873519"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row24463922"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p35420680"><a name="p35420680"></a><a name="p35420680"></a>project_id</p>
+<tbody><tr id="row61531718163510"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p51531218183514"><a name="p51531218183514"></a><a name="p51531218183514"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p50502838"><a name="p50502838"></a><a name="p50502838"></a>String</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p115311813514"><a name="p115311813514"></a><a name="p115311813514"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p64198117"><a name="p64198117"></a><a name="p64198117"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p815391853510"><a name="p815391853510"></a><a name="p815391853510"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p32665021"><a name="p32665021"></a><a name="p32665021"></a>Project ID.</p>
-</td>
-</tr>
-<tr id="row25549735"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p56262670"><a name="p56262670"></a><a name="p56262670"></a>instance_id</p>
-</td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p60982450"><a name="p60982450"></a><a name="p60982450"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p40631418"><a name="p40631418"></a><a name="p40631418"></a>Yes</p>
-</td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p2810575"><a name="p2810575"></a><a name="p2810575"></a>DCS instance ID.</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p1153818143518"><a name="p1153818143518"></a><a name="p1153818143518"></a>Project ID</p>
 </td>
 </tr>
-<tr id="row25295177"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p35643484"><a name="p35643484"></a><a name="p35643484"></a>backup_id</p>
+<tr id="row111541118183517"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p161532018113520"><a name="p161532018113520"></a><a name="p161532018113520"></a>instance_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p1441071"><a name="p1441071"></a><a name="p1441071"></a>String</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p015314181351"><a name="p015314181351"></a><a name="p015314181351"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p49617898"><a name="p49617898"></a><a name="p49617898"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p11153318123518"><a name="p11153318123518"></a><a name="p11153318123518"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p59626806"><a name="p59626806"></a><a name="p59626806"></a>ID of the backup record.</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p41533186358"><a name="p41533186358"></a><a name="p41533186358"></a>DCS instance ID</p>
+</td>
+</tr>
+<tr id="row18629154113017"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p169201512193020"><a name="p169201512193020"></a><a name="p169201512193020"></a>backup_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p1792101211307"><a name="p1792101211307"></a><a name="p1792101211307"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p1692111233017"><a name="p1692111233017"></a><a name="p1692111233017"></a>Yes</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p17921191213303"><a name="p17921191213303"></a><a name="p17921191213303"></a>ID of the backup record</p>
 </td>
 </tr>
 </tbody>
 </table>
 
--   Example URI:
+Example
 
-    ```
-    DELETE /v1.0/885cacf2d49d4bb6931ae668e9c07553/instances/e016385d-b9fa-4bf0-9f38-9379f4a5293f/backups/75509c85-50a6-4525-ad56-a1bb62e84570
-    ```
+```
+DELETE https://{dcs_endpoint}/v1.0/885cacf2d49d4bb6931ae668e9c07553/instances/e016385d-b9fa-4bf0-9f38-9379f4a5293f/backups/75509c85-50a6-4525-ad56-a1bb62e84570
+```
 
+## Request<a name="section41195764519"></a>
 
-## Request<a name="section44288600"></a>
+**Request parameters**
 
 None.
 
-## Response<a name="section63053081"></a>
+**Example request**
 
--   Status code:
+None.
 
-    If status code "200 OK" is returned, this request is fulfilled. For description of other status codes, see  [API Usage Guidelines](api-usage-guidelines.md).
+## Response<a name="section11426254461"></a>
 
--   Response parameter:
+**Response parameters**
 
-    [Table 2](#table5929344419)describes the response parameters.
-
+[Table 2](#table5929344419)  describes the response parameters.
 
 **Table  2**  Parameter description
 
 <a name="table5929344419"></a>
-<table><thead align="left"><tr id="row64354785"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p45355069"><a name="p45355069"></a><a name="p45355069"></a>Name</p>
+<table><thead align="left"><tr id="row1173730448"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p16173193104416"><a name="p16173193104416"></a><a name="p16173193104416"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.4.1.2"><p id="p49881998"><a name="p49881998"></a><a name="p49881998"></a>Type</p>
+<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.4.1.2"><p id="p1317316354420"><a name="p1317316354420"></a><a name="p1317316354420"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="63%" id="mcps1.2.4.1.3"><p id="p13910076"><a name="p13910076"></a><a name="p13910076"></a>Description</p>
+<th class="cellrowborder" valign="top" width="63%" id="mcps1.2.4.1.3"><p id="p111730318446"><a name="p111730318446"></a><a name="p111730318446"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row52974382"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p63066573"><a name="p63066573"></a><a name="p63066573"></a>message</p>
+<tbody><tr id="row1317316317449"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p9174103184416"><a name="p9174103184416"></a><a name="p9174103184416"></a>message</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p8118784"><a name="p8118784"></a><a name="p8118784"></a>String</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p14174113184416"><a name="p14174113184416"></a><a name="p14174113184416"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p53641776"><a name="p53641776"></a><a name="p53641776"></a>Description of the result of deleting backup files.</p>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p81742364412"><a name="p81742364412"></a><a name="p81742364412"></a>Result of deleting the backup file</p>
 </td>
 </tr>
 </tbody>
 </table>
 
--   Example response:
+**Example response**
 
-    ```
-    { 
-     "message": "" 
-    }
-    ```
+```
+{
+    "message": ""
+}
+```
 
+## Status Code<a name="section5301161961211"></a>
+
+[Table 3](#table8301101911215)  describes the status code of successful operations. For details about other status codes, see  [Table 1](status-codes.md#table5210141351517).
+
+**Table  3**  Status code
+
+<a name="table8301101911215"></a>
+<table><thead align="left"><tr id="row11302101915124"><th class="cellrowborder" valign="top" width="15.98%" id="mcps1.2.3.1.1"><p id="p73021519101210"><a name="p73021519101210"></a><a name="p73021519101210"></a>Status Code</p>
+</th>
+<th class="cellrowborder" valign="top" width="84.02%" id="mcps1.2.3.1.2"><p id="p830281981219"><a name="p830281981219"></a><a name="p830281981219"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row16302121941211"><td class="cellrowborder" valign="top" width="15.98%" headers="mcps1.2.3.1.1 "><p id="p63027192128"><a name="p63027192128"></a><a name="p63027192128"></a>200</p>
+</td>
+<td class="cellrowborder" valign="top" width="84.02%" headers="mcps1.2.3.1.2 "><p id="p1302171916124"><a name="p1302171916124"></a><a name="p1302171916124"></a>Backup file deleted successfully.</p>
+</td>
+</tr>
+</tbody>
+</table>
 

@@ -1,247 +1,240 @@
-# Querying DCS Instance Backup Records<a name="EN-US_TOPIC_0237964371"></a>
+# Querying DCS Instance Backup Records<a name="dcs-api-0312022"></a>
 
-## Function<a name="section19934082"></a>
+## Function<a name="section10329193461017"></a>
 
 This API is used to query the backup records of a specified DCS instance.
 
-## URI<a name="section45189012"></a>
+## URI<a name="section10627123311133"></a>
 
--   URI format:
+GET /v1.0/\{project\_id\}/instances/\{instance\_id\}/backups?start=\{start\}&limit=\{limit\}&beginTime=\{beginTime\}&endTime=\{endTime\}
 
-    GET /v1.0/\{project\_id\}/instances/\{instance\_id\}/backups?start=\{start\}&limit=\{limit\}&beginTime=\{beginTime\}&endTime=\{endTime\}
-
--   Parameter description:
-
-    [Table 1](#d0e6212)  describes the parameters of this API.
-
+[Table 1](#table1899262913382)  describes the parameters.
 
 **Table  1**  Parameter description
 
-<a name="d0e6212"></a>
-<table><thead align="left"><tr id="row6427492"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p50864815"><a name="p50864815"></a><a name="p50864815"></a>Name</p>
+<a name="table1899262913382"></a>
+<table><thead align="left"><tr id="row1599115293389"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p15991152913819"><a name="p15991152913819"></a><a name="p15991152913819"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="16%" id="mcps1.2.5.1.2"><p id="p26409355"><a name="p26409355"></a><a name="p26409355"></a>Type</p>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.5.1.2"><p id="p129916298387"><a name="p129916298387"></a><a name="p129916298387"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.5.1.3"><p id="p58783007"><a name="p58783007"></a><a name="p58783007"></a>Mandatory or Not</p>
+<th class="cellrowborder" valign="top" width="10%" id="mcps1.2.5.1.3"><p id="p13991142913384"><a name="p13991142913384"></a><a name="p13991142913384"></a>Mandatory</p>
 </th>
-<th class="cellrowborder" valign="top" width="47%" id="mcps1.2.5.1.4"><p id="p63803156"><a name="p63803156"></a><a name="p63803156"></a>Description</p>
+<th class="cellrowborder" valign="top" width="45%" id="mcps1.2.5.1.4"><p id="p1991329193814"><a name="p1991329193814"></a><a name="p1991329193814"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row673170"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p54526784"><a name="p54526784"></a><a name="p54526784"></a>project_id</p>
+<tbody><tr id="row11992929163813"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1523414741010"><a name="p1523414741010"></a><a name="p1523414741010"></a>project_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.5.1.2 "><p id="p54593350"><a name="p54593350"></a><a name="p54593350"></a>String</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p142349718103"><a name="p142349718103"></a><a name="p142349718103"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.5.1.3 "><p id="p59985229"><a name="p59985229"></a><a name="p59985229"></a>Yes</p>
+<td class="cellrowborder" valign="top" width="10%" headers="mcps1.2.5.1.3 "><p id="p1323411714108"><a name="p1323411714108"></a><a name="p1323411714108"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="47%" headers="mcps1.2.5.1.4 "><p id="p26965372"><a name="p26965372"></a><a name="p26965372"></a>Project ID.</p>
-</td>
-</tr>
-<tr id="row41361763"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p61968482"><a name="p61968482"></a><a name="p61968482"></a>instance_id</p>
-</td>
-<td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.5.1.2 "><p id="p53391134"><a name="p53391134"></a><a name="p53391134"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.5.1.3 "><p id="p29714558"><a name="p29714558"></a><a name="p29714558"></a>Yes</p>
-</td>
-<td class="cellrowborder" valign="top" width="47%" headers="mcps1.2.5.1.4 "><p id="p58068970"><a name="p58068970"></a><a name="p58068970"></a>DCS instance ID.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p102346716103"><a name="p102346716103"></a><a name="p102346716103"></a>Project ID.</p>
 </td>
 </tr>
-<tr id="row52858689"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p53695403"><a name="p53695403"></a><a name="p53695403"></a>start</p>
+<tr id="row313125212916"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1223415719101"><a name="p1223415719101"></a><a name="p1223415719101"></a>instance_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.5.1.2 "><p id="p54360406"><a name="p54360406"></a><a name="p54360406"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p1923416720108"><a name="p1923416720108"></a><a name="p1923416720108"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.5.1.3 "><p id="p41116778"><a name="p41116778"></a><a name="p41116778"></a>No</p>
+<td class="cellrowborder" valign="top" width="10%" headers="mcps1.2.5.1.3 "><p id="p62341677106"><a name="p62341677106"></a><a name="p62341677106"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="47%" headers="mcps1.2.5.1.4 "><p id="p42124685"><a name="p42124685"></a><a name="p42124685"></a>Start sequence number of the to-be-queried backup record. By default, this parameter is set to <strong id="b43577853"><a name="b43577853"></a><a name="b43577853"></a>1</strong>.</p>
-</td>
-</tr>
-<tr id="row56656362"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p25762599"><a name="p25762599"></a><a name="p25762599"></a>limit</p>
-</td>
-<td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.5.1.2 "><p id="p6395756"><a name="p6395756"></a><a name="p6395756"></a>Integer</p>
-</td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.5.1.3 "><p id="p48294242"><a name="p48294242"></a><a name="p48294242"></a>No</p>
-</td>
-<td class="cellrowborder" valign="top" width="47%" headers="mcps1.2.5.1.4 "><p id="p19519536"><a name="p19519536"></a><a name="p19519536"></a>Number of backup records displayed on each page. The minimum value of this parameter is <strong id="b41458104"><a name="b41458104"></a><a name="b41458104"></a>1</strong>. If this parameter is not specified, 10 backup records are displayed on each page by default.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p1923487181015"><a name="p1923487181015"></a><a name="p1923487181015"></a>DCS instance ID.</p>
 </td>
 </tr>
-<tr id="row37578623"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p23969655"><a name="p23969655"></a><a name="p23969655"></a>beginTime</p>
+<tr id="row615705910920"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p52344791015"><a name="p52344791015"></a><a name="p52344791015"></a>start</p>
 </td>
-<td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.5.1.2 "><p id="p62493887"><a name="p62493887"></a><a name="p62493887"></a>String</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p13235475101"><a name="p13235475101"></a><a name="p13235475101"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.5.1.3 "><p id="p28840063"><a name="p28840063"></a><a name="p28840063"></a>No</p>
+<td class="cellrowborder" valign="top" width="10%" headers="mcps1.2.5.1.3 "><p id="p62357791015"><a name="p62357791015"></a><a name="p62357791015"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="47%" headers="mcps1.2.5.1.4 "><p id="p54343776"><a name="p54343776"></a><a name="p54343776"></a>Start time of the period to be queried.</p>
-<p id="p19331940"><a name="p19331940"></a><a name="p19331940"></a>Format: yyyyMMddHHmmss, for example, 20170718235959.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p023519761019"><a name="p023519761019"></a><a name="p023519761019"></a>Start sequence number of the backup record that is to be queried. By default, this parameter is set to <strong id="b418831779"><a name="b418831779"></a><a name="b418831779"></a>1</strong>.</p>
 </td>
 </tr>
-<tr id="row39769737"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p123299"><a name="p123299"></a><a name="p123299"></a>endTime</p>
+<tr id="row12603175214915"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p723516711103"><a name="p723516711103"></a><a name="p723516711103"></a>limit</p>
 </td>
-<td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.5.1.2 "><p id="p9987286"><a name="p9987286"></a><a name="p9987286"></a>String</p>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p1023514714106"><a name="p1023514714106"></a><a name="p1023514714106"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.5.1.3 "><p id="p3663817"><a name="p3663817"></a><a name="p3663817"></a>No</p>
+<td class="cellrowborder" valign="top" width="10%" headers="mcps1.2.5.1.3 "><p id="p1223519711016"><a name="p1223519711016"></a><a name="p1223519711016"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="47%" headers="mcps1.2.5.1.4 "><p id="p28333732"><a name="p28333732"></a><a name="p28333732"></a>End time of the period to be queried.</p>
-<p id="p53677000"><a name="p53677000"></a><a name="p53677000"></a>Format: yyyyMMddHHmmss, for example, 20170718235959.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p323517191011"><a name="p323517191011"></a><a name="p323517191011"></a>Number of backup records displayed on each page. The minimum value of this parameter is <strong id="b698477872"><a name="b698477872"></a><a name="b698477872"></a>1</strong>. If this parameter is not set, 10 backup records are displayed on each page by default.</p>
+</td>
+</tr>
+<tr id="row199112521997"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p423510710103"><a name="p423510710103"></a><a name="p423510710103"></a>beginTime</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p22351572101"><a name="p22351572101"></a><a name="p22351572101"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="10%" headers="mcps1.2.5.1.3 "><p id="p323517712103"><a name="p323517712103"></a><a name="p323517712103"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p023514711109"><a name="p023514711109"></a><a name="p023514711109"></a>Start time of the period to be queried. Format: yyyyMMddHHmmss, for example, 20170718235959.</p>
+</td>
+</tr>
+<tr id="row12965536911"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p19235147111015"><a name="p19235147111015"></a><a name="p19235147111015"></a>endTime</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.2 "><p id="p1123511719102"><a name="p1123511719102"></a><a name="p1123511719102"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="10%" headers="mcps1.2.5.1.3 "><p id="p1323577141014"><a name="p1323577141014"></a><a name="p1323577141014"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p1523514741020"><a name="p1523514741020"></a><a name="p1523514741020"></a>End time of the period to be queried. Format: yyyyMMddHHmmss, for example, 20170718235959.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Request<a name="section4047927"></a>
+## Request<a name="section17412144620133"></a>
+
+**Request parameters**
 
 None.
 
-## Response<a name="section36431349"></a>
+**Example request**
 
--   Status code:
+```
+GET https://{dcs_endpoint}/v1.0/{project_id}/instances/{instance_id}/backups?start={start}&limit={limit}&beginTime={beginTime}&endTime={endTime}
+```
 
-    If status code "200 OK" is returned, this request is fulfilled. For description of other status codes, see  [API Usage Guidelines](api-usage-guidelines.md).
+## Response<a name="section1417213312142"></a>
 
--   Response parameter:
+**Response parameters**
 
-    [Table 2](#d0e6339)  describes the response parameters.
-
+[Table 2](#table1861319576383)  describes the response parameters.
 
 **Table  2**  Parameter description
 
-<a name="d0e6339"></a>
-<table><thead align="left"><tr id="row36684175"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p18628187"><a name="p18628187"></a><a name="p18628187"></a>Name</p>
+<a name="table1861319576383"></a>
+<table><thead align="left"><tr id="row1961225712388"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p136126577389"><a name="p136126577389"></a><a name="p136126577389"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.4.1.2"><p id="p32488139"><a name="p32488139"></a><a name="p32488139"></a>Type</p>
+<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.4.1.2"><p id="p76121757113816"><a name="p76121757113816"></a><a name="p76121757113816"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="63%" id="mcps1.2.4.1.3"><p id="p14293575"><a name="p14293575"></a><a name="p14293575"></a>Description</p>
+<th class="cellrowborder" valign="top" width="63%" id="mcps1.2.4.1.3"><p id="p26121157123820"><a name="p26121157123820"></a><a name="p26121157123820"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row16928952"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p29067910"><a name="p29067910"></a><a name="p29067910"></a>backup_record_response</p>
+<tbody><tr id="row166121557203812"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1694215159152"><a name="p1694215159152"></a><a name="p1694215159152"></a>backup_record_response</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p5690520"><a name="p5690520"></a><a name="p5690520"></a>Array</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p1394211511516"><a name="p1394211511516"></a><a name="p1394211511516"></a>Array</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p58278999"><a name="p58278999"></a><a name="p58278999"></a>Array of the backup records. For details about backup_record_response, see <a href="#table39834343">Table 3</a>.</p>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p994291518159"><a name="p994291518159"></a><a name="p994291518159"></a>Array of the backup records. For details about backup_record_response, see <a href="#table82951233189">Table 3</a>.</p>
 </td>
 </tr>
-<tr id="row22978474"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p49317114"><a name="p49317114"></a><a name="p49317114"></a>total_num</p>
+<tr id="row13767421219"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1237615425118"><a name="p1237615425118"></a><a name="p1237615425118"></a>total_num</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p35263278"><a name="p35263278"></a><a name="p35263278"></a>Integer</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p4376042714"><a name="p4376042714"></a><a name="p4376042714"></a>Integer</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p37753263"><a name="p37753263"></a><a name="p37753263"></a>Number of obtained backup records.</p>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p113765421411"><a name="p113765421411"></a><a name="p113765421411"></a>Number of obtained backup records.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-**Table  3**  Parameter description of the backup\_record\_response array
+**Table  3**  backup\_record\_response parameter description
 
-<a name="table39834343"></a>
-<table><thead align="left"><tr id="row28888142"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p58238181"><a name="p58238181"></a><a name="p58238181"></a>Name</p>
+<a name="table82951233189"></a>
+<table><thead align="left"><tr id="row1529552361817"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p19295182361812"><a name="p19295182361812"></a><a name="p19295182361812"></a>Parameter</p>
 </th>
-<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.4.1.2"><p id="p19672249"><a name="p19672249"></a><a name="p19672249"></a>Type</p>
+<th class="cellrowborder" valign="top" width="12%" id="mcps1.2.4.1.2"><p id="p5295142341812"><a name="p5295142341812"></a><a name="p5295142341812"></a>Type</p>
 </th>
-<th class="cellrowborder" valign="top" width="63%" id="mcps1.2.4.1.3"><p id="p49948337"><a name="p49948337"></a><a name="p49948337"></a>Description</p>
+<th class="cellrowborder" valign="top" width="63%" id="mcps1.2.4.1.3"><p id="p17295182391816"><a name="p17295182391816"></a><a name="p17295182391816"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row19283510"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p18460463"><a name="p18460463"></a><a name="p18460463"></a>status</p>
+<tbody><tr id="row1129512317181"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1353145413181"><a name="p1353145413181"></a><a name="p1353145413181"></a>status</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p18902533"><a name="p18902533"></a><a name="p18902533"></a>String</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p153119547184"><a name="p153119547184"></a><a name="p153119547184"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p54710175"><a name="p54710175"></a><a name="p54710175"></a>Backup status.</p>
-<a name="ul22629529"></a><a name="ul22629529"></a><ul id="ul22629529"><li><strong id="b21052565"><a name="b21052565"></a><a name="b21052565"></a>waiting</strong>: DCS instance backup is waiting to begin.</li><li><strong id="b27536201"><a name="b27536201"></a><a name="b27536201"></a>backuping</strong>: DCS instance backup is in progress.</li><li><strong id="b15839838"><a name="b15839838"></a><a name="b15839838"></a>succeed</strong>: DCS instance backup succeeded.</li><li><strong id="b7958524"><a name="b7958524"></a><a name="b7958524"></a>failed</strong>: DCS instance backup failed.</li><li><strong id="b40660682"><a name="b40660682"></a><a name="b40660682"></a>expired</strong>: The backup file has expired.</li><li><strong id="b5180912"><a name="b5180912"></a><a name="b5180912"></a>deleted</strong>: The backup file has been deleted manually.</li></ul>
-</td>
-</tr>
-<tr id="row46628212"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p18788818"><a name="p18788818"></a><a name="p18788818"></a>remark</p>
-</td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p45499293"><a name="p45499293"></a><a name="p45499293"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p61564092"><a name="p61564092"></a><a name="p61564092"></a>Description of the DCS instance backup.</p>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p1453195431814"><a name="p1453195431814"></a><a name="p1453195431814"></a>Backup status. Options:</p>
+<a name="ul7204867542"></a><a name="ul7204867542"></a><ul id="ul7204867542"><li><strong id="b128611546141815"><a name="b128611546141815"></a><a name="b128611546141815"></a>waiting</strong>: DCS instance restoration is waiting to begin.</li><li><strong id="b19181248181814"><a name="b19181248181814"></a><a name="b19181248181814"></a>backuping</strong>: DCS instance backup is in progress.</li><li><strong id="b20126174961816"><a name="b20126174961816"></a><a name="b20126174961816"></a>succeed</strong>: DCS instance backup succeeded.</li><li><strong id="b82725151816"><a name="b82725151816"></a><a name="b82725151816"></a>failed</strong>: DCS instance backup failed.</li><li><strong id="b14902105118186"><a name="b14902105118186"></a><a name="b14902105118186"></a>expired</strong>: The backup file expires.</li><li><strong id="b2979145221810"><a name="b2979145221810"></a><a name="b2979145221810"></a>deleted</strong>: The backup file has been deleted manually. </li></ul>
 </td>
 </tr>
-<tr id="row17205919"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p51502168"><a name="p51502168"></a><a name="p51502168"></a>period</p>
+<tr id="row1329517231188"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1553115413185"><a name="p1553115413185"></a><a name="p1553115413185"></a>remark</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p10926041"><a name="p10926041"></a><a name="p10926041"></a>String</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p7531195417183"><a name="p7531195417183"></a><a name="p7531195417183"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p12594123"><a name="p12594123"></a><a name="p12594123"></a>Time segment in which DCS instance backup was performed.</p>
-</td>
-</tr>
-<tr id="row46238245"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p54310403"><a name="p54310403"></a><a name="p54310403"></a>progress</p>
-</td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p37066533"><a name="p37066533"></a><a name="p37066533"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p49599220"><a name="p49599220"></a><a name="p49599220"></a>Backup progress.</p>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p19532854121812"><a name="p19532854121812"></a><a name="p19532854121812"></a>Description of DCS instance backup</p>
 </td>
 </tr>
-<tr id="row43739799"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p53262868"><a name="p53262868"></a><a name="p53262868"></a>size</p>
+<tr id="row89511348141815"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p4532135411187"><a name="p4532135411187"></a><a name="p4532135411187"></a>period</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p19325041"><a name="p19325041"></a><a name="p19325041"></a>Long</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p1853215544184"><a name="p1853215544184"></a><a name="p1853215544184"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p21824470"><a name="p21824470"></a><a name="p21824470"></a>Size of the backup file.</p>
-<p id="p62202508"><a name="p62202508"></a><a name="p62202508"></a>Unit: byte.</p>
-</td>
-</tr>
-<tr id="row22951660"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p47145178"><a name="p47145178"></a><a name="p47145178"></a>instance_id</p>
-</td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p60663113"><a name="p60663113"></a><a name="p60663113"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p14765153"><a name="p14765153"></a><a name="p14765153"></a>DCS instance ID</p>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p18532135414189"><a name="p18532135414189"></a><a name="p18532135414189"></a>Time segment in which DCS instance backup was performed</p>
 </td>
 </tr>
-<tr id="row65777515"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p26378514"><a name="p26378514"></a><a name="p26378514"></a>backup_id</p>
+<tr id="row3237649111810"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p17532175416181"><a name="p17532175416181"></a><a name="p17532175416181"></a>progress</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p56284918"><a name="p56284918"></a><a name="p56284918"></a>String</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p3532954171818"><a name="p3532954171818"></a><a name="p3532954171818"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p62784510"><a name="p62784510"></a><a name="p62784510"></a>ID of the backup record.</p>
-</td>
-</tr>
-<tr id="row28189683"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1663021"><a name="p1663021"></a><a name="p1663021"></a>created_at</p>
-</td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p487040"><a name="p487040"></a><a name="p487040"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p39450259"><a name="p39450259"></a><a name="p39450259"></a>Time at which the backup task is created.</p>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p85325542188"><a name="p85325542188"></a><a name="p85325542188"></a>Backup progress</p>
 </td>
 </tr>
-<tr id="row19508012"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p36645122"><a name="p36645122"></a><a name="p36645122"></a>updated_at</p>
+<tr id="row639864912186"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p05323546184"><a name="p05323546184"></a><a name="p05323546184"></a>size</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p15464942"><a name="p15464942"></a><a name="p15464942"></a>String</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p1253219547187"><a name="p1253219547187"></a><a name="p1253219547187"></a>Long</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p44700757"><a name="p44700757"></a><a name="p44700757"></a>Time at which DCS instance backup is completed.</p>
-</td>
-</tr>
-<tr id="row66762499"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p39053361"><a name="p39053361"></a><a name="p39053361"></a>execution_at</p>
-</td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p9205647"><a name="p9205647"></a><a name="p9205647"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p7459909"><a name="p7459909"></a><a name="p7459909"></a>Time at which the backup starts.</p>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p6532115419183"><a name="p6532115419183"></a><a name="p6532115419183"></a>Size of the backup file. Unit: byte.</p>
 </td>
 </tr>
-<tr id="row30321"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p2456031"><a name="p2456031"></a><a name="p2456031"></a>backup_type</p>
+<tr id="row177581437173119"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p3758123723116"><a name="p3758123723116"></a><a name="p3758123723116"></a>instance_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p64720826"><a name="p64720826"></a><a name="p64720826"></a>String</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p20759163719311"><a name="p20759163719311"></a><a name="p20759163719311"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p7895529"><a name="p7895529"></a><a name="p7895529"></a>Backup type.</p>
-<p id="p3950900"><a name="p3950900"></a><a name="p3950900"></a>Options:</p>
-<a name="ul35558101"></a><a name="ul35558101"></a><ul id="ul35558101"><li><strong id="b61633893"><a name="b61633893"></a><a name="b61633893"></a>manual</strong>: manual backup.</li><li><strong id="b26289409"><a name="b26289409"></a><a name="b26289409"></a>auto</strong>: automatic backup.</li></ul>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p67591837173119"><a name="p67591837173119"></a><a name="p67591837173119"></a>DCS instance ID</p>
 </td>
 </tr>
-<tr id="row35278096"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p38953514"><a name="p38953514"></a><a name="p38953514"></a>backup_name</p>
+<tr id="row1858120491183"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p253215417181"><a name="p253215417181"></a><a name="p253215417181"></a>backup_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p1118085"><a name="p1118085"></a><a name="p1118085"></a>String</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p3532115471814"><a name="p3532115471814"></a><a name="p3532115471814"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p23456073"><a name="p23456073"></a><a name="p23456073"></a>Name of the backup record.</p>
-</td>
-</tr>
-<tr id="row9778065"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p53825796"><a name="p53825796"></a><a name="p53825796"></a>error_code</p>
-</td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p64922228"><a name="p64922228"></a><a name="p64922228"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p24209096"><a name="p24209096"></a><a name="p24209096"></a>Error code returned if DCS instance backup fails.</p>
-<p id="p16555275"><a name="p16555275"></a><a name="p16555275"></a>For details about error codes, see <a href="#table19168847155017">Table 4</a>.</p>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p95321054161817"><a name="p95321054161817"></a><a name="p95321054161817"></a>ID of the backup record</p>
 </td>
 </tr>
-<tr id="row65908913"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p37021743"><a name="p37021743"></a><a name="p37021743"></a>is_support_restore</p>
+<tr id="row10758144910189"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p105321554191816"><a name="p105321554191816"></a><a name="p105321554191816"></a>created_at</p>
 </td>
-<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p45971246"><a name="p45971246"></a><a name="p45971246"></a>String</p>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p2532115419180"><a name="p2532115419180"></a><a name="p2532115419180"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p32683478"><a name="p32683478"></a><a name="p32683478"></a>An indicator of whether restoration is supported. The value can be <strong id="b25715848"><a name="b25715848"></a><a name="b25715848"></a>TRUE</strong> or <strong id="b30116046"><a name="b30116046"></a><a name="b30116046"></a>FALSE</strong>.</p>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p5532185417187"><a name="p5532185417187"></a><a name="p5532185417187"></a>Time at which the backup task is created</p>
+</td>
+</tr>
+<tr id="row8908349191817"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p12532115461819"><a name="p12532115461819"></a><a name="p12532115461819"></a>updated_at</p>
+</td>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p1853255431810"><a name="p1853255431810"></a><a name="p1853255431810"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p6532145417182"><a name="p6532145417182"></a><a name="p6532145417182"></a>Time at which DCS instance backup is completed</p>
+</td>
+</tr>
+<tr id="row89415477414"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p29421847114119"><a name="p29421847114119"></a><a name="p29421847114119"></a>execution_at</p>
+</td>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p694274712413"><a name="p694274712413"></a><a name="p694274712413"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p3942204734120"><a name="p3942204734120"></a><a name="p3942204734120"></a>Time at which the backup starts.</p>
+</td>
+</tr>
+<tr id="row14234450101811"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p105331954101820"><a name="p105331954101820"></a><a name="p105331954101820"></a>backup_type</p>
+</td>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p753365411815"><a name="p753365411815"></a><a name="p753365411815"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p195331354111818"><a name="p195331354111818"></a><a name="p195331354111818"></a>Backup type. Options:</p>
+<a name="ul6533954131811"></a><a name="ul6533954131811"></a><ul id="ul6533954131811"><li><strong id="b1376692421019"><a name="b1376692421019"></a><a name="b1376692421019"></a>manual</strong>: manual backup</li><li><strong id="b688010283104"><a name="b688010283104"></a><a name="b688010283104"></a>auto</strong>: automatic backup</li></ul>
+</td>
+</tr>
+<tr id="row5539165051818"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1353317547181"><a name="p1353317547181"></a><a name="p1353317547181"></a>backup_name</p>
+</td>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p11533105471820"><a name="p11533105471820"></a><a name="p11533105471820"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p553313540185"><a name="p553313540185"></a><a name="p553313540185"></a>Name of the backup record</p>
+</td>
+</tr>
+<tr id="row12951323121812"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p115331954111810"><a name="p115331954111810"></a><a name="p115331954111810"></a>error_code</p>
+</td>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p19533105415189"><a name="p19533105415189"></a><a name="p19533105415189"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p5533185491810"><a name="p5533185491810"></a><a name="p5533185491810"></a>Error code returned if DCS instance backup fails. For details about error codes, see <a href="#table1255361919491">Table 4</a>.</p>
+</td>
+</tr>
+<tr id="row2060041023717"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1860121043718"><a name="p1860121043718"></a><a name="p1860121043718"></a>is_support_restore</p>
+</td>
+<td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.4.1.2 "><p id="p1479155312376"><a name="p1479155312376"></a><a name="p1479155312376"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="63%" headers="mcps1.2.4.1.3 "><p id="p796540154715"><a name="p796540154715"></a><a name="p796540154715"></a>An indicator of whether restoration is supported. Options: <strong id="b1932918451192"><a name="b1932918451192"></a><a name="b1932918451192"></a>TRUE</strong> or <strong id="b1932917456918"><a name="b1932917456918"></a><a name="b1932917456918"></a>FALSE</strong>.</p>
 </td>
 </tr>
 </tbody>
@@ -249,80 +242,100 @@ None.
 
 **Table  4**  Error codes returned in case of a backup or restoration failure
 
-<a name="table19168847155017"></a>
-<table><thead align="left"><tr id="row39099120"><th class="cellrowborder" valign="top" width="32%" id="mcps1.2.3.1.1"><p id="p12912137"><a name="p12912137"></a><a name="p12912137"></a>Error Code</p>
+<a name="table1255361919491"></a>
+<table><thead align="left"><tr id="row1755412199492"><th class="cellrowborder" valign="top" width="32%" id="mcps1.2.3.1.1"><p id="p2554171914492"><a name="p2554171914492"></a><a name="p2554171914492"></a>Error Code</p>
 </th>
-<th class="cellrowborder" valign="top" width="68%" id="mcps1.2.3.1.2"><p id="p39250175"><a name="p39250175"></a><a name="p39250175"></a>Description</p>
+<th class="cellrowborder" valign="top" width="68%" id="mcps1.2.3.1.2"><p id="p14554121914917"><a name="p14554121914917"></a><a name="p14554121914917"></a>Description</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row25147577"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p23687839"><a name="p23687839"></a><a name="p23687839"></a>dcs.08.0001</p>
+<tbody><tr id="row6554319154918"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p115547197491"><a name="p115547197491"></a><a name="p115547197491"></a>dcs.08.0001</p>
 </td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p39666843"><a name="p39666843"></a><a name="p39666843"></a>Failed to start the backup and restore tool.</p>
-</td>
-</tr>
-<tr id="row21457267"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p60317096"><a name="p60317096"></a><a name="p60317096"></a>dcs.08.0002</p>
-</td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p53846630"><a name="p53846630"></a><a name="p53846630"></a>Operation timed out.</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p1155412195491"><a name="p1155412195491"></a><a name="p1155412195491"></a>Failed to start the backup and restore tool.</p>
 </td>
 </tr>
-<tr id="row14857623"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p62616820"><a name="p62616820"></a><a name="p62616820"></a>dcs.08.0003</p>
+<tr id="row145541819124918"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p85541319184920"><a name="p85541319184920"></a><a name="p85541319184920"></a>dcs.08.0002</p>
 </td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p38797678"><a name="p38797678"></a><a name="p38797678"></a>Failed to delete bucket.</p>
-</td>
-</tr>
-<tr id="row13634785"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p30675792"><a name="p30675792"></a><a name="p30675792"></a>dcs.08.0004</p>
-</td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p1711248"><a name="p1711248"></a><a name="p1711248"></a>Failed to obtain AK/SK.</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p1455401916493"><a name="p1455401916493"></a><a name="p1455401916493"></a>Operation timed out.</p>
 </td>
 </tr>
-<tr id="row15401238"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p39540754"><a name="p39540754"></a><a name="p39540754"></a>dcs.08.0005</p>
+<tr id="row2554519114913"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p555401924915"><a name="p555401924915"></a><a name="p555401924915"></a>dcs.08.0003</p>
 </td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p48684466"><a name="p48684466"></a><a name="p48684466"></a>Failed to create bucket.</p>
-</td>
-</tr>
-<tr id="row35507011"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p57495637"><a name="p57495637"></a><a name="p57495637"></a>dcs.08.0006</p>
-</td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p26635007"><a name="p26635007"></a><a name="p26635007"></a>Failed to obtain backup file size.</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p355417197494"><a name="p355417197494"></a><a name="p355417197494"></a>Failed to delete bucket.</p>
 </td>
 </tr>
-<tr id="row38388477"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p22458943"><a name="p22458943"></a><a name="p22458943"></a>dcs.08.0007</p>
+<tr id="row75548193491"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p25541319144917"><a name="p25541319144917"></a><a name="p25541319144917"></a>dcs.08.0004</p>
 </td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p7235118"><a name="p7235118"></a><a name="p7235118"></a>Data synchronization failed during instance restoration.</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p3554121974914"><a name="p3554121974914"></a><a name="p3554121974914"></a>Failed to obtain AK/SK.</p>
 </td>
 </tr>
-<tr id="row65116065"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p39909950"><a name="p39909950"></a><a name="p39909950"></a>dcs.08.0008</p>
+<tr id="row1355415199491"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p12554111915490"><a name="p12554111915490"></a><a name="p12554111915490"></a>dcs.08.0005</p>
 </td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p11480507"><a name="p11480507"></a><a name="p11480507"></a>Automatic backup of the instance cannot start because the instance is running other jobs.</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p355421919494"><a name="p355421919494"></a><a name="p355421919494"></a>Failed to create bucket.</p>
+</td>
+</tr>
+<tr id="row18554719144912"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p1755581920499"><a name="p1755581920499"></a><a name="p1755581920499"></a>dcs.08.0006</p>
+</td>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p19555151914490"><a name="p19555151914490"></a><a name="p19555151914490"></a>Failed to obtain backup file size.</p>
+</td>
+</tr>
+<tr id="row2555161914910"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p15555131994918"><a name="p15555131994918"></a><a name="p15555131994918"></a>dcs.08.0007</p>
+</td>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p2555319144916"><a name="p2555319144916"></a><a name="p2555319144916"></a>Data synchronization failed during instance restoration.</p>
+</td>
+</tr>
+<tr id="row1111512213330"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p1811642113319"><a name="p1811642113319"></a><a name="p1811642113319"></a>dcs.08.0008</p>
+</td>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p011617219332"><a name="p011617219332"></a><a name="p011617219332"></a>Automatic backup of the instance cannot start because the instance is running other jobs.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
--   Example response:
+**Example response**
 
-    ```
-    { 
-     "backup_record_response": [ 
-            { 
-                "status": "succeed", 
-                "remark": "001", 
-                "period": null, 
-                "progress": "100.00", 
-                "size": 880232, 
-                "instance_id": "5560df16-cebf-4473-95c4-d1b573c16e79", 
-                "backup_id": "4631832a-14c6-45b0-a0b3-3abd8f591ad1", 
-                "created_at": "2019-05-10T08:31:16.166Z", 
-                "updated_at": "2019-05-10T08:32:30.546Z", 
-                "execution_at": "2019-05-10T08:31:21.461Z", 
-                "backup_type": "manual", 
-                "backup_name": "backup_20190510163116", 
-                "error_code": null, 
-                "is_support_restore": "TRUE" 
-            } 
-     ], 
-     "total_num": 1 
-    }
-    ```
+```
+{
+    "backup_record_response": [
+        {
+            "status": "succeed",
+            "remark": "001",
+            "period": null,
+            "progress": "100.00",
+            "size": 880232,
+            "instance_id": "5560df16-cebf-4473-95c4-d1b573c16e79",
+            "backup_id": "4631832a-14c6-45b0-a0b3-3abd8f591ad1",
+            "created_at": "2019-05-10T08:31:16.166Z",
+            "updated_at": "2019-05-10T08:32:30.546Z",
+            "execution_at": "2019-05-10T08:31:21.461Z",
+            "backup_type": "manual",
+            "backup_name": "backup_20190510163116",
+            "error_code": null,
+            "is_support_restore": "TRUE"
+        }
+    ],
+    "total_num": 1
+}
+```
 
+## Status Code<a name="section4860101417132"></a>
+
+[Table 5](#table486141410130)  describes the status code of successful operations. For details about other status codes, see  [Table 1](status-codes.md#table5210141351517).
+
+**Table  5**  Status code
+
+<a name="table486141410130"></a>
+<table><thead align="left"><tr id="row18616141139"><th class="cellrowborder" valign="top" width="15.98%" id="mcps1.2.3.1.1"><p id="p1986191418133"><a name="p1986191418133"></a><a name="p1986191418133"></a>Status Code</p>
+</th>
+<th class="cellrowborder" valign="top" width="84.02%" id="mcps1.2.3.1.2"><p id="p18861111415138"><a name="p18861111415138"></a><a name="p18861111415138"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row786131451312"><td class="cellrowborder" valign="top" width="15.98%" headers="mcps1.2.3.1.1 "><p id="p6861114181311"><a name="p6861114181311"></a><a name="p6861114181311"></a>200</p>
+</td>
+<td class="cellrowborder" valign="top" width="84.02%" headers="mcps1.2.3.1.2 "><p id="p48619143136"><a name="p48619143136"></a><a name="p48619143136"></a>DCS instance backup records queried successfully.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
