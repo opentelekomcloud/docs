@@ -4,9 +4,9 @@
 
 To facilitate the management of Kubernetes parameters in a cluster, the cloud provides the configuration function. This function allows you to perform in-depth configuration on core components. For details, see  [kubelet](https://v1-15.docs.kubernetes.io/docs/reference/command-line-tools-reference/kubelet)  and  [docker](https://docs.docker.com/engine/reference/commandline/dockerd).
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->-   This function is available only for clusters of v1.15 or later.  
->-   The default node pool DefaultPool does not support this type of configuration.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>-   This function is available only for clusters of v1.15 or later.
+>-   The default node pool DefaultPool does not support this type of configuration.
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Node Pools**.
 2.  In the upper right corner of the displayed page, select a cluster to filter node pools by cluster.
@@ -181,9 +181,9 @@ You can migrate a node from a node pool to the default node pool in the same clu
 3.  Click  **More**\>  **Migrate**  next to the name of the node pool.
 4.  In the dialog box displayed, select the destination node pool and the node to be migrated.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   Check whether the disk specifications of the node to be migrated are the same as those of the destination node pool.  
-    >-   After node migration, original resources tags, Kubernetes tags, and taints will be retained, and new tags and taints from the destination node pool will be added.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   Check whether the disk specifications of the node to be migrated are the same as those of the destination node pool.
+    >-   After node migration, original resources tags, Kubernetes tags, and taints will be retained, and new tags and taints from the destination node pool will be added.
 
 5.  Click  **OK**.
 

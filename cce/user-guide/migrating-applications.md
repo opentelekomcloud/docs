@@ -180,7 +180,7 @@ Common Kubernetes resources include Deployments, StatefulSets, jobs, DaemonSets,
           replicas: 0
     ```
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >Rectify errors as prompted during cluster upgrading. If you have any questions, contact O&M personnel.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >Rectify errors as prompted during cluster upgrading. If you have any questions, contact O&M personnel.
 
 

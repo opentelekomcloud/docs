@@ -23,8 +23,8 @@ The snapshot feature helps address your following needs:
 
     For example, a fault occurred on system disk A of ECS A, and therefore ECS A cannot be started. Because system disk A is already faulty, the data on system disk A cannot be restored by rolling back snapshots. In this case, you can use an existing snapshot of system disk A to create EVS disk B and attach it to ECS B that is running properly. Then, ECS B can read data from system disk A using EVS disk B.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >The snapshot capability provided by CCE is the same as the CSI snapshot function provided by the Kubernetes community. EVS disks can be created only based on snapshots, and snapshots cannot be rolled back to source EVS disks.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >The snapshot capability provided by CCE is the same as the CSI snapshot function provided by the Kubernetes community. EVS disks can be created only based on snapshots, and snapshots cannot be rolled back to source EVS disks.
 
 -   **Rapid deployment of multiple services**
 
@@ -41,9 +41,9 @@ The snapshot feature helps address your following needs:
 
 You can create EVS snapshots to save the disk data at specific time points.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->**Snapshots can be created only for EVS disks that are available or in use.**  A maximum of seven snapshots can be created for a single EVS disk. For details about how to create an EVS disk, see  [Using EVS Disks for Storage](using-evs-disks-for-storage.md).  
->Snapshot data of encrypted disks is stored encrypted, and that of non-encrypted disks is stored non-encrypted.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>**Snapshots can be created only for EVS disks that are available or in use.**  A maximum of seven snapshots can be created for a single EVS disk. For details about how to create an EVS disk, see  [Using EVS Disks for Storage](using-evs-disks-for-storage.md).
+>Snapshot data of encrypted disks is stored encrypted, and that of non-encrypted disks is stored non-encrypted.
 
 1.  Log in to the CCE Console. In the navigation pane on the left, choose  **Resource Management**  \>  **Storage**.
 2.  On the  **Snapshot and backup**  tab page, click  **Create Snapshot**.

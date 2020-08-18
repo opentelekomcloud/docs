@@ -60,7 +60,7 @@ spec:
 2.  Click the name of the workload for which you will add a scheduling policy. On the workload details page, choose  **Scheduling Policies**  \>  **Add Simple Scheduling Policy**  \>  **Add Anti-affinity Object**.
 3.  Set  **Object Type**  to  **Workload**  and select the workloads to be deployed on a different node from the created workload. The created workload and the selected workloads will be deployed on different nodes.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >This method can be used to add, edit, or delete scheduling policies.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >This method can be used to add, edit, or delete scheduling policies.
 
 

@@ -16,11 +16,11 @@ An  elastic load balancer  has been created on the management console.
 1.  Log in to the management console and choose  **Network**  \>  **Elastic Load Balancing**  from the service list.
 2.  Click  **Create Enhanced Load Balancer**  in the upper right corner. For details, see  [Creating an Enhanced Load Balancer](https://docs.otc.t-systems.com/en-us/usermanual/elb/en-us_topic_0052569751.html).
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->The LoadBalancer access type allows workloads to be accessed from public networks through ELB. This access type has the following restrictions:  
->-   It is recommended that automatically created load balancers not be used by other resources. Otherwise, these load balancers cannot be completely deleted, causing residual resources.  
->-   Do not change the listener name for the load balancer in use. Otherwise, the load balancer cannot be accessed.  
->-   Do not add custom forwarding rules for the listener of the load balancer that is being used. As these forwarding rules are not added to the ingress for management on the  **Network**  page, they will be deleted when the ingress is updated.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>The LoadBalancer access type allows workloads to be accessed from public networks through ELB. This access type has the following restrictions:
+>-   It is recommended that automatically created load balancers not be used by other resources. Otherwise, these load balancers cannot be completely deleted, causing residual resources.
+>-   Do not change the listener name for the load balancer in use. Otherwise, the load balancer cannot be accessed.
+>-   Do not add custom forwarding rules for the listener of the load balancer that is being used. As these forwarding rules are not added to the ingress for management on the  **Network**  page, they will be deleted when the ingress is updated.
 
 ## Setting the Access Type on the Console<a name="section744117150366"></a>
 
@@ -67,9 +67,9 @@ You can set the service access type when creating a workload on the CCE console.
         -   **External Port**: Port number that is open to the ELB service address. The port number can be specified randomly.
         -   **Front-End Protocol**:  **HTTP**  and  **HTTPS**  are available. If you select HTTPS, select a key certificate accordingly. For details about the certificate format, see  [Certificate Format](https://docs.otc.t-systems.com/en-us/usermanual/elb/en-us_topic_0092382555.html).
 
-            >![](public_sys-resources/icon-note.gif) **NOTE:**   
-            >-   The key certificate  **ingress-test-secret.yaml**  is required only when HTTPS is selected. For details on how to create a key, see  [Creating a Secret](creating-a-secret.md).  
-            >-   If there is already an HTTPS ingress for the chosen port on the load balancer, the certificate of the new HTTPS ingress must be the same as the certificate of the existing ingress. This means that a listener has only one certificate. If two certificates, each with a different ingress, are added to the same listener of the same load balancer, only the earliest certificate takes effect on the load balancer.  
+            >![](public_sys-resources/icon-note.gif) **NOTE:** 
+            >-   The key certificate  **ingress-test-secret.yaml**  is required only when HTTPS is selected. For details on how to create a key, see  [Creating a Secret](creating-a-secret.md).
+            >-   If there is already an HTTPS ingress for the chosen port on the load balancer, the certificate of the new HTTPS ingress must be the same as the certificate of the existing ingress. This means that a listener has only one certificate. If two certificates, each with a different ingress, are added to the same listener of the same load balancer, only the earliest certificate takes effect on the load balancer.
 
         -   **Domain Name**: optional. It indicates the actual domain name. You are expected to buy the domain name and complete ICP filing for it. Ensure that the domain name can resolve the service address of the selected load balancer. If a domain name rule is configured, the domain name must always be used for access.
         -   **Route Configuration**
@@ -121,9 +121,9 @@ The ECS where the kubectl client runs has been connected to your cluster. For de
 
     The file names are user-defined.  **ingress-test-deployment.yaml**,  **ingress-test-svc.yaml**,  **ingress-test-ingress.yaml**, and  **ingress-test-secret.yaml**  are merely example file names.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   The key certificate  **ingress-test-secret.yam**l is required only when HTTPS is selected. For details on how to create a key, see  [Creating a Secret](creating-a-secret.md).  
-    >-   If there is already an HTTPS ingress for the chosen port on the load balancer, the certificate of the new HTTPS ingress must be the same as the certificate of the existing ingress.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   The key certificate  **ingress-test-secret.yam**l is required only when HTTPS is selected. For details on how to create a key, see  [Creating a Secret](creating-a-secret.md).
+    >-   If there is already an HTTPS ingress for the chosen port on the load balancer, the certificate of the new HTTPS ingress must be the same as the certificate of the existing ingress.
 
     **vi ingress-test-deployment.yaml**
 
@@ -613,8 +613,8 @@ The ECS where the kubectl client runs has been connected to your cluster. For de
     type: IngressTLS
     ```
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >In the preceding command output,  **tls.crt**  and  **tls.key**  are only examples. Replace them with the actual keys.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >In the preceding command output,  **tls.crt**  and  **tls.key**  are only examples. Replace them with the actual keys.
 
 3.  Create a workload.
 

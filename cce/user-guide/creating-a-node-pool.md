@@ -57,7 +57,7 @@ To create a node pool in a cluster, perform the following steps:
     <tr id="row15639412132615"><td class="cellrowborder" valign="top" width="20.02%" headers="mcps1.2.3.1.1 "><p id="p36391812172618"><a name="p36391812172618"></a><a name="p36391812172618"></a>* Specifications</p>
     </td>
     <td class="cellrowborder" valign="top" width="79.97999999999999%" headers="mcps1.2.3.1.2 "><p id="p16639712132616"><a name="p16639712132616"></a><a name="p16639712132616"></a>Select node specifications that best fit your business needs.</p>
-    <a name="ul2581647145016"></a><a name="ul2581647145016"></a><ul id="ul2581647145016"><li><strong id="b84381459326"><a name="b84381459326"></a><a name="b84381459326"></a>General-purpose</strong>: provides general computing, storage, and network configurations that can meet a majority of scenarios. General-purpose nodes can be used for web servers, workload development, workload testing, and small databases.</li><li><strong id="b0853353123213"><a name="b0853353123213"></a><a name="b0853353123213"></a>Memory-optimized</strong>: provides higher memory capacity than general-purpose nodes and is suitable for relational databases, NoSQL, and other workloads that are both memory-intensive and data-intensive.</li><li><strong id="b6795175616321"><a name="b6795175616321"></a><a name="b6795175616321"></a>GPU-accelerated</strong>: provides powerful floating-point computing and is suitable for real-time, highly concurrent massive computing. Graphical processing units (GPUs) of P series are suitable for deep learning, scientific computing, and CAE. GPUs of G series are suitable for 3D animation rendering and CAD. Currently, only clusters of v1.11 support GPU-accelerated nodes. If the cluster version is v1.13 or later, <strong id="b73914477914"><a name="b73914477914"></a><a name="b73914477914"></a>GPU-accelerated</strong> is not displayed on the page.</li><li><strong id="b1499814150333"><a name="b1499814150333"></a><a name="b1499814150333"></a>General computing-plus</strong>: provides stable performance and exclusive resources to enterprise-level workloads with high and stable computing performance.</li></ul>
+    <a name="ul2581647145016"></a><a name="ul2581647145016"></a><ul id="ul2581647145016"><li><strong id="b84381459326"><a name="b84381459326"></a><a name="b84381459326"></a>General-purpose</strong>: provides general computing, storage, and network configurations that can meet a majority of scenarios. General-purpose nodes can be used for web servers, workload development, workload testing, and small databases.</li><li><strong id="b0853353123213"><a name="b0853353123213"></a><a name="b0853353123213"></a>Memory-optimized</strong>: provides higher memory capacity than general-purpose nodes and is suitable for relational databases, NoSQL, and other workloads that are both memory-intensive and data-intensive.</li><li><strong id="b6795175616321"><a name="b6795175616321"></a><a name="b6795175616321"></a>GPU-accelerated</strong>: provides powerful floating-point computing and is suitable for real-time, highly concurrent massive computing. Graphical processing units (GPUs) of P series are suitable for deep learning, scientific computing, and CAE. GPUs of G series are suitable for 3D animation rendering and CAD.</li><li><strong id="b1499814150333"><a name="b1499814150333"></a><a name="b1499814150333"></a>General computing-plus</strong>: provides stable performance and exclusive resources to enterprise-level workloads with high and stable computing performance.</li></ul>
     <div class="notice" id="note1654116192613"><a name="note1654116192613"></a><a name="note1654116192613"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p165419642614"><a name="p165419642614"></a><a name="p165419642614"></a>To ensure node stability, the system automatically reserves some resources for running necessary system components. For details, see the <a href="formula-for-calculating-the-reserved-resources-of-a-node.md">formula for calculating reserved node resources</a>.</p>
     </div></div>
     </td>
@@ -102,38 +102,38 @@ To create a node pool in a cluster, perform the following steps:
 4.  **Advanced ECS Settings**  \(optional\): Click  ![](figures/icon-monitoring-1.png)  to show advanced ECS settings.
     -   **ECS Group**: Select an existing ECS group, or click  **Create ECS Group**  to create a new one. After the ECS group is created, click the refresh icon.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >An ECS group allows you to create ECSs on different hosts, thereby improving service reliability.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >An ECS group allows you to create ECSs on different hosts, thereby improving service reliability.
 
     -   **Resource Tags**: Resource tags can be added to classify resources.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >-   You can create predefined tags in Tag Management Service \(TMS\). Predefined tags are visible to all service resources that support the tagging function. You can use predefined tags to improve tag creation and migration efficiency. For details, see  [Creating Predefined Tags](https://docs.otc.t-systems.com/en-us/usermanual/tms/en-us_topic_0144368884.html).  
-        >-   CCE will automatically create the "CCE-Dynamic-Provisioning-Node=_node id_" tag.  
-        >-   A maximum of 20 tags can be added.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >-   You can create predefined tags in Tag Management Service \(TMS\). Predefined tags are visible to all service resources that support the tagging function. You can use predefined tags to improve tag creation and migration efficiency. For details, see  [Creating Predefined Tags](https://docs.otc.t-systems.com/en-us/usermanual/tms/en-us_topic_0144368884.html).
+        >-   CCE will automatically create the "CCE-Dynamic-Provisioning-Node=_node id_" tag.
+        >-   A maximum of 20 tags can be added.
 
     -   **Agency** **Name**: An agency is created by a tenant administrator on the IAM console. By creating an agency, you can share your cloud server resources with another account, or entrust a more professional person or team to manage your resources. . To authorize ECS or BMS to call cloud services, select  **Cloud service**  as the agency type, click  **Select**, and then select  **ECS BMS**.
     -   <a name="li484421635920"></a>**Pre-installation Script**: Enter the installation script.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >-   The script will be executed before Kubernetes software is installed. Note that if the script is incorrect, Kubernetes software may not be installed successfully. The script is usually used to format data disks.  
-        >-   Enter a maximum of 1,000 characters.  
-        >-   The script is written into nodes through  **command line insertion**. For details about the example scripts, see  [How Do I Format a Data Disk Using Command Line Injection?](how-do-i-format-a-data-disk-using-command-line-injection.md). For details on how to inject data, see  [Creating a VPC](https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0032380449.html).  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >-   The script will be executed before Kubernetes software is installed. Note that if the script is incorrect, Kubernetes software may not be installed successfully. The script is usually used to format data disks.
+        >-   Enter a maximum of 1,000 characters.
+        >-   The script is written into nodes through  **command line insertion**. For details about the example scripts, see  [How Do I Format a Data Disk Using Command Line Injection?](how-do-i-format-a-data-disk-using-command-line-injection.md). For details on how to inject data, see  [Creating a VPC](https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0032380449.html).
 
     -   **Post-installation Script**: Enter the installation script.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >-   The script will be executed after Kubernetes software is installed and will not affect the installation. The script is usually used to modify Docker parameters.  
-        >-   Enter a maximum of 1,000 characters.  
-        >-   The script is written into nodes through  **command line insertion**. For details about example scripts and how to inject data, see  [Pre-installation Script](#li484421635920).  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >-   The script will be executed after Kubernetes software is installed and will not affect the installation. The script is usually used to modify Docker parameters.
+        >-   Enter a maximum of 1,000 characters.
+        >-   The script is written into nodes through  **command line insertion**. For details about example scripts and how to inject data, see  [Pre-installation Script](#li484421635920).
 
     -   **Add Data Disk**: Click  **Add Data Disk**  to add a data disk and set the capacity of the data disk. To simplify disk formatting, you can enter the disk formatting command in the input box of  [Pre-installation Script](#li484421635920).
 
 5.  **Advanced Kubernetes Settings**  \(optional\): Click  ![](figures/icon-monitoring-2.png)  to show advanced Kubernetes settings.
     -   **Max Pods**: The maximum number of pods that can be created on a node, including the system's default pods. Value range: 16 to 250.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >This maximum limit prevents the node from being overloaded by managing too many pods.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >This maximum limit prevents the node from being overloaded by managing too many pods.
 
     -   **insecure-registries**: Click  **Add insecure-registry**  and enter the address of the image repository.
 
@@ -145,9 +145,9 @@ To create a node pool in a cluster, perform the following steps:
         -   **Value**: A value must start with a letter or digit and can contain a maximum of 63 characters, including letters, digits, hyphens \(-\), underscores \(\_\), and periods \(.\).
         -   **Effect**: Available options are  **NoSchedule**,  **PreferNoSchedule**, and  **NoExecute**.
 
-        >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
-        >-   If taints are used, you must configure tolerations in the YAML files of pods. Otherwise, scale-up may fail or pods cannot be scheduled onto the added nodes.  
-        >-   Taints cannot be modified after configuration. Incorrect taints may cause a scale-up failure or prevent pods from being scheduled onto the added nodes.  
+        >![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+        >-   If taints are used, you must configure tolerations in the YAML files of pods. Otherwise, scale-up may fail or pods cannot be scheduled onto the added nodes.
+        >-   Taints cannot be modified after configuration. Incorrect taints may cause a scale-up failure or prevent pods from being scheduled onto the added nodes.
 
     -   **K8S Labels**: Labels are key/value pairs that are attached to objects, such as pods. Labels are intended to be used to specify identifying attributes of objects that are meaningful and relevant to users, but do not directly imply semantics to the core system. For more information, see  [Labels and Selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/).
     -   **Maximum Data Space per Container**: The value ranges from 10 GB to 80 GB. If the value of this field is larger than the data disk space allocated to Docker, the latter will override the value specified here. Typically, 90% of the data disk space is allocated to Docker. This parameter is supported only in v1.13.10-r0 and later versions of clusters. It is not displayed in versions earlier than v1.13.10-r0.
@@ -162,9 +162,9 @@ To create a node pool in a cluster, perform the following steps:
 1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Node Pools**.
 2.  In the upper right corner of the node pool list, select a cluster. All node pools in the cluster will be displayed. You can view the node type, node specifications, autoscaler status, and OS of each node pool.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   A default node pool  **DefaultPool**  is automatically created in each cluster. The default node pool cannot be edited, deleted, or migrated. All nodes created during and after cluster creation are displayed in the default node pool.  
-    >-   To display a list of nodes in  **DefaultPool**, click the  **nodes**  subcard in the  **DefaultPool**  card.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   A default node pool  **DefaultPool**  is automatically created in each cluster. The default node pool cannot be edited, deleted, or migrated. All nodes created during and after cluster creation are displayed in the default node pool.
+    >-   To display a list of nodes in  **DefaultPool**, click the  **nodes**  subcard in the  **DefaultPool**  card.
 
 3.  To filter node pools by autoscaler status, select the autoscaler status in the upper right corner of the node pool list.
 4.  In the node pool list, click a node pool name. On the node pool details page, view the basic information, advanced ECS settings, advanced Kubernetes settings, and node list of the node pool.

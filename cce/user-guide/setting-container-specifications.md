@@ -2,9 +2,9 @@
 
 CCE allows you to set resource restrictions for added containers during workload creation. You can apply for and limit the CPU and memory used by each instance of the workload.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->-   After the  CPU quota  and  memory quota  are selected, select  **Apply**  to start the configuration. The system schedules the instance to the node that meets the requirements to deploy the workload based on the applied value. If you do not select  **Apply**, the system schedules the instance to a random node to deploy the workload. If you select  **Restrict**, the configuration is started and the resources used by the workload are restricted based on the configured value. If you do not select  **Restrict**, the resources used by the instance are not restricted. If the memory resources used by the instance exceed the memory allocated to the node, the workload or node may be unavailable.  
->-   When creating a workload, you are advised to set the upper and lower limits of CPU and memory resources. If the upper and lower resource limits are not set for a workload, a resource leak of this workload will make resources unavailable for other workloads deployed on the same node. In addition, workloads that do not have upper and lower resource limits cannot be accurately monitored.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>-   After the  CPU quota  and  memory quota  are selected, select  **Apply**  to start the configuration. The system schedules the instance to the node that meets the requirements to deploy the workload based on the applied value. If you do not select  **Apply**, the system schedules the instance to a random node to deploy the workload. If you select  **Restrict**, the configuration is started and the resources used by the workload are restricted based on the configured value. If you do not select  **Restrict**, the resources used by the instance are not restricted. If the memory resources used by the instance exceed the memory allocated to the node, the workload or node may be unavailable.
+>-   When creating a workload, you are advised to set the upper and lower limits of CPU and memory resources. If the upper and lower resource limits are not set for a workload, a resource leak of this workload will make resources unavailable for other workloads deployed on the same node. In addition, workloads that do not have upper and lower resource limits cannot be accurately monitored.
 
 -   CPU quotas:
 

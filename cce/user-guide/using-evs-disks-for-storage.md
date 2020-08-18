@@ -158,8 +158,8 @@ To meet data  persistency  requirements,  CCE  allows  EVS  disks to be mounted 
 
 CCE allows you to import existing EVS disks.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->An EVS disk can be imported to only one namespace. If an EVS disk has been imported into a namespace, it is invisible in other namespaces and cannot be imported again.  **If you want to import an EVS disk that has file system \(ext4\) formatted, ensure that no partition has been created for the disk. Otherwise, data may be lost.**  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>An EVS disk can be imported to only one namespace. If an EVS disk has been imported into a namespace, it is invisible in other namespaces and cannot be imported again.  **If you want to import an EVS disk that has file system \(ext4\) formatted, ensure that no partition has been created for the disk. Otherwise, data may be lost.**
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management **\>** Storage**. On the  **EVS**  tab page, click  **Import**.
 2.  Select one or more EVS disks that you want to attach and mount. Then, click  **OK**.
@@ -413,8 +413,8 @@ CCE allows you to use an existing EVS disk to create a PersistentVolume. After a
 
 5.  <a name="li13991152352"></a>\(Optional\) Add the associated  **metadata**  to the cluster to ensure that the EVS disk associated with the attached static PV is not deleted when the node or cluster is deleted.
 
-    >![](public_sys-resources/icon-caution.gif) **CAUTION:**   
-    >If  [5](#li13991152352)  is not performed in this circumstance or when a static PV or PVC is created, ensure that the EVS disk associated with the static PV is detached from the node before the node is deleted.  
+    >![](public_sys-resources/icon-caution.gif) **CAUTION:** 
+    >If  [5](#li13991152352)  is not performed in this circumstance or when a static PV or PVC is created, ensure that the EVS disk associated with the static PV is detached from the node before the node is deleted.
 
     1.  <a name="li6891526204113"></a>Obtain the user token. For details, see  [Obtaining a User Token](https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328003.html).
     2.  <a name="li17017349418"></a>Obtain the EVS access address \(EVS\_ENDPOINT\). For details, see  [Regions and Endpoints](https://docs.otc.t-systems.com/en-us/endpoint/index.html).
@@ -585,8 +585,8 @@ CCE allows you to use an existing EVS disk to create a PersistentVolume. After a
 
 After an EVS disk is created or imported to the CCE console, you can mount it in a workload.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->EVS disks cannot be mounted across AZs. Before mounting, you can run the  **kubectl get pvc**  command to query the available PVCs in the partition where the current cluster is located.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>EVS disks cannot be mounted across AZs. Before mounting, you can run the  **kubectl get pvc**  command to query the available PVCs in the partition where the current cluster is located.
 
 1.  Run the following commands to configure the  **evs-pod-example.yaml**  file, which is used to create a pod.
 

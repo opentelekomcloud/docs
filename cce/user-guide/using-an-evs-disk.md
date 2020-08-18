@@ -4,8 +4,8 @@ CCE connects to EVS disks through its own plug-in to support persistent storage.
 
 The following example shows how to define an EVS disk in a chart. When creating a workload from the chart, the  container  dynamically creates a 10 Gi EVS volume and mounts it to the container.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->Currently, CCE supports only dynamic creation of EVS volumes.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>Currently, CCE supports only dynamic creation of EVS volumes.
 
 ```
 apiVersion: apps/v1beta1

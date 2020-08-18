@@ -4,8 +4,8 @@ After a cluster is created, you can delete, hibernate, or wake up the cluster.
 
 ## Deleting a Cluster<a name="section186941617125315"></a>
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->Exercise caution when deleting a cluster because this operation will destroy the nodes in the cluster and running services.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>Exercise caution when deleting a cluster because this operation will destroy the nodes in the cluster and running services.
 
 This section takes VM clusters as an example. The procedure for BMS clusters is the same.
 
@@ -13,11 +13,11 @@ This section takes VM clusters as an example. The procedure for BMS clusters is 
 2.  Choose  **More \> Delete**.
 3.  The  **Delete Cluster**  dialog box then appears.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   Deleting the cluster will delete all nodes in the cluster and the running workloads and services.  
-    >-   The delete operation takes 1 to 3 minutes to complete.  
-    >-   Enter  **DELETE**  into the text box below to confirm that the delete operation will continue.  
-    >-   If a cluster whose status is Unavailable is deleted, some storage resources of the cluster may need to be manually deleted.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   Deleting the cluster will delete all nodes in the cluster and the running workloads and services.
+    >-   The delete operation takes 1 to 3 minutes to complete.
+    >-   Enter  **DELETE**  into the text box below to confirm that the delete operation will continue.
+    >-   If a cluster whose status is Unavailable is deleted, some storage resources of the cluster may need to be manually deleted.
 
     **Figure  1**  Deleting a cluster<a name="fig28752011924"></a>  
     ![](figures/deleting-a-cluster.png "deleting-a-cluster")

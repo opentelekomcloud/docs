@@ -5,8 +5,8 @@ You can prepare a chart using one of the following methods:
 -   [Customizing a Chart](#s84a75de063eb4fb29387e64d133b0da6)
 -   [Using a Kubernetes Official Chart](#s5f9699b10586401d81cfebd947cf416f)
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->If the created workload requires the  EVS disk  and  ELB  functions, you need to modify the chart. For details, see  [Using an EVS Disk](using-an-evs-disk.md)  and  [Using ELB](using-elb.md).  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>If the created workload requires the  EVS disk  and  ELB  functions, you need to modify the chart. For details, see  [Using an EVS Disk](using-an-evs-disk.md)  and  [Using ELB](using-elb.md).
 
 ## Customizing a Chart<a name="s84a75de063eb4fb29387e64d133b0da6"></a>
 
@@ -32,8 +32,8 @@ You can prepare a chart using one of the following methods:
 
         **\{version\}**  indicates the actual chart version.
 
-        >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
-        >The values of \{name\} and \{version\} must be the same as the values of name and version in the  **Chart.yaml**  file in the chart.  
+        >![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+        >The values of \{name\} and \{version\} must be the same as the values of name and version in the  **Chart.yaml**  file in the chart.
 
     -   If the Helm client is installed on the Linux host, run the following command:
 
@@ -51,12 +51,12 @@ This section uses the  Redis  workload as an example to illustrate the chart spe
 
     A chart is named in the format of  _Workload name-Main version number.Minor version number.Revision number.tgz_, for example,  **redis-0.4.2.tgz**,  **redis-0.4.2-beta.tgz**, and  **redis-0.4.2-alpha.1.tgz**.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >The version number of the chart must comply with the  [semantic versioning](https://semver.org/)  rules.  
-    >-   The main and minor version numbers are mandatory, and the revision number is optional.  
-    >-   The version number contains a maximum of 64 characters.  
-    >-   The values of the main and minor version numbers are integers. They must be ≥0 and ≤99.  
-    >-   The revision number consists of digits \(0-9\), uppercase letters \(A-Z\), lowercase letters \(a-z\), and hyphens \(-\).  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >The version number of the chart must comply with the  [semantic versioning](https://semver.org/)  rules.
+    >-   The main and minor version numbers are mandatory, and the revision number is optional.
+    >-   The version number contains a maximum of 64 characters.
+    >-   The values of the main and minor version numbers are integers. They must be ≥0 and ≤99.
+    >-   The revision number consists of digits \(0-9\), uppercase letters \(A-Z\), lowercase letters \(a-z\), and hyphens \(-\).
 
 -   **Directory Structure**
 

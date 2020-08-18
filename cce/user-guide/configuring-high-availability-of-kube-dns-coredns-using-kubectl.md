@@ -4,9 +4,9 @@ Use the Kubernetes command line tool \(kubectl\) to configure  high-availability
 
 kube-dns/CoreDNS provides the Domain Name Service \(DNS\) for clusters. It is advised to configure multiple kube-dns/CoreDNS for a cluster. If there is only one kube-dns/CoreDNS in a cluster, the entire cluster will not run properly once the kube-dns/CoreDNS is down.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->-   By default, CCE clusters of Kubernetes v1.11 and later versions have CoreDNS installed.  
->-   For more information about the DNS, see  [CoreDNS \(System Resource Add-on, Mandatory\)](coredns-(system-resource-add-on-mandatory).md)  or  [Using Kubernetes In-Cluster DNS](using-kubernetes-in-cluster-dns.md).  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>-   By default, CCE clusters of Kubernetes v1.11 and later versions have CoreDNS installed.
+>-   For more information about the DNS, see  [CoreDNS \(System Resource Add-on, Mandatory\)](coredns-(system-resource-add-on-mandatory).md)  or  [Using Kubernetes In-Cluster DNS](using-kubernetes-in-cluster-dns.md).
 
 This section takes VM clusters as an example. The operations for bare metal clusters are the same.
 

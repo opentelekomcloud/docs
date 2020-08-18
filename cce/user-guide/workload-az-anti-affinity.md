@@ -60,7 +60,7 @@ spec:
 2.  Click the name of the workload for which you will add a scheduling policy. On the workload details page, choose  **Scheduling Policies**  \>  **Add Simple Scheduling Policy**  \>  **Add Anti-affinity Object**.
 3.  Set  **Object Type**  to  **Availability Zone**  and select the AZ in which the workload is ineligible to be deployed. The workload will be constrained from being deployed in the selected AZ.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >This method can be used to add, edit, or delete scheduling policies.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >This method can be used to add, edit, or delete scheduling policies.
 
 

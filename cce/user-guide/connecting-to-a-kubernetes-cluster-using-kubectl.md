@@ -19,9 +19,9 @@ CCE allows you to access a cluster through a VPC network or a public network.
     **Figure  1**  Connecting to a Kubernetes cluster using kubectl<a name="fig984735623518"></a>  
     ![](figures/connecting-to-a-kubernetes-cluster-using-kubectl.png "connecting-to-a-kubernetes-cluster-using-kubectl")
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   CCE allows a master account and its member accounts to download the config file \(kubeconfig.json\) separately. The config file downloaded by the member account is valid only for 30 days, whereas the one downloaded by the master account is valid permanently.  
-    >-   The Kubernetes permissions of the config file downloaded by the member account are the same as those of the member account on the CCE console.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   CCE allows a master account and its member accounts to download the config file \(kubeconfig.json\) separately. The config file downloaded by the member account is valid only for 30 days, whereas the one downloaded by the master account is valid permanently.
+    >-   The Kubernetes permissions of the config file downloaded by the member account are the same as those of the member account on the CCE console.
 
 
 ## Related Operations<a name="section422912118536"></a>

@@ -18,8 +18,8 @@ data:
   SPECIAL_TYPE: CCE
 ```
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->When ConfigMap is used in a pod, the pod and ConfigMap must be in the same cluster and namespace.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>When ConfigMap is used in a pod, the pod and ConfigMap must be in the same cluster and namespace.
 
 ## Using a ConfigMap to Set Workload Environment Variables<a name="section1737733192813"></a>
 

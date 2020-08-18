@@ -13,7 +13,7 @@
 1.  Log in to the CCE console. In the navigation pane, choose  **Image Repository**, and click the name of the image repository that you want to delete. The image details page is displayed.
 2.  On the image details page, click  **Delete**  in the upper right to delete the image repository.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >Delete all images from the image repository before you delete the image repository.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >Delete all images from the image repository before you delete the image repository.
 
 

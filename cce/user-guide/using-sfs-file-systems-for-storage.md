@@ -321,8 +321,8 @@ CCE allows you to use the existing file storage to create a PersistentVolume. Af
         -   **storage**: file system size.
         -   **storageClassName**: read/write mode supported by the file system. Currently,  **nfs-rw**  and  **nfs-ro **are supported.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >The VPC to which the file system belongs must be the same as the VPC of the ECS VM to which the workload is planned.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >The VPC to which the file system belongs must be the same as the VPC of the ECS VM to which the workload is planned.
 
 4.  Create a PV.
 

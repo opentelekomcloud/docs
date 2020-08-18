@@ -14,9 +14,9 @@ To ensure system stability, you need to set the Docker Device Mapper to the dire
 
 CCE allows you to change the mode of the Device Mapper on VM nodes running on EulerOS.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->-   Changing the Docker Device Mapper mode on a node requires a data disk. Therefore, in the change process, the system automatically creates a 100 GB SATA disk and binds it to the node.  
->-   When the Docker Device Mapper mode on a node is changed to  **direct-lvm**, the container and image data on the node will be deleted. Therefore, you must back up the container and image data of the node to a private image repository or Docker Hub repository before changing the mode.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>-   Changing the Docker Device Mapper mode on a node requires a data disk. Therefore, in the change process, the system automatically creates a 100 GB SATA disk and binds it to the node.
+>-   When the Docker Device Mapper mode on a node is changed to  **direct-lvm**, the container and image data on the node will be deleted. Therefore, you must back up the container and image data of the node to a private image repository or Docker Hub repository before changing the mode.
 
 ## Procedure<a name="en-us_topic_0242566241_section1552313010166"></a>
 

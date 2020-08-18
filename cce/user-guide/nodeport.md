@@ -418,8 +418,8 @@ You have configured the kubectl and connected an ECS to the cluster. For details
 3.  Click  **Remote Login**. On the login page, enter the username and password.
 4.  Run the  **curl**  command to check whether access to the workload is successful.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >Like other NodePort services, an intra-VPC access service will be assigned a cluster-internal IP address. You can use <service's cluster-internal IP address\>:<access port\> to verify whether the workload is reachable from inside the cluster. By default, <access port\> in <service's cluster-internal IP address\>:<access port\> is the same as the container port \(for example, 80\).  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >Like other NodePort services, an intra-VPC access service will be assigned a cluster-internal IP address. You can use <service's cluster-internal IP address\>:<access port\> to verify whether the workload is reachable from inside the cluster. By default, <access port\> in <service's cluster-internal IP address\>:<access port\> is the same as the container port \(for example, 80\).
 
     **curl **_192.168.0.160:_30358
 
@@ -470,8 +470,8 @@ You can set the access type after creating a workload. This has no impact on the
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **Deployments**. On the workload list, click the name of the workload for which you will create a service.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >If the service is associated with an ingress, the ingress is unavailable after the port information of the service is updated. In this case, you need to delete and recreate the service.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >If the service is associated with an ingress, the ingress is unavailable after the port information of the service is updated. In this case, you need to delete and recreate the service.
 
 2.  On the  **Services**  tab page, click  **Create Service**.
 3.  On the  **Create Service**  page, select  **NodePort**  from the  **Access Type**  drop-down list.

@@ -6,7 +6,7 @@
     -   [Risky Operations on Cluster Nodes](risky-operations-on-cluster-nodes.md)
     -   [CCE Cluster Version Release Notes](cce-cluster-version-release-notes.md)
     -   [OS Patch Notes for Cluster Nodes](os-patch-notes-for-cluster-nodes.md)
-    -   [Security Vulnerability Responses](security-vulnerability-responses.md)
+    -   [Security Vulnerability Responses]
         -   [Notice on Fixing Linux Kernel SACK Vulnerabilities](notice-on-fixing-linux-kernel-sack-vulnerabilities.md)
 
 
@@ -62,7 +62,7 @@
 
 -   [Configuring Affinity and Anti-Affinity Scheduling]
     -   [Scheduling Policy Overview](scheduling-policy-overview.md)
-    -   [Simple Scheduling Policies]
+    -   [Simple Scheduling Policies](simple-scheduling-policies.md)
         -   [Workload-AZ Affinity](workload-az-affinity.md)
         -   [Workload-AZ Anti-Affinity](workload-az-anti-affinity.md)
         -   [Workload-Node Affinity](workload-node-affinity.md)

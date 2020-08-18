@@ -2,8 +2,8 @@
 
 CCE uses high-performance container network add-ons, which support the tunnel network and the VPC network models.
 
->![](public_sys-resources/icon-caution.gif) **CAUTION:**   
->After a cluster is created, the network model cannot be changed. Exercise caution when selecting a network model.  
+>![](public_sys-resources/icon-caution.gif) **CAUTION:** 
+>After a cluster is created, the network model cannot be changed. Exercise caution when selecting a network model.
 
 -   **Tunnel network**: The container network is an overlay tunnel network on top of a VPC network and uses the VXLAN technology. This network model is applicable when there is no high requirements on performance. VXLAN encapsulates Ethernet packets as UDP packets for tunnel transmission. Though at some cost of performance, the tunnel encapsulation enables higher interoperability and compatibility with advanced features \(such as network policy-based isolation\), meeting the requirements of most applications.
 
@@ -98,7 +98,7 @@ The following table lists the differences between the network models.
 </tbody>
 </table>
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->1.  The actual cluster scale is limited by the quota of custom routes of the VPC. Therefore, estimate the number of required nodes before creating a VPC.  
->2.  By default, the VPC network model supports direct communication between containers and hosts in the same VPC. If a peering connection policy is configured between the VPC and another VPC, the containers can directly communicate with hosts on the peer VPC. In addition, in hybrid networking scenarios such as cloud private line and VPN, communication between containers and hosts on the peer end can also be achieved with proper planning.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>1.  The actual cluster scale is limited by the quota of custom routes of the VPC. Therefore, estimate the number of required nodes before creating a VPC.
+>2.  By default, the VPC network model supports direct communication between containers and hosts in the same VPC. If a peering connection policy is configured between the VPC and another VPC, the containers can directly communicate with hosts on the peer VPC. In addition, in hybrid networking scenarios such as cloud private line and VPN, communication between containers and hosts on the peer end can also be achieved with proper planning.
 

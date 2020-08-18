@@ -21,8 +21,8 @@ This chapter describes how to obtain a long-term valid  **docker login**  comman
 
 2.  <a name="li1863783911295"></a>Obtain the Access Key ID/Secret Access Key \(AK/SK\).
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >If the AK/SK is available, you can directly use it.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >If the AK/SK is available, you can directly use it.
 
     1.  Log in to the management console.
     2.  Click the username and choose  **My Credential**  from the drop-down list.
@@ -33,15 +33,15 @@ This chapter describes how to obtain a long-term valid  **docker login**  comman
 
     4.  Enter the login password of the current user and verify the password by email or mobile phone.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >For the accounts created in Identity and Access Management \(IAM\), if no email address or mobile phone is filled during account creation, you only need to verify the login password.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >For the accounts created in Identity and Access Management \(IAM\), if no email address or mobile phone is filled during account creation, you only need to verify the login password.
 
     5.  Click  **OK**  to download an access key.
 
         Properly keep the downloaded key. You need to upload the key when creating a cluster. Otherwise, the cluster cannot be created.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >Keep the access key confidential to prevent information leakage.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >Keep the access key confidential to prevent information leakage.
 
 
 3.  <a name="li132430753010"></a>Log in to a Linux PC and run the following command to obtain the login key:

@@ -2,8 +2,8 @@
 
 This section describes how to use a group to grant permissions to an IAM user.  [Process Flow](#section41056841)  shows the process for granting permissions. By way of example, the CCE Viewer role will be granted to the user group Developers and the IAM user James will be added to the user group so that James will inherit the read-only access to CCE.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->CCE provides two default roles: CCE Admin and CCE Viewer. It is advisable to grant default roles rather than custom roles. Note that role and permissions policy are interchangeable in this chapter. Both represent a set of permissions.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>CCE provides two default roles: CCE Admin and CCE Viewer. It is advisable to grant default roles rather than custom roles. Note that role and permissions policy are interchangeable in this chapter. Both represent a set of permissions.
 
 ## Preparations<a name="section16601203895318"></a>
 

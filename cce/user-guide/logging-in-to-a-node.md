@@ -20,9 +20,9 @@ You can log in to an ECS in either of the following modes:
 
     This mode applies only to ECSs running Linux. Usually, you can use a remote login tool, such as PuTTY, XShell, and SecureCRT, to log in to your ECS. If none of the remote login tools can be used, log in to the ECS console and click  **Remote Login**  in the same row as the ECS to view the connection status and running status of the ECS.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   When you use the Windows OS to log in to a Linux node, set  **Auto-login username**  to linux.  
-    >-   The CCE console does not support node OS upgrade. Do not upgrade the node OS using YUM. Otherwise, the container network will be unavailable.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   When you use the Windows OS to log in to a Linux node, set  **Auto-login username**  to linux.
+    >-   The CCE console does not support node OS upgrade. Do not upgrade the node OS using YUM. Otherwise, the container network will be unavailable.
 
 
 **Table  1**  Linux ECS login modes

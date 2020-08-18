@@ -2,10 +2,10 @@
 
 After secrets are created, they can be mounted as  data volumes or be exposed as  environment variables to be used by a container in a pod.
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->The following secrets are used by the CCE system. Do not perform any operations on them.  
->-   Do not operate secrets under kube-system.  
->-   Do not operate default-secret and paas.elb in other namespaces. The default-secret is used to pull the private image of SWR, and the paas.elb is used to connect the service in the namespace to the ELB service.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>The following secrets are used by the CCE system. Do not perform any operations on them.
+>-   Do not operate secrets under kube-system.
+>-   Do not operate default-secret and paas.elb in other namespaces. The default-secret is used to pull the private image of SWR, and the paas.elb is used to connect the service in the namespace to the ELB service.
 
 -   [Configuring the Data Volume of a Pod](#section472505211214)
 -   [Setting Environment Variables of a Pod](#section207271352141216)
@@ -23,8 +23,8 @@ data:
   password: ******  #The value must be encoded using Base64.
 ```
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->When a secret is used in a pod, the pod and secret must be in the same cluster and namespace.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>When a secret is used in a pod, the pod and secret must be in the same cluster and namespace.
 
 ## Configuring the Data Volume of a Pod<a name="section472505211214"></a>
 

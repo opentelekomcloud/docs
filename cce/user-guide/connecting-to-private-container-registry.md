@@ -17,14 +17,14 @@ Before pushing container images, ensure that your local Docker client can access
 
 1.  <a name="l90ddb6fb28304a4c8c8b656192258be7"></a>Log in to the CCE console. In the navigation pane, choose  **Image Repository**. Click any image repository name to go to the details page. On the  **Pull/Push Guide**  tab page, obtain the image address from  **Step 1. Obtain the image repository address**.
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
-    >If you are uploading an image from an internal network, obtain the internal image address. If you are uploading an image from an external network, obtain the external image address.  
+    >![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+    >If you are uploading an image from an internal network, obtain the internal image address. If you are uploading an image from an external network, obtain the external image address.
 
 2.  Log in to your Docker client as the root user.
 3.  Authorize the Docker client to access the private container registry.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >Settings of Docker parameters vary with Docker version and OS. For more information on how to configure Docker parameters, visit  [https://docs.docker.com/datacenter/dtr/2.0/configure/config-security/](https://docs.docker.com/datacenter/dtr/2.0/configure/config-security/).  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >Settings of Docker parameters vary with Docker version and OS. For more information on how to configure Docker parameters, visit  [https://docs.docker.com/datacenter/dtr/2.0/configure/config-security/](https://docs.docker.com/datacenter/dtr/2.0/configure/config-security/).
 
     -   Ubuntu 14.04:
 

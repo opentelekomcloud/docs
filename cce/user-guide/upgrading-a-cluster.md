@@ -34,8 +34,8 @@ Before upgrading a cluster, make sure that the cluster is healthy.
 
     **kubectl get nodes**
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >All nodes must be in the Ready state.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >All nodes must be in the Ready state.
 
     ```
      NAME              STATUS    ROLES     AGE       VERSION
@@ -113,8 +113,8 @@ This section describes how to upgrade a VM cluster from v1.9.10-r2 to v1.11.7-r2
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management \> Clusters**. On the cluster list, view your cluster version. In this example, the cluster version is v1.9.10-r2.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >If your cluster version is up-to-date, the  **Upgrade**  button is unavailable.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >If your cluster version is up-to-date, the  **Upgrade**  button is unavailable.
 
 2.  Click  **More**  for the cluster you want to upgrade, and select  **Upgrade**  from the drop-down menu.
 3.  In the displayed  **Pre-upgrade Check**  dialog box, click  **Check Now**.

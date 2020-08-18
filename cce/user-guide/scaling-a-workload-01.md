@@ -99,8 +99,8 @@ You can view the rules, status, and events of the HPA policy and handle exceptio
 1.  Log in to the CCE console. In the navigation pane, choose  **Auto Scaling**. On the  **Workload Scaling**  tab page, click  ![](figures/icon-pull-down-5.png)  in front of the policy.
 2.  In the expanded area, you can view the  **Rules**,  **Status**, and  **Events**  tab pages. If the policy is abnormal, locate and rectify the fault based on the error information.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >You can also view the created HPA policy on the workload details page. On the CCE console, choose  **Workloads**  \>  **Deployments**  or  **Workloads**  \>  **StatefulSets**  in the navigation pane, and click  **More**  \>  **Scaling**  in the  **Operation**  column. On the page displayed, the HPA policy configured on the  **Auto Scaling**  page is also displayed under  **Auto Scaling by HPA**.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >You can also view the created HPA policy on the workload details page. On the CCE console, choose  **Workloads**  \>  **Deployments**  or  **Workloads**  \>  **StatefulSets**  in the navigation pane, and click  **More**  \>  **Scaling**  in the  **Operation**  column. On the page displayed, the HPA policy configured on the  **Auto Scaling**  page is also displayed under  **Auto Scaling by HPA**.
 
     **Table  2**  Event types and names
 

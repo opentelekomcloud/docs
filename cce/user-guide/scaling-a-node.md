@@ -91,7 +91,7 @@ You can view the associated node pool, rules, and scaling history of a node scal
 1.  Log in to the CCE console. In the navigation pane, choose  **Auto Scaling**. On the  **Node Scaling**  tab page, click  ![](figures/icon-monitoring-12.png)  in front of the policy to be viewed.
 2.  In the expanded area, the  **Associated Node Pool**,  **Execution Rules**, and  **Scaling Records**  tab pages are displayed. If the policy is abnormal, locate and rectify the fault based on the error information.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >You can also enable or disable auto scaling in  **Node Pool Management**. Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Node Pools**, and click  **Edit**  in the upper right corner of the node pool to be operated. In the  **Edit Node Pool**  dialog box displayed, you can enable  **Autoscaler**  and set the limits of the number of nodes and the cooling interval for auto scaling.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >You can also enable or disable auto scaling in  **Node Pool Management**. Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Node Pools**, and click  **Edit**  in the upper right corner of the node pool to be operated. In the  **Edit Node Pool**  dialog box displayed, you can enable  **Autoscaler**  and set the limits of the number of nodes and the cooling interval for auto scaling.
 
 

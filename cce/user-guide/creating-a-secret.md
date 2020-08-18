@@ -70,8 +70,8 @@ Cluster and node resources have been created. For more information, see  [Creati
 
 4.  <a name="li69121840101813"></a>Method 2: Create a secret based on the YAML file.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >To create a resource by uploading a file, ensure that the resource description file has been created. CCE supports files in JSON or YAML format. For more information, see  [Secret Resource File Configuration](#section187197531454).  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >To create a resource by uploading a file, ensure that the resource description file has been created. CCE supports files in JSON or YAML format. For more information, see  [Secret Resource File Configuration](#section187197531454).
 
     Click  **Create** **YAML **on the right of the page.
 
@@ -167,8 +167,8 @@ For example, you can retrieve the username and password for a workload through a
 
 After creating a configuration item, you can update or delete it as described in  [Table 2](#table555785274319).
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->The secret list contains system secret resources that can be queried only. The system secret resources cannot be updated or deleted.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>The secret list contains system secret resources that can be queried only. The system secret resources cannot be updated or deleted.
 
 **Table  2**  Related Operations
 

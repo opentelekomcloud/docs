@@ -60,7 +60,7 @@ spec:
 2.  Click the name of the workload for which you will add a scheduling policy. On the workload details page, choose  **Scheduling Policies**  \>  **Add Simple Scheduling Policy**  \>  **Add Affinity Object**.
 3.  Set  **Object Type**  to  **Node**  and select the node where the workload is to be deployed. The workload will be deployed on the selected node.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >This method can be used to add, edit, or delete scheduling policies.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >This method can be used to add, edit, or delete scheduling policies.
 
 

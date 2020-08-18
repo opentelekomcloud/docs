@@ -11,8 +11,8 @@ After you change a cloud server name or specifications on the CCE console, use t
 1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Nodes**.
 2.  In the same row as the node whose data will be synchronized, choose  **Operation**  \>  **More \> Sync Node Data**.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >Alternatively, click the node name, and click  **Sync Node Data**  in the upper right corner of the node details page.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >Alternatively, click the node name, and click  **Sync Node Data**  in the upper right corner of the node details page.
 
     **Figure  1**  Synchronizing node data<a name="fig983933294015"></a>  
     ![](figures/synchronizing-node-data.png "synchronizing-node-data")

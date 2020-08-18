@@ -17,7 +17,7 @@ Before accessing cluster resources through open-source Kubernetes APIs, obtain t
 
 3.  In the displayed  **Download X.509 Certificate**  dialog box, download the X.509 certificate of the cluster as prompted.
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
-    >The downloaded certificate contains three files:  **client.key**,  **client.crt**, and  **ca.crt**. Keep these files secure.  
+    >![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+    >The downloaded certificate contains three files:  **client.key**,  **client.crt**, and  **ca.crt**. Keep these files secure.
 
 

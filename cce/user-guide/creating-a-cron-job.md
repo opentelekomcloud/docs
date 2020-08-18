@@ -234,8 +234,8 @@ spec:
     cronjob "hello" deleted
     ```
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
-    >Deleting a cron job will not automatically delete its jobs. You can delete the jobs by running the  **kubectl delete job**  command.  
+    >![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+    >Deleting a cron job will not automatically delete its jobs. You can delete the jobs by running the  **kubectl delete job**  command.
 
 
 ## Related Operations<a name="s28175da725cf46d49a4cfca59155a5d2"></a>

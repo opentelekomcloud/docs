@@ -8,8 +8,8 @@ A container can be migrated between different hosts, but data is not stored on t
 
 Before creating a containerized workload, you must have an available cluster. For details on how to create a cluster, see  [Creating a Hybrid Cluster](creating-a-hybrid-cluster.md).
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->When creating multiple containerized workloads, ensure that each container has a unique port. Otherwise, workload creation will fail.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>When creating multiple containerized workloads, ensure that each container has a unique port. Otherwise, workload creation will fail.
 
 ## Using the CCE Console<a name="section16385130102112"></a>
 
@@ -19,8 +19,8 @@ Before creating a containerized workload, you must have an available cluster. Fo
     -   Use a shared image to create a workload. Specifically, other tenants share an image with you by using the SWR service.
     -   Use a YAML file to create a workload. You can click  **Create YAML**  on the right of the  **Create StatefulSet**  page. For details about YAML, see  [Using kubectl](#section113441881214). After the YAML file is written, click  **Create**  to create a workload.
 
-        >![](public_sys-resources/icon-note.gif) **NOTE:**   
-        >Settings in the YAML file are synchronized with settings on the console. You can also interact with the YAML to create a workload. For example, if you enter a workload name on the console, the name will automatically appear in the YAML file. Similarly, if you add an image on the console, the image will be automatically added to the YAML file.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >Settings in the YAML file are synchronized with settings on the console. You can also interact with the YAML to create a workload. For example, if you enter a workload name on the console, the name will automatically appear in the YAML file. Similarly, if you add an image on the console, the image will be automatically added to the YAML file.
 
 
 2.  Log in to the CCE console. In the navigation pane, choose  **Workloads**  \>  **StatefulSets**. On the displayed page, click  **Create StatefulSet**. Set basic workload parameters as described in  [Table 1](#table12741447488). The parameters marked with an asterisk \(\*\) are mandatory.
@@ -206,10 +206,10 @@ Before creating a containerized workload, you must have an available cluster. Fo
 
 7.  Click  **Create**  and then  **Back to StatefulSet List**.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >-   If the workload is in the  **Running**  state, it has been successfully created.  
-    >-   Workload status is not updated in real time. Click  ![](figures/icon-upgrade-4.png)  in the upper right corner or press  **F5**  to refresh the page.  
-    >-   If the workload list contains more than 500 records, the Kubernetes pagination mechanism will be used. Specifically, you can only go to the first page or the next page, but cannot go to the previous page. In addition, if resources are divided into discrete pages, the total number of resources displayed is the maximum number of resources that can be queried at a time, not the actual total number of resources.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   If the workload is in the  **Running**  state, it has been successfully created.
+    >-   Workload status is not updated in real time. Click  ![](figures/icon-upgrade-4.png)  in the upper right corner or press  **F5**  to refresh the page.
+    >-   If the workload list contains more than 500 records, the Kubernetes pagination mechanism will be used. Specifically, you can only go to the first page or the next page, but cannot go to the previous page. In addition, if resources are divided into discrete pages, the total number of resources displayed is the maximum number of resources that can be queried at a time, not the actual total number of resources.
 
 
 ## Using kubectl<a name="section113441881214"></a>

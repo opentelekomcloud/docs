@@ -31,10 +31,10 @@ A simple scheduling policy allows you to configure affinity between workloads an
 
 
 
->![](public_sys-resources/icon-notice.gif) **NOTICE:**   
->When setting workload-workload affinity and workload-node affinity, ensure that the affinity relationships do not contradict each other; otherwise, workload deployment will fail. For example, workload creation will fail for Workload3 when the following conditions are met:  
->-   Anti-affinity is configured for Workload1 and Workload2. Workload1 is deployed on Node A and Workload2 is deployed on Node B.  
->-   Affinity is configured between Workload2 and Workload3, but anti-affinity is configured between Workload3 and Node C.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>When setting workload-workload affinity and workload-node affinity, ensure that the affinity relationships do not contradict each other; otherwise, workload deployment will fail. For example, workload creation will fail for Workload3 when the following conditions are met:
+>-   Anti-affinity is configured for Workload1 and Workload2. Workload1 is deployed on Node A and Workload2 is deployed on Node B.
+>-   Affinity is configured between Workload2 and Workload3, but anti-affinity is configured between Workload3 and Node C.
 
 ## Custom Scheduling Policies<a name="section2169530191212"></a>
 
@@ -44,6 +44,6 @@ You can configure node affinity, workload affinity, and workload anti-affinity i
 -   [Workload Affinity](pod-affinity.md)
 -   [Workload Anti-Affinity](pod-anti-affinity.md)
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->Custom scheduling policies depend on node labels and pod labels. You can use default labels or customize labels as required.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>Custom scheduling policies depend on node labels and pod labels. You can use default labels or customize labels as required.
 

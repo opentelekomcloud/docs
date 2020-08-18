@@ -115,8 +115,8 @@ To prevent other pods from accessing the pods in namespace  **default**, perform
 
     After network isolation is enabled, pods in namespace  **default**  can access each other but they cannot be accessed by pods in other namespaces.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >After a network isolated namespace is whitelisted \(see  [Creating a Network Policy](network-policy.md#section19894131402011)\) network isolation may be broken down.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >After a network isolated namespace is whitelisted \(see  [Creating a Network Policy](network-policy.md#section19894131402011)\) network isolation may be broken down.
 
     **Figure  3**  Namespace-level network policy<a name="en-us_topic_0113320781_fig13427151918417"></a>  
     ![](figures/namespace-level-network-policy.png "namespace-level-network-policy")
@@ -126,8 +126,8 @@ To prevent other pods from accessing the pods in namespace  **default**, perform
 
 Namespace-level resource quotas limit the total numbers of resources that can be used when multiple teams or users share cluster resources. The quotas include the total number of a type of objects and the total amount of compute resources \(CPU and memory\) consumed by the objects.
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->This function is supported only when the cluster version is 1.9 or later.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>This function is supported only when the cluster version is 1.9 or later.
 
 1.  Log in to the CCE console. In the navigation pane, choose  **Resource Management**  \>  **Namespaces**.
 2.  In the  **Operation**  column of a namespace, click  **Manage Quota**.
@@ -145,9 +145,9 @@ Namespace-level resource quotas limit the total numbers of resources that can be
     -   **Pod**: maximum number of instances that can be created under the namespace.
     -   **Service**: maximum number of services that can be created under the namespace.
 
-    >![](public_sys-resources/icon-notice.gif) **NOTICE:**   
-    >-   After setting CPU and memory quotas for a namespace, you must specify the request and limit values of CPU and memory resources when creating a workload. Otherwise, the workload cannot be created. If the quota of a resource is set to  **0**, no limit is posed on the resource.  
-    >-   Accumulated quota usage includes the default resources created by CCE, such as the kubernetes service \(view this service using the kubectl tool\) created under the  **default**  namespace. Therefore, you are advised to set a resource quota greater than what you expect.  
+    >![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+    >-   After setting CPU and memory quotas for a namespace, you must specify the request and limit values of CPU and memory resources when creating a workload. Otherwise, the workload cannot be created. If the quota of a resource is set to  **0**, no limit is posed on the resource.
+    >-   Accumulated quota usage includes the default resources created by CCE, such as the kubernetes service \(view this service using the kubectl tool\) created under the  **default**  namespace. Therefore, you are advised to set a resource quota greater than what you expect.
 
 
 ## Deleting Namespaces<a name="section175251816125710"></a>

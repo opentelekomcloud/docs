@@ -68,8 +68,8 @@ If a user is granted permissions of multiple policies or of only one policy cont
 **Figure  2**  Authentication logic<a name="fig48552050"></a>  
 ![](figures/authentication-logic.png "authentication-logic")
 
->![](public_sys-resources/icon-note.gif) **NOTE:**   
->The actions in each policy bear the OR relationship.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>The actions in each policy bear the OR relationship.
 
 1.  A user accesses the system and makes an operation request.
 2.  The system evaluates all the permissions policies assigned to the user.

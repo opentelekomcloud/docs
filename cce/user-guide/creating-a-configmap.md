@@ -69,8 +69,8 @@ Cluster  and  node  resources have been created. For more information, see  [Cre
 
 4.  <a name="li2731182712159"></a>Method 2: Create a ConfigMap based on YAML.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:**   
-    >To create configuration items by uploading a file, ensure that the resource description file has been created. CCE supports files in JSON or yaml format. For more information, see  [ConfigMap Requirements for ConfigMap](#section66903416102).  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >To create configuration items by uploading a file, ensure that the resource description file has been created. CCE supports files in JSON or yaml format. For more information, see  [ConfigMap Requirements for ConfigMap](#section66903416102).
 
     Click  **Create** **YAML **on the right of the page.
 
