@@ -2,7 +2,7 @@
 
 ## Question<a name="section15767494"></a>
 
-When configuring event notification on OBS, the user is prompted by the message "OBS is not authorized to use this topic. Go to SMN to authorize OBS to use this topic." Subsequently, the configuration fails. Subsequently, the configuration fails.
+When configuring event notification on OBS, the user is prompted by the message "OBS is not authorized to use this topic. Go to SMN to authorize OBS to use this topic." Subsequently, the configuration fails.
 
 ## Answer<a name="section7689721"></a>
 

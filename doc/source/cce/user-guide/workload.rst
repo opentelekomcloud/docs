@@ -8,6 +8,7 @@ Workload
    overview.md
    creating-a-deployment.md
    creating-a-statefulset.md
+   creating-a-daemonset.md
    creating-a-job.md
    creating-a-cron-job.md
    managing-a-deployment.md

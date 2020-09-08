@@ -10,5 +10,6 @@ DCS User Guide
    introduction
    getting_started
    operation_guide
+   monitoring
    faqs
    glossary.md

@@ -12,7 +12,7 @@ Public cloud APIs use HTTPS as the transmission protocol. Requests/Responses are
 
     -   Self-owned certificate uploaded during cluster creation. For details, see  [Creating a VM Cluster](https://docs.otc.t-systems.com/en-us/usermanual2/cce/cce_01_0028.html).
 
-        ![](figures/ca-root-cerficate.png)
+        ![](figures/creating-a-vm-cluster.png)
 
     -   Cluster certificate generated and downloaded after cluster creation. For details, see  [Obtaining a Cluster Certificate](https://docs.otc.t-systems.com/en-us/usermanual2/cce/cce_01_0175.html).
 

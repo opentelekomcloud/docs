@@ -4,7 +4,7 @@ The object uniform resource locator \(URL\) \(object sharing\) function allows a
 
 ## Prerequisites<a name="s4ecf44968672497286abe0738d6b2171"></a>
 
-An anonymous user has been assigned with the permission to read the specified object. For details, see  [Configuring Object ACL](configuring-object-acl.md).
+An anonymous user has been assigned with the permission to read the specified object. For details, see [Authorizing Access Permissions to Anonymous Users](authorizing-access-permissions-to-anonymous-users.md).
 
 ## Procedure<a name="sd8bcdd98f0554dc48154e4f9625aa3c7"></a>
 

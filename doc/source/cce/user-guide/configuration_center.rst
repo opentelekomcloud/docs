@@ -11,5 +11,3 @@ Configuration Center
    using-a-configmap.md
    creating-a-secret.md
    using-a-secret.md
-
-

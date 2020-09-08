@@ -11,6 +11,7 @@ Node Management
    deleting-a-node.md
    stopping-a-node.md
    synchronizing-node-data.md
+   resetting-a-node.md
    managing-node-labels.md
    monitoring-a-node.md
    formula-for-calculating-the-reserved-resources-of-a-node.md

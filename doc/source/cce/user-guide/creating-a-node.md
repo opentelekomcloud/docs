@@ -4,7 +4,7 @@ A  node  is a virtual or physical machine that provides computing resources. Suf
 
 ## Prerequisites<a name="section103205496263"></a>
 
--   At least one cluster is available. For details on how to create a cluster, see  [Creating a VM Cluster](creating-a-vm-cluster.md).
+-   At least one cluster is available. For details on how to create a cluster, see  [Creating a Hybrid Cluster](creating-a-hybrid-cluster.md).
 -   A key pair has been created. The key pair will be used for identity authentication upon remote node login. For details, see  [Creating a Key Pair](https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0014250631.html).
 
 ## Precautions for Using a Node<a name="section1230051055915"></a>
@@ -94,7 +94,7 @@ To ensure node stability, CCE cluster nodes reserve some resources for Kubernete
 
         The script will be executed after Kubernetes software is installed and will not affect the installation. The script is usually used to modify Docker parameters.
 
-    -   **Add Data Disk**: Click  **Add Data Disk**  to add a data disk and set the capacity of the data disk. To simplify disk formatting, you can enter the disk formatting command in the input box of  **Pre-installation Script**. For details, see  [How Do I Add a Second Data Disk to a CCE Node?](how-do-i-add-a-second-data-disk-to-a-cce-node.md).
+    -   **Add Data Disk**: Click  **Add Data Disk**  to add a data disk and set the capacity of the data disk. To simplify disk formatting, you can enter the disk formatting command in the input box of  **Pre-installation Script**. For details, see [How Do I Add a Second Data Disk to a Node in a CCE Cluster?](how-do-i-add-a-second-data-disk-to-a-node-in-a-cce-cluster.md).
     -   **Subnet IP Address**: Select  **Automatically assign IP address**  \(recommended\) or  **Manually assigning IP addresses**.
 
 8.  **Advanced Kubernetes Settings**  \(optional\): Click  ![](figures/icon-monitoring.png)  to show advanced Kubernetes settings.

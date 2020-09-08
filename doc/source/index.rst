@@ -2,8 +2,6 @@
 OTC HelpCenter 2.0
 ==================
 
-OTC is cool and has following services:
-
 .. toctree::
    :maxdepth: 1
 
@@ -43,6 +41,7 @@ OTC is cool and has following services:
    tms/index
    vbs/index
    vpc/index
+   vpcep/index
    vpn/index
    waf/index
-   
+

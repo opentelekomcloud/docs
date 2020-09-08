@@ -10,3 +10,4 @@ Storage Management
    using-local-disks-for-storage.md
    using-evs-disks-for-storage.md
    using-sfs-file-systems-for-storage.md
+   snapshot-and-backup.md

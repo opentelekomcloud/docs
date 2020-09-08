@@ -7,6 +7,7 @@ User Guide
 
 
    what-is-cloud-container-engine.md
+   instruction
    product_bulletin
    cluster_management
    node_management
@@ -16,7 +17,9 @@ User Guide
    configuring_affinity_and_anti_affinity_scheduling
    network_management
    storage_management
-   template_market
+   charts
+   addons
+   auto-scaling
    plug_in_management
    permissions_management
    configuration_center

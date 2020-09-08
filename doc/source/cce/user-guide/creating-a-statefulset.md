@@ -6,7 +6,7 @@ A container can be migrated between different hosts, but data is not stored on t
 
 ## Prerequisites<a name="section1734962819219"></a>
 
-Before creating a containerized workload, you must have an available cluster. For details on how to create a cluster, see  [Creating a VM Cluster](creating-a-vm-cluster.md).
+Before creating a containerized workload, you must have an available cluster. For details on how to create a cluster, see  [Creating a Hybrid Cluster](creating-a-hybrid-cluster.md).
 
 >![](/images/icon-note.gif) **NOTE:**   
 >When creating multiple containerized workloads, ensure that each container has a unique port. Otherwise, workload creation will fail.  

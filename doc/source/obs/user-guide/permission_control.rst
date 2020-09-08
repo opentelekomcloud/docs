@@ -24,8 +24,8 @@ Permission Control Mechanisms
 
 
    iam-policies.md
-   bucket-policy-and-object-policy.md
-   bucket-acl-and-object-acl.md
+   bucket-policies-and-object-policies.md
+   bucket-acls-and-object-acls.md
    relationship-between-a-bucket-acl-and-a-bucket-policy.md
    how-does-authorization-work-when-multiple-access-control-mechanisms-co-exist.md
 
@@ -97,7 +97,7 @@ Configuring Object ACL
 .. toctree::
    :maxdepth: 1
 
-   configuring-object-acl.md
+   configuring-an-object-acl.md
 
 
 Application Cases
@@ -107,8 +107,8 @@ Application Cases
 .. toctree::
    :maxdepth: 1
 
-   bucket-owner-authorizing-bucket-permissions-to-iam-users.md
-   bucket-owner-authorizing-bucket-permissions-to-other-accounts.md
+   granting-an-iam-user-with-the-operation-permissions-for-a-specified-bucket.md
+   granting-other-accounts-with-the-operation-permissions-for-a-specified-bucket.md
    restricting-bucket-access-to-a-specified-address.md
    configuring-the-start-time-and-end-time-of-access-to-objects-in-a-bucket.md
    authorizing-access-permissions-to-anonymous-users.md

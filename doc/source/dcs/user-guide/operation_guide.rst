@@ -12,7 +12,7 @@ Operation Guide
    stopping-dcs-instances.md
    restarting-dcs-instances.md
    deleting-dcs-instances.md
-   modifying-dcs-instance-specification.md
+   modifying-dcs-instance-specifications.md
    changing-instance-passwords.md
    modifying-an-instance-s-maintenance-time-window.md
    modifying-an-instance-s-security-group.md

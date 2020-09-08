@@ -1,23 +1,23 @@
 # Access Keys \(AK/SK\)<a name="obs_03_0208"></a>
 
-OBS supports AK/SK authentication. The access key ID \(AK\)/secret access key \(SK\) encryption method is used to authenticate a request sender. When you use OBS API for secondary development and use the AK/SK for authentication, the signature must be computed based on the algorithm defined by OBS and added to the request.
+OBS supports AK/SK authentication. The AK/SK encryption method is used to authenticate a request sender. When you use OBS APIs for secondary development and use the AK and SK for authentication, the signature must be computed based on the algorithm defined by OBS and added to the request.
 
 OBS supports authentication using a permanent AK/SK pair, or using a temporary AK/SK pair and a security token.
 
 **Permanent AK/SK Pair**
 
-You can create permanent AK/SK pair on the  **My Credentials**  page.
+You can create a pair of permanent AK and SK on the  **My Credentials**  page.
 
 -   Access key ID \(AK\): indicates the ID of the access key. It is the unique ID associated with the SK. The AK and SK are used together to obtain an encrypted signature for a request.
--   Secret access key \(SK\): indicates the key used together with its associated private AK to cryptographically sign requests. The AK and SK are used together to identify a request sender to prevent the request from being modified.
+-   Secret access key \(SK\): indicates the private key used together with its associated AK to cryptographically sign requests. The AK and SK are used together to identify a request sender to prevent the request from being modified.
 
 **Temporary AK/SK Pair**
 
-A temporary AK/SK pair and the security token are temporary access tokens granted by the system to users. The validity period of the tokens ranges from 15 minutes to 24 hours. After the tokens expire, you need to obtain the tokens again. A temporary AK/SK pair and the security token comply with the least privilege principle and can only be used to temporarily access OBS. A 403 error will be returned if the security token is not available.
+Temporary AK/SK and security token are temporary access tokens issued by the system to users. The validity period is between 15 minutes and 24 hours. Temporary AK/SK and security token comply with the least privilege principle and can be used to access OBS temporarily. Error code 403 is returned if an access request does not have the security token.
 
--   Temporary access key ID \(AK\): ID of a temporary access key. It is a unique ID associated with the SK. The AK and SK are used together to obtain an encrypted signature for a request.
--   Temporary secret access key \(SK\): indicates the temporary key used together with its associated temporary AK. The AK and SK are used together to identify a request sender to prevent the request from being modified.
--   Security token: indicates the token used together with private temporary AK/SK to access all resources of a specified account.
+-   Temporary AK: indicates the ID of a temporary access key. It is the unique ID associated with the SK. The AK and SK are used together to obtain an encrypted signature for a request.
+-   Temporary SK: indicates the temporary private key used together with its associated temporary AK. The AK and SK are used together to identify a request sender to prevent the request from being modified.
+-   Security token: indicates the token used together with the temporary AK and SK to access all resources of a specified account.
 
 When using the following tools to access OBS resources, you need to use the AK/SK pair for security authentication.
 
@@ -42,7 +42,7 @@ When using the following tools to access OBS resources, you need to use the AK/S
 </tr>
 <tr id="row1152810445492"><td class="cellrowborder" valign="top" width="23.48%" headers="mcps1.2.3.1.1 "><p id="p13528174418494"><a name="p13528174418494"></a><a name="p13528174418494"></a>API</p>
 </td>
-<td class="cellrowborder" valign="top" width="76.52%" headers="mcps1.2.3.1.2 "><p id="p20251647144417"><a name="p20251647144417"></a><a name="p20251647144417"></a>Add the AK/SK pair to the request during signature calculation.</p>
+<td class="cellrowborder" valign="top" width="76.52%" headers="mcps1.2.3.1.2 "><p id="p20251647144417"><a name="p20251647144417"></a><a name="p20251647144417"></a>Add the AK/SK pair to the request when computing the signature.</p>
 </td>
 </tr>
 </tbody>

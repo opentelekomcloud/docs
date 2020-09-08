@@ -104,8 +104,8 @@
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="abd602d887dce4a4990f06aa60d0f997e"><a name="abd602d887dce4a4990f06aa60d0f997e"></a><a name="abd602d887dce4a4990f06aa60d0f997e"></a>See Other</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="aeb26543a4323463797470f6247ba1fdf"><a name="aeb26543a4323463797470f6247ba1fdf"></a><a name="aeb26543a4323463797470f6247ba1fdf"></a>The response to the request can be found under a different URI, </p>
-<p id="a0ce12a0e2af14701a2de80c10aad904f"><a name="a0ce12a0e2af14701a2de80c10aad904f"></a><a name="a0ce12a0e2af14701a2de80c10aad904f"></a>and should be retrieved using a GET or POST method.</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="aeb26543a4323463797470f6247ba1fdf"><a name="aeb26543a4323463797470f6247ba1fdf"></a><a name="aeb26543a4323463797470f6247ba1fdf"></a>The response to the request can be found under a different URI.</p>
+<p id="a0ce12a0e2af14701a2de80c10aad904f"><a name="a0ce12a0e2af14701a2de80c10aad904f"></a><a name="a0ce12a0e2af14701a2de80c10aad904f"></a>It can be retrieved by using a GET or POST method.</p>
 </td>
 </tr>
 <tr id="ra74f835800194b3faeaad6e2df746390"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="adb7c51516aa14cec90f216381fe68416"><a name="adb7c51516aa14cec90f216381fe68416"></a><a name="adb7c51516aa14cec90f216381fe68416"></a>304</p>

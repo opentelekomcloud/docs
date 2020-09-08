@@ -4,7 +4,7 @@ You can configure a bucket policy to authorize a specified address the permissio
 
 ## Procedure<a name="section17557163019204"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Permissions**  to go to the permission management page.
 3.  Choose  **Bucket Policies**  \>  **Custom Bucket Policies**.
 4.  Click  **Create Bucket Policy**. The  **Create Bucket Policy**  dialog box is displayed.
@@ -46,7 +46,7 @@ You can configure a bucket policy to authorize a specified address the permissio
     </tr>
     <tr id="row3328954204119"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p2329115416419"><a name="p2329115416419"></a><a name="p2329115416419"></a>Conditions</p>
     </td>
-    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><a name="ul4774185114612"></a><a name="ul4774185114612"></a><ul id="ul4774185114612"><li>Conditional Operator: <strong id="b10912524131710"><a name="b10912524131710"></a><a name="b10912524131710"></a>IpAddress</strong></li><li>Key: <strong id="b194301328111717"><a name="b194301328111717"></a><a name="b194301328111717"></a>SourceIP</strong></li><li>Value: <strong id="b158527333177"><a name="b158527333177"></a><a name="b158527333177"></a>114.115.1.0/24</strong></li></ul>
+    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><a name="ul4774185114612"></a><a name="ul4774185114612"></a><ul id="ul4774185114612"><li><strong id="b19177641123119"><a name="b19177641123119"></a><a name="b19177641123119"></a>Conditional Operator</strong>: <strong id="b10912524131710"><a name="b10912524131710"></a><a name="b10912524131710"></a>IpAddress</strong></li><li><strong id="b3248124318315"><a name="b3248124318315"></a><a name="b3248124318315"></a>Key</strong>: <strong id="b194301328111717"><a name="b194301328111717"></a><a name="b194301328111717"></a>SourceIP</strong></li><li><strong id="b1912124816313"><a name="b1912124816313"></a><a name="b1912124816313"></a>Value</strong>: <strong id="b158527333177"><a name="b158527333177"></a><a name="b158527333177"></a>114.115.1.0/24</strong></li></ul>
     </td>
     </tr>
     </tbody>

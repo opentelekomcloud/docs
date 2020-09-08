@@ -22,6 +22,8 @@ Anti-DDoS APIs
     querying-all-api-versions.md
     querying-a-specified-api-version.md
     querying-alarm-configuration.md
+    querying-the-default-protection-policy-configured-for-the-newly-purchased-public-ip-addresses.md
+    configuring-the-default-protection-policy-for-newly-purchased-public-ip-addresses.md
 
 Appendix
 ========

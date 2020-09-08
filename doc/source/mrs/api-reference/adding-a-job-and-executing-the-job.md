@@ -56,7 +56,7 @@ This API is used to add a job to an MRS cluster and execute the job. This API is
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p346461129313"><a name="p346461129313"></a><a name="p346461129313"></a>Integer</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p32476122205057"><a name="p32476122205057"></a><a name="p32476122205057"></a>Job type code</p>
-<a name="ul5947149515590"></a><a name="ul5947149515590"></a><ul id="ul5947149515590"><li>1: MapReduce</li><li>2: Spark</li><li>3: Hive Script</li><li>4: HiveQL (not supported currently)</li><li>5: DistCp, importing and exporting data. For details, see <a href="#table3863810010324">Table 3</a>.</li><li>6: Spark Script</li><li>7: Spark SQL, submitting Spark SQL statements. For details, see <a href="#table63617887103233">Table 4</a>. (not supported in this API currently)<div class="note" id="note4514581911127"><a name="note4514581911127"></a><a name="note4514581911127"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p365918811127"><a name="p365918811127"></a><a name="p365918811127"></a>Spark and Hive jobs can be added to only clusters that include Spark and Hive components.</p>
+<a name="ul5947149515590"></a><a name="ul5947149515590"></a><ul id="ul5947149515590"><li>1: MapReduce</li><li>2: Spark</li><li>3: Hive Script</li><li>4: HiveQL (not supported currently)</li><li>5: DistCp, importing and exporting data. For details, see <a href="#table3863810010324">Table 3</a>.</li><li>6: Spark Script</li><li>7: Spark SQL, submitting Spark SQL statements. For details, see <a href="#table63617887103233">Table 4</a>. (Not supported in this API currently.)<div class="note" id="note4514581911127"><a name="note4514581911127"></a><a name="note4514581911127"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p365918811127"><a name="p365918811127"></a><a name="p365918811127"></a>Spark and Hive jobs can be added to only clusters that include Spark and Hive components.</p>
 </div></div>
 </li></ul>
 </td>
@@ -90,7 +90,7 @@ This API is used to add a job to an MRS cluster and execute the job. This API is
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p1712419591545"><a name="p1712419591545"></a><a name="p1712419591545"></a>Path of the JAR or SQL file for program execution</p>
 <p id="p201991940546"><a name="p201991940546"></a><a name="p201991940546"></a>The parameter must meet the following requirements:</p>
-<a name="ul28108739105445"></a><a name="ul28108739105445"></a><ul id="ul28108739105445"><li>Contains a maximum of 1023 characters, excluding special characters such as ;|&amp;&gt;&lt;'$. The address cannot be empty or full of spaces.</li><li>Starts with <span class="parmvalue" id="parmvalue1813934163"><a name="parmvalue1813934163"></a><a name="parmvalue1813934163"></a><b>/</b></span> or <span class="parmvalue" id="parmvalue13130347617"><a name="parmvalue13130347617"></a><a name="parmvalue13130347617"></a><b>s3a://</b></span>. The OBS path does not support files or programs encrypted by KMS.</li><li>Spark Script must end with <span class="parmvalue" id="parmvalue17976426105445"><a name="parmvalue17976426105445"></a><a name="parmvalue17976426105445"></a><b>.sql</b></span> while MapReduce and Spark Jar must end with <span class="parmvalue" id="parmvalue27570107105445"><a name="parmvalue27570107105445"></a><a name="parmvalue27570107105445"></a><b>.jar</b></span>.<strong id="b13627621162918"><a name="b13627621162918"></a><a name="b13627621162918"></a>sql</strong> and <strong id="b848112303292"><a name="b848112303292"></a><a name="b848112303292"></a>jar</strong> are case-insensitive.</li></ul>
+<a name="ul28108739105445"></a><a name="ul28108739105445"></a><ul id="ul28108739105445"><li>Contains a maximum of 1,023 characters, excluding special characters such as ;|&amp;&gt;&lt;'$. The address cannot be empty or full of spaces.</li><li>Starts with <span class="parmvalue" id="parmvalue23067895105445"><a name="parmvalue23067895105445"></a><a name="parmvalue23067895105445"></a><b>/</b></span> or <span class="parmvalue" id="parmvalue40538276151713"><a name="parmvalue40538276151713"></a><a name="parmvalue40538276151713"></a><b>s3a://</b></span>. The OBS path does not support files or programs encrypted by KMS.</li><li>Spark Script must end with <span class="parmvalue" id="parmvalue17976426105445"><a name="parmvalue17976426105445"></a><a name="parmvalue17976426105445"></a><b>.sql</b></span> while MapReduce and Spark Jar must end with <span class="parmvalue" id="parmvalue27570107105445"><a name="parmvalue27570107105445"></a><a name="parmvalue27570107105445"></a><b>.jar</b></span>.<strong id="b13627621162918"><a name="b13627621162918"></a><a name="b13627621162918"></a>sql</strong> and <strong id="b848112303292"><a name="b848112303292"></a><a name="b848112303292"></a>jar</strong> are case-insensitive.</li></ul>
 </td>
 </tr>
 <tr id="row4788257010284"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p881779095210"><a name="p881779095210"></a><a name="p881779095210"></a>arguments</p>
@@ -100,7 +100,7 @@ This API is used to add a job to an MRS cluster and execute the job. This API is
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p412027909313"><a name="p412027909313"></a><a name="p412027909313"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p568404895210"><a name="p568404895210"></a><a name="p568404895210"></a>Key parameter for program execution. The parameter is specified by the function of the user's program. MRS is only responsible for loading the parameter.</p>
-<p id="p5115643295210"><a name="p5115643295210"></a><a name="p5115643295210"></a>The parameter contains a maximum of 2047 characters, excluding special characters such as ;|&amp;&gt;'&lt;$, and can be left blank.</p>
+<p id="p5115643295210"><a name="p5115643295210"></a><a name="p5115643295210"></a>The parameter contains a maximum of 2,047 characters, excluding special characters such as ;|&amp;&gt;'&lt;$, and can be left blank.</p>
 <div class="note" id="note62371709174814"><a name="note62371709174814"></a><a name="note62371709174814"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p20521095174814"><a name="p20521095174814"></a><a name="p20521095174814"></a>When entering a parameter containing sensitive information (for example, login password), you can add an at sign (@) before the parameter name to encrypt the parameter value. This prevents the sensitive information from being persisted in plaintext. Therefore, when you view job information on the MRS, sensitive information will be displayed as asterisks (*).</p>
 <p id="p1265001117571"><a name="p1265001117571"></a><a name="p1265001117571"></a>For example, username=admin @password=admin_123.</p>
 </div></div>
@@ -112,8 +112,8 @@ This API is used to add a job to an MRS cluster and execute the job. This API is
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p490916929313"><a name="p490916929313"></a><a name="p490916929313"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p3993064895210"><a name="p3993064895210"></a><a name="p3993064895210"></a>Path for inputting data, which must start with <span class="parmvalue" id="parmvalue178840111121"><a name="parmvalue178840111121"></a><a name="parmvalue178840111121"></a><b>/</b></span> or <span class="parmvalue" id="parmvalue888551101218"><a name="parmvalue888551101218"></a><a name="parmvalue888551101218"></a><b>s3a://</b></span>. Set this parameter to a correct OBS path. The OBS path does not support files or programs encrypted by KMS.</p>
-<p id="p5908955195210"><a name="p5908955195210"></a><a name="p5908955195210"></a>The parameter contains a maximum of 1023 characters, excluding special characters such as ;|&amp;&gt;'&lt;$, and can be left blank.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p3993064895210"><a name="p3993064895210"></a><a name="p3993064895210"></a>Path for inputting data, which must start with <span class="parmvalue" id="parmvalue2383151795210"><a name="parmvalue2383151795210"></a><a name="parmvalue2383151795210"></a><b>/</b></span> or <span class="parmvalue" id="parmvalue3949817415173"><a name="parmvalue3949817415173"></a><a name="parmvalue3949817415173"></a><b>s3a://</b></span>. Set this parameter to a correct OBS path. The OBS path does not support files or programs encrypted by KMS.</p>
+<p id="p5908955195210"><a name="p5908955195210"></a><a name="p5908955195210"></a>The parameter contains a maximum of 1,023 characters, excluding special characters such as ;|&amp;&gt;'&lt;$, and can be left blank.</p>
 </td>
 </tr>
 <tr id="row4446769920575"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p2252515695210"><a name="p2252515695210"></a><a name="p2252515695210"></a>output</p>
@@ -122,8 +122,8 @@ This API is used to add a job to an MRS cluster and execute the job. This API is
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p170040869313"><a name="p170040869313"></a><a name="p170040869313"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p1383379395210"><a name="p1383379395210"></a><a name="p1383379395210"></a>Path for outputting data, which must start with <span class="parmvalue" id="parmvalue14409181161310"><a name="parmvalue14409181161310"></a><a name="parmvalue14409181161310"></a><b>/</b></span> or <span class="parmvalue" id="parmvalue04101911161318"><a name="parmvalue04101911161318"></a><a name="parmvalue04101911161318"></a><b>s3a://</b></span>. A correct OBS path is required. If the path does not exist, the system automatically creates it.</p>
-<p id="p3233760195210"><a name="p3233760195210"></a><a name="p3233760195210"></a>The parameter contains a maximum of 1023 characters, excluding special characters such as ;|&amp;&gt;'&lt;$, and can be left blank.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p1383379395210"><a name="p1383379395210"></a><a name="p1383379395210"></a>Path for outputting data, which must start with <span class="parmvalue" id="parmvalue5739528195210"><a name="parmvalue5739528195210"></a><a name="parmvalue5739528195210"></a><b>/</b></span> or <span class="parmvalue" id="parmvalue41271685151651"><a name="parmvalue41271685151651"></a><a name="parmvalue41271685151651"></a><b>s3a://</b></span>. A correct OBS path is required. If the path does not exist, the system automatically creates it.</p>
+<p id="p3233760195210"><a name="p3233760195210"></a><a name="p3233760195210"></a>The parameter contains a maximum of 1,023 characters, excluding special characters such as ;|&amp;&gt;'&lt;$, and can be left blank.</p>
 </td>
 </tr>
 <tr id="row3637816111569"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p654800595210"><a name="p654800595210"></a><a name="p654800595210"></a>job_log</p>
@@ -132,8 +132,8 @@ This API is used to add a job to an MRS cluster and execute the job. This API is
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p351537089313"><a name="p351537089313"></a><a name="p351537089313"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p1179329195210"><a name="p1179329195210"></a><a name="p1179329195210"></a>Path for storing job logs that record job running status. The path must start with <span class="parmvalue" id="parmvalue1863110314147"><a name="parmvalue1863110314147"></a><a name="parmvalue1863110314147"></a><b>/</b></span> or <span class="parmvalue" id="parmvalue363163119143"><a name="parmvalue363163119143"></a><a name="parmvalue363163119143"></a><b>s3a://</b></span>. A correct OBS path is required.</p>
-<p id="p6637185895210"><a name="p6637185895210"></a><a name="p6637185895210"></a>The parameter contains a maximum of 1023 characters, excluding special characters such as ;|&amp;&gt;'&lt;$, and can be left blank.</p>
+<td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p1179329195210"><a name="p1179329195210"></a><a name="p1179329195210"></a>Path for storing job logs that record job running status. The path must start with <span class="parmvalue" id="parmvalue3903075695210"><a name="parmvalue3903075695210"></a><a name="parmvalue3903075695210"></a><b>/</b></span> or <span class="parmvalue" id="parmvalue61495302151616"><a name="parmvalue61495302151616"></a><a name="parmvalue61495302151616"></a><b>s3a://</b></span>. A correct OBS path is required.</p>
+<p id="p6637185895210"><a name="p6637185895210"></a><a name="p6637185895210"></a>The parameter contains a maximum of 1,023 characters, excluding special characters such as ;|&amp;&gt;'&lt;$, and can be left blank.</p>
 </td>
 </tr>
 <tr id="row14131383162346"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p59697381162356"><a name="p59697381162356"></a><a name="p59697381162356"></a>hive_script_path</p>
@@ -144,7 +144,7 @@ This API is used to add a job to an MRS cluster and execute the job. This API is
 </td>
 <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p27189832162356"><a name="p27189832162356"></a><a name="p27189832162356"></a>SQL program path</p>
 <p id="p111345215159"><a name="p111345215159"></a><a name="p111345215159"></a>This parameter is needed by Spark Script and Hive Script jobs only, and must meet the following requirements:</p>
-<a name="ul43381903162356"></a><a name="ul43381903162356"></a><ul id="ul43381903162356"><li>Contains a maximum of 1023 characters, excluding special characters such as ;|&amp;&gt;&lt;'$. The address cannot be empty or full of spaces.</li><li>The path must start with <span class="parmvalue" id="parmvalue17132686162356"><a name="parmvalue17132686162356"></a><a name="parmvalue17132686162356"></a><b>/</b></span> or <span class="parmvalue" id="parmvalue48129207151559"><a name="parmvalue48129207151559"></a><a name="parmvalue48129207151559"></a><b>s3a://</b></span>. The OBS path does not support files or programs encrypted by KMS.</li><li>The path must end with <span class="parmvalue" id="parmvalue206581162356"><a name="parmvalue206581162356"></a><a name="parmvalue206581162356"></a><b>.sql</b></span>.<strong id="b1350611312346"><a name="b1350611312346"></a><a name="b1350611312346"></a>sql</strong> is case-insensitive.</li></ul>
+<a name="ul43381903162356"></a><a name="ul43381903162356"></a><ul id="ul43381903162356"><li>Contains a maximum of 1,023 characters, excluding special characters such as ;|&amp;&gt;&lt;'$. The address cannot be empty or full of spaces.</li><li>The path must start with <span class="parmvalue" id="parmvalue17132686162356"><a name="parmvalue17132686162356"></a><a name="parmvalue17132686162356"></a><b>/</b></span> or <span class="parmvalue" id="parmvalue48129207151559"><a name="parmvalue48129207151559"></a><a name="parmvalue48129207151559"></a><b>s3a://</b></span>. The OBS path does not support files or programs encrypted by KMS.</li><li>The path must end with <span class="parmvalue" id="parmvalue206581162356"><a name="parmvalue206581162356"></a><a name="parmvalue206581162356"></a><b>.sql</b></span>.<strong id="b1350611312346"><a name="b1350611312346"></a><a name="b1350611312346"></a>sql</strong> is case-insensitive.</li></ul>
 </td>
 </tr>
 </tbody>
@@ -250,6 +250,27 @@ This API is used to add a job to an MRS cluster and execute the job. This API is
 
 **Table  5**  Response parameter description
 
+<a name="table95690185369"></a>
+<table><thead align="left"><tr id="row8575818193612"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p4575181853612"><a name="p4575181853612"></a><a name="p4575181853612"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.2"><p id="p145751818123617"><a name="p145751818123617"></a><a name="p145751818123617"></a>Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="50%" id="mcps1.2.4.1.3"><p id="p25761518193614"><a name="p25761518193614"></a><a name="p25761518193614"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1057791893611"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p1414612262381"><a name="p1414612262381"></a><a name="p1414612262381"></a>job_execution</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p16204192543610"><a name="p16204192543610"></a><a name="p16204192543610"></a>Object</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p1620522520368"><a name="p1620522520368"></a><a name="p1620522520368"></a>For details, see <a href="#table12040613193927">Table 6</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  6** **job\_execution**  parameter description
+
 <a name="table12040613193927"></a>
 <table><thead align="left"><tr id="row8843854193927"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.4.1.1"><p id="p45263556193927"><a name="p45263556193927"></a><a name="p45263556193927"></a>Parameter</p>
 </th>
@@ -263,7 +284,7 @@ This API is used to add a job to an MRS cluster and execute the job. This API is
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p5273559121940"><a name="p5273559121940"></a><a name="p5273559121940"></a>Bool</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p27667593121940"><a name="p27667593121940"></a><a name="p27667593121940"></a>Whether job execution objects are generated by job templates</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p id="p27667593121940"><a name="p27667593121940"></a><a name="p27667593121940"></a>Whether job execution objects are generated by job templates.</p>
 </td>
 </tr>
 <tr id="row21668190121640"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.1 "><p id="p10292970121640"><a name="p10292970121640"></a><a name="p10292970121640"></a>created_at</p>
@@ -731,9 +752,9 @@ This API is used to add a job to an MRS cluster and execute the job. This API is
 
 ## Status Code<a name="section4391766619434"></a>
 
-[Table 6](#table1584477916050)  describes the status code of this API.
+[Table 7](#table1584477916050)  describes the status code of this API.
 
-**Table  6**  Status Code
+**Table  7**  Status Code
 
 <a name="table1584477916050"></a>
 <table><thead align="left"><tr id="row1339492016050"><th class="cellrowborder" valign="top" width="30%" id="mcps1.2.3.1.1"><p id="p3411176516050"><a name="p3411176516050"></a><a name="p3411176516050"></a>Status Code</p>

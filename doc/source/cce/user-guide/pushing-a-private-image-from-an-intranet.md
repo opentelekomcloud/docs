@@ -7,7 +7,7 @@ This section uses the nginx:1.10 image as an example to describe how to push a p
 -   A VM is available, on which Docker 1.11.2, 1.12.0, 1.12.1, or 1.12.6 is installed. You are advised to use the VM created in CCE to upload images. The VM has Docker client 1.11.2 installed and can access the Intranet of CCE to obtain a faster upload speed.
 
     >![](/images/icon-note.gif) **NOTE:**   
-    >-   For more information on how to create a node on CCE, see  [Creating a VM Cluster](creating-a-vm-cluster.md).  
+    >-   For more information on how to create a node on CCE, see  [Creating a Hybrid Cluster](creating-a-hybrid-cluster.md).  
     >-   For more information on how to log in to a VM, see  [Connecting to a Kubernetes Cluster Using kubectl](connecting-to-a-kubernetes-cluster-using-kubectl.md).  
 
 -   The Docker client has been configured. For details, see section  [Connecting to Private Container Registry](connecting-to-private-container-registry.md).

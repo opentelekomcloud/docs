@@ -12,7 +12,7 @@ Benefits of ConfigMaps:
 
 ## Prerequisites<a name="section19209149103913"></a>
 
-Cluster  and  node  resources have been created. For more information, see  [Creating a VM Cluster](creating-a-vm-cluster.md). If you have available clusters and node resources, skip this operation.
+Cluster  and  node  resources have been created. For more information, see  [Creating a Hybrid Cluster](creating-a-hybrid-cluster.md). If you have available clusters and node resources, skip this operation.
 
 ## Creating a ConfigMap<a name="section18512531861"></a>
 

@@ -9,3 +9,4 @@ Rotating CMKs
 
    context.md
    enabling-key-rotation.md
+   disabling-key-rotation.md

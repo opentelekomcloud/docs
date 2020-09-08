@@ -8,4 +8,4 @@ Other APIs
 
    querying-az-information.md
    querying-service-specifications.md
-   querying-maintenance-time-windows.md
+   querying-maintenance-time-window.md

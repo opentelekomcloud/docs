@@ -6,7 +6,7 @@ You can configure static website hosting by redirecting all requests for a bucke
 
 Web page files of the static website have been uploaded to a bucket.
 
-If the web page files are in the Cold storage class, restored them first. For more information, see  [Restoring a Cold File on OBS](restoring-a-cold-file-on-obs.md).
+If the web page files are in the Cold storage class, restored them first. For more information, see  [Restoring a Cold File Stored in OBS](restoring-a-cold-file-stored-in-obs.md).
 
 >![](/images/icon-notice.gif) **NOTICE:**   
 >If the hosted static website needs to be accessed by anyone, authorize anonymous users the permission to access static website files in the bucket. The configuration of static website hosting takes effect within two minutes after the configuration.  

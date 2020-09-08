@@ -4,7 +4,7 @@ Deleting unnecessary files saves space and costs. On OBS Console, you can delete
 
 ## Procedure<a name="sbce25240b91d49e2a0d7b514a73a7da9"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Objects**.
 3.  Select the file you want to delete, and choose  **More**  \>  **Delete**  on the right.
 

@@ -144,7 +144,7 @@ You need to create a bucket named with a user-defined domain name on OBS Console
         >![](/images/icon-note.gif) **NOTE:**   
         >-   The static website files cannot be encrypted for upload.  
         >-   Homepage files and 404 error pages must be stored in the root directory of the bucket.  
-        >-   If the storage class of a static website file is Cold, you need to restore the static website file before accessing it. For details, see  [Restoring a Cold File on OBS](restoring-a-cold-file-on-obs.md).  
+        >-   If the storage class of a static website file is Cold, you need to restore the static website file before accessing it. For details, see  [Restoring a Cold File Stored in OBS](restoring-a-cold-file-stored-in-obs.md).  
 
     4.  Click  **OK**  to complete the upload.
 

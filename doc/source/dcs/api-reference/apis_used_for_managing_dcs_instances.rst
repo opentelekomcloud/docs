@@ -8,6 +8,7 @@ APIs Used for Managing DCS Instances
 
    creating-a-dcs-instance.md
    querying-a-dcs-instance.md
+   querying-all-dcs-instances-of-a-tenant.md
    modifying-information-about-a-dcs-instance.md
    deleting-a-single-dcs-instance.md
    batch-deleting-dcs-instances.md

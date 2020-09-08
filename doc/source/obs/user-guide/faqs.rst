@@ -16,7 +16,7 @@ OBS Basics
    what-are-the-advantages-of-object-storage-when-compared-with-san-and-nas-storage.md
    which-types-of-data-can-be-stored-in-obs.md
    what-is-the-data-volume-that-i-can-store-in-obs.md
-   can-folders-in-obs-be-used-the-same-way-as-those-in-a-file-system.md
+   can-folders-in-obs-be-used-the-same-way-in-a-file-system.md
    where-is-data-stored-in-obs.md
    what-is-the-relationship-between-obs-bucket-names-and-obs-domain-names.md
    does-obs-support-access-over-https.md
@@ -28,7 +28,8 @@ OBS Basics
    what-are-the-factors-that-affect-the-upload-and-download-speed-of-obs.md
    why-does-data-stored-on-obs-get-lost.md
    can-deleted-data-be-recovered.md
-   will-data-residuals-exist-in-obs-after-i-delete-data.md
+   will-data-remanence-exist-in-obs-after-i-delete-data.md
+   does-obs-provide-multi-az-reliability.md
 
 
 Security
@@ -40,7 +41,7 @@ Security
 
 
    how-is-data-security-ensured-in-obs.md
-   does-obs-scan-for-my-data-for-other-purposes.md
+   does-obs-scan-my-data-for-other-purposes.md
    can-background-management-personnel-export-my-data-from-obs.md
    how-does-obs-prevent-my-data-from-being-stolen.md
    can-a-pair-of-ak-and-sk-be-replaced-when-they-are-being-used-to-access-obs.md
@@ -75,8 +76,8 @@ Access Control
    :maxdepth: 1
 
 
-   how-can-i-control-access-to-obs.md
-   what-are-the-differences-between-an-iam-policy-and-bucket-policy-in-access-control.md
+   how-can-i-control-access-permissions-for-obs.md
+   what-are-the-differences-between-an-iam-policy-and-a-bucket-policy-in-access-control.md
    what-is-the-relationship-between-a-bucket-policy-and-an-object-policy.md
 
 
@@ -100,7 +101,7 @@ How Do I Use Versioning?
    :maxdepth: 1
 
 
-   can-i-upload-an-object-to-a-folder-where-a-namesake-object-already-exist.md
+   can-i-upload-an-object-to-a-folder-where-a-namesake-object-already-exists.md
    can-i-recover-a-deleted-object.md
 
 

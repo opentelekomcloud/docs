@@ -74,9 +74,9 @@ Managing Objects
    uploading-a-file-or-folder.md
    downloading-a-file-or-folder.md
    accessing-an-object-using-its-object-url.md
-   searching-for-a-file-or-folder-4.md
+   searching-for-a-file-or-folder-(browser).md
    deleting-a-file-(browser).md
-   restoring-a-cold-file-in-obs.md
+   restoring-a-cold-file-stored-in-obs.md
 
 
 Server-Side Encryption

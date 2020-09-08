@@ -6,7 +6,7 @@ For example, you can deploy workloads in a development environment into one name
 
 ## Prerequisites<a name="section812825881312"></a>
 
-At least one cluster is created. For details, see  [Creating a VM Cluster](creating-a-vm-cluster.md).
+At least one cluster is created. For details, see  [Creating a Hybrid Cluster](creating-a-hybrid-cluster.md).
 
 ## Constraints<a name="section21791218165310"></a>
 

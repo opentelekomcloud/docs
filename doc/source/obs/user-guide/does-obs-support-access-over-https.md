@@ -1,4 +1,4 @@
-# Does OBS Support Access Over HTTPS?<a name="obs_03_0071"></a>
+# Does OBS Support Access over HTTPS?<a name="obs_03_0071"></a>
 
 Yes, OBS supports access over HTTPS.
 

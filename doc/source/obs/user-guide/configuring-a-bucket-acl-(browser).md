@@ -1,6 +1,6 @@
 # Configuring a Bucket ACL<a name="en-us_topic_0045853509"></a>
 
-By configuring ACL, you can authorize bucket and ACL permissions to the  **Owner**,  **Anonymous User**,  **Registered User**, and  **Log Delivery User**  groups.
+By configuring ACL, you can authorize bucket and ACL permissions to the  **Owner**,  **Anonymous User**,  **Registered User**, or  **Log Delivery User**  groups.
 
 ## Procedure<a name="s7bd2583371ba494cb60f9cb31c5406bd"></a>
 

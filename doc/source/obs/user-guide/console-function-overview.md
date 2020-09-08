@@ -31,6 +31,11 @@
 <td class="cellrowborder" valign="top" width="66%" headers="mcps1.2.3.1.2 "><p id="p58214831153544"><a name="p58214831153544"></a><a name="p58214831153544"></a>Allows you to set properties for objects.</p>
 </td>
 </tr>
+<tr id="row13153104161815"><td class="cellrowborder" valign="top" width="34%" headers="mcps1.2.3.1.1 "><p id="p11541461820"><a name="p11541461820"></a><a name="p11541461820"></a><a href="cloud-trace-service.md">Auditing</a></p>
+</td>
+<td class="cellrowborder" valign="top" width="66%" headers="mcps1.2.3.1.2 "><p id="p815415410182"><a name="p815415410182"></a><a name="p815415410182"></a>With Cloud Trace Service (CTS), you can record data operations associated with OBS for later query, audit, and backtrack operations.</p>
+</td>
+</tr>
 <tr id="row19621912114812"><td class="cellrowborder" valign="top" width="34%" headers="mcps1.2.3.1.1 "><p id="p2608962311311"><a name="p2608962311311"></a><a name="p2608962311311"></a><a href="managing-fragments-(console).md">Fragment management</a></p>
 </td>
 <td class="cellrowborder" valign="top" width="66%" headers="mcps1.2.3.1.2 "><p id="p3288475211311"><a name="p3288475211311"></a><a name="p3288475211311"></a>Manages and clears fragments generated due to object upload failures.</p>
@@ -53,7 +58,7 @@
 </tr>
 <tr id="row158766135221"><td class="cellrowborder" valign="top" width="34%" headers="mcps1.2.3.1.1 "><p id="p987711135229"><a name="p987711135229"></a><a name="p987711135229"></a><a href="permission-control.md">Permission control</a></p>
 </td>
-<td class="cellrowborder" valign="top" width="66%" headers="mcps1.2.3.1.2 "><p id="p28772013182217"><a name="p28772013182217"></a><a name="p28772013182217"></a>Controls OBS access permissions through <span id="ph9419171385810"><a name="ph9419171385810"></a><a name="ph9419171385810"></a>IAM policies</span>, bucket/object policies, and bucket/object ACLs.</p>
+<td class="cellrowborder" valign="top" width="66%" headers="mcps1.2.3.1.2 "><p id="p28772013182217"><a name="p28772013182217"></a><a name="p28772013182217"></a>Controls OBS access permissions through <span id="ph9419171385810"><a name="ph9419171385810"></a><a name="ph9419171385810"></a>IAM policies</span>, bucket/object policies, and bucket/object access control lists (ACLs).</p>
 </td>
 </tr>
 <tr id="row780856411311"><td class="cellrowborder" valign="top" width="34%" headers="mcps1.2.3.1.1 "><p id="p2851395211311"><a name="p2851395211311"></a><a name="p2851395211311"></a><a href="lifecycle-management.md">Lifecycle management</a></p>
