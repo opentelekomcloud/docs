@@ -2,14 +2,10 @@
 API Reference
 =============
 
-.. include:: api-usage-guidelines.md
-
-VPCEP APIs
-==========
-
 .. toctree::
    :maxdepth: 1
 
+   api-usage-guidelines.md
    version/index
    services/index
    endpoints/index

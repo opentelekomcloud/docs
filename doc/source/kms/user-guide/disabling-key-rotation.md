@@ -19,18 +19,16 @@ This section describes how to disable rotation for a key on the KMS console.
 4.  Click the alias of the desired CMK to view its details.
 5.  Click  **Rotation Policy**. The dialog box is displayed, as shown in  [Figure 1](#fig68513241314).
 
-    **Figure  1**  CMK rotation details<a name="fig68513241314"></a>  
+    **Figure  1**  CMK rotation details<a name="fig68513241314"></a>
     ![](figures/cmk-rotation-details.png "cmk-rotation-details")
 
 6.  Click  ![](figures/icon-open.png)  to disable key rotation.
 7.  In the displayed  **Disable Rotation Policy**  dialog box, click  **Yes**.
 
-    **Figure  2**  Disabling key rotation<a name="fig16274101884411"></a>  
+    **Figure  2**  Disabling key rotation<a name="fig16274101884411"></a>
     ![](figures/disabling-key-rotation.png "disabling-key-rotation")
 
 8.  Check the rotation status, as shown in  [Figure 3](#fig1580712501294).
 
-    **Figure  3**  Key rotation<a name="fig1580712501294"></a>  
+    **Figure  3**  Key rotation<a name="fig1580712501294"></a>
     ![](figures/key-rotation.png "key-rotation")
-
-
