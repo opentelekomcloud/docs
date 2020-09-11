@@ -1,7 +1,7 @@
 - job:
     name: promote-hc-docs
     parent: tox-docs
-    branches: build
+    branches: master
     post-run:
       playbooks/docs/promote.yaml
     secrets:
@@ -15,9 +15,6 @@
     gate:
       jobs:
         - tox-docs
-    promote:
-      jobs:
-        - promote-hc-docs
     post:
       jobs:
         - promote-hc-docs
