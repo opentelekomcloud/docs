@@ -19,14 +19,14 @@ You can use the following mechanisms to control access permissions for OBS:
 
 -   Bucket Policy
 
-    A bucket policy is attached to a bucket and objects in the bucket. By leveraging bucket policies, the owner of a bucket can authorize IAM users or other accounts the permissions to operate the bucket and objects in the bucket.
+    A bucket policy applies to the configured OBS bucket and objects in the bucket. An OBS bucket owner can use a bucket policy to grant permissions of buckets and objects in the buckets to IAM users or other accounts.
 
 -   Object Policy
 
-    In a bucket policy, you can configure resources to which the bucket policy applies. You can use the asterisk \(\*\) to indicate all objects in the bucket or specify an object name prefix, so that the policy applies to objects that share the specified name prefix. An object policy is directly configured for the selected object.
+    An object policy is a policy that applies to objects in a bucket. In a bucket policy, you can specify a set of objects as the resources to which the bucket policy applies, or you can use asterisk symbol \(\*\) to indicate all objects in the bucket. To configure an object policy, select an object, and then configure the object policy directly for the object.
 
 -   Access Control List \(ACL\)
 
-    ACLs control the read and write permissions for accounts, whose permission granularity is not as fine as bucket policies and  IAM policies. Generally, it is recommended that you use  IAM policies  and bucket policies for access control.
+    ACLs control read and write permissions for accounts, which are not as fine-grained as bucket policies and  IAM policies. Therefore, you are advised to use  IAM policies  and bucket policies for access control.
 
 

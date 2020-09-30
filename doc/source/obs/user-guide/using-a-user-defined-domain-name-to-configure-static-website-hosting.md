@@ -18,7 +18,7 @@ You need to create a bucket named with a user-defined domain name on OBS Console
 3.  [Upload static website files.](#li40840329145633)
 4.  [Configure static website hosting on OBS.](#li55012967145655)
 5.  [Create and configure domain name hosting.](#li25854022145746)
-6.  [Verification](#li52936006101225)
+6.  [Verify the configuration.](#li52936006101225)
 
 ## Data Planning<a name="section25592940165428"></a>
 
@@ -31,13 +31,13 @@ You need to create a bucket named with a user-defined domain name on OBS Console
 </th>
 <th class="cellrowborder" valign="top" width="39.72397239723972%" id="mcps1.2.4.1.2"><p id="p595854991490"><a name="p595854991490"></a><a name="p595854991490"></a>Description</p>
 </th>
-<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.3"><p id="p616960901490"><a name="p616960901490"></a><a name="p616960901490"></a>Example:</p>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.3"><p id="p616960901490"><a name="p616960901490"></a><a name="p616960901490"></a>Example</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="row183939011490"><td class="cellrowborder" valign="top" width="26.94269426942694%" headers="mcps1.2.4.1.1 "><p id="p135109821490"><a name="p135109821490"></a><a name="p135109821490"></a>User-defined domain name</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.72397239723972%" headers="mcps1.2.4.1.2 "><p id="p49414949141215"><a name="p49414949141215"></a><a name="p49414949141215"></a>User's own domain name</p>
+<td class="cellrowborder" valign="top" width="39.72397239723972%" headers="mcps1.2.4.1.2 "><p id="p49414949141215"><a name="p49414949141215"></a><a name="p49414949141215"></a>Indicates user's own domain name.</p>
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p618525371490"><a name="p618525371490"></a><a name="p618525371490"></a>www.example.com</p>
 </td>
@@ -116,8 +116,8 @@ You need to create a bucket named with a user-defined domain name on OBS Console
         -   **Region**: Select a region at your own choice.
         -   **Storage Class**: It is recommended that you select  **Standard**.
 
-            >![](/images/icon-note.gif) **NOTE:**   
-            >According to different website access frequency and response speed requirements, you can also choose Warm or Cold. For details about storage classes, see  [Storage Classes Overview](storage-classes-overview-(console).md).  
+            >![](public_sys-resources/icon-note.gif) **NOTE:** 
+            >According to different website access frequency and response speed requirements, you can also choose Warm or Cold. For details about storage classes, see  [Storage Classes Overview](storage-classes-overview-(console).md).
 
         -   **Bucket Name**: Enter  **www.example.com**.
         -   **Bucket Policy**: Select  **Public Read**  to allow any user to access objects in the bucket.
@@ -141,10 +141,10 @@ You need to create a bucket named with a user-defined domain name on OBS Console
 
     3.  Click  ![](figures/icon-more.png)  and select the file to be uploaded.
 
-        >![](/images/icon-note.gif) **NOTE:**   
-        >-   The static website files cannot be encrypted for upload.  
-        >-   Homepage files and 404 error pages must be stored in the root directory of the bucket.  
-        >-   If the storage class of a static website file is Cold, you need to restore the static website file before accessing it. For details, see  [Restoring a Cold File Stored in OBS](restoring-a-cold-file-stored-in-obs.md).  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >-   The static website files cannot be encrypted for upload.
+        >-   Homepage files and 404 error pages must be stored in the root directory of the bucket.
+        >-   If the storage class of a static website file is Cold, you need to restore the static website file before accessing it. For details, see  [Restoring a Cold File Stored in OBS](restoring-a-cold-file-stored-in-obs.md).
 
     4.  Click  **OK**  to complete the upload.
 
@@ -152,8 +152,8 @@ You need to create a bucket named with a user-defined domain name on OBS Console
 
     After uploading the static website files, you need to configure the static website hosting function for the bucket.
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >You can also redirect the entire static website to another bucket or domain name. For details, see  [Configuring Redirection](configuring-redirection.md).  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >You can also redirect the entire static website to another bucket or domain name. For details, see  [Configuring Redirection](configuring-redirection.md).
 
     1.  Click the bucket name to go to the  **Overview**  page.
     2.  In the navigation pane on the left, choose  **Basic Configurations**  \>  **Static Website Hosting**. The  **Static Website Hosting**  page is displayed.
@@ -164,8 +164,8 @@ You need to create a bucket named with a user-defined domain name on OBS Console
         **Figure  4**  Configuring static website hosting<a name="fig1131112528711"></a>  
         ![](figures/configuring-static-website-hosting-2.png "configuring-static-website-hosting-2")
 
-        >![](/images/icon-note.gif) **NOTE:**   
-        >You can also configure redirection rules based on service requirements to implement website content redirection. For details, see  [Configuring Static Website Hosting](configuring-static-website-hosting.md).  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >You can also configure redirection rules based on service requirements to implement website content redirection. For details, see  [Configuring Static Website Hosting](configuring-static-website-hosting.md).
 
     6.  Set the  **Home Page**  to  **index.html**  as planned, and the  **404 Error Page**  to  **error.html**.
     7.  Click  **OK**.
@@ -186,7 +186,7 @@ You need to create a bucket named with a user-defined domain name on OBS Console
 
         -   **Name**: Enter  **www**.
         -   **Type**: Select  **CNAME-Canonical name**.
-        -   **TTL\(s\)**: Set it to its default value.
+        -   **TTL \(s\)**: Set it to its default value.
 
         For details, see the description about "Adding a Record Set" in section "Managing Record Sets" of the  _Domain Name Service User Guide_.
 
@@ -196,8 +196,8 @@ You need to create a bucket named with a user-defined domain name on OBS Console
 
         For details about how to change the addresses of the DNS servers, see the description about "Updating the NS addresses" in section "Public Zone" of the  _Domain Name Service User Guide_.
 
-        >![](/images/icon-note.gif) **NOTE:**   
-        >The address change will be effective within 48 hours. The actual time taken varies depending on the domain name registrar.  
+        >![](public_sys-resources/icon-note.gif) **NOTE:** 
+        >The address change will be effective within 48 hours. The actual time taken varies depending on the domain name registrar.
 
 
 6.  <a name="li52936006101225"></a>Verify that the configuration is successful.
@@ -207,18 +207,18 @@ You need to create a bucket named with a user-defined domain name on OBS Console
         **Figure  5**  Default homepage<a name="fig37569995102120"></a>  
         ![](figures/default-homepage.png "default-homepage")
 
-    -   In the web browser, enter a static file access address that does not exist in a bucket. For example:  **www.example.com/imgs**  to verify that the 404 error page \(error.html\) can be returned.  [Figure 6](#fig117531153115316)  displays the error page.
+    -   In the web browser, enter a static file access address that does not exist in a bucket. For example, enter  **www.example.com/imgs**  to verify that the 404 error page \(error.html\) can be returned.  [Figure 6](#fig117531153115316)  displays the error page.
 
         **Figure  6**  404 error page<a name="fig117531153115316"></a>  
         ![](figures/404-error-page.png "404-error-page")
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >In some conditions, you may need to clear the browser cache before the expected results are displayed.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >In some conditions, you may need to clear the browser cache before the expected results are displayed.
 
 
 ## Website Update<a name="section521481451418"></a>
 
 If you need to update a static file, such as a picture, a piece of music, an HTML file, or a CSS file, you can re-upload the static file.
 
-By default, if two files in a path share one name, the newly uploaded file overwrites the original one. To prevent files being overwritten, you can enable the versioning function. Versioning allows you to keep multiple versions of a static file, so that you can retrieve and restore history versions conveniently. With versioning enabled, data can be restored rapidly when accidental operations or application faults occur. For detailed information about versioning, see chapter  [Versioning Overview](versioning-overview.md).
+By default, if two files in a path share one name, the newly uploaded file overwrites the original one. To prevent files from being overwritten, you can enable the versioning function. Versioning allows you to keep multiple versions of a static file, so that you can retrieve and restore history versions conveniently. With versioning enabled, data can be restored rapidly when accidental operations or application faults occur. For detailed information about versioning, see chapter  [Versioning Overview](versioning-overview.md).
 

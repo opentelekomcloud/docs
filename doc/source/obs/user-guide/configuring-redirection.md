@@ -6,14 +6,14 @@ You can configure static website hosting by redirecting all requests for a bucke
 
 Web page files of the static website have been uploaded to a bucket.
 
-If the web page files are in the Cold storage class, restored them first. For more information, see  [Restoring a Cold File Stored in OBS](restoring-a-cold-file-stored-in-obs.md).
+If the web page files are in the Cold storage class, restore them first. For more information, see  [Restoring a Cold File Stored in OBS](restoring-a-cold-file-stored-in-obs.md).
 
->![](/images/icon-notice.gif) **NOTICE:**   
->If the hosted static website needs to be accessed by anyone, authorize anonymous users the permission to access static website files in the bucket. The configuration of static website hosting takes effect within two minutes after the configuration.  
+>![](public_sys-resources/icon-notice.gif) **NOTICE:** 
+>If the hosted static website needs to be accessed by anyone, authorize anonymous users the permission to access static website files in the bucket. The configuration of static website hosting takes effect within two minutes after the configuration.
 
 ## Procedure<a name="section11587693153957"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the  **Basic Configurations**  area, click the  **Static Website Hosting**  label. The  **Static Website Hosting**  page is displayed.
 
     Alternatively, you can choose  **Basic Configurations**  \>  **Static Website Hosting**  from the navigation pane on the left.
@@ -42,7 +42,7 @@ If the web page files are in the Cold storage class, restored them first. For mo
 
 9.  **Verification**: Input the access domain name of the bucket in the web browser and press  **Enter**. The bucket or URL to which requests are redirected will be displayed.
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >In some conditions, you may need to clear the browser cache before the expected results are displayed.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >In some conditions, you may need to clear the browser cache before the expected results are displayed.
 
 

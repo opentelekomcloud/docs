@@ -8,9 +8,9 @@ You have obtained the permissions to read and write the external bucket that you
 
 For example: Account  **A**  wants to add bucket  **testbucket**  of account  **B**. Account  **B**  must authorize account  **A**  the permission to read bucket  **testbucket**. If account  **A**  needs to upload object to bucket  **testbucket**, account  **B**  needs to authorize account  **A**  the permission to write the bucket. Account  **A**  is the owner of the uploaded objects, and needs to authorize account  **B**  the permission to read and write the objects.
 
->![](/images/icon-note.gif) **NOTE:**   
->An external bucket \(version 3.0 or later\) can be added only when its standard bucket policy is set to  **Public Read and Write**.  
->If the standard bucket policy of an external bucket is set to  **Public Read and Write**  upon its creation, you need to manually change the standard bucket policy to  **Private**  and then change it back to  **Public Read and Write**  again, so that it can be added.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>An external bucket \(version 3.0 or later\) can be added only when its standard bucket policy is set to  **Public Read and Write**.
+>If the standard bucket policy of an external bucket is set to  **Public Read and Write**  upon its creation, you need to manually change the standard bucket policy to  **Private**  and then change it back to  **Public Read and Write**  again, so that it can be added.
 
 ## Procedure<a name="sed02728ed0884d3a93f42523c801b294"></a>
 

@@ -16,7 +16,7 @@ You need to restore a  **Cold**  object before downloading it, accessing it usin
 
     You can select multiple files and click  **Restore**  above the file list to batch restore the files.
 
-    >![](/images/icon-note.gif) **NOTE:** 
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
     >Objects that are being restored cannot be added for batch restoration.
 
     **Figure  1**  Restoring an object<a name="fig37793164192736"></a>  
@@ -54,7 +54,7 @@ You need to restore a  **Cold**  object before downloading it, accessing it usin
 
     You can click  ![](figures/icon-fresh.png)  to manually refresh the restoration status.
 
-    >![](/images/icon-note.gif) **NOTE:** 
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
     >The system checks the file restoration status at UTC 00:00 everyday. The system starts counting down the expiration time from the time when the latest check is complete.
 
 
@@ -62,5 +62,6 @@ You need to restore a  **Cold**  object before downloading it, accessing it usin
 
 Within the validity period of a restored object, you can restore the object again. Then the validity period is extended because it will start from the time when the latest restoration is complete.
 
->![](/images/icon-note.gif) **NOTE:** 
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
 >If a restored object is restored again, its expiration time should be later than the time set for the previous restoration.
+

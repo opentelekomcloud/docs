@@ -65,12 +65,12 @@ If a custom bucket policy is used to authorize such permissions, the ListBucket,
     </thead>
     <tbody><tr id="row811513258484"><td class="cellrowborder" valign="top" width="27.47%" headers="mcps1.2.3.1.1 "><p id="p9115142594814"><a name="p9115142594814"></a><a name="p9115142594814"></a>Policy Mode</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72.53%" headers="mcps1.2.3.1.2 "><p id="p1611542518488"><a name="p1611542518488"></a><a name="p1611542518488"></a><strong id="b499032606"><a name="b499032606"></a><a name="b499032606"></a>Customized</strong></p>
+    <td class="cellrowborder" valign="top" width="72.53%" headers="mcps1.2.3.1.2 "><p id="p1611542518488"><a name="p1611542518488"></a><a name="p1611542518488"></a><strong id="b696771877"><a name="b696771877"></a><a name="b696771877"></a>Customized</strong></p>
     </td>
     </tr>
     <tr id="row1711512514810"><td class="cellrowborder" valign="top" width="27.47%" headers="mcps1.2.3.1.1 "><p id="p511511252487"><a name="p511511252487"></a><a name="p511511252487"></a>Effect</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72.53%" headers="mcps1.2.3.1.2 "><p id="p711532510482"><a name="p711532510482"></a><a name="p711532510482"></a><strong id="b18671210"><a name="b18671210"></a><a name="b18671210"></a>Allow</strong></p>
+    <td class="cellrowborder" valign="top" width="72.53%" headers="mcps1.2.3.1.2 "><p id="p711532510482"><a name="p711532510482"></a><a name="p711532510482"></a><strong id="b295478701"><a name="b295478701"></a><a name="b295478701"></a>Allow</strong></p>
     </td>
     </tr>
     <tr id="row1115122518484"><td class="cellrowborder" valign="top" width="27.47%" headers="mcps1.2.3.1.1 "><p id="p1011552504817"><a name="p1011552504817"></a><a name="p1011552504817"></a><strong id="b7578192115249"><a name="b7578192115249"></a><a name="b7578192115249"></a>Principal</strong></p>
@@ -80,12 +80,12 @@ If a custom bucket policy is used to authorize such permissions, the ListBucket,
     </tr>
     <tr id="row1811522524818"><td class="cellrowborder" valign="top" width="27.47%" headers="mcps1.2.3.1.1 "><p id="p31151725114811"><a name="p31151725114811"></a><a name="p31151725114811"></a><strong id="b9181154132420"><a name="b9181154132420"></a><a name="b9181154132420"></a>Resources</strong></p>
     </td>
-    <td class="cellrowborder" valign="top" width="72.53%" headers="mcps1.2.3.1.2 "><a name="ul71161425124816"></a><a name="ul71161425124816"></a><ul id="ul71161425124816"><li><strong id="b154901871"><a name="b154901871"></a><a name="b154901871"></a>Include</strong></li><li>Resource name: <strong id="b1360682014254"><a name="b1360682014254"></a><a name="b1360682014254"></a>*</strong></li></ul>
+    <td class="cellrowborder" valign="top" width="72.53%" headers="mcps1.2.3.1.2 "><a name="ul71161425124816"></a><a name="ul71161425124816"></a><ul id="ul71161425124816"><li><strong id="b2059891046"><a name="b2059891046"></a><a name="b2059891046"></a>Include</strong></li><li>Resource name: <strong id="b1360682014254"><a name="b1360682014254"></a><a name="b1360682014254"></a>*</strong></li></ul>
     </td>
     </tr>
     <tr id="row1111672520488"><td class="cellrowborder" valign="top" width="27.47%" headers="mcps1.2.3.1.1 "><p id="p1411622544813"><a name="p1411622544813"></a><a name="p1411622544813"></a><strong id="b13145211172519"><a name="b13145211172519"></a><a name="b13145211172519"></a>Actions</strong></p>
     </td>
-    <td class="cellrowborder" valign="top" width="72.53%" headers="mcps1.2.3.1.2 "><a name="ul16116225174814"></a><a name="ul16116225174814"></a><ul id="ul16116225174814"><li><strong id="b908756726"><a name="b908756726"></a><a name="b908756726"></a>Include</strong></li><li>GetObject</li><li>GetObjectVersion</li><li>PutObject</li><li>DeleteObject</li><li>DeleteObjectVersion</li></ul>
+    <td class="cellrowborder" valign="top" width="72.53%" headers="mcps1.2.3.1.2 "><a name="ul16116225174814"></a><a name="ul16116225174814"></a><ul id="ul16116225174814"><li><strong id="b2050635767"><a name="b2050635767"></a><a name="b2050635767"></a>Include</strong></li><li>GetObject</li><li>GetObjectVersion</li><li>PutObject</li><li>DeleteObject</li><li>DeleteObjectVersion</li></ul>
     </td>
     </tr>
     </tbody>

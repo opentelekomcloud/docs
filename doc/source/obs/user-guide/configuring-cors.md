@@ -8,15 +8,15 @@ Static website hosting has been configured. For details about how to configure s
 
 ## Procedure<a name="section54298028"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
-2.  In the  **Basic Configurations**  area, click the  **CORS Rules**  label. The  **CORS Rules**  page is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
+2.  In the  **Basic Configurations**  area, click the  **CORS Rules**. The  **CORS Rules**  page is displayed.
 
     Alternatively, you can choose  **Basic Configurations**  \>  **CORS Rules**  in the navigation pane on the left.
 
 3.  Click  **Create**. The  **Create CORS Rule**  dialog box is displayed. See  [Figure 1](#fig2425430173411)  for details.
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >You can set a maximum of 100 CORS rules for one bucket.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >You can set a maximum of 100 CORS rules for one bucket.
 
     **Figure  1**  Creating a CORS rule<a name="fig2425430173411"></a>  
     ![](figures/creating-a-cors-rule.png "creating-a-cors-rule")

@@ -2,8 +2,8 @@
 
 Buckets are containers that store objects in OBS. Before you store data in OBS, you need to create buckets.
 
->![](/images/icon-note.gif) **NOTE:**   
->On OBS Console, an account can have 100 buckets.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>On OBS Console, an account can have 100 buckets. There is no such upper limit if you use the API or other methods to create buckets. However, these buckets also take up the bucket quota on OBS Console.
 
 ## Procedure<a name="s74adf863725c43719b19e47e5011b4f8"></a>
 
@@ -49,10 +49,10 @@ Buckets are containers that store objects in OBS. Before you store data in OBS, 
     </tbody>
     </table>
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >-   When a URL is used to access a bucket, the bucket name will become a part of the URL. According to the DNS rule, URLs do not support uppercase letters and cannot be used to access a bucket whose name contains uppercase letters. Therefore, a bucket name can contain only lowercase letters, digits, hyphens \(-\), and periods \(.\) For example, if you attempt to access bucket  **MyBucket**  using the URL, bucket  **mybucket**  will be accessed instead, causing an access error.  
-    >-   DNS naming can standardize the bucket naming globally, facilitating the resolution when accessing a bucket. Users can benefit from new functions and optimized features, and static website hosting is then applicable to buckets.  
-    >-   Once you create a bucket, you cannot change the name of it. Make sure that the bucket name you set is appropriate.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   When a URL is used to access a bucket, the bucket name will become a part of the URL. According to the DNS rule, URLs do not support uppercase letters and cannot be used to access a bucket whose name contains uppercase letters. Therefore, a bucket name can contain only lowercase letters, digits, hyphens \(-\), and periods \(.\) For example, if you attempt to access bucket  **MyBucket**  using the URL, bucket  **mybucket**  will be accessed instead, causing an access error.
+    >-   DNS naming can standardize the bucket naming globally, facilitating the resolution when accessing a bucket. Users can benefit from new functions and optimized features, and static website hosting is then applicable to buckets.
+    >-   Once you create a bucket, you cannot change the name of it. Make sure that the bucket name you set is appropriate.
 
 4.  Click  **OK**.
 5.  In the displayed dialog box, click  **Close**  to close the dialog box.
@@ -87,9 +87,9 @@ You can specify its storage class when creating a bucket or change its storage c
 2.  Select a bucket from the bucket list and click  ![](figures/icon-write.png)  on the right. The  **Change Storage Class**  dialog box is displayed.
 3.  Select the desired storage class and click  **OK**.
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >-   Changing the storage class of a bucket does not change the storage class of existing objects in the bucket.  
-    >-   When uploading an object, you can select a storage class for the object, which is the same as the bucket storage class by default. If the bucket storage class changes, the default object storage class changes accordingly.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   Changing the storage class of a bucket does not change the storage class of existing objects in the bucket.
+    >-   An object inherits the bucket storage class by default, if no other storage class is specified for the object upon its upload. When the bucket storage class is changed, newly uploaded objects inherit the new bucket storage class by default.
 
 4.  In the displayed dialog box, click  **Close**  to close the dialog box.
 

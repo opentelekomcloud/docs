@@ -78,7 +78,7 @@ This section describes how to view basic information about a bucket, including t
     </tbody>
     </table>
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >The statistics of  **Used Capacity**  and  **Objects**  are not real-time data, which are usually updated 15 minutes in delay.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >The statistics of  **Used Capacity**  and  **Objects**  are not real-time data, which are usually updated 15 minutes in delay.
 
 

@@ -13,7 +13,7 @@ You can create a pair of permanent AK and SK on the  **My Credentials**  page.
 
 **Temporary AK/SK Pair**
 
-Temporary AK/SK and security token are temporary access tokens issued by the system to users. The validity period is between 15 minutes and 24 hours. Temporary AK/SK and security token comply with the least privilege principle and can be used to access OBS temporarily. Error code 403 is returned if an access request does not have the security token.
+A temporary AK/SK pair and the security token are temporary access tokens granted by the system to users. The validity period of the tokens ranges from 15 minutes to 24 hours. After the tokens expire, you need to obtain the tokens again. A temporary AK/SK pair and the security token comply with the least privilege principle and can only be used to temporarily access OBS. A 403 error will be returned if the security token is not available.
 
 -   Temporary AK: indicates the ID of a temporary access key. It is the unique ID associated with the SK. The AK and SK are used together to obtain an encrypted signature for a request.
 -   Temporary SK: indicates the temporary private key used together with its associated temporary AK. The AK and SK are used together to identify a request sender to prevent the request from being modified.

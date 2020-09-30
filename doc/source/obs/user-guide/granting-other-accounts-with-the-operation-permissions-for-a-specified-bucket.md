@@ -4,6 +4,12 @@ The bucket owner \(root account\) or other accounts and IAM users, who have the 
 
 The following is an example about how to authorize other accounts with the bucket access and object upload permissions.
 
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>To grant permissions to IAM users under other accounts, you need to configure a bucket policy and also  IAM policies.
+>1.  Configure a bucket policy to allow IAM users to access the bucket.
+>2.  Configure  IAM policies  for the account to which the authorized IAM user belongs, to allow the IAM user to access the bucket.
+>Only permissions that are allowed by both the bucket policy and  IAM policies  can take effect.
+
 ## Procedure<a name="section435994418812"></a>
 
 1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
@@ -54,7 +60,7 @@ The following is an example about how to authorize other accounts with the bucke
 7.  Click  **Create Bucket Policy**. The  **Create Bucket Policy**  dialog box is displayed.
 8.  Set the following parameters to authorize another account with the permission to upload objects:
 
-    >![](/images/icon-note.gif) **NOTE:** 
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
     >Before authorizing the user with the permission to operate objects, ensure that the user has the permission to access the bucket.
 
     **Table  2**  Parameters for authorizing the permission to upload objects

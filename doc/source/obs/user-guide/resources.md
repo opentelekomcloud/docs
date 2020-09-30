@@ -1,6 +1,6 @@
 # Resources<a name="obs_03_0118"></a>
 
-The resource can be the current entire bucket or one or more objects in the bucket.
+The resource can be the current entire bucket, an object, or a set of objects in the bucket.
 
 Resources can be specified in either of the following ways:
 
@@ -9,7 +9,7 @@ Resources can be specified in either of the following ways:
 
 ## Specifying Bucket Resources<a name="section530512714414"></a>
 
-To specify the current bucket as the resource, keep the resource text box empty. Only the current bucket can be specified. Actions configured in this bucket policy must be bucket related actions.
+To specify the current bucket as the resource, keep the resource text box empty. When configuring actions for the policy, select bucket related actions.
 
 ## Specifying Object Resources<a name="section20650152864119"></a>
 
@@ -31,6 +31,6 @@ When objects in the bucket are specified as the resources, actions configured in
 
 
 
->![](/images/icon-note.gif) **NOTE:**   
->Use commas \(,\) to separate one object \(or object set\) from another.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>Use commas \(,\) to separate one object \(or object set\) from another.
 
