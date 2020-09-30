@@ -87,7 +87,7 @@ After a bucket is created, the default bucket policy is  **Private**. Only the b
 </tbody>
 </table>
 
->![](/images/icon-note.gif) **NOTE:** 
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
 >For buckets whose version is 3.0, the default permissions of  **Public Read**  and  **Public Read and Write**  are updated to solve the problem that buckets fail to be added to OBS Browser due to permission limitations.
 >-   Added the ListBucket permission to the  **Public Read**  policy.
 >-   Added the ListBucket permission to the  **Public Read and Write**  policy.
@@ -101,10 +101,10 @@ The following three modes are provided to facilitate quick configuration:
 -   **Read and write**: With the  **Read and write**  mode, you only need to specify the  **Principal**  \(authorized users\). Then the authorized users have the full control permissions for the bucket and objects in the bucket, and can perform any operation on these resources.
 -   **Customized**: With the  **Customized**  mode, you can define the specific operation permissions that you want to authorize to users and accounts by configuring the parameters of  **Effect**,  **Principal**,  **Resources**,  **Actions**, and  **Conditions**. 
 
->![](/images/icon-note.gif) **NOTE:** 
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
 >On OBS Console, when you use the custom bucket policy to authorize other users with resource operation permissions, you also need to authorize the users with the bucket read permission  **ListBucket**  \(leave the resource name blank to indicate that the policy takes effect on the entire bucket\). Otherwise, the users have no permission to access the bucket.
 
 ## Object Policy<a name="section0354920819"></a>
 
-An object policy applies to a specific object in a bucket, which can be a part of a bucket policy. A bucket policy implements such permission control over objects by configuring resources to which the bucket policy applies. The resources can be all objects in the bucket \(represented by an asterisk \*\) or objects with a shared name prefix. An object policy is directly configured for the selected object.
+An object policy is a policy that applies to objects in a bucket. In a bucket policy, you can specify a set of objects as the resources to which the bucket policy applies, or you can use asterisk symbol \(\*\) to indicate all objects in the bucket. To configure an object policy, select an object, and then configure the object policy directly for the object.
 

@@ -1,21 +1,21 @@
 # Permissions Management<a name="obs_03_0045"></a>
 
-If you have Object Storage Service \(OBS\) resources and you need to grant different access permissions to different user roles, you can leverage the Identity and Access Management \(IAM\) service for fine-grained permission control. IAM provides identity authentication, permissions management, and access control, helping you provide secure access to your cloud resources.
+If you have OBS resources and you need to grant different access permissions to different user roles, you can leverage the Identity and Access Management \(IAM\) service for fine-grained permission control. IAM provides identity authentication, permissions management, and access control, helping you provide secure access to your cloud resources.
 
-With IAM, you can use your account to create IAM users, and assign permissions to the users to control their access to specific resources. For example, if you have software developers and you want to grant them the permission to only access OBS and not delete OBS resources, you can create an IAM policy that only grants the developers the permission to access OBS.
+With IAM, you can use your account to create IAM users, and assign permissions to the users to control their access to specific resources. For example, if you have software developers and you want to grant them the permission to only access OBS but not delete OBS resources, you can create an IAM policy that only grants the developers the permission to access OBS.
 
 If your service account does not have individual IAM users, please skip this section.
 
 ## OBS Permissions<a name="section9905344171915"></a>
 
-By default, new IAM users do not have any permissions assigned. You need to add a user to one or more user groups, and assign permissions policies to the user groups. The user then inherits permissions from the user groups. This process is known as authorization. After authorization, the user can perform specific operations on cloud services based on permission policies. IAM provides preset system policies that define common permissions for different services.
+By default, new IAM users do not have any permissions assigned. You need to add a user to one or more user groups, and assign permission policies to the user groups. The user then inherits permissions from the user groups. This process is known as authorization. After authorization, the user can perform specific operations on cloud services based on permission policies. IAM provides preset system policies that define common permissions for different services.
 
 OBS is a global service because it is available for all physical regions. OBS permissions are assigned to users in the Global project, and users do not need to switch the region when accessing OBS.
 
 RBAC policy: An RBAC policy consists of permissions for an entire service. Users in a group with such a policy assigned are granted all the required permissions, including permissions for accessing and managing that service. RBAC policies do not support operation-specific permission control.
 
->![](/images/icon-note.gif) **NOTE:**   
->Due to the cache mechanism, it takes about 13 minutes for the RBAC policy to take effect after being granted to users and user groups.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>Due to data caching, an RBAC policy involving OBS actions will take effect 10 to 15 minutes after it is attached to a user and user group.
 
 [Table 1](#table358116162418)  lists all system policies of OBS.
 
@@ -32,7 +32,7 @@ RBAC policy: An RBAC policy consists of permissions for an entire service. Users
 </thead>
 <tbody><tr id="row185915168243"><td class="cellrowborder" valign="top" width="25.16251625162516%" headers="mcps1.2.4.1.1 "><p id="p1955018391441"><a name="p1955018391441"></a><a name="p1955018391441"></a>Tenant Administrator</p>
 </td>
-<td class="cellrowborder" valign="top" width="53.63536353635363%" headers="mcps1.2.4.1.2 "><p id="p2098032784834"><a name="p2098032784834"></a><a name="p2098032784834"></a>Operation permissions: Any operation on all cloud resources owned by the account.</p>
+<td class="cellrowborder" valign="top" width="53.63536353635363%" headers="mcps1.2.4.1.2 "><p id="p2098032784834"><a name="p2098032784834"></a><a name="p2098032784834"></a>Operation permissions: any operation on all cloud resources owned by the account</p>
 <p id="p1572511180216"><a name="p1572511180216"></a><a name="p1572511180216"></a>OBS policies are configured under <strong id="b1065312263712"><a name="b1065312263712"></a><a name="b1065312263712"></a>Global service</strong> &gt; <strong id="b1410043533719"><a name="b1410043533719"></a><a name="b1410043533719"></a>OBS</strong>.</p>
 </td>
 <td class="cellrowborder" valign="top" width="21.202120212021203%" headers="mcps1.2.4.1.3 "><p id="p559161618249"><a name="p559161618249"></a><a name="p559161618249"></a>RBAC policy</p>
@@ -40,7 +40,7 @@ RBAC policy: An RBAC policy consists of permissions for an entire service. Users
 </tr>
 <tr id="row165901622410"><td class="cellrowborder" valign="top" width="25.16251625162516%" headers="mcps1.2.4.1.1 "><p id="p13562139348"><a name="p13562139348"></a><a name="p13562139348"></a>Tenant Guest</p>
 </td>
-<td class="cellrowborder" valign="top" width="53.63536353635363%" headers="mcps1.2.4.1.2 "><p id="p1656510396414"><a name="p1656510396414"></a><a name="p1656510396414"></a>Operation permissions: Read-only access permission to all cloud resources owned by the account</p>
+<td class="cellrowborder" valign="top" width="53.63536353635363%" headers="mcps1.2.4.1.2 "><p id="p1656510396414"><a name="p1656510396414"></a><a name="p1656510396414"></a>Operation permissions: read-only access permission to all cloud resources owned by the account</p>
 <p id="p109361864413"><a name="p109361864413"></a><a name="p109361864413"></a>OBS policies are configured under <strong id="obs_03_0045_b1065312263712"><a name="obs_03_0045_b1065312263712"></a><a name="obs_03_0045_b1065312263712"></a>Global service</strong> &gt; <strong id="obs_03_0045_b1410043533719"><a name="obs_03_0045_b1410043533719"></a><a name="obs_03_0045_b1410043533719"></a>OBS</strong>.</p>
 </td>
 <td class="cellrowborder" valign="top" width="21.202120212021203%" headers="mcps1.2.4.1.3 "><p id="p059191620245"><a name="p059191620245"></a><a name="p059191620245"></a>RBAC policy</p>
@@ -110,7 +110,7 @@ The following table lists operations that can be performed under each set of OBS
 </div></div>
 </td>
 </tr>
-<tr id="row4876113433212"><td class="cellrowborder" valign="top" width="35.75714285714287%" headers="mcps1.2.5.1.1 "><p id="p4876183473211"><a name="p4876183473211"></a><a name="p4876183473211"></a>Bucket access control</p>
+<tr id="row4876113433212"><td class="cellrowborder" valign="top" width="35.75714285714287%" headers="mcps1.2.5.1.1 "><p id="p4876183473211"><a name="p4876183473211"></a><a name="p4876183473211"></a>Controlling bucket access</p>
 </td>
 <td class="cellrowborder" valign="top" width="21.385714285714286%" headers="mcps1.2.5.1.2 "><p id="p9876193415323"><a name="p9876193415323"></a><a name="p9876193415323"></a>Yes</p>
 </td>
@@ -119,7 +119,7 @@ The following table lists operations that can be performed under each set of OBS
 <td class="cellrowborder" valign="top" width="21.4%" headers="mcps1.2.5.1.4 "><p id="p987673410324"><a name="p987673410324"></a><a name="p987673410324"></a>No</p>
 </td>
 </tr>
-<tr id="row1387615347325"><td class="cellrowborder" valign="top" width="35.75714285714287%" headers="mcps1.2.5.1.1 "><p id="p15876133413320"><a name="p15876133413320"></a><a name="p15876133413320"></a>Bucket policies</p>
+<tr id="row1387615347325"><td class="cellrowborder" valign="top" width="35.75714285714287%" headers="mcps1.2.5.1.1 "><p id="p15876133413320"><a name="p15876133413320"></a><a name="p15876133413320"></a>Managing bucket policies</p>
 </td>
 <td class="cellrowborder" valign="top" width="21.385714285714286%" headers="mcps1.2.5.1.2 "><p id="p6876113418328"><a name="p6876113418328"></a><a name="p6876113418328"></a>Yes</p>
 </td>
@@ -254,7 +254,7 @@ The following table lists operations that can be performed under each set of OBS
 <td class="cellrowborder" valign="top" width="21.4%" headers="mcps1.2.5.1.4 "><p id="p48801334173211"><a name="p48801334173211"></a><a name="p48801334173211"></a>No</p>
 </td>
 </tr>
-<tr id="row11880123463217"><td class="cellrowborder" valign="top" width="35.75714285714287%" headers="mcps1.2.5.1.1 "><p id="p1288043414323"><a name="p1288043414323"></a><a name="p1288043414323"></a>Object access control</p>
+<tr id="row11880123463217"><td class="cellrowborder" valign="top" width="35.75714285714287%" headers="mcps1.2.5.1.1 "><p id="p1288043414323"><a name="p1288043414323"></a><a name="p1288043414323"></a>Controlling object access</p>
 </td>
 <td class="cellrowborder" valign="top" width="21.385714285714286%" headers="mcps1.2.5.1.2 "><p id="p288003415323"><a name="p288003415323"></a><a name="p288003415323"></a>Yes</p>
 </td>
@@ -380,7 +380,7 @@ The following table lists operations that can be performed under each set of OBS
 <td class="cellrowborder" valign="top" width="21.4%" headers="mcps1.2.5.1.4 "><p id="p164629580527"><a name="p164629580527"></a><a name="p164629580527"></a>No</p>
 </td>
 </tr>
-<tr id="row15514134118523"><td class="cellrowborder" valign="top" width="35.75714285714287%" headers="mcps1.2.5.1.1 "><p id="p341154595212"><a name="p341154595212"></a><a name="p341154595212"></a>Obtains the ACL information of a specified object version.</p>
+<tr id="row15514134118523"><td class="cellrowborder" valign="top" width="35.75714285714287%" headers="mcps1.2.5.1.1 "><p id="p341154595212"><a name="p341154595212"></a><a name="p341154595212"></a>Obtaining the ACL information of a specified object version</p>
 </td>
 <td class="cellrowborder" valign="top" width="21.385714285714286%" headers="mcps1.2.5.1.2 "><p id="p951417411526"><a name="p951417411526"></a><a name="p951417411526"></a>Yes</p>
 </td>
@@ -389,7 +389,7 @@ The following table lists operations that can be performed under each set of OBS
 <td class="cellrowborder" valign="top" width="21.4%" headers="mcps1.2.5.1.4 "><p id="p12462558175212"><a name="p12462558175212"></a><a name="p12462558175212"></a>No</p>
 </td>
 </tr>
-<tr id="row34981656105416"><td class="cellrowborder" valign="top" width="35.75714285714287%" headers="mcps1.2.5.1.1 "><p id="p849865615548"><a name="p849865615548"></a><a name="p849865615548"></a>Multipart upload</p>
+<tr id="row34981656105416"><td class="cellrowborder" valign="top" width="35.75714285714287%" headers="mcps1.2.5.1.1 "><p id="p849865615548"><a name="p849865615548"></a><a name="p849865615548"></a>Uploading in the multipart mode</p>
 </td>
 <td class="cellrowborder" valign="top" width="21.385714285714286%" headers="mcps1.2.5.1.2 "><p id="p74519365510"><a name="p74519365510"></a><a name="p74519365510"></a>Yes</p>
 </td>
@@ -419,7 +419,7 @@ The following table lists operations that can be performed under each set of OBS
 </tbody>
 </table>
 
-## OBS Resource Permission Management<a name="section4856147369"></a>
+## Managing OBS Resource Permissions<a name="section4856147369"></a>
 
 Access to OBS buckets and objects can be controlled by IAM user permissions, bucket policies, and ACLs.
 

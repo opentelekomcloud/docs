@@ -7,8 +7,8 @@
 
     OBS Browser supports batch download. You can select multiple files or folders and click  **Download**  above the object list to download objects in batches.
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >-   Before downloading  **Cold**  files, ensure that they are in the  **Restored**  state.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   Before downloading  **Cold**  files, ensure that they are in the  **Restored**  state.
 
 3.  In the dialog box that is displayed, select a path to save the file or folder and click  **OK**.
 

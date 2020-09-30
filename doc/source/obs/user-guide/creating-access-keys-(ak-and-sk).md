@@ -23,21 +23,21 @@ An account has been registered and activated.
 2.  On the top navigation menu, click the username and select  **My Credential**.
 3.  **My Credential**  page is displayed. Choose  **Access Keys**  \>  **Add Access Key**
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >Each user can create a maximum of two valid access keys.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >Each user can create a maximum of two valid access keys.
 
 4.  In the  **Add Access Key**  dialog box that is displayed, enter the password and its verification code.
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >-   If you have not bound an email address or mobile number, enter only the password.  
-    >-   If you have bound an email address and a mobile number, you can verify through either one.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   If you have not bound an email address or mobile number, enter only the password.
+    >-   If you have bound an email address and a mobile number, you can verify through either one.
 
 5.  Click  **OK**.
 6.  Save the key as prompted. The key is directly saved to the default download folder of the web browser.
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >-   To prevent the access keys from being leaked, keep them secure. If you click  **Cancel**  in the dialog box, the access keys will not be downloaded, and you cannot download them later. You can re-create an access key if you need to use it.  
-    >-   The access keys \(AK and SK\) need to be updated regularly.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >-   To prevent the access keys from being leaked, keep them secure. If you click  **Cancel**  in the dialog box, the access keys will not be downloaded, and you cannot download them later. You can re-create an access key if you need to use it.
+    >-   The access keys \(AK and SK\) need to be updated regularly.
 
 7.  Open the downloaded  **credentials.csv**  file to obtain the access keys \(AK and SK\).
 

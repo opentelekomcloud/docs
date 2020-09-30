@@ -11,7 +11,7 @@ After logging is enabled for a bucket, OBS automatically converts bucket logs in
     **Figure  1**  Logging<a name="fig17700501192958"></a>  
     ![](figures/logging.png "logging")
 
-4.  Select a bucket from existing buckets to save log files. Log delivery users of the selected bucket will be automatically assigned with the permission to read the bucket ACL and write logs to the bucket.
+4.  Select an existing bucket where you want to store log files. Log delivery users of the selected bucket will be automatically assigned with the permission to read the bucket ACL and write logs to the bucket.
 5.  Enter a prefix for the  **Log File Name Prefix**.
 
     After logging is enabled, generated logs are named in the following format:
@@ -29,9 +29,10 @@ After logging is enabled for a bucket, OBS automatically converts bucket logs in
     -   If the bucket named  **bucket**  is selected to save log files, and the log file name prefix is set to  **bucket-log/**, all log files delivered to the bucket are saved in the  **bucket-log**  folder. A log file is named as follows:  **2015-06-29-12-22-07-N7MXLAF1BDG7MPDV**.
     -   If the bucket named  **bucket**  is selected to save log files, and the log file name prefix is set to  **bucket-log**, then no folder is created for log files delivered to the bucket. A log file is named as follows:  **bucket-log2015-06-29-12-22-07-N7MXLAF1BDG7MPDV**.
 
+6.  Click  **OK**.
+
     After logging is configured, you can view operation logs in the bucket that stores the logs in approximately fifteen minutes.
 
-6.  Click  **OK**.
 
 ## Follow-up Procedure<a name="section112917292515"></a>
 

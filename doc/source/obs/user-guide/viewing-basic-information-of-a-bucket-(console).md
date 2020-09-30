@@ -4,7 +4,7 @@ On OBS Console, you can view bucket information.
 
 ## Procedure<a name="section11992676"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  Under  **Basic Information**, view the basic information of the bucket. For details, see  [Figure 1](#fig4178468919236).
 
     **Figure  1**  Basic information about the bucket<a name="fig4178468919236"></a>  
@@ -31,7 +31,7 @@ On OBS Console, you can view bucket information.
     </tr>
     <tr id="row5013506492057"><td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.3.1.1 "><p id="p6571610292057"><a name="p6571610292057"></a><a name="p6571610292057"></a>Bucket Version</p>
     </td>
-    <td class="cellrowborder" valign="top" width="73%" headers="mcps1.2.3.1.2 "><p id="p4848944492057"><a name="p4848944492057"></a><a name="p4848944492057"></a>Version ID of a bucket.</p>
+    <td class="cellrowborder" valign="top" width="73%" headers="mcps1.2.3.1.2 "><p id="p4848944492057"><a name="p4848944492057"></a><a name="p4848944492057"></a>Version ID of a bucket. <strong id="b15682102319106"><a name="b15682102319106"></a><a name="b15682102319106"></a>3.0</strong> indicates the latest bucket version, and <strong id="b173851322104"><a name="b173851322104"></a><a name="b173851322104"></a>--</strong> indicates versions earlier than 3.0.</p>
     </td>
     </tr>
     <tr id="row2643712415712"><td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.3.1.1 "><p id="p411355181786"><a name="p411355181786"></a><a name="p411355181786"></a>Region</p>
@@ -46,12 +46,12 @@ On OBS Console, you can view bucket information.
     </tr>
     <tr id="row5194094"><td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.3.1.1 "><p id="p219377721786"><a name="p219377721786"></a><a name="p219377721786"></a>Objects</p>
     </td>
-    <td class="cellrowborder" valign="top" width="73%" headers="mcps1.2.3.1.2 "><p id="p321290821786"><a name="p321290821786"></a><a name="p321290821786"></a>Number of objects stored in the bucket. The number of objects is the sum of objects of <strong id="b113717842113036"><a name="b113717842113036"></a><a name="b113717842113036"></a>Latest Version</strong> and <strong id="b827875318113036"><a name="b827875318113036"></a><a name="b827875318113036"></a>Historical Version</strong>.</p>
+    <td class="cellrowborder" valign="top" width="73%" headers="mcps1.2.3.1.2 "><p id="p321290821786"><a name="p321290821786"></a><a name="p321290821786"></a>The total number of folders and files, including all versions.</p>
     </td>
     </tr>
     <tr id="row64708738162040"><td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.3.1.1 "><p id="p11073001786"><a name="p11073001786"></a><a name="p11073001786"></a>Owner</p>
     </td>
-    <td class="cellrowborder" valign="top" width="73%" headers="mcps1.2.3.1.2 "><p id="p225824661786"><a name="p225824661786"></a><a name="p225824661786"></a>The owner of a bucket is the account that creates the bucket, or the account to which an IAM user that creates the bucket belongs.</p>
+    <td class="cellrowborder" valign="top" width="73%" headers="mcps1.2.3.1.2 "><p id="p225824661786"><a name="p225824661786"></a><a name="p225824661786"></a>Owner refers to the account that created the bucket.</p>
     </td>
     </tr>
     <tr id="row42411395"><td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.3.1.1 "><p id="p209464221786"><a name="p209464221786"></a><a name="p209464221786"></a>Account ID</p>
@@ -66,7 +66,7 @@ On OBS Console, you can view bucket information.
     </tr>
     <tr id="row015713406208"><td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.3.1.1 "><p id="p4157154010203"><a name="p4157154010203"></a><a name="p4157154010203"></a>Versioning</p>
     </td>
-    <td class="cellrowborder" valign="top" width="73%" headers="mcps1.2.3.1.2 "><p id="p8157134020209"><a name="p8157134020209"></a><a name="p8157134020209"></a>The status of versioning</p>
+    <td class="cellrowborder" valign="top" width="73%" headers="mcps1.2.3.1.2 "><p id="p8157134020209"><a name="p8157134020209"></a><a name="p8157134020209"></a>Versioning status</p>
     </td>
     </tr>
     <tr id="row43167051153945"><td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.3.1.1 "><p id="p55310915153945"><a name="p55310915153945"></a><a name="p55310915153945"></a>Endpoint</p>
@@ -83,7 +83,7 @@ On OBS Console, you can view bucket information.
     </tbody>
     </table>
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >The statistics of  **Used Capacity**  and  **Objects**  are not real-time data, which are usually updated 15 minutes in delay.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >The statistics of  **Used Capacity**  and  **Objects**  are not real-time data, which are usually updated 15 minutes in delay.
 
 

@@ -17,7 +17,7 @@ IAM policies  are used to authorize IAM users under an account.
 
 ## Policy Structure and Syntax<a name="section9268135516548"></a>
 
-A policy consists of a Version and a Statement. Each policy can have multiple statements.
+A policy consists of a version and statements. Each policy can have multiple statements.
 
 **Figure  1**  Policy structure<a name="fig378124416551"></a>  
 ![](figures/policy-structure.png "policy-structure")
@@ -60,7 +60,7 @@ Policy syntax example:
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p10869111617713"><a name="p10869111617713"></a><a name="p10869111617713"></a>Permissions defined by a policy, including <strong id="b1953163904712"><a name="b1953163904712"></a><a name="b1953163904712"></a>Effect</strong> and <strong id="b15171134334712"><a name="b15171134334712"></a><a name="b15171134334712"></a>Action</strong>.</p>
 <div class="p" id="p151471577233"><a name="p151471577233"></a><a name="p151471577233"></a><a name="ul1802181615716"></a><a name="ul1802181615716"></a><ul id="ul1802181615716"><li><strong id="b8423527069271"><a name="b8423527069271"></a><a name="b8423527069271"></a>Effect</strong><p id="p1880291618711"><a name="p1880291618711"></a><a name="p1880291618711"></a>The valid values for <strong id="b453725310478"><a name="b453725310478"></a><a name="b453725310478"></a>Effect</strong> are <strong id="b1496385664715"><a name="b1496385664715"></a><a name="b1496385664715"></a>Allow</strong> and <strong id="b172848592477"><a name="b172848592477"></a><a name="b172848592477"></a>Deny</strong>. System policies contain only <strong id="b132351212154812"><a name="b132351212154812"></a><a name="b132351212154812"></a>Allow</strong> statements.</p>
-</li><li><strong id="b53451317470"><a name="b53451317470"></a><a name="b53451317470"></a>Action</strong><p id="p14803201610710"><a name="p14803201610710"></a><a name="p14803201610710"></a>Permissions of specific operations on resources . A policy can contain one or more permissions. The wildcard (*) is allowed to indicate all of the services, resource types, or operations depending on its location in the action. </p>
+</li><li><strong id="b53451317470"><a name="b53451317470"></a><a name="b53451317470"></a>Action</strong><p id="p14803201610710"><a name="p14803201610710"></a><a name="p14803201610710"></a>Permissions of specific operations on resources. A policy can contain one or more permissions. The wildcard (*) is allowed to indicate all of the services, resource types, or operations depending on its location in the action. </p>
 </li></ul>
 </div>
 </td>
@@ -75,8 +75,8 @@ The authentication of  IAM policies  starts from the Deny statements. The follow
 **Figure  2**  Authentication logic<a name="fig1757455075016"></a>  
 ![](figures/authentication-logic.png "authentication-logic")
 
->![](/images/icon-note.gif) **NOTE:**   
->The actions in each policy bear the OR relationship.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>The actions in each policy bear the OR relationship.
 
 1.  A user accesses the system and makes an operation request.
 2.  The system evaluates all the permission policies assigned to the user.

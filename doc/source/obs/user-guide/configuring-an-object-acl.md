@@ -5,9 +5,9 @@
 1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Objects**.
 3.  Click the object to be operated.
-4.  On the  **Object ACL**  tab, click  **Edit**  to set ACL permissions of the  **Owner**,  **Anonymous User**, and  **Registered User**  for the target object.
+4.  On the  **Object ACL**  tab, click  **Edit**  to set ACL permissions of the  **Owner**,  **Registered User**, and  **Anonymous User**  for the target object.
 
-    >![](/images/icon-note.gif) **NOTE:** 
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
     >If the object is encrypted, the ACL permission cannot be configured for registered users and anonymous users.
 
 5.  **Optional**: Click  **Add**. For details, see  [Figure 1](#fig3474335195326).

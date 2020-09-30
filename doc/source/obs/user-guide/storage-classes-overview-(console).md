@@ -19,41 +19,41 @@ Changing the storage class of a bucket does not change the storage classes of ex
 ## Comparison of Storage Classes<a name="section64461132193015"></a>
 
 <a name="table1410941163116"></a>
-<table><thead align="left"><tr id="row1410174113319"><th class="cellrowborder" valign="top" width="25.000000000000007%" id="mcps1.1.5.1.1"><p id="p1110194153116"><a name="p1110194153116"></a><a name="p1110194153116"></a>Compared Item</p>
+<table><thead align="left"><tr id="row1410174113319"><th class="cellrowborder" valign="top" width="25%" id="mcps1.1.5.1.1"><p id="p1110194153116"><a name="p1110194153116"></a><a name="p1110194153116"></a>Compared Item</p>
 </th>
-<th class="cellrowborder" valign="top" width="25.000000000000007%" id="mcps1.1.5.1.2"><p id="p51064110319"><a name="p51064110319"></a><a name="p51064110319"></a>Standard</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.1.5.1.2"><p id="p51064110319"><a name="p51064110319"></a><a name="p51064110319"></a>Standard</p>
 </th>
-<th class="cellrowborder" valign="top" width="24.9%" id="mcps1.1.5.1.3"><p id="p1521511382333"><a name="p1521511382333"></a><a name="p1521511382333"></a>Warm</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.1.5.1.3"><p id="p1521511382333"><a name="p1521511382333"></a><a name="p1521511382333"></a>Warm</p>
 </th>
-<th class="cellrowborder" valign="top" width="25.100000000000005%" id="mcps1.1.5.1.4"><p id="p51226614339"><a name="p51226614339"></a><a name="p51226614339"></a>Cold</p>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.1.5.1.4"><p id="p51226614339"><a name="p51226614339"></a><a name="p51226614339"></a>Cold</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row103188419355"><td class="cellrowborder" valign="top" width="25.000000000000007%" headers="mcps1.1.5.1.1 "><p id="p131810412351"><a name="p131810412351"></a><a name="p131810412351"></a>Feature</p>
+<tbody><tr id="row103188419355"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.5.1.1 "><p id="p131810412351"><a name="p131810412351"></a><a name="p131810412351"></a>Feature</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.000000000000007%" headers="mcps1.1.5.1.2 "><p id="p2031818473511"><a name="p2031818473511"></a><a name="p2031818473511"></a>Top-notch performance, highly reliable and available </p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.5.1.2 "><p id="p2031818473511"><a name="p2031818473511"></a><a name="p2031818473511"></a>Top-notch performance, highly reliable and available </p>
 </td>
-<td class="cellrowborder" valign="top" width="24.9%" headers="mcps1.1.5.1.3 "><p id="p83181416352"><a name="p83181416352"></a><a name="p83181416352"></a>Reliable, inexpensive, and real-time storage access</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.5.1.3 "><p id="p83181416352"><a name="p83181416352"></a><a name="p83181416352"></a>Reliable, inexpensive, and real-time storage access</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.100000000000005%" headers="mcps1.1.5.1.4 "><p id="p19318134103517"><a name="p19318134103517"></a><a name="p19318134103517"></a>Long-term storage for archived data at a very low cost</p>
-</td>
-</tr>
-<tr id="row265162715348"><td class="cellrowborder" valign="top" width="25.000000000000007%" headers="mcps1.1.5.1.1 "><p id="p46642711342"><a name="p46642711342"></a><a name="p46642711342"></a>Application scenarios</p>
-</td>
-<td class="cellrowborder" valign="top" width="25.000000000000007%" headers="mcps1.1.5.1.2 "><p id="p466627123418"><a name="p466627123418"></a><a name="p466627123418"></a>Cloud application, data sharing, content sharing, and hot data storage</p>
-</td>
-<td class="cellrowborder" valign="top" width="24.9%" headers="mcps1.1.5.1.3 "><p id="p06613277349"><a name="p06613277349"></a><a name="p06613277349"></a>Web disk applications, enterprise backup, active archiving, and data monitoring</p>
-</td>
-<td class="cellrowborder" valign="top" width="25.100000000000005%" headers="mcps1.1.5.1.4 "><p id="p186612743416"><a name="p186612743416"></a><a name="p186612743416"></a>Archive, medical image storage, video material storage, and replacement of tape libraries</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.5.1.4 "><p id="p19318134103517"><a name="p19318134103517"></a><a name="p19318134103517"></a>Long-term storage for archived data at a very low cost</p>
 </td>
 </tr>
-<tr id="row565445793616"><td class="cellrowborder" valign="top" width="25.000000000000007%" headers="mcps1.1.5.1.1 "><p id="p136541857183616"><a name="p136541857183616"></a><a name="p136541857183616"></a>Minimum storage duration</p>
+<tr id="row265162715348"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.5.1.1 "><p id="p46642711342"><a name="p46642711342"></a><a name="p46642711342"></a>Application scenarios</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.000000000000007%" headers="mcps1.1.5.1.2 "><p id="p18654105712362"><a name="p18654105712362"></a><a name="p18654105712362"></a>Not required</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.5.1.2 "><p id="p466627123418"><a name="p466627123418"></a><a name="p466627123418"></a>Cloud application, data sharing, content sharing, and hot data storage</p>
 </td>
-<td class="cellrowborder" valign="top" width="24.9%" headers="mcps1.1.5.1.3 "><p id="p12654145712368"><a name="p12654145712368"></a><a name="p12654145712368"></a>30 days</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.5.1.3 "><p id="p06613277349"><a name="p06613277349"></a><a name="p06613277349"></a>Web disk applications, enterprise backup, active archiving, and data monitoring</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.100000000000005%" headers="mcps1.1.5.1.4 "><p id="p10654165783617"><a name="p10654165783617"></a><a name="p10654165783617"></a>90 days</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.5.1.4 "><p id="p186612743416"><a name="p186612743416"></a><a name="p186612743416"></a>Archive, medical image storage, video material storage, and replacement of tape libraries</p>
+</td>
+</tr>
+<tr id="row565445793616"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.5.1.1 "><p id="p136541857183616"><a name="p136541857183616"></a><a name="p136541857183616"></a>Minimum storage duration</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.5.1.2 "><p id="p18654105712362"><a name="p18654105712362"></a><a name="p18654105712362"></a>Not required</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.5.1.3 "><p id="p12654145712368"><a name="p12654145712368"></a><a name="p12654145712368"></a>30 days</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.1.5.1.4 "><p id="p10654165783617"><a name="p10654165783617"></a><a name="p10654165783617"></a>90 days</p>
 </td>
 </tr>
 </tbody>

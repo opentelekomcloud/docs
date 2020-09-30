@@ -13,7 +13,7 @@ You can use the following tools to access and manage OBS resources:
 </thead>
 <tbody><tr id="row452724410491"><td class="cellrowborder" valign="top" width="23.48%" headers="mcps1.2.3.1.1 "><p id="p15271447490"><a name="p15271447490"></a><a name="p15271447490"></a>OBS Console</p>
 </td>
-<td class="cellrowborder" valign="top" width="76.52%" headers="mcps1.2.3.1.2 "><p id="p155276441494"><a name="p155276441494"></a><a name="p155276441494"></a>OBS Console is a web-based GUI. Through the console, you can perform operations on OBS resources directly.</p>
+<td class="cellrowborder" valign="top" width="76.52%" headers="mcps1.2.3.1.2 "><p id="p155276441494"><a name="p155276441494"></a><a name="p155276441494"></a>OBS Console is a web-based GUI. You can perform operations on OBS Console easily.</p>
 </td>
 </tr>
 <tr id="row752744464920"><td class="cellrowborder" valign="top" width="23.48%" headers="mcps1.2.3.1.1 "><p id="p752784416490"><a name="p752784416490"></a><a name="p752784416490"></a>OBS Browser</p>

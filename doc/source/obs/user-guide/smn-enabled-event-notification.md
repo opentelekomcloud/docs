@@ -11,3 +11,47 @@ For details about events supported by SMN and how to configure an SMN-enabled ev
 **Figure  1**  SMN-enabled event notification<a name="fig9778481781"></a>  
 ![](figures/smn-enabled-event-notification.png "smn-enabled-event-notification")
 
+The message structure of an SMN notification is as follows:
+
+```
+{
+    "Records":[
+        {
+            "eventVersion":"", //Version number. The current version is 2.0.
+            "eventSource":"", //Message source. The value is fixed to aws:s3.
+            "awsRegion":"", //Region where the event occurs
+            "eventTime":"", //Time when an event occurs, in the ISO-8601 format, for example, 2020-07-10T09:24:11.418Z
+            "eventName":"", //Name of the event that triggers the notification
+            "userIdentity":{
+                "principalId":"" //Billing ID of the user who triggers the event
+            },
+            "requestParameters":{
+                "sourceIPAddress":"" //Source IP address of the request
+            },
+            "responseElements":{
+                "x-amz-request-id":"", //ID of the request
+                "x-amz-id-2":"" ///Special characters for locating problems
+            },
+            "s3":{
+                "s3SchemaVersion":"1.0",
+                "configurationId":"", //Name of the event notification rule in OBS that matches the event
+                "bucket":{
+                    "name":"", //Bucket name
+                    "ownerIdentity":{
+                        "PrincipalId":"" //Domain ID of the bucket owner
+                    },
+                    "arn":"" //Unique identifier of a bucket. The format is arn:aws:s3:::bucketname.
+                },
+                "object":{
+                    "key":"", //Object name
+                    "eTag":"", //ETag of the object
+                    "size": , //Object size
+                    "versionId":"", //Version ID of the object
+                    "sequencer":""  //Identifier that defines the event sequence of a specific object
+                }
+            }
+        }
+    ]
+}
+```
+

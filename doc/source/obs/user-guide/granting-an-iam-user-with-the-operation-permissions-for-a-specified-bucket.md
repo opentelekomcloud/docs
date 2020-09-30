@@ -53,7 +53,7 @@ The following is an example about how to authorize an IAM user with the bucket a
 7.  Click  **Create Bucket Policy**. The  **Create Bucket Policy**  dialog box is displayed.
 8.  Set the following parameters to authorize the IAM user with the permission to upload objects to the bucket.
 
-    >![](/images/icon-note.gif) **NOTE:** 
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
     >Before authorizing the IAM user with the permission to operate objects, ensure that the user has the permission to access the bucket.
 
     **Table  2**  Parameters for authorizing the permission to upload objects

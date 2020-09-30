@@ -4,7 +4,7 @@ Object metadata is a set of name-value pairs that are part of object management.
 
 Currently, only the metadata defined by the system is supported.
 
-The metadata defined by the system is classified into the following types: system-controlled and user-controlled. For example, metadata such as  **Last-Modified**  is controlled by the system and cannot be modified. Users can modify the metadata such as  **ContentLanguage**  through the API. The metadata that can be modified by users is described as follows:
+The metadata defined by the system is classified into the following types: system-controlled and user-controlled. For example, metadata such as  **Last-Modified**  is controlled by the system and cannot be modified. You can call the API to modify the metadata such as  **ContentLanguage**. The metadata that can be modified is described as follows:
 
 **Table  1**  OBS metadata
 
@@ -38,7 +38,7 @@ The metadata defined by the system is classified into the following types: syste
 </tbody>
 </table>
 
->![](/images/icon-note.gif) **NOTE:**   
->-   When versioning is enabled for a bucket, you can set metadata for objects which are  **Latest Version**, but cannot set metadata for objects which are  **Historical Version**.  
->-   You cannot set object metadata for a  **Cold**  object.  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>-   When versioning is enabled for a bucket, you can set metadata for objects which are  **Latest Version**, but cannot set metadata for objects which are  **Historical Version**.
+>-   You cannot set object metadata for a  **Cold**  object.
 

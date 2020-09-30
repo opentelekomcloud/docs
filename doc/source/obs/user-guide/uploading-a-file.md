@@ -16,12 +16,12 @@ This section describes how to upload local files to OBS over the Internet. These
 
 ## Procedure<a name="section64292661113931"></a>
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Objects**.
 3.  Go to the folder to which objects are uploaded. Click  **Upload Object**. The  **Upload Object**  dialog box is displayed.
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >If the files to be uploaded to OBS are stored in Microsoft OneDrive, it is recommended that the names of these files contain a maximum of 32 characters.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >If the files that you want to upload to OBS are stored in Microsoft OneDrive, it is recommended that the names of these files contain a maximum of 32 characters.
 
     **Figure  1**  Uploading objects<a name="obs_03_0307_fig188654349118"></a>  
     ![](figures/uploading-objects.png "uploading-objects")
@@ -36,15 +36,15 @@ This section describes how to upload local files to OBS over the Internet. These
 
 You can specify its storage class when uploading an object or change its storage class after the object is uploaded. The procedure is as follows:
 
-1.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+1.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 2.  In the navigation pane on the left, click  **Objects**.
 3.  Select the target object and choose  **More**  \>  **Change Storage Class**  on the right.
 4.  Select the desired storage class and click  **OK**.
 
->![](/images/icon-note.gif) **NOTE:**   
->-   Objects can be changed from the  **Standard**  storage class to  **Warm**  or  **Cold**  storage class. Objects can be changed from the  **Warm**  storage class to  **Standard**  or  **Cold**  storage class. Objects of the  **Cold**  storage class must be restored before being changed to  **Standard**  or  **Warm**  storage class. The latter two changes incur penalty and restoration fees. Determine an appropriate change path based on your actual needs.  
->-   When the storage class is changed to Cold, the object restoration status changes to  **Unrestored**.  
->-   You can also configure a lifecycle rule to change the storage class of an object. For details, see  [Lifecycle Management Overview](lifecycle-management-overview-(console).md).  
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
+>-   Objects can be changed from  **Standard**  to  **Warm**  or  **Cold**  storage class, or from  **Warm**  to  **Standard**  or  **Cold**  storage class, but objects in  **Cold**  storage class must be restored before being changed to  **Standard**  or  **Warm**  storage class. Changing from  **Warm**  or  **Cold**  to other storage classes incurs restoration fees. Select an appropriate change option based on your actual needs.
+>-   When the storage class is changed to  **Cold**, the object restoration status changes to  **Unrestored**.
+>-   You can also configure a lifecycle rule to change the storage class of an object. For details, see  [Lifecycle Management Overview](lifecycle-management-overview-(console).md).
 
 ## Follow-up Procedure<a name="section6158112111499"></a>
 

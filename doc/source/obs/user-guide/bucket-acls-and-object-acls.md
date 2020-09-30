@@ -136,7 +136,7 @@ ACLs control the read and write permissions for accounts. ACL permission granula
 </tbody>
 </table>
 
->![](/images/icon-note.gif) **NOTE:** 
+>![](public_sys-resources/icon-note.gif) **NOTE:** 
 >Every time you change the bucket or object access permission setting in an ACL, it overwrites the existing setting instead of adding a new access permission to the bucket or object.
 >Fragment management refers to the deletion of fragments. For the bucket owner and users who have the permission to initiate multipart tasks, deleting fragments is not restricted by bucket ACL settings. If a user has the permission to write, the user also has the permission to initiate multipart tasks.
 

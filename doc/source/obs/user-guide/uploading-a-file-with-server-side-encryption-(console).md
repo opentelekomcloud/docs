@@ -17,7 +17,7 @@ In the region where OBS is deployed, the  **KMS Administrator**  permission has 
 2.  In the navigation pane on the left, click  **Objects**.
 3.  Click  **Upload Object**. The  **Upload Object**  dialog box is displayed.
 4.  Select the file that you want to upload and click  **Open**.
-5.  Select  **KMS encryption**  and select a key that you have created in Data Encryption Workshop \(DEW\).
+5.  Select  **KMS encryption**  and select a key that you have created on KMS.
 
     After  **KMS encryption**  is selected,  **obs/default**  is selected by default as the key for the encryption. You can also click  **Create KMS Key**  to switch to the management console of KMS and create customer master keys. Then back to OBS Console and select the key from the drop-down list box for KMS encryption.
 

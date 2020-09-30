@@ -43,14 +43,14 @@ A bucket ACL can be used to grant the read and write access to a bucket. If only
 ## Procedure<a name="section207491196166"></a>
 
 1.  Log in to OBS Console.
-2.  In the bucket list, click the bucket to be operated. The  **Summary**  page of the bucket is displayed.
+2.  In the bucket list, click the bucket to be operated. The  **Overview**  page of the bucket is displayed.
 3.  In the navigation pane on the left, click  **Permissions**  to go to the permission management page.
 4.  Click  **Bucket ACL**. The  **Bucket ACL**  page is displayed.
 5.  Click  **Add**, enter the account ID of the user that will add the bucket to OBS Browser, and select the read and write access to the bucket.
 
-    >![](/images/icon-note.gif) **NOTE:**   
-    >If you want to authorize such access to all users, in the  **Public Permissions**  area, authorize the  **Anonymous User**  the read and write access to the bucket.  
-    >**Account ID**  corresponds to  **Domain ID**  on the  **My Credential**  page.  
+    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >If you want to authorize such access to all users, in the  **Public Permissions**  area, authorize the  **Anonymous User**  the read and write access to the bucket.
+    >**Account ID**  corresponds to  **Domain ID**  on the  **My Credential**  page.
 
 6.  Click  **Save**.
 

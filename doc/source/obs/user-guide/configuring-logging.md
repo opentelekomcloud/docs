@@ -15,7 +15,7 @@ The log delivery user group has been assigned the  **Write**  and  **ACL View** 
     **Figure  1**  Logging<a name="fig5791779717938"></a>  
     ![](figures/logging-6.png "logging-6")
 
-4.  Select a bucket from existing buckets to save log files. Log delivery users of the selected bucket will be automatically assigned with the permission to read the bucket ACL and write logs to the bucket.
+4.  Select an existing bucket where you want to store log files. Log delivery users of the selected bucket will be automatically assigned with the permission to read the bucket ACL and write logs to the bucket.
 5.  Enter a prefix for the  **Log File Name Prefix**.
 
     After logging is enabled, generated logs are named in the following format:
@@ -32,8 +32,6 @@ The log delivery user group has been assigned the  **Write**  and  **ACL View** 
 
     -   If the bucket named  **bucket**  is selected to save log files, and the log file name prefix is set to  **bucket-log/**, all log files delivered to the bucket are saved in the  **bucket-log**  folder. A log file is named as follows:  **2015-06-29-12-22-07-N7MXLAF1BDG7MPDV**.
     -   If the bucket named  **bucket**  is selected to save log files, and the log file name prefix is set to  **bucket-log**, then no folder is created for log files delivered to the bucket. A log file is named as follows:  **bucket-log2015-06-29-12-22-07-N7MXLAF1BDG7MPDV**.
-
-    After logging is configured, you can view operation logs in the bucket that stores the logs in approximately fifteen minutes.
 
 6.  Click  **OK**.
 7.  In the displayed dialog box, click  **Close**  to close the dialog box.
