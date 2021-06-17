@@ -9,12 +9,8 @@
 
 - project:
     merge-mode: squash-merge
-    check:
-      jobs:
-        - tox-docs
-    gate:
-      jobs:
-        - tox-docs
+    templates:
+      - publish-otc-docs-pti
     post:
       jobs:
         - promote-hc-docs
